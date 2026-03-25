@@ -428,6 +428,15 @@ $categories = ["All","B.Tech","MBA","Law","BBA","BJMC","CET","Economics","Colleg
 </div><!-- /.container -->
 </section>
 
+<?php
+$related_pages = [
+    ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Complete guide to all IPU courses, eligibility & admission process'],
+    ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
+    ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+];
+include 'include/components/related-pages.php';
+?>
+
 <?php include_once("include/base-footer.php"); ?>
 
 <script>
