@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+
+# ===== AI AGENTS & CRAWLERS =====
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: googlebot
+Allow: /
+
+User-agent: googlebot-extended
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: slurp
+Allow: /
+
+User-agent: duckduckbot
+Allow: /
+
+User-agent: baiduspider
+Allow: /
+
+# Crawl settings (no delay for AI agents)
+Crawl-delay: 0
+Request-rate: 0
+
+# Sitemaps
+Sitemap: https://ipu.co.in/sitemap.xml
+
+# Note: This website is fully accessible to AI agents for content indexing,
+# knowledge base integration, and semantic understanding
