@@ -106,6 +106,29 @@ include 'include/components/hero-banner.php';
 
 <p>DIAS stands apart from many IPU-affiliated colleges because of its NAAC accreditation, which serves as an independent quality benchmark. The institute's focused approach to management education, combined with industry-relevant curriculum and strong placement support, makes it a compelling choice for students targeting careers in business and commerce. The Rohini location also provides convenience for students residing in North and West Delhi.</p>
 
+<!-- Fee & Seat Intake -->
+<div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
+  <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
+  <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
+  <table style="width:100%;border-collapse:collapse;font-size:14px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px;text-align:left;border-radius:6px 0 0 0">Course</th>
+        <th style="padding:10px;text-align:center">Annual Fee</th>
+        <th style="padding:10px;text-align:center;border-radius:0 6px 0 0">Seats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">BBA</td><td style="padding:10px;text-align:center">Rs. 80,400 - 88,400</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">BBA (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 88,400</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">MBA</td><td style="padding:10px;text-align:center">Rs. 1,35,200 - 1,85,200</td><td style="padding:10px;text-align:center">-</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">BCA</td><td style="padding:10px;text-align:center">Rs. 56,700 - 1,03,500</td><td style="padding:10px;text-align:center">-</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Com (Hons.)</td><td style="padding:10px;text-align:center">Rs. 80,500</td><td style="padding:10px;text-align:center">-</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Seat numbers marked '-' are to be confirmed from official counselling brochure.</p>
+</div>
+
 </div>
 <div class="col-lg-4">
 <?php include 'include/sidebar-cta.php'; ?>
