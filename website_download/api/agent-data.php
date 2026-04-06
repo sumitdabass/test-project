@@ -104,59 +104,447 @@ $knowledge_base = [
             'admission_process' => 'CUET or merit-based',
             'colleges' => ['Multiple IPU affiliated colleges'],
             'avg_placement_salary' => '₹5-8 LPA'
+        ],
+        [
+            'id' => 'bjmc',
+            'name' => 'BJMC (Bachelor of Journalism & Mass Communication)',
+            'duration' => '3 years',
+            'seats' => '300+',
+            'eligibility' => 'Class 12 (CUET)',
+            'specializations' => ['Print Journalism', 'Electronic Media', 'Advertising & PR', 'New Media'],
+            'admission_process' => 'CUET or merit-based',
+            'colleges' => ['VIPS', 'JIMS', 'BVP'],
+            'avg_placement_salary' => '₹4-8 LPA'
+        ],
+        [
+            'id' => 'mca',
+            'name' => 'MCA (Master of Computer Applications)',
+            'duration' => '2 years',
+            'seats' => '300+',
+            'eligibility' => 'BCA/B.Sc (CUET PG)',
+            'specializations' => ['Software Engineering', 'Data Science', 'Cloud Computing'],
+            'admission_process' => 'CUET PG or merit-based',
+            'colleges' => ['Multiple IPU affiliated colleges'],
+            'avg_placement_salary' => '₹6-10 LPA'
+        ],
+        [
+            'id' => 'bed',
+            'name' => 'B.Ed (Bachelor of Education)',
+            'duration' => '2 years',
+            'seats' => '200+',
+            'eligibility' => 'Graduation (IPU CET)',
+            'specializations' => ['Science', 'Commerce', 'Arts'],
+            'admission_process' => 'IPU CET followed by counselling',
+            'colleges' => ['Fairfield', 'Kasturi Ram'],
+            'avg_placement_salary' => '₹4-6 LPA'
+        ],
+        [
+            'id' => 'llb3',
+            'name' => 'LLB 3-Year (Bachelor of Laws)',
+            'duration' => '3 years',
+            'seats' => '200+',
+            'eligibility' => 'Graduation (CLAT / IPU CET)',
+            'specializations' => ['Corporate Law', 'Criminal Law', 'Civil Law'],
+            'admission_process' => 'CLAT or IPU CET followed by counselling',
+            'colleges' => ['CPJ', 'TIPS', 'Ideal'],
+            'avg_placement_salary' => '₹5-9 LPA'
+        ],
+        [
+            'id' => 'llm',
+            'name' => 'LLM (Master of Laws)',
+            'duration' => '1 year',
+            'seats' => '100+',
+            'eligibility' => 'LLB (CLAT PG / IPU CET)',
+            'specializations' => ['Constitutional Law', 'Corporate Law', 'Criminal Law', 'IPR'],
+            'admission_process' => 'CLAT PG or IPU CET followed by counselling',
+            'colleges' => ['USLS', 'GIBS', 'DME', 'Ideal'],
+            'avg_placement_salary' => '₹8-15 LPA'
         ]
     ],
 
     'colleges' => [
+        // === University Schools ===
         [
-            'code' => 'MSIT',
-            'name' => 'Maharaja Surajmal Institute of Technology (MSIT)',
-            'location' => 'Janakpuri, New Delhi',
-            'established' => 2007,
-            'nirf_rank' => '35 (Engineering)',
-            'accreditation' => 'NAAC A++',
-            'courses' => ['B.Tech', 'MBA'],
-            'placements' => '95%+',
-            'avg_salary' => '₹8-12 LPA',
-            'phone' => '9899991342',
-            'affiliations' => ['GGSIPU']
+            'code' => 'USICT',
+            'name' => 'University School of Information, Communication & Technology (USICT)',
+            'short_name' => 'USICT',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['B.Tech', 'M.Tech', 'MCA', 'PhD'],
+            'total_seats' => 600,
+            'page' => '/usict-admission.php'
         ],
         [
-            'code' => 'BVP',
-            'name' => 'Bharatiya Vidya Bhavan (BVP)',
-            'location' => 'New Delhi',
-            'established' => 1997,
-            'nirf_rank' => '45 (Engineering)',
-            'accreditation' => 'NAAC A',
-            'courses' => ['B.Tech', 'MBA', 'BBA'],
-            'placements' => '92%+',
-            'avg_salary' => '₹6-10 LPA',
-            'phone' => '9899991342'
+            'code' => 'USAR',
+            'name' => 'University School of Automation & Robotics (USAR)',
+            'short_name' => 'USAR',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['B.Tech'],
+            'total_seats' => 300,
+            'page' => '/usar-admission.php'
         ],
         [
-            'code' => 'VIPS',
-            'name' => 'Vivekananda Institute of Professional Studies (VIPS)',
-            'location' => 'Pitampura, New Delhi',
-            'established' => 1999,
-            'nirf_rank' => '52 (Management)',
-            'accreditation' => 'NAAC A+',
-            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'MBA'],
-            'placements' => '94%+',
-            'avg_salary' => '₹7-11 LPA (BBA), ₹8-15 LPA (Law)',
-            'phone' => '9899991342'
+            'code' => 'USLS',
+            'name' => 'University School of Law & Legal Studies (USLS)',
+            'short_name' => 'USLS',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['BA LLB', 'BBA LLB', 'LLM'],
+            'total_seats' => 200,
+            'page' => '/usls-admission.php'
         ],
+        [
+            'code' => 'USMS',
+            'name' => 'University School of Management Studies (USMS)',
+            'short_name' => 'USMS',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['MBA'],
+            'total_seats' => 150,
+            'page' => '/usms-admission.php'
+        ],
+        // === Top Engineering Colleges ===
         [
             'code' => 'MAIT',
             'name' => 'Maharaja Agrasen Institute of Technology (MAIT)',
+            'short_name' => 'MAIT',
             'location' => 'Rohini, New Delhi',
-            'established' => 1999,
-            'nirf_rank' => '38 (Engineering)',
-            'accreditation' => 'NAAC A+',
             'courses' => ['B.Tech', 'MBA'],
-            'placements' => '96%+',
-            'avg_salary' => '₹8-13 LPA',
-            'phone' => '9899991342'
-        ]
+            'total_seats' => 720,
+            'page' => '/mait-admission.php'
+        ],
+        [
+            'code' => 'MSIT',
+            'name' => 'Maharaja Surajmal Institute of Technology (MSIT)',
+            'short_name' => 'MSIT',
+            'location' => 'Janakpuri, New Delhi',
+            'courses' => ['B.Tech', 'MBA'],
+            'total_seats' => 600,
+            'page' => '/msit-admission.php'
+        ],
+        [
+            'code' => 'BPIT',
+            'name' => 'Bhagwan Parshuram Institute of Technology (BPIT)',
+            'short_name' => 'BPIT',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['B.Tech', 'BBA', 'MBA'],
+            'total_seats' => 600,
+            'page' => '/BPIT.php'
+        ],
+        [
+            'code' => 'BVP',
+            'name' => 'Bharati Vidyapeeth College of Engineering (BVP)',
+            'short_name' => 'BVP',
+            'location' => 'Paschim Vihar, New Delhi',
+            'courses' => ['B.Tech', 'BJMC', 'MCA'],
+            'total_seats' => 540,
+            'page' => '/BVP.php'
+        ],
+        [
+            'code' => 'GTBIT',
+            'name' => 'Guru Tegh Bahadur Institute of Technology (GTBIT)',
+            'short_name' => 'GTBIT',
+            'location' => 'Rajouri Garden, New Delhi',
+            'courses' => ['B.Tech'],
+            'total_seats' => 420,
+            'page' => '/gtbit-admission.php'
+        ],
+        [
+            'code' => 'ADGITM',
+            'name' => 'Apeejay Stya University - Delhi Group of Institutions (ADGITM)',
+            'short_name' => 'ADGITM',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['B.Tech', 'MBA'],
+            'total_seats' => 420,
+            'page' => '/adgitm-admission.php'
+        ],
+        // === Management & Multi-Discipline Colleges ===
+        [
+            'code' => 'VIPS',
+            'name' => 'Vivekananda Institute of Professional Studies (VIPS)',
+            'short_name' => 'VIPS',
+            'location' => 'Pitampura, New Delhi',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BJMC', 'B.Com'],
+            'total_seats' => 800,
+            'page' => '/vips-pitampura-courses.php'
+        ],
+        [
+            'code' => 'MAIMS',
+            'name' => 'Maharaja Agrasen Institute of Management Studies (MAIMS)',
+            'short_name' => 'MAIMS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com', 'BJMC'],
+            'total_seats' => 600,
+            'page' => '/maims-admission.php'
+        ],
+        [
+            'code' => 'MSI',
+            'name' => 'Maharaja Surajmal Institute (MSI)',
+            'short_name' => 'MSI',
+            'location' => 'Janakpuri, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com'],
+            'total_seats' => 480,
+            'page' => '/msi-admission.php'
+        ],
+        [
+            'code' => 'JIMS',
+            'name' => 'Jagannath International Management School (JIMS)',
+            'short_name' => 'JIMS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'B.Com'],
+            'total_seats' => 360,
+            'page' => '/jims-admission.php'
+        ],
+        [
+            'code' => 'IITM',
+            'name' => 'Institute of Innovation in Technology & Management (IITM)',
+            'short_name' => 'IITM',
+            'location' => 'Janakpuri, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com', 'MBA'],
+            'total_seats' => 480,
+            'page' => '/iitm-admission.php'
+        ],
+        [
+            'code' => 'HMR',
+            'name' => 'HMR Institute of Technology & Management (HMR)',
+            'short_name' => 'HMR',
+            'location' => 'Hamidpur, New Delhi',
+            'courses' => ['B.Tech', 'BBA', 'BCA'],
+            'total_seats' => 480,
+            'page' => '/hmr-admission.php'
+        ],
+        [
+            'code' => 'MABS',
+            'name' => 'Maharaja Agrasen Business School (MABS)',
+            'short_name' => 'MABS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['MBA'],
+            'total_seats' => 120,
+            'page' => '/mabs-admission.php'
+        ],
+        [
+            'code' => 'DIAS',
+            'name' => 'Delhi Institute of Advanced Studies (DIAS)',
+            'short_name' => 'DIAS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'B.Com'],
+            'total_seats' => 120,
+            'page' => '/dias-admission.php'
+        ],
+        [
+            'code' => 'Trinity',
+            'name' => 'Trinity Institute of Professional Studies (TIPS)',
+            'short_name' => 'TIPS',
+            'location' => 'Dwarka, New Delhi',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BCA', 'B.Com', 'BJMC'],
+            'total_seats' => 600,
+            'page' => '/tips-admission.php'
+        ],
+        // === 25 New Colleges ===
+        [
+            'code' => 'DTC',
+            'name' => 'Delhi Technical Campus',
+            'short_name' => 'DTC',
+            'location' => 'Greater Noida, UP',
+            'courses' => ['B.Tech CSE', 'B.Tech AIML', 'B.Tech AI&DS', 'B.Tech CST', 'BCA'],
+            'total_seats' => 1020,
+            'page' => '/dtc-admission.php'
+        ],
+        [
+            'code' => 'JEMTEC',
+            'name' => 'JIMS Engineering Management Technical Campus',
+            'short_name' => 'JEMTEC',
+            'location' => 'Greater Noida, UP',
+            'courses' => ['B.Tech', 'BBA', 'BA LLB', 'BBA LLB', 'BCA', 'B.Com'],
+            'total_seats' => 1000,
+            'page' => '/jemtec-admission.php'
+        ],
+        [
+            'code' => 'Echelon',
+            'name' => 'Echelon Institute of Technology',
+            'short_name' => 'Echelon',
+            'location' => 'Faridabad, Haryana',
+            'courses' => ['B.Tech', 'BBA', 'MCA', 'BCA'],
+            'total_seats' => 1000,
+            'page' => '/echelon-admission.php'
+        ],
+        [
+            'code' => 'DME',
+            'name' => 'Delhi Metropolitan Education',
+            'short_name' => 'DME',
+            'location' => 'Noida, UP',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BA(JMC)', 'LLM'],
+            'total_seats' => 900,
+            'page' => '/dme-admission.php'
+        ],
+        [
+            'code' => 'CPJ',
+            'name' => 'Chanderprabhu Jain College',
+            'short_name' => 'CPJ',
+            'location' => 'Narela, New Delhi',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BCA', 'LLB', 'LLM'],
+            'total_seats' => 800,
+            'page' => '/cpj-admission.php'
+        ],
+        [
+            'code' => 'Fairfield',
+            'name' => 'Fairfield Institute of Management & Technology',
+            'short_name' => 'Fairfield',
+            'location' => 'Kapashera, New Delhi',
+            'courses' => ['B.Tech', 'BBA', 'BA LLB', 'BBA LLB', 'BCA', 'B.Com', 'BJMC', 'B.Ed'],
+            'total_seats' => 900,
+            'page' => '/fairfield-admission.php'
+        ],
+        [
+            'code' => 'RDIAS',
+            'name' => 'Rukmini Devi Institute of Advanced Studies',
+            'short_name' => 'RDIAS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'B.Com'],
+            'total_seats' => 420,
+            'page' => '/rdias-admission.php'
+        ],
+        [
+            'code' => 'GIBS',
+            'name' => 'Gitarattan International Business School',
+            'short_name' => 'GIBS',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'LLM'],
+            'total_seats' => 680,
+            'page' => '/gibs-admission.php'
+        ],
+        [
+            'code' => 'JIMS_Kalkaji',
+            'name' => 'Jagannath International Management School Kalkaji',
+            'short_name' => 'JIMS Kalkaji',
+            'location' => 'Kalkaji, New Delhi',
+            'courses' => ['BBA', 'B.Com'],
+            'total_seats' => 240,
+            'page' => '/jims-kalkaji-admission.php'
+        ],
+        [
+            'code' => 'JIMS_VK',
+            'name' => 'Jagannath International Management School Vasant Kunj',
+            'short_name' => 'JIMS VK',
+            'location' => 'Vasant Kunj, New Delhi',
+            'courses' => ['BBA', 'BCA'],
+            'total_seats' => 360,
+            'page' => '/jims-vasant-kunj-admission.php'
+        ],
+        [
+            'code' => 'Ideal',
+            'name' => 'Ideal Institute of Management and Technology',
+            'short_name' => 'Ideal',
+            'location' => 'Karkardooma, New Delhi',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BCA', 'LLM'],
+            'total_seats' => 400,
+            'page' => '/ideal-admission.php'
+        ],
+        [
+            'code' => 'KCC',
+            'name' => 'KCC Institute of Legal & Higher Education',
+            'short_name' => 'KCC',
+            'location' => 'Greater Noida, UP',
+            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'BCA', 'B.Com'],
+            'total_seats' => 620,
+            'page' => '/kcc-admission.php'
+        ],
+        [
+            'code' => 'Tecnia',
+            'name' => 'Tecnia Institute of Advanced Studies',
+            'short_name' => 'Tecnia',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'MCA', 'BCA', 'B.Com', 'BJMC'],
+            'total_seats' => 600,
+            'page' => '/tecnia-admission.php'
+        ],
+        [
+            'code' => 'NDIM',
+            'name' => 'New Delhi Institute of Management',
+            'short_name' => 'NDIM',
+            'location' => 'Tughlakabad, New Delhi',
+            'courses' => ['BBA', 'BCA'],
+            'total_seats' => 330,
+            'page' => '/ndim-admission.php'
+        ],
+        [
+            'code' => 'MERI',
+            'name' => 'Management Education & Research Institute',
+            'short_name' => 'MERI',
+            'location' => 'Janakpuri, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com', 'BJMC'],
+            'total_seats' => 600,
+            'page' => '/meri-admission.php'
+        ],
+        [
+            'code' => 'KasturiRam',
+            'name' => 'Kasturi Ram College of Higher Education',
+            'short_name' => 'Kasturi Ram',
+            'location' => 'Narela, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com', 'B.Ed'],
+            'total_seats' => 300,
+            'page' => '/kasturi-ram-admission.php'
+        ],
+        [
+            'code' => 'Lingayas',
+            'name' => 'Lingayas Lalita Devi Institute',
+            'short_name' => 'Lingayas',
+            'location' => 'Mandi, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com', 'BJMC'],
+            'total_seats' => 300,
+            'page' => '/lingayas-admission.php'
+        ],
+        [
+            'code' => 'DonBosco',
+            'name' => 'Don Bosco Institute of Technology',
+            'short_name' => 'Don Bosco',
+            'location' => 'Okhla, New Delhi',
+            'courses' => ['BBA', 'MCA', 'BCA', 'B.Com'],
+            'total_seats' => 420,
+            'page' => '/don-bosco-admission.php'
+        ],
+        [
+            'code' => 'GTB4CEC',
+            'name' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
+            'short_name' => 'GTB4CEC',
+            'location' => 'Rajouri Garden, New Delhi',
+            'courses' => ['B.Tech'],
+            'total_seats' => 360,
+            'page' => '/gtb4cec-admission.php'
+        ],
+        [
+            'code' => 'BCIPS',
+            'name' => 'Banarsidas Chandiwala Institute of Professional Studies',
+            'short_name' => 'BCIPS',
+            'location' => 'Dwarka/Kalkaji, New Delhi',
+            'courses' => ['BBA', 'MCA', 'BCA', 'B.Com'],
+            'total_seats' => 300,
+            'page' => '/bcips-admission.php'
+        ],
+        [
+            'code' => 'SGTBIMIT',
+            'name' => 'Sri Guru Tegh Bahadur Institute of Management & IT',
+            'short_name' => 'SGTBIMIT',
+            'location' => 'GTK Road, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com'],
+            'total_seats' => 510,
+            'page' => '/sgtbimit-admission.php'
+        ],
+        [
+            'code' => 'Sirifort',
+            'name' => 'Sirifort Institute of Management Studies',
+            'short_name' => 'Sirifort',
+            'location' => 'Rohini, New Delhi',
+            'courses' => ['BBA', 'BCA', 'B.Com'],
+            'total_seats' => 360,
+            'page' => '/sirifort-admission.php'
+        ],
+        [
+            'code' => 'GNIT',
+            'name' => 'Greater Noida Institute of Technology',
+            'short_name' => 'GNIT',
+            'location' => 'Greater Noida, UP',
+            'courses' => ['B.Tech'],
+            'total_seats' => 210,
+            'page' => '/gnit-admission.php'
+        ],
     ],
 
     'faq' => [
@@ -230,7 +618,9 @@ $knowledge_base = [
         'admission_success_rate' => '99%',
         'years_of_experience' => '10+',
         'colleges_covered' => '60+',
-        'top_courses' => ['B.Tech', 'MBA', 'Law', 'BBA'],
+        'colleges_with_pages' => 46,
+        'total_pages' => 50,
+        'top_courses' => ['B.Tech', 'MBA', 'Law', 'BBA', 'BCA', 'BJMC', 'B.Com', 'B.Ed', 'LLB', 'LLM'],
         'placement_average' => '90%+',
         'average_salary_btech' => '₹8-12 LPA',
         'average_salary_mba' => '₹15-20 LPA'
@@ -263,6 +653,46 @@ $pages = [
     ['url' => 'https://ipu.co.in/top-btech-colleges-delhi.php', 'title' => 'Top B.Tech Colleges Delhi', 'type' => 'comparison', 'keywords' => ['top btech college in delhi', 'btech college in delhi']],
     ['url' => 'https://ipu.co.in/ipu-colleges-list.php', 'title' => 'All IPU Colleges List', 'type' => 'directory', 'keywords' => ['list of college', 'top college', 'best college']],
     ['url' => 'https://ipu.co.in/blog.php', 'title' => 'IPU Admission Blog', 'type' => 'blog', 'keywords' => []],
+    // Existing college pages
+    ['url' => 'https://ipu.co.in/gtbit-admission.php', 'title' => 'GTBIT Admission', 'type' => 'college-profile', 'keywords' => ['gtbit', 'gtbit admission']],
+    ['url' => 'https://ipu.co.in/adgitm-admission.php', 'title' => 'ADGITM Admission', 'type' => 'college-profile', 'keywords' => ['adgitm', 'adgitm admission']],
+    ['url' => 'https://ipu.co.in/maims-admission.php', 'title' => 'MAIMS Admission', 'type' => 'college-profile', 'keywords' => ['maims', 'maims admission']],
+    ['url' => 'https://ipu.co.in/msi-admission.php', 'title' => 'MSI Admission', 'type' => 'college-profile', 'keywords' => ['msi', 'msi admission']],
+    ['url' => 'https://ipu.co.in/dias-admission.php', 'title' => 'DIAS Admission', 'type' => 'college-profile', 'keywords' => ['dias', 'dias admission']],
+    ['url' => 'https://ipu.co.in/jims-admission.php', 'title' => 'JIMS Admission', 'type' => 'college-profile', 'keywords' => ['jims', 'jims rohini admission']],
+    ['url' => 'https://ipu.co.in/iitm-admission.php', 'title' => 'IITM Admission', 'type' => 'college-profile', 'keywords' => ['iitm', 'iitm janakpuri admission']],
+    ['url' => 'https://ipu.co.in/hmr-admission.php', 'title' => 'HMR Admission', 'type' => 'college-profile', 'keywords' => ['hmr', 'hmr admission']],
+    ['url' => 'https://ipu.co.in/mabs-admission.php', 'title' => 'MABS Admission', 'type' => 'college-profile', 'keywords' => ['mabs', 'mabs mba admission']],
+    ['url' => 'https://ipu.co.in/trinity-law-admission.php', 'title' => 'Trinity / TIPS Law Admission', 'type' => 'college-profile', 'keywords' => ['tips', 'trinity law admission']],
+    // Additional course pages
+    ['url' => 'https://ipu.co.in/bca-admission-ipu.php', 'title' => 'BCA Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu bca admission']],
+    ['url' => 'https://ipu.co.in/barch-admission-ipu.php', 'title' => 'B.Arch Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu barch admission']],
+    ['url' => 'https://ipu.co.in/llm-admission-ipu.php', 'title' => 'LLM Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu llm admission']],
+    // New college pages (25 colleges)
+    ['url' => 'https://ipu.co.in/dtc-admission.php', 'title' => 'DTC Admission', 'type' => 'college-profile', 'keywords' => ['dtc', 'delhi technical campus admission']],
+    ['url' => 'https://ipu.co.in/jemtec-admission.php', 'title' => 'JEMTEC Admission', 'type' => 'college-profile', 'keywords' => ['jemtec', 'jemtec admission']],
+    ['url' => 'https://ipu.co.in/echelon-admission.php', 'title' => 'Echelon Admission', 'type' => 'college-profile', 'keywords' => ['echelon', 'echelon institute admission']],
+    ['url' => 'https://ipu.co.in/dme-admission.php', 'title' => 'DME Admission', 'type' => 'college-profile', 'keywords' => ['dme', 'delhi metropolitan education admission']],
+    ['url' => 'https://ipu.co.in/cpj-admission.php', 'title' => 'CPJ College Admission', 'type' => 'college-profile', 'keywords' => ['cpj', 'chanderprabhu jain admission']],
+    ['url' => 'https://ipu.co.in/fairfield-admission.php', 'title' => 'Fairfield Admission', 'type' => 'college-profile', 'keywords' => ['fairfield', 'fairfield institute admission']],
+    ['url' => 'https://ipu.co.in/rdias-admission.php', 'title' => 'RDIAS Admission', 'type' => 'college-profile', 'keywords' => ['rdias', 'rukmini devi admission']],
+    ['url' => 'https://ipu.co.in/gibs-admission.php', 'title' => 'GIBS Admission', 'type' => 'college-profile', 'keywords' => ['gibs', 'gitarattan admission']],
+    ['url' => 'https://ipu.co.in/jims-kalkaji-admission.php', 'title' => 'JIMS Kalkaji Admission', 'type' => 'college-profile', 'keywords' => ['jims kalkaji', 'jims kalkaji admission']],
+    ['url' => 'https://ipu.co.in/jims-vasant-kunj-admission.php', 'title' => 'JIMS Vasant Kunj Admission', 'type' => 'college-profile', 'keywords' => ['jims vasant kunj', 'jims vk admission']],
+    ['url' => 'https://ipu.co.in/ideal-admission.php', 'title' => 'Ideal Institute Admission', 'type' => 'college-profile', 'keywords' => ['ideal', 'ideal institute admission']],
+    ['url' => 'https://ipu.co.in/kcc-admission.php', 'title' => 'KCC Institute Admission', 'type' => 'college-profile', 'keywords' => ['kcc', 'kcc institute admission']],
+    ['url' => 'https://ipu.co.in/tecnia-admission.php', 'title' => 'Tecnia Admission', 'type' => 'college-profile', 'keywords' => ['tecnia', 'tecnia institute admission']],
+    ['url' => 'https://ipu.co.in/ndim-admission.php', 'title' => 'NDIM Admission', 'type' => 'college-profile', 'keywords' => ['ndim', 'new delhi institute of management admission']],
+    ['url' => 'https://ipu.co.in/tips-admission.php', 'title' => 'TIPS Admission', 'type' => 'college-profile', 'keywords' => ['tips', 'trinity institute admission']],
+    ['url' => 'https://ipu.co.in/meri-admission.php', 'title' => 'MERI Admission', 'type' => 'college-profile', 'keywords' => ['meri', 'meri institute admission']],
+    ['url' => 'https://ipu.co.in/kasturi-ram-admission.php', 'title' => 'Kasturi Ram Admission', 'type' => 'college-profile', 'keywords' => ['kasturi ram', 'kasturi ram college admission']],
+    ['url' => 'https://ipu.co.in/lingayas-admission.php', 'title' => 'Lingayas Admission', 'type' => 'college-profile', 'keywords' => ['lingayas', 'lingayas lalita devi admission']],
+    ['url' => 'https://ipu.co.in/don-bosco-admission.php', 'title' => 'Don Bosco Admission', 'type' => 'college-profile', 'keywords' => ['don bosco', 'don bosco institute admission']],
+    ['url' => 'https://ipu.co.in/gtb4cec-admission.php', 'title' => 'GTB4CEC Admission', 'type' => 'college-profile', 'keywords' => ['gtb4cec', 'guru tegh bahadur 4th centenary admission']],
+    ['url' => 'https://ipu.co.in/bcips-admission.php', 'title' => 'BCIPS Admission', 'type' => 'college-profile', 'keywords' => ['bcips', 'banarsidas chandiwala admission']],
+    ['url' => 'https://ipu.co.in/sgtbimit-admission.php', 'title' => 'SGTBIMIT Admission', 'type' => 'college-profile', 'keywords' => ['sgtbimit', 'sri guru tegh bahadur admission']],
+    ['url' => 'https://ipu.co.in/sirifort-admission.php', 'title' => 'Sirifort Admission', 'type' => 'college-profile', 'keywords' => ['sirifort', 'sirifort institute admission']],
+    ['url' => 'https://ipu.co.in/gnit-admission.php', 'title' => 'GNIT Admission', 'type' => 'college-profile', 'keywords' => ['gnit', 'greater noida institute admission']],
 ];
 
 // Admission processes (structured for AI extraction)
@@ -365,7 +795,7 @@ echo json_encode(
         'data' => $response,
         'meta' => [
             'source' => 'ipu.co.in',
-            'version' => '2.0',
+            'version' => '3.0',
             'for_agents' => ['ChatGPT', 'Claude', 'Gemini', 'Bard', 'LLaMA', 'All AI Models']
         ]
     ],
