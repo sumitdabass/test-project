@@ -1,7 +1,12 @@
 <?php
 /**
  * Form Handler — Replaces form-codecopy.php
- * Honeypot + time-based anti-spam (no CAPTCHA friction)
+ * 5-layer duplicate prevention (no CAPTCHA friction):
+ *   1. Honeypot           — bots fill hidden `website` field
+ *   2. Time-based check   — reject submissions faster than 3 seconds
+ *   3. 5-min cooldown     — block any resubmission within 5 minutes (session)
+ *   4. Phone session dedup — reject same phone number within the session
+ *   5. Cookie 24h dedup   — reject same phone hash within 24 hours (cookie)
  */
 
 if (session_status() === PHP_SESSION_NONE) {
@@ -12,16 +17,23 @@ $form_error = '';
 $form_success = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Honeypot check — bots fill hidden fields
+    // ── Layer 1: Honeypot — bots fill hidden fields ──────────────────────────
     if (!empty($_POST['website'])) {
         // Bot detected, silently redirect (don't reveal detection)
         header("Location: /thank-you.php");
         exit();
     }
 
-    // Time-based check — reject submissions faster than 2 seconds
+    // ── Layer 2: Time-based check — reject submissions faster than 3 seconds ─
     $form_loaded = $_SESSION['form_loaded_at'] ?? 0;
-    if ($form_loaded > 0 && (time() - $form_loaded) < 2) {
+    if ($form_loaded > 0 && (time() - $form_loaded) < 3) {
+        header("Location: /thank-you.php");
+        exit();
+    }
+
+    // ── Layer 3: 5-minute cooldown — block any resubmission within 5 min ─────
+    $last_submit = $_SESSION['last_submit_time'] ?? 0;
+    if ($last_submit > 0 && (time() - $last_submit) < 300) {
         header("Location: /thank-you.php");
         exit();
     }
@@ -40,27 +52,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $form_error = 'Please enter a valid email address.';
     } else {
+        // ── Layer 4: Phone session dedup — reject same phone in this session ─
+        if (!isset($_SESSION['submitted_phones'])) {
+            $_SESSION['submitted_phones'] = [];
+        }
+        if (in_array($phone, $_SESSION['submitted_phones'], true)) {
+            header("Location: /thank-you.php");
+            exit();
+        }
+
+        // ── Layer 5: Cookie 24h dedup — reject same phone hash within 24h ───
+        $phone_hash = 'ipu_eq_' . hash('sha256', $phone);
+        if (!empty($_COOKIE[$phone_hash])) {
+            header("Location: /thank-you.php");
+            exit();
+        }
+
         // Capture UTM parameters if present
-        $utm_source = htmlspecialchars($_POST['utm_source'] ?? $_GET['utm_source'] ?? '', ENT_QUOTES, 'UTF-8');
-        $utm_medium = htmlspecialchars($_POST['utm_medium'] ?? $_GET['utm_medium'] ?? '', ENT_QUOTES, 'UTF-8');
+        $utm_source   = htmlspecialchars($_POST['utm_source']   ?? $_GET['utm_source']   ?? '', ENT_QUOTES, 'UTF-8');
+        $utm_medium   = htmlspecialchars($_POST['utm_medium']   ?? $_GET['utm_medium']   ?? '', ENT_QUOTES, 'UTF-8');
         $utm_campaign = htmlspecialchars($_POST['utm_campaign'] ?? $_GET['utm_campaign'] ?? '', ENT_QUOTES, 'UTF-8');
-        $page_url = htmlspecialchars($_POST['page_url'] ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
+        $page_url     = htmlspecialchars($_POST['page_url']     ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
 
         // Build email
-        $to = "sumitdabass@gmail.com,sonamdabas222@gmail.com";
+        $to      = "sumitdabass@gmail.com,sonamdabas222@gmail.com";
         $subject = "New Enquiry: $name - $course";
 
-        $body = "Name: $name\r\n";
+        $body  = "Name: $name\r\n";
         $body .= "Phone: $phone\r\n";
         $body .= "Email: $email\r\n";
         $body .= "Course: $course\r\n";
         $body .= "Source Page: $page_url\r\n";
-        if ($utm_source) $body .= "UTM Source: $utm_source\r\n";
-        if ($utm_medium) $body .= "UTM Medium: $utm_medium\r\n";
+        if ($utm_source)   $body .= "UTM Source: $utm_source\r\n";
+        if ($utm_medium)   $body .= "UTM Medium: $utm_medium\r\n";
         if ($utm_campaign) $body .= "UTM Campaign: $utm_campaign\r\n";
         $body .= "Time: " . date('Y-m-d H:i:s') . "\r\n";
 
-        $headers = "From: noreply@ipu.co.in\r\n";
+        $headers  = "From: noreply@ipu.co.in\r\n";
         $headers .= "Reply-To: " . ($email ?: 'admission@ipu.co.in') . "\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
@@ -71,23 +99,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Send to Google Sheets
         $sheets_data = json_encode([
-            'name' => $name,
-            'email' => $email,
-            'phone' => $phone,
-            'course' => $course,
-            'source' => $utm_source,
-            'medium' => $utm_medium,
+            'name'     => $name,
+            'email'    => $email,
+            'phone'    => $phone,
+            'course'   => $course,
+            'source'   => $utm_source,
+            'medium'   => $utm_medium,
             'campaign' => $utm_campaign,
-            'page' => $page_url,
+            'page'     => $page_url,
         ]);
 
         $ch = curl_init('https://script.google.com/macros/s/AKfycbz_8geQQfgTGW5FT6kVahb7KeVGh0EGyIBzKvwcISjqA0ZN7GhALp9jXqTGN0iqiQaQvw/exec');
         curl_setopt_array($ch, [
-            CURLOPT_POST => true,
-            CURLOPT_POSTFIELDS => $sheets_data,
-            CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
+            CURLOPT_POST           => true,
+            CURLOPT_POSTFIELDS     => $sheets_data,
+            CURLOPT_HTTPHEADER     => ['Content-Type: application/json'],
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 5,
+            CURLOPT_TIMEOUT        => 5,
             CURLOPT_FOLLOWLOCATION => true,
         ]);
         curl_exec($ch);
@@ -96,6 +124,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Store for enhanced conversions on thank-you page
         $_SESSION['enh_email'] = $email;
         $_SESSION['enh_phone'] = $phone;
+
+        // Record dedup state so subsequent submissions are blocked
+        $_SESSION['last_submit_time']  = time();
+        $_SESSION['submitted_phones'][] = $phone;
+        setcookie($phone_hash, '1', time() + 86400, '/', '', false, true);
 
         // Redirect to thank-you
         header("Location: /thank-you.php");
