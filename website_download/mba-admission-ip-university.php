@@ -14,6 +14,10 @@ include_once("include/form-handler.php");
 
 
 <link rel="canonical" href="https://ipu.co.in/mba-admission-ip-university.php" />
+<?php
+$breadcrumbs = [['Home', '/'], ['MBA Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 
 <body>
@@ -49,6 +53,8 @@ CAT • CMAT • Counselling • Fees • Placements • Top MBA Colleges
 
 <div class="col-lg-8">
 <div class="blog-details">
+
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>Overview: MBA Admission at IP University (GGSIPU)</h2>
 

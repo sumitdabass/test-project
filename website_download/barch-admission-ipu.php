@@ -43,6 +43,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['B.Arch Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -66,6 +71,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">B.Arch (Bachelor of Architecture) at IPU is a 5-year professional degree programme. Admission is based on NATA (National Aptitude Test in Architecture) or JEE Main Paper 2 scores, followed by IPU centralised counselling. The programme covers architectural design, structural engineering, building construction, urban planning, and sustainability. Graduates can register with the Council of Architecture and practise as licensed architects.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>B.Arch Admission in IP University 2026 &ndash; Complete Guide</h1>
 

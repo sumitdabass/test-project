@@ -9,6 +9,10 @@
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IITM Delhi Admission 2026 | IPU B.Com, BCA, BBA">
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['IITM Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -28,6 +32,7 @@ include 'include/components/hero-banner.php';
 <section id="ai-summary" style="display:none">
 <p>International Institute of Technology &amp; Management (IITM) is an IPU-affiliated college in New Delhi offering B.Com, BCA, and BBA programmes. IITM focuses on commerce and IT education with a practical, industry-oriented approach. The institute caters to students seeking undergraduate professional degrees under GGSIPU. For free admission counselling, call 9899991342.</p>
 </section>
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>About IITM &ndash; International Institute of Technology &amp; Management</h2>
 

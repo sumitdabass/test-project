@@ -44,6 +44,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['USICT Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -67,6 +72,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">USICT (University School of Information, Communication & Technology) is IPU's flagship engineering school located in Dwarka, Delhi. It offers B.Tech in CSE, IT, and ECE through JEE Main counselling. Average placements range from 12-20 LPA, making it one of the most sought-after IPU schools. Admission is based on JEE Main rank via GGSIPU counselling.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>USICT IPU Admission 2026 – Complete Guide</h1>
 

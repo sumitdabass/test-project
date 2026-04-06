@@ -44,6 +44,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['USMS Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -67,6 +72,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">USMS (University School of Management Studies) is IPU's constituent management school on the Dwarka campus. It offers a 2-year MBA programme with specializations in Marketing, Finance, HR, IT, and International Business. Admission is through CAT/CMAT scores followed by GGSIPU counselling. USMS is one of the most affordable MBA options in Delhi with growing placement records.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>USMS IPU Admission 2026 – Complete MBA Guide</h1>
 

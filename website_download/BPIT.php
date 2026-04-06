@@ -12,6 +12,10 @@ include_once("include/form-handler.php");
 <meta name="description" content="BPIT (Bhagwan Parshuram Institute of Technology) Rohini – B.Tech CSE, IT, ECE, BBA, MBA. Cutoff, fees & placements. Call 9899991342 for free IPU admission help.">
 
 
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['BPIT Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 
 <body>
@@ -54,6 +58,8 @@ BPIT College (Bhagwan Parshuram Institute of Technology) – Complete Guide
 
 <img loading="lazy" src="assets/images/bpit-college.jpg" class="main-img" alt="BPIT College IP University">
 
+
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>About BPIT College (IP University)</h2>
 

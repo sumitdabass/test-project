@@ -43,6 +43,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['BA Economics Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -66,6 +71,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">IPU offers BA Economics (Hons) at affiliated colleges in Delhi. Admission is through CUET scores via GGSIPU counselling. The 3-year programme covers microeconomics, macroeconomics, econometrics, and Indian economic policy. Graduates can pursue careers in banking, consulting, civil services, data analytics, and pursue MA Economics or MBA.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>IPU BA Economics Admission 2026 – Complete Guide</h1>
 

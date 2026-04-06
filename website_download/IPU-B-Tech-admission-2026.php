@@ -55,6 +55,8 @@ IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET & Co
 class="main-img"
 alt="IPU B.Tech Admission 2026 Guide">
 
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+
 <h2>Overview of IPU B.Tech Admission 2026–27</h2>
 
 <p>

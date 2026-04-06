@@ -43,6 +43,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['LLM Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -66,6 +71,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">LLM (Master of Laws) at IPU is a 1-year postgraduate law programme offered by USLS (University School of Law & Legal Studies) on the Dwarka campus. Admission requires a valid LLB degree and is based on IPU CET or CLAT PG scores followed by centralised counselling. The programme offers specialisations in Constitutional Law, Corporate Law, Criminal Law, and International Law.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>LLM Admission in IP University 2026 &ndash; Complete Guide</h1>
 

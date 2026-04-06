@@ -44,6 +44,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['USAR Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -67,6 +72,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">USAR (University School of Automation & Robotics) is a constituent school of GGSIPU located on the Dwarka campus. It offers B.Tech in Automation & Robotics, Instrumentation & Control, and related programmes. Admission is through JEE Main counselling. USAR is known for its specialised robotics labs and growing industry partnerships.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>USAR IPU Admission 2026 – Complete Guide</h1>
 

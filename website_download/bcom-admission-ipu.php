@@ -43,6 +43,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['B.Com Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -66,6 +71,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">IPU offers B.Com (Hons) at several affiliated colleges in Delhi. Admission is through CUET scores via GGSIPU counselling. The programme is 3 years, with annual fees ranging from Rs 40,000 to Rs 1.5 lakh depending on the college. B.Com from IPU colleges provides a strong foundation for CA, CS, CMA, and MBA careers.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>IPU B.Com Admission 2026 – Complete Guide</h1>
 

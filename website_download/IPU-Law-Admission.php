@@ -14,7 +14,10 @@ include_once("include/form-handler.php");
 <meta name="keywords" content="IPU Law Admission 2026, GGSIPU Law Eligibility, CLAT for IPU Law, USLLS admission, VIPS Law, MAIMS Law, IPU Counselling Law">
 <link rel="canonical" href="https://ipu.co.in/IPU-Law-Admission.php" />
 
-
+<?php
+$breadcrumbs = [['Home', '/'], ['Law Admission 2026', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 
 <body>
@@ -43,6 +46,8 @@ IPU Law Admission 2026 – Eligibility, CLAT, Colleges & Counselling Guide
 <div class="blog-details">
 
 <img loading="lazy" src="assets/images/IPU-Law-Admission-2025.jpg" class="main-img" alt="IPU Law Admission Guide">
+
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>IPU Law Admission 2026 Overview</h2>
 

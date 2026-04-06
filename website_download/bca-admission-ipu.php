@@ -43,6 +43,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['BCA Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -66,6 +71,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">BCA (Bachelor of Computer Applications) at IPU is a 3-year undergraduate programme focused on computer science and software development. Admission is through CUET scores followed by IPU centralised counselling. Top BCA colleges under IPU include JIMS Rohini, MAIMS Rohini, and IITM Janakpuri. The programme prepares students for IT careers or higher studies like MCA.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>BCA Admission in IP University 2026 &ndash; Complete Guide</h1>
 

@@ -69,6 +69,10 @@ include_once("include/form-handler.php");
 </script>
 
 
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['VIPS Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 
 <body>
@@ -92,6 +96,8 @@ include_once("include/form-handler.php");
             <!-- Main Content -->
             <div class="col-lg-8">
                 <article class="blog-details blog-content">
+
+                    <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
                     <h2>VIPS Pitampura: Courses, Law Programs & Academic Environment</h2>
 

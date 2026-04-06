@@ -111,6 +111,8 @@ BBA Admission in IP University — Top Colleges, Eligibility & Counselling Guide
 
 <img loading="lazy" src="assets/images/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.jpg" class="main-img" alt="BBA IP University Admission Guide">
 
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+
 <h2>BBA Colleges under IP University (GGSIPU)</h2>
 
 <p>

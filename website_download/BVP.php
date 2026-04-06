@@ -73,6 +73,10 @@ include_once("include/form-handler.php");
 </script>
 
 
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['BVP Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 
 <body>
@@ -115,6 +119,8 @@ Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
 
 <img loading="lazy" src="assets/images/bvb-engineering-college.jpg" class="main-img" alt="Bharatiya Vidya Bhavan Engineering College IP University">
 
+
+<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>About Bharatiya Vidya Bhavan Engineering College (IP University)</h2>
 

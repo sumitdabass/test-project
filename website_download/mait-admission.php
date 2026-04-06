@@ -44,6 +44,11 @@
   }
 }
 </script>
+
+<?php
+$breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAIT Admission', '']];
+include 'include/components/breadcrumb-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -67,6 +72,7 @@ include 'include/components/hero-banner.php';
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
     <p style="margin:0;color:#4a5568;font-size:15px">MAIT (Maharaja Agrasen Institute of Technology) is the top-ranked affiliated engineering college under IPU, located in Rohini, Delhi. It offers B.Tech in CSE, IT, ECE, EEE, AI/ML alongside BBA and BJMC. Admission is through JEE Main via GGSIPU counselling. Average placements range from 7-15 LPA with top companies like Microsoft, Amazon, and Infosys recruiting regularly.</p>
   </section>
+  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>MAIT IPU Admission 2026 – Complete Guide</h1>
 
