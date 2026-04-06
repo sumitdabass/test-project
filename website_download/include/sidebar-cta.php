@@ -67,6 +67,10 @@ $_SESSION['form_loaded_at'] = time();
         <option value="B.Com">B.Com</option>
         <option value="BA Economics">BA Economics</option>
         <option value="BA English">BA English</option>
+        <option value="B.Ed">B.Ed</option>
+        <option value="LLB">LLB (3 Year)</option>
+        <option value="LLM">LLM</option>
+        <option value="B.Arch">B.Arch</option>
         <option value="Other">Other</option>
       </select>
     </div>

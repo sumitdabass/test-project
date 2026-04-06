@@ -1,27 +1,27 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>IPU Colleges List 2026 | All 60+ GGSIPU Affiliated Colleges in Delhi</title>
+<title>IPU Colleges List 2026 | All 80+ GGSIPU Affiliated Colleges in Delhi</title>
 <meta name="description" content="Complete list of IPU affiliated colleges – Engineering, Law, MBA, BBA, BJMC, B.Com. Location, courses & fees. Call 9899991342 for personalized college guidance.">
 <link rel="canonical" href="https://ipu.co.in/ipu-colleges-list.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Complete List of IPU Colleges 2026 | 60+ GGSIPU Affiliated Colleges in Delhi">
-<meta property="og:description" content="Complete directory of all 60+ colleges affiliated to GGSIPU organised by category with locations, courses and admission links.">
+<meta property="og:title" content="Complete List of IPU Colleges 2026 | 80+ GGSIPU Affiliated Colleges in Delhi">
+<meta property="og:description" content="Complete directory of all 80+ colleges affiliated to GGSIPU organised by category with locations, courses and admission links.">
 <meta property="og:url" content="https://ipu.co.in/ipu-colleges-list.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Complete List of IPU Colleges 2026 | 60+ GGSIPU Affiliated Colleges in Delhi">
-<meta name="twitter:description" content="Complete directory of all 60+ colleges affiliated to GGSIPU organised by category with locations, courses and admission links.">
+<meta name="twitter:title" content="Complete List of IPU Colleges 2026 | 80+ GGSIPU Affiliated Colleges in Delhi">
+<meta name="twitter:description" content="Complete directory of all 80+ colleges affiliated to GGSIPU organised by category with locations, courses and admission links.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Complete List of IPU Colleges 2026 | 60+ GGSIPU Affiliated Colleges in Delhi",
+  "headline": "Complete List of IPU Colleges 2026 | 80+ GGSIPU Affiliated Colleges in Delhi",
   "description": "Comprehensive list of all colleges affiliated to Guru Gobind Singh Indraprastha University organized by course type with locations and key programmes.",
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
@@ -50,12 +50,12 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">Guru Gobind Singh Indraprastha University (GGSIPU) has 60+ affiliated colleges and university schools across Delhi NCR. These include top engineering colleges (USICT, MAIT, MSIT, BPIT, BVP), law colleges (USLS, VIPS Law), management institutes (USMS, MAIMS, DIAS), media colleges (VIPS, MAIMS), and commerce/humanities colleges. All admissions happen through centralised IPU counselling based on JEE Main, CUET, CLAT, or NATA scores.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">Guru Gobind Singh Indraprastha University (GGSIPU) has 80+ affiliated colleges and university schools across Delhi NCR. These include top engineering colleges (USICT, MAIT, MSIT, BPIT, BVP), law colleges (USLS, VIPS Law), management institutes (USMS, MAIMS, DIAS), media colleges (VIPS, MAIMS), and commerce/humanities colleges. All admissions happen through centralised IPU counselling based on JEE Main, CUET, CLAT, or NATA scores.</p>
   </section>
 
   <h1>Complete List of IPU Colleges 2026 &ndash; All GGSIPU Affiliated Colleges in Delhi</h1>
 
-  <p>Guru Gobind Singh Indraprastha University (GGSIPU) is one of Delhi's largest state universities, operating a network of 60+ affiliated colleges and constituent university schools. Whether you are looking for engineering, law, management, media, or commerce programmes, IPU has a college for you. This complete directory lists every major IPU college organised by course type, with location details and key programmes offered.</p>
+  <p>Guru Gobind Singh Indraprastha University (GGSIPU) is one of Delhi's largest state universities, operating a network of 80+ affiliated colleges and constituent university schools. Whether you are looking for engineering, law, management, media, or commerce programmes, IPU has a college for you. This complete directory lists every major IPU college organised by course type, with location details and key programmes offered.</p>
 
   <p>Need help picking the right IPU college for your profile? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free personalised guidance from our expert counsellors.</p>
 
@@ -107,19 +107,69 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Tech CSE, IT</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#adgitm">ADGITM (Dr. Akhilesh Das Gupta Institute of Technology)</a></td>
+        <td style="padding:10px 14px"><a href="/adgitm-admission.php">ADGITM (Dr. Akhilesh Das Gupta Institute of Technology)</a></td>
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, IT, ECE</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#gtbit">GTBIT (Guru Tegh Bahadur Institute of Technology)</a></td>
+        <td style="padding:10px 14px"><a href="/gtbit-admission.php">GTBIT (Guru Tegh Bahadur Institute of Technology)</a></td>
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, ECE</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#hmr">HMR (Hindustan Institute of Technology)</a></td>
+        <td style="padding:10px 14px"><a href="/hmr-admission.php">HMR (Hindustan Institute of Technology)</a></td>
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, IT, ECE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/dtc-admission.php">DTC (Delhi Technical Campus)</a></td>
+        <td style="padding:10px 14px">Greater Noida</td>
+        <td style="padding:10px 14px">B.Tech CSE, ME, CE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/jemtec-admission.php">JEMTEC (Jaypee Institute of Information Technology)</a></td>
+        <td style="padding:10px 14px">Greater Noida</td>
+        <td style="padding:10px 14px">B.Tech CSE, IT, ECE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/echelon-admission.php">Echelon Institute of Technology</a></td>
+        <td style="padding:10px 14px">Faridabad</td>
+        <td style="padding:10px 14px">B.Tech CSE, ME, CE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/dme-admission.php">DME (Delhi Metropolitan Education)</a></td>
+        <td style="padding:10px 14px">Noida</td>
+        <td style="padding:10px 14px">B.Tech CSE, ECE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/fairfield-admission.php">Fairfield Institute of Management &amp; Technology</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, IT</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/gnit-admission.php">GNIT (Guru Nanak Institute of Technology)</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, ECE, ME</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/gtb4cec-admission.php">GTB4CEC (Guru Tegh Bahadur 4th Centenary Engineering College)</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, ECE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/lingayas-admission.php">Lingaya's Lalita Devi Institute of Management &amp; Sciences</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, ECE</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/kasturi-ram-admission.php">Kasturi Ram College of Higher Education</a></td>
+        <td style="padding:10px 14px">Narela, Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, ECE, ME</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/meri-admission.php">MERI (Management Education &amp; Research Institute)</a></td>
+        <td style="padding:10px 14px">Janakpuri, Delhi</td>
+        <td style="padding:10px 14px">B.Tech CSE, IT</td>
       </tr>
     </tbody>
   </table>
@@ -150,12 +200,12 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BA LLB, BBA LLB</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#maims-law">MAIMS</a></td>
+        <td style="padding:10px 14px"><a href="/maims-admission.php">MAIMS</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">BA LLB</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#trinity">Trinity Institute of Professional Studies</a></td>
+        <td style="padding:10px 14px"><a href="/tips-admission.php">TIPS (Trinity Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Dwarka</td>
         <td style="padding:10px 14px">BA LLB</td>
       </tr>
@@ -163,6 +213,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#geeta-ratan">Geeta Ratan</a></td>
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">BA LLB, BBA LLB</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/don-bosco-admission.php">Don Bosco Institute of Technology</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">BA LLB</td>
       </tr>
     </tbody>
   </table>
@@ -188,7 +243,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">MBA</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#maims">MAIMS (Maharaja Agrasen Institute of Management Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/maims-admission.php">MAIMS (Maharaja Agrasen Institute of Management Studies)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">BBA, MBA, B.Com</td>
       </tr>
@@ -198,17 +253,17 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BBA, BJMC, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#msi">MSI (Maharaja Surajmal Institute)</a></td>
+        <td style="padding:10px 14px"><a href="/msi-admission.php">MSI (Maharaja Surajmal Institute)</a></td>
         <td style="padding:10px 14px">Janakpuri</td>
         <td style="padding:10px 14px">BBA, B.Com, BA Economics</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#dias">DIAS (Delhi Institute of Advanced Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/dias-admission.php">DIAS (Delhi Institute of Advanced Studies)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">MBA, BBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#jims">JIMS (Jagan Institute of Management Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/jims-admission.php">JIMS (Jagan Institute of Management Studies)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">BBA, BCA, MBA</td>
       </tr>
@@ -216,6 +271,56 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php">MABS (Maharaja Agrasen Business School)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">PGDM</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/rdias-admission.php">RDIAS (Rukmini Devi Institute of Advanced Studies)</a></td>
+        <td style="padding:10px 14px">Rohini</td>
+        <td style="padding:10px 14px">MBA, BBA, B.Com</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (GD Goenka Institute of Business Studies)</a></td>
+        <td style="padding:10px 14px">Rohini</td>
+        <td style="padding:10px 14px">MBA, BBA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/cpj-admission.php">CPJ College of Higher Studies &amp; School of Law</a></td>
+        <td style="padding:10px 14px">Narela, Delhi</td>
+        <td style="padding:10px 14px">BBA, B.Com, BA LLB</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/ndim-admission.php">NDIM (New Delhi Institute of Management)</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">MBA, PGDM</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/kcc-admission.php">KCC Institute of Legal &amp; Higher Education</a></td>
+        <td style="padding:10px 14px">Greater Noida</td>
+        <td style="padding:10px 14px">BBA, B.Com, BA LLB</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/ideal-admission.php">Ideal Institute of Management &amp; Technology</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">BBA, B.Com, BCA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/bcips-admission.php">BCIPS (Banarsidas Chandiwala Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">BBA, BCA, B.Com</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/sgtbimit-admission.php">SGTBIMIT (Sri Guru Tegh Bahadur Institute of Management &amp; IT)</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">BBA, BCA, B.Com</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/sirifort-admission.php">Sirifort College of Computer Technology &amp; Management</a></td>
+        <td style="padding:10px 14px">New Delhi</td>
+        <td style="padding:10px 14px">BBA, BCA, B.Com</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/tecnia-admission.php">Tecnia Institute of Advanced Studies</a></td>
+        <td style="padding:10px 14px">Rohini</td>
+        <td style="padding:10px 14px">MBA, BBA, BCA</td>
       </tr>
     </tbody>
   </table>
@@ -241,7 +346,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BJMC, MJMC</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#maims-media">MAIMS</a></td>
+        <td style="padding:10px 14px"><a href="/maims-admission.php">MAIMS</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">BJMC</td>
       </tr>
@@ -251,9 +356,14 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BJMC</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#jims-vk">JIMS Vasant Kunj</a></td>
+        <td style="padding:10px 14px"><a href="/jims-vasant-kunj-admission.php">JIMS Vasant Kunj</a></td>
         <td style="padding:10px 14px">Vasant Kunj</td>
-        <td style="padding:10px 14px">BJMC</td>
+        <td style="padding:10px 14px">BJMC, BBA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/jims-kalkaji-admission.php">JIMS Kalkaji</a></td>
+        <td style="padding:10px 14px">Kalkaji</td>
+        <td style="padding:10px 14px">BJMC, BBA, BCA</td>
       </tr>
     </tbody>
   </table>
@@ -274,7 +384,7 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#msi">MSI (Maharaja Surajmal Institute)</a></td>
+        <td style="padding:10px 14px"><a href="/msi-admission.php">MSI (Maharaja Surajmal Institute)</a></td>
         <td style="padding:10px 14px">Janakpuri</td>
         <td style="padding:10px 14px">B.Com, BA Economics, BA English</td>
       </tr>
@@ -284,12 +394,12 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Com, BA Economics</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#maims">MAIMS (Maharaja Agrasen Institute of Management Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/maims-admission.php">MAIMS (Maharaja Agrasen Institute of Management Studies)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">B.Com, BA Economics, BCA</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#iitm">IITM (International Institute of Technology &amp; Management)</a></td>
+        <td style="padding:10px 14px"><a href="/iitm-admission.php">IITM (International Institute of Technology &amp; Management)</a></td>
         <td style="padding:10px 14px">Janakpuri</td>
         <td style="padding:10px 14px">B.Com, BCA</td>
       </tr>
@@ -301,7 +411,7 @@ include 'include/components/hero-banner.php';
 
   <!-- How to Choose -->
   <h2>How to Choose the Right IPU College</h2>
-  <p>With 60+ colleges under IPU, choosing the right one can be overwhelming. Here are the key factors to consider:</p>
+  <p>With 80+ colleges under IPU, choosing the right one can be overwhelming. Here are the key factors to consider:</p>
   <ul>
     <li><strong>Course availability:</strong> Ensure the college offers your preferred specialisation (e.g., AIML at MAIT, Robotics at USAR).</li>
     <li><strong>Location &amp; commute:</strong> Colleges are spread across Dwarka, Rohini, Janakpuri, Pitampura, and other parts of Delhi.</li>
@@ -331,7 +441,7 @@ include 'include/components/hero-banner.php';
 <!-- FAQ Section -->
 <?php
 $faqs = [
-  ['question' => 'How many colleges are affiliated to IPU in 2026?', 'answer' => 'GGSIPU has 60+ affiliated colleges and constituent university schools in Delhi and NCR, covering engineering, management, law, media, commerce, humanities and more. The number changes periodically as new colleges gain affiliation.'],
+  ['question' => 'How many colleges are affiliated to IPU in 2026?', 'answer' => 'GGSIPU has 80+ affiliated colleges and constituent university schools in Delhi and NCR, covering engineering, management, law, media, commerce, humanities and more. The number changes periodically as new colleges gain affiliation.'],
   ['question' => 'Which are the top engineering colleges under IPU?', 'answer' => 'USICT (Dwarka), MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), and BVP/BVCOE (Paschim Vihar) are consistently ranked among the top engineering colleges under IPU based on placements and cutoffs. Call 9899991342 for personalised college recommendations based on your JEE Main rank.'],
   ['question' => 'Which are the top law colleges under IPU?', 'answer' => 'USLS (University School of Law & Legal Studies) on the IPU Dwarka campus is the top law college. VIPS Law School in Pitampura and MAIMS in Rohini are also well-regarded for BA LLB and BBA LLB programmes.'],
   ['question' => 'How does admission to IPU colleges work?', 'answer' => 'Clear the relevant entrance exam (JEE Main for B.Tech, CUET for BBA/B.Com/BJMC/BA, CLAT for Law, NATA for B.Arch), register on ipu.ac.in, fill your college preferences during centralised IPU counselling, and report to the allotted college after seat allocation.'],
