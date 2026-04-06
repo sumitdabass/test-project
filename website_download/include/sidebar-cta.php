@@ -31,6 +31,8 @@ $_SESSION['form_loaded_at'] = time();
       <input type="text" name="website" tabindex="-1" autocomplete="off">
     </div>
 
+    <input type="hidden" name="page_url" value="<?= htmlspecialchars($_SERVER['REQUEST_URI'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
+
     <div style="margin-bottom:12px">
       <input type="text" name="name" placeholder="Your Name" required autocomplete="name"
              style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;transition:border-color .2s"
@@ -79,6 +81,15 @@ $_SESSION['form_loaded_at'] = time();
       Free guidance. No spam.
     </p>
   </form>
+  <script>
+  document.querySelector('.enquiry-form').addEventListener('submit', function(e) {
+    var btn = this.querySelector('button[type="submit"]');
+    if (btn.disabled) { e.preventDefault(); return false; }
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    btn.style.opacity = '0.7';
+  });
+  </script>
 </div>
 
 <!-- Popular Guides -->
