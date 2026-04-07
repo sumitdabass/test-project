@@ -3,13 +3,13 @@
 <title>Top 10 IPU Colleges 2026 | Best GGSIPU Affiliated Colleges Ranking</title>
 <meta name="description" content="Top 10 best IPU (GGSIPU) colleges 2026 ranked overall: VIPS, MAIT, USICT, MAIMS, MSIT, BPIT, BVP, MSI, JIMS, Tecnia. Fees, cutoff, placements. Call 9899991342.">
 <meta name="keywords" content="top IPU colleges, best GGSIPU colleges 2026, top 10 IPU colleges, IPU college ranking, best IP University colleges, VIPS MAIT USICT ranking">
-<link rel="canonical" href="https://ipu.co.in/top-ipu-colleges-2026.php">
+<link rel="canonical" href="https://ipu.co.in/top-ipu-colleges.php">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Top 10 IPU Colleges 2026 – Best GGSIPU Affiliated Colleges Ranking">
 <meta property="og:description" content="Complete ranking of the top 10 IPU colleges across all programmes. VIPS, MAIT, USICT, MAIMS, MSIT, BPIT compared by fees, placements and cutoffs.">
-<meta property="og:url" content="https://ipu.co.in/top-ipu-colleges-2026.php">
+<meta property="og:url" content="https://ipu.co.in/top-ipu-colleges.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -29,7 +29,7 @@
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-ipu-colleges-2026.php"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-ipu-colleges.php"}
 }
 </script>
 
@@ -406,8 +406,8 @@ $related_pages = [
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Complete IPU admission guide for all programmes'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 110+ IPU affiliated colleges in Delhi'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Top IPU engineering colleges ranking for 2026'],
-  ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu-2026.php', 'desc' => 'Top 10 MBA colleges under IP University ranking'],
-  ['title' => 'Top Law Colleges in IPU 2026', 'url' => '/top-law-colleges-ipu-2026.php', 'desc' => 'Top 10 Law colleges under IP University ranking'],
+  ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu.php', 'desc' => 'Top 10 MBA colleges under IP University ranking'],
+  ['title' => 'Top Law Colleges in IPU 2026', 'url' => '/top-law-colleges-ipu.php', 'desc' => 'Top 10 Law colleges under IP University ranking'],
   ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law and MBA at IPU colleges']
 ];
 include 'include/components/related-pages.php';

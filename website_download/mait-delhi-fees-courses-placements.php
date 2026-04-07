@@ -203,7 +203,7 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MAIT Admission Guide 2026', 'url' => '/mait-admission.php', 'desc' => 'Detailed MAIT admission process, eligibility and counselling guide'],
   ['title' => 'MAIMS Rohini – BBA, BCA, MBA', 'url' => '/maims-delhi-fees-courses.php', 'desc' => 'Sister institute of MAIT — Maharaja Agrasen Institute of Management Studies'],
-  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling-2026.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],
+  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Round-wise JEE Main cutoffs for MAIT, USICT, MSIT and other IPU colleges'],
   ['title' => 'Top B.Tech Colleges in Delhi (IPU)', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare MAIT with MSIT, BPIT, GTBIT, BVP and other top engineering colleges'],
   ['title' => 'B.Tech Management Quota IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Eligibility, fees and process for management quota at MAIT and other IPU colleges']

@@ -186,7 +186,7 @@ $related_pages = [
   ['title' => 'MAIMS Admission Guide', 'url' => '/maims-admission.php', 'desc' => 'Detailed MAIMS admission process, eligibility and counselling guide'],
   ['title' => 'MAIT Delhi: Full Form, Fees & Placements', 'url' => '/mait-delhi-fees-courses-placements.php', 'desc' => 'Sister institute of MAIMS — engineering college on the same Rohini campus'],
   ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete BBA admission guide for IPU colleges including MAIMS'],
-  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling-2026.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],
+  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],
   ['title' => 'Maharaja Agrasen Business School (PGDM)', 'url' => '/maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php', 'desc' => 'PGDM programme at Maharaja Agrasen Business School Delhi'],
   ['title' => 'BBA Management Quota IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Eligibility, fees and process for management quota seats in BBA at IPU colleges']
 ];

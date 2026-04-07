@@ -2,12 +2,12 @@
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 BCA Colleges in IPU 2026 | Fees, Cutoff, Placements Ranking</title>
 <meta name="description" content="Top 10 BCA colleges under IP University 2026 ranked: VIPS, IITM, MSI, MAIMS, JIMS. Fees Rs.80K-1.5L, cutoff, placements. Call 9899991342 for free guidance.">
-<link rel="canonical" href="https://ipu.co.in/top-bca-colleges-ipu-2026.php">
+<link rel="canonical" href="https://ipu.co.in/top-bca-colleges-ipu.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Top 10 BCA Colleges in IPU 2026 – Ranking, Fees & Placements">
 <meta property="og:description" content="Compare the top 10 BCA colleges under IP University with CUET cutoffs, fees and placements. VIPS, IITM, MSI, MAIMS and more.">
-<meta property="og:url" content="https://ipu.co.in/top-bca-colleges-ipu-2026.php">
+<meta property="og:url" content="https://ipu.co.in/top-bca-colleges-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -27,7 +27,7 @@
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-bca-colleges-ipu-2026.php"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-bca-colleges-ipu.php"}
 }
 </script>
 
@@ -40,16 +40,16 @@
   "itemListOrder": "https://schema.org/ItemListOrderDescending",
   "numberOfItems": 10,
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#vips"},
-    {"@type": "ListItem", "position": 2, "name": "IITM Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#iitm"},
-    {"@type": "ListItem", "position": 3, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#msi"},
-    {"@type": "ListItem", "position": 4, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#maims"},
-    {"@type": "ListItem", "position": 5, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#jims"},
-    {"@type": "ListItem", "position": 6, "name": "IITM Innovation D-27 Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#iitm-innovation"},
-    {"@type": "ListItem", "position": 7, "name": "SGTBIMIT GTK Road", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#sgtbimit"},
-    {"@type": "ListItem", "position": 8, "name": "Trinity Institute Dwarka", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#trinity"},
-    {"@type": "ListItem", "position": 9, "name": "Don Bosco Institute Okhla", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#don-bosco"},
-    {"@type": "ListItem", "position": 10, "name": "Tecnia Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu-2026.php#tecnia"}
+    {"@type": "ListItem", "position": 1, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#vips"},
+    {"@type": "ListItem", "position": 2, "name": "IITM Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#iitm"},
+    {"@type": "ListItem", "position": 3, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#msi"},
+    {"@type": "ListItem", "position": 4, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#maims"},
+    {"@type": "ListItem", "position": 5, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#jims"},
+    {"@type": "ListItem", "position": 6, "name": "IITM Innovation D-27 Janakpuri", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#iitm-innovation"},
+    {"@type": "ListItem", "position": 7, "name": "SGTBIMIT GTK Road", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#sgtbimit"},
+    {"@type": "ListItem", "position": 8, "name": "Trinity Institute Dwarka", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#trinity"},
+    {"@type": "ListItem", "position": 9, "name": "Don Bosco Institute Okhla", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#don-bosco"},
+    {"@type": "ListItem", "position": 10, "name": "Tecnia Rohini", "url": "https://ipu.co.in/top-bca-colleges-ipu.php#tecnia"}
   ]
 }
 </script>
@@ -236,9 +236,9 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu-2026.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
-  ['title' => 'Top 10 B.Com Colleges in IPU 2026', 'url' => '/top-bcom-colleges-ipu-2026.php', 'desc' => 'Ranked B.Com Hons colleges under IPU with fees and placements'],
-  ['title' => 'Top 10 MCA Colleges in IPU 2026', 'url' => '/top-mca-colleges-ipu-2026.php', 'desc' => 'Ranked MCA colleges under IPU with NIMCET cutoffs and fees'],
+  ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
+  ['title' => 'Top 10 B.Com Colleges in IPU 2026', 'url' => '/top-bcom-colleges-ipu.php', 'desc' => 'Ranked B.Com Hons colleges under IPU with fees and placements'],
+  ['title' => 'Top 10 MCA Colleges in IPU 2026', 'url' => '/top-mca-colleges-ipu.php', 'desc' => 'Ranked MCA colleges under IPU with NIMCET cutoffs and fees'],
   ['title' => 'IPU BCA Admission 2026', 'url' => '/IPU-BCA-admission-2026.php', 'desc' => 'Complete BCA admission guide with eligibility and dates'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges'],
   ['title' => 'Top B.Tech Colleges Delhi 2026', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Ranked B.Tech colleges under IPU with cutoffs and placements']

@@ -3,13 +3,13 @@
 <title>Top 10 MBA Colleges in IPU 2026 | Fees, CAT Cutoff, Placements Ranking</title>
 <meta name="description" content="Top 10 MBA colleges under IP University 2026 ranked: USMS, MAIMS, RDIAS, JIMS, Tecnia. CAT/CMAT cutoff, fees Rs.1.3L, placements 6-12 LPA. Call 9899991342.">
 <meta name="keywords" content="top MBA colleges IPU, best MBA colleges GGSIPU, USMS MBA, IPU MBA fees, CAT cutoff IPU, MAIMS MBA, JIMS Rohini MBA, IPU MBA placements 2026">
-<link rel="canonical" href="https://ipu.co.in/top-mba-colleges-ipu-2026.php">
+<link rel="canonical" href="https://ipu.co.in/top-mba-colleges-ipu.php">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Top 10 MBA Colleges in IPU 2026 – Fees, CAT Cutoff & Placements">
 <meta property="og:description" content="Compare the top 10 MBA colleges under IP University. USMS, MAIMS, RDIAS, JIMS ranked by placements, fees and CAT cutoff.">
-<meta property="og:url" content="https://ipu.co.in/top-mba-colleges-ipu-2026.php">
+<meta property="og:url" content="https://ipu.co.in/top-mba-colleges-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -29,7 +29,7 @@
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-mba-colleges-ipu-2026.php"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-mba-colleges-ipu.php"}
 }
 </script>
 
@@ -43,16 +43,16 @@
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 10,
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "USMS (University School of Management Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#usms"},
-    {"@type": "ListItem", "position": 2, "name": "MAIMS (via MAIT)", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#maims"},
-    {"@type": "ListItem", "position": 3, "name": "RDIAS (Rukmini Devi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#rdias"},
-    {"@type": "ListItem", "position": 4, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#jims"},
-    {"@type": "ListItem", "position": 5, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#tecnia"},
-    {"@type": "ListItem", "position": 6, "name": "MAIT Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#mait"},
-    {"@type": "ListItem", "position": 7, "name": "HMR Institute of Technology & Management", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#hmr"},
-    {"@type": "ListItem", "position": 8, "name": "DIAS (Delhi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#dias"},
-    {"@type": "ListItem", "position": 9, "name": "Don Bosco Institute of Technology", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#donbosco"},
-    {"@type": "ListItem", "position": 10, "name": "DTC (Delhi Technical Campus)", "url": "https://ipu.co.in/top-mba-colleges-ipu-2026.php#dtc"}
+    {"@type": "ListItem", "position": 1, "name": "USMS (University School of Management Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#usms"},
+    {"@type": "ListItem", "position": 2, "name": "MAIMS (via MAIT)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#maims"},
+    {"@type": "ListItem", "position": 3, "name": "RDIAS (Rukmini Devi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#rdias"},
+    {"@type": "ListItem", "position": 4, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#jims"},
+    {"@type": "ListItem", "position": 5, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#tecnia"},
+    {"@type": "ListItem", "position": 6, "name": "MAIT Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#mait"},
+    {"@type": "ListItem", "position": 7, "name": "HMR Institute of Technology & Management", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#hmr"},
+    {"@type": "ListItem", "position": 8, "name": "DIAS (Delhi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#dias"},
+    {"@type": "ListItem", "position": 9, "name": "Don Bosco Institute of Technology", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#donbosco"},
+    {"@type": "ListItem", "position": 10, "name": "DTC (Delhi Technical Campus)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#dtc"}
   ]
 }
 </script>
@@ -269,8 +269,8 @@ $related_pages = [
   ['title' => 'USMS Dwarka Admission Guide', 'url' => '/usms-admission.php', 'desc' => 'Admission guide for University School of Management Studies'],
   ['title' => 'MBA Colleges under IP University', 'url' => '/mba-colleges-under-IP-university.php', 'desc' => 'Complete list of MBA colleges under GGSIPU with fees'],
   ['title' => 'IPU CET PG 2026', 'url' => '/ipu-cet-2025.php', 'desc' => 'IPU CET PG exam dates, eligibility and syllabus'],
-  ['title' => 'Top Law Colleges in IPU 2026', 'url' => '/top-law-colleges-ipu-2026.php', 'desc' => 'Top 10 law colleges under IP University ranking'],
-  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges-2026.php', 'desc' => 'Best IPU colleges across all programmes ranked']
+  ['title' => 'Top Law Colleges in IPU 2026', 'url' => '/top-law-colleges-ipu.php', 'desc' => 'Top 10 law colleges under IP University ranking'],
+  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges.php', 'desc' => 'Best IPU colleges across all programmes ranked']
 ];
 include 'include/components/related-pages.php';
 ?>

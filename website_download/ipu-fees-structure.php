@@ -3,12 +3,12 @@
 <title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>
 <meta name="description" content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.55L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342.">
 <meta name="keywords" content="ipu fees structure, ipu fees for bba, ipu llb fees, ipu law fees, ggsipu law fees, ggsipu ba llb fees, ip university ba llb fees, mait btech fees, ipu bba fees, ipu mba fees, ipu bca fees, ipu counselling fees, ipu llb 3 year fees, maims bba fees, bjmc course fees, indraprastha university fees">
-<link rel="canonical" href="https://ipu.co.in/ipu-fees-structure-2026.php">
+<link rel="canonical" href="https://ipu.co.in/ipu-fees-structure.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="IPU Fee Structure 2026 – Complete Course-wise Fees">
 <meta property="og:description" content="GGSIPU 2026-27 fees per official brochure: B.Tech, BBA, BA LLB, MBA, BCA, B.Com, MCA, M.Tech, B.Arch, MBBS – with refund policy. Call 9899991342.">
-<meta property="og:url" content="https://ipu.co.in/ipu-fees-structure-2026.php">
+<meta property="og:url" content="https://ipu.co.in/ipu-fees-structure.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -121,7 +121,7 @@ include 'include/components/hero-banner.php';
     <li><strong>SC / ST / PwD:</strong> Rs. 750</li>
     <li><strong>NRI / Foreign Nationals:</strong> USD 50</li>
   </ul>
-  <p>This counselling fee is adjusted against your first-year tuition fee on admission. For full counselling process details see our <a href="/ipu-counselling-2026.php">IPU Counselling 2026 Guide</a>.</p>
+  <p>This counselling fee is adjusted against your first-year tuition fee on admission. For full counselling process details see our <a href="/ipu-counselling.php">IPU Counselling 2026 Guide</a>.</p>
 
   <h2>IPU Fee Refund Policy (UGC Slabs)</h2>
   <p>If a student withdraws from an admitted course, the fee refund follows the UGC refund policy notified for self-financing institutions and university schools:</p>
@@ -180,7 +180,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling-2026.php', 'desc' => 'Complete GGSIPU counselling schedule, registration & process'],
+  ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling.php', 'desc' => 'Complete GGSIPU counselling schedule, registration & process'],
   ['title' => 'MAIT Delhi Fees & Placements', 'url' => '/mait-delhi-fees-courses-placements.php', 'desc' => 'MAIT Rohini B.Tech fees, courses, cutoff and placements'],
   ['title' => 'MAIMS Rohini BBA & MBA Fees', 'url' => '/maims-delhi-fees-courses.php', 'desc' => 'Complete MAIMS course list with fees and placements'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'B.Tech admission with eligibility, JEE Main cutoffs and fees'],

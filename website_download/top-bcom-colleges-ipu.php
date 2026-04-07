@@ -2,12 +2,12 @@
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 B.Com (Hons) Colleges in IPU 2026 | Fees, Cutoff, Placements</title>
 <meta name="description" content="Top 10 B.Com Hons colleges IP University 2026 ranked: MAIMS, VIPS, MSI, JIMS, DIAS. Fees Rs.40K-1.5L, CUET cutoff, placements. Call 9899991342.">
-<link rel="canonical" href="https://ipu.co.in/top-bcom-colleges-ipu-2026.php">
+<link rel="canonical" href="https://ipu.co.in/top-bcom-colleges-ipu.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Top 10 B.Com (Hons) Colleges in IPU 2026 – Ranking & Fees">
 <meta property="og:description" content="Compare the top 10 B.Com Hons colleges under IP University with CUET cutoffs, fees and placements. MAIMS, VIPS, MSI, JIMS, DIAS and more.">
-<meta property="og:url" content="https://ipu.co.in/top-bcom-colleges-ipu-2026.php">
+<meta property="og:url" content="https://ipu.co.in/top-bcom-colleges-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -27,7 +27,7 @@
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-bcom-colleges-ipu.php"}
 }
 </script>
 
@@ -40,16 +40,16 @@
   "itemListOrder": "https://schema.org/ItemListOrderDescending",
   "numberOfItems": 10,
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#maims"},
-    {"@type": "ListItem", "position": 2, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#vips"},
-    {"@type": "ListItem", "position": 3, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#msi"},
-    {"@type": "ListItem", "position": 4, "name": "JIMS Kalkaji", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#jims"},
-    {"@type": "ListItem", "position": 5, "name": "DIAS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#dias"},
-    {"@type": "ListItem", "position": 6, "name": "Trinity Institute Dwarka", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#trinity"},
-    {"@type": "ListItem", "position": 7, "name": "Tecnia Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#tecnia"},
-    {"@type": "ListItem", "position": 8, "name": "RDIAS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#rdias"},
-    {"@type": "ListItem", "position": 9, "name": "IITM D-29 Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#iitm"},
-    {"@type": "ListItem", "position": 10, "name": "MERI Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu-2026.php#meri"}
+    {"@type": "ListItem", "position": 1, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#maims"},
+    {"@type": "ListItem", "position": 2, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#vips"},
+    {"@type": "ListItem", "position": 3, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#msi"},
+    {"@type": "ListItem", "position": 4, "name": "JIMS Kalkaji", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#jims"},
+    {"@type": "ListItem", "position": 5, "name": "DIAS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#dias"},
+    {"@type": "ListItem", "position": 6, "name": "Trinity Institute Dwarka", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#trinity"},
+    {"@type": "ListItem", "position": 7, "name": "Tecnia Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#tecnia"},
+    {"@type": "ListItem", "position": 8, "name": "RDIAS Rohini", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#rdias"},
+    {"@type": "ListItem", "position": 9, "name": "IITM D-29 Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#iitm"},
+    {"@type": "ListItem", "position": 10, "name": "MERI Janakpuri", "url": "https://ipu.co.in/top-bcom-colleges-ipu.php#meri"}
   ]
 }
 </script>
@@ -237,9 +237,9 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu-2026.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
-  ['title' => 'Top 10 BCA Colleges in IPU 2026', 'url' => '/top-bca-colleges-ipu-2026.php', 'desc' => 'Ranked BCA colleges under IPU with fees and placements'],
-  ['title' => 'Top 10 MCA Colleges in IPU 2026', 'url' => '/top-mca-colleges-ipu-2026.php', 'desc' => 'Ranked MCA colleges under IPU with NIMCET cutoffs'],
+  ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
+  ['title' => 'Top 10 BCA Colleges in IPU 2026', 'url' => '/top-bca-colleges-ipu.php', 'desc' => 'Ranked BCA colleges under IPU with fees and placements'],
+  ['title' => 'Top 10 MCA Colleges in IPU 2026', 'url' => '/top-mca-colleges-ipu.php', 'desc' => 'Ranked MCA colleges under IPU with NIMCET cutoffs'],
   ['title' => 'IPU B.Com Admission 2026', 'url' => '/IPU-BCom-admission-2026.php', 'desc' => 'Complete B.Com Hons admission guide with eligibility and dates'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges'],
   ['title' => 'Top B.Tech Colleges Delhi 2026', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Ranked B.Tech colleges under IPU with cutoffs and placements']

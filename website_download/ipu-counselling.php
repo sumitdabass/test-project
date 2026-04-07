@@ -3,12 +3,12 @@
 <title>IPU Counselling 2026 – Dates, Registration, Fees, Process & Last Date</title>
 <meta name="description" content="IPU / GGSIPU Counselling 2026 – registration dates, last date, fee, step-by-step choice filling & seat allotment rounds. Call 9899991342 for free expert help.">
 <meta name="keywords" content="ipu counselling 2026, ggsipu counselling 2026, ipu counselling date, ggsipu counselling date 2026, ipu counselling registration, ipu counselling last date, ipu counselling fees, when will ipu counselling start 2026, what is ipu counselling, ggsipu counselling registration">
-<link rel="canonical" href="https://ipu.co.in/ipu-counselling-2026.php">
+<link rel="canonical" href="https://ipu.co.in/ipu-counselling.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="IPU Counselling 2026 – Dates, Registration, Fees & Process">
 <meta property="og:description" content="GGSIPU Counselling 2026 complete schedule – dates, registration, fee, choice filling, seat allotment rounds for B.Tech, BBA, BCA, Law, BJMC, MBA. Call 9899991342.">
-<meta property="og:url" content="https://ipu.co.in/ipu-counselling-2026.php">
+<meta property="og:url" content="https://ipu.co.in/ipu-counselling.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 

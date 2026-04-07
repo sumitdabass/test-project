@@ -3,13 +3,13 @@
 <title>Top 10 Law Colleges in IPU 2026 | BA LLB Fees, CLAT Cutoff, Placements</title>
 <meta name="description" content="Top 10 Law colleges under IP University 2026: USLLS, VIPS, MAIMS, CPJ, DME, Fairfield, Ideal. BA LLB fees Rs.1.45L, CLAT cutoff, placements. Call 9899991342.">
 <meta name="keywords" content="top law colleges IPU, best law colleges GGSIPU, USLLS Dwarka, VIPS law, BA LLB IPU, BBA LLB IPU, CLAT cutoff IPU, IPU law admission 2026">
-<link rel="canonical" href="https://ipu.co.in/top-law-colleges-ipu-2026.php">
+<link rel="canonical" href="https://ipu.co.in/top-law-colleges-ipu.php">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Top 10 Law Colleges in IPU 2026 – BA LLB Fees, CLAT Cutoff & Placements">
 <meta property="og:description" content="Compare the top 10 Law colleges under IP University. USLLS, VIPS, MAIMS, CPJ, DME ranked by placements, fees and CLAT cutoff.">
-<meta property="og:url" content="https://ipu.co.in/top-law-colleges-ipu-2026.php">
+<meta property="og:url" content="https://ipu.co.in/top-law-colleges-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
@@ -29,7 +29,7 @@
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-law-colleges-ipu-2026.php"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ipu.co.in/top-law-colleges-ipu.php"}
 }
 </script>
 
@@ -43,16 +43,16 @@
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 10,
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "USLLS (University School of Law & Legal Studies)", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#uslls"},
-    {"@type": "ListItem", "position": 2, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#vips"},
-    {"@type": "ListItem", "position": 3, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#maims"},
-    {"@type": "ListItem", "position": 4, "name": "CPJ College (Chandarprabhu Jain)", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#cpj"},
-    {"@type": "ListItem", "position": 5, "name": "DME (Delhi Metropolitan Education)", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#dme"},
-    {"@type": "ListItem", "position": 6, "name": "Fairfield Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#fairfield"},
-    {"@type": "ListItem", "position": 7, "name": "Ideal Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#ideal"},
-    {"@type": "ListItem", "position": 8, "name": "JEMTEC Greater Noida", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#jemtec"},
-    {"@type": "ListItem", "position": 9, "name": "KCC Institute of Legal & Higher Education", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#kcc"},
-    {"@type": "ListItem", "position": 10, "name": "Trinity Institute of Professional Studies (TIPS)", "url": "https://ipu.co.in/top-law-colleges-ipu-2026.php#tips"}
+    {"@type": "ListItem", "position": 1, "name": "USLLS (University School of Law & Legal Studies)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#uslls"},
+    {"@type": "ListItem", "position": 2, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-law-colleges-ipu.php#vips"},
+    {"@type": "ListItem", "position": 3, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-law-colleges-ipu.php#maims"},
+    {"@type": "ListItem", "position": 4, "name": "CPJ College (Chandarprabhu Jain)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#cpj"},
+    {"@type": "ListItem", "position": 5, "name": "DME (Delhi Metropolitan Education)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#dme"},
+    {"@type": "ListItem", "position": 6, "name": "Fairfield Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#fairfield"},
+    {"@type": "ListItem", "position": 7, "name": "Ideal Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#ideal"},
+    {"@type": "ListItem", "position": 8, "name": "JEMTEC Greater Noida", "url": "https://ipu.co.in/top-law-colleges-ipu.php#jemtec"},
+    {"@type": "ListItem", "position": 9, "name": "KCC Institute of Legal & Higher Education", "url": "https://ipu.co.in/top-law-colleges-ipu.php#kcc"},
+    {"@type": "ListItem", "position": 10, "name": "Trinity Institute of Professional Studies (TIPS)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#tips"}
   ]
 }
 </script>
@@ -297,8 +297,8 @@ $related_pages = [
   ['title' => 'USLLS Dwarka Admission Guide', 'url' => '/uslls-admission.php', 'desc' => 'Detailed guide for USLLS BA LLB and LLM programmes'],
   ['title' => 'VIPS Pitampura Law', 'url' => '/vips-pitampura.php', 'desc' => 'VIPS Pitampura law programme admission and fees'],
   ['title' => 'IPU BA LLB Admission', 'url' => '/ipu-ba-llb-admission.php', 'desc' => '5-year integrated BA LLB admission under IPU'],
-  ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu-2026.php', 'desc' => 'Top 10 MBA colleges under IP University ranking'],
-  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges-2026.php', 'desc' => 'Best IPU colleges across all programmes ranked']
+  ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu.php', 'desc' => 'Top 10 MBA colleges under IP University ranking'],
+  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges.php', 'desc' => 'Best IPU colleges across all programmes ranked']
 ];
 include 'include/components/related-pages.php';
 ?>
