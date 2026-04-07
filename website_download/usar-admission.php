@@ -70,7 +70,7 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">USAR (University School of Automation & Robotics) is a constituent school of GGSIPU located on the Dwarka campus. It offers B.Tech in Automation & Robotics, Instrumentation & Control, and related programmes. Admission is through JEE Main counselling. USAR is known for its specialised robotics labs and growing industry partnerships.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">USAR (University School of Automation & Robotics) is a constituent school of GGSIPU located on the Dwarka East campus. It offers B.Tech in Automation & Robotics and Instrumentation & Control, plus an expanded PG portfolio: M.Tech in AI & ML, AI & Data Science, Robotics & AI (NEW), and Industrial IoT. B.Tech admission is through JEE Main; M.Tech is through GATE/IPU CET via GGSIPU counselling. USAR is known for specialised robotics labs and growing industry partnerships.</p>
   </section>
   <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
@@ -94,8 +94,11 @@ include 'include/components/hero-banner.php';
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Automation & Robotics</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Instrumentation & Control Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech (Robotics / Instrumentation)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">25 each</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD (Automation & Robotics)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Artificial Intelligence & Machine Learning</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Artificial Intelligence & Data Science</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Robotics & Artificial Intelligence <span style="color:#c0392b;font-size:11px;font-weight:700">(NEW)</span></td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Industrial Internet of Things (IIoT)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD (Automation & Robotics)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
 

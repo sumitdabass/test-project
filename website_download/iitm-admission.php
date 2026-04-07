@@ -55,13 +55,15 @@ include 'include/components/hero-banner.php';
 <h2>Courses Offered at IITM (IPU Affiliated)</h2>
 
 <table class="table table-bordered table-striped">
-<thead><tr><th>Programme</th><th>Duration</th><th>Eligibility</th></tr></thead>
+<thead><tr><th>Programme</th><th>Duration</th><th>Seats</th><th>Eligibility</th></tr></thead>
 <tbody>
-<tr><td>B.Com (Hons)</td><td>3 Years</td><td>IPU CET / CUET + 10+2 passed</td></tr>
-<tr><td>BCA (Bachelor of Computer Applications)</td><td>3 Years</td><td>IPU CET / CUET + 10+2 passed</td></tr>
-<tr><td>BBA (Bachelor of Business Administration)</td><td>3 Years</td><td>IPU CET / CUET + 10+2 passed</td></tr>
+<tr><td>B.Com (Hons)</td><td>3 Years</td><td>&mdash;</td><td>IPU CET / CUET + 10+2 passed</td></tr>
+<tr><td>BCA (Bachelor of Computer Applications)</td><td>3 Years</td><td>&mdash;</td><td>IPU CET / CUET + 10+2 passed</td></tr>
+<tr><td>BBA (Bachelor of Business Administration)</td><td>3 Years</td><td>&mdash;</td><td>IPU CET / CUET + 10+2 passed</td></tr>
+<tr><td>MCA (Master of Computer Applications)</td><td>2 Years</td><td>60</td><td>IPU CET / NIMCET + BCA/B.Sc (CS)</td></tr>
 </tbody>
 </table>
+<p style="font-size:13px;color:#64748b">As per the GGSIPU Admission Brochure 2026-27, IITM offers MCA (60 seats) in addition to its undergraduate programmes.</p>
 
 <h3>B.Com at IITM</h3>
 <p>The B.Com programme covers financial accounting, cost accounting, taxation, business law, auditing, and economics. Students gain a thorough understanding of commerce fundamentals that prepares them for careers in accounting, banking, and financial services. The curriculum also includes computer applications and practical accounting software training.</p>

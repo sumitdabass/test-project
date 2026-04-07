@@ -92,10 +92,12 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Full-Time)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD in Management</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Full-Time, General)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (International Business)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD in Management</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
+  <p style="font-size:13px;color:#64748b;margin-top:8px">As per GGSIPU Admission Brochure 2026-27, USMS operates its programmes from USMS Sector 16C, Dwarka campus.</p>
 
   <h3>MBA Specializations</h3>
   <ul>

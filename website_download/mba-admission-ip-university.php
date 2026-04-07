@@ -18,6 +18,64 @@ include_once("include/form-handler.php");
 $breadcrumbs = [['Home', '/'], ['MBA Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is IPU MBA admission 2026 process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MBA admission 2026 is through CAT, CMAT, MAT or IPU CET (MBA) scores. Steps: register at ipu.admissions.nic.in, appear in entrance, qualify cutoff, register for IPU counselling, fill college choices (USMS, MAIMS, RDIAS, JIMS), get seat allotment, complete document verification and pay fees. Call 9899991342 for free MBA admission help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility for IPU MBA 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MBA 2026 eligibility: Bachelor's degree in any discipline with minimum 50 percent aggregate (45 percent for SC/ST/OBC/PwD) from a recognised university. Final year graduation students can also apply provisionally. A valid CAT/CMAT/MAT or IPU CET (MBA) score is mandatory. Call 9899991342 for eligibility check and college shortlisting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What entrance exam is required for IPU MBA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MBA admission accepts CAT (Common Admission Test), CMAT (Common Management Admission Test), MAT, and IPU CET (MBA) scores. CAT and CMAT are most preferred. After scoring above the cutoff, candidates participate in IPU counselling for college and seat allotment. Call 9899991342 to know the right entrance for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are IPU MBA fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MBA fees 2026-27 vary by college: USMS (university school) around Rs. 1,30,000 per year, MAIMS Rs. 1,30,000-1,40,000 per year, RDIAS Rs. 1,35,000 per year, JIMS Rs. 1,40,000 per year. Total 2-year MBA fee is roughly Rs. 2.6-2.8 lakh. Call 9899991342 for college-wise fee comparison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which are the top MBA colleges under IPU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top MBA colleges under GGSIPU Delhi include USMS (University School of Management Studies, Dwarka), MAIMS Rohini, RDIAS Pitampura, JIMS Rohini, JIMS Kalkaji, BVIMR Paschim Vihar, IINTM Janakpuri, and Tecnia Institute. USMS is the flagship govt school. Call 9899991342 for MBA college shortlisting based on score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is MBA management quota available in IPU colleges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most IPU MBA colleges fill 100 percent seats through IPU counselling based on entrance scores; there is no separate management quota at govt-funded schools like USMS. However, some private affiliated colleges may have NRI/sponsored category seats with different eligibility. Call 9899991342 for verified MBA seat options and category-wise help."
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>

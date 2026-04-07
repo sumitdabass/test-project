@@ -99,6 +99,61 @@ include 'include/components/hero-banner.php';
     <li><strong>Diploma holders:</strong> Candidates with a 10+3 Diploma (with Mathematics) recognised by AICTE/State Board are also eligible.</li>
   </ul>
 
+  <h2>Detailed Eligibility (Programme Code 100)</h2>
+  <ul>
+    <li>Class 12 with PCM &mdash; minimum <strong>50% aggregate</strong></li>
+    <li>OR a 10+3 Diploma with Mathematics with minimum 50%</li>
+    <li><strong>Council of Architecture (CoA) registration</strong> is mandatory after admission</li>
+    <li>Minimum age: 17 years</li>
+  </ul>
+
+  <h2>Entrance Test &mdash; NATA / JEE Main Paper 2</h2>
+  <p>Admission is based on a valid <strong>NATA 2026</strong> score OR <strong>JEE Main 2026 Paper 2 (B.Arch)</strong> score. Both exams are accepted for IPU centralised counselling; appearing for both maximises your chances.</p>
+
+  <h2>Affiliated B.Arch Colleges (3 under IPU)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">College</th>
+        <th style="padding:10px 14px;text-align:left">Location</th>
+        <th style="padding:10px 14px;text-align:left">Seats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBS School of Planning &amp; Architecture</td><td style="padding:10px 14px">Sec-9, Dwarka</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Vastu Kala Academy</td><td style="padding:10px 14px">9/1 Aruna Asaf Ali Marg, New Delhi</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">University School of Architecture &amp; Planning (USAP)</td><td style="padding:10px 14px">East Delhi Campus, Surajmal Vihar</td><td style="padding:10px 14px">120</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Fee Structure 2026-27 (USAP B.Arch &mdash; 5 year)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Year</th>
+        <th style="padding:10px 14px;text-align:left">Tuition Fee (Rs.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 1</td><td style="padding:10px 14px">1,69,400</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 2</td><td style="padding:10px 14px">1,86,340</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 3</td><td style="padding:10px 14px">2,04,974</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 4</td><td style="padding:10px 14px">2,25,471</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 5</td><td style="padding:10px 14px">~2,48,019</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Plus University Charges of Rs. 20,000/year and other charges (Examination, Innovation &amp; Incubation, Development &amp; Infrastructure). <strong>Total Year 1 (approx):</strong> Rs. 2,04,900.</p>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing) is permitted up to 15 days before commencement of classes. After commencement: 100% refund before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Arch admission guidance.</em></p>
+
   <h2>B.Arch Admission Process at IPU 2026</h2>
   <p>The B.Arch admission process at IPU follows these steps:</p>
   <ol>

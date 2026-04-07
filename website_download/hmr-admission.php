@@ -66,6 +66,17 @@ include 'include/components/hero-banner.php';
 </tbody>
 </table>
 
+<h3>Postgraduate Programmes</h3>
+
+<p>As per the GGSIPU Admission Brochure 2026-27, HMR Institute offers the following postgraduate programme:</p>
+
+<table class="table table-bordered table-striped">
+<thead><tr><th>Programme</th><th>Duration</th><th>Seats</th><th>Eligibility</th></tr></thead>
+<tbody>
+<tr><td>MBA (Master of Business Administration)</td><td>2 Years</td><td>60</td><td>CAT / MAT / IPU CET</td></tr>
+</tbody>
+</table>
+
 <hr>
 
 <h2>HMR Institute Admission Process 2026</h2>

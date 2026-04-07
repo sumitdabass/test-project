@@ -10,8 +10,8 @@ $college_data = [
     'address' => '28/1, Knowledge Park-III, Greater Noida, Uttar Pradesh',
     'founded' => '',
     'accreditation' => 'AICTE Approved',
-    'total_seats' => 1020,
-    'last_updated' => '2026-04-06',
+    'total_seats' => 1050,
+    'last_updated' => '2026-04-07',
     'ai_summary' => 'Delhi Technical Campus (DTC) is a large engineering college in Knowledge Park-III, Greater Noida, affiliated to GGSIPU. It offers 1000+ B.Tech seats across CSE, AIML, AI&DS, CST, Cyber Security and Applied Math branches. DTC is known for its massive CSE intake of 480 seats. Average placements range from 4-8 LPA with recruiters like TCS, Infosys, Wipro and HCL. For admission guidance, call 9899991342.',
     'about_text' => '<h2>About DTC &ndash; Delhi Technical Campus, Greater Noida</h2>
 <p>Delhi Technical Campus (DTC) is one of the largest engineering colleges affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located in Knowledge Park-III, Greater Noida. The institute is approved by AICTE and offers a wide range of B.Tech programmes with a combined intake exceeding 1000 seats, making it one of the highest-capacity IPU engineering colleges in the NCR region.</p>
@@ -26,6 +26,7 @@ $college_data = [
         ['name' => 'B.Tech CSE (Data Science)', 'duration' => '4 Years', 'seats' => '60'],
         ['name' => 'B.Tech CS & Applied Mathematics', 'duration' => '4 Years', 'seats' => '60'],
         ['name' => 'B.Tech CSE (Cyber Security)', 'duration' => '4 Years', 'seats' => '60'],
+        ['name' => 'MBA (Master of Business Administration)', 'duration' => '2 Years', 'seats' => '30'],
     ],
     'admission_text' => '<p>Admission to all B.Tech programmes at DTC is conducted through the centralised GGSIPU counselling process. Candidates must have a valid JEE Main score and register for IPU counselling.</p>
 <ol>

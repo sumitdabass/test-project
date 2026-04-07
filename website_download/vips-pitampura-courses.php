@@ -201,6 +201,34 @@ include 'include/components/breadcrumb-schema.php';
                         combining theoretical knowledge with practical exposure.
                     </p>
 
+                    <h4>Postgraduate Programmes at VIPS</h4>
+                    <p>
+                        As per the official GGSIPU Admission Brochure 2026-27, VIPS Pitampura offers
+                        a wide range of postgraduate programmes across management, law, humanities, and technology.
+                    </p>
+                    <table style="width:100%;border-collapse:collapse;margin:16px 0">
+                      <thead>
+                        <tr style="background:#0d1b6e;color:#fff">
+                          <th style="padding:10px 14px;text-align:left">PG Programme</th>
+                          <th style="padding:10px 14px;text-align:left">Duration</th>
+                          <th style="padding:10px 14px;text-align:left">Seats</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MCA (Master of Computer Applications)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Corporate Law)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">40</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Alternative Dispute Resolution)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">20</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MA Economics</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MA English</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+                        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech (CSE / AIML / Data Science)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">As per brochure</td></tr>
+                      </tbody>
+                    </table>
+                    <p>
+                        VIPS's LLM, MBA and MCA programmes are highly sought-after for their
+                        reputed faculty, academic depth, and strong placement linkages.
+                    </p>
+
                     <!-- ===== Academic Strengths ===== -->
                     <h3>Academic Environment & Teaching Approach</h3>
 

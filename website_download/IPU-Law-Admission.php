@@ -18,6 +18,80 @@ include_once("include/form-handler.php");
 $breadcrumbs = [['Home', '/'], ['Law Admission 2026', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is IPU Law admission 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU Law admission 2026 covers BA LLB (5-year integrated), BBA LLB (5-year integrated) and LLM (2-year postgraduate) programmes. Admission is through CLAT (Common Law Admission Test) followed by GGSIPU counselling. Top colleges include USLLS (Dwarka), VIPS (Pitampura), MAIMS (Rohini), Amity Law School. Call 9899991342 for free Law admission help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which colleges offer law courses under IP University?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top IPU Law colleges include USLLS (University School of Law and Legal Studies, Dwarka), VIPS (Vivekananda Institute of Professional Studies, Pitampura), MAIMS (Rohini), Amity Law School (Saket), Fairfield Institute, Trinity Institute, IDEAL Institute, JIMS Sector-5 Rohini and CPJ College. Call 9899991342 to shortlist the best law college for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are IPU BA LLB fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU BA LLB fees 2026-27 are approximately Rs. 1,40,000 to Rs. 2,10,000 per year depending on the college. USLLS (govt) charges around Rs. 1.4 lakh per year, while private colleges like VIPS, MAIMS, Amity charge Rs. 1.6-2.1 lakh per year. Total 5-year fee Rs. 7-10 lakh. Call 9899991342 for fee details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does IPU offer 3-year LLB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GGSIPU primarily offers 5-year integrated BA LLB and BBA LLB programmes at its affiliated law colleges; the 3-year LLB course is offered at Campus Law Centre and other Delhi University colleges, not at IPU. However, IPU does offer LLM (2-year postgraduate) for law graduates. Call 9899991342 for course clarification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CLAT required for IPU Law admission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, CLAT (Common Law Admission Test) is the mandatory entrance exam for BA LLB and BBA LLB admission at GGSIPU and its affiliated colleges from 2024-25 onwards. After scoring in CLAT, candidates must register for IPU counselling separately at ipu.admissions.nic.in to fill college choices. Call 9899991342 for CLAT cutoff guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility for IPU BA LLB 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eligibility for IPU BA LLB 2026: Pass in 10+2 (any stream) with minimum 50 percent aggregate marks (45 percent for SC/ST/OBC/PwD) from a recognised board. There is no upper age limit. Candidates must qualify CLAT 2026 and apply through IPU counselling. Call 9899991342 for eligibility and admission support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU Law cutoff for top colleges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU Law cutoff varies by college: USLLS (Dwarka) closes within top 3000-5000 CLAT rank, VIPS Pitampura within 8000-12000 rank, MAIMS Rohini within 12000-18000 rank, Amity Law School within 15000-22000 rank. Cutoffs change yearly based on seat matrix. Call 9899991342 for category-wise cutoff help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Guru Gobind Singh Indraprastha Law college?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Guru Gobind Singh Indraprastha University (GGSIPU) law college usually refers to USLLS (University School of Law and Legal Studies), the flagship government law school within the GGSIPU campus at Sector-16C, Dwarka, Delhi. USLLS offers BA LLB (5-year), LLM (2-year) and PhD programmes. Call 9899991342 for USLLS admission guidance."
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>

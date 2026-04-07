@@ -70,7 +70,7 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">USICT (University School of Information, Communication & Technology) is IPU's flagship engineering school located in Dwarka, Delhi. It offers B.Tech in CSE, IT, and ECE through JEE Main counselling. Average placements range from 12-20 LPA, making it one of the most sought-after IPU schools. Admission is based on JEE Main rank via GGSIPU counselling.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">USICT (University School of Information, Communication & Technology) is IPU's flagship engineering school located in Dwarka, Delhi. It offers B.Tech in CSE, IT, and ECE through JEE Main counselling, plus an extensive PG portfolio including MCA (Software Engineering) and M.Tech specializations in CSE, IT, ECE, VLSI, Information Security, Cyber Security & Blockchain, and Artificial Intelligence. Average placements range from 12-20 LPA, making it one of the most sought-after IPU schools. Admission is based on JEE Main (B.Tech), IPU CET (MCA), and GATE (M.Tech) via GGSIPU counselling.</p>
   </section>
   <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
@@ -95,8 +95,15 @@ include 'include/components/hero-banner.php';
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech (CSE / IT / ECE)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30 each</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD (Various Specializations)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MCA (Software Engineering)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Computer Science & Engineering</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Information Technology</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech VLSI Design</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Information Security</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Cyber Security & Block Chain Technology</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Artificial Intelligence</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD (Various Specializations)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
 

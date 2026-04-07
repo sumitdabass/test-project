@@ -10,9 +10,9 @@ $college_data = [
     'address' => 'Plot No.6, Sector-25, Rohini, Delhi-110085',
     'founded' => '',
     'accreditation' => 'NAAC, AICTE',
-    'total_seats' => 120,
-    'last_updated' => '2026-04-06',
-    'ai_summary' => 'Delhi Institute of Advanced Studies (DIAS) is a NAAC-accredited, IPU-affiliated management college in Sector-25, Rohini, New Delhi. DIAS offers BBA (80 seats) and B.Com (40 seats) under GGSIPU. Known for its NAAC accreditation, strong management focus, and consistent placement record with average packages of 4-7 LPA. For free admission counselling, call 9899991342.',
+    'total_seats' => 180,
+    'last_updated' => '2026-04-07',
+    'ai_summary' => 'Delhi Institute of Advanced Studies (DIAS) is a NAAC-accredited, IPU-affiliated management college in Sector-25, Rohini, New Delhi. DIAS offers BBA (80 seats), B.Com (40 seats) and MBA (60 seats) under GGSIPU. Known for its NAAC accreditation, strong management focus, and consistent placement record with average packages of 4-7 LPA. For free admission counselling, call 9899991342.',
     'about_text' => '<h2>About DIAS – Delhi Institute of Advanced Studies</h2>
 <p>Delhi Institute of Advanced Studies (DIAS) is a well-established management and professional studies institution located in Sector-25, Rohini, New Delhi. Affiliated to Guru Gobind Singh Indraprastha University (GGSIPU) and accredited by the National Assessment and Accreditation Council (NAAC), DIAS has positioned itself as one of the trusted names for management education in Delhi.</p>
 <p>Founded with the objective of nurturing future business leaders and professionals, DIAS offers a blend of academic rigour and industry-oriented learning. The institute maintains close ties with the corporate world through regular guest lectures, industry visits, live projects, and internship programmes. The NAAC accreditation is a testament to the quality standards maintained by the institution across teaching, research, and infrastructure.</p>
@@ -20,6 +20,7 @@ $college_data = [
     'courses' => [
         ['name' => 'BBA', 'duration' => '3 Years', 'seats' => '80'],
         ['name' => 'B.Com', 'duration' => '3 Years', 'seats' => '40'],
+        ['name' => 'MBA (Master of Business Administration)', 'duration' => '2 Years', 'seats' => '60'],
     ],
     'admission_text' => '<p>Admission to DIAS follows the centralised GGSIPU counselling process. Candidates must appear for IPU CET or CUET and register on the GGSIPU counselling portal. Seat allotment is based on entrance exam rank, category, and preference order.</p>
 <ol>

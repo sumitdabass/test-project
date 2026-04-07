@@ -31,6 +31,80 @@ include_once("include/form-handler.php");
   ]
 }
 </script>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the IPU admission process 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU admission 2026 process: (1) Online registration at ipu.admissions.nic.in, (2) Pay application fee Rs. 1500, (3) Appear in entrance exam (JEE Main/CUET/CAT/CLAT/CET), (4) Counselling registration after results, (5) Choice filling for colleges, (6) Seat allotment, (7) Document verification and fee payment at college. Call 9899991342 for end-to-end help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to get admission in IP University Delhi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To get admission in IP University Delhi, register at ipu.admissions.nic.in, qualify the relevant entrance test (JEE Main for B.Tech, CUET for BBA/BCA, CLAT for Law, CAT for MBA), participate in counselling, fill college choices, accept seat allotment, and complete document verification. Call 9899991342 for personalised admission guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility for IPU admission 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU eligibility 2026 varies by course: B.Tech needs 55 percent in PCM (12th); BBA/BCA/BJMC need 50 percent in 12th any stream; BA LLB needs 50 percent in 12th; MBA needs 50 percent in graduation. Delhi domicile gets 85 percent reserved seats. Call 9899991342 for course-specific eligibility check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does IPU registration 2026 start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU registration 2026 typically begins in February-March 2026 at ipu.admissions.nic.in. The application form is open for around 6-8 weeks. Late registration with fine may be allowed. Counselling registration starts separately after entrance results in May-June 2026. Call 9899991342 to get registration link and reminders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the important dates for IPU admission 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU 2026 important dates: Registration opens Feb-Mar 2026, application closes Apr 2026, entrance exams (JEE/CUET/CLAT) Apr-May 2026, results May-Jun 2026, counselling registration Jun 2026, choice filling Jun-Jul 2026, seat allotment Jul 2026, classes begin Aug 2026. Call 9899991342 for date alerts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which entrance exams are accepted for IPU admission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU accepts JEE Main for B.Tech, CUET UG for BBA/BCA/B.Com/BA/BJMC, CLAT for BA LLB and BBA LLB, CAT/CMAT for MBA, NIMCET for MCA, GATE for M.Tech, NEET for MBBS, and NATA for B.Arch. IPU CET is conducted for select programmes. Call 9899991342 to know your exam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU counselling and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU counselling is the seat allotment process conducted online after entrance results. Candidates register at ipu.admissions.nic.in, pay Rs. 1000 counselling fee, fill college and branch choices, then seats are allotted by merit. Multiple rounds (3-4) are held including a spot round. Call 9899991342 for choice-filling strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents are required for IPU admission 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Documents required for IPU admission 2026: Class 10 and 12 mark sheets, entrance exam scorecard (JEE/CUET/CLAT/CAT), IPU rank letter, Aadhaar card, passport photo, Delhi domicile certificate (if claiming Delhi quota), category certificate (SC/ST/OBC/EWS), and character certificate. Call 9899991342 for complete document checklist."
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>

@@ -69,10 +69,12 @@ include 'include/components/hero-banner.php';
 <h3>Postgraduate Programmes</h3>
 
 <table class="table table-bordered table-striped">
-<thead><tr><th>Programme</th><th>Duration</th><th>Eligibility</th></tr></thead>
+<thead><tr><th>Programme</th><th>Duration</th><th>Seats</th><th>Eligibility</th></tr></thead>
 <tbody>
-<tr><td>MBA (Master of Business Administration)</td><td>2 Years</td><td>CAT / MAT / IPU CET</td></tr>
-<tr><td>PGDM (Post Graduate Diploma in Management)</td><td>2 Years</td><td>CAT / MAT / XAT / GMAT</td></tr>
+<tr><td>MBA (Master of Business Administration)</td><td>2 Years</td><td>&mdash;</td><td>CAT / MAT / IPU CET</td></tr>
+<tr><td>MCA (1st Shift)</td><td>2 Years</td><td>120</td><td>IPU CET / NIMCET</td></tr>
+<tr><td>MCA (2nd Shift)</td><td>2 Years</td><td>45</td><td>IPU CET / NIMCET</td></tr>
+<tr><td>PGDM (Post Graduate Diploma in Management)</td><td>2 Years</td><td>&mdash;</td><td>CAT / MAT / XAT / GMAT</td></tr>
 </tbody>
 </table>
 

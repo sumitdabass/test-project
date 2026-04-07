@@ -10,8 +10,8 @@ $college_data = [
     'address' => 'Village Kabulpur, Faridabad, Haryana (Jain Minority Institution)',
     'founded' => '',
     'accreditation' => 'AICTE Approved, Jain Minority Status',
-    'total_seats' => 990,
-    'last_updated' => '2026-04-06',
+    'total_seats' => 1014,
+    'last_updated' => '2026-04-07',
     'ai_summary' => 'Echelon Institute of Technology is a Jain Minority institution in Faridabad, Haryana, affiliated to GGSIPU. It offers B.Tech in CSE (240 seats), AI&ML, Data Science, Cyber Security, ECE, ME, Civil, Robotics & AI, and 3D Modelling. Also offers BBA (240 seats with Digital Marketing and Financial specialisations), MCA (60), and BCA (180 with Data Science). Placements average 3-6 LPA. Call 9899991342.',
     'about_text' => '<h2>About Echelon Institute of Technology, Faridabad</h2>
 <p>Echelon Institute of Technology is a relatively new multi-discipline college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located in Village Kabulpur, Faridabad, Haryana. The institute holds Jain Minority status and is approved by AICTE, offering a wide spectrum of programmes in engineering, management, computer applications, and emerging technologies.</p>
@@ -31,6 +31,8 @@ $college_data = [
         ['name' => 'BBA (Digital Marketing)', 'duration' => '3 Years', 'seats' => '60'],
         ['name' => 'BBA (Financial)', 'duration' => '3 Years', 'seats' => '60'],
         ['name' => 'MCA', 'duration' => '2 Years', 'seats' => '60'],
+        ['name' => 'M.Tech (CSE)', 'duration' => '2 Years', 'seats' => '12'],
+        ['name' => 'M.Tech (CSE-AIML)', 'duration' => '2 Years', 'seats' => '12'],
         ['name' => 'BCA', 'duration' => '3 Years', 'seats' => '120'],
         ['name' => 'BCA (Data Science)', 'duration' => '3 Years', 'seats' => '60'],
     ],

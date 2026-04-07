@@ -13,6 +13,80 @@
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAIMS Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is MAIMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS is Maharaja Agrasen Institute of Management Studies, a private management college affiliated to GGSIPU, located in Sector-22 Rohini, Delhi. Established in 2003, MAIMS offers BBA, BCA, B.Com (H), BA Eco (H), BA-JMC, MBA and BA LLB programmes. It is one of the top BBA colleges under IPU. Call 9899991342."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is MAIMS full form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS full form is Maharaja Agrasen Institute of Management Studies. It is a private management college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located at PSP Area, Sector-22, Rohini, Delhi-110086. It is run by Maharaja Agrasen Technical Education Society. Call 9899991342 for admission help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is MAIMS full form in medical?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS is NOT a medical college. MAIMS full form is Maharaja Agrasen Institute of Management Studies — a private MANAGEMENT and commerce college under GGSIPU Delhi, located in Sector-22 Rohini. It offers BBA, BCA, B.Com, MBA, BA LLB and BJMC. There is no MBBS or medical course at MAIMS. Call 9899991342."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is MAIMS private or government?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS is a PRIVATE self-financing college, not a government institution. It is affiliated to GGSIPU (a state university) but is run by Maharaja Agrasen Technical Education Society. Fees are higher than government colleges (BBA around Rs. 1.2L per year). Call 9899991342 for admission and fee details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is MAIMS under IPU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, MAIMS (Maharaja Agrasen Institute of Management Studies) is affiliated to GGSIPU (Guru Gobind Singh Indraprastha University) Delhi. Admission to MAIMS BBA, BCA, B.Com is through IPU counselling based on CUET UG or IPU CET scores. MAIMS is one of the top IPU management colleges. Call 9899991342."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are MAIMS BBA fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS BBA fees 2026-27 are approximately Rs. 1,20,000 to Rs. 1,25,000 per year (tuition + university charges), making the total 3-year BBA fee around Rs. 3.60 lakh. Caution money and one-time charges apply in the first year. Hostel is not provided. Call 9899991342 for exact fee breakup and management quota help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are MAIMS MBA fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS MBA fees 2026-27 are approximately Rs. 1,30,000 to Rs. 1,40,000 per year, with total 2-year MBA fee around Rs. 2.6-2.8 lakh. Admission is through CAT/CMAT/MAT/IPU CET followed by IPU counselling. MAIMS MBA has good placements with leading companies. Call 9899991342 for MBA admission and fee help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What courses does MAIMS Rohini offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MAIMS Rohini offers BBA (3 years), BCA (3 years), B.Com (Honours), BA Economics (Honours), BA-JMC (Journalism and Mass Communication), BA LLB (5 years integrated), and MBA (2 years). All courses are affiliated to GGSIPU. Admission via CUET UG, CLAT, CAT or IPU CET as applicable. Call 9899991342 for admission guidance."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

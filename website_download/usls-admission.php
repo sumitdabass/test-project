@@ -94,8 +94,11 @@ include 'include/components/hero-banner.php';
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BA LLB (Hons) – 5-Year Integrated</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">120</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA LLB (Hons) – 5-Year Integrated</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Master of Laws)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">40</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD in Law</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLB (3-Year Programme)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Alternative Dispute Resolution)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Criminal Justice)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Intellectual Property Rights)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD in Law</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
 

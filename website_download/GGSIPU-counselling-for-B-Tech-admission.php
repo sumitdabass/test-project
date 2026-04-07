@@ -58,6 +58,96 @@
       ]
     }
     </script>
+
+    <!-- Expanded FAQPage Schema for AI Overviews & Featured Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is GGSIPU counselling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GGSIPU counselling is the official online seat allotment process by Guru Gobind Singh Indraprastha University. Candidates register on ipu.admissions.nic.in after entrance results, pay counselling fee, fill college and branch choices, and seats are allotted by merit. Multiple rounds are conducted. Call 9899991342 for personalised counselling guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is IPU counselling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPU counselling is the merit-based online seat allotment process for admission into IP University affiliated colleges. After entrance results (JEE Main, CUET, CLAT, CAT), candidates register, fill choices, and get seats allotted across 3-4 rounds. Document verification and fee payment finalises admission. Call 9899991342 for free counselling support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When will IPU counselling 2026 start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPU counselling 2026 is expected to start in May-June 2026, soon after JEE Main and CUET results are declared. Counselling registration opens at ipu.admissions.nic.in. Round 1 seat allotment is likely by mid-July 2026, with classes commencing August 2026. Call 9899991342 for exact date alerts and updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is GGSIPU counselling date 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GGSIPU counselling 2026 date is tentatively scheduled for June 2026. Online registration opens after entrance results, choice filling in late June, Round 1 allotment in mid-July 2026, followed by 2-3 more rounds and a spot round in August. Final dates will be on ipu.ac.in. Call 9899991342 for updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to register for IPU counselling 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To register for IPU counselling 2026: visit ipu.admissions.nic.in, click counselling registration, enter your IPU rank/JEE-CUET roll number, fill personal and academic details, upload documents, pay Rs. 1000 counselling fee, and submit. After registration, fill college choices in order of preference. Call 9899991342 for step-by-step help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are IPU counselling fees 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPU counselling fees 2026 are approximately Rs. 1000 (non-refundable processing fee) plus Rs. 40,000 part-academic fee at the time of seat acceptance, which is adjusted in your first-year college fee. Total counselling cost around Rs. 41,000. Refund policy applies if you withdraw early. Call 9899991342 for fee guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the last date for IPU counselling 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The last date for IPU counselling 2026 registration is expected by mid-July 2026 for Round 1. Spot round (final round) usually closes by end of August 2026. Late registration is generally not allowed. Always check ipu.admissions.nic.in for confirmed cut-off dates. Call 9899991342 to avoid missing any deadlines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many rounds of IPU counselling are conducted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GGSIPU conducts 3-4 rounds of counselling for B.Tech and other programmes including Round 1, Round 2, Round 3 (sliding/upgradation), and a final Spot Round for vacant seats. Each round has its own choice filling, allotment and reporting dates. Call 9899991342 to know the best round strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change college after IPU counselling allotment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can upgrade your college in IPU counselling by participating in subsequent rounds. After seat allotment in Round 1, opt for upgradation/sliding in Round 2 and 3 to get a better college or branch. Once you accept the upgraded seat, the previous seat is auto-cancelled. Call 9899991342 for upgrade strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What documents are needed for IPU counselling registration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Documents needed for IPU counselling registration: Class 10 and 12 mark sheets, JEE Main/CUET/CLAT/CAT scorecard, IPU rank letter, Aadhaar card, passport photo and signature scan, Delhi domicile certificate (for Delhi quota), category certificate (SC/ST/OBC/EWS), and character certificate. Call 9899991342 for complete checklist."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

@@ -100,6 +100,43 @@ include 'include/components/hero-banner.php';
     <li>No specific subject requirement at 12th level</li>
   </ul>
 
+  <h2>Detailed Eligibility (Programme Code 184)</h2>
+  <ul>
+    <li>Class 12 from any stream with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+    <li>No subject prerequisite at the 10+2 level</li>
+    <li>Open to students from Arts, Science and Commerce streams</li>
+  </ul>
+
+  <h2>Entrance Test &mdash; CUET (UG) 2026</h2>
+  <p>BA English admission at IPU is through <strong>CUET (UG) 2026</strong>. Recommended domain subject combination:</p>
+  <ul>
+    <li>English (Domain subject)</li>
+    <li>General Test &amp; English Language paper</li>
+  </ul>
+
+  <h2>Fee Structure 2026-27 (USHSS &mdash; 4-yr BA English under 5-yr UG-PG scheme)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Year</th>
+        <th style="padding:10px 14px;text-align:left">Tuition Fee (Rs.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 1</td><td style="padding:10px 14px">1,21,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 2</td><td style="padding:10px 14px">1,33,100</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 3</td><td style="padding:10px 14px">1,46,410</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 4</td><td style="padding:10px 14px">1,61,051</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing charges) is allowed up to 15 days before commencement of classes. After commencement: 100% refund before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free BA English admission guidance.</em></p>
+
   <h2>Curriculum Highlights</h2>
   <p>The BA English curriculum at IPU-affiliated colleges typically covers:</p>
   <table style="width:100%;border-collapse:collapse;margin:16px 0">

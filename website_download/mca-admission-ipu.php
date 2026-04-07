@@ -49,6 +49,64 @@
 $breadcrumbs = [['Home', '/'], ['MCA Admission IPU', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is IPU MCA admission 2026 process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MCA admission 2026 (Programme Code 105) is through NIMCET or IPU CET (MCA) scores. Steps: register at ipu.admissions.nic.in, appear in entrance exam, qualify cutoff, register for counselling, fill college choices (USICT, VIPS, JIMS, Tecnia), get seat allotment, complete document verification and pay first-year fees. Call 9899991342."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility for IPU MCA 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MCA 2026 eligibility: Bachelor's degree (BCA, B.Sc, B.Com, BA) with Mathematics as one subject at 10+2 or graduation level, with minimum 50 percent aggregate (45 percent for SC/ST/OBC). A valid NIMCET or IPU CET (MCA) score is mandatory. Final-year students may apply provisionally. Call 9899991342 for eligibility check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What entrance exam is required for IPU MCA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MCA admission accepts NIMCET (NIT MCA Common Entrance Test) and IPU CET (MCA) as valid entrance exams. NIMCET is the more competitive option and accepted nationally. After scoring above the cutoff, candidates participate in IPU counselling for college and seat allotment. Call 9899991342 for entrance and exam strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are IPU MCA fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MCA fees 2026-27 vary by college: USICT (university school) approximately Rs. 1,30,000-1,40,000 per year, VIPS Pitampura around Rs. 1,40,000 per year, JIMS Rohini Rs. 1,35,000 per year, Tecnia Institute around Rs. 1,30,000 per year. Total 2-year MCA fee Rs. 2.6-2.9 lakh. Call 9899991342 for college-wise fee comparison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which are the top MCA colleges under IPU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top MCA colleges under GGSIPU Delhi include USICT (University School of Information Communication and Technology, Dwarka), VIPS Pitampura, JIMS Rohini, Tecnia Institute Rohini, BPIT Rohini, MSI Janakpuri, MAIT Rohini and JIMS Sector-5. USICT is the flagship government school. Call 9899991342 for MCA college shortlisting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the duration of IPU MCA programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU MCA (Programme Code 105) is a 2-year (4-semester) postgraduate programme as per the AICTE revised structure from 2020. Earlier it was a 3-year programme. The course covers advanced computer applications, software engineering, data structures, AI/ML, web technologies and a final-semester project. Call 9899991342 for MCA admission help."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
