@@ -281,7 +281,7 @@ Location: Rohini, New Delhi
 Courses: BBA, B.Com | Seats: 420
 Summary: RDIAS Rohini - IPU management college. BBA and B.Com programmes.
 
-### GIBS (Gitarattan International Business School)
+### GIBS (Gitarattan Institute of Business Studies)
 URL: https://ipu.co.in/gibs-admission.php
 Location: Rohini, New Delhi
 Courses: BBA, BA LLB, BBA LLB, LLM | Seats: 680
@@ -485,7 +485,7 @@ COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
 | 24 | CPJ | Chanderprabhu Jain College | Narela, Delhi | /cpj-admission.php |
 | 25 | Fairfield | Fairfield Institute of Mgmt & Technology | Kapashera, Delhi | /fairfield-admission.php |
 | 26 | RDIAS | Rukmini Devi Institute of Advanced Studies | Rohini, Delhi | /rdias-admission.php |
-| 27 | GIBS | Gitarattan International Business School | Rohini, Delhi | /gibs-admission.php |
+| 27 | GIBS | Gitarattan Institute of Business Studies | Rohini, Delhi | /gibs-admission.php |
 | 28 | JIMS Kalkaji | Jagannath Intl Mgmt School Kalkaji | Kalkaji, Delhi | /jims-kalkaji-admission.php |
 | 29 | JIMS VK | Jagannath Intl Mgmt School Vasant Kunj | Vasant Kunj, Delhi | /jims-vasant-kunj-admission.php |
 | 30 | Ideal | Ideal Institute of Mgmt and Technology | Karkardooma, Delhi | /ideal-admission.php |

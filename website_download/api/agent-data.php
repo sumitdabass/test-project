@@ -403,7 +403,7 @@ $knowledge_base = [
         ],
         [
             'code' => 'GIBS',
-            'name' => 'Gitarattan International Business School',
+            'name' => 'Gitarattan Institute of Business Studies',
             'short_name' => 'GIBS',
             'location' => 'Rohini, New Delhi',
             'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'LLM'],

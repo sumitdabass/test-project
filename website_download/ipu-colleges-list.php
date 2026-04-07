@@ -156,21 +156,6 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, ECE</td>
       </tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/lingayas-admission.php">Lingaya's Lalita Devi Institute of Management &amp; Sciences</a></td>
-        <td style="padding:10px 14px">New Delhi</td>
-        <td style="padding:10px 14px">B.Tech CSE, ECE</td>
-      </tr>
-      <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/kasturi-ram-admission.php">Kasturi Ram College of Higher Education</a></td>
-        <td style="padding:10px 14px">Narela, Delhi</td>
-        <td style="padding:10px 14px">B.Tech CSE, ECE, ME</td>
-      </tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/meri-admission.php">MERI (Management Education &amp; Research Institute)</a></td>
-        <td style="padding:10px 14px">Janakpuri, Delhi</td>
-        <td style="padding:10px 14px">B.Tech CSE, IT</td>
-      </tr>
     </tbody>
   </table>
   </div>
@@ -213,11 +198,6 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/ipu-colleges-list.php#geeta-ratan">Geeta Ratan</a></td>
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">BA LLB, BBA LLB</td>
-      </tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/don-bosco-admission.php">Don Bosco Institute of Technology</a></td>
-        <td style="padding:10px 14px">New Delhi</td>
-        <td style="padding:10px 14px">BA LLB</td>
       </tr>
     </tbody>
   </table>
@@ -278,7 +258,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">MBA, BBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (GD Goenka Institute of Business Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (Gitarattan Institute of Business Studies)</a></td>
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">MBA, BBA</td>
       </tr>

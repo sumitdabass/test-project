@@ -1,20 +1,20 @@
 <?php
 $college_data = [
     'slug' => 'gibs-admission',
-    'name' => 'Gitarattan International Business School',
+    'name' => 'Gitarattan Institute of Business Studies',
     'short_name' => 'GIBS',
     'title' => 'GIBS Rohini Admission 2026 | BBA-MBA Integrated, BBA, Law, LLM Courses & Cutoff – IPU',
     'meta_desc' => 'GIBS Rohini Delhi IPU admission 2026. 5-year BBA-MBA, BBA, BA-LLB, BBA-LLB, LLM. Cutoff 70-78. Placements 4-7 LPA. Call 9899991342.',
     'og_title' => 'GIBS Admission 2026 – IPU BBA-MBA, Law Courses & Placements',
-    'og_desc' => 'Complete guide to Gitarattan International Business School admission under IPU. BBA-MBA integrated, BBA, Law, LLM courses in Rohini, Delhi.',
+    'og_desc' => 'Complete guide to Gitarattan Institute of Business Studies admission under IPU. BBA-MBA integrated, BBA, Law, LLM courses in Rohini, Delhi.',
     'address' => 'Rohini Educational Society, PSP Complex-II, Madhuban Chowk, Delhi',
     'founded' => '',
     'accreditation' => 'AICTE Approved',
     'total_seats' => 720,
     'last_updated' => '2026-04-06',
-    'ai_summary' => 'Gitarattan International Business School (GIBS) is a prominent IPU-affiliated college at Madhuban Chowk, Rohini, Delhi. It uniquely offers a 5-year integrated BBA-MBA programme (60 seats) alongside BBA (360 seats across two shifts), integrated law BA-LLB (120) and BBA-LLB (120), and LLM in Criminal, Corporate and ADR (60 total). Known for strong management and law programmes with placements averaging 4-7 LPA. Call 9899991342.',
-    'about_text' => '<h2>About GIBS &ndash; Gitarattan International Business School, Rohini</h2>
-<p>Gitarattan International Business School (GIBS) is a well-established management and law college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located at Madhuban Chowk, Rohini, Delhi. The institute stands out for its unique offering of a 5-year integrated BBA-MBA programme &ndash; one of the few such options available under IPU.</p>
+    'ai_summary' => 'Gitarattan Institute of Business Studies (GIBS) is a prominent IPU-affiliated college at Madhuban Chowk, Rohini, Delhi. It uniquely offers a 5-year integrated BBA-MBA programme (60 seats) alongside BBA (360 seats across two shifts), integrated law BA-LLB (120) and BBA-LLB (120), and LLM in Criminal, Corporate and ADR (60 total). Known for strong management and law programmes with placements averaging 4-7 LPA. Call 9899991342.',
+    'about_text' => '<h2>About GIBS &ndash; Gitarattan Institute of Business Studies, Rohini</h2>
+<p>Gitarattan Institute of Business Studies (GIBS) is a well-established management and law college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located at Madhuban Chowk, Rohini, Delhi. The institute stands out for its unique offering of a 5-year integrated BBA-MBA programme &ndash; one of the few such options available under IPU.</p>
 <p>With 720 total seats across management, law, and integrated programmes, GIBS caters to students seeking focused professional education. The BBA division alone offers 360 seats across two shifts, while the law wing has a combined intake of 240 seats through BA-LLB and BBA-LLB programmes. The postgraduate law division adds three LLM specialisations with 60 total seats.</p>
 <p>The 5-year BBA-MBA integrated programme is GIBS&rsquo;s flagship offering, allowing students to earn both undergraduate and postgraduate management degrees in a streamlined format. The Rohini location provides excellent metro connectivity and access to corporate opportunities in Delhi. For expert admission guidance at GIBS, call <a href="tel:+919899991342">9899991342</a> today.</p>',
     'courses' => [
