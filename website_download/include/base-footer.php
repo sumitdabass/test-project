@@ -77,7 +77,8 @@
         <div class="col-md-8">
           <p style="color:rgba(255,255,255,.5);font-size:13px;margin:0">
             &copy; <?= date('Y') ?> IPU Admission Guide &nbsp;|&nbsp;
-            All rights reserved.
+            All rights reserved. &nbsp;|&nbsp;
+            <a href="/privacy-policy.php" style="color:rgba(255,255,255,.5);text-decoration:none">Privacy Policy & Terms</a>
           </p>
         </div>
         <div class="col-md-4 text-md-end">
