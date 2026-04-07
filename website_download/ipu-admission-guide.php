@@ -5,9 +5,9 @@ include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
 
-<title>IPU Admission Guide 2026 | Complete GGSIPU Courses & Process Guide</title>
+<title>IPU Admission 2026 Process | Eligibility, Dates, Fees & Online Form Guide</title>
 
-<meta name="description" content="Complete IPU admission guide 2026 – all courses, eligibility, entrance exams, counselling process & top colleges. Free expert help – call 9899991342.">
+<meta name="description" content="Complete IPU (GGSIPU) 2026 admission process – registration dates, eligibility, entrance tests, counselling schedule & fee structure. Free expert help at 9899991342.">
 
 
 <link rel="canonical" href="https://ipu.co.in/ipu-admission-guide.php" />

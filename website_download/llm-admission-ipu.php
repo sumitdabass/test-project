@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>LLM Admission in IP University 2026 | Eligibility, Process & Colleges</title>
-<meta name="description" content="LLM admission in IPU 2026. Eligibility, admission process, specialisations, USLS & top colleges under GGSIPU. Call 9899991342 for free guidance.">
+<title>IPU LLM Admission 2026 | Fees, CLAT PG Cutoff, USLLS, VIPS, 8 Colleges</title>
+<meta name="description" content="IP University LLM 1-Year 2026 via CLAT PG – 4 specializations (Corporate/ADR/IPR/Criminal). Fees, 8 LLM colleges, cutoff. Call 9899991342 for guidance.">
 <link rel="canonical" href="https://ipu.co.in/llm-admission-ipu.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="LLM Admission in IP University 2026 | Eligibility, Process & Colleges">
-<meta property="og:description" content="Complete guide to LLM admission at GGSIPU 2026. Eligibility, admission process, specialisations and career scope.">
+<meta property="og:title" content="IPU LLM Admission 2026 | Fees, CLAT PG Cutoff, USLLS, VIPS, 8 Colleges">
+<meta property="og:description" content="IP University LLM 1-Year 2026 via CLAT PG – 4 specializations (Corporate/ADR/IPR/Criminal). Fees, 8 LLM colleges, cutoff. Call 9899991342 for guidance.">
 <meta property="og:url" content="https://ipu.co.in/llm-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LLM Admission in IP University 2026 | Eligibility, Process & Colleges">
-<meta name="twitter:description" content="Complete guide to LLM admission at GGSIPU 2026. Eligibility, admission process, specialisations and career scope.">
+<meta name="twitter:title" content="IPU LLM Admission 2026 | Fees, CLAT PG Cutoff, USLLS, VIPS, 8 Colleges">
+<meta name="twitter:description" content="IP University LLM 1-Year 2026 via CLAT PG – 4 specializations (Corporate/ADR/IPR/Criminal). Fees, 8 LLM colleges, cutoff. Call 9899991342 for guidance.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -97,6 +97,57 @@ include 'include/components/hero-banner.php';
     <li><strong>Entrance exam:</strong> Valid score in IPU CET (Law PG) or CLAT PG.</li>
     <li><strong>Bar Council registration:</strong> Not mandatory at the time of admission but recommended.</li>
   </ul>
+
+  <h2>Detailed Eligibility (Programme Code 112)</h2>
+  <ul>
+    <li>LL.B. degree (3-year or 5-year integrated) with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+    <li>Final-year LL.B. students may also apply (provisional admission)</li>
+  </ul>
+
+  <h2>Entrance Test (in Order of Priority)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Priority</th>
+        <th style="padding:10px 14px;text-align:left">Entrance Test</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><strong>1</strong></td><td style="padding:10px 14px">CLAT PG 2026 (primary)</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><strong>2</strong></td><td style="padding:10px 14px">CUET PG</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><strong>3</strong></td><td style="padding:10px 14px">IPU CET (PG Law)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Specialisations Available (1-Year LLM)</h2>
+  <ul>
+    <li>Corporate Law</li>
+    <li>Criminal Justice System</li>
+    <li>Alternative Dispute Resolution (ADR)</li>
+    <li>Intellectual Property Rights (IPR)</li>
+  </ul>
+
+  <h2>Affiliated LLM Colleges (8)</h2>
+  <ul>
+    <li>USLLS (University School of Law &amp; Legal Studies)</li>
+    <li>VIPS &mdash; Vivekananda Institute of Professional Studies</li>
+    <li>MAIMS &mdash; Maharaja Agrasen Institute of Management Studies</li>
+    <li>CPJ College of Higher Studies &amp; School of Law</li>
+    <li>DIST &mdash; Delhi Institute of Science &amp; Technology</li>
+    <li>DME Noida &mdash; Delhi Metropolitan Education</li>
+    <li>Fairfield Institute of Management &amp; Technology</li>
+    <li>Gitarattan IBS &amp; Ideal Institute of Management &amp; Technology</li>
+  </ul>
+
+  <h2>Fee Structure 2026-27 (1-Year LLM at USLLS)</h2>
+  <p>Approximately <strong>Rs. 1,30,000</strong> total (CDAC Fee + University share + other charges) for the 1-year LLM at USLLS. Affiliated colleges may charge slightly higher.</p>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After commencement: 100% refund before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free LLM admission guidance.</em></p>
 
   <h2>LLM Admission Process at IPU 2026</h2>
   <p>The LLM admission process at IPU involves these steps:</p>

@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>BCA Admission in IP University 2026 | Eligibility, CUET & Top Colleges</title>
-<meta name="description" content="BCA admission in IPU 2026. Eligibility, CUET process, top BCA colleges under GGSIPU, fees & career scope. Call 9899991342 for free counselling.">
+<title>IPU BCA Admission 2026 | CUET Eligibility, Fees, Top 20 Colleges List</title>
+<meta name="description" content="IP University BCA 2026 via CUET – 50% in Class 12, fee Rs.80K-1.5L, 30+ colleges (VIPS/IITM/MSI/MAIMS). Call 9899991342 for free guidance.">
 <link rel="canonical" href="https://ipu.co.in/bca-admission-ipu.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="BCA Admission in IP University 2026 | Eligibility, CUET & Top Colleges">
-<meta property="og:description" content="Complete guide to BCA admission at GGSIPU 2026. Eligibility, CUET process, top colleges, fees and career scope.">
+<meta property="og:title" content="IPU BCA Admission 2026 | CUET Eligibility, Fees, Top 20 Colleges List">
+<meta property="og:description" content="IP University BCA 2026 via CUET – 50% in Class 12, fee Rs.80K-1.5L, 30+ colleges (VIPS/IITM/MSI/MAIMS). Call 9899991342 for free guidance.">
 <meta property="og:url" content="https://ipu.co.in/bca-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BCA Admission in IP University 2026 | Eligibility, CUET & Top Colleges">
-<meta name="twitter:description" content="Complete guide to BCA admission at GGSIPU 2026. Eligibility, CUET process, top colleges, fees and career scope.">
+<meta name="twitter:title" content="IPU BCA Admission 2026 | CUET Eligibility, Fees, Top 20 Colleges List">
+<meta name="twitter:description" content="IP University BCA 2026 via CUET – 50% in Class 12, fee Rs.80K-1.5L, 30+ colleges (VIPS/IITM/MSI/MAIMS). Call 9899991342 for free guidance.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -96,6 +96,44 @@ include 'include/components/hero-banner.php';
     <li><strong>Entrance exam:</strong> Valid CUET score in the required subjects.</li>
     <li><strong>Age limit:</strong> No upper age limit for BCA admission at IPU.</li>
   </ul>
+
+  <h2>Detailed Eligibility (Programme Code 114)</h2>
+  <ul>
+    <li>Class 12 with <strong>Mathematics OR Computer Science OR Information Technology</strong> as one subject &mdash; minimum 50% aggregate (45% for SC/ST)</li>
+    <li>No upper age limit</li>
+    <li>Final year Class 12 students appearing for board exams are eligible (provisional admission)</li>
+  </ul>
+
+  <h2>Entrance Test &mdash; CUET (UG) 2026</h2>
+  <p>BCA admission at IPU is mandatorily through <strong>CUET (UG) 2026</strong>. The required CUET subject combination is:</p>
+  <ul>
+    <li>General Test</li>
+    <li>English (Language paper)</li>
+    <li>Mathematics (Domain subject)</li>
+  </ul>
+
+  <h2>Fee Structure 2026-27 (Affiliated Colleges)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Fee Component</th>
+        <th style="padding:10px 14px;text-align:left">Amount (Rs.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Annual Tuition Fee Range</td><td style="padding:10px 14px">80,000 &ndash; 1,50,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">University Charges per year</td><td style="padding:10px 14px">20,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Examination Fee per year</td><td style="padding:10px 14px">3,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><strong>Total Year 1 (approx)</strong></td><td style="padding:10px 14px"><strong>1,03,000 &ndash; 1,73,000</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of entire fees (after deduction of Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After class commencement: 100% refund before classes start, 80% within 15 days, 50% within 30 days, and 0% after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free BCA admission guidance.</em></p>
 
   <h2>BCA Admission Process at IPU 2026</h2>
   <p>The BCA admission process at IPU follows these steps:</p>

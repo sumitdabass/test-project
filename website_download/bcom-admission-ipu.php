@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>IPU B.Com Admission 2026 – Colleges, Fees & CUET Cutoff</title>
-<meta name="description" content="IPU B.Com admission 2026 guide. CUET cutoff, colleges offering B.Com, fees, eligibility & career scope. Call 9899991342 for free counselling.">
+<title>IPU B.Com (Hons) Admission 2026 | Fees, CUET Cutoff, Best Colleges</title>
+<meta name="description" content="IP University B.Com (Hons) 2026 via CUET – eligibility, fees Rs.40K-1.5L, top colleges (MAIMS/VIPS/MSI/Trinity). Call 9899991342 for free help.">
 <link rel="canonical" href="https://ipu.co.in/bcom-admission-ipu.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="IPU B.Com Admission 2026 – Colleges, Fees & CUET Cutoff">
-<meta property="og:description" content="Complete guide to B.Com admission at IPU. Colleges, CUET cutoff, fees and career scope.">
+<meta property="og:title" content="IPU B.Com (Hons) Admission 2026 | Fees, CUET Cutoff, Best Colleges">
+<meta property="og:description" content="IP University B.Com (Hons) 2026 via CUET – eligibility, fees Rs.40K-1.5L, top colleges (MAIMS/VIPS/MSI/Trinity). Call 9899991342 for free help.">
 <meta property="og:url" content="https://ipu.co.in/bcom-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IPU B.Com Admission 2026 – Colleges, Fees & CUET Cutoff">
-<meta name="twitter:description" content="Complete guide to B.Com admission at IPU. Colleges, CUET cutoff, fees and career scope.">
+<meta name="twitter:title" content="IPU B.Com (Hons) Admission 2026 | Fees, CUET Cutoff, Best Colleges">
+<meta name="twitter:description" content="IP University B.Com (Hons) 2026 via CUET – eligibility, fees Rs.40K-1.5L, top colleges (MAIMS/VIPS/MSI/Trinity). Call 9899991342 for free help.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -118,8 +118,29 @@ include 'include/components/hero-banner.php';
     <li>Delhi residency may be required for some seat categories</li>
   </ul>
 
-  <h2>Fee Structure</h2>
-  <p>B.Com fees at IPU-affiliated colleges typically range from <strong>Rs 40,000 to Rs 1.5 lakh per year</strong>, depending on the college type. Government-aided colleges charge the lowest fees, while self-financed colleges are relatively higher but still affordable compared to private universities.</p>
+  <h2>Detailed Eligibility (Programme Code 146)</h2>
+  <ul>
+    <li>Class 12 with Mathematics / Accountancy / Business Studies / Economics &mdash; minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+    <li>Commerce stream is preferred but not mandatory</li>
+    <li>Final-year Class 12 students may also apply (provisional)</li>
+  </ul>
+
+  <h2>Entrance Test &mdash; CUET (UG) 2026</h2>
+  <p>B.Com admission at IPU is through <strong>CUET (UG) 2026</strong>. Recommended domain subjects for the best score combination:</p>
+  <ul>
+    <li>Accountancy</li>
+    <li>Business Studies</li>
+    <li>Economics</li>
+    <li>General Test &amp; English (Language paper)</li>
+  </ul>
+
+  <h2>Fee Structure 2026-27</h2>
+  <p>B.Com fees at IPU-affiliated colleges typically range from <strong>Rs 40,000 to Rs 1,50,000 per year</strong>, depending on the college type. Government-aided colleges charge the lowest fees, while self-financed colleges are relatively higher but still affordable compared to private universities.</p>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Withdrawal with refund of entire fees (after deduction of Rs. 1,000 processing charges) is allowed up to 15 days before classes commence. After classes start: 100% refund before classes start, 80% within 15 days of commencement, 50% within 30 days, and no refund after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Com admission guidance.</em></p>
 
   <h2>Career Scope After B.Com from IPU</h2>
   <ul>

@@ -4,8 +4,8 @@
 <head><meta charset="utf-8">
     <?php include_once("include/base-head.php"); ?>
     <?php include_once("include/form-handler.php"); ?>
-    <title>GGSIPU Counselling 2026 | IPU Admission Process, Dates & Registration</title>
-    <meta name="description" content="GGSIPU counselling 2026 – registration, choice filling, seat allotment & dates. Step-by-step IPU admission process guide. Call 9899991342 for free help.">
+    <title>IPU Counselling 2026 – Dates, Registration, Fees, Choice Filling Process</title>
+    <meta name="description" content="IPU / GGSIPU Counselling 2026 schedule – registration dates, fee, choice filling, seat allotment rounds & documents. Complete step-by-step guide. Call 9899991342.">
     <link rel="canonical" href="https://ipu.co.in/GGSIPU-counselling-for-B-Tech-admission.php" />
     <script type="application/ld+json">
     {

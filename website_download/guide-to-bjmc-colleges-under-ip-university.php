@@ -5,9 +5,9 @@ include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
 
-<title>BJMC Colleges in Delhi 2026 | Top IPU Journalism Colleges & Admission</title>
+<title>Top BJMC Colleges in IPU 2026 | Fees, Cutoff, CUET Eligibility Guide</title>
 
-<meta name="description" content="Best BJMC colleges in Delhi under IPU – VIPS, MAIMS, BVP. Admission process, fees, placements & career scope. Call 9899991342 for free expert guidance.">
+<meta name="description" content="Best BJMC (Journalism & Mass Comm) colleges under IP University 2026 – VIPS, BVIMR, MAIMS, JIMS. Fees, CUET cutoff, placements. Call 9899991342.">
 
 
 
@@ -111,6 +111,64 @@ Bachelor of Journalism and Mass Communication (BJMC) under <strong>Guru Gobind S
 
 👉 Learn counselling steps:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Guide</strong></a>
+
+
+<!-- ===== DETAILED ELIGIBILITY ===== -->
+
+<h2>Detailed Eligibility (Programme Code 126 &mdash; BA Journalism &amp; Mass Communication)</h2>
+
+<ul>
+<li>Class 12 from any stream with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+<li>No subject restrictions at the 10+2 level</li>
+<li>Final-year Class 12 students appearing for board exams may also apply (provisional)</li>
+</ul>
+
+
+<!-- ===== ENTRANCE TEST ===== -->
+
+<h2>Entrance Test &mdash; CUET (UG) 2026</h2>
+
+<p>
+BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant domain subjects. Candidates can opt for English / Mass Communication / General Test domains as per their strengths.
+</p>
+
+
+<!-- ===== IMPORTANT DATES ===== -->
+
+<h2>Important Dates 2026-27</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Event</th>
+<th style="padding:10px 14px;text-align:left">Tentative Date</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">CUET Registration</td><td style="padding:10px 14px">March 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">CUET Exam</td><td style="padding:10px 14px">May 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">IPU Counselling</td><td style="padding:10px 14px">June&ndash;July 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Classes Commence</td><td style="padding:10px 14px">August 2026</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- ===== FEE STRUCTURE ===== -->
+
+<h2>Fee Structure 2026-27</h2>
+
+<p>BJMC fees at IPU-affiliated colleges range from <strong>Rs. 90,000 to Rs. 1,50,000 per year</strong> depending on the college. Plus university charges of Rs. 20,000/year and applicable examination &amp; development fees.</p>
+
+
+<!-- ===== REFUND POLICY ===== -->
+
+<h2>Refund Policy (UGC Norms)</h2>
+
+<p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After commencement: 100% before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
+
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free BJMC admission guidance.</em></p>
 
 
 <!-- ===== CAREER SCOPE ===== -->

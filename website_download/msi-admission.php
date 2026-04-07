@@ -1,14 +1,14 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MSI Janakpuri Admission 2026 | BBA, B.Com, BA Economics – IPU College</title>
-<meta name="description" content="MSI (Maharaja Surajmal Institute) Janakpuri – BBA, B.Com, BA Economics, BA English, BCA. Fees, placements & admission. Call 9899991342 for free help.">
+<title>MSI Janakpuri Admission 2026 | BBA, BCA, B.Com Fees & Cutoff – IPU</title>
+<meta name="description" content="Maharaja Surajmal Institute (MSI) Janakpuri 2026 – BBA, BCA, B.Com, Law admission at GGSIPU. Fees, cutoff, placements. Call 9899991342 for expert guidance.">
 <link rel="canonical" href="https://ipu.co.in/msi-admission.php">
-<meta property="og:title" content="MSI Janakpuri Admission 2026 | IPU BBA, B.Com, BCA">
-<meta property="og:description" content="MSI Janakpuri admission 2026 under IPU. BBA, B.Com, BA, BCA courses. Call 9899991342 for free admission guidance.">
+<meta property="og:title" content="MSI Janakpuri Admission 2026 | BBA, BCA, B.Com Fees & Cutoff – IPU">
+<meta property="og:description" content="Maharaja Surajmal Institute (MSI) Janakpuri 2026 – BBA, BCA, B.Com, Law admission at GGSIPU. Fees, cutoff, placements. Call 9899991342 for expert guidance.">
 <meta property="og:url" content="https://ipu.co.in/msi-admission.php">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MSI Janakpuri Admission 2026 | IPU BBA, B.Com, BCA">
+<meta name="twitter:title" content="MSI Janakpuri Admission 2026 | BBA, BCA, B.Com Fees & Cutoff – IPU">
 <?php
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MSI Admission', '']];
 include 'include/components/breadcrumb-schema.php';

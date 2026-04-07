@@ -1,14 +1,14 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MAIMS Delhi (Maharaja Agrasen Institute) | Courses, Fees & Admission 2026</title>
-<meta name="description" content="MAIMS Rohini – BBA, MBA, B.Com, BA LLB, BJMC, BCA courses. Fees, placements & admission process. MAIMS is a private IPU college. Call 9899991342 for free help.">
+<title>MAIMS Rohini Admission 2026 | BBA, MBA Fees, Cutoff, Placements – IPU</title>
+<meta name="description" content="Maharaja Agrasen Institute of Management Studies (MAIMS) Rohini 2026 – private IPU college. BBA, MBA, BCA fees, cutoff, placements 5-10 LPA. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/maims-admission.php">
-<meta property="og:title" content="MAIMS Admission 2026 | IPU BBA, MBA, Law, BJMC Courses">
-<meta property="og:description" content="MAIMS Rohini admission 2026 under IPU. BBA, MBA, BA LLB, BJMC & more. Call 9899991342 for free guidance.">
+<meta property="og:title" content="MAIMS Rohini Admission 2026 | BBA, MBA Fees, Cutoff, Placements – IPU">
+<meta property="og:description" content="Maharaja Agrasen Institute of Management Studies (MAIMS) Rohini 2026 – private IPU college. BBA, MBA, BCA fees, cutoff, placements 5-10 LPA. Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/maims-admission.php">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MAIMS Admission 2026 | IPU BBA, MBA, Law, BJMC">
+<meta name="twitter:title" content="MAIMS Rohini Admission 2026 | BBA, MBA Fees, Cutoff, Placements – IPU">
 <?php
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAIMS Admission', '']];
 include 'include/components/breadcrumb-schema.php';
@@ -30,7 +30,7 @@ include 'include/components/hero-banner.php';
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
-<p>Maharaja Agrasen Institute of Management Studies (MAIMS) is a leading management and professional studies college in Rohini, Sector-22, New Delhi, affiliated to GGSIPU. Part of the Maharaja Agrasen group (same trust as MAIT and MABS), MAIMS offers BBA, MBA, B.Com, BA LLB, BJMC, BCA, and BA Economics. Known for strong management and law programmes. For free admission counselling, call 9899991342.</p>
+<p>Maharaja Agrasen Institute of Management Studies (MAIMS) is a leading management and professional studies college in Rohini, Sector-22, New Delhi, affiliated to GGSIPU. Part of the Maharaja Agrasen group (same trust as MAIT and MABS), MAIMS offers BBA, MBA (via the integrated MAIT cell), B.Com, BA LLB, BJMC, BCA, BA Economics, and a full LLM portfolio (Corporate Law, IPR, ADR). Known for strong management and law programmes. For free admission counselling, call 9899991342.</p>
 </section>
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
@@ -68,12 +68,18 @@ include 'include/components/hero-banner.php';
 </tbody>
 </table>
 
-<h3>Postgraduate Programme</h3>
+<h3>Postgraduate Programmes</h3>
+
+<p>As per the GGSIPU Admission Brochure 2026-27, MAIMS offers the following postgraduate programmes including an expanded LLM portfolio:</p>
 
 <table class="table table-bordered table-striped">
-<thead><tr><th>Programme</th><th>Duration</th><th>Eligibility</th></tr></thead>
+<thead><tr><th>Programme</th><th>Duration</th><th>Seats</th><th>Eligibility</th></tr></thead>
 <tbody>
-<tr><td>MBA (Master of Business Administration)</td><td>2 Years</td><td>CAT / MAT / IPU CET</td></tr>
+<tr><td>MBA (Master of Business Administration) &mdash; via MAIT integrated PG cell</td><td>2 Years</td><td>120</td><td>CAT / MAT / IPU CET</td></tr>
+<tr><td>LLM (Corporate Law)</td><td>1 Year</td><td>10</td><td>IPU CET (LLM)</td></tr>
+<tr><td>LLM (Intellectual Property Rights)</td><td>1 Year</td><td>10</td><td>IPU CET (LLM)</td></tr>
+<tr><td>LLM (Alternative Dispute Resolution)</td><td>1 Year</td><td>10</td><td>IPU CET (LLM)</td></tr>
+<tr><td>LLM (Alternative Dispute Resolution) &mdash; Second batch</td><td>1 Year</td><td>10</td><td>IPU CET (LLM)</td></tr>
 </tbody>
 </table>
 

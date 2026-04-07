@@ -6,9 +6,9 @@
     <?php include_once("include/base-head.php"); ?>
     <?php include_once("include/form-handler.php"); ?>
     
-    <title>IPU Helpline Number & Contact | GGSIPU Admission Help – 9899991342</title>
+    <title>IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline</title>
 
-    <meta name="description" content="IPU helpline number 9899991342 for free admission guidance. GGSIPU contact for B.Tech, MBA, Law, BBA counselling. Mon-Sat 9AM-7PM. Call now for instant help.">
+    <meta name="description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
     <meta name="robots" content="index, follow">
     
     <link rel="canonical" href="https://ipu.co.in/ipu-helpline-contact-number.php">
@@ -16,16 +16,16 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ipu.co.in/ipu-helpline-contact-number.php">
-    <meta property="og:title" content="IPU Helpline & Contact Number 2026 | GGSIPU Admission Support">
-    <meta property="og:description" content="IPU helpline number for admission 2026. Expert guidance for B.Tech, BBA, Law, MBA & management quota. Call 9899991342.">
+    <meta property="og:title" content="IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline">
+    <meta property="og:description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
     <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
     <meta property="og:site_name" content="IPU Admission Guide">
     <meta property="og:locale" content="en_IN">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IPU Helpline & Contact Number 2026 | GGSIPU Admission Support">
-    <meta name="twitter:description" content="IPU helpline number for admission 2026. Call 9899991342 for B.Tech, BBA, Law & management quota guidance.">
+    <meta name="twitter:title" content="IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline">
+    <meta name="twitter:description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
     <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
     
     <!-- Schema.org JSON-LD -->

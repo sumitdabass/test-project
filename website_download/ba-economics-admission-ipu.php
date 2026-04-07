@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>IPU BA Economics Admission 2026 – CUET, Scope & Colleges</title>
-<meta name="description" content="IPU BA Economics admission 2026. CUET cutoff, curriculum, placements, colleges & career scope. Call 9899991342 for free admission counselling.">
+<title>IPU BA Economics (Hons) 2026 | Eligibility, CUET, Fees, 4 Top Colleges</title>
+<meta name="description" content="IP University BA Economics (Hons) 2026 via CUET – eligibility, fees Rs.75K-1.2L, top colleges (VIPS, MAIMS, JIMS, USHSS). Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/ba-economics-admission-ipu.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="IPU BA Economics Admission 2026 – CUET, Scope & Colleges">
-<meta property="og:description" content="Complete guide to BA Economics admission at IPU. CUET process, colleges and career scope.">
+<meta property="og:title" content="IPU BA Economics (Hons) 2026 | Eligibility, CUET, Fees, 4 Top Colleges">
+<meta property="og:description" content="IP University BA Economics (Hons) 2026 via CUET – eligibility, fees Rs.75K-1.2L, top colleges (VIPS, MAIMS, JIMS, USHSS). Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/ba-economics-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IPU BA Economics Admission 2026 – CUET, Scope & Colleges">
-<meta name="twitter:description" content="Complete guide to BA Economics admission at IPU. CUET process, colleges and career scope.">
+<meta name="twitter:title" content="IPU BA Economics (Hons) 2026 | Eligibility, CUET, Fees, 4 Top Colleges">
+<meta name="twitter:description" content="IP University BA Economics (Hons) 2026 via CUET – eligibility, fees Rs.75K-1.2L, top colleges (VIPS, MAIMS, JIMS, USHSS). Call 9899991342.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -99,6 +99,43 @@ include 'include/components/hero-banner.php';
     <li>Valid CUET 2026 score with Economics domain paper</li>
     <li>Mathematics background is recommended but not mandatory</li>
   </ul>
+
+  <h2>Detailed Eligibility (Programme Code 197)</h2>
+  <ul>
+    <li>Class 12 pass with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+    <li>Mathematics is recommended but not mandatory</li>
+    <li>Open to students from Arts, Commerce and Science streams</li>
+  </ul>
+
+  <h2>Entrance Test &mdash; CUET (UG) 2026</h2>
+  <p>BA Economics admission at IPU is through <strong>CUET (UG) 2026</strong>. Recommended domain subject combination:</p>
+  <ul>
+    <li>Economics (Domain subject)</li>
+    <li>General Test &amp; English (Language paper)</li>
+  </ul>
+
+  <h2>Fee Structure 2026-27 (USHSS)</h2>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Year</th>
+        <th style="padding:10px 14px;text-align:left">Tuition Fee (Rs.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 1</td><td style="padding:10px 14px">1,21,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 2</td><td style="padding:10px 14px">1,33,100</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 3</td><td style="padding:10px 14px">1,46,410</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 4</td><td style="padding:10px 14px">1,61,051</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Refund Policy (UGC Norms)</h2>
+  <p>GGSIPU follows the UGC refund policy. Withdrawal with refund of entire fees (less Rs. 1,000 processing) is allowed up to 15 days before classes commence. After commencement: 100% before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
+
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free BA Economics admission guidance.</em></p>
 
   <h2>Curriculum Highlights</h2>
   <table style="width:100%;border-collapse:collapse;margin:16px 0">

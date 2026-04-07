@@ -5,9 +5,9 @@ include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
 
-<title>Top BBA Colleges in IP University 2026 | IPU BBA Admission & Fees</title>
+<title>Top 10 BBA Colleges in IPU 2026 | Fees, Cutoff, Ranking, Placements</title>
 
-<meta name="description" content="Top 10 BBA colleges under IPU – VIPS, MAIMS, MSI, DIAS, JIMS. Fees, placements, CUET admission & eligibility. Free expert help – call 9899991342.">
+<meta name="description" content="Best BBA colleges under IP University 2026 – VIPS, MAIMS, Tecnia, RDIAS, MSI, JIMS ranked. Fees Rs.1.2-1.8L, cutoff, placements 4-8 LPA. Call 9899991342.">
 
 
 <link rel="canonical" href="https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" />

@@ -6,9 +6,9 @@ include_once("include/form-handler.php");
 ?>
 
 <!-- SEO META -->
-<title>IPU B.Tech Admission 2026 | JEE Main, Top Colleges, Cutoff & Process</title>
+<title>IPU B.Tech Admission 2026 | JEE Main Cutoff, Fees, Top Colleges List</title>
 
-<meta name="description" content="IPU B.Tech admission 2026 – JEE Main eligibility, GGSIPU counselling, top colleges (MAIT, MSIT, BPIT, BVP), cutoffs & fees. Call 9899991342 for free help.">
+<meta name="description" content="IP University B.Tech Admission 2026 via JEE Main – eligibility, fee Rs.1.55L/yr, cutoff 65-95 percentile, top colleges MAIT/MSIT/USICT. Call 9899991342.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ipu.co.in/IPU-B-Tech-admission-2026.php" />
@@ -82,6 +82,127 @@ IPU B.Tech admission is primarily conducted through JEE Main-based merit followe
 <li><strong>Second pathway:</strong> CUET score (subject to official admission notification).</li>
 <li>Participation in centralized GGSIPU counselling is mandatory.</li>
 </ul>
+
+<hr>
+
+<!-- ===== DETAILED ELIGIBILITY (PROGRAMME CODE 131) ===== -->
+
+<h2>Detailed Eligibility (Programme Code 131)</h2>
+
+<ul>
+<li>Class 12 with <strong>Physics, Chemistry &amp; Mathematics (PCM)</strong> &mdash; minimum 55% aggregate (50% for SC/ST)</li>
+<li><strong>For Lateral Entry:</strong> Diploma in Engineering with 60% aggregate (55% for reserved categories)</li>
+<li>Participation in centralised IPU counselling after qualifying JEE Main is compulsory</li>
+</ul>
+
+<hr>
+
+<!-- ===== ENTRANCE TEST (JEE MAIN) ===== -->
+
+<h2>Entrance Test &mdash; JEE Main 2026 (Paper 1)</h2>
+
+<p>
+JEE Main 2026 Paper 1 is the primary entrance for IPU B.Tech admission. Some courses also accept CUET (UG) scores. Key details:
+</p>
+
+<ul>
+<li><strong>Syllabus:</strong> Physics, Chemistry, Mathematics (Class 11 + 12 NCERT)</li>
+<li><strong>Total Questions:</strong> 90</li>
+<li><strong>Total Marks:</strong> 300</li>
+<li><strong>Duration:</strong> 3 hours</li>
+<li><strong>Mode:</strong> Computer Based Test (CBT)</li>
+</ul>
+
+<hr>
+
+<!-- ===== FEE STRUCTURE 2026-27 ===== -->
+
+<h2>Fee Structure 2026-27 (USICT / USAR / USCT &mdash; 4-yr B.Tech / 5-yr Dual Degree)</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Year</th>
+<th style="padding:10px 14px;text-align:left">Tuition Fee (Rs.)</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 1</td><td style="padding:10px 14px">1,69,400</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 2</td><td style="padding:10px 14px">1,86,340</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Year 3</td><td style="padding:10px 14px">2,04,974</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Year 4</td><td style="padding:10px 14px">2,25,471</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Other annual charges (added each year):</strong></p>
+<ul>
+<li>University Charges: Rs. 20,000/year</li>
+<li>Examination Fee: Rs. 3,000/year</li>
+<li>Innovation &amp; Incubation Fee: Rs. 500/year</li>
+<li>Development &amp; Infrastructure Fee: Rs. 10,000/year</li>
+<li>Alumni Contribution Fund: Rs. 2,000 (one-time)</li>
+</ul>
+
+<p><strong>Total Year 1 (approx):</strong> Rs. 2,04,900</p>
+
+<p>
+<strong>For affiliated colleges (MAIT, MSIT, BPIT, BVP, GTBIT etc.):</strong> Annual fee ranges from <strong>Rs. 1,41,750 to Rs. 1,55,700</strong> (as per the 6th SFRC, Delhi Gazette Notification dated 14.07.2025).
+</p>
+
+<hr>
+
+<!-- ===== IMPORTANT DATES ===== -->
+
+<h2>Important Dates 2026-27</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Event</th>
+<th style="padding:10px 14px;text-align:left">Tentative Date</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">JEE Main Sessions</td><td style="padding:10px 14px">January &amp; April 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">IPU Counselling Registration</td><td style="padding:10px 14px">May&ndash;June 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Choice Filling</td><td style="padding:10px 14px">June 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Allotment</td><td style="padding:10px 14px">July 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Classes Commence</td><td style="padding:10px 14px">August 2026</td></tr>
+</tbody>
+</table>
+</div>
+
+<hr>
+
+<!-- ===== REFUND POLICY ===== -->
+
+<h2>Refund Policy (UGC Norms)</h2>
+
+<p>
+GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the entire fees (after deduction of Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After commencement, refund is processed as per UGC slabs:
+</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Cancellation Period</th>
+<th style="padding:10px 14px;text-align:left">Refund</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Before classes start</td><td style="padding:10px 14px">100% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Within 15 days of class commencement</td><td style="padding:10px 14px">80% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Within 30 days of class commencement</td><td style="padding:10px 14px">50% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">After 30 days</td><td style="padding:10px 14px">No refund</td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free B.Tech admission guidance.</em></p>
 
 <hr>
 

@@ -6,9 +6,9 @@ include_once("include/form-handler.php");
 ?>
 
 <!-- SEO META -->
-<title>IPU MBA Admission 2026 | CAT, CMAT, Top Colleges, Fees & Placement</title>
+<title>IPU MBA Admission 2026 | Fees, CAT/CMAT Cutoff, USMS/MAIMS – Free Help</title>
 
-<meta name="description" content="MBA admission in IP University 2026 – CAT/CMAT requirement, GGSIPU counselling, top MBA colleges, fees & placement 15-20 LPA. Call 9899991342 for free help.">
+<meta name="description" content="IP University MBA 2026 via CAT/CMAT/CET – fees Rs.1.3L/yr, cutoff, top colleges USMS/MAIMS/RDIAS/JIMS. Management quota info. Call 9899991342.">
 
 <meta name="robots" content="index, follow">
 
@@ -131,6 +131,132 @@ IP University does not conduct a separate entrance test for regular MBA programm
 <li>Degree from recognised university</li>
 <li>Valid CAT / applicable entrance score</li>
 </ul>
+
+<hr>
+
+<!-- ===== DETAILED ELIGIBILITY (PROGRAMME CODE 101) ===== -->
+
+<h2>Detailed Eligibility (Programme Code 101)</h2>
+
+<ul>
+<li>Bachelor's degree in any discipline with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
+<li>Final-year students appearing for their Bachelor's exam are also eligible (provisional admission)</li>
+<li>Age limit: As per UGC norms</li>
+</ul>
+
+<hr>
+
+<!-- ===== ENTRANCE TESTS ACCEPTED ===== -->
+
+<h2>Entrance Tests Accepted (in Order of Priority)</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Priority</th>
+<th style="padding:10px 14px;text-align:left">Entrance Test</th>
+<th style="padding:10px 14px;text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0">
+<td style="padding:10px 14px"><strong>1</strong></td>
+<td style="padding:10px 14px">National Level Test &mdash; CAT 2025</td>
+<td style="padding:10px 14px">Highest priority for MBA seat allotment</td>
+</tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+<td style="padding:10px 14px"><strong>2</strong></td>
+<td style="padding:10px 14px">CMAT 2026</td>
+<td style="padding:10px 14px">Considered after CAT merit is exhausted</td>
+</tr>
+<tr style="border-bottom:1px solid #e2e8f0">
+<td style="padding:10px 14px"><strong>3</strong></td>
+<td style="padding:10px 14px">IPU CET 2026</td>
+<td style="padding:10px 14px">Used only after exhausting NLT/CMAT merit</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr>
+
+<!-- ===== IMPORTANT DATES ===== -->
+
+<h2>Important Dates 2026-27</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Event</th>
+<th style="padding:10px 14px;text-align:left">Tentative Date</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Registration Starts</td><td style="padding:10px 14px">April 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">CET Exam</td><td style="padding:10px 14px">June 2026 (tentative)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Result Declaration</td><td style="padding:10px 14px">July 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Counselling</td><td style="padding:10px 14px">July&ndash;August 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Classes Commence</td><td style="padding:10px 14px">August 2026</td></tr>
+</tbody>
+</table>
+</div>
+
+<hr>
+
+<!-- ===== FEE STRUCTURE 2026-27 (USS) ===== -->
+
+<h2>Fee Structure 2026-27 (USMS &mdash; University School of Management Studies)</h2>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Fee Component</th>
+<th style="padding:10px 14px;text-align:left">Amount (Rs.)</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USMS Tuition Fee (CDAC + University share + other charges) per year</td><td style="padding:10px 14px">~1,30,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Examination Fee per year</td><td style="padding:10px 14px">3,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Innovation &amp; Incubation Fee per year</td><td style="padding:10px 14px">500</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Alumni Contribution (one-time)</td><td style="padding:10px 14px">2,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Development &amp; Infrastructure Fee per year</td><td style="padding:10px 14px">10,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Need help understanding the total cost across all 2 years? Call <a href="tel:9899991342"><strong>9899991342</strong></a> for guidance.</p>
+
+<hr>
+
+<!-- ===== REFUND POLICY ===== -->
+
+<h2>Refund Policy (UGC Norms)</h2>
+
+<p>
+GGSIPU follows the standard UGC refund policy for fee withdrawal. Withdrawal of admission with refund of the entire fees (after deduction of Rs. 1,000 as processing charges) is permitted up to <strong>15 days before the commencement of classes</strong>. After commencement of classes, fees are refunded as per UGC slabs:
+</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Cancellation Period</th>
+<th style="padding:10px 14px;text-align:left">Refund</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Before classes start</td><td style="padding:10px 14px">100% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Within 15 days of class commencement</td><td style="padding:10px 14px">80% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Within 30 days of class commencement</td><td style="padding:10px 14px">50% refund</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">After 30 days</td><td style="padding:10px 14px">No refund</td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free MBA admission guidance.</em></p>
 
 <hr>
 

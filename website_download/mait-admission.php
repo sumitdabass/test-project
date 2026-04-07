@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MAIT Delhi Admission 2026 | Courses, Cutoff, Fees & Placements – IPU</title>
-<meta name="description" content="MAIT Rohini (Maharaja Agrasen Institute of Technology) – B.Tech CSE, IT, ECE, AIML. JEE Main cutoff, fees & placements 7-15 LPA. Call 9899991342 for help.">
+<title>MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU</title>
+<meta name="description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/mait-admission.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="MAIT Admission 2026 – IPU Courses, Cutoff & Placements">
-<meta property="og:description" content="Complete guide to MAIT admission under IPU. B.Tech courses, JEE cutoffs, placements and campus life.">
+<meta property="og:title" content="MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU">
+<meta property="og:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/mait-admission.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MAIT Admission 2026 – IPU Courses, Cutoff & Placements">
-<meta name="twitter:description" content="Complete guide to MAIT admission under IPU. B.Tech courses, JEE cutoffs, placements and campus life.">
+<meta name="twitter:title" content="MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU">
+<meta name="twitter:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -99,6 +99,7 @@ include 'include/components/hero-banner.php';
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech AI & Machine Learning</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA (Bachelor of Business Administration)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">120</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BJMC (Bachelor of Journalism & Mass Communication)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
     </tbody>
   </table>
 

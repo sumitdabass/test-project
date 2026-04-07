@@ -6,9 +6,9 @@ include_once("include/form-handler.php");
 ?>
 
 <!-- SEO META -->
-<title>IPU CET 2026: Exam Date, Admit Card, Result & CET-Based Courses</title>
+<title>IPU CET 2026 – Exam Date, Admit Card Download, Syllabus & Pattern</title>
 
-<meta name="description" content="IPU CET 2026 complete guide – CET-based courses (BBA, BCA, B.Com, BJMC), exam date, admit card, result and counselling process under GGSIPU.">
+<meta name="description" content="IPU CET 2026 exam dates, admit card download link, syllabus, exam pattern for B.Tech, BBA, BCA, BJMC, LLM & MBA. Registration last date & result info.">
 
 <meta name="keywords" content="IPU CET 2026, IPU CET Courses, BBA CET IPU, BCA CET IPU, BJMC CET IPU, IPU CET Admit Card">
 
@@ -107,6 +107,60 @@ Economics Admission Guide
 Complete IP University Admission Guide
 </a>
 </p>
+
+<hr>
+
+<!-- ================= CET PROGRAMME CODES TABLE ================= -->
+
+<h2>Complete List of IPU Programmes with CET Codes 2026-27</h2>
+
+<p>
+The table below lists all UG and PG programmes at GGSIPU along with their official Programme Codes and the relevant entrance test for 2026-27 admission.
+</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:600px">
+<thead>
+<tr style="background:#0d1b6e;color:#fff">
+<th style="padding:10px 14px;text-align:left">Programme</th>
+<th style="padding:10px 14px;text-align:left">Code</th>
+<th style="padding:10px 14px;text-align:left">Entrance</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA</td><td style="padding:10px 14px">101</td><td style="padding:10px 14px">NLT (CAT 2025), CMAT 2026, CET 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MCA</td><td style="padding:10px 14px">105</td><td style="padding:10px 14px">NIMCET 2026, CET 2026, CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MA Mass Communication</td><td style="padding:10px 14px">106</td><td style="padding:10px 14px">CET, CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MPT (Master of Physiotherapy)</td><td style="padding:10px 14px">107</td><td style="padding:10px 14px">CET / CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MOT (Master of Occupational Therapy)</td><td style="padding:10px 14px">108</td><td style="padding:10px 14px">CET only</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MPO (Prosthetics &amp; Orthotics)</td><td style="padding:10px 14px">109</td><td style="padding:10px 14px">CET only</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM</td><td style="padding:10px 14px">112</td><td style="padding:10px 14px">CLAT PG 2026, CET PG 2026, CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MA English</td><td style="padding:10px 14px">113</td><td style="padding:10px 14px">CET, CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Ed</td><td style="padding:10px 14px">120</td><td style="padding:10px 14px">CET, CUET PG</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BCA</td><td style="padding:10px 14px">114</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BBA</td><td style="padding:10px 14px">125</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech</td><td style="padding:10px 14px">131</td><td style="padding:10px 14px">JEE Main + IPU Counselling</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Com</td><td style="padding:10px 14px">146</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BJMC</td><td style="padding:10px 14px">126</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BA Economics</td><td style="padding:10px 14px">197</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BA English</td><td style="padding:10px 14px">184</td><td style="padding:10px 14px">CUET (UG)</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BA-LLB / BBA-LLB</td><td style="padding:10px 14px">121</td><td style="padding:10px 14px">CLAT UG 2026</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLB (3-year)</td><td style="padding:10px 14px">238</td><td style="padding:10px 14px">IPU CET</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Arch</td><td style="padding:10px 14px">100</td><td style="padding:10px 14px">NATA / JEE Main Paper 2</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Universal Tentative Dates 2026-27</h3>
+
+<ul>
+<li><strong>Registration:</strong> April&ndash;May 2026</li>
+<li><strong>CET Exam:</strong> June 2026</li>
+<li><strong>Counselling:</strong> July&ndash;August 2026</li>
+<li><strong>Classes Commence:</strong> August 2026</li>
+</ul>
+
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free entrance test &amp; admission guidance.</em></p>
 
 <hr>
 

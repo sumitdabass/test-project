@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MSIT Janakpuri Admission 2026 | B.Tech Courses, Cutoff & Placements</title>
-<meta name="description" content="MSIT (Maharaja Surajmal Institute of Technology) Janakpuri – B.Tech CSE, IT, ECE. JEE Main cutoff, placements & fees. Call 9899991342 for free guidance.">
+<title>MSIT Janakpuri Admission 2026 | B.Tech Fees, Cutoff, Placements – IPU</title>
+<meta name="description" content="Maharaja Surajmal Institute of Technology (MSIT) Janakpuri – B.Tech admission 2026. Fees, JEE Main cutoff, placements 6-12 LPA. Free admission guidance at 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/msit-admission.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="MSIT Admission 2026 – IPU Courses, Cutoff & Placements">
-<meta property="og:description" content="Complete guide to MSIT admission under IPU. B.Tech courses, JEE cutoffs, placements and campus life.">
+<meta property="og:title" content="MSIT Janakpuri Admission 2026 | B.Tech Fees, Cutoff, Placements – IPU">
+<meta property="og:description" content="Maharaja Surajmal Institute of Technology (MSIT) Janakpuri – B.Tech admission 2026. Fees, JEE Main cutoff, placements 6-12 LPA. Free admission guidance at 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/msit-admission.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MSIT Admission 2026 – IPU Courses, Cutoff & Placements">
-<meta name="twitter:description" content="Complete guide to MSIT admission under IPU. B.Tech courses, JEE cutoffs, placements and campus life.">
+<meta name="twitter:title" content="MSIT Janakpuri Admission 2026 | B.Tech Fees, Cutoff, Placements – IPU">
+<meta name="twitter:description" content="Maharaja Surajmal Institute of Technology (MSIT) Janakpuri – B.Tech admission 2026. Fees, JEE Main cutoff, placements 6-12 LPA. Free admission guidance at 9899991342.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">

@@ -7,9 +7,9 @@ include_once("include/form-handler.php");
 
 <!-- SEO META -->
 
-<title>BA LL.B Admission in IP University (GGSIPU) 2026 | CLAT, Eligibility, Top Colleges & Counselling</title>
+<title>IPU BA LLB Admission 2026 | Fees, CLAT Cutoff, Top Colleges, Eligibility</title>
 
-<meta name="description" content="BA LLB IPU Admission 2026: Complete guide to BA LL.B admission in IP University (GGSIPU). Check CLAT eligibility, counselling process, top law colleges and fees for GGSIPU law programs.">
+<meta name="description" content="IP University BA LLB (Hons) 5-Year 2026 via CLAT – fees Rs.1.45L/yr, cutoff, 14 top colleges (VIPS, USLLS, MAIMS). Free admission guidance at 9899991342.">
 
 <meta name="robots" content="index, follow">
 

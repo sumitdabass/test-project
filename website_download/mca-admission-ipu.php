@@ -1,20 +1,20 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MCA Admission 2026 IP University (GGSIPU) | Eligibility, Fees, Top Colleges &ndash; ipu.co.in</title>
-<meta name="description" content="IPU MCA Admission 2026 — Programme Code 105. Eligibility, NIMCET/CET entrance, fee structure, top colleges (USICT, VIPS, JIMS, Tecnia). Call 9899991342.">
+<title>IPU MCA Admission 2026 | NIMCET Eligibility, Fees, Top Colleges Guide</title>
+<meta name="description" content="IP University MCA 2026 via NIMCET/CET PG – eligibility, fees Rs.1.3L, top colleges (USICT/VIPS/JIMS/Tecnia). 12+ colleges. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/mca-admission-ipu.php">
 
 <!-- Open Graph -->
-<meta property="og:title" content="MCA Admission 2026 IP University (GGSIPU) | Eligibility, Fees, Top Colleges">
-<meta property="og:description" content="Complete guide to MCA admission IPU 2026 — Programme Code 105. NIMCET/CET, top colleges, fee structure and admission process under GGSIPU.">
+<meta property="og:title" content="IPU MCA Admission 2026 | NIMCET Eligibility, Fees, Top Colleges Guide">
+<meta property="og:description" content="IP University MCA 2026 via NIMCET/CET PG – eligibility, fees Rs.1.3L, top colleges (USICT/VIPS/JIMS/Tecnia). 12+ colleges. Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/mca-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MCA Admission 2026 IP University (GGSIPU) | Eligibility, Fees, Top Colleges">
-<meta name="twitter:description" content="MCA admission IPU 2026 Programme Code 105. NIMCET/CET, eligibility, fees, top colleges (USICT, VIPS, JIMS, Tecnia).">
+<meta name="twitter:title" content="IPU MCA Admission 2026 | NIMCET Eligibility, Fees, Top Colleges Guide">
+<meta name="twitter:description" content="IP University MCA 2026 via NIMCET/CET PG – eligibility, fees Rs.1.3L, top colleges (USICT/VIPS/JIMS/Tecnia). 12+ colleges. Call 9899991342.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
