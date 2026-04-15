@@ -22,3 +22,20 @@ TestCase::assertEqual('https://ipu.co.in/news/round-2-counselling-schedule.php',
 TestCase::assertEqual('https://ipu.co.in/assets/images/news/counselling.jpg', $decoded['image'], 'absolute image url');
 TestCase::assertEqual('Organization', $decoded['publisher']['@type'], 'publisher is Organization');
 TestCase::assertEqual('IPU.co.in', $decoded['publisher']['name'], 'publisher name');
+
+$post_with_faq = $post + ['faq' => [
+    ['q' => 'When does Round 2 start?', 'a' => 'April 22, 2026.'],
+    ['q' => 'Who can apply?', 'a' => 'All 10+2 qualified candidates.'],
+]];
+
+$faq_jsonld = news_jsonld_faqpage($post_with_faq);
+TestCase::assertTrue($faq_jsonld !== '', 'non-empty when faq present');
+$decoded_faq = json_decode($faq_jsonld, true);
+TestCase::assertEqual('FAQPage', $decoded_faq['@type'], 'type FAQPage');
+TestCase::assertEqual(2, count($decoded_faq['mainEntity']), 'two FAQs');
+TestCase::assertEqual('Question', $decoded_faq['mainEntity'][0]['@type'], 'first is Question');
+TestCase::assertEqual('When does Round 2 start?', $decoded_faq['mainEntity'][0]['name'], 'question text');
+TestCase::assertEqual('April 22, 2026.', $decoded_faq['mainEntity'][0]['acceptedAnswer']['text'], 'answer text');
+
+$no_faq = news_jsonld_faqpage($post);
+TestCase::assertEqual('', $no_faq, 'empty string when no faq');

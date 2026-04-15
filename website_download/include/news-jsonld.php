@@ -29,3 +29,25 @@ function news_jsonld_newsarticle(array $post): string {
 
     return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 }
+
+function news_jsonld_faqpage(array $post): string {
+    if (empty($post['faq']) || !is_array($post['faq'])) {
+        return '';
+    }
+    $entities = [];
+    foreach ($post['faq'] as $pair) {
+        if (empty($pair['q']) || empty($pair['a'])) continue;
+        $entities[] = [
+            '@type' => 'Question',
+            'name' => $pair['q'],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $pair['a']],
+        ];
+    }
+    if (empty($entities)) return '';
+    $data = [
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => $entities,
+    ];
+    return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+}
