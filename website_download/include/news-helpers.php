@@ -23,6 +23,23 @@ function news_category_image(string $c): string {
     return "assets/images/news/{$slug}.jpg";
 }
 
+function news_parse_mdfile(string $path): array {
+    $raw = file_get_contents($path);
+    if ($raw === false) {
+        throw new RuntimeException("Cannot read MD file: $path");
+    }
+    $parts = preg_split('/^---\s*$/m', $raw, 2);
+    if (count($parts) !== 2) {
+        throw new RuntimeException("MD file missing '---' separator: $path");
+    }
+    $fm = json_decode(trim($parts[0]), true);
+    if (!is_array($fm)) {
+        throw new RuntimeException("Invalid JSON frontmatter in $path: " . json_last_error_msg());
+    }
+    $body = ltrim($parts[1]);
+    return [$fm, $body];
+}
+
 function news_md_to_html(string $md): string {
     static $parser = null;
     // Parsedown 1.7.4 predates PHP 8.x and emits E_DEPRECATED on nullable-param signatures.

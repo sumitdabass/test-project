@@ -23,3 +23,11 @@ TestCase::assertContains('<strong>bold</strong>', $html, 'bold rendered');
 $html2 = news_md_to_html("- one\n- two\n- three");
 TestCase::assertContains('<ul>', $html2, 'list rendered');
 TestCase::assertContains('<li>one</li>', $html2, 'list item rendered');
+
+[$fm, $body] = news_parse_mdfile(__DIR__ . '/fixtures/sample-post.md');
+TestCase::assertEqual('Round 2 Counselling Schedule Announced', $fm['title'], 'title parsed');
+TestCase::assertEqual('Counselling', $fm['category'], 'category parsed');
+TestCase::assertEqual(['B.Tech', 'MBA'], $fm['tags'], 'tags parsed');
+TestCase::assertEqual('April 22, 2026.', $fm['faq'][0]['a'], 'faq parsed');
+TestCase::assertContains('Round 2 counselling runs', $body, 'body contains text');
+TestCase::assertNotContains('"title"', $body, 'frontmatter not in body');
