@@ -22,3 +22,54 @@ function news_build_single_post(string $md_path, string $out_dir): string {
 
     return $out_file;
 }
+
+function news_load_all_posts(string $content_dir): array {
+    $posts = [];
+    foreach (glob(rtrim($content_dir, '/') . '/*.md') as $md) {
+        [$fm, $body] = news_parse_mdfile($md);
+        $fm['read_time'] = news_read_time($body);
+        $posts[] = $fm;
+    }
+    usort($posts, function ($a, $b) {
+        $fa = !empty($a['featured']) ? 1 : 0;
+        $fb = !empty($b['featured']) ? 1 : 0;
+        if ($fa !== $fb) return $fb - $fa;
+        return strcmp($b['date'], $a['date']);
+    });
+    return $posts;
+}
+
+function news_build_index(string $content_dir, string $out_dir): string {
+    $posts = news_load_all_posts($content_dir);
+
+    $out  = "<?php include_once __DIR__ . '/../include/base-head.php'; ?>\n";
+    $out .= "<title>IPU News &amp; Announcements — Latest Updates for 2026-27</title>\n";
+    $out .= "<meta name=\"description\" content=\"Latest news and announcements from GGSIPU — counselling schedules, CET updates, admission notifications, results.\">\n";
+    $out .= "<link rel=\"canonical\" href=\"https://ipu.co.in/news/\">\n";
+    $out .= "<meta name=\"robots\" content=\"index, follow\">\n";
+    $out .= "<body>\n";
+    $out .= "<?php include_once __DIR__ . '/../include/base-nav.php'; ?>\n";
+    $out .= "<main class=\"news-index\">\n";
+    $out .= "  <header class=\"news-index__header\"><h1>IPU News &amp; Announcements</h1><p>Latest updates on GGSIPU admissions, counselling, CET, and results.</p></header>\n";
+    $out .= "  <nav class=\"news-categories\"><a href=\"/news/\">All</a>";
+    foreach (news_categories() as $cat) {
+        $out .= "<a href=\"/news/?cat=" . strtolower($cat) . "\">" . $cat . "</a>";
+    }
+    $out .= "</nav>\n";
+    $out .= "  <div class=\"news-grid\">\n";
+    foreach ($posts as $post) {
+        if (empty($post['image'])) {
+            $post['image'] = news_category_image($post['category'] ?? 'General');
+        }
+        $post_export = var_export($post, true);
+        $out .= "    <?php \$post = $post_export; include __DIR__ . '/../include/news-card.php'; ?>\n";
+    }
+    $out .= "  </div>\n</main>\n";
+    $out .= "<?php include_once __DIR__ . '/../include/base-footer.php'; ?>\n";
+    $out .= "</body>\n</html>\n";
+
+    if (!is_dir($out_dir)) mkdir($out_dir, 0755, true);
+    $out_file = rtrim($out_dir, '/') . '/index.php';
+    file_put_contents($out_file, $out);
+    return $out_file;
+}
