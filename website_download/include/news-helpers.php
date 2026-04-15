@@ -28,6 +28,28 @@ function news_read_time(string $body_md): int {
     return max(1, (int) ceil($words / 200));
 }
 
+function news_state_load(string $path): array {
+    if (!file_exists($path)) return ['seen' => []];
+    $data = json_decode(file_get_contents($path), true);
+    return is_array($data) && isset($data['seen']) ? $data : ['seen' => []];
+}
+
+function news_state_has_seen(string $path, string $url): bool {
+    $state = news_state_load($path);
+    return in_array(hash('sha256', $url), $state['seen'], true);
+}
+
+function news_state_mark_seen(string $path, string $url): void {
+    $state = news_state_load($path);
+    $hash = hash('sha256', $url);
+    if (!in_array($hash, $state['seen'], true)) {
+        $state['seen'][] = $hash;
+    }
+    $dir = dirname($path);
+    if (!is_dir($dir)) mkdir($dir, 0755, true);
+    file_put_contents($path, json_encode($state, JSON_PRETTY_PRINT));
+}
+
 function news_parse_mdfile(string $path): array {
     $raw = file_get_contents($path);
     if ($raw === false) {

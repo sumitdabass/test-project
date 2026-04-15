@@ -37,3 +37,12 @@ $long = str_repeat('word ', 400);
 TestCase::assertEqual(2, news_read_time($long), '400 words at 200 wpm → 2 min');
 $longer = str_repeat('word ', 1000);
 TestCase::assertEqual(5, news_read_time($longer), '1000 words → 5 min');
+
+$tmp_state = sys_get_temp_dir() . '/news_state_' . uniqid() . '.json';
+TestCase::assertTrue(!news_state_has_seen($tmp_state, 'https://example.com/a'), 'unseen URL returns false');
+news_state_mark_seen($tmp_state, 'https://example.com/a');
+TestCase::assertTrue(news_state_has_seen($tmp_state, 'https://example.com/a'), 'seen URL returns true');
+TestCase::assertTrue(!news_state_has_seen($tmp_state, 'https://example.com/b'), 'other URL still unseen');
+news_state_mark_seen($tmp_state, 'https://example.com/b');
+TestCase::assertEqual(2, count(json_decode(file_get_contents($tmp_state), true)['seen']), 'two hashes stored');
+unlink($tmp_state);
