@@ -1,0 +1,78 @@
+name: News build & deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/news/**'
+      - 'website_download/include/news-*.php'
+      - 'website_download/assets/images/news/**'
+      - 'scripts/build-news.php'
+      - 'scripts/vendor/Parsedown.php'
+      - 'scripts/tests/**'
+      - 'upload_news.py'
+      - '.github/workflows/news-build-deploy.yml'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Single-post redeploy (leave blank for full site)'
+        required: false
+        type: string
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      FTP_HOST: ${{ secrets.FTP_HOST }}
+      FTP_USER: ${{ secrets.FTP_USER }}
+      FTP_PASS: ${{ secrets.FTP_PASS }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP 8.2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: gd, mbstring, json
+          coverage: none
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run PHP test suite
+        run: php scripts/tests/run.php
+
+      - name: Build news module (all MD → PHP + sitemap + llms.txt)
+        run: php scripts/build-news.php
+
+      - name: Verify FTP secrets present
+        run: |
+          for var in FTP_HOST FTP_USER FTP_PASS; do
+            if [ -z "${!var}" ]; then
+              echo "::error::$var secret is not set in repo Settings → Secrets → Actions"
+              exit 1
+            fi
+          done
+
+      - name: Upload to cPanel via FTP
+        run: |
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            python3 upload_news.py --slug "${{ github.event.inputs.slug }}"
+          else
+            python3 upload_news.py
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### News build & deploy" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Posts in content/news/: $(ls content/news/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- Generated in website_download/news/: $(ls website_download/news/*.php 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- Slug input: ${{ github.event.inputs.slug || '(full deploy)' }}" >> $GITHUB_STEP_SUMMARY
