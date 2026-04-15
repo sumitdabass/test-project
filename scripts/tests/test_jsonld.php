@@ -39,3 +39,12 @@ TestCase::assertEqual('April 22, 2026.', $decoded_faq['mainEntity'][0]['accepted
 
 $no_faq = news_jsonld_faqpage($post);
 TestCase::assertEqual('', $no_faq, 'empty string when no faq');
+
+$bc = news_jsonld_breadcrumb($post);
+$decoded_bc = json_decode($bc, true);
+TestCase::assertEqual('BreadcrumbList', $decoded_bc['@type'], 'type BreadcrumbList');
+TestCase::assertEqual(4, count($decoded_bc['itemListElement']), 'four crumbs: Home, News, Counselling, Post');
+TestCase::assertEqual('Home', $decoded_bc['itemListElement'][0]['name'], 'first is Home');
+TestCase::assertEqual('News', $decoded_bc['itemListElement'][1]['name'], 'second is News');
+TestCase::assertEqual('Counselling', $decoded_bc['itemListElement'][2]['name'], 'third is category');
+TestCase::assertEqual('Round 2 Counselling Schedule Announced', $decoded_bc['itemListElement'][3]['name'], 'fourth is post title');
