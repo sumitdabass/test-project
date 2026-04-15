@@ -67,6 +67,10 @@
                  href="/ipu-helpline-contact-number.php">Helpline</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link <?= strpos($_SERVER['REQUEST_URI'] ?? '', '/news/') === 0 ? 'active' : '' ?>"
+                 href="/news/">News</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'blog.php' ? 'active' : '' ?>"
                  href="/blog.php">Blog</a>
             </li>
