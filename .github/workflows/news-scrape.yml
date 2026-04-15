@@ -1,0 +1,66 @@
+name: News daily scrape
+
+on:
+  schedule:
+    # 02:30 UTC = 08:00 IST — every morning
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-commit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify OPENAI_API_KEY secret
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY secret is not set in repo Settings → Secrets → Actions"
+            exit 1
+          fi
+
+      - name: Run scraper
+        run: python3 automation/news-scraper.py
+
+      - name: Commit new posts if any
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/news/
+          if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "no new posts this run"
+          else
+            N=$(git diff --cached --name-only | grep -c '^content/news/.*\.md$' || true)
+            git commit -m "feat(news): auto-publish $N post(s)"
+            git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+            echo "pushed $N new post(s)"
+          fi
+
+      - name: Dispatch build-and-deploy
+        if: steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GITHUB_TOKEN pushes don't cascade into other workflow runs, so
+          # explicitly dispatch the build-and-deploy workflow here.
+          gh workflow run news-build-deploy.yml --ref main
+          echo "dispatched news-build-deploy.yml"
