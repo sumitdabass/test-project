@@ -22,3 +22,19 @@ function news_category_image(string $c): string {
     $slug = news_is_valid_category($c) ? strtolower($c) : 'general';
     return "assets/images/news/{$slug}.jpg";
 }
+
+function news_md_to_html(string $md): string {
+    static $parser = null;
+    // Parsedown 1.7.4 predates PHP 8.x and emits E_DEPRECATED on nullable-param signatures.
+    // Suppress only that class of notice while it loads and runs; preserve other errors.
+    $prev = error_reporting();
+    error_reporting($prev & ~E_DEPRECATED);
+    if ($parser === null) {
+        require_once __DIR__ . '/../../scripts/vendor/Parsedown.php';
+        $parser = new Parsedown();
+        $parser->setSafeMode(true);
+    }
+    $html = $parser->text($md);
+    error_reporting($prev);
+    return $html;
+}

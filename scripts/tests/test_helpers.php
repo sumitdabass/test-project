@@ -15,3 +15,11 @@ TestCase::assertEqual('assets/images/news/counselling.jpg', news_category_image(
 TestCase::assertEqual('assets/images/news/general.jpg', news_category_image('NonExistent'), 'unknown category falls back to general');
 TestCase::assertTrue(news_is_valid_category('CET'), 'CET is valid');
 TestCase::assertTrue(!news_is_valid_category('Sports'), 'Sports is not valid');
+
+$html = news_md_to_html("## Hello\n\nThis is **bold**.");
+TestCase::assertContains('<h2>Hello</h2>', $html, 'h2 rendered');
+TestCase::assertContains('<strong>bold</strong>', $html, 'bold rendered');
+
+$html2 = news_md_to_html("- one\n- two\n- three");
+TestCase::assertContains('<ul>', $html2, 'list rendered');
+TestCase::assertContains('<li>one</li>', $html2, 'list item rendered');
