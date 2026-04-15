@@ -1477,71 +1477,81 @@ n8n workflows are configured visually, not via TDD. For each workflow below, the
 
 All workflow JSON exports are committed to `n8n/workflows/` for reproducibility — if you need to rebuild the n8n instance, they can be re-imported.
 
-### Task 17: Provision IPU n8n instance
+### Task 17: Connect to the shared IPU n8n instance + set up deployment tooling
+
+**Revision on 2026-04-15:** the original "provision a new dedicated instance" direction was revised. The user supplied an API key for the existing shared n8n host at `https://n8n.srv1117424.hstgr.cloud` — the same server that runs KYNE, Casa Mazamiro, and ~58 other tenants' workflows. Rather than spin up a separate instance, IPU workflows live on this shared host, all prefixed with `IPU — ` so they're visually isolated and programmatically guarded.
 
 **Files:**
-- Create: `n8n/README.md`
-- Create: `n8n/workflows/.gitkeep`
+- Create: `deployment/sync_workflow.py` — multi-workflow pull/push/diff/activate CLI (adapted from KYNE's pattern)
+- Create: `deployment/README.md`
+- Create: `deployment/workflows/.gitkeep`
+- Modify: `.gitignore` — ignore `deployment/backups/`
+- Modify: project-root `.env` — append `N8N_BASE_URL` + `N8N_API_KEY`
 
-- [ ] **Step 1: Decide hosting**
+- [ ] **Step 1: Store creds**
 
-Options (confirm with user before proceeding):
-1. Self-hosted Docker on the same server as KYNE — free, shares infra
-2. Self-hosted Docker on a separate small VPS — isolated, $5/mo
-3. n8n Cloud — $20/mo, zero ops
+Append to `/Users/Sumit/test-project/.env`:
 
-**Default recommendation:** Option 1 if KYNE's server has CPU/RAM headroom; otherwise Option 2. Confirm with user.
-
-- [ ] **Step 2: Spin up instance + secure it**
-
-- Set domain `ipu-n8n.internal` (or similar)
-- Enable basic auth on the n8n UI
-- Create an admin user
-- Verify you can log in
-
-- [ ] **Step 3: Install credentials**
-
-In n8n UI, create credentials for:
-- Anthropic API key (for Claude rewrite)
-- GitHub personal access token (repo-scoped, read/write on the ipu.co.in repo)
-- Slack bot token (scoped: `chat:write`, `im:write`, `commands`)
-- FTP credentials for the cPanel server (host, username, password, port)
-
-Document credential IDs (not secrets) in `n8n/README.md`.
-
-- [ ] **Step 4: Document in repo**
-
-Create `n8n/README.md`:
-
-```markdown
-# IPU n8n Instance
-
-Dedicated n8n instance for automating the News & Announcements section and (later) the chat agent.
-
-## Access
-- URL: <instance URL>
-- Auth: basic auth — see 1Password "IPU n8n admin"
-
-## Credentials configured
-- `anthropic_api` — Claude API key
-- `github_ipu_repo` — GitHub PAT for commits + webhook listener
-- `slack_ipu_news` — Slack bot for DM digest
-- `ftp_cpanel` — FTP to cPanel (username/password/host)
-
-## Workflows
-See `workflows/*.json` in this folder for importable definitions.
+```
+N8N_BASE_URL=https://n8n.srv1117424.hstgr.cloud
+N8N_API_KEY=<JWT from n8n Settings → API>
 ```
 
-- [ ] **Step 5: Commit**
+`.env` is already gitignored. The JWT expires 2026-07-13; regenerate in the n8n UI before then.
+
+- [ ] **Step 2: Verify connectivity**
 
 ```bash
-mkdir -p n8n/workflows
-touch n8n/workflows/.gitkeep
-git add n8n/README.md n8n/workflows/.gitkeep
-git commit -m "chore: document IPU n8n instance + credential structure"
+curl -sS -H "X-N8N-API-KEY: $N8N_API_KEY" "$N8N_BASE_URL/api/v1/workflows?limit=1"
+```
+
+Expect HTTP 200 and a JSON payload with a workflow in `data[0]`.
+
+- [ ] **Step 3: Build `deployment/sync_workflow.py`**
+
+Multi-workflow CLI: `list | pull <id> | push <file> | diff <file> | activate <file> | deactivate <file> | reload <file>`. Enforces `IPU — ` name prefix on every write operation — refuses to touch other tenants' workflows.
+
+(See committed `deployment/sync_workflow.py` for full source.)
+
+- [ ] **Step 4: Smoke-test**
+
+```bash
+./deployment/sync_workflow.py list
+```
+
+Expect to see all ~58 workflows on the server; IPU ones (none yet at this stage) would have an `[IPU ]` marker.
+
+- [ ] **Step 5: Document in `deployment/README.md`**
+
+Contents:
+- Multi-tenant warning: NEVER touch non-IPU workflows
+- Naming rule: every IPU workflow name starts with `IPU — ` (em-dash, not hyphen)
+- Credential location: `../.env`
+- Commands reference
+- Webhook-reload gotcha (n8n caches compiled webhook handlers in-memory; always `reload` after pushing changes to webhook-node params)
+
+- [ ] **Step 6: Credentials to create inside n8n's credential store (NOT in `.env`)**
+
+In the n8n UI, under Credentials:
+- Anthropic API key (for Claude rewrite nodes in Task 18)
+- GitHub PAT — repo scope on the ipu.co.in repo (for MD commits and webhook listeners)
+- Slack bot token — scopes `chat:write`, `im:write`, `commands` (for Task 18+21 digest and modals)
+- FTP — cPanel host/user/pass (for deploys in Task 18+19+20)
+
+Each credential gets a stable name; workflows reference it by name, so changing the underlying secret later doesn't require workflow edits.
+
+- [ ] **Step 7: Commit**
+
+```bash
+mkdir -p deployment/workflows deployment/backups
+touch deployment/workflows/.gitkeep
+git add deployment/sync_workflow.py deployment/README.md deployment/workflows/.gitkeep .gitignore
+git commit -m "feat(news): add n8n deployment tooling — multi-workflow sync CLI + IPU-only guardrails"
 ```
 
 ---
+
+**Note on Tasks 18–22:** the original plan referenced `n8n/workflows/` and `n8n/prompts/` — since the revision, workflow JSON files live at `deployment/workflows/<name>.json` and Claude system prompts at `deployment/prompts/<name>.md`. Keep that path substitution in mind while executing 18–22.
 
 ### Task 18: n8n workflow — daily scraper + rewriter + builder + deployer
 
