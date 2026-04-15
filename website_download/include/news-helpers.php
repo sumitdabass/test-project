@@ -1,4 +1,5 @@
 <?php
+// News blog helpers — slug generation, categories, markdown rendering, frontmatter parsing, read-time, dedup state.
 
 function news_slugify(string $title): string {
     $s = mb_strtolower($title, 'UTF-8');
