@@ -521,5 +521,4 @@ For real-time data, use the API: https://ipu.co.in/api/agent-data.php?action=all
 
 Latest IPU-related news and announcements:
 
-- [CET Result Date Confirmed for May 20](https://ipu.co.in/news/cet-result-date-confirmed.php) — IPU CET 2026 results will be declared on May 20, 2026.
-- [Round 2 Counselling Schedule Announced](https://ipu.co.in/news/round-2-counselling-schedule.php) — IPU has announced Round 2 counselling dates for 2026-27.
+- [IPU News & Announcements — New Section Launched](https://ipu.co.in/news/welcome-news-launched.php) — We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.

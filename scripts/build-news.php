@@ -81,8 +81,8 @@ function news_update_sitemap(string $content_dir, string $sitemap_path): void {
         $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n";
     }
 
-    // strip any previous news entries (idempotent)
-    $xml = preg_replace('#\s*<url>\s*<loc>https://ipu\.co\.in/news/[^<]+</loc>.*?</url>#s', '', $xml);
+    // strip any previous news entries (idempotent) — matches both /news/<slug>.php and the bare /news/ index
+    $xml = preg_replace('#\s*<url>\s*<loc>https://ipu\.co\.in/news/[^<]*</loc>.*?</url>#s', '', $xml);
 
     $new_entries = '';
     foreach ($posts as $p) {

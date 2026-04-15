@@ -10,46 +10,30 @@
   <nav class="news-categories"><a href="/news/">All</a><a href="/news/?cat=counselling">Counselling</a><a href="/news/?cat=cet">CET</a><a href="/news/?cat=admissions">Admissions</a><a href="/news/?cat=results">Results</a><a href="/news/?cat=general">General</a></nav>
   <div class="news-grid">
     <?php $post = array (
-  'title' => 'CET Result Date Confirmed for May 20',
-  'slug' => 'cet-result-date-confirmed',
-  'date' => '2026-04-14',
-  'date_modified' => '2026-04-14',
-  'category' => 'CET',
+  'title' => 'IPU News & Announcements — New Section Launched',
+  'slug' => 'welcome-news-launched',
+  'date' => '2026-04-15',
+  'date_modified' => '2026-04-15',
+  'category' => 'General',
   'tags' => 
   array (
-    0 => 'CET',
-    1 => 'Results',
+    0 => 'announcement',
   ),
   'featured' => true,
   'is_urgent' => false,
-  'image' => 'assets/images/news/cet.jpg',
-  'tldr' => 'IPU CET 2026 results will be declared on May 20, 2026.',
-  'faq' => 
-  array (
-  ),
-  'read_time' => 1,
-); include __DIR__ . '/../include/news-card.php'; ?>
-    <?php $post = array (
-  'title' => 'Round 2 Counselling Schedule Announced',
-  'slug' => 'round-2-counselling-schedule',
-  'date' => '2026-04-15',
-  'date_modified' => '2026-04-15',
-  'category' => 'Counselling',
-  'tags' => 
-  array (
-    0 => 'B.Tech',
-    1 => 'MBA',
-  ),
-  'featured' => false,
-  'is_urgent' => false,
-  'image' => 'assets/images/news/counselling.jpg',
-  'tldr' => 'IPU has announced Round 2 counselling dates for 2026-27.',
+  'image' => 'assets/images/news/general.jpg',
+  'tldr' => 'We\'ve launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.',
   'faq' => 
   array (
     0 => 
     array (
-      'q' => 'When does Round 2 start?',
-      'a' => 'April 22, 2026.',
+      'q' => 'What will I find here?',
+      'a' => 'Timely updates on GGSIPU admissions, counselling rounds, CET schedules, results, and official notifications — sourced directly from ipu.ac.in and ipuadmissions.nic.in.',
+    ),
+    1 => 
+    array (
+      'q' => 'How often is this updated?',
+      'a' => 'Daily. An automated pipeline monitors official IPU sources every morning and publishes new updates within hours.',
     ),
   ),
   'read_time' => 1,
