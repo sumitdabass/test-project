@@ -9,3 +9,16 @@ function news_slugify(string $title): string {
     $s = preg_replace('/-+/', '-', $s);
     return trim($s, '-');
 }
+
+function news_categories(): array {
+    return ['Counselling', 'CET', 'Admissions', 'Results', 'General'];
+}
+
+function news_is_valid_category(string $c): bool {
+    return in_array($c, news_categories(), true);
+}
+
+function news_category_image(string $c): string {
+    $slug = news_is_valid_category($c) ? strtolower($c) : 'general';
+    return "assets/images/news/{$slug}.jpg";
+}
