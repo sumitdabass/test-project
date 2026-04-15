@@ -113,10 +113,36 @@ function news_update_llms_txt(string $content_dir, string $llms_path): void {
     file_put_contents($llms_path, rtrim($existing, "\n") . "\n" . $section);
 }
 
+function news_cleanup_orphans(string $content_dir, string $out_dir): array {
+    // Build the set of slugs that SHOULD exist from the MD source files.
+    $expected = [];
+    foreach (glob(rtrim($content_dir, '/') . '/*.md') as $md) {
+        [$fm, ] = news_parse_mdfile($md);
+        $slug = $fm['slug'] ?? news_slugify($fm['title'] ?? basename($md, '.md'));
+        $expected[$slug] = true;
+    }
+    // Walk generated *.php files in out_dir. Any that aren't in $expected and
+    // aren't index.php are orphans from a now-deleted MD — remove them.
+    $removed = [];
+    foreach (glob(rtrim($out_dir, '/') . '/*.php') as $php) {
+        $name = basename($php, '.php');
+        if ($name === 'index') continue;
+        if (!isset($expected[$name])) {
+            unlink($php);
+            $removed[] = $php;
+        }
+    }
+    return $removed;
+}
+
 function news_build_all(string $content_dir, string $web_dir): array {
     $posts_written = [];
     foreach (glob(rtrim($content_dir, '/') . '/*.md') as $md) {
         $posts_written[] = news_build_single_post($md, $web_dir . '/news/');
+    }
+    $removed = news_cleanup_orphans($content_dir, $web_dir . '/news/');
+    foreach ($removed as $r) {
+        echo "  removed orphan: $r\n";
     }
     news_build_index($content_dir, $web_dir . '/news/');
     news_update_sitemap($content_dir, $web_dir . '/sitemap.xml');

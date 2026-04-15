@@ -65,7 +65,9 @@ jobs:
           if [ -n "${{ github.event.inputs.slug }}" ]; then
             python3 upload_news.py --slug "${{ github.event.inputs.slug }}"
           else
-            python3 upload_news.py
+            # --sync: full deploys also delete remote /news/*.php files whose
+            # source MD no longer exists locally (unpublish support)
+            python3 upload_news.py --sync
           fi
 
       - name: Summary

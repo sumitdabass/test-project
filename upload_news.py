@@ -14,6 +14,9 @@ Usage:
     # upload everything owned by the news module
     python3 upload_news.py
 
+    # upload + delete remote posts that no longer exist locally (used by CI)
+    python3 upload_news.py --sync
+
     # upload only a single post + the pieces that reference it
     python3 upload_news.py --slug round-2-counselling-schedule
 
@@ -90,11 +93,47 @@ def files_for_full(remote_root: str) -> list[tuple[Path, str]]:
     return out
 
 
+def sync_delete_remote_orphans(ftp: ftplib.FTP, remote_news_dir: str, local_news_dir: Path) -> list[str]:
+    """List .php files in the remote /news/ dir; delete any that don't have a local
+    counterpart. Preserves anything else (subdirectories, non-PHP files)."""
+    local_names = {p.name for p in local_news_dir.glob("*.php")}
+    # LIST the remote dir
+    listing: list[str] = []
+    try:
+        ftp.cwd(remote_news_dir)
+        ftp.retrlines("NLST", listing.append)
+    except ftplib.error_perm:
+        return []  # remote dir doesn't exist yet — nothing to clean
+    finally:
+        ftp.cwd("/")
+
+    deleted: list[str] = []
+    for remote_name in listing:
+        if not remote_name.endswith(".php"):
+            continue
+        if remote_name in local_names:
+            continue
+        remote_path = f"{remote_news_dir}/{remote_name}"
+        try:
+            ftp.delete(remote_path)
+            deleted.append(remote_path)
+            print(f"  ✗ deleted orphan: {remote_path}")
+        except ftplib.error_perm as e:
+            print(f"  ⚠ could not delete {remote_path}: {e}")
+    return deleted
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Upload the /news/ module to cPanel via FTP.")
     parser.add_argument("--slug", help="single-post deploy: only this post (+ index, sitemap, llms.txt)")
+    parser.add_argument("--sync", action="store_true",
+                        help="after uploading, delete any remote /news/*.php that no longer exists locally")
     parser.add_argument("--dry-run", action="store_true", help="list files, skip the FTP connection")
     args = parser.parse_args()
+
+    if args.slug and args.sync:
+        print("--sync not meaningful with --slug (single-post deploy)", file=sys.stderr)
+        return 2
 
     remote_root = os.environ.get("REMOTE_ROOT", "/public_html").rstrip("/")
 
@@ -131,10 +170,18 @@ def main() -> int:
     try:
         for local, remote in files:
             upload_file(ftp, local, remote)
+        deleted: list[str] = []
+        if args.sync:
+            print(f"\nsync-checking {remote_root}/news for orphans...")
+            deleted = sync_delete_remote_orphans(ftp, f"{remote_root}/news", WEB / "news")
     finally:
         ftp.quit()
 
-    print(f"\nuploaded {len(files)} files")
+    print(f"\nuploaded {len(files)} files", end="")
+    if args.sync:
+        print(f"; deleted {len(deleted)} remote orphan(s)")
+    else:
+        print()
     return 0
 
 

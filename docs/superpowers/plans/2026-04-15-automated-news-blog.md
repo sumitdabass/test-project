@@ -1652,6 +1652,12 @@ git commit -m "feat(news): add n8n daily scraper workflow + Claude rewrite promp
 
 ### Task 19: n8n workflow — rebuild-single (triggered after MD commit)
 
+> **⚠ SUPERSEDED 2026-04-15.** The `news-build-deploy.yml` GitHub Action already triggers on every commit to `content/news/**`, `website_download/include/news-*.php`, and other news-owned paths. Adding a separate n8n webhook would be redundant. **This task is intentionally not implemented.**
+
+---
+
+<details><summary>Original task body (kept for reference)</summary>
+
 Invoked by: (a) the daily scraper after committing a new MD, (b) a GitHub webhook on pushes that touch `content/news/`, (c) the suggest-edit workflow (Task 21).
 
 **Files:**
@@ -1688,7 +1694,23 @@ git commit -m "feat(news): add n8n rebuild-single webhook workflow"
 
 ---
 
+</details>
+
+---
+
 ### Task 20: n8n workflow — unpublish-by-slug
+
+> **⚠ REPLACED 2026-04-15.** Unpublish is now handled end-to-end by the existing pipeline:
+> 1. User deletes `content/news/<slug>.md` (GitHub web UI or local commit).
+> 2. `news-build-deploy.yml` fires on the push.
+> 3. `scripts/build-news.php` → `news_cleanup_orphans()` deletes the corresponding local `website_download/news/<slug>.php` and rebuilds index/sitemap/llms.txt without the post.
+> 4. `upload_news.py --sync` FTP-deletes the remote `/public_html/news/<slug>.php` during the deploy step.
+>
+> **This task is intentionally not implemented as an n8n workflow.** If Slack unpublish button is wanted later, it becomes a thin Slack App that deletes the MD via GitHub API — the rest of the pipeline handles itself.
+
+---
+
+<details><summary>Original task body (kept for reference)</summary>
 
 **Files:**
 - Create: `n8n/workflows/unpublish-by-slug.json`
@@ -1721,7 +1743,17 @@ git commit -m "feat(news): add n8n unpublish-by-slug webhook workflow"
 
 ---
 
+</details>
+
+---
+
 ### Task 21: n8n workflow — suggest-edit (Slack modal → Claude → rebuild)
+
+> **⚠ DEFERRED 2026-04-15.** Slack integration was deferred (Path B) in favour of shipping the core scrape→rewrite→publish loop first. This workflow depends on a Slack bot that isn't in place. Revisit when there's actual demand to edit posts via Slack.
+
+---
+
+<details><summary>Original task body (kept for reference)</summary>
 
 **Files:**
 - Create: `n8n/workflows/suggest-edit.json`
@@ -1777,7 +1809,17 @@ git commit -m "feat(news): add n8n suggest-edit workflow (Slack modal → Claude
 
 ---
 
+</details>
+
+---
+
 ### Task 22: n8n workflow — weekly summary
+
+> **⚠ DEFERRED 2026-04-15.** Slack-bound; same rationale as Task 21. Low-value compared to just scanning `git log content/news/` directly when needed.
+
+---
+
+<details><summary>Original task body (kept for reference)</summary>
 
 **Files:**
 - Create: `n8n/workflows/weekly-summary.json`
@@ -1805,6 +1847,10 @@ git commit -m "feat(news): add n8n weekly summary workflow"
 ---
 
 ## Phase 3: Deploy + End-to-End Smoke
+
+</details>
+
+---
 
 ### Task 23: Python FTP fallback script for news
 
@@ -1988,6 +2034,23 @@ git commit -m "chore: revert staging URL override after smoke test passed"
 
 ### Task 25: Cutover to production
 
+> **✅ PARTIALLY COMPLETE 2026-04-15.** Already done:
+> - `/news/` section live at https://ipu.co.in/news/
+> - Welcome placeholder post + 1 real Gemini-generated post live
+> - "News" link added to main nav (`base-nav.php`)
+> - FTP deploy tested end-to-end via GH Action (run #2 green, 50s)
+> - Daily cron scheduled at 02:30 UTC — will run once `GEMINI_API_KEY` repo secret is added
+> - Daily cap set to 1 post/day per user preference
+>
+> **Remaining user actions (not code tasks):**
+> 1. Submit updated sitemap to Google Search Console for faster indexing of `/news/*` URLs.
+> 2. Replace the six 1200×630 placeholder JPEGs under `website_download/assets/images/news/` with real branded artwork before high-traffic launches (current ones are solid-colour + category label — functional, not beautiful).
+> 3. Add `GEMINI_API_KEY` as a GitHub repo secret to enable the daily cron (you confirmed the free tier will auto-renew, so no billing action is needed once the secret is in).
+>
+> ---
+>
+> <details><summary>Original task body (kept for reference)</summary>
+
 - [ ] **Step 1: Replace placeholder category images**
 
 Replace the five 1x1 JPEGs in `website_download/assets/images/news/` with real branded images (1200×630 recommended for OG sharing). FTP them with:
@@ -2019,6 +2082,8 @@ Daily for one week:
 At end of week, write a short "week 1 report" as a commit message body on a trivial commit (e.g., a date bump in `llms.txt`): how many posts, how many edits, any issues, any prompt tuning applied.
 
 **Implementation complete.**
+
+</details>
 
 ---
 

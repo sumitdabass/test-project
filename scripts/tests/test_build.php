@@ -71,3 +71,21 @@ TestCase::assertContains('Round 2 Counselling Schedule Announced', $llm, 'post t
 TestCase::assertContains('https://ipu.co.in/news/round-2-counselling-schedule.php', $llm, 'post URL listed');
 
 exec('rm -rf ' . escapeshellarg($tmp3));
+
+// --- orphan cleanup ---
+$tmp4 = sys_get_temp_dir() . '/news_build_' . uniqid();
+mkdir($tmp4 . '/content/news', 0755, true);
+mkdir($tmp4 . '/website_download/news', 0755, true);
+copy(__DIR__ . '/fixtures/sample-post.md', $tmp4 . '/content/news/sample-post.md');
+
+// pretend a stale PHP is left from a previously-deleted MD
+file_put_contents($tmp4 . '/website_download/news/stale-old-post.php', "<?php /* stale */ ?>");
+// also create an index.php to confirm it's preserved
+file_put_contents($tmp4 . '/website_download/news/index.php', "<?php /* index */ ?>");
+
+$removed = news_cleanup_orphans($tmp4 . '/content/news', $tmp4 . '/website_download/news/');
+TestCase::assertEqual(1, count($removed), 'one orphan removed');
+TestCase::assertTrue(!file_exists($tmp4 . '/website_download/news/stale-old-post.php'), 'stale PHP deleted');
+TestCase::assertTrue(file_exists($tmp4 . '/website_download/news/index.php'), 'index.php preserved');
+
+exec('rm -rf ' . escapeshellarg($tmp4));
