@@ -20,7 +20,7 @@ Env vars (required in GH Actions; loaded from .env locally):
   GEMINI_API_KEY  — Google AI Studio / Gemini API key (AIza...)
 
 Tuning knobs (defaults are sensible):
-  NEWS_MAX_ITEMS_PER_RUN = 3         # hard cap per run — cost + sanity guard
+  NEWS_MAX_ITEMS_PER_RUN = 1         # hard cap per run — per-user choice (one post per day)
   NEWS_MODEL = "gemini-flash-latest" # see https://ai.google.dev/gemini-api/docs/models
 """
 from __future__ import annotations
@@ -70,7 +70,7 @@ NAV_BLOCKLIST = {
     "home", "about", "privacy policy", "terms", "apply online",
 }
 
-MAX_ITEMS = int(os.environ.get("NEWS_MAX_ITEMS_PER_RUN", "3"))
+MAX_ITEMS = int(os.environ.get("NEWS_MAX_ITEMS_PER_RUN", "1"))
 MODEL = os.environ.get("NEWS_MODEL", "gemini-flash-latest")
 
 LINK_RE = re.compile(r'<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', re.I | re.S)
