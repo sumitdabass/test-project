@@ -31,3 +31,9 @@ TestCase::assertEqual(['B.Tech', 'MBA'], $fm['tags'], 'tags parsed');
 TestCase::assertEqual('April 22, 2026.', $fm['faq'][0]['a'], 'faq parsed');
 TestCase::assertContains('Round 2 counselling runs', $body, 'body contains text');
 TestCase::assertNotContains('"title"', $body, 'frontmatter not in body');
+
+TestCase::assertEqual(1, news_read_time('just a few words'), '< 200 words → 1 min minimum');
+$long = str_repeat('word ', 400);
+TestCase::assertEqual(2, news_read_time($long), '400 words at 200 wpm → 2 min');
+$longer = str_repeat('word ', 1000);
+TestCase::assertEqual(5, news_read_time($longer), '1000 words → 5 min');

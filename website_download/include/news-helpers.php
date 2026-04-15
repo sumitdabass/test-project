@@ -23,6 +23,11 @@ function news_category_image(string $c): string {
     return "assets/images/news/{$slug}.jpg";
 }
 
+function news_read_time(string $body_md): int {
+    $words = str_word_count(strip_tags($body_md));
+    return max(1, (int) ceil($words / 200));
+}
+
 function news_parse_mdfile(string $path): array {
     $raw = file_get_contents($path);
     if ($raw === false) {
