@@ -44,3 +44,30 @@ $pos_other = strpos($idx, 'Round 2 Counselling Schedule');
 TestCase::assertTrue($pos_featured < $pos_other, 'featured post renders before non-featured');
 
 exec('rm -rf ' . escapeshellarg($tmp2));
+
+// --- Task 16: sitemap + llms.txt ---
+$tmp3 = sys_get_temp_dir() . '/news_build_' . uniqid();
+mkdir($tmp3 . '/content/news', 0755, true);
+mkdir($tmp3 . '/website_download/news', 0755, true);
+copy(__DIR__ . '/fixtures/sample-post.md', $tmp3 . '/content/news/sample-post.md');
+
+file_put_contents($tmp3 . '/website_download/sitemap.xml',
+    '<?xml version="1.0" encoding="UTF-8"?>' . "\n" .
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n" .
+    '  <url><loc>https://ipu.co.in/</loc></url>' . "\n" .
+    '</urlset>' . "\n");
+file_put_contents($tmp3 . '/website_download/llms.txt', "# IPU.co.in — LLM guide\n\nHome: https://ipu.co.in/\n");
+
+news_update_sitemap($tmp3 . '/content/news', $tmp3 . '/website_download/sitemap.xml');
+$sm = file_get_contents($tmp3 . '/website_download/sitemap.xml');
+TestCase::assertContains('<loc>https://ipu.co.in/news/round-2-counselling-schedule.php</loc>', $sm, 'post URL in sitemap');
+TestCase::assertContains('<lastmod>2026-04-15</lastmod>', $sm, 'lastmod set');
+TestCase::assertContains('<loc>https://ipu.co.in/</loc>', $sm, 'existing entries preserved');
+
+news_update_llms_txt($tmp3 . '/content/news', $tmp3 . '/website_download/llms.txt');
+$llm = file_get_contents($tmp3 . '/website_download/llms.txt');
+TestCase::assertContains('## IPU News', $llm, 'news section header');
+TestCase::assertContains('Round 2 Counselling Schedule Announced', $llm, 'post title listed');
+TestCase::assertContains('https://ipu.co.in/news/round-2-counselling-schedule.php', $llm, 'post URL listed');
+
+exec('rm -rf ' . escapeshellarg($tmp3));

@@ -73,3 +73,61 @@ function news_build_index(string $content_dir, string $out_dir): string {
     file_put_contents($out_file, $out);
     return $out_file;
 }
+
+function news_update_sitemap(string $content_dir, string $sitemap_path): void {
+    $posts = news_load_all_posts($content_dir);
+    $xml = file_exists($sitemap_path) ? file_get_contents($sitemap_path) : '';
+    if ($xml === '') {
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n";
+    }
+
+    // strip any previous news entries (idempotent)
+    $xml = preg_replace('#\s*<url>\s*<loc>https://ipu\.co\.in/news/[^<]+</loc>.*?</url>#s', '', $xml);
+
+    $new_entries = '';
+    foreach ($posts as $p) {
+        $loc = 'https://ipu.co.in/news/' . $p['slug'] . '.php';
+        $lastmod = htmlspecialchars($p['date_modified'] ?? $p['date'], ENT_QUOTES);
+        $new_entries .= "  <url>\n    <loc>" . htmlspecialchars($loc, ENT_QUOTES) . "</loc>\n    <lastmod>$lastmod</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n";
+    }
+    // also include /news/ index
+    $new_entries .= "  <url>\n    <loc>https://ipu.co.in/news/</loc>\n    <lastmod>" . date('Y-m-d') . "</lastmod>\n    <changefreq>daily</changefreq>\n  </url>\n";
+
+    $xml = str_replace('</urlset>', $new_entries . '</urlset>', $xml);
+    file_put_contents($sitemap_path, $xml);
+}
+
+function news_update_llms_txt(string $content_dir, string $llms_path): void {
+    $posts = news_load_all_posts($content_dir);
+    $existing = file_exists($llms_path) ? file_get_contents($llms_path) : "# IPU.co.in\n";
+
+    // strip previous News section (idempotent)
+    $existing = preg_replace('/\n## IPU News.*?(?=\n## |\z)/s', '', $existing);
+
+    $section = "\n## IPU News\n\nLatest IPU-related news and announcements:\n\n";
+    foreach ($posts as $p) {
+        $url = 'https://ipu.co.in/news/' . $p['slug'] . '.php';
+        $section .= "- [" . $p['title'] . "]($url) — " . $p['tldr'] . "\n";
+    }
+
+    file_put_contents($llms_path, rtrim($existing, "\n") . "\n" . $section);
+}
+
+function news_build_all(string $content_dir, string $web_dir): array {
+    $posts_written = [];
+    foreach (glob(rtrim($content_dir, '/') . '/*.md') as $md) {
+        $posts_written[] = news_build_single_post($md, $web_dir . '/news/');
+    }
+    news_build_index($content_dir, $web_dir . '/news/');
+    news_update_sitemap($content_dir, $web_dir . '/sitemap.xml');
+    news_update_llms_txt($content_dir, $web_dir . '/llms.txt');
+    return $posts_written;
+}
+
+// CLI entry
+if (php_sapi_name() === 'cli' && realpath($argv[0]) === __FILE__) {
+    $repo_root = dirname(__DIR__);
+    $written = news_build_all($repo_root . '/content/news', $repo_root . '/website_download');
+    echo "Built " . count($written) . " posts.\n";
+    foreach ($written as $w) echo "  $w\n";
+}

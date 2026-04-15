@@ -539,4 +539,19 @@
 <priority>0.85</priority>
 </url>
 
+  <url>
+    <loc>https://ipu.co.in/news/cet-result-date-confirmed.php</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/round-2-counselling-schedule.php</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
