@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 10
 
     env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
     steps:
       - name: Checkout
@@ -28,10 +28,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Verify OPENAI_API_KEY secret
+      - name: Verify GEMINI_API_KEY secret
         run: |
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::OPENAI_API_KEY secret is not set in repo Settings → Secrets → Actions"
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::GEMINI_API_KEY secret is not set in repo Settings → Secrets → Actions"
             exit 1
           fi
 

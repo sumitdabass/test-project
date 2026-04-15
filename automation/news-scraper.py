@@ -17,11 +17,11 @@ Flow:
   6. Otherwise write the MD file to content/news/<slug>.md.
 
 Env vars (required in GH Actions; loaded from .env locally):
-  OPENAI_API_KEY  — OpenAI API key
+  GEMINI_API_KEY  — Google AI Studio / Gemini API key (AIza...)
 
 Tuning knobs (defaults are sensible):
-  NEWS_MAX_ITEMS_PER_RUN = 3   # hard cap per run — cost + sanity guard
-  NEWS_MODEL = "gpt-4o-mini"
+  NEWS_MAX_ITEMS_PER_RUN = 3         # hard cap per run — cost + sanity guard
+  NEWS_MODEL = "gemini-flash-latest" # see https://ai.google.dev/gemini-api/docs/models
 """
 from __future__ import annotations
 
@@ -71,7 +71,7 @@ NAV_BLOCKLIST = {
 }
 
 MAX_ITEMS = int(os.environ.get("NEWS_MAX_ITEMS_PER_RUN", "3"))
-MODEL = os.environ.get("NEWS_MODEL", "gpt-4o-mini")
+MODEL = os.environ.get("NEWS_MODEL", "gemini-flash-latest")
 
 LINK_RE = re.compile(r'<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', re.I | re.S)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -138,33 +138,44 @@ def existing_slugs() -> set[str]:
     return {p.stem for p in CONTENT_DIR.glob("*.md")}
 
 
-def call_openai(system_prompt: str, user_message: str) -> dict:
-    key = os.environ.get("OPENAI_API_KEY")
+def call_llm(system_prompt: str, user_message: str) -> dict:
+    """Call Gemini via AI Studio REST API. Returns the parsed JSON object the
+    model produced."""
+    key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        raise RuntimeError("OPENAI_API_KEY not set")
+        raise RuntimeError("GEMINI_API_KEY not set")
     body = {
-        "model": MODEL,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_message},
-        ],
-        "response_format": {"type": "json_object"},
-        "temperature": 0.4,
-    }
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
-        data=json.dumps(body).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {key}",
-            "Content-Type": "application/json",
+        "systemInstruction": {"parts": [{"text": system_prompt}]},
+        "contents": [{"role": "user", "parts": [{"text": user_message}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "maxOutputTokens": 8192,
+            "temperature": 0.4,
         },
+    }
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={key}"
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"OpenAI HTTP {e.code}: {e.read().decode('utf-8', errors='replace')[:500]}")
-    return json.loads(data["choices"][0]["message"]["content"])
+        raise RuntimeError(f"Gemini HTTP {e.code}: {e.read().decode('utf-8', errors='replace')[:500]}")
+
+    candidates = data.get("candidates") or []
+    if not candidates:
+        raise RuntimeError(f"Gemini returned no candidates: {json.dumps(data)[:300]}")
+    parts = candidates[0].get("content", {}).get("parts") or []
+    if not parts:
+        finish = candidates[0].get("finishReason", "?")
+        raise RuntimeError(f"Gemini returned empty content (finishReason={finish}): {json.dumps(data)[:300]}")
+    text = parts[0].get("text", "").strip()
+    if not text:
+        raise RuntimeError(f"Gemini returned empty text: {json.dumps(data)[:300]}")
+    return json.loads(text)
 
 
 def write_post(fm: dict, body_md: str, image: str) -> Path:
@@ -237,7 +248,7 @@ def main() -> int:
         )
         print(f"  rewriting: {item['text'][:80]}")
         try:
-            rewritten = call_openai(system_prompt, user_message)
+            rewritten = call_llm(system_prompt, user_message)
         except Exception as e:
             print(f"  ERROR: {e}", file=sys.stderr)
             errors.append((item["text"], str(e)))

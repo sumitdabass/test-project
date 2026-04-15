@@ -522,3 +522,4 @@ For real-time data, use the API: https://ipu.co.in/api/agent-data.php?action=all
 Latest IPU-related news and announcements:
 
 - [IPU News & Announcements — New Section Launched](https://ipu.co.in/news/welcome-news-launched.php) — We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.
+- [Final Opportunity for IPU CET 2026 Registration Announced](https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php) — GGSIPU has announced a final registration window for the Common Entrance Test (CET) 2026, marking the last chance for candidates to apply for admissions.

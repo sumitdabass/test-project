@@ -38,6 +38,37 @@
   ),
   'read_time' => 1,
 ); include __DIR__ . '/../include/news-card.php'; ?>
+    <?php $post = array (
+  'title' => 'Final Opportunity for IPU CET 2026 Registration Announced',
+  'slug' => 'final-opportunity-ipu-cet-registration',
+  'date' => '2026-04-15',
+  'date_modified' => '2026-04-15',
+  'category' => 'CET',
+  'tags' => 
+  array (
+    0 => 'IPU CET',
+    1 => 'Registration',
+    2 => 'GGSIPU Admissions',
+  ),
+  'featured' => false,
+  'is_urgent' => true,
+  'tldr' => 'GGSIPU has announced a final registration window for the Common Entrance Test (CET) 2026, marking the last chance for candidates to apply for admissions.',
+  'faq' => 
+  array (
+    0 => 
+    array (
+      'q' => 'Is this the final deadline for IPU CET registration?',
+      'a' => 'Yes, the university has officially stated that this notification represents the last and final opportunity for candidates to register.',
+    ),
+    1 => 
+    array (
+      'q' => 'Where can I complete the registration process?',
+      'a' => 'Candidates must visit the official GGSIPU admissions portal to fill out the application form and pay the registration fee.',
+    ),
+  ),
+  'image' => 'assets/images/news/cet.jpg',
+  'read_time' => 1,
+); include __DIR__ . '/../include/news-card.php'; ?>
   </div>
 </main>
 <?php include_once __DIR__ . '/../include/base-footer.php'; ?>
