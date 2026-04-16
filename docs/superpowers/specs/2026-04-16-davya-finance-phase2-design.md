@@ -1,9 +1,10 @@
-# Davya Finance — Phase 1 Design
+# Davya Finance — Phase 2 Design
 
-- **Date:** 2026-04-16
-- **Status:** Approved (verbal, pending written sign-off)
+- **Date:** 2026-04-16 (originally drafted as Phase 1; renumbered to Phase 2 on 2026-04-16 after scope reorder — Sumit promoted the CRM ahead of Finance)
+- **Status:** Deferred. Approved in brainstorm but not active work; waits on Phase 1 (CRM) completion.
 - **Owner:** Sumit Dabas
-- **Project:** "Finance Management by Sumit Dabas" — Phase 1 of 4
+- **Project:** "Finance Management by Sumit Dabas" — Phase 2 of 3
+- **Related specs:** `2026-04-16-davya-crm-phase1-design.md` (active Phase 1)
 
 ---
 
