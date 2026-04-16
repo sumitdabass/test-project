@@ -90,7 +90,7 @@ Slack (workspace: Sumit's existing)
   - Sonam's team → Poonam, Neetu
   - Sumit's team → (open)
 - **Freelancers** report to a head, cannot have their own teams. Currently: Kapil under Sumit.
-- **Sahil:** referrer name visible in CRM dropdown but team affiliation TBD (open question §10).
+- **Sahil:** removed from the team on 2026-04-16 (no longer working). Not seeded.
 
 ### 5.2 Routing rules
 
@@ -156,8 +156,7 @@ All tables in MySQL DB `ipuc_davyafin`, accessed by user `ipuc_davyapp`.
 | 4 | Nisha | member | 3 | 0 |
 | 5 | Poonam | member | 2 | 0 |
 | 6 | Neetu | member | 2 | 0 |
-| 7 | Sahil | member | NULL | 0 | (TBD which head — open question) |
-| 8 | Kapil | freelancer | 1 | 0 |
+| 7 | Kapil | freelancer | 1 | 0 |
 
 Note: "Davya" is **not** a referrer row. Davya only appears as a string `'davya'` in `ledger_entries.account`.
 
@@ -339,9 +338,8 @@ n8n is off-Hostinger and does not have shell access to run `mysqldump` against t
 
 These do not block design approval but must be resolved before / during implementation:
 
-1. **Sahil's head?** — referrer dropdown shows him; needs head_id assignment before he refers a student.
-2. **n8n outbound IP** — pending Sumit's dashboard recovery (~5 hrs from 2026-04-16 14:30 IST).
-3. **cPanel API token rotation** — Sumit acknowledged warning; not confirmed done.
+1. **n8n outbound IP** — pending Sumit's dashboard recovery (~5 hrs from 2026-04-16 14:30 IST).
+2. **cPanel API token rotation** — Sumit acknowledged warning; not confirmed done.
 
 ---
 

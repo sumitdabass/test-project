@@ -73,7 +73,7 @@ Phase 1 is **manual entry via Filament** only. Slack + Gemini automation and Dav
 ### 4.1 Hierarchy
 
 - **Heads (3):** Sumit, Sonam, Nikhil.
-- **Members report to one head:** Nisha → Nikhil; Poonam, Neetu → Sonam; Sahil → **TBD**.
+- **Members report to one head:** Nisha → Nikhil; Poonam, Neetu → Sonam.
 - **Freelancers report to a head, have no team:** Kapil → Sumit.
 - Sumit additionally has **Admin** role (god mode).
 
@@ -151,7 +151,7 @@ All tables live in MySQL DB `ipuc_davyafin`, same DB as future Phase 2 Finance.
 
 Standard Laravel users table. Fields: id, name, email (unique), email_verified_at, password (bcrypt hash), remember_token, team_head_id (FK → users.id, NULL for heads/admin), is_freelancer (BOOL), timestamps. Roles assigned via Spatie.
 
-Seed users: Sumit (admin+head), Sonam (head), Nikhil (head), Nisha (member, head=Nikhil), Poonam (member, head=Sonam), Neetu (member, head=Sonam), Sahil (member, head=TBD), Kapil (freelancer, head=Sumit).
+Seed users: Sumit (admin+head), Sonam (head), Nikhil (head), Nisha (member, head=Nikhil), Poonam (member, head=Sonam), Neetu (member, head=Sonam), Kapil (freelancer, head=Sumit). **7 seed users total.**
 
 ### 6.2 `students`
 
@@ -405,10 +405,9 @@ Shared mechanism with Phase 2 spec. Daily PHP cron on IPU Hostinger → `mysqldu
 
 ## 15. Open items (resolve during implementation)
 
-1. **Sahil's head** — not yet assigned.
-2. **Filament Kanban plugin** — evaluate available packages during scaffolding; fall back to custom Livewire page if none fit.
-3. **Google Drive credentials setup** — need service account JSON or OAuth refresh token for Hostinger → Drive upload.
-4. **GitHub repo name** — suggest `davya-crm`. Private.
+1. **Filament Kanban plugin** — evaluate available packages during scaffolding; fall back to custom Livewire page if none fit.
+2. **Google Drive credentials setup** — need service account JSON or OAuth refresh token for Hostinger → Drive upload.
+3. **GitHub repo name** — suggest `davya-crm`. Private.
 
 ---
 
