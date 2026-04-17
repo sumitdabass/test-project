@@ -26,6 +26,9 @@
 2. **Tracking blindness:** Zero attribution between web sessions and phone calls. Every call-optimization decision is guesswork today.
 3. **Web hygiene debt:** URL canonicalization (`/` vs `/index.php`), year-duplicate pages (`2025` still indexed while `2026` competes for same term), dev/staging URLs (`/k2-work/*`, `/testblog.php`, `/index2.php`…) in Google's index. Splits SEO equity, wastes Ads sitelink clicks.
 
+> **Progress log**
+> - 2026-04-17 — P0.3 Click-to-call GA4 event shipped. `phone_click` dataLayer event live on all pages via GTM container `GTM-5GXCN7Z`. Deployed to production (commit `60b0bff`). GA4 Realtime verification + "Mark as Key Event" deferred by user. Next action on this item: confirm events flowing in Realtime, then dedupe vs. existing `phone_clicks` (plural) tag.
+
 **Highest-impact findings (headline):**
 - Homepage shows broken counter "**0+ Students Graduated**" in the live hero section — visible to every visitor. Immediate credibility killer.
 - **Ads sitelinks still point to `/IPU-B-Tech-admission-2025.php`** (last year). Wasted spend on every sitelink click.
