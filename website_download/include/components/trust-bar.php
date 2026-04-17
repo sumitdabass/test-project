@@ -1,29 +1,28 @@
 <?php
 /**
- * Trust Bar Component — Stats strip showing credibility metrics
- *
- * Usage: include 'include/components/trust-bar.php';
+ * Trust Bar Component — University-style stats strip
+ * Represents IPU's scale and authority
  */
 ?>
 
-<section style="background:#f8faff;padding:32px 0;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+<section style="background:#0d1b6e;padding:40px 0">
   <div class="container">
     <div class="row text-center">
-      <div class="col-6 col-md-3 mb-3 mb-md-0">
-        <div style="font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:#1a3a9c" class="counter" data-stop="5000" data-speed="2000">0</div>
-        <p style="color:#4a5568;font-size:14px;margin:4px 0 0;font-weight:500">Students Guided</p>
+      <div class="col-6 col-md-3 mb-4 mb-md-0" style="border-right:1px solid rgba(255,255,255,.15)">
+        <div style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:#f59e0b">100,000+</div>
+        <p style="color:rgba(255,255,255,.75);font-size:13px;margin:6px 0 0;font-weight:500;text-transform:uppercase;letter-spacing:.5px">Students Graduated</p>
       </div>
-      <div class="col-6 col-md-3 mb-3 mb-md-0">
-        <div style="font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:#1a3a9c" class="counter" data-stop="10" data-speed="1500">0</div>
-        <p style="color:#4a5568;font-size:14px;margin:4px 0 0;font-weight:500">Years Experience</p>
+      <div class="col-6 col-md-3 mb-4 mb-md-0" style="border-right:1px solid rgba(255,255,255,.15)">
+        <div style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:#f59e0b">60+</div>
+        <p style="color:rgba(255,255,255,.75);font-size:13px;margin:6px 0 0;font-weight:500;text-transform:uppercase;letter-spacing:.5px">Affiliated Colleges</p>
+      </div>
+      <div class="col-6 col-md-3" style="border-right:1px solid rgba(255,255,255,.15)">
+        <div style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:#f59e0b">15+</div>
+        <p style="color:rgba(255,255,255,.75);font-size:13px;margin:6px 0 0;font-weight:500;text-transform:uppercase;letter-spacing:.5px">Courses Offered</p>
       </div>
       <div class="col-6 col-md-3">
-        <div style="font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:#1a3a9c" class="counter" data-stop="60" data-speed="1800">0</div>
-        <p style="color:#4a5568;font-size:14px;margin:4px 0 0;font-weight:500">IPU Colleges Covered</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <div style="font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:#1a3a9c" class="counter" data-stop="99" data-speed="2000">0</div>
-        <p style="color:#4a5568;font-size:14px;margin:4px 0 0;font-weight:500">% Admission Success</p>
+        <p style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:#f59e0b;margin:0">Est. 1998</p>
+        <p style="color:rgba(255,255,255,.75);font-size:13px;margin:6px 0 0;font-weight:500;text-transform:uppercase;letter-spacing:.5px">NAAC A++ Accredited</p>
       </div>
     </div>
   </div>
