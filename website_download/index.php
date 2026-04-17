@@ -6,7 +6,7 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-head.php"); ?>
 
 <title>IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help</title>
-<meta name="description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta name="description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
 <meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU counselling 2026, GGSIPU management quota, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
 <link rel="canonical" href="https://ipu.co.in/">
 
@@ -14,7 +14,7 @@ include_once("include/form-handler.php");
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ipu.co.in/">
 <meta property="og:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta property="og:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta property="og:description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 <meta property="og:site_name" content="IPU Admission Guide">
 <meta property="og:locale" content="en_IN">
@@ -22,7 +22,7 @@ include_once("include/form-handler.php");
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta name="twitter:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta name="twitter:description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
 <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- Schema.org JSON-LD -->
@@ -82,6 +82,80 @@ include_once("include/form-handler.php");
         {"@type": "ListItem", "position": 4, "item": {"@type": "Course", "name": "BBA Admission IP University", "url": "https://ipu.co.in/ipu-bba-admission.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 5, "item": {"@type": "Course", "name": "BCA BCom BJMC IP University", "url": "https://ipu.co.in/ipu-admission-guide.php", "provider": {"@id": "https://ipu.co.in/#organization"}}}
       ]
+    }
+  ]
+}
+</script>
+
+<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is IPU / IP University?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU (Guru Gobind Singh Indraprastha University or GGSIPU) is a state university in Delhi, established in 1998 by Government of NCT of Delhi. It offers 80+ affiliated colleges across Delhi NCR for B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA and more courses. Call 9899991342 for free admission guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU full form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU stands for Indraprastha University. Its official name is Guru Gobind Singh Indraprastha University (GGSIPU), located in Dwarka, Delhi. It is a state university established in 1998 by the Government of NCT of Delhi and offers 80+ affiliated colleges in Delhi NCR. Call 9899991342 for admission help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is IPU / GGSIPU a government or private university?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GGSIPU is a GOVERNMENT (state) university established by the Govt of NCT Delhi in 1998. However, most of its affiliated colleges (like MAIT, VIPS, MSIT, MAIMS, Tecnia) are private self-financing institutions affiliated to GGSIPU. Call 9899991342 to know which IPU colleges are govt vs private."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU admission process 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU admission 2026 involves: (1) Registration at ipu.ac.in or ipu.admissions.nic.in, (2) Appearing in relevant entrance exam (JEE Main/CUET/CAT/CET/CLAT), (3) Counselling registration, (4) Choice filling, (5) Seat allotment, (6) Document verification and fee payment. Call 9899991342 for step-by-step guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many colleges are under IPU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GGSIPU has 80+ affiliated colleges across Delhi NCR including MAIT, MSIT, VIPS, USICT, MAIMS, BPIT, BVP, JIMS, Tecnia, and more. The colleges offer B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA, MCA, LLM and other programs. Call 9899991342 for the complete IPU college list and shortlisting help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU counselling 2026 date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU counselling 2026 is expected to begin in May-June 2026. Registration typically opens after entrance results. Round 1 allotment in July 2026, with classes commencing August 2026. Exact dates will be notified at ipu.ac.in. Call 9899991342 for updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What entrance exams does IPU accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU accepts: JEE Main (B.Tech), CUET UG (BBA/BCA/BA/B.Com/BJMC), CLAT (BA LLB/BBA LLB), CAT/CMAT (MBA), NIMCET (MCA), GATE (M.Tech), NEET (MBBS), NATA (B.Arch), and IPU CET for some programs. Call 9899991342 to know which entrance exam you need for your target course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is IPU B.Tech fees 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IPU B.Tech fees 2026-27 are approximately Rs. 1,55,700 per year at affiliated colleges (MAIT, MSIT, BPIT, VIPS) and Rs. 1,69,400 to Rs. 2,25,471 per year at University Schools (USICT, USAR, USCT). Total 4-year fee ranges Rs. 6.23L to Rs. 7.86L. Call 9899991342 for fee help."
+      }
     }
   ]
 }
