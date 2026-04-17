@@ -142,4 +142,14 @@ p{color:#4a5568;margin-bottom:1rem}
 
 <!-- All tracking managed by GTM: AW-10900888879, G-9VS3CTJ8SV, Meta Pixel, Clarity, WCM -->
 
+<!-- phone_click custom event for tel: links (GTM → GA4 conversion) -->
+<script>
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href^="tel:"]');
+  if (!a) return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'phone_click' });
+});
+</script>
+
 </head>
