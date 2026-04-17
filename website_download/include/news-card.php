@@ -1,21 +1,25 @@
 <?php
 /** @var array $post — required by caller */
-$urgent_class = !empty($post['is_urgent']) ? ' news-card--urgent' : '';
 $post_url = '/news/' . htmlspecialchars($post['slug'], ENT_QUOTES) . '.php';
+$image    = !empty($post['image']) ? $post['image'] : 'assets/images/news/general.jpg';
+$is_urgent = !empty($post['is_urgent']);
 ?>
-<article class="news-card<?= $urgent_class ?>">
-    <a href="<?= $post_url ?>" class="news-card__link">
-        <img src="/<?= htmlspecialchars($post['image'], ENT_QUOTES) ?>"
-             alt="<?= htmlspecialchars($post['title'], ENT_QUOTES) ?>"
-             class="news-card__image" loading="lazy">
-        <div class="news-card__body">
-            <span class="news-card__category"><?= htmlspecialchars($post['category'], ENT_QUOTES) ?></span>
-            <h3 class="news-card__title"><?= htmlspecialchars($post['title'], ENT_QUOTES) ?></h3>
-            <p class="news-card__tldr"><?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?></p>
-            <div class="news-card__meta">
-                <time datetime="<?= htmlspecialchars($post['date'], ENT_QUOTES) ?>"><?= htmlspecialchars($post['date'], ENT_QUOTES) ?></time>
-                <span class="news-card__read-time"><?= (int)$post['read_time'] ?> min read</span>
-            </div>
-        </div>
-    </a>
-</article>
+<div class="blog-card-wrap">
+  <a href="<?= $post_url ?>">
+    <img src="/<?= htmlspecialchars(ltrim($image, '/'), ENT_QUOTES) ?>"
+         alt="<?= htmlspecialchars($post['title'], ENT_QUOTES) ?>"
+         loading="lazy">
+  </a>
+  <div class="blog-card-body">
+    <span class="blog-cat-tag">
+      <?= htmlspecialchars($post['category'], ENT_QUOTES) ?>
+      <?php if ($is_urgent): ?><span class="urgent-badge">Urgent</span><?php endif; ?>
+    </span>
+    <a href="<?= $post_url ?>" class="blog-card-title"><?= htmlspecialchars($post['title'], ENT_QUOTES) ?></a>
+    <p class="blog-excerpt"><?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?></p>
+    <div class="blog-meta">
+      <span>&#9200; <?= (int)$post['read_time'] ?> min read</span>
+      <a href="<?= $post_url ?>" class="blog-read-more">Read More &rarr;</a>
+    </div>
+  </div>
+</div>

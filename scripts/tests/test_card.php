@@ -22,11 +22,10 @@ TestCase::assertContains('assets/images/news/counselling.jpg', $html, 'image src
 TestCase::assertContains('Round 2 counselling dates announced.', $html, 'tldr shown');
 TestCase::assertContains('5 min read', $html, 'read time shown');
 TestCase::assertContains('Counselling', $html, 'category badge');
-TestCase::assertContains('2026-04-15', $html, 'date shown');
-TestCase::assertNotContains('news-card--urgent', $html, 'no urgent class when is_urgent false');
+TestCase::assertNotContains('urgent-badge', $html, 'no urgent badge when is_urgent false');
 
 $post['is_urgent'] = true;
 ob_start();
 include __DIR__ . '/../../website_download/include/news-card.php';
 $html_urgent = ob_get_clean();
-TestCase::assertContains('news-card--urgent', $html_urgent, 'urgent class added');
+TestCase::assertContains('urgent-badge', $html_urgent, 'urgent badge shown when is_urgent true');
