@@ -6,7 +6,7 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-head.php"); ?>
 
 <title>IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help</title>
-<meta name="description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
+<meta name="description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
 <meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU counselling 2026, GGSIPU management quota, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
 <link rel="canonical" href="https://ipu.co.in/">
 
@@ -14,7 +14,7 @@ include_once("include/form-handler.php");
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ipu.co.in/">
 <meta property="og:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta property="og:description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
+<meta property="og:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 <meta property="og:site_name" content="IPU Admission Guide">
 <meta property="og:locale" content="en_IN">
@@ -22,7 +22,7 @@ include_once("include/form-handler.php");
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta name="twitter:description" content="IPU / IP University (GGSIPU) Admission 2026 – Get counselling dates, fee structure, cutoff, 80+ college list & expert guidance. Call 9899991342 for free help.">
+<meta name="twitter:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
 <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- Schema.org JSON-LD -->
