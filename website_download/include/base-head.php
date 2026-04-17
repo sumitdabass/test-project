@@ -12,7 +12,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;font-weight:400;colo
 img{max-width:100%}
 a{display:inline-block;text-decoration:none;color:#1a3a9c;transition:color .2s}
 a:hover{color:#0d1b6e}
-h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;color:#0d1b6e;font-weight:700;line-height:1.3}
+h1,h2,h3,h4,h5,h6{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0d1b6e;font-weight:700;line-height:1.3}
 h1{font-size:clamp(2rem,5vw,3.2rem)}
 h2{font-size:clamp(1.5rem,3vw,2.4rem)}
 h3{font-size:clamp(1.25rem,2.5vw,1.8rem)}
@@ -117,8 +117,8 @@ p{color:#4a5568;margin-bottom:1rem}
 <!-- Self-hosted Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 
 <!-- Bootstrap 5 CSS -->
 <link rel="stylesheet" href="/assets/css/bootstrap5.min.css">
