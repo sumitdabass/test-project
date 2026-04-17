@@ -28,6 +28,8 @@
 
 > **Progress log**
 > - 2026-04-17 — P0.3 Click-to-call GA4 event shipped. `phone_click` dataLayer event live on all pages via GTM container `GTM-5GXCN7Z`. Deployed to production (commit `60b0bff`). GA4 Realtime verification + "Mark as Key Event" deferred by user. Next action on this item: confirm events flowing in Realtime, then dedupe vs. existing `phone_clicks` (plural) tag.
+> - 2026-04-17 — P0.1 Hero counters fixed. `trust-bar.php` counter `<span>` pattern replaced with hardcoded values (100,000+ Students Graduated, 60+ Affiliated Colleges, 15+ Courses Offered, Est. 1998). No longer depends on the untracked `jquery.counterup.min.js`. Deployed to production (commit `c5ae296`).
+> - 2026-04-17 — P0.2 Ads sitelinks swapped 2025 → 2026. All 4 enabled sitelink records pointing at `/IPU-B-Tech-admission-2025.php` (plus the 1 paused account-level record) updated to `/IPU-B-Tech-admission-2026.php` in Google Ads. Wasted sitelink spend stopped.
 
 **Highest-impact findings (headline):**
 - Homepage shows broken counter "**0+ Students Graduated**" in the live hero section — visible to every visitor. Immediate credibility killer.
