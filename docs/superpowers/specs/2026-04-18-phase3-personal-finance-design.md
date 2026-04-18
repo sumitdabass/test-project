@@ -108,11 +108,12 @@ Extending either list is a DB seeder change, not a schema change.
 | description | varchar(500) nullable | what Gemini extracted / what Sumit typed |
 | spent_at | datetime | when the expense was incurred |
 | payment_mode | enum('upi','card','cash','bank_transfer','other') nullable | |
+| is_fixed | boolean default false | fixed monthly commitment (rent, subscriptions, EMIs, insurance) vs discretionary spending |
 | slack_message_id | varchar(50) UNIQUE nullable | `E.<slack_ts>`; null when entered via web form |
 | raw_input | text nullable | original Slack message text for audit |
-| timestamps | | |
+| timestamps + softDeletes | | `deleted_at` nullable — accidental deletes recoverable via `withTrashed()` |
 
-**Indexes:** `(spent_at)`, `(category_id, spent_at)`.
+**Indexes:** `(spent_at)`, `(category_id, spent_at)`, `(is_fixed, spent_at)`.
 
 ### 3.4 `incomes`
 
@@ -126,7 +127,7 @@ Extending either list is a DB seeder change, not a schema change.
 | slack_message_id | varchar(50) UNIQUE nullable | `I.<slack_ts>`; null on web-form entry |
 | raw_input | text nullable | |
 | davya_reference | json nullable | when `source = "Davya withdrawal"`: stores the Phase 2 side's `expense_id` + `ledger_entry_ids` for forensic cross-link |
-| timestamps | | |
+| timestamps + softDeletes | | `deleted_at` nullable — same safety rationale as `expenses` |
 
 **Indexes:** `(received_at)`, `(source_id, received_at)`.
 
@@ -148,6 +149,7 @@ Request:
   "description": "fuel at HP",
   "spent_at": "2026-04-18T18:30:00+05:30",  // optional; defaults to now()
   "payment_mode": "upi",           // optional
+  "is_fixed": false,               // optional; defaults to false
   "slack_message_id": "E.1776532286.987379",
   "raw_input": "spent 450 on fuel hp upi"
 }
@@ -273,10 +275,12 @@ Keeping the dual-write in n8n makes each Laravel app responsible for exactly its
 
 ### 6.3 Gemini prompt skeleton
 
-Following Phase 2's format — `systemInstruction` with examples and `responseSchema` to force JSON-only output. Key examples:
+Following Phase 2's format — `systemInstruction` with examples and `responseSchema` to force JSON-only output. Schema includes an `is_fixed` boolean for the Expense branch; Gemini should set it `true` when the phrasing implies a fixed monthly commitment (rent, subscriptions, EMIs, insurance premiums, school fees). Key examples:
 ```
-"got 450 on fuel hdfc card" → {category: "Expense", amount: 450, expense_category: "Transport", notes: "fuel hdfc card", payment_mode: "card"}
-"rent 25000 to amit" → {category: "Expense", amount: 25000, expense_category: "Rent", notes: "to amit"}
+"got 450 on fuel hdfc card" → {category: "Expense", amount: 450, expense_category: "Transport", notes: "fuel hdfc card", payment_mode: "card", is_fixed: false}
+"rent 25000 to amit" → {category: "Expense", amount: 25000, expense_category: "Rent", notes: "to amit", is_fixed: true}
+"spotify 199" → {category: "Expense", amount: 199, expense_category: "Subscriptions", is_fixed: true}
+"home loan emi 35000" → {category: "Expense", amount: 35000, expense_category: "Other", notes: "home loan emi", is_fixed: true}
 "interest from fd 1200" → {category: "Income", amount: 1200, income_source: "Interest"}
 "withdrew 50000 from davya, apr salary" → {category: "Withdrawal", amount: 50000, notes: "apr salary"}
 ```

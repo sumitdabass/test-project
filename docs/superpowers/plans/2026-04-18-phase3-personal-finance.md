@@ -1021,6 +1021,25 @@ class ExpenseModelTest extends TestCase
         Expense::create(['amount' => 200, 'category_id' => $cat->id, 'spent_at' => now()]);
         $this->assertSame(2, Expense::count());
     }
+
+    public function test_is_fixed_defaults_to_false_and_roundtrips(): void
+    {
+        $cat = ExpenseCategory::first();
+        $e = Expense::create(['amount' => 100, 'category_id' => $cat->id, 'spent_at' => now()]);
+        $this->assertFalse($e->fresh()->is_fixed);
+        $e2 = Expense::create(['amount' => 25000, 'category_id' => $cat->id, 'spent_at' => now(), 'is_fixed' => true]);
+        $this->assertTrue($e2->fresh()->is_fixed);
+    }
+
+    public function test_soft_delete_hides_but_preserves_row(): void
+    {
+        $cat = ExpenseCategory::first();
+        $e = Expense::create(['amount' => 100, 'category_id' => $cat->id, 'spent_at' => now()]);
+        $e->delete();
+        $this->assertSame(0, Expense::count());
+        $this->assertSame(1, Expense::withTrashed()->count());
+        $this->assertNotNull(Expense::withTrashed()->first()->deleted_at);
+    }
 }
 ```
 
@@ -1044,11 +1063,14 @@ public function up(): void
         $table->string('description', 500)->nullable();
         $table->dateTime('spent_at');
         $table->enum('payment_mode', ['upi','card','cash','bank_transfer','other'])->nullable();
+        $table->boolean('is_fixed')->default(false)->after('payment_mode');
         $table->string('slack_message_id', 50)->nullable()->unique();
         $table->text('raw_input')->nullable();
         $table->timestamps();
+        $table->softDeletes();
         $table->index('spent_at');
         $table->index(['category_id', 'spent_at']);
+        $table->index(['is_fixed', 'spent_at']);
     });
 }
 
@@ -1068,14 +1090,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Expense extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'amount', 'category_id', 'description', 'spent_at',
-        'payment_mode', 'slack_message_id', 'raw_input',
+        'payment_mode', 'is_fixed', 'slack_message_id', 'raw_input',
     ];
 
     protected function casts(): array
@@ -1083,6 +1106,7 @@ class Expense extends Model
         return [
             'amount' => 'decimal:2',
             'spent_at' => 'datetime',
+            'is_fixed' => 'boolean',
         ];
     }
 
@@ -1249,6 +1273,9 @@ return $form->schema([
     Forms\Components\DateTimePicker::make('spent_at')->default(now())->required(),
     Forms\Components\Select::make('payment_mode')
         ->options(['upi' => 'UPI', 'card' => 'Card', 'cash' => 'Cash', 'bank_transfer' => 'Bank', 'other' => 'Other']),
+    Forms\Components\Toggle::make('is_fixed')
+        ->label('Fixed monthly commitment')
+        ->helperText('Rent, subscriptions, EMIs, insurance premiums, school fees.'),
 ]);
 ```
 
@@ -1261,11 +1288,14 @@ return $table
         Tables\Columns\TextColumn::make('category.name')->badge(),
         Tables\Columns\TextColumn::make('amount')->money('INR')->sortable(),
         Tables\Columns\TextColumn::make('payment_mode')->badge(),
+        Tables\Columns\IconColumn::make('is_fixed')->boolean()->label('Fixed'),
         Tables\Columns\TextColumn::make('description')->limit(40)->toggleable(),
     ])
     ->defaultSort('spent_at', 'desc')
     ->filters([
         Tables\Filters\SelectFilter::make('category_id')->relationship('category', 'name'),
+        Tables\Filters\TernaryFilter::make('is_fixed')->label('Fixed / variable')
+            ->trueLabel('Only fixed')->falseLabel('Only variable')->placeholder('All'),
         Tables\Filters\Filter::make('this_month')
             ->query(fn ($q) => $q->whereBetween('spent_at', [now()->startOfMonth(), now()->endOfMonth()])),
     ])
@@ -1474,6 +1504,7 @@ class StorePersonalExpenseRequest extends FormRequest
             'description'      => ['nullable','string','max:500'],
             'spent_at'         => ['nullable','date'],
             'payment_mode'     => ['nullable','in:upi,card,cash,bank_transfer,other'],
+            'is_fixed'         => ['nullable','boolean'],
             'slack_message_id' => ['required','string','max:50'],
             'raw_input'        => ['nullable','string','max:4000'],
         ];
@@ -1583,6 +1614,15 @@ class ExpenseCaptureTest extends TestCase
             ->assertJson(['error' => 'duplicate_slack_message', 'existing_id' => $first->json('id')]);
     }
 
+    public function test_is_fixed_defaults_false_and_is_persisted_when_true(): void
+    {
+        $r1 = $this->postPayload(['slack_message_id' => 'E.F1'])->assertCreated();
+        $this->assertFalse(Expense::find($r1->json('id'))->is_fixed);
+        $r2 = $this->postPayload(['slack_message_id' => 'E.F2', 'is_fixed' => true, 'category' => 'Rent', 'amount' => 25000]);
+        $r2->assertCreated();
+        $this->assertTrue(Expense::find($r2->json('id'))->is_fixed);
+    }
+
     public function test_slack_message_id_race_returns_409_not_500(): void
     {
         // Mirrors Phase 2 PaymentCaptureTest race pattern (DB::listen outside savepoint).
@@ -1647,6 +1687,7 @@ class PersonalExpenseController extends Controller
                     'description'      => $data['description']  ?? null,
                     'spent_at'         => $data['spent_at']     ?? now(),
                     'payment_mode'     => $data['payment_mode'] ?? null,
+                    'is_fixed'         => $data['is_fixed']     ?? false,
                     'slack_message_id' => $data['slack_message_id'],
                     'raw_input'        => $data['raw_input']    ?? null,
                 ]);
@@ -1818,8 +1859,10 @@ Mirror Task 2.2 with these differences from expenses:
 - Column `source_id` → `income_sources`.
 - Column `received_at` instead of `spent_at`.
 - No `payment_mode` column.
+- No `is_fixed` column (income/expense asymmetry is intentional — Sumit asked only for the expense split).
 - **Added** `davya_reference` JSON nullable column.
 - `slack_message_id` nullable + unique (same as expenses).
+- `softDeletes()` same as expenses.
 
 - [ ] **Step 1: Write `tests/Feature/IncomeModelTest.php`** — assert factory works, slack uniqueness, AND `davya_reference` round-trips as array when cast to json.
 
@@ -1850,6 +1893,7 @@ Schema::create('incomes', function (Blueprint $table) {
     $table->text('raw_input')->nullable();
     $table->json('davya_reference')->nullable();
     $table->timestamps();
+    $table->softDeletes();
     $table->index('received_at');
     $table->index(['source_id','received_at']);
 });
@@ -1860,7 +1904,7 @@ Schema::create('incomes', function (Blueprint $table) {
 ```php
 class Income extends Model
 {
-    use HasFactory;
+    use HasFactory, \Illuminate\Database\Eloquent\SoftDeletes;
 
     protected $fillable = [
         'amount','source_id','description','received_at',
@@ -2262,12 +2306,14 @@ Start from the Phase 2 finance workflow at `/Users/Sumit/davya-crm/docs/n8n-fina
 Edit these parts:
 
 1. Slack Trigger `channelId` → `#sumit-finance` channel id (get from `/who-am-i` or copy from channel URL).
-2. Gemini prompt — replace Phase 2 examples with personal examples. Category enum `["Expense","Income","Withdrawal"]`. Schema adds `expense_category` enum matching `expense_categories.name`, and `income_source` enum matching `income_sources.name`.
+2. Gemini prompt — replace Phase 2 examples with personal examples. Category enum `["Expense","Income","Withdrawal"]`. Schema adds `expense_category` enum matching `expense_categories.name`, `income_source` enum matching `income_sources.name`, and `is_fixed` boolean (Expense branch only). Instruct Gemini to set `is_fixed: true` when the phrasing is a fixed monthly commitment (rent, subscription, EMI, insurance premium, school fees) and `false` for discretionary spending.
 
 ```
 Examples:
-- "spent 450 on fuel hdfc card" → {category:"Expense", amount:450, expense_category:"Transport", notes:"fuel hdfc card", payment_mode:"card"}
-- "rent 25000 to amit" → {category:"Expense", amount:25000, expense_category:"Rent", notes:"to amit"}
+- "spent 450 on fuel hdfc card" → {category:"Expense", amount:450, expense_category:"Transport", notes:"fuel hdfc card", payment_mode:"card", is_fixed:false}
+- "rent 25000 to amit" → {category:"Expense", amount:25000, expense_category:"Rent", notes:"to amit", is_fixed:true}
+- "spotify 199" → {category:"Expense", amount:199, expense_category:"Subscriptions", is_fixed:true}
+- "home loan emi 35000" → {category:"Expense", amount:35000, expense_category:"Other", notes:"home loan emi", is_fixed:true}
 - "salary 80000 credited" → {category:"Income", amount:80000, income_source:"Salary"}
 - "interest from fd 1200" → {category:"Income", amount:1200, income_source:"Interest"}
 - "withdrew 50000 from davya, apr salary" → {category:"Withdrawal", amount:50000, notes:"apr salary"}
@@ -2318,6 +2364,7 @@ if (cat === 'Expense') {
     category: gemini.expense_category || 'Other',
     description: gemini.notes || null,
     payment_mode: gemini.payment_mode || null,
+    is_fixed: gemini.is_fixed === true,     // default false if Gemini omits or sends non-boolean
     slack_message_id: 'E.' + slackTs,
     raw_input: rawInput,
   };
@@ -2615,11 +2662,11 @@ At `v1.0.0`, expected counts:
 | area | file | tests |
 |---|---|---|
 | Auth | SumitSeederTest, ForcePasswordChangeTest, TotpEnrollmentTest, TotpVerificationTest, AccountLockoutTest, AuthAuditLogTest, SecurityHeadersTest | ~15 |
-| Expenses | ExpenseCategoriesSeederTest, ExpenseModelTest, ExpensePolicyTest, ExpenseResourceTest, VerifyPersonalTokenTest, ExpenseCaptureTest | ~17 |
+| Expenses | ExpenseCategoriesSeederTest, ExpenseModelTest (+ is_fixed + soft-delete), ExpensePolicyTest, ExpenseResourceTest, VerifyPersonalTokenTest, ExpenseCaptureTest (+ is_fixed) | ~20 |
 | Incomes | IncomeSourcesSeederTest, IncomeModelTest, IncomePolicyTest, IncomeResourceTest, IncomeCaptureTest, WithdrawalIncomeTest | ~15 |
 | Dashboard | PersonalBalanceServiceTest | ~5 |
 | Failed endpoint | FailedCaptureTest | 3 |
-| **Total** | | **~55** |
+| **Total** | | **~60** |
 
 `php artisan test` should stay green across the whole plan. Any milestone that drops suite size below the previous milestone's count is a regression flag — stop and investigate before tagging.
 
