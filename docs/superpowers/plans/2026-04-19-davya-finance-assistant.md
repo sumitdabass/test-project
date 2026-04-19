@@ -14,6 +14,12 @@
 
 **Spec:** `docs/superpowers/specs/2026-04-19-davya-finance-assistant-design.md` (commit `fb9be1b`).
 
+**Repo conventions (learned during M2 execution 2026-04-19):**
+- **Test framework:** PHPUnit 11.x, NOT Pest. All test code in this plan written in Pest style (`it('...')`, `beforeEach()`, `uses()`) must be translated to idiomatic PHPUnit: `class FinanceAssistantTest extends TestCase { use RefreshDatabase; public function test_specific_behavior(): void { … } public function setUp(): void { parent::setUp(); … } }`. Assertions/semantics carry over 1:1. Run with `./vendor/bin/phpunit` (NOT `./vendor/bin/pest`).
+- **Namespace for controllers + requests:** flat (`App\Http\Controllers\FinanceAssistantController`, `App\Http\Requests\StoreFinanceAssistantRequest`) — matches v1 finance controllers. NO `Finance/` subnamespace for these.
+- **Namespace for services:** `App\Services\Finance\` subnamespace IS OK — `LedgerRoutingService` already lives there as v1 precedent. The plan's `AssistantQueryResolver`, `AssistantAnswerer`, `GeminiClient` go under `App\Services\Finance\`.
+- **PHP binary:** system `php` (8.5.5 via Homebrew) works locally; prod uses `/opt/alt/php84/usr/bin/php`.
+
 ---
 
 ## File structure
@@ -22,8 +28,8 @@
 
 ```
 davya-crm/
-├── app/Http/Controllers/Finance/FinanceAssistantController.php
-├── app/Http/Requests/Finance/StoreFinanceAssistantRequest.php
+├── app/Http/Controllers/FinanceAssistantController.php
+├── app/Http/Requests/StoreFinanceAssistantRequest.php
 ├── app/Services/Finance/AssistantQueryResolver.php
 ├── app/Services/Finance/AssistantAnswerer.php
 ├── app/Services/Finance/GeminiClient.php          (thin HTTP wrapper; mockable)
@@ -373,7 +379,7 @@ cd /Users/Sumit/davya-crm && git add config/finance.php .env.example && git comm
 ### Task 2.2: Create `StoreFinanceAssistantRequest`
 
 **Files:**
-- Create: `davya-crm/app/Http/Requests/Finance/StoreFinanceAssistantRequest.php`
+- Create: `davya-crm/app/Http/Requests/StoreFinanceAssistantRequest.php`
 - Test: `davya-crm/tests/Feature/Finance/FinanceAssistantTest.php` (create now, add validation tests)
 
 - [ ] **Step 1: Write failing validation tests**
@@ -446,14 +452,14 @@ Expected: FAIL (route doesn't exist yet → 404 instead of expected codes).
 
 - [ ] **Step 3: Create the FormRequest**
 
-Create `davya-crm/app/Http/Requests/Finance/StoreFinanceAssistantRequest.php`:
+Create `davya-crm/app/Http/Requests/StoreFinanceAssistantRequest.php`:
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-namespace App\Http\Requests\Finance;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -484,13 +490,13 @@ class StoreFinanceAssistantRequest extends FormRequest
 - [ ] **Step 4: Commit request class** (route + controller come in 2.3; tests stay red for now)
 
 ```bash
-cd /Users/Sumit/davya-crm && git add app/Http/Requests/Finance/StoreFinanceAssistantRequest.php tests/Feature/Finance/FinanceAssistantTest.php && git commit -m "test(finance-assistant): add validation test suite + request class"
+cd /Users/Sumit/davya-crm && git add app/Http/Requests/StoreFinanceAssistantRequest.php tests/Feature/Finance/FinanceAssistantTest.php && git commit -m "test(finance-assistant): add validation test suite + request class"
 ```
 
 ### Task 2.3: Create `FinanceAssistantController` (stub) + route
 
 **Files:**
-- Create: `davya-crm/app/Http/Controllers/Finance/FinanceAssistantController.php`
+- Create: `davya-crm/app/Http/Controllers/FinanceAssistantController.php`
 - Modify: `davya-crm/routes/api.php`
 
 - [ ] **Step 1: Add stub happy-path test**
@@ -512,17 +518,16 @@ it('returns stub reply_text on 200', function () {
 
 - [ ] **Step 2: Create the controller (stub)**
 
-Create `davya-crm/app/Http/Controllers/Finance/FinanceAssistantController.php`:
+Create `davya-crm/app/Http/Controllers/FinanceAssistantController.php`:
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers\Finance;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Finance\StoreFinanceAssistantRequest;
+use App\Http\Requests\StoreFinanceAssistantRequest;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 
@@ -568,7 +573,7 @@ Expected: 5 pass.
 - [ ] **Step 5: Commit**
 
 ```bash
-cd /Users/Sumit/davya-crm && git add app/Http/Controllers/Finance/FinanceAssistantController.php routes/api.php tests/Feature/Finance/FinanceAssistantTest.php && git commit -m "feat(finance-assistant): scaffold POST /api/finance/assistant with stub reply"
+cd /Users/Sumit/davya-crm && git add app/Http/Controllers/FinanceAssistantController.php routes/api.php tests/Feature/Finance/FinanceAssistantTest.php && git commit -m "feat(finance-assistant): scaffold POST /api/finance/assistant with stub reply"
 ```
 
 ---
@@ -1244,7 +1249,7 @@ git commit -am "feat(finance-assistant): AssistantAnswerer with injection-resist
 ### Task 4.3: Wire controller to resolver + answerer
 
 **Files:**
-- Modify: `davya-crm/app/Http/Controllers/Finance/FinanceAssistantController.php`
+- Modify: `davya-crm/app/Http/Controllers/FinanceAssistantController.php`
 - Modify: `davya-crm/tests/Feature/Finance/FinanceAssistantTest.php`
 
 - [ ] **Step 1: Rewrite the stub happy-path test to assert a real answer**

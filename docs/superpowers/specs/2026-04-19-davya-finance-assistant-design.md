@@ -70,7 +70,7 @@ Slack message in #student-entries (text ± image)
   - React ✅ node already made dynamic (2026-04-19 fix); no change.
 
 - **davya-crm Laravel app**
-  - New `FinanceAssistantController` under `App\Http\Controllers\Finance`.
+  - New `FinanceAssistantController` under `App\Http\Controllers` (flat, matching v1 finance controllers).
   - New `StoreFinanceAssistantRequest` (validates body).
   - Route `POST /api/finance/assistant` under existing `throttle:60,1` group with `VerifyFinanceToken` middleware.
   - New service `App\Services\Finance\AssistantQueryResolver` — one public method per intent.
