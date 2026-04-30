@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Record dedup state so subsequent submissions are blocked
         $_SESSION['last_submit_time']  = time();
         $_SESSION['submitted_phones'][] = $phone;
-        setcookie($phone_hash, '1', time() + 86400, '/', '', false, true);
+        setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
 
         // Redirect to thank-you
         header("Location: /thank-you.php");

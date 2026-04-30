@@ -539,8 +539,23 @@
 <priority>0.85</priority>
 </url>
   <url>
-    <loc>https://ipu.co.in/news/welcome-news-launched.php</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-released.php</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-cet-clubbing-allied-health-sciences.php</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bpt-bot-nomenclature-admission-changes.php</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-application-deadline-extension-national-level-test.php</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -549,8 +564,38 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://ipu.co.in/news/</loc>
+    <loc>https://ipu.co.in/news/welcome-news-launched.php</loc>
     <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/</loc>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/dist-admission.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/sbit-admission.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/tribhuvan-admission.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/tiips-admission.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/usct-admission.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

@@ -5,6 +5,18 @@
 RewriteEngine On
 
 # =============================================
+# NEWS POST REDIRECTS — duplicate consolidation
+# =============================================
+# Dedup of LLM-rephrased reposts of the same source notification.
+# Each line redirects the dupe URL to the oldest (canonical) version.
+RewriteRule ^news/last-opportunity-ipu-cet-registration\.php$ /news/final-opportunity-ipu-cet-registration.php [L,R=301]
+RewriteRule ^news/ipu-application-deadline-extended\.php$ /news/ipu-application-deadline-extension-national-level-test.php [L,R=301]
+RewriteRule ^news/ipu-bpt-bot-admission-criteria-nomenclature-changes\.php$ /news/ipu-bpt-bot-nomenclature-admission-changes.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-2026\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-announced\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+
+# =============================================
 # CANONICAL HOST — www/mail → apex (single-hop with HTTPS)
 # Fixes: 4 homepage variants indexed in Google
 # (ipu.co.in/, www.ipu.co.in/, www.ipu.co.in/index.php,

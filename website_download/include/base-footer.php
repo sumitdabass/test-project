@@ -31,6 +31,7 @@
             <li style="margin-bottom:10px"><a href="/IP-University-management-quota-admission-eligibility-criteria.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Management Quota</a></li>
             <li style="margin-bottom:10px"><a href="/GGSIPU-counselling-for-B-Tech-admission.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Counselling</a></li>
             <li style="margin-bottom:10px"><a href="/ipu-helpline-contact-number.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Helpline</a></li>
+            <li style="margin-bottom:10px"><a href="https://davyas.ipu.co.in/admin/login" rel="nofollow noopener" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Login</a></li>
           </ul>
         </div>
 

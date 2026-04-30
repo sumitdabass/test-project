@@ -42,6 +42,10 @@ PAGE CONTENT SUMMARIES:
 URL: https://ipu.co.in/
 Summary: Central hub for IP University (GGSIPU) admission 2026. Covers all courses (B.Tech, MBA, Law, BBA, BCA, BJMC, B.Com, BA Economics, B.Ed, LLB, LLM), top colleges, and admission process. Free counselling helpline: 9899991342.
 
+## ADMISSION GUIDE (CENTRAL HUB)
+URL: https://ipu.co.in/ipu-admission-guide.php
+Summary: Complete IPU admission guide for 2026 covering eligibility, application steps, IPU CET / CUET / CLAT / CAT / JEE Main pathways, counselling rounds, document checklist, fee structure, and management seat options. The primary entry point for any course-specific exploration. Free counselling: 9899991342.
+
 ## B.TECH ADMISSION
 URL: https://ipu.co.in/IPU-B-Tech-admission-2026.php
 Summary: Complete guide to B.Tech admission at IP University for 2026. Based on JEE Main rank through GGSIPU centralized counselling. Top colleges: MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), BVP (Paschim Vihar), USICT (Dwarka).
@@ -90,6 +94,22 @@ Summary: Step-by-step GGSIPU counselling process for all courses. Covers registr
 ## MANAGEMENT QUOTA
 URL: https://ipu.co.in/IP-University-management-quota-admission-eligibility-criteria.php
 Summary: Management quota admission at IPU affiliated colleges. Direct admission outside regular counselling based on merit and college discretion. Available for B.Tech, BBA, Law, MBA.
+
+## B.TECH MANAGEMENT QUOTA
+URL: https://ipu.co.in/btech-management-quota-ipu.php
+Summary: B.Tech management quota seats at GGSIPU affiliated colleges (MAIT, MSIT, BPIT, BVP, VIPS, etc.). Eligibility, JEE Main requirement, fees, college-wise availability, and direct admission process. Free counselling: 9899991342.
+
+## BBA MANAGEMENT QUOTA
+URL: https://ipu.co.in/bba-management-quota-ipu.php
+Summary: BBA management quota seats at IPU colleges (VIPS, JIMS, MAIMS, BPIT, BVP, RDIAS). Direct admission process bypassing regular counselling — eligibility, fees, top BBA management colleges, and application steps.
+
+## MBA MANAGEMENT QUOTA
+URL: https://ipu.co.in/mba-management-quota-ipu.php
+Summary: MBA management quota seats at GGSIPU affiliated colleges. Direct admission via management seats — eligibility, CAT/MAT/CMAT relaxations where applicable, fees, and college-wise seat availability for the 2026-27 session.
+
+## BA-LLB / BBA-LLB MANAGEMENT QUOTA
+URL: https://ipu.co.in/ballb-management-quota-ipu.php
+Summary: Integrated 5-year Law admission (BA-LLB and BBA-LLB) via management quota at IPU colleges (VIPS, JIMS, GIBS, DME, CPJ). Eligibility, CLAT/IPU CET context, fees and direct admission process.
 
 ## HELPLINE / CONTACT
 URL: https://ipu.co.in/ipu-helpline-contact-number.php
@@ -521,5 +541,9 @@ For real-time data, use the API: https://ipu.co.in/api/agent-data.php?action=all
 
 Latest IPU-related news and announcements:
 
-- [IPU News & Announcements — New Section Launched](https://ipu.co.in/news/welcome-news-launched.php) — We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.
+- [IPU B.Tech Lateral Entry Seat Intake Released (CET 128 & 129)](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-released.php) — GGSIPU has released the official seat intake for B.Tech Lateral Entry for Diploma holders and B.Sc graduates, including Management Quota seats.
+- [IPU Combines CET for Allied Health Science Programs (Codes 119 and 124)](https://ipu.co.in/news/ipu-cet-clubbing-allied-health-sciences.php) — GGSIPU has merged the Common Entrance Tests for B.PT, B.OT, BASLP, BPO, and B.MLS into a single examination for the current academic session.
+- [IPU Updates B.PT and B.OT Admission Criteria for 2026-27 Session](https://ipu.co.in/news/ipu-bpt-bot-nomenclature-admission-changes.php) — GGSIPU has announced changes to the nomenclature and admission criteria for B.PT and B.OT programs for the 2026-27 academic session.
+- [IPU Extends Application Deadline for National Level Test and Merit Admissions](https://ipu.co.in/news/ipu-application-deadline-extension-national-level-test.php) — GGSIPU has extended the deadline for online applications for courses based on National Level Tests and merit for the 2026-27 academic year.
 - [Final Opportunity for IPU CET 2026 Registration Announced](https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php) — GGSIPU has announced a final registration window for the Common Entrance Test (CET) 2026, marking the last chance for candidates to apply for admissions.
+- [IPU News & Announcements — New Section Launched](https://ipu.co.in/news/welcome-news-launched.php) — We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.
