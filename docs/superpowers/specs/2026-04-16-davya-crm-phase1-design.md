@@ -326,7 +326,7 @@ Admin/Head/owner can drag cards between columns. Triggers stage change + busines
 ### 10.1 DNS & subdomain
 
 - cPanel → Subdomains → create `davyas` on `ipu.co.in`.
-- Document root: `/home/<user>/davyas_public/public` (Laravel's `public/` folder).
+- App lives at `/home/ipuc/davya-crm/` (clean path); cPanel-stored docroot is `/home/ipuc/home/ipuc/davya-crm/public` — the doubled prefix is a cPanel quirk. Bridge with a symlink `/home/ipuc/home/ipuc/davya-crm → /home/ipuc/davya-crm` so LiteSpeed resolves the configured path to the clean app path. See `DEPLOY.md` in the app repo for the full recipe.
 - AutoSSL (Let's Encrypt) kicks in within minutes.
 
 ### 10.2 Codebase
