@@ -182,6 +182,12 @@ $related_pages = [
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare USICT, MAIT, MSIT and other top engineering colleges under IPU'],
   ['title' => 'USAR IPU Admission', 'url' => '/usar-admission.php', 'desc' => 'Admission guide for University School of Automation & Robotics']
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'University School of Information & Communication Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

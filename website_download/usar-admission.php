@@ -174,6 +174,12 @@ $related_pages = [
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with eligibility and counselling dates'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare top engineering colleges under IPU in Delhi']
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'University School of Automation & Robotics';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

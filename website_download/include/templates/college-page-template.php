@@ -294,6 +294,14 @@ include 'include/components/faq-section.php';
 unset($faqs);
 ?>
 
+<!-- B.Tech Cutoff Rounds Table (renders only if cutoff_institute matches dataset) -->
+<?php
+if (!empty($cd['cutoff_institute'])) {
+  $cutoff_institute = $cd['cutoff_institute'];
+  include 'include/components/btech-cutoff-rounds-table.php';
+}
+?>
+
 <!-- Related Pages -->
 <?php
 $related_pages = $cd['related_pages'] ?? [];

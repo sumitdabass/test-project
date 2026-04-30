@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'gnit-admission',
+    'cutoff_institute' => 'Greater Noida Institute of Technology',
     'name' => 'Greater Noida Institute of Technology',
     'short_name' => 'GNIT',
     'title' => 'GNIT Greater Noida Admission 2026 | B.Tech CSE, AIML – IPU',

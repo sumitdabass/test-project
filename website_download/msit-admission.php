@@ -210,8 +210,17 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MAIT Admission Guide', 'url' => '/mait-admission.php', 'desc' => 'Complete admission guide for Maharaja Agrasen Institute of Technology'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
-  ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with counselling dates and eligibility']
+  ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with counselling dates and eligibility'],
+  ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Top IPU college for BBA, MBA, BA-LLB — Maharaja Agrasen group'],
+  ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Peer engineering college — fees, cutoff, placements at IPU'],
+  ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Maharaja Surajmal Institute Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

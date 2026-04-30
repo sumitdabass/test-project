@@ -310,19 +310,19 @@ Master of Computer Applications program focuses on software development, program
       <li style="margin: 8px 0;">✓ Management quota guidance</li>
       <li style="margin: 8px 0;">✓ Placement & academic insights</li>
     </ul>
-    <button onclick="gtag_report_conversion('tel:9899991342')" 
-            style="background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); 
-                   border: none; 
-                   padding: 15px 30px; 
-                   border-radius: 30px; 
-                   color: #0b2c5d; 
-                   font-size: 18px; 
-                   font-weight: 700; 
-                   cursor: pointer;
-                   margin-top: 15px;
-                   box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    <a href="tel:9899991342"
+       style="display:inline-block; text-decoration:none;
+              background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+              padding: 15px 30px;
+              border-radius: 30px;
+              color: #0b2c5d;
+              font-size: 18px;
+              font-weight: 700;
+              cursor: pointer;
+              margin-top: 15px;
+              box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
       📱 CALL: 9899991342
-    </button>
+    </a>
   </div>
 </section>
 
@@ -388,6 +388,12 @@ $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Bharati Vidyapeeths College of Engineering';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 
@@ -395,18 +401,6 @@ include 'include/components/related-pages.php';
 
 
 <!-- FAQ SCHEMA -->
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Is Bharatiya Vidya Bhavan Engineering College affiliated with IP University?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is affiliated with Guru Gobind Singh Indraprastha University."}},
-{"@type":"Question","name":"Which courses are offered?","acceptedAnswer":{"@type":"Answer","text":"CSE, IT, ECE, CS-AIML, BJMC and MCA programs."}},
-{"@type":"Question","name":"Which exam is required for B.Tech admission?","acceptedAnswer":{"@type":"Answer","text":"JEE Main is primary admission criteria under IP University."}}
-]
-}
-</script>
 
 
 </body>

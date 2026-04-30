@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'dtc-admission',
+    'cutoff_institute' => 'Delhi Technical Campus',
     'name' => 'Delhi Technical Campus',
     'short_name' => 'DTC',
     'title' => 'DTC Greater Noida Admission 2026 | B.Tech CSE, AIML Courses, Cutoff & Placements – IPU',

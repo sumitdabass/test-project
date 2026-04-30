@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'jemtec-admission',
+    'cutoff_institute' => 'JIMS Engineering Management Technical Campus',
     'name' => 'JIMS Engineering Management Technical Campus',
     'short_name' => 'JEMTEC',
     'title' => 'JEMTEC Greater Noida Admission 2026 | B.Tech, BBA, BCA, Law Courses & Cutoff – IPU',

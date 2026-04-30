@@ -139,6 +139,12 @@ $related_pages = [
   ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'Explore ADGITM courses, placements and admission'],
   ['title' => 'GTBIT College Profile', 'url' => '/gtbit-admission.php', 'desc' => 'Government-aided B.Tech college under IPU'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'HMR Institute of Technology & Management';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

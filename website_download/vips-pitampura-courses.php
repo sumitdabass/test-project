@@ -298,19 +298,19 @@ include 'include/components/breadcrumb-schema.php';
                           <li style="margin: 8px 0;">✓ BBA & PGDM counselling</li>
                           <li style="margin: 8px 0;">✓ Admission timeline & strategy</li>
                         </ul>
-                        <button onclick="gtag_report_conversion('tel:9899991342')" 
-                                style="background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); 
-                                       border: none; 
-                                       padding: 15px 30px; 
-                                       border-radius: 30px; 
-                                       color: #0b2c5d; 
-                                       font-size: 18px; 
-                                       font-weight: 700; 
-                                       cursor: pointer;
-                                       margin-top: 15px;
-                                       box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                        <a href="tel:9899991342"
+                           style="display:inline-block; text-decoration:none;
+                                  background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+                                  padding: 15px 30px;
+                                  border-radius: 30px;
+                                  color: #0b2c5d;
+                                  font-size: 18px;
+                                  font-weight: 700;
+                                  cursor: pointer;
+                                  margin-top: 15px;
+                                  box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                           📱 CALL: 9899991342
-                        </button>
+                        </a>
                       </div>
                     </section>
 
@@ -364,6 +364,12 @@ $related_pages = [
     ['title' => 'Top BBA Colleges in IPU', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Top 10 BBA colleges under IPU with fees & placements'],
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Vivekananda Institute of Professional Studies';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

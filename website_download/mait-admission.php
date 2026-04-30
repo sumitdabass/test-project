@@ -49,80 +49,6 @@
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
-
-<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is MAIT?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT is Maharaja Agrasen Institute of Technology, a top private engineering college affiliated to GGSIPU, located in Sector-22 Rohini, Delhi. Established in 1999, MAIT offers B.Tech, M.Tech and MCA programmes with strong placements (7-15 LPA average). It is one of the most preferred IPU colleges. Call 9899991342 for MAIT admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT full form?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT full form is Maharaja Agrasen Institute of Technology. It is a private self-financing engineering college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located at PSP Area, Sector-22, Rohini, Delhi-110086. Founded in 1999 by Maharaja Agrasen Technical Education Society. Call 9899991342 for admission guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MAIT Delhi private or government?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT Delhi is a PRIVATE self-financing engineering college, NOT a government college. It is affiliated to GGSIPU (which is a state government university) but is run by Maharaja Agrasen Technical Education Society. Fees are higher than government colleges (Rs. 1.55L per year). Call 9899991342 for fee and admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MAIT under IPU?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, MAIT (Maharaja Agrasen Institute of Technology) is affiliated to GGSIPU (Guru Gobind Singh Indraprastha University) Delhi. Admission to MAIT B.Tech is through IPU counselling based on JEE Main score. MAIT consistently ranks among the top 5 IPU engineering colleges. Call 9899991342 for MAIT IPU admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are MAIT B.Tech fees 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT B.Tech fees 2026-27 are approximately Rs. 1,55,700 per year (tuition + university charges), making the total 4-year fee around Rs. 6.23 lakh. Hostel and mess are additional. Caution money and one-time charges apply in first year. Fees are decided by State Fee Regulatory Committee. Call 9899991342 for exact fee breakup."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is MAIT located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT is located at PSP Area, Plot 1, Sector-22, Rohini, Delhi-110086, near Rithala metro station (Red Line). The campus is spread over a sprawling area in North-West Delhi, with easy public transport connectivity. Approximately 15 minutes from Rohini West metro. Call 9899991342 for campus visit help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT NIRF ranking?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT has been featured in NIRF rankings in the engineering category and is consistently rated among the top private engineering colleges in Delhi NCR. It holds NBA accreditation for several B.Tech branches and is rated A+ by NAAC, signalling strong academic quality. Call 9899991342 for MAIT branch-wise ranking details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT campus area and infrastructure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT campus in Sector-22 Rohini covers a large built-up area with modern academic blocks, computer labs, library, auditorium, sports facilities, cafeteria and separate boys/girls hostels. It has Wi-Fi enabled smart classrooms, well-equipped engineering labs and an active placement cell. Call 9899991342 for MAIT admission and campus tour."
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -282,8 +208,17 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MSIT Admission Guide', 'url' => '/msit-admission.php', 'desc' => 'Complete admission guide for Maharaja Surajmal Institute of Technology'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
-  ['title' => 'USICT IPU Admission', 'url' => '/usict-admission.php', 'desc' => 'Admission guide for IPU\'s flagship engineering school USICT']
+  ['title' => 'USICT IPU Admission', 'url' => '/usict-admission.php', 'desc' => 'Admission guide for IPU\'s flagship engineering school USICT'],
+  ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Sister college from the same Maharaja Agrasen group — BBA, MBA, Law'],
+  ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Neighbouring engineering college — fees, cutoff, placements'],
+  ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Maharaja Agrasen Institute of Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

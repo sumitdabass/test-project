@@ -160,6 +160,12 @@ $related_pages = [
   ['title' => 'Best B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top engineering colleges under GGSIPU'],
   ['title' => 'BPIT College Profile', 'url' => '/BPIT.php', 'desc' => 'Explore Bhagwan Parshuram Institute of Technology'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Dr. Akhilesh Das Gupta Institute of Professional Studies';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

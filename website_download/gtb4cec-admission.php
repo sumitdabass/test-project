@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'gtb4cec-admission',
+    'cutoff_institute' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
     'name' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
     'short_name' => 'GTB4CEC',
     'title' => 'GTB4CEC Admission 2026 | B.Tech CSE, AIML, DS, IT, ECE – IPU',

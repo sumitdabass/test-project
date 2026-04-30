@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'fairfield-admission',
+    'cutoff_institute' => 'Fairfield Institute of Management & Technology',
     'name' => 'Fairfield Institute of Management & Technology',
     'short_name' => 'FIMT',
     'title' => 'Fairfield Institute (FIMT) Kapashera Admission 2026 | B.Tech, BBA, Law, BCA, B.Ed – IPU',

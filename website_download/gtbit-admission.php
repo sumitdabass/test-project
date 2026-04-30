@@ -157,6 +157,12 @@ $related_pages = [
   ['title' => 'Top B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare the best engineering colleges under GGSIPU'],
   ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'Explore Dr. Akhilesh Das Gupta Institute of Technology'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Guru Teg Bahadur Institute of Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

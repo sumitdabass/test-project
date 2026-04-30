@@ -52,115 +52,109 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">IPU B.Tech cutoff is based on JEE Main All India Rank (AIR). USICT Dwarka remains the most competitive with CSE closing around 35,000 rank in Round 1. MAIT and MSIT close around 85,000–90,000 for CSE. Cutoffs relax by 20–30% from Round 1 to Round 3. Delhi quota (Home State) students get significantly lower cutoffs than Outside Delhi candidates. For personalized rank analysis, call <a href="tel:+919899991342" style="color:#1a3a9c;font-weight:600">9899991342</a>.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">IPU B.Tech cutoff is based on JEE Main All India Rank (AIR). Based on official 2025 GGSIPU counselling data, USICT Dwarka (Dual Degree CSE) remains the most competitive with CSE closing around rank 38,638 in Round 1 (Delhi quota). MAIT Rohini Shift-I CSE closes around 70,889 in R1, MSIT Janakpuri around 96,135. Cutoffs relax ~30% from Round 1 to Round 3 as students vacate seats. Delhi (Home State) quota cutoffs are significantly more relaxed than Outside Delhi. The tables below are populated directly from the official GGSIPU cut-off list. For personalised rank analysis, call <a href="tel:+919899991342" style="color:#1a3a9c;font-weight:600">9899991342</a>.</p>
   </section>
 
   <p>IP University (GGSIPU) B.Tech admission is conducted through centralized counselling based on <strong>JEE Main All India Rank</strong>. The cutoff is the closing rank at which the last seat is allotted in each round of counselling. Understanding these cutoffs is essential for effective choice filling and college selection strategy.</p>
 
   <p style="background:#fff8e1;border-left:4px solid #f59e0b;padding:14px 18px;border-radius:0 8px 8px 0;font-size:14px;color:#4a5568;margin:20px 0"><strong>Note:</strong> Cutoffs shown below are for <strong>General Category (OPNO), Home State (Delhi) quota</strong>. Outside Delhi cutoffs are typically 40–60% lower (better ranks required). Category-wise cutoffs (SC/ST/OBC/EWS) are more relaxed.</p>
 
-  <!-- ===== B.Tech CSE Cutoff Round 1 ===== -->
-  <h2>B.Tech CSE Cutoff 2025 (Round 1)</h2>
-  <p>Computer Science & Engineering remains the most sought-after branch across all IPU colleges. Round 1 cutoffs represent the initial allotment and tend to be the most competitive.</p>
+  <?php
+  // ── Data-driven cutoff tables — sourced from official GGSIPU 2025 counselling ──
+  $cutoffs_data = include 'include/data/btech-cutoffs-2025.php';
 
-  <div style="overflow-x:auto;margin:20px 0">
-  <table style="width:100%;border-collapse:collapse;min-width:500px">
-    <thead>
-      <tr style="background:#0d1b6e;color:#fff">
-        <th style="padding:12px 14px;text-align:left;font-size:14px">College</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Opening Rank</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Closing Rank</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/usict-admission.php" style="color:#1a3a9c;font-weight:600">USICT Dwarka</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~15,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~35,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/BVP.php" style="color:#1a3a9c;font-weight:600">BVP Paschim Vihar</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~36,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~132,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/mait-admission.php" style="color:#1a3a9c;font-weight:600">MAIT Rohini</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~45,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~85,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/msit-admission.php" style="color:#1a3a9c;font-weight:600">MSIT Janakpuri</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~50,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~90,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/BPIT.php" style="color:#1a3a9c;font-weight:600">BPIT Rohini</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~60,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~142,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/gtbit-admission.php" style="color:#1a3a9c;font-weight:600">GTBIT Rajouri Garden</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~90,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~150,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/adgitm-admission.php" style="color:#1a3a9c;font-weight:600">ADGITM</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~100,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~180,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/hmr-admission.php" style="color:#1a3a9c;font-weight:600">HMR</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~120,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~200,000</td></tr>
-    </tbody>
-  </table>
-  </div>
+  $cutoff_colleges = [
+    'University School of Information & Communication Technology' => ['short' => 'USICT Dwarka',          'page' => '/usict-admission.php'],
+    'University School of Automation & Robotics'                  => ['short' => 'USAR Dwarka',           'page' => '/usar-admission.php'],
+    'University School of Chemical Technology'                    => ['short' => 'USCT Dwarka',           'page' => '/usct-admission.php'],
+    'Maharaja Agrasen Institute of Technology'                    => ['short' => 'MAIT Rohini',           'page' => '/mait-admission.php'],
+    'Maharaja Surajmal Institute Technology'                      => ['short' => 'MSIT Janakpuri',        'page' => '/msit-admission.php'],
+    'Bharati Vidyapeeths College of Engineering'                  => ['short' => 'BVCOE Paschim Vihar',   'page' => '/BVP.php'],
+    'Bhagwan Parshuram Institute of Technology'                   => ['short' => 'BPIT Rohini',           'page' => '/BPIT.php'],
+    'Vivekananda Institute of Professional Studies'               => ['short' => 'VIPS Pitampura',        'page' => '/vips-pitampura-courses.php'],
+    'Guru Teg Bahadur Institute of Technology'                    => ['short' => 'GTBIT Rajouri Garden',  'page' => '/gtbit-admission.php'],
+    'Guru Tegh Bahadur 4th Centenary Engineering College'         => ['short' => 'GTB-4CEC',              'page' => '/gtb4cec-admission.php'],
+    'Dr. Akhilesh Das Gupta Institute of Professional Studies'    => ['short' => 'ADGITM Shastri Park',   'page' => '/adgitm-admission.php'],
+    'HMR Institute of Technology & Management'                    => ['short' => 'HMR Hamidpur',          'page' => '/hmr-admission.php'],
+    'JIMS Engineering Management Technical Campus'                => ['short' => 'JEMTEC Greater Noida',  'page' => '/jemtec-admission.php'],
+    'Delhi Technical Campus'                                      => ['short' => 'DTC Greater Noida',     'page' => '/dtc-admission.php'],
+    'Greater Noida Institute of Technology'                       => ['short' => 'GNIT Greater Noida',    'page' => '/gnit-admission.php'],
+    'Fairfield Institute of Management & Technology'              => ['short' => 'FIMT Kapashera',        'page' => '/fairfield-admission.php'],
+    'Echelon Institute of Technology'                             => ['short' => 'Echelon Faridabad',     'page' => '/echelon-admission.php'],
+  ];
 
-  <!-- ===== B.Tech CSE Cutoff Round 3 ===== -->
-  <h2>B.Tech CSE Cutoff 2025 (Round 3 – Final)</h2>
-  <p>Round 3 is the final round of regular counselling. Cutoffs relax significantly as students vacate seats to join other universities or upgrade to better colleges. This is when mid-range rank holders get the best opportunities.</p>
+  // Branch aliases — one branch can have several names across colleges (Shift I, DD, etc.)
+  $branch_aliases = [
+    'CSE' => ['B. Tech./M. Tech.(DD) (CSE)', 'Computer Science & Engineering (Shift I)', 'Computer Science & Engineering'],
+    'IT'  => ['B. Tech./M. Tech.(DD) (IT)',  'Information Technology (Shift I)',         'Information Technology'],
+    'ECE' => ['B. Tech./M. Tech.(DD) (ECE)', 'Electronics & Communication Engineering (Shift I)', 'Electronics & Communication Engineering'],
+  ];
 
-  <div style="overflow-x:auto;margin:20px 0">
-  <table style="width:100%;border-collapse:collapse;min-width:500px">
-    <thead>
-      <tr style="background:#0d1b6e;color:#fff">
-        <th style="padding:12px 14px;text-align:left;font-size:14px">College</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Opening Rank</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Closing Rank</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">USICT Dwarka</td><td style="padding:12px 14px;text-align:center;font-size:14px">~18,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~42,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">BVP Paschim Vihar</td><td style="padding:12px 14px;text-align:center;font-size:14px">~44,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~165,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">MAIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~55,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~108,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">MSIT Janakpuri</td><td style="padding:12px 14px;text-align:center;font-size:14px">~60,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~115,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">BPIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~75,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~178,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">GTBIT Rajouri Garden</td><td style="padding:12px 14px;text-align:center;font-size:14px">~110,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~190,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">ADGITM</td><td style="padding:12px 14px;text-align:center;font-size:14px">~125,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~225,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">HMR</td><td style="padding:12px 14px;text-align:center;font-size:14px">~150,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~250,000</td></tr>
-    </tbody>
-  </table>
-  </div>
+  $btc_get = function ($cutoffs, $institute, $aliases) {
+    if (!isset($cutoffs[$institute])) return null;
+    foreach ($aliases as $alias) {
+      if (isset($cutoffs[$institute][$alias])) return [$alias, $cutoffs[$institute][$alias]];
+    }
+    return null;
+  };
+  $btc_fmt = function ($cell) {
+    if (!$cell || !isset($cell['min']) || !isset($cell['max'])) return '<span style="color:#94a3b8">—</span>';
+    return number_format((int) $cell['min']) . ' &ndash; ' . number_format((int) $cell['max']);
+  };
+  $btc_render_table = function ($branch_key, $branch_label, $intro_html) use ($cutoffs_data, $cutoff_colleges, $branch_aliases, $btc_get, $btc_fmt) {
+    echo '<h2>B.Tech ' . htmlspecialchars($branch_label) . ' Cutoff 2025 — Round-wise (Delhi Quota)</h2>';
+    echo $intro_html;
+    echo '<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0;border:1px solid #e2e8f0;border-radius:8px">';
+    echo '<table style="width:100%;border-collapse:collapse;min-width:680px;font-size:13.5px">';
+    echo '<thead><tr style="background:#0d1b6e;color:#fff">';
+    echo '<th style="padding:10px 12px;text-align:left">College</th>';
+    echo '<th style="padding:10px 12px;text-align:left;font-size:12px;font-weight:500;color:#cbd5e1">Branch</th>';
+    echo '<th style="padding:10px 12px;text-align:center">Round 1</th>';
+    echo '<th style="padding:10px 12px;text-align:center">Round 2</th>';
+    echo '<th style="padding:10px 12px;text-align:center">Round 3</th>';
+    echo '</tr></thead><tbody>';
+    $i = 0;
+    foreach ($cutoff_colleges as $institute => $info) {
+      $hit = $btc_get($cutoffs_data, $institute, $branch_aliases[$branch_key]);
+      if (!$hit) continue;
+      [$matched_branch, $rounds] = $hit;
+      $bg = $i++ % 2 === 0 ? '#fff' : '#f8faff';
+      echo '<tr style="background:' . $bg . ';border-top:1px solid #e2e8f0">';
+      echo '<td style="padding:10px 12px;white-space:nowrap"><a href="' . htmlspecialchars($info['page']) . '" style="color:#1a3a9c;font-weight:600">' . htmlspecialchars($info['short']) . '</a></td>';
+      echo '<td style="padding:10px 12px;color:#64748b;font-size:12px">' . htmlspecialchars($matched_branch) . '</td>';
+      echo '<td style="padding:10px 12px;text-align:center;white-space:nowrap">' . $btc_fmt($rounds['round_1']['delhi'] ?? null) . '</td>';
+      echo '<td style="padding:10px 12px;text-align:center;white-space:nowrap">' . $btc_fmt($rounds['round_2']['delhi'] ?? null) . '</td>';
+      echo '<td style="padding:10px 12px;text-align:center;white-space:nowrap">' . $btc_fmt($rounds['round_3']['delhi'] ?? null) . '</td>';
+      echo '</tr>';
+    }
+    echo '</tbody></table></div>';
+    echo '<p style="font-size:12px;color:#94a3b8;margin:8px 0 28px">Values are JEE Main All India Rank ranges (Min &ndash; Max) at which seats closed in each round, Delhi Region quota. "&mdash;" means the college had no allotment in that round for this branch.</p>';
+  };
 
-  <!-- ===== B.Tech IT Cutoff ===== -->
-  <h2>B.Tech IT Cutoff 2025 (Round 1)</h2>
-  <p>Information Technology is the second-most popular branch after CSE. IT cutoffs are slightly higher (more relaxed) than CSE but follow a similar pattern across colleges.</p>
+  $btc_render_table('CSE', 'CSE (Computer Science & Engineering)',
+    '<p>Computer Science & Engineering is the most sought-after branch across IPU colleges. Round 1 ranks are tightest; Rounds 2 and 3 relax as students vacate seats to upgrade or join other universities.</p>');
 
-  <div style="overflow-x:auto;margin:20px 0">
-  <table style="width:100%;border-collapse:collapse;min-width:500px">
-    <thead>
-      <tr style="background:#0d1b6e;color:#fff">
-        <th style="padding:12px 14px;text-align:left;font-size:14px">College</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Opening Rank</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Closing Rank</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">USICT Dwarka</td><td style="padding:12px 14px;text-align:center;font-size:14px">~20,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~42,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">BVP Paschim Vihar</td><td style="padding:12px 14px;text-align:center;font-size:14px">~42,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~145,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">MAIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~55,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~98,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">MSIT Janakpuri</td><td style="padding:12px 14px;text-align:center;font-size:14px">~58,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~105,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">BPIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~70,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~155,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">GTBIT Rajouri Garden</td><td style="padding:12px 14px;text-align:center;font-size:14px">~100,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~168,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">ADGITM</td><td style="padding:12px 14px;text-align:center;font-size:14px">~115,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~198,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">HMR</td><td style="padding:12px 14px;text-align:center;font-size:14px">~135,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~220,000</td></tr>
-    </tbody>
-  </table>
-  </div>
+  $btc_render_table('IT', 'IT (Information Technology)',
+    '<p>IT cutoffs typically run 10&ndash;20% higher (i.e., easier ranks accepted) than CSE at the same college. A solid backup if CSE is out of reach for your rank.</p>');
 
-  <!-- ===== B.Tech ECE Cutoff ===== -->
-  <h2>B.Tech ECE Cutoff 2025 (Round 1)</h2>
-  <p>Electronics & Communication Engineering is less competitive than CSE and IT, making it a viable option for students with higher JEE Main ranks. ECE offers strong fundamentals for VLSI, embedded systems, and telecom careers.</p>
+  $btc_render_table('ECE', 'ECE (Electronics & Communication Engineering)',
+    '<p>ECE is the third-most competitive core branch. Strong fit for VLSI, embedded systems, and telecom-track careers.</p>');
+  ?>
 
-  <div style="overflow-x:auto;margin:20px 0">
-  <table style="width:100%;border-collapse:collapse;min-width:500px">
-    <thead>
-      <tr style="background:#0d1b6e;color:#fff">
-        <th style="padding:12px 14px;text-align:left;font-size:14px">College</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Opening Rank</th>
-        <th style="padding:12px 14px;text-align:center;font-size:14px">Closing Rank</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">USICT Dwarka</td><td style="padding:12px 14px;text-align:center;font-size:14px">~30,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">MAIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~80,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~148,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">MSIT Janakpuri</td><td style="padding:12px 14px;text-align:center;font-size:14px">~85,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~155,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">BVP Paschim Vihar</td><td style="padding:12px 14px;text-align:center;font-size:14px">~75,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~190,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">BPIT Rohini</td><td style="padding:12px 14px;text-align:center;font-size:14px">~100,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~210,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">GTBIT Rajouri Garden</td><td style="padding:12px 14px;text-align:center;font-size:14px">~130,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~230,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">ADGITM</td><td style="padding:12px 14px;text-align:center;font-size:14px">~150,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~260,000</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">HMR</td><td style="padding:12px 14px;text-align:center;font-size:14px">~170,000</td><td style="padding:12px 14px;text-align:center;font-size:14px">~300,000</td></tr>
-    </tbody>
-  </table>
+  <!-- ===== Detailed round-wise cutoffs by college ===== -->
+  <h2>Detailed Round-wise Cutoffs by College</h2>
+  <p>The summary tables above show the primary CSE / IT / ECE branch at each college. For the full branch list (including AI/ML, DS, Cyber Security, Mechanical, Civil, etc.) with Delhi <em>and</em> Outside Delhi cutoffs side-by-side, open the per-college page:</p>
+  <div class="row g-3" style="margin:18px 0">
+    <?php foreach ($cutoff_colleges as $institute => $info): ?>
+    <div class="col-md-6 col-lg-4">
+      <a href="<?= htmlspecialchars($info['page']) ?>" style="display:block;padding:14px 16px;background:#f8faff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:inherit;height:100%"
+         onmouseover="this.style.borderColor='#1a3a9c';this.style.background='#fff'"
+         onmouseout="this.style.borderColor='#e2e8f0';this.style.background='#f8faff'">
+        <strong style="color:#0d1b6e;font-size:14px"><?= htmlspecialchars($info['short']) ?></strong>
+        <span style="display:block;color:#64748b;font-size:12px;margin-top:4px"><?= htmlspecialchars(count($cutoffs_data[$institute] ?? [])) ?> branches &bull; R1/R2/R3 Delhi + Outside &rarr;</span>
+      </a>
+    </div>
+    <?php endforeach; ?>
   </div>
 
   <!-- ===== How to Use Cutoff Data ===== -->
