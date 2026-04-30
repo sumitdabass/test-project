@@ -43,21 +43,6 @@
   ]
 }
 </script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Is IPU CET still conducted in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "From 2026, most IPU undergraduate courses have shifted to CUET as the entrance exam. IPU CET is no longer conducted for BBA, BCA, BJMC, and B.Com. However, some specialised programmes may still use IPU CET. Check the official notification."}},
-    {"@type": "Question", "name": "What is the difference between IPU CET and CUET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU CET was conducted exclusively by GGSIPU for admission to its affiliated colleges. CUET is a national-level exam conducted by NTA. CUET scores are accepted by multiple central and state universities. The syllabus and pattern differ significantly."}},
-    {"@type": "Question", "name": "Can I use old IPU CET cutoffs to predict CUET cutoffs?", "acceptedAnswer": {"@type": "Answer", "text": "IPU CET and CUET have different scoring patterns, so direct comparison is not accurate. However, the relative ranking of colleges remains similar. Top colleges like VIPS and MAIMS will still have the highest cutoffs under CUET."}},
-    {"@type": "Question", "name": "Which courses at IPU now use CUET instead of CET?", "acceptedAnswer": {"@type": "Answer", "text": "BBA, BCA, BJMC, B.Com, BA Economics, BA English, and most other undergraduate programmes now use CUET scores. B.Tech uses JEE Main. Law programmes use CLAT/AILET. MBA uses CAT/CMAT."}},
-    {"@type": "Question", "name": "How can I check my IPU admission chances for 2026?", "acceptedAnswer": {"@type": "Answer", "text": "For 2026 admission, use your CUET score to compare against 2025 cutoffs. Refer to course-specific cutoff pages on our website. For personalized prediction, call 9899991342 for free expert guidance."}}
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

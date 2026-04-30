@@ -43,21 +43,6 @@
   ]
 }
 </script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CUET percentile is needed for BJMC at VIPS IPU?", "acceptedAnswer": {"@type": "Answer", "text": "VIPS Pitampura typically requires a CUET percentile of 85+ in Round 1 for BJMC (General category, Delhi quota). In Round 3, the cutoff may relax to around 76 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Is IPU BJMC admission based on CUET or IPU CET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU BJMC admission is now based on CUET scores. The university transitioned from IPU CET to CUET in recent years. Always verify the current admission notification on the official IPU portal."}},
-    {"@type": "Question", "name": "Which is the best BJMC college under IPU based on cutoff?", "acceptedAnswer": {"@type": "Answer", "text": "Based on cutoff trends, VIPS Pitampura has the highest BJMC cutoff, making it the most sought-after mass communication college under IPU. MAIMS and BVP also have strong cutoffs and industry connections."}},
-    {"@type": "Question", "name": "What career options are available after BJMC from IPU?", "acceptedAnswer": {"@type": "Answer", "text": "BJMC graduates can work in journalism, digital media, advertising, public relations, content creation, film production, and corporate communication. Top IPU colleges have strong media industry placements."}},
-    {"@type": "Question", "name": "Can I get BJMC at IPU with a CUET percentile of 65?", "acceptedAnswer": {"@type": "Answer", "text": "With a CUET percentile of 65 (Delhi quota, General category), you can target JIMS Vasant Kunj in Round 1 and BVP in Round 3. Call 9899991342 for a complete college list based on your score."}}
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

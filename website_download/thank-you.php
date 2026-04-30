@@ -472,7 +472,7 @@ const hashSHA256 = async (data) => {
   if(phone) userData.phone_number = await hashSHA256(phone);
   if(Object.keys(userData).length){
     gtag('set','user_data',userData);
-    gtag('event','conversion',{'send_to':'AW-10900888879/YU9JCMP9m74DEK-6-c0o'});
+    gtag('event','conversion',{'send_to':'AW-10900888879/IVcxCLiB87IbEK-6-c0o'});
   }
 })();
 </script>

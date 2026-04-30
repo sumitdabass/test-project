@@ -43,21 +43,6 @@
   ]
 }
 </script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CAT percentile is needed for MBA at USMS IPU?", "acceptedAnswer": {"@type": "Answer", "text": "USMS Dwarka typically requires a CAT percentile of 55+ in Round 1 for MBA (General category, Delhi quota). In Round 3, the cutoff may relax to around 45 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Does IPU accept both CAT and CMAT scores for MBA?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, IPU accepts both CAT and CMAT scores for MBA admission. Students can apply through either exam. CMAT is generally considered easier and is preferred by students who find CAT too competitive."}},
-    {"@type": "Question", "name": "Which is the best MBA college under IPU?", "acceptedAnswer": {"@type": "Answer", "text": "USMS (University School of Management Studies) Dwarka is the top MBA college under IPU, being a university department. Among affiliated colleges, MAIMS Rohini and DIAS Rohini are highly ranked for placements and faculty."}},
-    {"@type": "Question", "name": "What is the MBA fee at IPU colleges?", "acceptedAnswer": {"@type": "Answer", "text": "MBA fees at IPU affiliated colleges typically range from Rs 1.5-3 lakh per year. USMS, being a university department, has lower fees of around Rs 50,000-70,000 per year. Exact fees vary by college."}},
-    {"@type": "Question", "name": "Can I get MBA at IPU with a CAT percentile of 40?", "acceptedAnswer": {"@type": "Answer", "text": "With a CAT percentile of 40 (Delhi quota, General category), you can target colleges like DIAS and JIMS in Round 3. Alternatively, apply through CMAT where a score of 150+ can get you admission. Call 9899991342 for guidance."}}
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

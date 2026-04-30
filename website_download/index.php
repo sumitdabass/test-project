@@ -5,24 +5,24 @@ include_once("include/form-handler.php");
 ?>
 <?php include_once("include/base-head.php"); ?>
 
-<title>IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help</title>
-<meta name="description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
-<meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU counselling 2026, GGSIPU management quota, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
+<title>IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help</title>
+<meta name="description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
+<meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, ipu counselling 2026, ipu btech counselling 2026, ggsipu counselling date 2026, ipu management seat, ipu management quota, ggsipu management quota, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
 <link rel="canonical" href="https://ipu.co.in/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ipu.co.in/">
-<meta property="og:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta property="og:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta property="og:title" content="IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help">
+<meta property="og:description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 <meta property="og:site_name" content="IPU Admission Guide">
 <meta property="og:locale" content="en_IN">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta name="twitter:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta name="twitter:title" content="IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help">
+<meta name="twitter:description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
 <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- Schema.org JSON-LD -->
@@ -318,6 +318,67 @@ $college_section_title = "Top IPU Affiliated Colleges in Delhi";
 include_once("include/components/college-card.php");
 ?>
 
+<!-- ===== MANAGEMENT SEAT / QUOTA SECTION ===== -->
+<section style="padding:50px 0;background:#f8faff">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:10px">IPU Management Seat &amp; Management Quota 2026</h2>
+    <p style="text-align:center;color:#4a5568;max-width:780px;margin:0 auto 30px;line-height:1.7">
+      Explore <strong>IPU management seat</strong> and <strong>management quota</strong> admission in GGSIPU affiliated colleges for B.Tech, BBA and Law.
+      Eligibility, colleges, fees and the direct admission process — all verified for 2026. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for eligibility check.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <a href="/IP-University-management-quota-admission-eligibility-criteria.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#fff3e0;color:#e65c00;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">ALL COURSES</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">IPU Management Seat Guide — Eligibility &amp; Process</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Full eligibility, process, fees &amp; college list for IP University management quota seats.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">Read the guide →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/btech-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">B.TECH</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">B.Tech Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Engineering management seats at MAIT, MSIT, BPIT, BVP, VIPS — JEE Main requirement &amp; fees.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View B.Tech seats →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/bba-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">BBA</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">BBA Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Top BBA colleges with management seats — MAIMS, VIPS, JIMS, Tecnia &amp; fees guide.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View BBA seats →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/ballb-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">BA LLB / LAW</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">BA LLB Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Law management seats — CLAT requirement, top law colleges under GGSIPU &amp; admission process.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View Law seats →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== BLOG HIGHLIGHTS ===== -->
 <section style="padding:50px 0">
   <div class="container">
@@ -366,7 +427,7 @@ $faqs = [
     ['question' => 'What is the MBA admission process at IP University?', 'answer' => 'MBA admission under IP University (GGSIPU) is based on CAT or CMAT score, followed by centralized counselling conducted by the university. Top MBA colleges include USMS and Maharaja Agrasen Business School.'],
     ['question' => 'How to apply for BA LLB or BBA LLB in IP University?', 'answer' => 'BA LLB and BBA LLB admissions in IPU are through CLAT score. Register on the GGSIPU portal and participate in counselling. Top law colleges include USLLS, VIPS, and JIMS. Call <a href="tel:+919899991342">9899991342</a> for step-by-step guidance.'],
     ['question' => 'What courses are offered under IP University admission 2026?', 'answer' => 'IP University offers B.Tech, MBA, BBA, MCA, BA LLB, BBA LLB, B.Com, BA Economics, BA English, BCA, BJMC and more through 60+ GGSIPU affiliated colleges across Delhi.'],
-    ['question' => 'What is IPU management quota admission?', 'answer' => 'Management quota seats in IPU affiliated colleges are filled outside of counselling. Admission is direct based on merit and college discretion. Contact us at <a href="tel:+919899991342">9899991342</a> to check eligibility and available seats.'],
+    ['question' => 'What is IPU management quota / management seat admission?', 'answer' => 'IPU management quota (also called management seat) refers to a limited percentage of seats in IP University affiliated colleges filled directly, outside centralised counselling. Eligibility and valid entrance score (JEE Main / CUET / CLAT) is still required. See our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management seat guide</a> or call <a href="tel:+919899991342">9899991342</a> to check eligibility and available seats.'],
     ['question' => 'Is IPU counselling 2026 started?', 'answer' => 'IPU counselling 2026 has been announced. Seats are limited and fill quickly. Contact our helpline at <a href="tel:+919899991342">9899991342</a> for the latest schedule and free guidance on choice filling strategy.'],
 ];
 $faq_heading = "Frequently Asked Questions about IPU Admission";

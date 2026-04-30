@@ -288,19 +288,19 @@ include_once("include/form-handler.php");
                               <li style="margin: 8px 0;">✓ Management quota guidance</li>
                               <li style="margin: 8px 0;">✓ Placement insights & academic details</li>
                             </ul>
-                            <button onclick="gtag_report_conversion('tel:9899991342')" 
-                                    style="background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); 
-                                           border: none; 
-                                           padding: 15px 30px; 
-                                           border-radius: 30px; 
-                                           color: #0b2c5d; 
-                                           font-size: 18px; 
-                                           font-weight: 700; 
-                                           cursor: pointer;
-                                           margin-top: 15px;
-                                           box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                            <a href="tel:9899991342"
+                               style="display:inline-block; text-decoration:none;
+                                      background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+                                      padding: 15px 30px;
+                                      border-radius: 30px;
+                                      color: #0b2c5d;
+                                      font-size: 18px;
+                                      font-weight: 700;
+                                      cursor: pointer;
+                                      margin-top: 15px;
+                                      box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                               📱 CALL: 9899991342
-                            </button>
+                            </a>
                           </div>
                         </section>
 

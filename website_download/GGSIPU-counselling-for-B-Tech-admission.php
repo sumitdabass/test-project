@@ -4,49 +4,11 @@
 <head><meta charset="utf-8">
     <?php include_once("include/base-head.php"); ?>
     <?php include_once("include/form-handler.php"); ?>
-    <title>IPU Counselling 2026 – Dates, Registration, Fees, Choice Filling Process</title>
-    <meta name="description" content="IPU / GGSIPU Counselling 2026 schedule – registration dates, fee, choice filling, seat allotment rounds & documents. Complete step-by-step guide. Call 9899991342.">
+    <title>IPU Counselling 2026 | GGSIPU B.Tech Dates, Registration &amp; Last Date</title>
+    <meta name="description" content="IPU / GGSIPU counselling 2026 — registration date, last date, Rs. 1,000 fee, choice filling &amp; B.Tech seat allotment rounds. Updated step-by-step guide. Call 9899991342.">
+    <meta name="keywords" content="ipu counselling 2026, ipu btech counselling 2026, ggsipu counselling 2026, ggsipu counselling date 2026, ipu counselling 2026 last date, ipu counselling registration 2026, ggsipu counselling btech, ipu counselling 2026 for btech, ipu counselling date, when does ipu counselling start, ggsipu counselling registration">
     <link rel="canonical" href="https://ipu.co.in/GGSIPU-counselling-for-B-Tech-admission.php" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the GGSIPU B.Tech counselling process?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The GGSIPU B.Tech counselling process involves online registration on the IPU admission portal, document upload, merit list publication, choice filling for colleges and branches, seat allotment rounds, document verification at allotted college, and fee payment to confirm admission."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many rounds of counselling are held for IPU B.Tech?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "GGSIPU typically holds 3–4 rounds of B.Tech counselling including spot rounds. Candidates should register and participate in all rounds to maximise their chance of getting the preferred college and branch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What documents are required for GGSIPU B.Tech counselling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Documents required include Class 10 and 12 mark sheets, JEE Main or CUET score card, IPU rank card, category certificate (if applicable), Delhi domicile certificate, Aadhaar card, and passport size photographs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I participate in IPU B.Tech counselling without JEE Main?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, GGSIPU accepts CUET scores as an alternative to JEE Main for B.Tech counselling. Candidates with valid CUET scores in Physics, Chemistry and Mathematics can participate in the CUET-based B.Tech counselling process."
-          }
-        }
-      ]
-    }
-    </script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

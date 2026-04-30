@@ -241,16 +241,6 @@ include 'include/components/related-pages.php';
 <?php include_once("include/base-footer.php"); ?>
 
 <!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Which entrance exams are accepted for IPU admission?","acceptedAnswer":{"@type":"Answer","text":"Different programs accept JEE Main, CAT, CMAT, CLAT, CET or CUET depending on course."}},
-{"@type":"Question","name":"Is counselling mandatory for IP University?","acceptedAnswer":{"@type":"Answer","text":"Yes, most courses require centralized counselling participation."}}
-]
-}
-</script>
 
 <!-- Breadcrumb Schema -->
 <script type="application/ld+json">

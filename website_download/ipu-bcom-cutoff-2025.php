@@ -43,21 +43,6 @@
   ]
 }
 </script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CUET percentile is needed for B.Com at VIPS IPU?", "acceptedAnswer": {"@type": "Answer", "text": "VIPS Pitampura typically requires a CUET percentile of 78+ in Round 1 for B.Com (General category, Delhi quota). In Round 3, the cutoff may relax to around 70 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Is IPU B.Com admission based on CUET or IPU CET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU B.Com admission is now based on CUET scores. The university transitioned from IPU CET to CUET in recent years. Always verify the current admission notification on the official IPU portal."}},
-    {"@type": "Question", "name": "Which is the best B.Com college under IPU based on cutoff?", "acceptedAnswer": {"@type": "Answer", "text": "Based on cutoff trends, VIPS Pitampura has the highest B.Com cutoff, followed closely by MSI Janakpuri and MAIMS Rohini. These colleges are preferred for their strong commerce faculty and placement support."}},
-    {"@type": "Question", "name": "What is the difference between B.Com and BBA at IPU?", "acceptedAnswer": {"@type": "Answer", "text": "B.Com focuses on accounting, taxation, finance and commerce fundamentals while BBA emphasizes management, marketing and business administration. B.Com cutoffs are slightly lower than BBA. Both use CUET scores for IPU admission."}},
-    {"@type": "Question", "name": "Can I get B.Com at IPU with a CUET percentile of 60?", "acceptedAnswer": {"@type": "Answer", "text": "With a CUET percentile of 60 (Delhi quota, General category), you can target IITM Janakpuri in Round 1. In Round 3, colleges like MAIMS may also become available. Call 9899991342 for a complete college list."}}
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

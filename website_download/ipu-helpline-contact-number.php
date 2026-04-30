@@ -6,26 +6,27 @@
     <?php include_once("include/base-head.php"); ?>
     <?php include_once("include/form-handler.php"); ?>
     
-    <title>IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline</title>
+    <title>IPU Helpline Number 9899991342 | GGSIPU Contact, Email &amp; Helpdesk 2026</title>
 
-    <meta name="description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
+    <meta name="description" content="IPU helpline number 9899991342 (Mon-Sat 9AM-7PM). GGSIPU / IP University admission contact number, email, helpdesk hours &amp; counselling help for 2026 — free expert guidance.">
+    <meta name="keywords" content="ipu helpline number, ipu contact number, ggsipu contact number, ip university contact number, ip university helpline number, ggsipu helpline number, guru gobind singh indraprastha university contact number, indraprastha university contact number, ipu cet helpline number, ggsipu helpline email, ipu admission help desk, ipu helpline email id">
     <meta name="robots" content="index, follow">
-    
+
     <link rel="canonical" href="https://ipu.co.in/ipu-helpline-contact-number.php">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ipu.co.in/ipu-helpline-contact-number.php">
-    <meta property="og:title" content="IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline">
-    <meta property="og:description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
+    <meta property="og:title" content="IPU Helpline Number 9899991342 | GGSIPU Contact, Email &amp; Helpdesk 2026">
+    <meta property="og:description" content="IPU helpline number 9899991342 (Mon-Sat 9AM-7PM). GGSIPU / IP University admission contact number, email, helpdesk hours &amp; counselling help for 2026 — free expert guidance.">
     <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
     <meta property="og:site_name" content="IPU Admission Guide">
     <meta property="og:locale" content="en_IN">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IPU Helpline Contact Number 2026 | GGSIPU Delhi Admission Helpline">
-    <meta name="twitter:description" content="IPU / GGSIPU Delhi 2026 admission helpline. Contact numbers, email, helpdesk hours, registration help. Expert free guidance at 9899991342 (Mon-Sat 9AM-7PM).">
+    <meta name="twitter:title" content="IPU Helpline Number 9899991342 | GGSIPU Contact, Email &amp; Helpdesk 2026">
+    <meta name="twitter:description" content="IPU helpline number 9899991342 (Mon-Sat 9AM-7PM). GGSIPU / IP University admission contact number, email, helpdesk hours &amp; counselling help for 2026 — free expert guidance.">
     <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
     
     <!-- Schema.org JSON-LD -->

@@ -43,21 +43,6 @@
   ]
 }
 </script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CUET percentile is needed for BA Economics at MSI IPU?", "acceptedAnswer": {"@type": "Answer", "text": "MSI Janakpuri typically requires a CUET percentile of 72+ in Round 1 for BA Economics (General category, Delhi quota). In Round 3, the cutoff may relax to around 63 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Is IPU BA Economics admission based on CUET or IPU CET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU BA Economics admission is now based on CUET scores. The university transitioned from IPU CET to CUET in recent years. Always verify the current admission notification on the official IPU portal."}},
-    {"@type": "Question", "name": "Which is the best BA Economics college under IPU?", "acceptedAnswer": {"@type": "Answer", "text": "Based on cutoff trends and academic reputation, MSI Janakpuri and VIPS Pitampura are the top BA Economics colleges under IPU. Both have strong economics faculty and good career guidance for higher studies."}},
-    {"@type": "Question", "name": "How does BA Economics cutoff compare with BA English at IPU?", "acceptedAnswer": {"@type": "Answer", "text": "BA Economics and BA English cutoffs at IPU are in a similar range, typically within 3-5 percentile points of each other. Economics cutoffs tend to be marginally higher due to stronger career prospects in finance and civil services."}},
-    {"@type": "Question", "name": "Can I get BA Economics at IPU with a CUET percentile of 60?", "acceptedAnswer": {"@type": "Answer", "text": "With a CUET percentile of 60 (Delhi quota, General category), you can target MAIMS Rohini in Round 3. For Round 1, you may need to look at newer or smaller colleges. Call 9899991342 for a complete college list."}}
-  ]
-}
-</script>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

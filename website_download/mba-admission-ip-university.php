@@ -462,18 +462,6 @@ include 'include/components/related-pages.php';
 
 <!-- FAQ Schema -->
 
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Which entrance exam is required for MBA admission in IP University?","acceptedAnswer":{"@type":"Answer","text":"MBA admission is primarily based on CAT scores. CMAT may also be considered depending on university notification."}},
-{"@type":"Question","name":"Does IP University conduct its own MBA entrance test?","acceptedAnswer":{"@type":"Answer","text":"No, admission is based on national-level exams like CAT."}},
-{"@type":"Question","name":"Is counselling mandatory for IPU MBA admission?","acceptedAnswer":{"@type":"Answer","text":"Yes, centralised counselling is compulsory for admission."}}
-]
-}
-</script>
-
 
 </body>
 </html>
