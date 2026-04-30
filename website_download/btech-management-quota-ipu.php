@@ -250,6 +250,9 @@ $related_pages = [
     ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & admission process'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
+    ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees, college list & process for management quota seats'],
+    ['title' => 'BBA Management Quota in IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct BBA admission process & top BBA management colleges'],
+    ['title' => 'MBA Management Quota in IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Direct MBA admission via management seats — eligibility & colleges'],
 ];
 include 'include/components/related-pages.php';
 ?>
