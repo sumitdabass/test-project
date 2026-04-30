@@ -31,10 +31,9 @@ function news_load_all_posts(string $content_dir): array {
         $posts[] = $fm;
     }
     usort($posts, function ($a, $b) {
-        $fa = !empty($a['featured']) ? 1 : 0;
-        $fb = !empty($b['featured']) ? 1 : 0;
-        if ($fa !== $fb) return $fb - $fa;
-        return strcmp($b['date'], $a['date']);
+        // Newest first by date; slug as deterministic tiebreaker on same-day posts.
+        $cmp = strcmp($b['date'], $a['date']);
+        return $cmp !== 0 ? $cmp : strcmp($a['slug'], $b['slug']);
     });
     return $posts;
 }

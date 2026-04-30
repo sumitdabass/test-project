@@ -74,7 +74,7 @@ def files_for_full(remote_root: str) -> list[tuple[Path, str]]:
         out.append((php, f"{remote_root}/news/{php.name}"))
 
     # news-specific includes (template changes need to FTP even though they're not in /news/)
-    for inc in ("news-template.php", "news-card.php", "news-helpers.php", "news-jsonld.php"):
+    for inc in ("news-template.php", "news-card.php", "news-helpers.php", "news-jsonld.php", "news-popular-blogs.php"):
         local = WEB / "include" / inc
         if local.exists():
             out.append((local, f"{remote_root}/include/{inc}"))

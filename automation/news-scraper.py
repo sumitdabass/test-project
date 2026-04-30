@@ -138,6 +138,47 @@ def existing_slugs() -> set[str]:
     return {p.stem for p in CONTENT_DIR.glob("*.md")}
 
 
+def existing_source_urls() -> set[str]:
+    """Pull source_url from each existing post's frontmatter so we can dedup by
+    canonical link rather than anchor-text slug. Older posts that predate
+    source_url persistence simply contribute nothing — fuzzy_slug_collision
+    covers them."""
+    urls: set[str] = set()
+    if not CONTENT_DIR.exists():
+        return urls
+    for p in CONTENT_DIR.glob("*.md"):
+        try:
+            raw = p.read_text(encoding="utf-8")
+            head, _sep, _ = raw.partition("\n---")
+            fm = json.loads(head)
+            url = fm.get("source_url")
+            if isinstance(url, str) and url:
+                urls.add(url.strip())
+        except Exception:
+            # Malformed frontmatter on an old post shouldn't break the run.
+            continue
+    return urls
+
+
+def fuzzy_slug_collision(candidate_slug: str, seen_slugs: set[str], threshold: float = 0.6) -> str | None:
+    """Token-Jaccard similarity between two slugs. Catches rephrased anchor
+    texts like 'final-opportunity-ipu-cet-registration' vs
+    'last-opportunity-ipu-cet-registration' that the strict substring check
+    misses. Returns the colliding existing slug, or None."""
+    cand_tokens = {t for t in candidate_slug.split("-") if t and len(t) > 2}
+    if not cand_tokens:
+        return None
+    for s in seen_slugs:
+        s_tokens = {t for t in s.split("-") if t and len(t) > 2}
+        if not s_tokens:
+            continue
+        union = cand_tokens | s_tokens
+        inter = cand_tokens & s_tokens
+        if union and len(inter) / len(union) >= threshold:
+            return s
+    return None
+
+
 def call_llm(system_prompt: str, user_message: str) -> dict:
     """Call Gemini via AI Studio REST API. Returns the parsed JSON object the
     model produced."""
@@ -178,11 +219,12 @@ def call_llm(system_prompt: str, user_message: str) -> dict:
     return json.loads(text)
 
 
-def write_post(fm: dict, body_md: str, image: str) -> Path:
+def write_post(fm: dict, body_md: str, image: str, source_url: str) -> Path:
     slug = fm["slug"]
     out = CONTENT_DIR / f"{slug}.md"
     fm_to_write = {k: v for k, v in fm.items() if k != "body_md"}
     fm_to_write["image"] = image
+    fm_to_write["source_url"] = source_url
     payload = json.dumps(fm_to_write, indent=2, ensure_ascii=False)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(f"{payload}\n---\n{body_md.strip()}\n", encoding="utf-8")
@@ -222,7 +264,8 @@ def main() -> int:
     system_prompt += f"\n\nToday's date is {today}."
 
     seen_slugs = existing_slugs()
-    print(f"starting: {len(seen_slugs)} existing posts in {CONTENT_DIR}")
+    seen_urls = existing_source_urls()
+    print(f"starting: {len(seen_slugs)} existing posts, {len(seen_urls)} known source URLs")
 
     candidates = gather_candidates()
 
@@ -234,11 +277,24 @@ def main() -> int:
             print(f"hit MAX_ITEMS ({MAX_ITEMS}); stopping")
             break
 
+        # Layer 1: exact source URL match — same notification link already published.
+        if item["link"] in seen_urls:
+            print(f"  skip (url already published): {item['text'][:80]}")
+            continue
+
         tentative = slugify(item["text"])
         if not tentative:
             continue
+        # Layer 2: strict slug substring (handles identical/contained titles).
         if tentative in seen_slugs or any(tentative in s or s in tentative for s in seen_slugs):
             print(f"  skip (slug collision): {item['text'][:80]}")
+            continue
+        # Layer 3: token-Jaccard fuzzy match (catches rephrased anchor text —
+        # e.g. 'final-opportunity-ipu-cet-registration' vs
+        # 'last-opportunity-ipu-cet-registration' for the same notification).
+        fuzzy_hit = fuzzy_slug_collision(tentative, seen_slugs)
+        if fuzzy_hit:
+            print(f"  skip (fuzzy match → {fuzzy_hit}): {item['text'][:80]}")
             continue
 
         user_message = (
@@ -270,9 +326,10 @@ def main() -> int:
             category_slug = "general"
         image = f"assets/images/news/{category_slug}.jpg"
 
-        out_path = write_post(rewritten, rewritten["body_md"], image)
+        out_path = write_post(rewritten, rewritten["body_md"], image, item["link"])
         written.append(out_path)
         seen_slugs.add(rewritten["slug"])
+        seen_urls.add(item["link"])
         print(f"  wrote: {out_path.relative_to(REPO)}")
 
     print(f"\nRun complete. Wrote {len(written)} posts, {len(errors)} errors.")
