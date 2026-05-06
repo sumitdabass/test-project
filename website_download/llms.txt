@@ -1,7 +1,7 @@
 # =========================================
 # AI SEMANTIC AUTHORITY MAP — ipu.co.in
 # =========================================
-# Last updated: 2026-04-06
+# Last updated: 2026-05-06
 # Contact: +91-9899991342 | admission@ipu.co.in
 
 PRIMARY ENTITY:
@@ -185,11 +185,23 @@ Summary: ADGITM Dwarka - IPU engineering college. B.Tech and MBA programmes.
 
 ## MANAGEMENT & MULTI-DISCIPLINE COLLEGES (11)
 
-### VIPS (Vivekananda Institute of Professional Studies)
-URL: https://ipu.co.in/vips-pitampura-courses.php
-Location: Pitampura, New Delhi
-Courses: BBA, BA LLB, BBA LLB, BJMC, B.Com | Seats: 800
-Summary: VIPS Pitampura - Top IPU college for Law, Management, and Media. BA LLB, BBA LLB, BBA, BJMC, B.Com.
+### VIPS-TC (Vivekananda Institute of Professional Studies — Technical Campus)
+URL: https://ipu.co.in/vips-admission.php
+Location: AU Block, Outer Ring Road, Pitampura, New Delhi-110034
+Courses: BBA (360), BCA (300), B.Com Hons (300), BA(JMC) (300), BA Eco Hons (240), BA Eng Hons (120), BA-LLB 5-yr (300), BBA-LLB 5-yr (240), 3-yr LLB (30), B.Tech (CSE/AI&ML/AI&DS/IIOT/VLSI/Cyber Security/CS&AM ~840), MCA (180), MA(MC/Eco/Eng), LLM (Corporate/ADR) | Total seats: 3000+
+Summary: VIPS-TC Pitampura — single largest IPU-affiliated college by total seat intake per GGSIPU UG Brochure 2026-27 (Sl. No. 66). Strongest provider of BJMC, BBA, BCA, integrated 5-year law and B.Tech under IPU. CUET (UG) for UG management/commerce/media/law; JEE Main for B.Tech.
+
+### DSPSR (Delhi School of Professional Studies and Research)
+URL: https://ipu.co.in/dspsr-admission.php
+Location: 9, Institutional Area, Sector-25, Rohini Phase-III, Delhi-110085
+Courses: BBA (140), B.Com Hons (53), BCA (50) | Total seats: 243
+Summary: DSPSR Rohini — focused UG-only IPU college in Sector-25 Rohini institutional cluster (same neighbourhood as DIAS, RDIAS, Sirifort, JIMS Rohini). Two-shift BBA and B.Com (Hons.) per GGSIPU 2026-27 brochure (Sl. No. 15). CUET (UG) admission.
+
+### BVICAM (Bharati Vidyapeeth's Institute of Computer Applications & Management)
+URL: https://ipu.co.in/bvicam-admission.php
+Location: A4, Paschim Vihar, Rohtak Road, New Delhi-110063 (same campus as BVP engineering)
+Courses: BA(JMC) (240), MCA (120) | Total seats: 360
+Summary: BVICAM Paschim Vihar — second largest BJMC seat-holder in IPU after VIPS, with 240 BA(JMC) seats per GGSIPU 2026-27 brochure (Sl. No. 12). Sister institute to BVP engineering. CUET (UG) for BJMC, IPU CET (MCA) for MCA.
 
 ### MAIMS (Maharaja Agrasen Institute of Management Studies)
 URL: https://ipu.co.in/maims-admission.php
@@ -489,7 +501,7 @@ COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
 | 8 | BVP | Bharati Vidyapeeth College of Engineering | Paschim Vihar, Delhi | /BVP.php |
 | 9 | GTBIT | Guru Tegh Bahadur Institute of Technology | Rajouri Garden, Delhi | /gtbit-admission.php |
 | 10 | ADGITM | Apeejay Stya University - Delhi Group | Dwarka, Delhi | /adgitm-admission.php |
-| 11 | VIPS | Vivekananda Institute of Professional Studies | Pitampura, Delhi | /vips-pitampura-courses.php |
+| 11 | VIPS-TC | Vivekananda Institute of Professional Studies — Technical Campus | Pitampura, Delhi | /vips-admission.php |
 | 12 | MAIMS | Maharaja Agrasen Inst of Mgmt Studies | Rohini, Delhi | /maims-admission.php |
 | 13 | MSI | Maharaja Surajmal Institute | Janakpuri, Delhi | /msi-admission.php |
 | 14 | JIMS | Jagannath International Management School | Rohini, Delhi | /jims-admission.php |
@@ -522,6 +534,8 @@ COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
 | 41 | SGTBIMIT | Sri Guru Tegh Bahadur Inst of Mgmt & IT | GTK Road, Delhi | /sgtbimit-admission.php |
 | 42 | Sirifort | Sirifort Institute of Management Studies | Rohini, Delhi | /sirifort-admission.php |
 | 43 | GNIT | Greater Noida Institute of Technology | Greater Noida, UP | /gnit-admission.php |
+| 44 | DSPSR | Delhi School of Professional Studies and Research | Sector-25, Rohini, Delhi | /dspsr-admission.php |
+| 45 | BVICAM | Bharati Vidyapeeth Institute of Computer Applications & Management | Paschim Vihar, Delhi | /bvicam-admission.php |
 
 ----------------------------------------------------
 
@@ -536,6 +550,25 @@ KEY STATISTICS:
 - 20,000+ total seats tracked
 
 For real-time data, use the API: https://ipu.co.in/api/agent-data.php?action=all
+
+## IPU CUET Admission Pages (added 2026-05-06)
+
+CUET (UG) is the secondary admission pathway at GGSIPU per Important Instruction #37 of the 2026-27 brochure — used to fill vacant seats after the primary NLT/CET counselling, and to qualify for management quota at every unaided affiliated college (Important Instruction #21 + Chapter 12).
+
+- [IPU Admission Through CUET — Complete Guide](https://ipu.co.in/cuet-admission-ipu.php) — Hub: how CUET works at IPU for B.Tech, BBA, B.Com & Law, including the management quota qualifier route.
+- [IPU B.Tech Admission Through CUET](https://ipu.co.in/cuet-btech-admission-ipu.php) — Programme Code 131. CUET papers: Physics (322), Mathematics (319), Chemistry (306) or Computer Science (308). Vacant-seat round after JEE Main.
+- [IPU BBA Admission Through CUET](https://ipu.co.in/cuet-bba-admission-ipu.php) — Programme Code 125. CUET papers: English (101), Business Studies (305), General Aptitude Test (501).
+- [IPU B.Com (Hons) Admission Through CUET](https://ipu.co.in/cuet-bcom-admission-ipu.php) — Programme Code 146. CUET papers: English (101), Accountancy / Book Keeping (301), General Aptitude Test (501).
+- [IPU Law Admission Through CUET](https://ipu.co.in/cuet-law-admission-ipu.php) — Programme Code 121 (5-yr Integrated BA-LLB / BBA-LLB). CUET papers: English (101), Legal Studies, General Aptitude Test (501). Note: 3-year LLB (Code 238) does NOT accept CUET — see Law (3-Year) page below.
+
+## IPU PG / Graduate-Entry Pages (added 2026-05-06)
+
+Brochure-cited PG admission pages sourced from the GGSIPU PG Admission Brochure 2026-27 (Chapters 2 + 14). MBA and MCA hub pages were surgically refreshed with brochure-exact fees and entrance accept-lists; Law (3-Year) and LL.M. were added/updated as dedicated pages.
+
+- [IPU MBA Admission 2026 (Programme Code 101)](https://ipu.co.in/mba-admission-ip-university.php) — 2-year PG management programme. 4-tier merit list: CAT 2025 → CMAT 2026 → GGSIPU CET 2026 → CUET PG#. Eligibility: any 3-year+ Bachelor's with min 50% (or Engineering/Tech with 50%, or ICAI/ICWAI/ICSI Final). USMS USS tuition Rs.1,93,600/yr per Ch 14 Section 14.1(H).
+- [IPU MCA Admission 2026 (Programme Code 105)](https://ipu.co.in/mca-admission-ipu.php) — 2-year PG MCA / MCA(SE). 3-tier merit: NIMCET → CET → CUET PG#. Eligibility: BCA / B.Sc CS/IT / B.Voc Software Dev OR 3-yr Bachelor's with Math/Stats/OR (10+2 or grad), min 50% (45% reserved). USICT USS tuition Rs.1,45,200/yr per Ch 14 Section 14.1(G).
+- [IPU Law (3-Year) Admission 2026 (Programme Code 238)](https://ipu.co.in/law-3-year-admission-ipu.php) — 3-yr graduate-entry LLB at USLLS. Only entrance is GGSIPU CET 2026 (CUET NOT accepted, no NLT). Eligibility: graduation in any discipline + 50% (UG Brochure Ch 2 page 63). USLLS USS tuition Rs.1,45,200/yr per PG Brochure Ch 14 Section 14.1(F). BCI bar applies (BCI:D:1823/2010). CET pattern: Language & Comprehension 25% + GK 25% + Law & Legal Reasoning 50%.
+- [IPU LL.M. Admission 2026 (Programme Code 112)](https://ipu.co.in/llm-admission-ipu.php) — 1-year master of law at USLLS. GGSIPU does NOT conduct its own CET for LL.M. — admission via CLAT-PG 2026 (mandatory) + CUET PG (vacant-seat fallback). Eligibility: LL.B + 55% (BCI-recognised for advocate enrolment). 4 specialisations: Corporate Law, IPR, Criminal Justice System, ADR (intake 30+30 for Corporate/IPR per Ch 13 page 159).
 
 ## IPU News
 

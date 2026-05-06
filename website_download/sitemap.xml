@@ -40,7 +40,7 @@
 
 <url>
 <loc>https://ipu.co.in/IPU-B-Tech-admission-2026.php</loc>
-<lastmod>2026-02-15</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.97</priority>
 </url>
 
@@ -58,21 +58,17 @@
 
 <url>
 <loc>https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php</loc>
-<lastmod>2026-02-15</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.92</priority>
 </url>
 
 <url>
 <loc>https://ipu.co.in/guide-to-bjmc-colleges-under-ip-university.php</loc>
-<lastmod>2026-02-15</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.90</priority>
 </url>
 
-<url>
-<loc>https://ipu.co.in/economics-admission-2025.php</loc>
-<lastmod>2026-02-15</lastmod>
-<priority>0.88</priority>
-</url>
+<!-- economics-admission-2025.php removed — 301 to /ba-economics-admission-ipu.php (2026-05-05) -->
 
 <!-- ================= EXAMS & PROCESS ================= -->
 
@@ -167,9 +163,21 @@
 </url>
 
 <url>
-<loc>https://ipu.co.in/vips-pitampura-courses.php</loc>
-<lastmod>2026-02-15</lastmod>
-<priority>0.84</priority>
+<loc>https://ipu.co.in/vips-admission.php</loc>
+<lastmod>2026-05-05</lastmod>
+<priority>0.88</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/dspsr-admission.php</loc>
+<lastmod>2026-05-05</lastmod>
+<priority>0.78</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/bvicam-admission.php</loc>
+<lastmod>2026-05-05</lastmod>
+<priority>0.78</priority>
 </url>
 
 <url>
@@ -241,7 +249,7 @@
 
 <url>
 <loc>https://ipu.co.in/bcom-admission-ipu.php</loc>
-<lastmod>2026-03-24</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.90</priority>
 </url>
 
@@ -271,7 +279,7 @@
 
 <url>
 <loc>https://ipu.co.in/ipu-colleges-list.php</loc>
-<lastmod>2026-03-24</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.93</priority>
 </url>
 
@@ -289,7 +297,7 @@
 
 <url>
 <loc>https://ipu.co.in/IPU-Law-Admission.php</loc>
-<lastmod>2026-03-24</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.95</priority>
 </url>
 
@@ -297,7 +305,7 @@
 
 <url>
 <loc>https://ipu.co.in/bca-admission-ipu.php</loc>
-<lastmod>2026-03-24</lastmod>
+<lastmod>2026-05-05</lastmod>
 <priority>0.88</priority>
 </url>
 
@@ -597,5 +605,49 @@
     <loc>https://ipu.co.in/usct-admission.php</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- ================= CUET ADMISSION HUB (added 2026-05-06) ================= -->
+  <url>
+    <loc>https://ipu.co.in/cuet-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/cuet-btech-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/cuet-bba-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/cuet-bcom-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/cuet-law-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/law-3-year-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/llm-admission-ipu.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>
