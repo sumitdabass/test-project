@@ -52,7 +52,7 @@ BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/ipu-bballb.jpg" class="main-img" alt="BA LL.B Admission in IP University">
+<img fetchpriority="high" decoding="async" src="assets/images/ipu-bballb.jpg" class="main-img" alt="BA LL.B Admission in IP University">
 
 
 <h2>Overview: BA LL.B at IP University</h2>
@@ -64,6 +64,8 @@ Admissions are conducted strictly through CLAT-based counselling ensuring merit-
 
 👉 Complete Law Admission Guide:
 <a href="law-admission-ip-university.php"><strong>IP University Law Admission Master Guide</strong></a>
+
+<p>Already a graduate? See the dedicated <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> (Programme Code 238) for the 3-year LLB path through GGSIPU CET.</p>
 
 <hr>
 
@@ -116,7 +118,7 @@ Admission is strictly based on CLAT rank followed by centralised GGSIPU counsell
 </li>
 
 <li>
-<a href="vips-pitampura-courses.php">VIPS Pitampura – BA LL.B & BBA LL.B</a>
+<a href="vips-admission.php">VIPS Pitampura – BA LL.B & BBA LL.B</a>
 </li>
 
 <li>

@@ -117,6 +117,8 @@ include 'include/components/hero-banner.php';
 
   <p style="font-size:16px;line-height:1.8;color:#334155">Guru Gobind Singh Indraprastha University (GGSIPU) has the largest concentration of affordable, reputed law colleges in Delhi-NCR. From USLLS — the university's flagship law school on the Dwarka campus — to VIPS Pitampura, the largest law school under IPU, students have excellent choices across 5-year integrated BA LLB, BBA LLB, 3-year LLB and LLM programmes. This guide ranks the <strong>top 10 law colleges under IP University</strong> for 2026 admissions based on faculty, moot court performance, placements and fees. Call <a href="tel:+919899991342" style="color:#0d1b6e;font-weight:700">9899991342</a> for free expert law admission counselling.</p>
 
+  <p style="font-size:15px;line-height:1.8;color:#334155">For programme-specific guides see the <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> (Programme Code 238 via GGSIPU CET) and the <a href="/llm-admission-ipu.php"><strong>LL.M. admission page</strong></a> (Programme Code 112 via CLAT-PG).</p>
+
   <h2 class="section-h2">Top 10 Law Colleges Under IPU 2026 – Comparison Table</h2>
   <div style="overflow-x:auto">
   <table class="law-table">

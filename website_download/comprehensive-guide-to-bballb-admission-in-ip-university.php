@@ -55,7 +55,7 @@ include_once("include/form-handler.php");
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img loading="lazy" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
+                        <img fetchpriority="high" decoding="async" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
                         </h2>
@@ -63,6 +63,8 @@ include_once("include/form-handler.php");
                         <p>Welcome to the comprehensive and professional guide on BBALLB admission in IP University. Pursuing a Bachelor of Business Administration Bachelor of Legislative Law (BBALLB) degree offers a promising career path in the intersection of law and business. IP University is renowned for its esteemed BBALLB program, and in this extensive blog, we will provide you with all the information you need to successfully navigate the admission process.</p>
 
                         <p><strong>For more information regarding Counselling , Admission process and Managment Quota Call: 9899991342</strong></p>
+
+                        <p>If you are already a graduate, the <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission</strong></a> route (Programme Code 238) may be a faster path than the 5-year integrated programme.</p>
 
                         <p><strong>Eligibility Criteria for BBALLB Admission :</strong></p>
 
