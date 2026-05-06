@@ -6,9 +6,9 @@ include_once("include/form-handler.php");
 ?>
 
 <!-- SEO META -->
-<title>IPU MBA Admission 2026 | Fees, CAT/CMAT Cutoff, USMS/MAIMS – Free Help</title>
+<title>IPU MBA Admission 2026 | Programme Code 101, CAT/CMAT/CET, USMS Fee Rs.1.93L/yr</title>
 
-<meta name="description" content="IP University MBA 2026 via CAT/CMAT/CET – fees Rs.1.3L/yr, cutoff, top colleges USMS/MAIMS/RDIAS/JIMS. Management quota info. Call 9899991342.">
+<meta name="description" content="IPU MBA 2026 (Programme Code 101) — CAT 2025 → CMAT 2026 → CET → CUET#. USMS USS tuition Rs.1,93,600/yr per PG Brochure Ch 14. MAIMS/RDIAS/JIMS. Call 9899991342.">
 
 <meta name="robots" content="index, follow">
 
@@ -30,7 +30,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "What is IPU MBA admission 2026 process?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "IPU MBA admission 2026 is through CAT, CMAT, MAT or IPU CET (MBA) scores. Steps: register at ipu.admissions.nic.in, appear in entrance, qualify cutoff, register for IPU counselling, fill college choices (USMS, MAIMS, RDIAS, JIMS), get seat allotment, complete document verification and pay fees. Call 9899991342 for free MBA admission help."
+        "text": "IPU MBA admission 2026 (Programme Code 101) is through a 4-tier merit list per Section 1.1 of the PG Brochure 2026-27: priority 1 CAT 2025 (IIM-conducted), priority 2 CMAT 2026 (after CAT counselling exhausts vacant seats), priority 3 GGSIPU CET 2026 (vacant after CMAT), priority 4 CUET PG. Steps: register at ipu.admissions.nic.in, appear in the relevant entrance, register for IPU counselling, fill college choices (USMS, MAIMS, RDIAS, JIMS), get seat allotment, complete document verification, pay fees. Call 9899991342 for free MBA admission help."
       }
     },
     {
@@ -38,7 +38,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "What is the eligibility for IPU MBA 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "IPU MBA 2026 eligibility: Bachelor's degree in any discipline with minimum 50 percent aggregate (45 percent for SC/ST/OBC/PwD) from a recognised university. Final year graduation students can also apply provisionally. A valid CAT/CMAT/MAT or IPU CET (MBA) score is mandatory. Call 9899991342 for eligibility check and college shortlisting."
+        "text": "Per Chapter 2 of the PG Brochure 2026-27 (page 31) for Programme Code 101: any recognised 3-year-or-more Bachelor's Degree in any discipline with a minimum of 50 percent marks in aggregate, OR Bachelor's in Engineering/Technology with min 50 percent, OR Final Examination of ICAI/ICWAI (England or India) or ICSI. Final-year graduation students may apply provisionally. A valid CAT/CMAT/CET or CUET PG score is mandatory; MAT is NOT listed as an accepted entrance for Code 101. Call 9899991342 for eligibility check."
       }
     },
     {
@@ -46,7 +46,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "What entrance exam is required for IPU MBA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "IPU MBA admission accepts CAT (Common Admission Test), CMAT (Common Management Admission Test), MAT, and IPU CET (MBA) scores. CAT and CMAT are most preferred. After scoring above the cutoff, candidates participate in IPU counselling for college and seat allotment. Call 9899991342 to know the right entrance for you."
+        "text": "Per Section 1.1 of the GGSIPU PG Admission Brochure 2026-27, IPU MBA (Code 101) accepts entrance scores in this priority order: (1) CAT 2025 conducted by IIM, (2) CMAT 2026 (used to fill seats vacant after CAT counselling), (3) GGSIPU CET 2026 (used to fill seats vacant after CMAT counselling), (4) CUET PG. MAT is NOT in the brochure's accept-list for Code 101. Call 9899991342 to know which entrance fits your situation."
       }
     },
     {
@@ -54,7 +54,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "What are IPU MBA fees 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "IPU MBA fees 2026-27 vary by college: USMS (university school) around Rs. 1,30,000 per year, MAIMS Rs. 1,30,000-1,40,000 per year, RDIAS Rs. 1,35,000 per year, JIMS Rs. 1,40,000 per year. Total 2-year MBA fee is roughly Rs. 2.6-2.8 lakh. Call 9899991342 for college-wise fee comparison."
+        "text": "Per Chapter 14 Section 14.1(H) of the PG Brochure 2026-27, USMS USS MBA (Code 101) tuition is Rs. 1,93,600 per annum for A.Y. 2026-27 (Total Year 1: Rs. 2,29,100 incl. university charges Rs. 20,000, exam fee Rs. 3,000, innovation fee Rs. 500, development fee Rs. 10,000, plus one-time alumni Rs. 2,000). A.Y. 2027-28 tuition: Rs. 2,12,960. Affiliated colleges (MAIMS, RDIAS, JIMS, BVIMR etc.) charge per the 6th SFRC notification F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14th July 2025. Call 9899991342 for college-wise fee comparison."
       }
     },
     {
@@ -70,7 +70,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "Is MBA management quota available in IPU colleges?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most IPU MBA colleges fill 100 percent seats through IPU counselling based on entrance scores; there is no separate management quota at govt-funded schools like USMS. However, some private affiliated colleges may have NRI/sponsored category seats with different eligibility. Call 9899991342 for verified MBA seat options and category-wise help."
+        "text": "Per Chapter 12 of the PG Brochure 2026-27, every unaided affiliated MBA college reserves 10 percent of seats as Management Quota where a valid CAT/CMAT/CET/CUET score is the qualifier (Important Instruction #21). USMS (the university school) is excluded from management quota — USMS fills 100 percent seats through GGSIPU centralised counselling on entrance merit. Private affiliated colleges (MAIMS, RDIAS, JIMS, BVIMR etc.) advertise an 18-day MQ window with a Rs. 2,500 registration fee cap per the Admission Regulatory Committee. Call 9899991342 for verified MBA MQ options."
       }
     }
   ]
@@ -89,7 +89,7 @@ include 'include/components/breadcrumb-schema.php';
 <div class="container text-center">
 
 <h1 class="white ft-35">
-MBA Admission in IP University 2026 – Eligibility, CAT, Colleges & Counselling Guide
+MBA Admission in IP University 2026 (Programme Code 101) — CAT/CMAT/CET Guide
 </h1>
 
 <p class="text-white">
@@ -112,7 +112,12 @@ CAT • CMAT • Counselling • Fees • Placements • Top MBA Colleges
 <div class="col-lg-8">
 <div class="blog-details">
 
-<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
+
+<!-- AI Summary (brochure-cited) -->
+<section id="ai-summary" style="display:none">
+<p>MBA admission at GGSIPU (<strong>Programme Code 101</strong>, covering MBA / MBA International Business / MBA Financial Management / MBA Analytics) is a 2-year postgraduate programme offered at USMS (Dwarka) and 8+ affiliated colleges. Per <strong>Section 1.1 of the GGSIPU PG Admission Brochure 2026-27</strong>, admission follows a 4-tier merit list: priority 1 <strong>CAT 2025</strong> (IIM-conducted), priority 2 <strong>CMAT 2026</strong>, priority 3 <strong>GGSIPU CET 2026</strong>, priority 4 <strong>CUET PG</strong>. Eligibility (Chapter 2 page 31): any 3-year+ Bachelor's Degree with min 50% in aggregate, OR Engineering/Tech with 50%, OR ICAI/ICWAI/ICSI Final Examination. USMS USS tuition for A.Y. 2026-27 is <strong>Rs. 1,93,600 per annum</strong> (Total Year 1: Rs. 2,29,100 per Chapter 14 Section 14.1(H)). Affiliated colleges follow the 6th SFRC notification dated 14.07.2025. Management quota: 10% seats at every unaided affiliated MBA college (Instruction #21 + Chapter 12); USMS is excluded from MQ. The MBA (Financial Analysis) variant additionally requires a Math/Stat/Economics/OR course at graduation level. Note: MAT is NOT in the brochure's accept-list for Code 101. Helpline 9899991342.</p>
+</section>
 
 <h2>Overview: MBA Admission at IP University (GGSIPU)</h2>
 
@@ -161,20 +166,21 @@ MBA admission at IP University is popular because of:
 
 
 
-<h2>Entrance Exam for MBA Admission</h2>
+<h2>Entrance Exam for MBA Admission (per PG Brochure Section 1.1)</h2>
 
 <p>
-MBA admission under IP University is primarily based on national-level entrance exams:
+Per Section 1.1 of the GGSIPU PG Admission Brochure 2026-27, MBA (Programme Code 101) admission is based on a 4-tier merit list in this order of priority:
 </p>
 
-<ul>
-<li><strong>CAT (Common Admission Test)</strong> – Primary exam</li>
-<li>CMAT may be accepted depending on official admission notification</li>
-<li>CET may apply for specific categories or institute-level admission</li>
-</ul>
+<ol>
+<li><strong>CAT 2025</strong> &mdash; National Level Test conducted by IIM. <em>Primary entrance.</em></li>
+<li><strong>CMAT 2026</strong> &mdash; National Level Test. Used to fill seats remaining vacant after CAT-based counselling.</li>
+<li><strong>GGSIPU CET 2026</strong> &mdash; The University's own Common Entrance Test. Used after CAT and CMAT counselling exhaust seats. CET subjects: English Language &amp; Comprehension (30%), Numerical Ability (30%), General Awareness (10%), Reasoning Ability incl. data interpretation (30%).</li>
+<li><strong>CUET PG 2026 #</strong> &mdash; Used to fill any seats still vacant after CET counselling.</li>
+</ol>
 
 <p>
-IP University does not conduct a separate entrance test for regular MBA programmes.
+GGSIPU <strong>does</strong> conduct its own CET for Programme Code 101 (after CAT and CMAT merit is exhausted). MAT is not in the brochure's accept-list for Code 101.
 </p>
 
 <hr>
@@ -194,13 +200,21 @@ IP University does not conduct a separate entrance test for regular MBA programm
 
 <!-- ===== DETAILED ELIGIBILITY (PROGRAMME CODE 101) ===== -->
 
-<h2>Detailed Eligibility (Programme Code 101)</h2>
+<h2>Detailed Eligibility (Programme Code 101 — MBA / MBA(IB) / MBA(FM) / MBA(Analytics))</h2>
+
+<p>Per Chapter 2 of the PG Brochure 2026-27 (page 31):</p>
+
+<blockquote style="border-left:4px solid #1a3a9c;padding:8px 16px;margin:16px 0;background:#f0f7ff;color:#0d1b6e;font-style:italic">"Any recognized 3 years or more Bachelor's Degree in any discipline with a minimum of 50% marks in aggregate. OR Bachelor's Degree in Engineering, Technology or any other subject with minimum of 50% marks in aggregate or any qualification recognized as equivalent thereto with minimum of 50% marks in aggregate. OR Passed the Final Examination of the Institute of Chartered Accountants of India or England, the Institute of Cost and Works Accountants of India or England or the Institute of Company Secretaries of India."</blockquote>
 
 <ul>
-<li>Bachelor's degree in any discipline with minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
-<li>Final-year students appearing for their Bachelor's exam are also eligible (provisional admission)</li>
-<li>Age limit: As per UGC norms</li>
+<li>Bachelor's degree in any discipline (3-year or more) with <strong>minimum 50% aggregate</strong>.</li>
+<li>OR Bachelor's in Engineering / Technology with min 50% aggregate.</li>
+<li>OR Final Examination of <strong>ICAI / ICWAI (England or India) / ICSI</strong>.</li>
+<li>Final-year graduation students may apply provisionally.</li>
+<li>Reserved-category relaxation: refer Chapter 6 (Reservation Policy) of the PG Brochure 2026-27.</li>
 </ul>
+
+<p style="font-size:13px;color:#666"><em>Note: <strong>MBA (Financial Analysis)</strong> variant has an additional eligibility — graduation in any discipline with at least 50% Marks AND with at least one course in Mathematics / Statistics / Economics / Operations Research at Graduation Level (Chapter 2).</em></p>
 
 <hr>
 
@@ -267,23 +281,32 @@ IP University does not conduct a separate entrance test for regular MBA programm
 
 <h2>Fee Structure 2026-27 (USMS &mdash; University School of Management Studies)</h2>
 
+<p>Per <strong>Chapter 14, Section 14.1(H)</strong> of the GGSIPU PG Admission Brochure 2026-27 (page 164):</p>
+
 <div style="overflow-x:auto">
 <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
 <thead>
 <tr style="background:#0d1b6e;color:#fff">
 <th style="padding:10px 14px;text-align:left">Fee Component</th>
-<th style="padding:10px 14px;text-align:left">Amount (Rs.)</th>
+<th style="padding:10px 14px;text-align:left">A.Y. 2026-27 (Rs.)</th>
+<th style="padding:10px 14px;text-align:left">A.Y. 2027-28 (Rs.)</th>
 </tr>
 </thead>
 <tbody>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USMS Tuition Fee (CDAC + University share + other charges) per year</td><td style="padding:10px 14px">~1,30,000</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Examination Fee per year</td><td style="padding:10px 14px">3,000</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Innovation &amp; Incubation Fee per year</td><td style="padding:10px 14px">500</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Alumni Contribution (one-time)</td><td style="padding:10px 14px">2,000</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Development &amp; Infrastructure Fee per year</td><td style="padding:10px 14px">10,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><strong>Tuition Fee per annum</strong></td><td style="padding:10px 14px"><strong>1,93,600</strong></td><td style="padding:10px 14px">2,12,960</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">University Charges / Share per annum</td><td style="padding:10px 14px">20,000</td><td style="padding:10px 14px">20,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Alumni Contribution Fund (one-time)</td><td style="padding:10px 14px">2,000</td><td style="padding:10px 14px">0</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Examination Fee per annum</td><td style="padding:10px 14px">3,000</td><td style="padding:10px 14px">3,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Innovation &amp; Incubation Fee per annum</td><td style="padding:10px 14px">500</td><td style="padding:10px 14px">500</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Development &amp; Infrastructural Charges</td><td style="padding:10px 14px">10,000</td><td style="padding:10px 14px">10,000</td></tr>
+<tr style="border-bottom:2px solid #0d1b6e;background:#fffaeb"><td style="padding:10px 14px"><strong>Total per year</strong></td><td style="padding:10px 14px"><strong>2,29,100</strong></td><td style="padding:10px 14px"><strong>2,46,460</strong></td></tr>
 </tbody>
 </table>
 </div>
+
+<p style="font-size:13px;color:#666"><em>Note: A separate Rs. 1,30,000 fee structure exists for MBA at <strong>C-DAC Greater Noida</strong> (per PG Brochure Ch 14 page 161, "CDAC Fee + University Share &amp; other Charges") — that fee does NOT apply to USMS Dwarka. The brochure's authoritative figure for USMS USS MBA is Rs. 1,93,600 tuition / Rs. 2,29,100 total for A.Y. 2026-27.</em></p>
+
+<p style="font-size:13px;background:#fff8e6;padding:12px 16px;border-left:4px solid #f59e0b;border-radius:4px;color:#7c5410"><strong>Affiliated Colleges</strong> (MAIMS, RDIAS, JIMS, BVIMR etc.): tuition fee per <strong>F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14th July 2025</strong> (6th SFRC notification, Appendix 13(i) of the brochure). Plus University Charges Rs. 20,000/year, Security Deposit Rs. 10,000 (one-time refundable), Alumni Fund Rs. 2,000, Examination Fee Rs. 3,000/year, Innovation Fee Rs. 500/year, Student Welfare Activity Fee Rs. 1,000/year. Capitation fee in any form is illegal under the Delhi Professional Colleges Act, 2007 (Section 6).</p>
 
 <p>Need help understanding the total cost across all 2 years? Call <a href="tel:9899991342"><strong>9899991342</strong></a> for guidance.</p>
 
@@ -363,14 +386,14 @@ Government institute under GGSIPU known for strong academics and competitive fee
 
 
 
-<h2>MBA Fee Structure (Indicative)</h2>
+<h2>2-Year Total Cost Indicator (Programme Code 101)</h2>
 
 <ul>
-<li>University School: ₹1.5 – ₹2.5 lakh total</li>
-<li>Affiliated Colleges: ₹3 – ₹6 lakh total</li>
+<li><strong>USMS (USS):</strong> Total Year 1 Rs. 2,29,100 + Year 2 Rs. 2,46,460 = approx <strong>Rs. 4,75,560</strong> for the 2-year programme (excluding hostel and personal expenses). Per PG Brochure 2026-27 Ch 14 Section 14.1(H).</li>
+<li><strong>Affiliated Colleges</strong> (MAIMS / RDIAS / JIMS / BVIMR etc.): vary per the 6th SFRC notification dated 14.07.2025 + standard university and welfare charges.</li>
 </ul>
 
-<p><em>Fees vary by institute and academic session.</em></p>
+<p><em>Total cost includes tuition + university charges + exam fee + innovation fee + development charges; one-time alumni and security paid in Year 1 only.</em></p>
 
 <hr>
 
@@ -403,6 +426,8 @@ depending on college, specialization and student performance.
 <h2>Related Admission Guides</h2>
 
 <ul>
+<li><a href="mca-admission-ipu.php">MCA Admission (Programme Code 105)</a> &mdash; another 2-year PG path at IPU via NIMCET / CET.</li>
+<li><a href="llm-admission-ipu.php">LL.M. Admission (Programme Code 112)</a> &mdash; 1-year master of law via CLAT-PG.</li>
 <li><a href="law-admission-ip-university.php">Law Admission Guide</a></li>
 <li><a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a></li>
 <li><a href="IP-University-management-quota-admission-eligibility-criteria.php">Management Quota Admission</a></li>
