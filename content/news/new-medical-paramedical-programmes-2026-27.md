@@ -1,41 +1,39 @@
 {
-  "title": "IP University Introduces New Medical and Paramedical Courses for 2026-27",
+  "title": "GGSIPU Introduces New Medical and Para Medical Programmes for 2026-27",
   "slug": "new-medical-paramedical-programmes-2026-27",
-  "date": "2026-05-01",
-  "date_modified": "2026-05-01",
+  "date": "2026-05-08",
+  "date_modified": "2026-05-08",
   "category": "Admissions",
   "tags": [
     "Medical",
-    "Paramedical",
+    "Para Medical",
     "New Courses",
-    "GGSIPU Admissions"
+    "GGSIPU Admissions 2026"
   ],
   "featured": false,
   "is_urgent": false,
-  "tldr": "GGSIPU has announced the introduction of new medical and paramedical programs starting from the 2026-27 academic session.",
+  "tldr": "GGSIPU has announced the introduction of several new medical and para-medical programmes for the upcoming 2026-27 academic session.",
   "faq": [
     {
-      "q": "When will the new medical programs begin?",
-      "a": "The new programs are scheduled to be introduced for the 2026-27 academic session."
+      "q": "When will the new medical programmes start at IPU?",
+      "a": "The new programmes are scheduled to be introduced for the Academic Session 2026-27."
     },
     {
-      "q": "Where can I find the official notification for these courses?",
-      "a": "Candidates should refer to the official university website at ipu.ac.in for the complete notice dated 30.04.2026."
+      "q": "Where can I find the official notice for these courses?",
+      "a": "The official notification was released on the university's admission portal (ipu.admissions.nic.in) on April 30, 2026."
     }
   ],
   "image": "assets/images/news/admissions.jpg"
 }
 ---
-## New Medical and Paramedical Programs Announced
+## Expansion of Medical and Para Medical Offerings
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has officially notified the introduction of several new medical and paramedical programs. These courses are set to commence from the Academic Session 2026-27, expanding the healthcare education portfolio of the university.
+Guru Gobind Singh Indraprastha University (GGSIPU) has issued a formal notice regarding the introduction of new programmes in the Medical and Para Medical fields. These courses are set to commence from the Academic Session 2026-27, expanding the academic portfolio of the university in the healthcare sector.
 
-### Academic Session 2026-27
+## Admission and Eligibility
 
-The university intends to incorporate these new offerings into the upcoming admission cycle. Students planning to apply for health science courses should consult the [IPU admission guide](/ipu-admission-guide.php) to understand the general requirements for university enrollment.
+While the specific list of courses and their respective seat intakes will be detailed in the upcoming admission brochures, students are encouraged to refer to the [ipu admission guide](/ipu-admission-guide.php) to understand the general registration process. Admission to these programmes will likely follow the standard university protocols involving entrance tests or merit-based selection.
 
-### Admission and Eligibility
+### Stay Updated
 
-While specific details regarding individual course eligibility and seat matrices are expected in the upcoming brochures, candidates are advised to stay updated with the official portal. For students interested in other technical or professional streams, resources are available for [IPU B.Tech admission 2025](/IPU-B-Tech-admission-2025.php) and [MBA admission](/mba-admission-ip-university.php).
-
-Prospective applicants should regularly check the official university website for detailed notifications regarding entrance tests or merit-based admission criteria for these newly introduced medical and paramedical streams.
+Candidates interested in healthcare careers should keep a close watch on the official university website for detailed eligibility criteria and application deadlines. For students considering other technical or professional tracks, information is also available for [mca admission ipu](/mca-admission-ipu.php) and [mba admission ip university](/mba-admission-ip-university.php) to help plan their academic journey at GGSIPU.
