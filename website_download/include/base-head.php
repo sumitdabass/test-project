@@ -96,6 +96,79 @@ p{color:#4a5568;margin-bottom:1rem}
 #preloader .spinner{width:40px;height:40px;border:3px solid #f0f4ff;border-top-color:#1a3a9c;border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
+/* ===== ipu design tokens ===== */
+:root{
+  --ipu-ink:#0d1b6e;
+  --ipu-ink-2:#1a3a9c;
+  --ipu-amber:#f59e0b;
+  --ipu-orange:#e65c00;
+  --ipu-orange-hover:#cc5200;
+  --ipu-bg:#f8faff;
+  --ipu-paper:#fff;
+  --ipu-rule:#e2e8f0;
+  --ipu-rule-soft:#d0d9f0;
+  --ipu-highlight:#e8f0ff;
+  --ipu-accent-soft:#fff3e0;
+  --ipu-shadow-sm:0 2px 8px rgba(13,27,110,.06);
+  --ipu-shadow-md:0 8px 24px rgba(13,27,110,.10);
+  --ipu-shadow-lg:0 20px 60px rgba(13,27,110,.18);
+  --ipu-cta-shadow:0 3px 12px rgba(230,92,0,.30);
+  --ipu-radius:12px;
+  --ipu-radius-lg:16px;
+}
+
+/* ===== ipu primitives ===== */
+.ipu-input{width:100%;padding:12px 16px;border:1px solid var(--ipu-rule);border-radius:8px;font-size:14px;font-family:inherit;color:var(--ipu-ink);background:#fff;transition:border-color .2s,box-shadow .2s;margin-bottom:10px;display:block}
+.ipu-input:focus{outline:none;border-color:var(--ipu-ink-2);box-shadow:0 0 0 3px rgba(26,58,156,.14)}
+.ipu-input::placeholder{color:#94a3b8}
+select.ipu-input{color:#64748b}
+.ipu-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;background:var(--ipu-orange);color:#fff;border:none;border-radius:8px;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;box-shadow:var(--ipu-cta-shadow);text-decoration:none}
+.ipu-btn-primary:hover{background:var(--ipu-orange-hover);color:#fff}
+
+/* ===== sidebar-enquiry component ===== */
+.ipu-enquiry{display:flex;flex-direction:column;gap:14px}
+.ipu-enquiry__phone{background:linear-gradient(135deg,var(--ipu-ink) 0%,var(--ipu-ink-2) 100%);color:#fff;padding:20px 22px;border-radius:var(--ipu-radius);position:relative;overflow:hidden}
+.ipu-enquiry__phone::before{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;background:radial-gradient(circle,rgba(245,158,11,.20),transparent 65%)}
+.ipu-enquiry__phone-badge{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ipu-amber);font-weight:700;margin-bottom:8px}
+.ipu-enquiry__phone-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.25);animation:ipuPulse 1.6s ease-in-out infinite;display:inline-block}
+@keyframes ipuPulse{50%{box-shadow:0 0 0 6px rgba(34,197,94,.10)}}
+.ipu-enquiry__phone-label{font-size:12.5px;color:rgba(255,255,255,.75);margin:0 0 6px;line-height:1.4}
+.ipu-enquiry__phone-num{display:flex;align-items:center;gap:10px;color:var(--ipu-amber);font-weight:700;font-size:26px;line-height:1;margin-bottom:6px;text-decoration:none}
+.ipu-enquiry__phone-num:hover{color:var(--ipu-amber)}
+.ipu-enquiry__phone-hours{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:600}
+.ipu-enquiry__form-wrap{background:var(--ipu-paper);border:1px solid var(--ipu-rule);border-radius:var(--ipu-radius-lg);padding:22px;box-shadow:var(--ipu-shadow-md)}
+.ipu-enquiry__heading{font-size:1.1rem;color:var(--ipu-ink);margin:0 0 4px;text-align:center;font-weight:700}
+.ipu-enquiry__subheading{font-size:13px;color:#64748b;text-align:center;margin:0 0 14px}
+.ipu-enquiry__error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:8px 12px;border-radius:6px;font-size:13px;margin-bottom:12px}
+.ipu-enquiry__submit{width:100%;margin-top:4px;font-size:15px}
+.ipu-enquiry__fine{font-size:11px;color:#94a3b8;text-align:center;margin:10px 0 0}
+.ipu-enquiry__popular{background:var(--ipu-highlight);padding:18px 22px;border-radius:var(--ipu-radius)}
+.ipu-enquiry__popular h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ipu-orange);font-weight:700;margin:0 0 12px}
+.ipu-enquiry__popular ul{list-style:none;padding:0;margin:0}
+.ipu-enquiry__popular li{border-top:1px solid rgba(13,27,110,.10)}
+.ipu-enquiry__popular li:first-child{border-top:0}
+.ipu-enquiry__popular a{display:flex;justify-content:space-between;align-items:center;padding:9px 0;color:var(--ipu-ink);font-size:13.5px;font-weight:500;line-height:1.4;text-decoration:none}
+.ipu-enquiry__popular a:hover{color:var(--ipu-orange)}
+
+/* ===== page-hero component ===== */
+.ipu-page-hero{background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 60%,#2a5ac8 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.ipu-page-hero h1,.ipu-page-hero p,.ipu-page-hero a{color:#fff}
+.ipu-page-hero__crumbs{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:14px}
+.ipu-page-hero__crumbs ol{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.ipu-page-hero__crumbs li::after{content:"/";margin-left:8px;color:rgba(255,255,255,.35)}
+.ipu-page-hero__crumbs li:last-child::after{content:""}
+.ipu-page-hero__crumbs a{color:rgba(255,255,255,.85);text-decoration:none}
+.ipu-page-hero__crumbs a:hover{color:var(--ipu-amber)}
+.ipu-page-hero__kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:0 0 10px;font-weight:600}
+.ipu-page-hero__h1{font-size:clamp(1.85rem,4.5vw,2.8rem);line-height:1.15;margin:0 0 16px;font-weight:700}
+.ipu-page-hero__h1 em{font-style:italic;font-weight:400;color:var(--ipu-amber)}
+.ipu-page-hero__chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.ipu-page-hero__chips span{background:rgba(255,255,255,.1);padding:6px 14px;border-radius:20px;font-size:13px;color:rgba(255,255,255,.9)}
+.ipu-page-hero__intro{font-size:16px;line-height:1.7;color:rgba(255,255,255,.85);max-width:560px;margin:0 0 18px}
+.ipu-page-hero__intro a{color:var(--ipu-amber);font-weight:600}
+.ipu-page-hero__call{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;font-weight:700;font-size:15px}
+@media(max-width:991px){.ipu-page-hero{padding:48px 0 32px}.ipu-page-hero__h1{font-size:clamp(1.5rem,5.5vw,2rem)}}
+
 /* Inner-page Banner (banner-three) — inlined to prevent CLS from deferred bundle.min.css */
 .bg_cover{background-position:center center;background-size:cover;background-repeat:no-repeat}
 .banner-area{position:relative}
