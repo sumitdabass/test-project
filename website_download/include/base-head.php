@@ -100,6 +100,7 @@ p{color:#4a5568;margin-bottom:1rem}
 :root{
   --ipu-ink:#0d1b6e;
   --ipu-ink-2:#1a3a9c;
+  --ipu-ink-3:#2a5ac8;
   --ipu-amber:#f59e0b;
   --ipu-orange:#e65c00;
   --ipu-orange-hover:#cc5200;
@@ -151,7 +152,7 @@ select.ipu-input{color:#64748b}
 .ipu-enquiry__popular a:hover{color:var(--ipu-orange)}
 
 /* ===== page-hero component ===== */
-.ipu-page-hero{background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 60%,#2a5ac8 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.ipu-page-hero{background:linear-gradient(135deg,var(--ipu-ink) 0%,var(--ipu-ink-2) 60%,var(--ipu-ink-3) 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
 .ipu-page-hero h1,.ipu-page-hero p,.ipu-page-hero a{color:#fff}
 .ipu-page-hero__crumbs{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:14px}
 .ipu-page-hero__crumbs ol{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
