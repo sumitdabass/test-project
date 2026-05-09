@@ -48,6 +48,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: /?error=phone");
         exit();
     }
+    // Reject email values containing CR/LF (header-injection guard on Reply-To)
+    if ($email !== '' && (preg_match('/[\r\n]/', $email) || !filter_var($email, FILTER_VALIDATE_EMAIL))) {
+        $email = '';
+    }
 
     // ── Layer 4: Phone session dedup — reject same phone in this session ──────
     if (!isset($_SESSION['submitted_phones'])) {
@@ -120,8 +124,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['submitted_phones'][] = $phone;
     setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
 
-    // Redirect to thank-you page
-    header("Location: /thank-you.php");
+    // Redirect to thank-you with success flag (only genuine submissions get src=submit)
+    header("Location: /thank-you.php?src=submit");
     exit();
 
 } else {

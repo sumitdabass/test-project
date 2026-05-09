@@ -2,11 +2,12 @@
 
 ## Goal
 
-Surface PG-brochure-cited content for three GGSIPU postgraduate admission pathways:
+Surface brochure-cited content for four GGSIPU postgraduate / graduate-entry admission pathways:
 
-1. **MBA** — refresh the existing `mba-admission-ip-university.php` with brochure-exact specifics.
-2. **MCA** — refresh the existing `mca-admission-ipu.php` with brochure-exact specifics.
-3. **Law (3-Year)** — Programme Code 238 — create a new evergreen page `law-3-year-admission-ipu.php`. No equivalent exists today; the only mention is an exclusion note on the CUET-Law page.
+1. **MBA** — Programme Code 101 — refresh the existing `mba-admission-ip-university.php` with PG-brochure-exact specifics. (Original spec said Code 104; brochure confirms 101.)
+2. **MCA** — Programme Code 105 — refresh the existing `mca-admission-ipu.php` with PG-brochure-exact specifics.
+3. **Law (3-Year)** — Programme Code 238 — create a new evergreen page `law-3-year-admission-ipu.php`. **Source: UG brochure** — Code 238 is graduation-entry but lives in the UG brochure (already qpdf-repaired previously and used for the 2026-05-05 SEO overhaul + 2026-05-06 CUET-Law page).
+4. **LL.M. (Master of Law)** — Programme Code 112 — create a new evergreen page `llm-admission-ipu.php`. PG-brochure-sourced. Entry via **CLAT-PG 2026** (priority 1) and CUET# (priority 2). No existing page.
 
 Source: `/Users/Sumit/Desktop/PG 2026 broucher.pdf` (51 MB image PDF, damaged xref — repaired with `qpdf --linearize` to `/tmp/pg_brochure_2026.pdf` and read in 20-page chunks via Read tool, mirroring the UG brochure handling on 2026-05-05).
 
@@ -55,6 +56,25 @@ Surgical edits only. Same touchpoints as MBA, scoped to MCA specifics:
 - Hidden AI summary block.
 - 1–2 FAQ answers refreshed with brochure citations.
 
+### Page 4 — LL.M. new (`llm-admission-ipu.php`)
+
+Full new page using the same H2 template adapted for LL.M.:
+
+| H2 | Source |
+|---|---|
+| Hero — "LL.M. Admission IPU 2026 (Programme Code 112)" | PG Brochure Ch 1 (Sr. No. 9) |
+| How Admission Works (CLAT-PG 2026 priority 1; CUET# priority 2) | PG Brochure 1.1 entrance-mapping table |
+| Eligibility (LL.B. / B.A.LL.B. / B.B.A.LL.B. with min %; relaxation rules) | PG Brochure Ch 2 |
+| CLAT-PG / CUET test details + alternate entrance | PG Brochure Ch 4 |
+| Top Colleges offering LL.M. — USLLS + affiliated providers | PG Brochure Ch 13 |
+| Management Quota | PG Brochure Ch 12 |
+| Fees (USLLS USS + affiliated 6th SFRC) | PG Brochure Ch 14 |
+| Step-by-Step Counselling | PG Brochure Ch 8/10/11 |
+| FAQ (5–6 brochure-cited Qs) | mixed |
+| Hidden AI summary | — |
+
+Schemas: Course (courseCode "112"), FAQPage, BreadcrumbList. Canonical `https://ipu.co.in/llm-admission-ipu.php`.
+
 ### Page 3 — Law (3-Year) new (`law-3-year-admission-ipu.php`)
 
 Full new page. CUET-page H2 template adapted for non-CUET PG admission:
@@ -83,19 +103,19 @@ Canonical: `https://ipu.co.in/law-3-year-admission-ipu.php`. Helpline 9899991342
 
 | From → To | Notes |
 |---|---|
-| `IPU-Law-Admission.php` → new Law (3-Year) page | Hub-level pointer |
+| `IPU-Law-Admission.php` → new Law (3-Year) + LL.M. pages | Hub-level dual pointer (one sentence each) |
 | `cuet-law-admission-ipu.php` → new Law (3-Year) page | Already states 3-yr excludes CUET; replace that note with a pointer sentence |
 | `comprehensive-guide-to-bballb-admission-in-ip-university.php` → new Law (3-Year) page | "Already a graduate? See the Law (3-Year) path." |
 | `ultimate-guide-to-ballb-admission-in-ip-university.php` → new Law (3-Year) page | Same framing |
-| `top-law-colleges-ipu.php` → new Law (3-Year) page | Programme listing |
+| `top-law-colleges-ipu.php` → new Law (3-Year) + LL.M. pages | Dual pointer (one sentence each) |
 | `mba-admission-ip-university.php` ↔ `top-mba-colleges-ipu.php` | Verify existing reciprocal — no change if present |
 | `mca-admission-ipu.php` ↔ `top-mca-colleges-ipu.php` | Verify existing reciprocal — no change if present |
 
 ### Site wiring
 
-- **`sitemap.xml`** — append new Law (3-Year) URL (`<priority>0.85</priority>`, `<changefreq>monthly</changefreq>`, `<lastmod>2026-05-06</lastmod>`); bump `lastmod` for refreshed MBA and MCA pages.
-- **`llms.txt`** — add new section "## IPU Law (3-Year) Admission" with one-line description + URL; bump line dates for the MBA/MCA entries.
-- **`blog.php`** — add Law (3-Year) entry to existing law category if a law category exists; do **not** create a new category. (Verify against current `blogs[]` and `categories[]` arrays during implementation.)
+- **`sitemap.xml`** — append new Law (3-Year) AND new LL.M. URLs (`<priority>0.85</priority>`, `<changefreq>monthly</changefreq>`, `<lastmod>2026-05-06</lastmod>`); bump `lastmod` for refreshed MBA and MCA pages.
+- **`llms.txt`** — add two new sections "## IPU Law (3-Year) Admission" and "## IPU LL.M. Admission" with one-line descriptions + URLs; bump line dates for the MBA/MCA entries.
+- **`blog.php`** — add Law (3-Year) AND LL.M. entries to existing Law category; do **not** create a new category. (Verify against current `blogs[]` and `categories[]` arrays during implementation.)
 - **No `htaccess` redirects** — all URLs are net-new or unchanged.
 
 ### Deploy script
@@ -105,16 +125,17 @@ Canonical: `https://ipu.co.in/law-3-year-admission-ipu.php`. Helpline 9899991342
 - `mba-admission-ip-university.php` (modified)
 - `mca-admission-ipu.php` (modified)
 - `law-3-year-admission-ipu.php` (new)
-- `IPU-Law-Admission.php` (cross-link only)
+- `llm-admission-ipu.php` (new)
+- `IPU-Law-Admission.php` (cross-link only — dual pointer)
 - `cuet-law-admission-ipu.php` (cross-link replaces exclusion note)
 - `comprehensive-guide-to-bballb-admission-in-ip-university.php` (cross-link only)
 - `ultimate-guide-to-ballb-admission-in-ip-university.php` (cross-link only)
-- `top-law-colleges-ipu.php` (cross-link only)
+- `top-law-colleges-ipu.php` (cross-link only — dual pointer)
 - `sitemap.xml`
 - `llms.txt`
 - `blog.php`
 
-Total: **11 files** (3 content + 5 cross-link + 3 site-wiring).
+Total: **12 files** (4 content + 5 cross-link + 3 site-wiring).
 
 ### Verification (per pre-deploy quality rule from `feedback_pre_deploy_quality_check.md`)
 

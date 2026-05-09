@@ -87,7 +87,7 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/msi-admission.php" style="color:#1a3a9c;font-weight:600">MSI Janakpuri</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85</td><td style="padding:12px 14px;text-align:center;font-size:14px">~72</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/vips-pitampura-courses.php" style="color:#1a3a9c;font-weight:600">VIPS Pitampura</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~82</td><td style="padding:12px 14px;text-align:center;font-size:14px">~70</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/vips-admission.php" style="color:#1a3a9c;font-weight:600">VIPS Pitampura</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~82</td><td style="padding:12px 14px;text-align:center;font-size:14px">~70</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/maims-admission.php" style="color:#1a3a9c;font-weight:600">MAIMS Rohini</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~78</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65</td></tr>
     </tbody>
   </table>

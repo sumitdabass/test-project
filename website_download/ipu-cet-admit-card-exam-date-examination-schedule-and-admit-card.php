@@ -46,7 +46,7 @@ BBA • BCA • B.Com • BJMC | Application • Result • Counselling
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg"
+<img fetchpriority="high" decoding="async" src="assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg"
 class="main-img"
 alt="IPU CET Exam Guide">
 

@@ -237,7 +237,7 @@ $colleges = [
     ['name' => 'MSIT', 'full_name' => 'Maharaja Surajmal Institute of Technology', 'location' => 'Janakpuri, Delhi', 'url' => '/explore-MSIT-and-MSI-janakpuri.php', 'img' => 'assets/images/explore-MSIT-and-MSI-janakpuri.jpg'],
     ['name' => 'BPIT', 'full_name' => 'Bhagwan Parshuram Institute of Technology', 'location' => 'Rohini, Delhi', 'url' => '/BPIT.php', 'img' => 'assets/images/breadcrumbs.jpg'],
     ['name' => 'BVP', 'full_name' => 'Bharatiya Vidya Bhavan Engineering College', 'location' => 'Paschim Vihar, Delhi', 'url' => '/BVP.php', 'img' => 'assets/images/blog-1.jpg'],
-    ['name' => 'VIPS', 'full_name' => 'Vivekananda Institute of Professional Studies', 'location' => 'Pitampura, Delhi', 'url' => '/vips-pitampura-courses.php', 'img' => 'assets/images/vips-pitampura-courses.jpg'],
+    ['name' => 'VIPS', 'full_name' => 'Vivekananda Institute of Professional Studies', 'location' => 'Pitampura, Delhi', 'url' => '/vips-admission.php', 'img' => 'assets/images/vips-pitampura-courses.jpg'],
     ['name' => 'USICT', 'full_name' => 'University School of ICT', 'location' => 'Dwarka, Delhi', 'url' => '/usict-admission.php', 'img' => 'assets/images/IP-University-b-tech-admission.jpg'],
 ];
 $college_section_title = "Top IPU Affiliated Colleges in Delhi";

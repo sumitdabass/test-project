@@ -51,8 +51,14 @@ BJMC Admission in IP University (GGSIPU) — Top Colleges, Counselling & Career 
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IPU-BJMC-Admission.jpg" class="main-img" alt="BJMC IP University Admission Guide">
+<img fetchpriority="high" decoding="async" src="assets/images/IPU-BJMC-Admission.jpg" class="main-img" alt="BJMC IP University Admission Guide">
 
+<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
+
+<!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<section id="ai-summary" style="display:none">
+<p>BA(JMC) admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at the on-campus University School of Mass Communication (USMC, 60 seats) and across 15+ affiliated colleges in Delhi NCR with a combined intake of approximately 1,500+ seats. The largest single-college intake is at VIPS-TC Pitampura (300 seats — 180 Shift 1 + 120 Shift 2), followed by BVICAM Paschim Vihar (240). Admission is through CUET (UG) merit followed by centralised online counselling at ipu.ac.in. USMC tuition is Rs. 1,21,000/year (total Rs. 1,56,500/year incl. all charges); affiliated colleges charge Rs. 1,00,000-1,40,000/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: Class 12 with min 50% (45% reserved). For free admission counselling call 9899991342.</p>
+</section>
 
 <h2>BJMC Admission in IP University (GGSIPU)</h2>
 
@@ -72,7 +78,7 @@ Bachelor of Journalism and Mass Communication (BJMC) under <strong>Guru Gobind S
 
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT (Maharaja Agrasen Institute of Technology)</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura</a></li>
 <li>Bharti Vidyapeeth (BVP)</li>
 <li>JIMS Rohini</li>
 <li>Trinity School of Communication</li>
@@ -89,7 +95,7 @@ Bachelor of Journalism and Mass Communication (BJMC) under <strong>Guru Gobind S
 <h3><a href="exploring-MAIT-and-MAIMS.php">MAIT</a></h3>
 <p>Popular IPU institute offering strong academic environment and career-focused learning.</p>
 
-<h3><a href="vips-pitampura-courses.php">VIPS Pitampura</a></h3>
+<h3><a href="vips-admission.php">VIPS Pitampura</a></h3>
 <p>One of the best BJMC colleges under IP University known for media exposure and practical training.</p>
 
 <h3>Bharti Vidyapeeth (BVP)</h3>
@@ -233,13 +239,17 @@ BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant 
 </section>
 
 
+<!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php
-$related_pages = [
-    ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
-    ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
-    ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+$faqs = [
+  ['question' => 'Which colleges offer BJMC under IPU 2026-27?', 'answer' => 'Per the GGSIPU UG Admission Brochure 2026-27 (Chapter 13), BA(JMC) is offered at the <strong>University School of Mass Communication (USMC, on-campus)</strong> and across 15+ affiliated colleges including <a href="vips-admission.php">VIPS Pitampura</a> (180+120), <a href="bvicam-admission.php">BVICAM Paschim Vihar</a> (120+120), <a href="dme-admission.php">Delhi Metropolitan Education Noida</a> (60+60), JIMS Vasant Kunj (60+60), <a href="maims-admission.php">MAIMS Rohini</a> (60+60), MERI Janakpuri (60+60), Tecnia Rohini (60+60), Trinity Dwarka (60+60), IITM Janakpuri (120), Lingayas Mandi (60), KCC Greater Noida (30), Kasturi Ram (no — actually not on KR list), Maharaja Agrasen Inst of Mgmt #46 (60+60), and Fairfield Bijwasan (15+15).'],
+  ['question' => 'How many BJMC seats does IPU offer in total?', 'answer' => 'The 2026-27 brochure shows roughly <strong>1,500+ BA(JMC) seats</strong> across IPU colleges (Shift 1 + Shift 2 combined). The largest intake is at VIPS Pitampura (300 — 180 Shift 1 + 120 Shift 2) followed by BVICAM Paschim Vihar (240). USMC on-campus offers 60 seats. Final sanctioned intake for 2026-27 is notified on ipu.ac.in before counselling.'],
+  ['question' => 'What is the BJMC fee at the IPU campus (USMC)?', 'answer' => 'Per Part E, Chapter 14 of the 2026-27 brochure: USMC tuition is Rs. 1,21,000/year, total <strong>Rs. 1,56,500/year</strong> incl. university charges (Rs. 20,000) + exam fee (Rs. 3,000) + innovation (Rs. 500) + infrastructure (Rs. 10,000) + alumni one-time (Rs. 2,000). The on-campus BJMC is the most affordable BJMC option in IPU.'],
+  ['question' => 'What is the BJMC fee at IPU affiliated colleges 2026-27?', 'answer' => 'Affiliated colleges charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically Rs. 1,00,000 to Rs. 1,40,000 per year tuition. Add Rs. 25,000-30,000 in university charges (university fee Rs. 20,000 + exam Rs. 3,000 + innovation Rs. 500 + alumni Rs. 2,000 one-time + welfare Rs. 1,000). VIPS, BVICAM and MAIMS sit on the higher end; smaller institutes are more affordable.'],
+  ['question' => 'What is the eligibility & entrance for BJMC at IPU 2026?', 'answer' => 'Class 12 (10+2) pass with minimum <strong>50% aggregate</strong> from a recognised board (45% for SC/ST/OBC/PwD), with English as a compulsory subject. Admission is through <strong>CUET (UG)</strong> merit followed by centralised online counselling at ipu.ac.in. Per Important Instruction #28, marks are not rounded off.'],
+  ['question' => 'Does IPU also offer Master\'s in Mass Communication (MA-MC)?', 'answer' => 'Yes — USMC at the IPU campus offers a 2-year MA(MC) with 60 seats and VIPS Pitampura also offers MA(MC) with 40 seats per the 2026-27 brochure. Most BJMC graduates from IPU pursue MA(MC), an MBA, or directly enter media houses, digital marketing, PR, content strategy and broadcast roles.']
 ];
-include 'include/components/related-pages.php';
+include 'include/components/faq-section.php';
 ?>
 
 <?php
@@ -250,6 +260,34 @@ $related_pages = [
 ];
 include 'include/components/related-pages.php';
 ?>
+
+<!-- Course Schema (BJMC at GGSIPU) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Bachelor of Arts in Journalism and Mass Communication (BA-JMC) at Guru Gobind Singh Indraprastha University",
+  "description": "4-year BA(JMC) programme offered at USMC (on-campus) and 15+ affiliated colleges under GGSIPU with combined intake of 1,500+ seats per the 2026-27 brochure. Admission via CUET (UG).",
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+    "sameAs": "https://www.ipu.ac.in/"
+  },
+  "educationalCredentialAwarded": "Bachelor of Arts in Journalism and Mass Communication (BA-JMC)",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "courseWorkload": "P4Y",
+    "location": {"@type": "Place", "name": "Delhi NCR"}
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition",
+    "priceCurrency": "INR",
+    "priceSpecification": {"@type": "PriceSpecification", "price": "121000", "priceCurrency": "INR", "description": "USMC tuition per annum 2026-27 (affiliated colleges Rs. 1,00,000-1,40,000)"}
+  }
+}
+</script>
 
 <?php include_once("include/base-footer.php") ?>
 

@@ -130,7 +130,7 @@ include_once("include/form-handler.php");
 
                         <p><strong>Admission in IP University BBALLB through CLAT</strong>&nbsp;</p>
 
-                        <p>The admission process for BBALLB in IP University is exclusively based on the Common Law Admission Test (CLAT). In this section, we will explain the significance of CLAT, its structure, syllabus, and marking scheme. We will also guide you through the application process, important dates, and preparation strategies for CLAT. Understanding the admission process through CLAT is crucial for BBALLB aspirants aiming to secure a seat in IP University.</p>
+                        <p>The BBA-LLB admission process at IP University (Programme Code 121) follows a two-tier merit list per UG Brochure 2026-27 Table 1.1: <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>. CLAT is the dominant entrance &mdash; most seats fill from the CLAT merit list &mdash; but vacant seats after CLAT counselling are filled on the CUET (UG) merit list. CUET-qualified candidates also become eligible for the 10% Management Quota at unaided affiliated Law colleges (Chapter 12). In this section we explain CLAT structure, syllabus, marking scheme, application process, important dates, and preparation strategies. Note: the 3-year LLB (Code 238) is admitted only through GGSIPU CET &mdash; CUET does NOT apply to the 3-yr LLB.</p>
 
                         <p><strong>Difference between BBALLB and BALLB</strong></p>
 

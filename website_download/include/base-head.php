@@ -96,6 +96,17 @@ p{color:#4a5568;margin-bottom:1rem}
 #preloader .spinner{width:40px;height:40px;border:3px solid #f0f4ff;border-top-color:#1a3a9c;border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
+/* Inner-page Banner (banner-three) — inlined to prevent CLS from deferred bundle.min.css */
+.bg_cover{background-position:center center;background-size:cover;background-repeat:no-repeat}
+.banner-area{position:relative}
+.banner-area.banner-three,.banner-area.banner-three.mt-0{height:auto;min-height:300px;padding-top:120px;padding-bottom:50px;background:#0b2c5d;color:#fff}
+.banner-area.banner-three h1,.banner-area.banner-three h2,.banner-area.banner-three h3,.banner-area.banner-three h4,.banner-area.banner-three h5,.banner-area.banner-three h6,.banner-area.banner-three p{color:#fff}
+.banner-shape{position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1}
+.ft-35{font-size:35px;line-height:1.25}
+.white{color:#fff}
+@media only screen and (min-width:768px) and (max-width:991px){.banner-area.banner-three,.banner-area.banner-three.mt-0{min-height:250px;padding-top:100px;padding-bottom:40px}}
+@media (max-width:767px){.banner-area.banner-three,.banner-area.banner-three.mt-0{min-height:200px;padding-top:90px;padding-bottom:30px}}
+
 /* Mobile Call CTA */
 @media(max-width:768px){
   .mobile-call-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 100%);padding:12px 16px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,.3)}

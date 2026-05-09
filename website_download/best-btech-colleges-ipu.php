@@ -206,7 +206,7 @@ include_once("include/form-handler.php");
                 </a>
               </div>
               <div class="col-md-6">
-                <a href="vips-pitampura-courses.php" class="college-card">
+                <a href="vips-admission.php" class="college-card">
                   <span class="college-tag">Pitampura</span>
                   <h4>VIPS</h4>
                   <p>Vivekananda Institute of Professional Studies</p>

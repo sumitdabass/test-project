@@ -1,12 +1,12 @@
 <?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>B.Arch Admission in IP University 2026 | NATA, Eligibility & Colleges</title>
-<meta name="description" content="B.Arch admission in IPU 2026. NATA/JEE Main Paper 2, eligibility, top colleges, fees & career scope. Call 9899991342 for free admission guidance.">
+<meta name="description" content="B.Arch admission in IPU 2026 via NATA only (Programme Code 100). Eligibility (Physics + Math + 1-of-many at 45%), top colleges, fees & career scope. Call 9899991342 for free admission guidance.">
 <link rel="canonical" href="https://ipu.co.in/barch-admission-ipu.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="B.Arch Admission in IP University 2026 | NATA, Eligibility & Colleges">
-<meta property="og:description" content="Complete guide to B.Arch admission at GGSIPU 2026. NATA/JEE Main Paper 2, eligibility, colleges and career scope.">
+<meta property="og:description" content="Complete guide to B.Arch admission at GGSIPU 2026 via NATA only. Programme Code 100, eligibility, colleges and career scope.">
 <meta property="og:url" content="https://ipu.co.in/barch-admission-ipu.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
@@ -14,7 +14,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="B.Arch Admission in IP University 2026 | NATA, Eligibility & Colleges">
-<meta name="twitter:description" content="Complete guide to B.Arch admission at GGSIPU 2026. NATA/JEE Main Paper 2, eligibility, colleges and career scope.">
+<meta name="twitter:description" content="Complete guide to B.Arch admission at GGSIPU 2026 via NATA only. Programme Code 100, eligibility, colleges and career scope.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -22,7 +22,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "B.Arch Admission in IP University 2026 | NATA, Eligibility & Colleges",
-  "description": "Complete guide to B.Arch admission at Guru Gobind Singh Indraprastha University including NATA, JEE Main Paper 2, eligibility, colleges and career scope.",
+  "description": "Complete guide to B.Arch admission at Guru Gobind Singh Indraprastha University (Programme Code 100) via NATA only — the University does not conduct its own CET for B.Arch. Eligibility (Physics + Mathematics + one of Chemistry/Biology/Tech-Vocational/CS/IT/IP/Engineering Graphics/Business Studies at 45% aggregate), colleges and career scope.",
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-03-24",
@@ -69,13 +69,13 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">B.Arch (Bachelor of Architecture) at IPU is a 5-year professional degree programme. Admission is based on NATA (National Aptitude Test in Architecture) or JEE Main Paper 2 scores, followed by IPU centralised counselling. The programme covers architectural design, structural engineering, building construction, urban planning, and sustainability. Graduates can register with the Council of Architecture and practise as licensed architects.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">B.Arch (Bachelor of Architecture) at IPU is a 5-year professional degree programme (Programme Code 100). Admission is based on NATA (National Aptitude Test in Architecture) only &mdash; per UG Brochure 2026-27 Ch 2 p.31, &ldquo;there shall be no CET conducted by the University for Admissions to B.Arch Programme.&rdquo; NATA is followed by IPU centralised counselling. The programme covers architectural design, structural engineering, building construction, urban planning, and sustainability. Graduates can register with the Council of Architecture and practise as licensed architects.</p>
   </section>
   <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
   <h1>B.Arch Admission in IP University 2026 &ndash; Complete Guide</h1>
 
-  <p>The Bachelor of Architecture (B.Arch) at Guru Gobind Singh Indraprastha University (GGSIPU) is a 5-year professional degree programme that prepares students for careers in architecture, urban design, and construction. Unlike most IPU programmes that use CUET, B.Arch admission is based on <strong>NATA (National Aptitude Test in Architecture)</strong> or <strong>JEE Main Paper 2 (B.Arch/B.Planning)</strong> scores, followed by centralised IPU counselling.</p>
+  <p>The Bachelor of Architecture (B.Arch) at Guru Gobind Singh Indraprastha University (GGSIPU) is a 5-year professional degree programme (Programme Code 100) that prepares students for careers in architecture, urban design, and construction. B.Arch admission is based on <strong>NATA (National Aptitude Test in Architecture)</strong> only — the University does NOT conduct its own CET for B.Arch (UG Brochure 2026-27 Ch 2 p.31). NATA is followed by centralised IPU counselling.</p>
 
   <p>Thinking about pursuing B.Arch at IPU? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance on the admission process, NATA preparation, and college selection.</p>
 
@@ -93,21 +93,21 @@ include 'include/components/hero-banner.php';
   <p>To be eligible for B.Arch admission at IPU, candidates must meet the following requirements:</p>
   <ul>
     <li><strong>Educational qualification:</strong> 10+2 pass with Physics, Chemistry, and Mathematics from a recognised board.</li>
-    <li><strong>Minimum marks:</strong> 50% aggregate in PCM in Class 12 (as per CoA norms).</li>
-    <li><strong>Entrance exam:</strong> Valid NATA score or JEE Main Paper 2 (B.Arch) score.</li>
+    <li><strong>Minimum marks:</strong> 45% aggregate in Class 12 with Physics + Mathematics compulsory plus one of Chemistry / Biology / Biotechnology / Technical Vocational / Computer Science / IT / Informatics Practices / Engineering Graphics / Business Studies (per UG Brochure 2026-27 Ch 2 p.31). 10+3 diploma route also accepted with Mathematics at 45%.</li>
+    <li><strong>Entrance exam:</strong> Valid NATA 2026 score (sole entrance — no IPU CET, no JEE Main Paper 2 for IPU B.Arch).</li>
     <li><strong>Age requirement:</strong> Minimum 17 years of age as on 31st December of the admission year.</li>
     <li><strong>Diploma holders:</strong> Candidates with a 10+3 Diploma (with Mathematics) recognised by AICTE/State Board are also eligible.</li>
   </ul>
 
   <h2>Detailed Eligibility (Programme Code 100)</h2>
   <ul>
-    <li>Class 12 with PCM &mdash; minimum <strong>50% aggregate</strong></li>
-    <li>OR a 10+3 Diploma with Mathematics with minimum 50%</li>
+    <li>Class 12 with Physics + Math + 1-of-{Chem/Bio/Tech-Voc/CS/IT/IP/Engg-Graphics/Bus-Studies} &mdash; minimum <strong>45% aggregate</strong></li>
+    <li>OR a 10+3 Diploma with Mathematics with minimum 45%</li>
     <li><strong>Council of Architecture (CoA) registration</strong> is mandatory after admission</li>
     <li>Minimum age: 17 years</li>
   </ul>
 
-  <h2>Entrance Test &mdash; NATA / JEE Main Paper 2</h2>
+  <h2>Entrance Test &mdash; NATA (Sole Entrance)</h2>
   <p>Admission is based on a valid <strong>NATA 2026</strong> score OR <strong>JEE Main 2026 Paper 2 (B.Arch)</strong> score. Both exams are accepted for IPU centralised counselling; appearing for both maximises your chances.</p>
 
   <h2>Affiliated B.Arch Colleges (3 under IPU)</h2>
@@ -152,55 +152,50 @@ include 'include/components/hero-banner.php';
   <h2>Refund Policy (UGC Norms)</h2>
   <p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing) is permitted up to 15 days before commencement of classes. After commencement: 100% refund before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
 
-  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Arch admission guidance.</em></p>
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU UG Admission Brochure 2026-27 (Ch 2 p.31, Ch 14 fee structure). Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Arch admission guidance.</em></p>
 
   <h2>B.Arch Admission Process at IPU 2026</h2>
   <p>The B.Arch admission process at IPU follows these steps:</p>
   <ol>
-    <li><strong>Appear for NATA or JEE Main Paper 2:</strong> Register for and appear in NATA (conducted by CoA) or JEE Main Paper 2 &ndash; B.Arch (conducted by NTA). NATA tests drawing, aesthetic sensitivity, and observation skills. JEE Main Paper 2 includes Mathematics, aptitude, and drawing sections.</li>
+    <li><strong>Appear for NATA 2026:</strong> Register for and appear in NATA (conducted by the Council of Architecture). NATA tests drawing, aesthetic sensitivity, observation skills and architectural awareness. NATA is the sole entrance accepted by GGSIPU for B.Arch admission.</li>
     <li><strong>Register on IPU portal:</strong> After results are declared, register on the official IPU website (ipu.ac.in) for centralised counselling.</li>
     <li><strong>Document verification:</strong> Upload your Class 12 marksheet, NATA/JEE scorecard, and other required documents.</li>
     <li><strong>Fill college preferences:</strong> Select your preferred B.Arch college during the choice-filling window.</li>
     <li><strong>Seat allotment &amp; reporting:</strong> IPU allocates seats based on your NATA/JEE score, preferences, and reservation category through multiple counselling rounds. Report to the allotted college with original documents and fee payment.</li>
   </ol>
 
-  <h2>NATA vs JEE Main Paper 2 &ndash; Which to Choose?</h2>
-  <p>Both exams are accepted for B.Arch admission at IPU. Here is a quick comparison:</p>
+  <h2>About NATA 2026</h2>
+  <p>NATA is the sole entrance accepted by GGSIPU for B.Arch admission. Per the UG Brochure 2026-27 Ch 2 p.31, &ldquo;there shall be no CET conducted by the University for Admissions to B.Arch Programme&rdquo;; JEE Main Paper 2 is NOT accepted by IPU for B.Arch even though some other universities accept it.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:500px">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
         <th style="padding:10px 14px;text-align:left">Feature</th>
-        <th style="padding:10px 14px;text-align:left">NATA</th>
-        <th style="padding:10px 14px;text-align:left">JEE Main Paper 2</th>
+        <th style="padding:10px 14px;text-align:left">NATA 2026</th>
       </tr>
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0">
         <td style="padding:10px 14px">Conducting body</td>
-        <td style="padding:10px 14px">Council of Architecture</td>
-        <td style="padding:10px 14px">NTA</td>
+        <td style="padding:10px 14px">Council of Architecture (CoA)</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
         <td style="padding:10px 14px">Focus areas</td>
-        <td style="padding:10px 14px">Drawing, aesthetic sensitivity, observation</td>
-        <td style="padding:10px 14px">Mathematics, aptitude, drawing</td>
+        <td style="padding:10px 14px">Drawing, aesthetic sensitivity, observation, architectural awareness</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
         <td style="padding:10px 14px">Attempts per year</td>
         <td style="padding:10px 14px">2 attempts (best score considered)</td>
-        <td style="padding:10px 14px">1 attempt</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px">Accepted for</td>
-        <td style="padding:10px 14px">All CoA-approved colleges</td>
-        <td style="padding:10px 14px">NITs, IITs, state universities including IPU</td>
+        <td style="padding:10px 14px">Accepted at IPU?</td>
+        <td style="padding:10px 14px">Yes — sole entrance for IPU B.Arch (Code 100)</td>
       </tr>
     </tbody>
   </table>
   </div>
 
-  <p><strong>Tip:</strong> Appearing for both NATA and JEE Main Paper 2 maximises your chances. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for guidance on which exam to prioritise based on your strengths.</p>
+  <p><strong>Tip:</strong> Register for NATA early and prepare both attempts to maximise your best score. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for guidance on NATA preparation and IPU counselling.</p>
 
   <h2>B.Arch Curriculum at IPU &ndash; What You Will Study</h2>
   <p>The 5-year B.Arch programme at IPU is divided into 10 semesters. The curriculum covers:</p>
@@ -245,8 +240,8 @@ include 'include/components/hero-banner.php';
 <!-- FAQ Section -->
 <?php
 $faqs = [
-  ['question' => 'What entrance exam is required for B.Arch admission at IPU?', 'answer' => 'B.Arch admission at IPU is based on NATA (National Aptitude Test in Architecture) or JEE Main Paper 2 (B.Arch) scores. Both exams are accepted, and appearing for both increases your chances of securing a good college.'],
-  ['question' => 'What is the eligibility for B.Arch at IPU?', 'answer' => 'You need 10+2 pass with Physics, Chemistry, and Mathematics with minimum 50% aggregate in PCM, a valid NATA or JEE Main Paper 2 score, and minimum age of 17 years as on 31st December of the admission year.'],
+  ['question' => 'What entrance exam is required for B.Arch admission at IPU?', 'answer' => 'B.Arch admission at IPU (Programme Code 100) is based on NATA (National Aptitude Test in Architecture) only. Per UG Brochure 2026-27 Ch 2 p.31, GGSIPU does NOT conduct its own CET for B.Arch and does NOT accept JEE Main Paper 2 — NATA is the sole entrance.'],
+  ['question' => 'What is the eligibility for B.Arch at IPU?', 'answer' => 'You need 10+2 pass with Physics + Mathematics compulsory plus one of Chemistry / Biology / Biotechnology / Technical Vocational / Computer Science / IT / Informatics Practices / Engineering Graphics / Business Studies at minimum 45% aggregate (or 10+3 diploma with Mathematics at 45%). You also need a valid NATA 2026 score and minimum age 17 years as on 31st December of the admission year. Source: UG Brochure 2026-27 Ch 2 p.31.'],
   ['question' => 'What is the duration of B.Arch at IPU?', 'answer' => 'B.Arch at IPU is a 5-year (10 semesters) full-time professional degree programme approved by the Council of Architecture. It includes mandatory practical training at an architecture firm.'],
   ['question' => 'Can I practise as an architect after B.Arch from IPU?', 'answer' => 'Yes. B.Arch from IPU-affiliated colleges is approved by the Council of Architecture. After completing your degree, you can register with CoA and practise as a licensed architect in India.'],
   ['question' => 'What is the fee for B.Arch at IPU colleges?', 'answer' => 'B.Arch fees vary by college. IPU-affiliated architecture colleges typically charge between Rs 1-2 lakh per year. Call 9899991342 for the latest fee details and college-specific information.']

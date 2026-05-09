@@ -102,12 +102,34 @@ include 'include/components/hero-banner.php';
     <li><strong>Educational qualification:</strong> B.Tech / B.E. in a relevant discipline with minimum <strong>60% aggregate</strong> (55% for SC/ST/PwD).</li>
     <li><strong>Alternative:</strong> M.Sc in a relevant subject with at least 60% aggregate is also accepted for select specialisations.</li>
     <li><strong>Final-year students:</strong> May apply on a provisional basis subject to clearing the qualifying degree.</li>
-    <li><strong>GATE score:</strong> A valid <strong>GATE 2026 score</strong> is mandatory &mdash; admission is strictly based on GATE rank.</li>
+    <li><strong>Entrance test:</strong> GATE 2026 is the primary entrance for most M.Tech specialisations, but per-code variations apply. Code 151 (Industrial Biotech) requires <strong>GAT-B Score only</strong> (no GATE / CET / CUET). Code 141 (AI&amp;DS) is GATE &rarr; Merit of qualifying Exam (no CET / CUET fallback). Codes 139 / 140 / 156 accept GATE &rarr; CET &rarr; CUET#. Codes 147 / 148 accept GATE &rarr; CET &rarr; Last Qualifying Degree Percentage. Code 152 accepts GATE &rarr; CET (no CUET). See PG Brochure 2026-27 Table 1.1 (p.22) for the exact priority per code.</li>
     <li><strong>Sponsored category:</strong> Minimum 2 years industry experience plus a valid sponsor letter from the employer.</li>
   </ul>
 
-  <h2>Entrance Test &ndash; GATE 2026</h2>
-  <p><strong>GATE 2026</strong> (Graduate Aptitude Test in Engineering) is the primary entrance for M.Tech admission IPU GATE 2026. Conducted by IIT/IISc in <strong>February 2026</strong>, GATE rank determines merit allocation across all USS M.Tech seats. Applicants without GATE may be considered through IPU CET PG 2026 / CUET PG only after the GATE merit list is exhausted.</p>
+  <h2>Entrance Test by Programme Code (PG Brochure 2026-27 Table 1.1)</h2>
+  <p>The entrance hierarchy is per Programme Code, not a blanket rule. Each row is sourced from PG Brochure 2026-27 page 22.</p>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:560px">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">Code</th>
+        <th style="padding:10px 14px;text-align:left">Programme</th>
+        <th style="padding:10px 14px;text-align:left">Entrance priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">139</td><td style="padding:10px 14px">M.Tech CSE / IT (Regular)</td><td style="padding:10px 14px">1. GATE Score &rarr; 2. CET &rarr; 3. CUET#</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">140</td><td style="padding:10px 14px">M.Tech ECE / VLSI Design (Regular)</td><td style="padding:10px 14px">1. GATE Score &rarr; 2. CET &rarr; 3. CUET#</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><strong>141</strong></td><td style="padding:10px 14px"><strong>M.Tech Artificial Intelligence &amp; Data Science (Regular)</strong></td><td style="padding:10px 14px"><strong>1. GATE Score &rarr; 2. Merit of qualifying Exam</strong> &mdash; no CET / CUET fallback</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">147</td><td style="padding:10px 14px">M.Tech Food Processing Technology</td><td style="padding:10px 14px">1. GATE &rarr; 2. CET &rarr; 3. Last Qualifying Degree Percentage</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">148</td><td style="padding:10px 14px">M.Tech Biotechnology (Regular) &mdash; USBT</td><td style="padding:10px 14px">1. GATE Score &rarr; 2. CET &rarr; 3. Last Qualifying Degree Percentage</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><strong>151</strong></td><td style="padding:10px 14px"><strong>M.Tech Industrial Biotechnology &mdash; USBT</strong></td><td style="padding:10px 14px"><strong>GAT-B Score only</strong> &mdash; no GATE / CET / CUET</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">152</td><td style="padding:10px 14px">M.Tech Chemical Engineering (Regular) &mdash; USCT</td><td style="padding:10px 14px">1. GATE Score &rarr; 2. CET &mdash; no CUET</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">156</td><td style="padding:10px 14px">M.Tech Robotics &amp; AI (Regular) &mdash; USICT [NEW]</td><td style="padding:10px 14px">1. GATE Score &rarr; 2. CET &rarr; 3. CUET#</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>GATE 2026 (Graduate Aptitude Test in Engineering) conducted by IIT/IISc in <strong>February 2026</strong> is the primary entrance for most M.Tech codes. Where the brochure lists CET as priority 2, the GGSIPU PG CET fills seats unfilled by GATE merit. CUET PG (marked &lsquo;#&rsquo;) is the vacant-seat fallback per Important Instruction #37 &mdash; applicable only to codes that explicitly list it (139, 140, 156). Code 141 (AI&amp;DS) and Code 151 (Industrial Biotech) follow special rules and do not accept CET / CUET as fallback.</p>
 
   <h2>Top M.Tech Colleges Under IPU 2026</h2>
   <div style="overflow-x:auto">
@@ -187,10 +209,10 @@ include 'include/components/hero-banner.php';
 <?php
 $faqs = [
   ['question' => 'What is the eligibility for M.Tech at IPU?', 'answer' => 'You need a B.Tech/B.E. in a relevant discipline with minimum 60% aggregate (55% for SC/ST), or M.Sc in a relevant subject with 60%, plus a valid GATE 2026 score. Final-year students can apply provisionally. For free eligibility check call 9899991342.'],
-  ['question' => 'Is GATE mandatory for M.Tech admission at IPU?', 'answer' => 'Yes. A valid GATE 2026 score is mandatory for M.Tech admission IPU GATE 2026 — seats are filled strictly through GATE rank. Non-GATE candidates are considered only via IPU CET PG / CUET PG after the GATE merit list is exhausted. Call 9899991342 for guidance.'],
+  ['question' => 'Is GATE mandatory for M.Tech admission at IPU?', 'answer' => 'GATE 2026 is the primary entrance for most M.Tech specialisations but the priority list varies by Programme Code per PG Brochure 2026-27 Table 1.1: Codes 139/140/156 = GATE &rarr; CET &rarr; CUET#; Codes 147/148 = GATE &rarr; CET &rarr; Last Qualifying Degree %; Code 152 = GATE &rarr; CET (no CUET); Code 141 (AI&DS) = GATE &rarr; Merit of qualifying Exam (no CET / CUET); Code 151 (Industrial Biotech) = GAT-B Score only (no GATE). Plan your strategy by Programme Code. Call 9899991342 for guidance.'],
   ['question' => 'Which specializations are offered under M.Tech at IPU?', 'answer' => 'IPU offers M.Tech in CSE & IT (Code 139), ECE (140), AI & DS (141), Food Processing (147), Biotechnology (148), Industrial Biotech (151), Chemical Engineering (152), the new Robotics & AI (156), VLSI Design and Information Security. Call 9899991342 for specialisation guidance.'],
   ['question' => 'What is the M.Tech fee at IPU 2026?', 'answer' => 'For USS schools (USICT/USAR/USCT), M.Tech (Regular) Year 1 fees total approximately Rs 2,04,900 (tuition Rs 1,69,400 + university Rs 20,000 + exam Rs 3,000 + innovation Rs 500 + development Rs 10,000 + alumni Rs 2,000). Year 2 is around Rs 2,18,840. Call 9899991342 for the latest fees.'],
-  ['question' => 'Can I get M.Tech admission without GATE?', 'answer' => 'Generally no — IPU M.Tech admissions are GATE-driven. Only after the GATE merit list and sponsored category seats are filled, IPU may consider non-GATE candidates through IPU CET PG 2026 or CUET PG. Call 9899991342 to plan an alternate strategy.']
+  ['question' => 'Can I get M.Tech admission without GATE?', 'answer' => 'Depends on Programme Code per PG Brochure 2026-27 Table 1.1. Codes 139/140/147/148/152/156 accept IPU CET as priority 2 (and Codes 139/140/156 also accept CUET# as priority 3, vacant seats only) after the GATE merit list is exhausted. Code 141 (AI&DS) has NO CET / CUET fallback — its second priority is &lsquo;Merit of qualifying Exam&rsquo;. Code 151 (Industrial Biotech) requires GAT-B Score and does NOT accept GATE, CET or CUET at all. Call 9899991342 to plan by Programme Code.']
 ];
 include 'include/components/faq-section.php';
 ?>

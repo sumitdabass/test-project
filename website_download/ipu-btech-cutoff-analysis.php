@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="IPU B.Tech Cutoff Analysis">
+<img fetchpriority="high" decoding="async" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="IPU B.Tech Cutoff Analysis">
 
 
 <h2>IP University B.Tech Cutoff Analysis</h2>

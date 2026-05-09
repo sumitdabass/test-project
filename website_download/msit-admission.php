@@ -92,9 +92,10 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">240 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering (EEE)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
     </tbody>
   </table>
 

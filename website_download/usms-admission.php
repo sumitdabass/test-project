@@ -92,12 +92,16 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Full-Time, General)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (International Business)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (General, Full-Time)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (FA — Financial Analysis)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (A — Analytics)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (W — Weekend / Working Executives)</td><td style="padding:10px 14px">2-3 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BBA</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Com (H)</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD in Management</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
-  <p style="font-size:13px;color:#64748b;margin-top:8px">As per GGSIPU Admission Brochure 2026-27, USMS operates its programmes from USMS Sector 16C, Dwarka campus.</p>
+  <p style="font-size:13px;color:#64748b;margin-up:8px">Source: UG Brochure 2026-27 Ch 13 SN 3 (USMS programmes + intake) and PG Brochure 2026-27 §14.1H (MBA tuition Rs. 1,93,600/yr). USMS operates from the GGSIPU Sector 16C, Dwarka campus. Note: there is no &ldquo;MBA International Business&rdquo; in the 2026-27 brochure &mdash; the four MBA streams are General, FA (Financial Analysis), A (Analytics) and W (Weekend / Working Executives).</p>
 
   <h3>MBA Specializations</h3>
   <ul>

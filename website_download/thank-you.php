@@ -318,8 +318,10 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
 }
 </style>
 
-<!-- Conversion tracked via GTM on thank-you pageview -->
+<!-- Conversion tracked via GTM on thank-you pageview — gated on success flag so honeypot/dedup redirects don't inflate counts -->
+<?php if (($_GET['src'] ?? '') === 'submit'): ?>
 <script>window.dataLayer = window.dataLayer || []; dataLayer.push({'event': 'form_submission', 'page_type': 'thank-you'});</script>
+<?php endif; ?>
 </head>
 <body>
 
@@ -436,7 +438,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
       <a href="b-tech-colleges-under-IP-university.php" class="ty-college-link">&#127963; MSIT – Janakpuri</a>
       <a href="BPIT.php" class="ty-college-link">&#127963; BPIT – Rohini</a>
       <a href="BVP.php" class="ty-college-link">&#127963; BVP – Paschim Vihar</a>
-      <a href="vips-pitampura-courses.php" class="ty-college-link">&#127963; VIPS – Pitampura</a>
+      <a href="vips-admission.php" class="ty-college-link">&#127963; VIPS – Pitampura</a>
     </div>
   </div>
 </section>
@@ -471,8 +473,17 @@ const hashSHA256 = async (data) => {
   if(email) userData.email = await hashSHA256(email);
   if(phone) userData.phone_number = await hashSHA256(phone);
   if(Object.keys(userData).length){
-    gtag('set','user_data',userData);
-    gtag('event','conversion',{'send_to':'AW-10900888879/IVcxCLiB87IbEK-6-c0o'});
+    // GTM dataLayer push for enhanced conversions — GTM tag listens for this
+    // event and forwards to Google Ads (AW-10900888879/IVcxCLiB87IbEK-6-c0o)
+    // with user_data attached. Replaces direct gtag() calls (gtag.js is not
+    // loaded — only GTM is — so the prior code threw ReferenceError and every
+    // enhanced conversion since the GTM-only migration was lost).
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'enhanced_conversion',
+      'enhanced_conversion_user_data': userData,
+      'send_to': 'AW-10900888879/IVcxCLiB87IbEK-6-c0o'
+    });
   }
 })();
 </script>

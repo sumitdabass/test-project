@@ -342,18 +342,21 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <!-- Enquiry Form -->
 <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:25px;box-shadow:0 2px 10px rgba(0,0,0,0.08);">
 <h3 style="font-size:17px;color:#1a1a2e;margin-bottom:15px;text-align:center;">Enquire Now — Free Help</h3>
-<form method="POST" action="b-tech-colleges-under-IP-university.php">
-<div style="margin-bottom:12px;"><input type="text" name="name" placeholder="Your Name *" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:12px;"><input type="tel" name="mobile" placeholder="Mobile Number *" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:12px;"><input type="email" name="email" placeholder="Email Address" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:15px;"><select name="course" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;background:#fff;box-sizing:border-box;">
-<option value="">Select Course</option>
+<form method="POST" action="b-tech-colleges-under-IP-university.php" novalidate>
+<?php $_SESSION['form_loaded_at'] = time(); ?>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+<div style="margin-bottom:12px;"><input type="text" name="name" placeholder="Your Name *" required autocomplete="name" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:12px;"><input type="tel" name="phone" placeholder="Mobile Number *" required pattern="[6-9][0-9]{9}" maxlength="10" inputmode="tel" autocomplete="tel" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:12px;"><input type="email" name="email" placeholder="Email Address" autocomplete="email" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:15px;"><select name="course" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;background:#fff;box-sizing:border-box;">
+<option value="">Select Course *</option>
 <option value="btech">B.Tech</option>
 <option value="bca">BCA</option>
 <option value="mba">MBA</option>
 <option value="mca">MCA</option>
 <option value="bba">BBA</option>
 </select></div>
+<?php if (!empty($form_error)): ?><p style="color:#c0392b;font-size:13px;margin:0 0 10px;text-align:center;"><?= htmlspecialchars($form_error) ?></p><?php endif; ?>
 <button type="submit" name="submit" style="width:100%;background:#e87722;color:#fff;padding:12px;border:none;border-radius:6px;font-size:16px;font-weight:700;cursor:pointer;">Get Free Expert Help →</button>
 </form>
 </div>

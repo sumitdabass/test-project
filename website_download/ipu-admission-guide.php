@@ -176,7 +176,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS College Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT & MSI Janakpuri Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura Complete Guide</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura Complete Guide</a></li>
 <li><a href="b-tech-colleges-under-IP-university.php">All B.Tech Colleges under IPU</a></li>
 </ul>
 

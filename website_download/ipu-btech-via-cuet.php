@@ -24,7 +24,7 @@
           "name": "What is the eligibility for IPU B.Tech via CUET 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Candidates must have passed Class 12 with Physics, Chemistry and Mathematics with minimum 55% marks. They must have a valid CUET score in PCM subjects. There is no age bar for GGSIPU B.Tech admission via CUET."
+            "text": "Candidates must have passed Class 12 with Physics, Chemistry and Mathematics with minimum 55% marks (50% for SC/ST/OBC/PwD), pass in each subject including English, per UG Brochure 2026-27 Ch 2 (Programme Code 131). A valid CUET (UG) 2026 score in Physics + Mathematics + (Chemistry or CS) is required. CUET is the SECOND-priority entrance after JEE Main Paper-I — vacant B.Tech seats remaining after JEE Main counselling are filled on CUET merit per Important Instruction #37."
           }
         },
         {
@@ -89,29 +89,30 @@
     <div class="col-md-8">
 
       <h2 style="color:#1a3a6b;font-size:1.6rem;font-weight:700;margin-bottom:15px;">IPU B.Tech Admission via CUET &ndash; Overview</h2>
-      <p>Guru Gobind Singh Indraprastha University (GGSIPU) offers B.Tech admission through <strong>CUET (Common University Entrance Test)</strong> scores in addition to JEE Main. CUET provides an alternative pathway for students who have not appeared in JEE Main but wish to pursue B.Tech at IP University affiliated colleges in Delhi NCR.</p>
+      <p>Guru Gobind Singh Indraprastha University (GGSIPU) accepts <strong>CUET (Common University Entrance Test)</strong> as the <strong>second-priority pathway</strong> for B.Tech admission, after JEE Main Paper-I. Per UG Brochure 2026-27 §1.2 (page 29) and Important Instruction #37, "admissions through merit of CUET shall be carried out <strong>after exhausting</strong> of merit of respective National Level test" — meaning B.Tech (Programme Code 131) seats are filled first from the JEE Main merit list, and any vacant seats remaining are then offered on CUET (UG) merit. CUET is NOT a co-equal alternative — it is a vacant-seat fallback. CUET also qualifies you for the 10% Management Quota at unaided affiliated B.Tech colleges (Chapter 12).</p>
 
       <h2 style="color:#1a3a6b;font-size:1.5rem;font-weight:700;margin-top:35px;margin-bottom:15px;">Eligibility for IPU B.Tech via CUET 2026</h2>
       <ul>
-        <li>Passed Class 12 (or equivalent) with <strong>Physics, Chemistry and Mathematics (PCM)</strong></li>
-        <li>Minimum <strong>55% aggregate marks</strong> in PCM subjects in Class 12</li>
-        <li>Valid <strong>CUET score</strong> in Physics, Chemistry and Mathematics domain subjects</li>
-        <li>No age bar for admission via CUET pathway</li>
-        <li>Must fulfill IPU registration and document requirements</li>
+        <li>Passed Class 12 (or equivalent) with <strong>Physics + Mathematics</strong> compulsory plus one of <strong>Chemistry / Biotechnology / Biology / Computer Science / Informatics Practices</strong> per UG Brochure 2026-27 Ch 2 (Programme Code 131)</li>
+        <li>Minimum <strong>55% aggregate marks</strong> in Class 12 (50% for SC/ST/OBC/PwD), pass in each subject including English</li>
+        <li>Valid <strong>CUET (UG) 2026 score</strong> with Physics (Code 322), Mathematics/Applied Mathematics (Code 319), and either Chemistry (Code 306) or Computer Science/Informatics Practices (Code 308)</li>
+        <li>Note: this is the <strong>second-priority pathway</strong> &mdash; JEE Main Paper-I (Programme Code 131, priority 1) is the primary entrance; CUET fills vacant seats only per Important Instruction #37</li>
+        <li>Must fulfil IPU registration and document requirements</li>
       </ul>
 
-      <h2 style="color:#1a3a6b;font-size:1.5rem;font-weight:700;margin-top:35px;margin-bottom:15px;">CUET vs JEE Main: Which Pathway to Choose?</h2>
-      <p>GGSIPU accepts both CUET and JEE Main scores for B.Tech admission. Separate merit lists are prepared for each pathway. Students who performed better in CUET than JEE Main should apply through the CUET pathway. Both pathways lead to admission in the same affiliated colleges and programs.</p>
+      <h2 style="color:#1a3a6b;font-size:1.5rem;font-weight:700;margin-top:35px;margin-bottom:15px;">JEE Main (Priority 1) vs CUET (Priority 2): How They Work Together</h2>
+      <p>Per UG Brochure 2026-27 Table 1.1 (Programme Code 131), GGSIPU B.Tech admission priority is <strong>1. National Level Test &mdash; JEE Main Paper-I</strong> followed by <strong>2. CUET#</strong>. JEE Main candidates fill seats first; remaining vacant seats are then offered to CUET candidates per Important Instruction #37. They are NOT parallel pathways &mdash; the merit lists are sequential, not co-equal. The strongest strategy is to appear in BOTH exams: JEE Main for priority access to the best colleges, CUET as a vacant-seat fallback AND as a qualifier for the 10% Management Quota.</p>
       <table class="table table-bordered" style="margin-top:15px;">
         <thead style="background:#1a3a6b;color:#fff;">
-          <tr><th>Parameter</th><th>CUET Pathway</th><th>JEE Main Pathway</th></tr>
+          <tr><th>Parameter</th><th>JEE Main Paper-I (Priority 1)</th><th>CUET (UG) (Priority 2 &mdash; Fallback)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Exam Conducting Body</td><td>NTA (CUET)</td><td>NTA (JEE Main)</td></tr>
-          <tr><td>Subjects Required</td><td>Physics, Chemistry, Maths</td><td>Physics, Chemistry, Maths</td></tr>
-          <tr><td>Score Used</td><td>CUET Percentile/Score</td><td>JEE Main Percentile</td></tr>
-          <tr><td>Merit List</td><td>Separate CUET Merit List</td><td>Separate JEE Merit List</td></tr>
-          <tr><td>Counselling Process</td><td>GGSIPU Online Counselling</td><td>GGSIPU Online Counselling</td></tr>
+          <tr><td>Brochure status</td><td>Primary entrance (Code 131)</td><td>Vacant-seat fallback (Instruction #37)</td></tr>
+          <tr><td>Exam Conducting Body</td><td>NTA (JEE Main)</td><td>NTA (CUET)</td></tr>
+          <tr><td>Subjects Required</td><td>Physics, Chemistry, Maths</td><td>Physics (322) + Maths (319) + (Chem 306 or CS 308)</td></tr>
+          <tr><td>When seats fill</td><td>First &mdash; in CSAB-style centralised counselling</td><td>After JEE Main counselling exhausts</td></tr>
+          <tr><td>Counselling Process</td><td>GGSIPU Online Counselling</td><td>GGSIPU Online Counselling (subsequent rounds)</td></tr>
+          <tr><td>Management Quota qualifier?</td><td>Yes (Chapter 12 Note 2)</td><td>Yes (Chapter 12 Note 2)</td></tr>
         </tbody>
       </table>
 
@@ -160,17 +161,17 @@
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
         <h3 style="color:#1a3a6b;font-size:1.1rem;font-weight:700;">Can I get admission to IPU B.Tech through CUET?</h3>
-        <p>Yes, GGSIPU offers B.Tech admission through CUET scores. A separate merit list is prepared for CUET applicants. Candidates must have qualified CUET with Physics, Chemistry and Mathematics subjects.</p>
+        <p>Yes, but as the SECOND-priority pathway per UG Brochure 2026-27 Table 1.1 (Programme Code 131). JEE Main Paper-I is priority 1; CUET fills vacant B.Tech seats AFTER JEE Main counselling exhausts (Important Instruction #37). CUET also qualifies you for the 10% Management Quota at unaided affiliated B.Tech colleges (Chapter 12). Best strategy: appear in BOTH JEE Main and CUET.</p>
       </div>
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
         <h3 style="color:#1a3a6b;font-size:1.1rem;font-weight:700;">What is the eligibility for IPU B.Tech via CUET 2026?</h3>
-        <p>Candidates must have passed Class 12 with Physics, Chemistry and Mathematics with minimum 55% marks. They must have a valid CUET score in PCM subjects. There is no age bar for GGSIPU B.Tech admission via CUET.</p>
+        <p>Candidates must have passed Class 12 with Physics + Mathematics compulsory plus one of Chemistry / Biotechnology / Biology / Computer Science / Informatics Practices, minimum 55% aggregate (50% for SC/ST/OBC/PwD), pass in each subject including English, per UG Brochure 2026-27 Ch 2 (Programme Code 131). Required CUET papers: Physics (322), Mathematics/Applied Mathematics (319), and either Chemistry (306) or Computer Science/Informatics Practices (308). Note: CUET is the second-priority entrance after JEE Main Paper-I per Important Instruction #37.</p>
       </div>
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
         <h3 style="color:#1a3a6b;font-size:1.1rem;font-weight:700;">How is the merit list prepared for IPU B.Tech via CUET?</h3>
-        <p>The GGSIPU merit list for B.Tech via CUET is prepared based on CUET scores in Physics, Chemistry and Mathematics. The university releases separate rank lists for CUET and JEE Main applicants. Higher CUET scores lead to better rank and more college options.</p>
+        <p>Per UG Brochure 2026-27 §1.2 (page 29), CUET-based admissions for B.Tech happen <strong>after exhausting the JEE Main Paper-I merit list</strong> (Important Instruction #37). Practically, GGSIPU runs JEE Main counselling first; whatever B.Tech seats remain unfilled are then offered on CUET merit through additional counselling rounds. Higher CUET scores lead to better rank for these vacant-seat rounds.</p>
       </div>
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
@@ -180,7 +181,7 @@
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
         <h3 style="color:#1a3a6b;font-size:1.1rem;font-weight:700;">What is the fee for B.Tech at IPU colleges?</h3>
-        <p>The annual fee for B.Tech at IP University affiliated colleges ranges from approximately Rs. 1.2 lakh to Rs. 2.5 lakh per year depending on the college. Fees are regulated by the Fee Fixation Committee of Delhi Government.</p>
+        <p>USS (University Schools) tuition is Rs. 1,69,400 per year per UG Brochure 2026-27 Ch 14. Affiliated colleges charge Rs. 1,41,750 to Rs. 1,55,700 per year per the 6th SFRC Notification dated 14.07.2025 (F.No. DHE.18(1)/6th SFRC/2023/3205-15). Capitation fee is prohibited under Section 12 of the Delhi Professional Colleges Act 2007.</p>
       </div>
 
       <div style="text-align:center;background:#f0f4ff;border-radius:10px;padding:30px;margin-top:40px;">

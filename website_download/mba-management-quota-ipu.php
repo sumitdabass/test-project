@@ -33,7 +33,7 @@ include_once("include/form-handler.php");
       "name": "How many Management Quota seats are available for MBA at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 15% of the total seats in IPU affiliated MBA colleges are available under Management Quota. The exact number varies by college and depends on total intake."
+        "text": "10% of the total seats in IPU affiliated MBA colleges are reserved as Management Quota per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools (including USMS), minority and government institutions are excluded."
       }
     },
     {
@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "Is CAT score required for MBA Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CAT or CMAT score is not mandatory for Management Quota seats in MBA at IPU. These seats are filled by the college management directly. Contact the college or call 9899991342 for details."
+        "text": "A valid CAT, CMAT or GGSIPU CET score IS mandatory per Important Instruction #21 + Chapter 12 Note 2 of the GGSIPU Brochure 2026-27. The college runs the management-quota counselling but cannot waive the entrance qualifier. Tuition is regulated per the 6th SFRC Notification dated 14.07.2025; capitation fee is prohibited under the Delhi Professional Colleges Act 2007."
       }
     },
     {

@@ -82,7 +82,8 @@ include 'include/components/hero-banner.php';
   <p>Established as a constituent school of GGSIPU, USLS is directly managed by the university. This ensures affordable fees (government college rates), experienced faculty drawn from legal academia and practice, and access to the full IPU campus infrastructure. USLS is approved by the Bar Council of India and is one of the most affordable law schools in Delhi.</p>
   <p>The school's location in Delhi — the seat of the Supreme Court, Delhi High Court, and numerous tribunals — gives students unmatched access to the legal ecosystem for internships, moot court exposure, and courtroom visits.</p>
 
-  <h2>Courses Offered at USLS</h2>
+  <h2>Courses Offered at USL&amp;LS (Programmes per UG Brochure 2026-27 Ch 13 SN 11)</h2>
+  <p style="font-size:14px;color:#64748b">Note: The 3-year LLB (Programme Code 238) is offered at IPU-affiliated colleges (e.g. VIPS-TC, CPJ Narela), <em>not at USL&amp;LS</em> per Ch 13. USL&amp;LS hosts only the integrated 5-year programmes and four LLM specialisations listed below.</p>
   <table style="width:100%;border-collapse:collapse;margin:16px 0">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
@@ -92,13 +93,12 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BA LLB (Hons) – 5-Year Integrated</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA LLB (Hons) – 5-Year Integrated</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLB (3-Year Programme)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Alternative Dispute Resolution)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Criminal Justice)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Intellectual Property Rights)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD in Law</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Integrated BA LLB (Hons)</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Integrated BBA LLB (Hons)</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Alternative Dispute Resolution)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Criminal Justice System)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">LLM (Intellectual Property Rights)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">LLM (Corporate Law)</td><td style="padding:10px 14px">1 Year</td><td style="padding:10px 14px">30</td></tr>
     </tbody>
   </table>
 

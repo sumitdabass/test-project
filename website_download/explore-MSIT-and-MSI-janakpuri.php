@@ -153,7 +153,7 @@ include_once("include/form-handler.php");
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img loading="lazy" src="assets/images/explore-MSIT-and-MSI-janakpuri.jpg" class="main-img" alt="Exploring MAIT & MAIMS Rohini">
+                        <img fetchpriority="high" decoding="async" src="assets/images/explore-MSIT-and-MSI-janakpuri.jpg" class="main-img" alt="Exploring MAIT & MAIMS Rohini">
 
                         <h2 class="title">Explore MSIT & MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More
                         </h2>
@@ -329,7 +329,7 @@ include_once("include/form-handler.php");
                               <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center;">
                                 <h4 style="color: #0b2c5d; margin-bottom: 10px;">VIPS</h4>
                                 <p style="color: #666; margin-bottom: 10px; font-size: 12px;">Law & Management</p>
-                                <a href="vips-pitampura-courses.php" style="background: #0b2c5d; color: white; padding: 7px 12px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 11px;">Compare</a>
+                                <a href="vips-admission.php" style="background: #0b2c5d; color: white; padding: 7px 12px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 11px;">Compare</a>
                               </div>
                               
                             </div>

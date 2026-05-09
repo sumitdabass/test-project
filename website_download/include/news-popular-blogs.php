@@ -6,7 +6,7 @@
 $popular_blogs = [
     ['url' => '/mba-admission-ip-university.php',                        'title' => 'MBA Admission in IP University 2026–27'],
     ['url' => '/IPU-B-Tech-admission-2026.php',                          'title' => 'B.Tech Admission 2026 — Eligibility & Colleges'],
-    ['url' => '/IPU-Law-Admission-2026.php',                             'title' => 'IPU Law Admission 2026 Guide'],
+    ['url' => '/IPU-Law-Admission.php',                                  'title' => 'IPU Law Admission 2026 Guide'],
     ['url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'title' => 'Top BBA Colleges under IP University'],
     ['url' => '/guide-to-bjmc-colleges-under-ip-university.php',         'title' => 'Guide to BJMC Colleges under IPU'],
 ];

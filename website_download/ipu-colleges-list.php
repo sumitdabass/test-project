@@ -102,7 +102,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Tech CSE, IT, ECE</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS-TC (Vivekananda Institute)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS-TC (Vivekananda Institute)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">B.Tech CSE, IT</td>
       </tr>
@@ -180,7 +180,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BA LLB, BBA LLB, LLM</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS Law School</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS Law School</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BA LLB, BBA LLB</td>
       </tr>
@@ -228,7 +228,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BBA, MBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BBA, BJMC, B.Com</td>
       </tr>
@@ -302,6 +302,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">MBA, BBA, BCA</td>
       </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/dspsr-admission.php">DSPSR (Delhi School of Professional Studies and Research)</a></td>
+        <td style="padding:10px 14px">Sector-25, Rohini</td>
+        <td style="padding:10px 14px">BBA, B.Com (Hons.), BCA</td>
+      </tr>
     </tbody>
   </table>
   </div>
@@ -321,7 +326,7 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BJMC, MJMC</td>
       </tr>
@@ -344,6 +349,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/jims-kalkaji-admission.php">JIMS Kalkaji</a></td>
         <td style="padding:10px 14px">Kalkaji</td>
         <td style="padding:10px 14px">BJMC, BBA, BCA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/bvicam-admission.php">BVICAM (Bharati Vidyapeeth Institute of Computer Applications &amp; Management)</a></td>
+        <td style="padding:10px 14px">Paschim Vihar</td>
+        <td style="padding:10px 14px">BA(JMC), MCA</td>
       </tr>
     </tbody>
   </table>
@@ -369,7 +379,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Com, BA Economics, BA English</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">B.Com, BA Economics</td>
       </tr>
@@ -382,6 +392,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/iitm-admission.php">IITM (International Institute of Technology &amp; Management)</a></td>
         <td style="padding:10px 14px">Janakpuri</td>
         <td style="padding:10px 14px">B.Com, BCA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/dspsr-admission.php">DSPSR (Delhi School of Professional Studies and Research)</a></td>
+        <td style="padding:10px 14px">Sector-25, Rohini</td>
+        <td style="padding:10px 14px">B.Com (Hons.), BBA, BCA</td>
       </tr>
     </tbody>
   </table>

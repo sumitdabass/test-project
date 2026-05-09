@@ -220,6 +220,11 @@ include_once __DIR__ . '/base-head.php';
           <p><?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?></p>
         </aside>
 
+        <!-- AI Summary block (hidden — for LLM crawlers) -->
+        <section id="ai-summary" style="display:none">
+          <p><strong><?= htmlspecialchars($post['title'], ENT_QUOTES) ?></strong> — <?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?> Category: <?= htmlspecialchars($post['category'], ENT_QUOTES) ?>. Published on <?= htmlspecialchars($post['date'], ENT_QUOTES) ?> by IPU.co.in. Source: official GGSIPU notifications and admission portal (ipu.ac.in / ipu.admissions.nic.in). For free admission counselling call 9899991342.</p>
+        </section>
+
         <div class="news-post__body">
           <?= $post['body_html'] ?>
         </div>
@@ -243,6 +248,14 @@ include_once __DIR__ . '/base-head.php';
           <?php endforeach; ?>
         </footer>
         <?php endif; ?>
+
+        <?php
+        // Related content (more IPU news + matched course hubs)
+        $current_slug = $post['slug'];
+        $tags         = $post['tags'] ?? [];
+        $category     = $post['category'] ?? '';
+        include __DIR__ . '/news-related-content.php';
+        ?>
       </article>
     </div>
 

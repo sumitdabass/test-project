@@ -33,7 +33,7 @@ include_once("include/form-handler.php");
       "name": "How many Management Quota seats are available for B.Tech at IPU colleges?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 15-20% of the total seats in IPU affiliated B.Tech colleges are available under Management Quota. The exact number varies by college and branch."
+        "text": "10% of the total seats in IPU affiliated B.Tech colleges are reserved as Management Quota per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools (USS), minority and government institutions are excluded."
       }
     },
     {
@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "What is the fee for B.Tech under Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The fee for B.Tech under Management Quota at IPU affiliated colleges is typically higher than merit seats, ranging from Rs. 2 lakh to Rs. 4 lakh per year depending on the college and branch."
+        "text": "Management Quota tuition is the same as merit seats — regulated by the Govt of NCT Delhi 6th SFRC Notification dated 14.07.2025 (Appendix 13(i) of the GGSIPU Brochure 2026-27): approximately Rs. 1,41,750 to Rs. 1,55,700 per year for B.Tech at affiliated colleges. Capitation fee is prohibited per Section 12 of the Delhi Professional Colleges Act 2007. An additional Rs. 2,500 registration fee applies per Chapter 12."
       }
     },
     {
@@ -139,8 +139,8 @@ Management quota provides an alternative pathway for students who may not secure
 <li>Maharaja Surajmal Institute of Technology (MSIT)</li>
 <li>Bhagwan Parshuram Institute of Technology (BPIT)</li>
 <li>Bharati Vidyapeeth Engineering College (BVP)</li>
-<li>VIPS Engineering Programs</li>
 <li>GTBIT Engineering College</li>
+<li>ADGITM (Dr. Akhilesh Das Gupta Institute of Technology &amp; Management)</li>
 <li>Northern India Engineering Institute</li>
 </ul>
 

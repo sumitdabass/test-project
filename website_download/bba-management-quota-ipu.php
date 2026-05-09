@@ -116,7 +116,7 @@ Complete admission guide:
 <h2>Top BBA Colleges under IP University (Management Quota Availability)</h2>
 
 <ul>
-<li><a href="vips-pitampura-courses.php">Vivekananda Institute of Professional Studies (VIPS)</a></li>
+<li><a href="vips-admission.php">Vivekananda Institute of Professional Studies (VIPS)</a></li>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIMS Rohini (Maharaja Agrasen Institute of Management Studies)</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT / MSI Janakpuri</a></li>
 <li>JIMS Rohini</li>

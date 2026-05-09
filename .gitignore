@@ -16,3 +16,6 @@ __pycache__/
 
 # n8n deployment artifacts
 deployment/backups/
+
+# Superpowers brainstorm session artifacts
+.superpowers/

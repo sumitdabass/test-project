@@ -98,7 +98,7 @@ Choosing the right B.Tech college under IP University is one of the most importa
 </tr>
 
 <tr>
-<td><a href="vips-pitampura-courses.php">VIPS</a></td>
+<td><a href="vips-admission.php">VIPS</a></td>
 <td>CSE, AIML, AIDS, VLSI, IoT</td>
 <td>Pitampura</td>
 <td>Yes</td>

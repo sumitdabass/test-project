@@ -85,7 +85,7 @@ include 'include/components/hero-banner.php';
     <li><strong>Government university fees:</strong> USLS is a constituent school of IPU, offering LLM at significantly lower fees compared to private law universities.</li>
     <li><strong>Proximity to courts:</strong> Located in Delhi, students have easy access to the Supreme Court, Delhi High Court, and various district courts for internships and practical exposure.</li>
     <li><strong>Experienced faculty:</strong> USLS faculty includes legal scholars, practising advocates, and retired judges who bring real-world experience to the classroom.</li>
-    <li><strong>Multiple specialisations:</strong> Choose from Constitutional Law, Corporate Law, Criminal Law, International Law, and other specialisations based on your career goals.</li>
+    <li><strong>Four brochure-listed specialisations:</strong> Choose from Corporate Law, Intellectual Property Rights (IPR), Criminal Justice System, or Alternative Dispute Resolution (ADR) — the four LL.M. specialisations offered at USLLS per PG Brochure 2026-27 Ch 13.</li>
     <li><strong>Research opportunities:</strong> The programme emphasises legal research and dissertation work, valuable for those pursuing academic or judicial careers.</li>
   </ul>
 
@@ -154,7 +154,7 @@ include 'include/components/hero-banner.php';
   <h2>LLM Admission Process at IPU 2026</h2>
   <p>The LLM admission process at IPU involves these steps:</p>
   <ol>
-    <li><strong>Appear for the entrance exam:</strong> Take the IPU CET for Law PG or CLAT PG examination conducted nationally. The exam tests legal aptitude, constitutional law, jurisprudence, and other core law subjects.</li>
+    <li><strong>Appear for the entrance exam:</strong> Take CLAT-PG 2026 — the mandatory primary entrance per PG Brochure 2026-27 Table 1.1. CUET PG is the second-priority pathway for vacant seats only per Important Instruction #37. GGSIPU does NOT conduct its own CET for LL.M. The exam tests legal aptitude, constitutional law, jurisprudence, and other core law subjects.</li>
     <li><strong>Register on IPU portal:</strong> After results are declared, register on the official IPU website (ipu.ac.in) for centralised counselling.</li>
     <li><strong>Document verification:</strong> Upload your LLB marksheet, degree certificate, and other required documents during the online verification process.</li>
     <li><strong>Choice filling:</strong> Select your preferred LLM specialisation and college (USLS is the primary option for LLM at IPU).</li>
@@ -204,7 +204,7 @@ include 'include/components/hero-banner.php';
   <h2>Career Scope After LLM from IPU</h2>
   <p>An LLM from IPU opens up several career paths:</p>
   <ul>
-    <li><strong>Legal practice:</strong> Specialise as a corporate lawyer, criminal lawyer, constitutional law expert, or international law practitioner with deeper subject expertise.</li>
+    <li><strong>Legal practice:</strong> Specialise as a corporate lawyer (Corporate Law track), IP attorney (IPR track), criminal-justice practitioner (Criminal Justice System track), or ADR neutral / arbitrator (ADR track) — the four USLLS LL.M. specialisations per PG Brochure 2026-27 Ch 13.</li>
     <li><strong>Judiciary:</strong> LLM is highly valued in judicial services examinations and adds weightage to your candidature for judge positions.</li>
     <li><strong>Academia:</strong> Teach law at universities and law colleges &mdash; UGC NET combined with LLM qualifies you for assistant professor positions.</li>
     <li><strong>Corporate sector:</strong> Work as in-house counsel, legal advisor, or compliance officer at major corporations.</li>

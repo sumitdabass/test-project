@@ -56,7 +56,7 @@ BPIT College (Bhagwan Parshuram Institute of Technology) – Complete Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/bpit-college.jpg" class="main-img" alt="BPIT College IP University">
+<img fetchpriority="high" decoding="async" src="assets/images/bpit-college.jpg" class="main-img" alt="BPIT College IP University">
 
 
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
@@ -175,7 +175,7 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT College Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura Review</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura Review</a></li>
 </ul>
 
 
@@ -194,14 +194,14 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
     </tbody>
   </table>
-  <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at BPIT: ~420.</p>
+  <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: UG Brochure 2026-27 Ch 13 SN 10 (BPIT seat intake) + 6th SFRC Notification F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i)) for fees. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at BPIT: 600 (CSE 180 + IT 180 + ECE 120 + EEE 60 + CSE-DS 60). BPIT also offers BBA 60+60 (2 shifts) and MBA 60.</p>
 </div>
 
 <hr>

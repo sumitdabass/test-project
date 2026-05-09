@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
+Disallow: /thank-you.php
+Disallow: /sendemail.php
+Disallow: /AI_AGENT_README.md
+Disallow: /seo-report-march-2026.html
 
 # ===== AI AGENTS & CRAWLERS =====
 User-agent: GPTBot

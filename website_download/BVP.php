@@ -18,8 +18,8 @@ include_once("include/form-handler.php");
 <!-- Open Graph Tags -->
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ipu.co.in/BVP.php">
-<meta property="og:title" content="Bharatiya Vidya Bhavan Engineering College - B.Tech Admission Guide">
-<meta property="og:description" content="Complete guide to BVP Engineering College under GGSIPU. B.Tech programs, placements, admission process and counselling support.">
+<meta property="og:title" content="Bharati Vidyapeeth's College of Engineering - B.Tech Admission Guide">
+<meta property="og:description" content="Complete guide to Bharati Vidyapeeth's College of Engineering (BVP), Paschim Vihar — affiliated with GGSIPU (Sr. No. 11 in UG Brochure 2026-27 Ch 13). B.Tech programs, placements, admission process and counselling support.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- FAQ Schema -->
@@ -49,7 +49,7 @@ include_once("include/form-handler.php");
       "name": "Is management quota available at BVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, BVP offers management quota seats for B.Tech programs as per GGSIPU regulations. Management quota typically comprises 10-15% of total seats. Call us at 9899991342 for management quota counselling."
+        "text": "Yes, BVP offers Management Quota seats for B.Tech as per GGSIPU regulations. Per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27), 10% of total seats at unaided affiliated colleges are reserved as Management Quota. The candidate must still have qualified JEE Main / GGSIPU CET / CUET per Important Instruction #21. Call us at 9899991342 for management quota counselling."
       }
     },
     {
@@ -89,7 +89,7 @@ include 'include/components/breadcrumb-schema.php';
 <section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
 <div class="container text-center">
 <h1 class="white ft-35">
-Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
+Bharati Vidyapeeth's College of Engineering – Complete IPU Admission Guide
 </h1>
 </div>
 <div class="banner-shape"></div>
@@ -106,7 +106,7 @@ Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
 <li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">Bharatiya Vidya Bhavan Engineering College</li>
+<li class="breadcrumb-item active">Bharati Vidyapeeth's College of Engineering</li>
 </ol>
 </nav>
 
@@ -117,15 +117,15 @@ Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/bvb-engineering-college.jpg" class="main-img" alt="Bharatiya Vidya Bhavan Engineering College IP University">
+<img fetchpriority="high" decoding="async" src="assets/images/bvb-engineering-college.jpg" class="main-img" alt="Bharati Vidyapeeth's College of Engineering IP University">
 
 
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
-<h2>About Bharatiya Vidya Bhavan Engineering College (IP University)</h2>
+<h2>About Bharati Vidyapeeth's College of Engineering (IP University)</h2>
 
 <p>
-Bharatiya Vidya Bhavan Engineering College is an affiliated institute under Guru Gobind Singh Indraprastha University (GGSIPU). Located in Paschim Vihar, Delhi, the college provides engineering, media and computer application programs aligned with industry requirements.
+Bharati Vidyapeeth's College of Engineering (BVP) is an unaided affiliated institute under Guru Gobind Singh Indraprastha University (GGSIPU), listed at Sr. No. 11 in UG Brochure 2026-27 Ch 13. Located in Paschim Vihar, Delhi, the college provides engineering, media and computer application programs aligned with industry requirements. (Note: this is Bharati Vidyapeeth — a separate trust from Bharatiya Vidya Bhavan, which has a different KG Marg Delhi campus that does NOT offer engineering under IPU.)
 </p>
 
 <ul>
@@ -245,7 +245,7 @@ Master of Computer Applications program focuses on software development, program
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT College Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura</a></li>
 <li><a href="b-tech-colleges-under-IP-university.php">Top B.Tech Colleges under IPU</a></li>
 </ul>
 
@@ -255,7 +255,7 @@ Master of Computer Applications program focuses on software development, program
 <!-- Fee & Seat Intake -->
 <div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
   <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
-  <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
+  <p style="font-size:13px;color:#64748b;margin-bottom:12px">Source: 6th SFRC Delhi Gazette Notification — F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i) of UG Brochure 2026-27)</p>
   <table style="width:100%;border-collapse:collapse;font-size:14px">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
@@ -280,7 +280,7 @@ Master of Computer Applications program focuses on software development, program
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is Bharatiya Vidya Bhavan Engineering College affiliated with IP University?</h3>
+<h3>Is Bharati Vidyapeeth's College of Engineering affiliated with IP University?</h3>
 <p>Yes, the college is affiliated with Guru Gobind Singh Indraprastha University (GGSIPU).</p>
 
 <h3>Which courses are offered?</h3>
@@ -360,7 +360,7 @@ Master of Computer Applications program focuses on software development, program
         <h3 style="color: #0b2c5d; margin-bottom: 10px;">VIPS Pitampura</h3>
         <p style="color: #666; margin-bottom: 10px; font-size: 13px;">Law & Management Institute</p>
         <p style="font-size: 12px; margin-bottom: 15px;"><strong>Programs:</strong> Law, BBA</p>
-        <a href="vips-pitampura-courses.php" 
+        <a href="vips-admission.php" 
            style="background: #0b2c5d; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 12px;">
           Explore VIPS
         </a>

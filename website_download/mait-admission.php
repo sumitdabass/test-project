@@ -92,14 +92,19 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech AI & Machine Learning</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA (Bachelor of Business Administration)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BJMC (Bachelor of Journalism & Mass Communication)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">360 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">300</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering (EEE)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Mechanical Engineering (ME)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech CST</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (AI&ML)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech CSE (AI)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (Data Science)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electronics Engineering (VLSI Design & Tech)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech ECE (Advanced Communication Tech)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA (Bachelor of Business Administration)</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">180</td></tr>
     </tbody>
   </table>
 
@@ -158,7 +163,7 @@ include 'include/components/hero-banner.php';
   <!-- Fee & Seat Intake -->
   <div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
     <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
-    <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
+    <p style="font-size:13px;color:#64748b;margin-bottom:12px">Source: UG Brochure 2026-27 Ch 13 SN 47 (MAIT seat intake) + 6th SFRC Notification F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i)) for fees</p>
     <table style="width:100%;border-collapse:collapse;font-size:14px">
       <thead>
         <tr style="background:#0d1b6e;color:#fff">
@@ -170,14 +175,14 @@ include 'include/components/hero-banner.php';
       <tbody>
         <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">360</td></tr>
         <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">300</td></tr>
         <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
         <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
         <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
         <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
       </tbody>
     </table>
-    <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at MAIT: ~780.</p>
+    <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: UG Brochure 2026-27 Ch 13 SN 47 (MAIT) + 6th SFRC Notification dated 14.07.2025. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Note: this fee table shows 7 of MAIT's 12+ B.Tech streams; for the complete brochure-listed programmes (incl. ME, CST, AI, CSE-AI, VLSI, Adv Comm) see the courses table above. MAIT also offers BBA 120 + MBA 180.</p>
   </div>
 
 </div>

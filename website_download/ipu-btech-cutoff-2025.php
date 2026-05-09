@@ -71,7 +71,7 @@ include 'include/components/hero-banner.php';
     'Maharaja Surajmal Institute Technology'                      => ['short' => 'MSIT Janakpuri',        'page' => '/msit-admission.php'],
     'Bharati Vidyapeeths College of Engineering'                  => ['short' => 'BVCOE Paschim Vihar',   'page' => '/BVP.php'],
     'Bhagwan Parshuram Institute of Technology'                   => ['short' => 'BPIT Rohini',           'page' => '/BPIT.php'],
-    'Vivekananda Institute of Professional Studies'               => ['short' => 'VIPS Pitampura',        'page' => '/vips-pitampura-courses.php'],
+    'Vivekananda Institute of Professional Studies'               => ['short' => 'VIPS Pitampura',        'page' => '/vips-admission.php'],
     'Guru Teg Bahadur Institute of Technology'                    => ['short' => 'GTBIT Rajouri Garden',  'page' => '/gtbit-admission.php'],
     'Guru Tegh Bahadur 4th Centenary Engineering College'         => ['short' => 'GTB-4CEC',              'page' => '/gtb4cec-admission.php'],
     'Dr. Akhilesh Das Gupta Institute of Professional Studies'    => ['short' => 'ADGITM Shastri Park',   'page' => '/adgitm-admission.php'],

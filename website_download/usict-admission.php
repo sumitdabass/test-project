@@ -82,7 +82,8 @@ include 'include/components/hero-banner.php';
   <p>Established as a constituent school of GGSIPU, USICT operates directly from the university campus. Unlike affiliated colleges, USICT is managed and funded by IPU itself, giving students access to superior infrastructure, faculty, and research facilities. The school is NAAC-accredited and approved by AICTE.</p>
   <p>USICT's proximity to the Delhi Metro (Dwarka Sector 14 station) and its modern campus with hostels, Wi-Fi, sports complex, and central library make it a top choice for engineering aspirants in Delhi NCR.</p>
 
-  <h2>Courses Offered at USICT</h2>
+  <h2>Courses Offered at USIC&amp;T (per UG Brochure 2026-27 Ch 13 SN 1)</h2>
+  <p style="font-size:14px;color:#64748b;margin-bottom:8px"><strong>Important:</strong> USIC&amp;T does NOT offer standalone 4-year B.Tech programmes &mdash; all undergraduate engineering at USIC&amp;T is the integrated <strong>5-year B.Tech/M.Tech Dual-Degree</strong> format. M.Tech (Regular) seats are smaller (21-29) than the Dual-Degree seats; the Dual-Degree pathway is the primary one. M.Tech VLSI Design / Information Security / Cyber Security &amp; Block Chain / AI mentioned on older versions of this page are NOT in the 2026-27 brochure for USIC&amp;T.</p>
   <table style="width:100%;border-collapse:collapse;margin:16px 0">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
@@ -92,18 +93,18 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MCA (Software Engineering)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Computer Science & Engineering</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Information Technology</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech VLSI Design</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Information Security</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech Cyber Security & Block Chain Technology</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech Artificial Intelligence</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD (Various Specializations)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech/M.Tech Dual-Degree (CSE)</td><td style="padding:10px 14px">5 Years (DD)</td><td style="padding:10px 14px">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech/M.Tech Dual-Degree (IT)</td><td style="padding:10px 14px">5 Years (DD)</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech/M.Tech Dual-Degree (ECE)</td><td style="padding:10px 14px">5 Years (DD)</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech/M.Tech Dual-Degree (CSE-AI)</td><td style="padding:10px 14px">5 Years (DD)</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech/M.Tech Dual-Degree (CSE-DS)</td><td style="padding:10px 14px">5 Years (DD)</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MCA (SE — Software Engineering)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech CSE (Regular)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">21</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech IT (Regular)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">29</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech ECE (Regular)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">21</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">M.Tech (Robotics &amp; Automation) (Regular)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">21</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">M.Tech (Robotics &amp; AI) (Code 156, NEW)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">per brochure</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">PhD (Various Specialisations)</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
 

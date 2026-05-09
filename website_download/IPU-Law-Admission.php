@@ -54,7 +54,7 @@ include 'include/components/breadcrumb-schema.php';
       "name": "Does IPU offer 3-year LLB?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GGSIPU primarily offers 5-year integrated BA LLB and BBA LLB programmes at its affiliated law colleges; the 3-year LLB course is offered at Campus Law Centre and other Delhi University colleges, not at IPU. However, IPU does offer LLM (2-year postgraduate) for law graduates. Call 9899991342 for course clarification."
+        "text": "Yes — GGSIPU offers a 3-year LLB (Programme Code 238) at USLLS (Dwarka campus, 60 seats), VIPS-TC Pitampura and CPJ Narela per UG Brochure 2026-27 Ch 2 p.63. The 3-yr LLB is graduate-entry (after a Bachelor's degree) and admitted only through GGSIPU CET — CUET does NOT apply. GGSIPU also offers the 5-year integrated BA-LLB / BBA-LLB (Code 121) and the 1-year LL.M. (Code 112). See the dedicated 3-Year LLB page for details. Call 9899991342 for course clarification."
       }
     },
     {
@@ -125,7 +125,7 @@ IPU Law Admission 2026 – Eligibility, CLAT, Colleges & Counselling Guide
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
-<p>Integrated 5-year law (BA-LLB and BBA-LLB) admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at the on-campus University School of Law &amp; Legal Studies (USL&amp;LS — BA-LLB 120 + BBA-LLB 60) and across 12+ affiliated colleges in Delhi NCR with a combined intake of approximately 2,400+ seats (1,500+ BA-LLB and 900+ BBA-LLB). The largest single-college intake is at VIPS-TC Pitampura (540 seats — BA-LLB 300 + BBA-LLB 240), followed by Fairfield Bijwasan (320) and Delhi Metropolitan Education Noida (300). USL&amp;LS also offers 3-year LLB (60 seats) and four 1-year LLM specialisations. Admission is through CUET (UG) or CLAT followed by centralised online counselling at ipu.ac.in. USL&amp;LS tuition is Rs. 1,45,200/year (total Rs. 1,80,700/year); affiliated colleges charge Rs. 1,15,000-1,55,000/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: Class 12 with min 50% (45% reserved), max age 22 (24 reserved) per BCI rules. For free admission counselling call 9899991342.</p>
+<p>Integrated 5-year law (BA-LLB and BBA-LLB) admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at the on-campus University School of Law &amp; Legal Studies (USL&amp;LS — BA-LLB 120 + BBA-LLB 60) and across 12+ affiliated colleges in Delhi NCR with a combined intake of approximately 2,400+ seats (1,500+ BA-LLB and 900+ BBA-LLB). The largest single-college intake is at VIPS-TC Pitampura (540 seats — BA-LLB 300 + BBA-LLB 240), followed by Fairfield Bijwasan (320) and Delhi Metropolitan Education Noida (300). USL&amp;LS also offers 3-year LLB (60 seats) and four 1-year LLM specialisations. Admission priority per UG Brochure 2026-27 Table 1.1 (Code 121) is <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>, followed by centralised online counselling at ipu.ac.in. USL&amp;LS tuition is Rs. 1,45,200/year (total Rs. 1,80,700/year); affiliated colleges charge Rs. 1,15,000-1,55,000/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: Class 12 with min 50% (45% reserved), max age 22 (24 reserved) per BCI rules. For free admission counselling call 9899991342.</p>
 </section>
 
 <h2>IPU Law Admission 2026 Overview</h2>
@@ -400,7 +400,7 @@ include 'include/components/related-pages.php';
   "@context": "https://schema.org",
   "@type": "Course",
   "name": "Integrated 5-Year Law (BA-LLB / BBA-LLB Hons.) at Guru Gobind Singh Indraprastha University",
-  "description": "5-year integrated law programmes offered at USL&LS (on-campus) and 12+ affiliated colleges with combined intake of 2,400+ seats per the 2026-27 brochure. USL&LS also offers 3-year LLB and four 1-year LLM specialisations. Admission via CUET (UG) or CLAT.",
+  "description": "5-year integrated law programmes (Programme Code 121) offered at USL&LS (on-campus) and 12+ affiliated colleges with combined intake of 2,400+ seats per the 2026-27 brochure. USL&LS also offers 3-year LLB (Code 238) and four 1-year LLM specialisations (Code 112). Admission priority for Code 121: 1. CLAT UG 2026 / 2. CUET#.",
   "provider": {
     "@type": "CollegeOrUniversity",
     "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",

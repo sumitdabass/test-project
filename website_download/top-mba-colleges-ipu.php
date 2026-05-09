@@ -104,14 +104,14 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" class="ai-summary-box">
     <p class="label">AI Summary</p>
-    <p class="body">The top 10 MBA colleges under IP University (GGSIPU) in 2026 are led by <strong>USMS</strong> (the university's own management school in Dwarka), followed by <strong>MAIMS</strong>, <strong>RDIAS</strong>, <strong>JIMS Rohini</strong> and <strong>Tecnia</strong>. Fees range from Rs 1.10 lakh to Rs 1.60 lakh per year — roughly one-third of private B-schools. Admission priority is <strong>CAT 2025 &rarr; CMAT 2026 &rarr; IPU CET PG 2026</strong>. Placements range from 4-18 LPA with USMS leading. Call <a href="tel:+919899991342">9899991342</a> for free MBA college selection guidance.</p>
+    <p class="body">The top 10 MBA colleges under IP University (GGSIPU) in 2026 are led by <strong>USMS</strong> (the university's own management school in Dwarka), followed by <strong>MAIMS</strong>, <strong>RDIAS</strong>, <strong>JIMS Rohini</strong> and <strong>Tecnia</strong>. Fees range from Rs 1.10 lakh (smaller affiliated colleges) to <strong>Rs 1.93 lakh at USMS</strong> per PG Brochure 2026-27 §14.1H — still roughly one-third of private B-schools. Admission priority per Table 1.1 (Code 101): <strong>1. CAT 2025 &rarr; 2. CMAT 2026 &rarr; 3. CET &rarr; 4. CUET#</strong>. Placements range from 4-18 LPA with USMS leading. Call <a href="tel:+919899991342">9899991342</a> for free MBA college selection guidance.</p>
   </section>
 
   <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>
 
   <h1 style="color:#0d1b6e;font-size:32px;margin-bottom:16px">Top 10 MBA Colleges in IPU 2026</h1>
 
-  <p style="font-size:16px;line-height:1.8;color:#334155">Guru Gobind Singh Indraprastha University (GGSIPU) hosts some of the most affordable and career-focused MBA programmes in Delhi-NCR. With fees starting from just Rs 1.10 lakh per year and strong placement records at colleges like USMS, MAIMS and JIMS Rohini, an IPU MBA offers outstanding return on investment compared to private B-schools. This guide ranks the <strong>top 10 MBA colleges under IP University</strong> for 2026 admissions based on placements, faculty, alumni network and fees. Call <a href="tel:+919899991342" style="color:#0d1b6e;font-weight:700">9899991342</a> for free expert MBA counselling.</p>
+  <p style="font-size:16px;line-height:1.8;color:#334155">Guru Gobind Singh Indraprastha University (GGSIPU) hosts some of the most affordable and career-focused MBA programmes in Delhi-NCR. With fees ranging from Rs 1.10 lakh/year at affiliated colleges to Rs 1.93 lakh/year at USMS (per PG Brochure 2026-27 §14.1H) and strong placement records at colleges like USMS, MAIMS and JIMS Rohini, an IPU MBA offers outstanding return on investment compared to private B-schools (Rs 10-20 lakh/year). This guide ranks the <strong>top 10 MBA colleges under IP University</strong> for 2026 admissions based on placements, faculty, alumni network and fees. Call <a href="tel:+919899991342" style="color:#0d1b6e;font-weight:700">9899991342</a> for free expert MBA counselling.</p>
 
   <h2 class="section-h2">Top 10 MBA Colleges Under IPU 2026 – Comparison Table</h2>
   <div style="overflow-x:auto">
@@ -127,7 +127,7 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr><td><strong>1</strong></td><td><a href="#usms" style="color:#0d1b6e;font-weight:700">USMS</a></td><td>Dwarka Sec 16C</td><td>Rs 1,30,000</td><td>Govt / CAT</td><td>8-18 LPA</td></tr>
+      <tr><td><strong>1</strong></td><td><a href="#usms" style="color:#0d1b6e;font-weight:700">USMS</a></td><td>Dwarka Sec 16C</td><td>Rs 1,93,600</td><td>Govt / CAT</td><td>8-18 LPA</td></tr>
       <tr><td><strong>2</strong></td><td><a href="#maims" style="color:#0d1b6e;font-weight:700">MAIMS</a></td><td>Rohini</td><td>Rs 1,30,000</td><td>55+ %ile</td><td>6-12 LPA</td></tr>
       <tr><td><strong>3</strong></td><td><a href="#rdias" style="color:#0d1b6e;font-weight:700">RDIAS</a></td><td>Rohini</td><td>Rs 1,40,000</td><td>50+ %ile</td><td>5-10 LPA</td></tr>
       <tr><td><strong>4</strong></td><td><a href="#jims" style="color:#0d1b6e;font-weight:700">JIMS Rohini</a></td><td>Rohini</td><td>Rs 1,60,000</td><td>60+ %ile</td><td>7-14 LPA</td></tr>
@@ -146,7 +146,7 @@ include 'include/components/hero-banner.php';
   <div class="college-block" id="usms">
     <h3><span class="rank-badge">1</span>USMS – University School of Management Studies</h3>
     <p><strong>Location:</strong> Sector 16C, Dwarka &nbsp;|&nbsp; <strong>Type:</strong> Government (Constituent School of GGSIPU)</p>
-    <p><strong>Seats:</strong> MBA 60 + MBA International Business 60 &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,30,000/year &nbsp;|&nbsp; <strong>Placement:</strong> 8-18 LPA average</p>
+    <p><strong>Seats:</strong> MBA 60 + MBA International Business 60 &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,93,600/year tuition (Total Y1 Rs 2,29,100 per PG Brochure 2026-27 §14.1H) &nbsp;|&nbsp; <strong>Placement:</strong> 8-18 LPA average</p>
     <p>USMS is the flagship management school of GGSIPU and consistently ranks as the <strong>best MBA college in IPU</strong>. Located on the Dwarka campus alongside USICT, it offers two flagship MBA programmes — general MBA and MBA in International Business. Entry priority follows CAT 2025 &rarr; CMAT 2026 &rarr; IPU CET PG. Top recruiters include Deloitte, KPMG, ICICI Bank, HDFC, TCS and Infosys. With its government status, low fees and strong faculty, USMS offers unmatched value for money.</p>
   </div>
 
@@ -219,7 +219,7 @@ include 'include/components/hero-banner.php';
 
   <h2 class="section-h2">Why Choose IPU for MBA in 2026?</h2>
   <ul style="font-size:15px;line-height:1.9;color:#334155;padding-left:22px">
-    <li><strong>Affordable fees:</strong> Rs 1.10-1.60 lakh/year vs Rs 10-20 lakh at private B-schools.</li>
+    <li><strong>Affordable fees:</strong> Rs 1.10-1.93 lakh/year (Rs 1.93L USMS, Rs 1.10-1.60L affiliated per 6th SFRC) vs Rs 10-20 lakh at private B-schools.</li>
     <li><strong>Multiple entry exams accepted:</strong> CAT, CMAT and IPU CET PG — giving students flexibility.</li>
     <li><strong>Strong Delhi-NCR corporate network:</strong> Top recruiters across BFSI, consulting and IT.</li>
     <li><strong>Government recognition:</strong> USMS is a constituent school of GGSIPU, ensuring high credibility.</li>
@@ -251,13 +251,13 @@ include 'include/components/hero-banner.php';
 <?php
 $faqs = [
   ['question' => 'Which is the best MBA college in IPU?', 'answer' => 'USMS (University School of Management Studies), Dwarka is the best MBA college under IP University. As a constituent school of GGSIPU, it offers the lowest fees, best faculty and highest placements (8-18 LPA). MAIMS, JIMS Rohini and RDIAS are the next best options. Call 9899991342 for personalised MBA college recommendations.'],
-  ['question' => 'What is the MBA fee at USMS?', 'answer' => 'The MBA fee at USMS is approximately Rs 1,30,000 per year, making it one of the most affordable full-time MBA programmes in Delhi. The total 2-year MBA cost is around Rs 2.6 lakh — significantly lower than private B-schools.'],
+  ['question' => 'What is the MBA fee at USMS?', 'answer' => 'USMS MBA (Programme Code 101) tuition is Rs 1,93,600 per year per PG Brochure 2026-27 §14.1H (Total Y1 ~Rs 2,29,100 incl. university charges). That is competitive vs private B-schools (Rs 10-20 lakh/year). Affiliated MBA colleges charge per the 6th SFRC Notification dated 14.07.2025. Call 9899991342 for the exact fee breakdown.'],
   ['question' => 'Is CAT mandatory for IPU MBA 2026?', 'answer' => 'CAT is not mandatory but is given the highest priority in IPU MBA admissions. The priority order is CAT 2025 → CMAT 2026 → IPU CET PG 2026. Students with valid scores in any of these exams can apply for IPU MBA.'],
   ['question' => 'What are placements at USMS MBA?', 'answer' => 'USMS MBA placements range from 8-18 LPA with an average around 10-12 LPA. Top recruiters include Deloitte, KPMG, ICICI Bank, HDFC, TCS, Infosys and Genpact. Finance, consulting and analytics roles dominate the placement scene.'],
   ['question' => 'Is MAIMS good for MBA?', 'answer' => 'Yes, MAIMS (Maharaja Agrasen Institute of Management Studies) is a strong option for MBA under IPU. It ranks #2 after USMS with fees of Rs 1.30 lakh/year and placements in the 6-12 LPA range. The college is known for its disciplined curriculum and strong alumni network in BFSI.'],
   ['question' => 'What is the MBA admission process in IPU 2026?', 'answer' => 'IPU MBA admission is through centralised counselling. Steps: (1) Register online on ipu.ac.in, (2) Enter CAT/CMAT/CET scores, (3) Pay counselling fee, (4) Document verification, (5) Choice filling, (6) Seat allotment, (7) Fee payment and reporting. Call 9899991342 for step-by-step help.'],
   ['question' => 'What is the CAT cutoff for USMS?', 'answer' => 'USMS typically accepts CAT scores with a sectional percentile of 70+ and overall 75-85+ percentile for general category. Actual cutoffs vary year-to-year based on applications and seat availability. Reserved categories have relaxed cutoffs.'],
-  ['question' => 'Is IPU MBA worth it compared to private colleges?', 'answer' => 'Yes, IPU MBA offers excellent ROI compared to private B-schools. Fees are Rs 1.10-1.60 lakh/year vs Rs 10-20 lakh at private colleges, while placements at top IPU B-schools (USMS, JIMS, MAIMS) are competitive with Tier-2 private institutes. For cost-conscious aspirants, IPU MBA is definitely worth it.']
+  ['question' => 'Is IPU MBA worth it compared to private colleges?', 'answer' => 'Yes, IPU MBA offers excellent ROI compared to private B-schools. Fees are Rs 1.10-1.93 lakh/year (Rs 1.93L at USMS per PG Brochure §14.1H, Rs 1.10-1.60L at affiliated colleges per 6th SFRC) vs Rs 10-20 lakh at private colleges, while placements at top IPU B-schools (USMS, JIMS, MAIMS) are competitive with Tier-2 private institutes. For cost-conscious aspirants, IPU MBA is definitely worth it.']
 ];
 include 'include/components/faq-section.php';
 ?>

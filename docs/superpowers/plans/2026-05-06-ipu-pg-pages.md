@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Refresh `mba-admission-ip-university.php` and `mca-admission-ipu.php` with PG-brochure-cited specifics, and ship a new evergreen `law-3-year-admission-ipu.php` (Programme Code 238).
+**Goal:** Refresh `mba-admission-ip-university.php` (Programme Code 101) and `mca-admission-ipu.php` (Programme Code 105) with PG-brochure-cited specifics, ship a new evergreen `law-3-year-admission-ipu.php` (Programme Code 238 — sourced from UG brochure), and ship a new `llm-admission-ipu.php` (Programme Code 112 — PG-brochure-sourced, CLAT-PG entry).
 
 **Architecture:** Vanilla PHP files under `website_download/`. No framework, no build step. Brochure data is the only authoritative source for fees, eligibility, intake, entrance accept-list — all numeric/policy claims must be brochure-cited. Cross-link, sitemap, llms.txt, blog.php updates follow the established CUET-pages pattern (see `upload_cuet_pages_2026.py`).
 

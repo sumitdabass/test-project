@@ -42,7 +42,7 @@ BA Economics (Hons) Admission in IP University (GGSIPU)
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/economics-admission-2025.jpg" class="main-img" alt="BA Economics IP University Admission">
+<img fetchpriority="high" decoding="async" src="assets/images/economics-admission-2025.jpg" class="main-img" alt="BA Economics IP University Admission">
 
 <h2>BA Economics (Hons) Admission in IP University</h2>
 
@@ -61,7 +61,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers BA Economics (Hons) th
 
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php"><strong>MAIT (Maharaja Agrasen Institute of Technology)</strong></a></li>
-<li><a href="vips-pitampura-courses.php"><strong>VIPS Pitampura</strong></a></li>
+<li><a href="vips-admission.php"><strong>VIPS Pitampura</strong></a></li>
 <li><strong>JIMS Rohini</strong></li>
 </ul>
 

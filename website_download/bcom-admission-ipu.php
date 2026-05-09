@@ -69,16 +69,21 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">IPU offers B.Com (Hons) at several affiliated colleges in Delhi. Admission is through CUET scores via GGSIPU counselling. The programme is 3 years, with annual fees ranging from Rs 40,000 to Rs 1.5 lakh depending on the college. B.Com from IPU colleges provides a strong foundation for CA, CS, CMA, and MBA careers.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">IPU offers B.Com (Hons) at USMS (on-campus, 60 seats) and several affiliated colleges in Delhi. Admission priority per UG Brochure 2026-27 Table 1.1 (Code 146): <strong>1. GGSIPU CET</strong> / <strong>2. CUET#</strong> (CUET fills vacant seats per Important Instruction #37). The programme is 4 years (NEP 2020 four-year UG framework), with annual fees ranging from Rs 70,000 to Rs 1.2 lakh at affiliated colleges and Rs 1,21,000/year tuition at USMS. B.Com from IPU colleges provides a strong foundation for CA, CS, CMA, and MBA careers.</p>
   </section>
-  <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+  <?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
+
+  <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+  <section id="ai-summary" style="display:none">
+  <p>B.Com (Hons.) admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at the on-campus University School of Management Studies (USMS, 60 seats) and across 25+ affiliated colleges in Delhi NCR with a combined intake of approximately 2,000+ seats. The largest single-college intake is at VIPS-TC Pitampura (300 seats — 180 Shift 1 + 120 Shift 2), followed by MAIMS Rohini (240). Admission priority per UG Brochure 2026-27 Table 1.1 (Code 146) is <strong>1. GGSIPU CET</strong> / <strong>2. CUET#</strong> (CUET fills vacant seats per Important Instruction #37), followed by centralised online counselling at ipu.ac.in. USMS tuition is Rs. 1,21,000/year (total Rs. 1,56,500/year incl. all charges); affiliated colleges charge Rs. 70,000-1,20,000/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: 50% in aggregate in 10+2 with pass in five subjects (one language + four electives) and English pass (45% reserved). The programme is 4 years (NEP 2020). For free admission counselling call 9899991342.</p>
+  </section>
 
   <h1>IPU B.Com Admission 2026 – Complete Guide</h1>
 
-  <p>Guru Gobind Singh Indraprastha University (GGSIPU) offers the Bachelor of Commerce (B.Com) programme through its network of affiliated colleges across Delhi. With CUET-based admission and competitive fees, IPU B.Com is a popular choice for commerce students who want quality education in the national capital. For admission guidance, call <a href="tel:+919899991342">9899991342</a> for free counselling.</p>
+  <p>Guru Gobind Singh Indraprastha University (GGSIPU) offers the Bachelor of Commerce (Honours) programme (Programme Code 146) at USMS (on-campus, 60 seats) and through its network of 25+ affiliated colleges across Delhi NCR. Admission priority per UG Brochure 2026-27 Table 1.1: <strong>1. GGSIPU CET (primary)</strong> / <strong>2. CUET# (vacant-seat fallback)</strong>. With competitive fees, IPU B.Com is a popular choice for commerce students who want quality education in the national capital. For admission guidance, call <a href="tel:+919899991342">9899991342</a> for free counselling.</p>
 
   <h2>B.Com Programme at IPU – Overview</h2>
-  <p>The B.Com (Hons) programme under IPU is a 3-year undergraduate course that covers core commerce subjects including accounting, business law, taxation, economics, and financial management. The curriculum is aligned with UGC guidelines and prepares students for professional exams like CA, CS, and CMA.</p>
+  <p>The B.Com (Hons) programme under IPU is a 4-year undergraduate course (NEP 2020 four-year UG framework, Programme Code 146) that covers core commerce subjects including accounting, business law, taxation, economics, and financial management. The curriculum is aligned with UGC guidelines and prepares students for professional exams like CA, CS, and CMA.</p>
   <p>IPU's B.Com programme stands out for its practical orientation, industry exposure through affiliated colleges, and affordable fee structure compared to private universities.</p>
 
   <h2>Colleges Offering B.Com Under IPU</h2>
@@ -99,39 +104,43 @@ include 'include/components/hero-banner.php';
     </tbody>
   </table>
 
-  <h2>B.Com Admission Process via CUET</h2>
-  <p>IPU B.Com admission is based on <strong>CUET (Common University Entrance Test)</strong> scores. The process involves:</p>
+  <h2>B.Com Admission Process — GGSIPU CET (Primary) + CUET (Vacant-Seat Fallback)</h2>
+  <p>IPU B.Com admission priority per UG Brochure 2026-27 Table 1.1 is <strong>1. GGSIPU CET (BCom)</strong> first, then <strong>2. CUET (UG)</strong> for the vacant-seat round per Important Instruction #37. The process involves:</p>
   <ol>
-    <li><strong>Register and appear for CUET 2026</strong> – Conducted by NTA, typically in May-June.</li>
-    <li><strong>Register on IPU Portal</strong> – Complete online registration at ipu.ac.in with CUET scores.</li>
+    <li><strong>Register and appear for GGSIPU CET (BCom)</strong> – Primary entrance conducted by the University. CET paper structure: General English (25%), Logical Reasoning (25%), Data Interpretation (35%), General Awareness (15%).</li>
+    <li><strong>Register and appear for CUET (UG) 2026 too</strong> (recommended) – Conducted by NTA, typically in May-June. Used for the vacant-seat round and management quota qualification.</li>
+    <li><strong>Register on IPU Portal</strong> – Complete online registration at ipu.ac.in with CET / CUET scores.</li>
     <li><strong>Choose Colleges</strong> – Select preferred colleges offering B.Com during the choice-filling window.</li>
-    <li><strong>Seat Allotment</strong> – Based on CUET score, category, and preference order.</li>
+    <li><strong>Seat Allotment</strong> – Based on CET score (priority 1) or CUET score (priority 2), category, and preference order.</li>
     <li><strong>Document Verification</strong> – Report to the allotted college and complete admission formalities.</li>
   </ol>
-  <p>Not sure which CUET subjects to take for B.Com? Call <a href="tel:+919899991342">9899991342</a> for free expert advice.</p>
+  <p>Not sure which entrance test to focus on? Call <a href="tel:+919899991342">9899991342</a> for free expert advice.</p>
+
+  <p>👉 Detailed CUET-specific guide: <a href="cuet-bcom-admission-ipu.php"><strong>IPU B.Com Admission Through CUET (UG) &mdash; papers, vacant seats &amp; management quota</strong></a></p>
 
   <h2>Eligibility Criteria</h2>
   <ul>
-    <li>Passed Class 12 from a recognised board with Commerce stream</li>
-    <li>Minimum 50% aggregate marks (45% for SC/ST)</li>
-    <li>Valid CUET 2026 score</li>
+    <li>Passed Class 12 from a recognised board with pass in five subjects (one language + four electives) — Commerce stream is NOT mandatory per brochure</li>
+    <li>Minimum 50% aggregate marks (45% for SC/ST/OBC/PwD)</li>
+    <li>English pass (core / elective / functional) is mandatory</li>
+    <li>Valid GGSIPU CET (BCom) score (primary) or CUET (UG) 2026 score (vacant-seat fallback)</li>
     <li>Delhi residency may be required for some seat categories</li>
   </ul>
 
   <h2>Detailed Eligibility (Programme Code 146)</h2>
   <ul>
-    <li>Class 12 with Mathematics / Accountancy / Business Studies / Economics &mdash; minimum <strong>50% aggregate</strong> (45% for SC/ST)</li>
-    <li>Commerce stream is preferred but not mandatory</li>
+    <li>50% in aggregate in 10+2 examination with pass in five subjects (one language + four elective subjects), per UG Brochure 2026-27 Ch 2 p.55</li>
+    <li>English pass (core / elective / functional) is mandatory</li>
+    <li>No specific stream required — Commerce/Science/Arts all eligible</li>
     <li>Final-year Class 12 students may also apply (provisional)</li>
   </ul>
 
-  <h2>Entrance Test &mdash; CUET (UG) 2026</h2>
-  <p>B.Com admission at IPU is through <strong>CUET (UG) 2026</strong>. Recommended domain subjects for the best score combination:</p>
+  <h2>Entrance Test &mdash; GGSIPU CET (BCom) Primary / CUET (UG) Vacant-Seat Fallback</h2>
+  <p>B.Com admission priority per UG Brochure 2026-27 Table 1.1 is <strong>1. GGSIPU CET</strong> followed by <strong>2. CUET#</strong>. The GGSIPU CET (BCom) paper structure: General English (25%), Logical Reasoning (25%), Data Interpretation (35%), General Awareness (15%). Recommended CUET (UG) papers per brochure for the vacant-seat round:</p>
   <ul>
-    <li>Accountancy</li>
-    <li>Business Studies</li>
-    <li>Economics</li>
-    <li>General Test &amp; English (Language paper)</li>
+    <li>Section IA: English (Code 101)</li>
+    <li>Section II: Accountancy / Book Keeping (Code 301)</li>
+    <li>Section III: General Aptitude Test (Code 501)</li>
   </ul>
 
   <h2>Fee Structure 2026-27</h2>
@@ -140,7 +149,7 @@ include 'include/components/hero-banner.php';
   <h2>Refund Policy (UGC Norms)</h2>
   <p>GGSIPU follows the UGC refund policy. Withdrawal with refund of entire fees (after deduction of Rs. 1,000 processing charges) is allowed up to 15 days before classes commence. After classes start: 100% refund before classes start, 80% within 15 days of commencement, 50% within 30 days, and no refund after 30 days.</p>
 
-  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Com admission guidance.</em></p>
+  <p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU UG Admission Brochure 2026-27 (Ch 2 p.55 eligibility, Table 1.1 entrance priority, Ch 14 fee structure). Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Com admission guidance.</em></p>
 
   <h2>Career Scope After B.Com from IPU</h2>
   <ul>
@@ -165,14 +174,15 @@ include 'include/components/hero-banner.php';
 <!-- CTA Strip -->
 <?php $cta_heading = "Need Help with B.Com Admission at IPU?"; $cta_subtext = "Get free counselling on CUET preparation, college selection and fees"; include 'include/components/cta-strip.php'; ?>
 
-<!-- FAQ Section -->
+<!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php
 $faqs = [
-  ['question' => 'How to get admission in B.Com at IPU?', 'answer' => 'B.Com admission at IPU is through CUET scores. Register on ipu.ac.in, fill college preferences, and participate in counselling. Call 9899991342 for free guidance.'],
-  ['question' => 'What is the fee for B.Com at IPU colleges?', 'answer' => 'B.Com fees range from Rs 40,000 to Rs 1.5 lakh per year depending on the college. Government-aided colleges have lower fees.'],
-  ['question' => 'Which colleges offer B.Com under IPU?', 'answer' => 'MSI Janakpuri, MAIMS Rohini, VIPS Pitampura, DIAS Rohini, and Trinity Institute Dwarka are among the colleges offering B.Com under IPU.'],
-  ['question' => 'Is CUET mandatory for IPU B.Com admission?', 'answer' => 'Yes, a valid CUET score is required for B.Com admission through GGSIPU counselling for the 2026 session.'],
-  ['question' => 'What career options are available after B.Com from IPU?', 'answer' => 'Graduates can pursue CA, CS, MBA, banking jobs, M.Com, or corporate roles in accounting, taxation, and finance.']
+  ['question' => 'Which colleges offer B.Com (Hons.) under IPU 2026-27?', 'answer' => 'As per the GGSIPU UG Admission Brochure 2026-27 (Chapter 13), B.Com (Hons.) is offered at the University School of Management Studies (USMS, on-campus) and across 25+ affiliated colleges including <a href="vips-admission.php">VIPS Pitampura</a>, <a href="maims-admission.php">MAIMS Rohini</a>, <a href="msi-admission.php">MSI Janakpuri</a>, <a href="dias-admission.php">DIAS Rohini</a>, <a href="dspsr-admission.php">DSPSR Rohini</a>, IITM Janakpuri, JIMS Kalkaji, JIMS Engineering Greater Noida, MERI Janakpuri, Maharaja Surajmal Institute, Trinity Dwarka, Rukmini Devi Rohini, Don Bosco Okhla, Bharatiya Vidya Bhavan, Lingayas, Kasturi Ram Narela, KCC Greater Noida, Tecnia Rohini, Siri Fort Rohini, Kamal Institute Uttam Nagar and Sri Guru Tegh Bahadur IT Model Town.'],
+  ['question' => 'How many B.Com seats does IPU offer in total?', 'answer' => 'The 2026-27 brochure shows roughly <strong>2,000+ B.Com (Hons.) seats</strong> across IPU colleges (Shift 1 + Shift 2 combined). The largest intake is at VIPS Pitampura (300 seats — 180 Shift 1 + 120 Shift 2) followed by MAIMS Rohini (240 — 120 Shift 1 + 120 Shift 2). USMS on-campus offers 60 seats. Final sanctioned intake is notified on ipu.ac.in before counselling.'],
+  ['question' => 'What is the B.Com fee at IPU 2026-27?', 'answer' => 'At <strong>USMS (university campus)</strong> the 2026-27 tuition is Rs. 1,21,000/year, total Rs. 1,56,500/year (incl. exam, university and infrastructure charges) per Part E, Chapter 14 of the brochure. <strong>Affiliated colleges</strong> charge as per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically Rs. 70,000 to Rs. 1.2 lakh per year. Add ~Rs. 25,000 in university charges (university fee Rs. 20,000 + exam Rs. 3,000 + innovation Rs. 500 + alumni Rs. 2,000 one-time + Rs. 1,000 student welfare).'],
+  ['question' => 'Is GGSIPU CET or CUET required for B.Com admission?', 'answer' => 'For 2026-27, B.Com (Hons.) admission priority per UG Brochure 2026-27 Table 1.1 (Code 146) is <strong>1. GGSIPU CET (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>, followed by centralised online counselling at ipu.ac.in. Candidates should appear in BOTH for best chances — CET first, CUET fills any unfilled seats. Call 9899991342 for free guidance.'],
+  ['question' => 'What is the eligibility for B.Com at IPU?', 'answer' => 'Class 12 (10+2) pass with minimum 50% aggregate from a recognised board (45% for SC/ST/OBC/PwD), with at least one of English/Mathematics/Accountancy/Economics/Business Studies as a subject. Per Important Instruction #28 of the 2026-27 brochure, marks are <strong>not rounded off</strong> — 49.99% does not become 50%.'],
+  ['question' => 'Does IPU itself offer B.Com (Hons.) at the university campus?', 'answer' => 'Yes — University School of Management Studies (USMS) at the GGSIPU Dwarka campus offers a 4-year B.Com (Hons.) programme with 60 seats per the 2026-27 brochure. USMS also offers BBA, MBA, MBA (FA/A/W).']
 ];
 include 'include/components/faq-section.php';
 ?>
@@ -186,6 +196,34 @@ $related_pages = [
 ];
 include 'include/components/related-pages.php';
 ?>
+
+<!-- Course Schema (B.Com Hons. at GGSIPU) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Bachelor of Commerce (Hons.) at Guru Gobind Singh Indraprastha University",
+  "description": "4-year B.Com (Hons.) programme (Programme Code 146) offered at USMS (on-campus, 60 seats) and 25+ affiliated colleges under GGSIPU with combined intake of 2,000+ seats per the 2026-27 brochure. Admission priority: 1. GGSIPU CET / 2. CUET#.",
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+    "sameAs": "https://www.ipu.ac.in/"
+  },
+  "educationalCredentialAwarded": "Bachelor of Commerce (Hons.)",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "courseWorkload": "P4Y",
+    "location": {"@type": "Place", "name": "Delhi NCR"}
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition",
+    "priceCurrency": "INR",
+    "priceSpecification": {"@type": "PriceSpecification", "price": "121000", "priceCurrency": "INR", "description": "USMS tuition per annum 2026-27 (affiliated colleges Rs. 70,000-1,20,000)"}
+  }
+}
+</script>
 
 <?php include_once("include/base-footer.php"); ?>
 </body>

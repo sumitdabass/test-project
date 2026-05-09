@@ -51,11 +51,16 @@ IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET & Co
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IP-University-b-tech-admission.jpg"
+<img fetchpriority="high" decoding="async" src="assets/images/IP-University-b-tech-admission.jpg"
 class="main-img"
 alt="IPU B.Tech Admission 2026 Guide">
 
-<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
+
+<!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<section id="ai-summary" style="display:none">
+<p>B.Tech admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at four on-campus University Schools of Studies (USIC&amp;T, USAR, USCT, USBT — combined ~720 seats including B.Tech-M.Tech Dual Degree programmes) and across 20+ affiliated engineering colleges in Delhi NCR with a combined intake of approximately 11,000+ seats. The largest single-college intake is at Echelon Institute Faridabad (~1,000 seats across 14 specialisations) followed by MAIT Rohini (~900 across 14 specialisations). Admission is through JEE Main primary merit followed by centralised online counselling at ipu.ac.in; CUET applies for vacant-seat filling. USS tuition is Rs. 1,69,400/year (total Rs. 2,04,900/year incl. all charges); affiliated colleges charge Rs. 1,41,750-1,55,700/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: Class 12 with PCM, min 55% (50% reserved). For free admission counselling call 9899991342.</p>
+</section>
 
 <h2>Overview of IPU B.Tech Admission 2026–27</h2>
 
@@ -217,6 +222,11 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 <li>Reporting to allotted college.</li>
 </ul>
 
+<p>
+👉 Don't have a JEE Main score? Read our dedicated guide on
+<a href="cuet-btech-admission-ipu.php"><strong>IPU B.Tech Admission Through CUET (UG)</strong></a> &mdash; vacant-seat counselling and management quota route.
+</p>
+
 👉 Detailed counselling guide:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Process Explained</strong></a>
 
@@ -276,6 +286,19 @@ IPU B.Tech admission is competitive and structured. Since JEE Main receives firs
 
 </section>
 
+<!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<?php
+$faqs = [
+  ['question' => 'Which colleges offer B.Tech under IPU 2026-27?', 'answer' => 'Per the GGSIPU UG Admission Brochure 2026-27 (Chapter 13), B.Tech is offered at <strong>4 University Schools of Studies (USS)</strong> on the IPU Dwarka campus — USIC&T (CSE/IT/ECE/CSE-AI/CSE-DS as B.Tech-M.Tech Dual Degree), USAR (CSE-AI&DS / AI&ML / IIOT / Robotics & Automation), USCT (Chemical Engineering / Energy) and USBT (Biotechnology) — and across <strong>20+ affiliated engineering colleges</strong> including <a href="mait-admission.php">MAIT Rohini</a>, <a href="msit-admission.php">MSIT Janakpuri</a>, <a href="BPIT.php">BPIT Rohini</a>, <a href="BVP.php">BVP Paschim Vihar</a>, <a href="adgitm-admission.php">ADGITM (formerly ADGITM/ADGIPS) Shastri Park</a>, <a href="gtbit-admission.php">GTBIT Rajouri Garden</a>, <a href="gtb4cec-admission.php">GTB 4th Centenary Engineering College</a>, <a href="hmr-admission.php">HMR IT&M</a>, JEMTEC Greater Noida, DTC Greater Noida, JIMS Engineering Greater Noida, Trinity Greater Noida, <a href="vips-admission.php">VIPS-TC Pitampura</a>, <a href="dist-admission.php">DIST</a>, Echelon Faridabad, Greater Noida Inst of Tech, Shri Balwant Sonipat, and Tribhuvan College Neemrana.'],
+  ['question' => 'How many B.Tech seats does IPU offer in total?', 'answer' => 'The 2026-27 brochure shows roughly <strong>11,000+ B.Tech seats</strong> across IPU colleges (Shift 1 + Shift 2, all specialisations). USS on-campus alone offers ~720 seats (USICT 540 + USAR 528 across 4 dual-degree programmes + USCT 180). Echelon Faridabad has the largest single-college intake (~1,000+ across 14 specialisations). Final sanctioned intake for 2026-27 is notified on ipu.ac.in before counselling.'],
+  ['question' => 'What is the B.Tech fee at the IPU campus (USS) 2026-27?', 'answer' => 'Per Part E, Chapter 14 of the brochure, B.Tech fee at USIC&T / USAR / USCT for 2026-27 is: tuition Rs. 1,69,400 + university charges Rs. 20,000 + alumni one-time Rs. 2,000 + exam Rs. 3,000 + innovation Rs. 500 + infrastructure Rs. 10,000 = <strong>Rs. 2,04,900 (Year 1 total)</strong>. Year 2: Rs. 2,19,840. Year 3: Rs. 2,38,474. Year 4: Rs. 2,58,971.'],
+  ['question' => 'What is the B.Tech fee at IPU affiliated colleges (MAIT/MSIT/BPIT)?', 'answer' => 'Affiliated colleges charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically <strong>Rs. 1,41,750 to Rs. 1,55,700 per year tuition</strong> for B.Tech, plus Rs. 25,000-30,000 in university charges, exam fee, innovation fee, alumni and welfare contributions. Total annual cost ~Rs. 1,70,000-1,85,000 at most affiliated colleges.'],
+  ['question' => 'What is the eligibility for IPU B.Tech admission?', 'answer' => 'Class 12 (10+2) pass with <strong>Physics, Chemistry & Mathematics (PCM)</strong>, minimum 55% aggregate (50% for SC/ST/OBC/PwD). Admission is through <strong>JEE Main</strong> primary merit followed by centralised online counselling at ipu.ac.in. CUET may apply for vacant-seat filling per Important Instruction #37 of the 2026-27 brochure. Marks are not rounded off (Instruction #28).'],
+  ['question' => 'Which IPU college offers the most B.Tech specialisations 2026-27?', 'answer' => 'Echelon Institute of Technology, Faridabad offers the widest B.Tech menu in IPU per Chapter 13 — 14 specialisations including CSE, ECE, ME, Civil, AI&ML, AI&DS, CSE-Cyber Security, CSE-IOT & Blockchain, Robotics & AI, 3D Modelling & Animation, Architecture & Interior Decoration, Nanoscience & Technology, and Mechatronics. MAIT Rohini also offers 14 specialisations across IT, CSE, ECE, EEE, ME, CST, CSE-AI/AI&ML/DS and Electronics-VLSI/Advanced Communication.']
+];
+include 'include/components/faq-section.php';
+?>
+
 <?php
 $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
@@ -285,33 +308,35 @@ $related_pages = [
 include 'include/components/related-pages.php';
 ?>
 
-<?php include_once("include/base-footer.php"); ?>
-
-
-<!-- FAQ Schema -->
+<!-- Course Schema (B.Tech at GGSIPU) -->
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{
-"@type":"Question",
-"name":"What is eligibility for IPU B.Tech admission?",
-"acceptedAnswer":{"@type":"Answer","text":"Students must secure minimum 55% marks in Class 12 with PCM subjects and qualify JEE Main or CUET as per admission guidelines."}
-},
-{
-"@type":"Question",
-"name":"Which entrance exam has first preference for IPU B.Tech?",
-"acceptedAnswer":{"@type":"Answer","text":"JEE Main is the primary entrance exam. CUET may be considered as secondary pathway depending on official notification."}
-},
-{
-"@type":"Question",
-"name":"Is counselling compulsory for IPU B.Tech?",
-"acceptedAnswer":{"@type":"Answer","text":"Yes, centralized online counselling conducted by GGSIPU is mandatory."}
-}
-]
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Bachelor of Technology (B.Tech) at Guru Gobind Singh Indraprastha University",
+  "description": "4-year B.Tech programme offered at four on-campus University Schools of Studies (USIC&T, USAR, USCT, USBT — combined ~720 seats including B.Tech-M.Tech Dual Degree) and 20+ affiliated engineering colleges with combined intake of 11,000+ seats per the 2026-27 brochure. Admission via JEE Main.",
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+    "sameAs": "https://www.ipu.ac.in/"
+  },
+  "educationalCredentialAwarded": "Bachelor of Technology (B.Tech)",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "courseWorkload": "P4Y",
+    "location": {"@type": "Place", "name": "Delhi NCR"}
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition",
+    "priceCurrency": "INR",
+    "priceSpecification": {"@type": "PriceSpecification", "price": "169400", "priceCurrency": "INR", "description": "USS tuition per annum 2026-27 (affiliated colleges Rs. 1,41,750-1,55,700 per 6th SFRC)"}
+  }
 }
 </script>
+
+<?php include_once("include/base-footer.php"); ?>
 
 <!-- Article Schema -->
 <script type="application/ld+json">

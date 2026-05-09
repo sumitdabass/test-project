@@ -59,7 +59,7 @@ BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide
 
 <p>
 The BA LL.B (Bachelor of Arts + Bachelor of Laws) is a five-year integrated law programme offered by colleges affiliated with Guru Gobind Singh Indraprastha University (GGSIPU).
-Admissions are conducted strictly through CLAT-based counselling ensuring merit-based selection.
+Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong> followed by centralised GGSIPU counselling. CLAT-qualified candidates fill seats first; any remaining vacant seats are then filled from the CUET (UG) merit list.
 </p>
 
 👉 Complete Law Admission Guide:
@@ -74,9 +74,10 @@ Admissions are conducted strictly through CLAT-based counselling ensuring merit-
 <h2>Eligibility Criteria for BA LL.B (GGSIPU)</h2>
 
 <ul>
-<li>Passed Class 12 from recognised board</li>
-<li>Minimum qualifying marks as prescribed by university</li>
-<li>Valid CLAT score (mandatory)</li>
+<li>Passed Class 12 from recognised board with English (core / elective / functional) as a subject</li>
+<li>Minimum 50% aggregate (45% for SC/ST/OBC/PwD) per UG Brochure 2026-27 Ch 2 (Programme Code 121)</li>
+<li>Valid CLAT UG 2026 score (priority 1) OR CUET (UG) 2026 score (priority 2 — vacant-seat round)</li>
+<li>BCI eligibility bar: candidates who obtained 10+2 through Open Universities (NIOS etc.) are NOT eligible (BCI Letter BCI:D:1823/2010 dated 31.11.2010)</li>
 <li>Age criteria as per Bar Council of India norms</li>
 </ul>
 
@@ -84,11 +85,19 @@ Admissions are conducted strictly through CLAT-based counselling ensuring merit-
 
 
 
-<h2>CLAT-Based Admission Process</h2>
+<h2>Two-Tier Admission: CLAT (Primary) + CUET (Vacant-Seat Fallback)</h2>
 
 <p>
-IP University does not conduct its own entrance test for law programmes.
-Admission is strictly based on CLAT rank followed by centralised GGSIPU counselling.
+IP University does not conduct its own CET for the 5-year integrated Law programme. Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is:
+</p>
+
+<ol>
+<li><strong>CLAT UG 2026 (priority 1)</strong> — primary national-level test conducted by the Consortium of NLUs. Candidates with CLAT scores fill seats first through centralised GGSIPU counselling.</li>
+<li><strong>CUET (UG) 2026 (priority 2)</strong> — vacant-seat fallback per Important Instruction #37. CUET-qualified candidates fill any remaining seats after CLAT counselling exhausts. CUET also qualifies you for the 10% Management Quota at unaided affiliated Law colleges per Chapter 12.</li>
+</ol>
+
+<p>
+CUET subject papers for Law: Section IA English (Code 101) + Section II Legal Studies + Section III General Aptitude (Code 501). Note: the 3-year LLB (Programme Code 238) is admitted only through GGSIPU CET — CUET does NOT apply to the 3-yr LLB.
 </p>
 
 <hr>
