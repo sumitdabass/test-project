@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 session_start();
 ob_start();
 include_once("include/form-handler.php");
