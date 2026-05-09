@@ -208,9 +208,11 @@ select.ipu-input{color:#64748b}
 <!-- Bootstrap 5 CSS -->
 <link rel="stylesheet" href="/assets/css/bootstrap5.min.css">
 
-<!-- Main CSS Bundle (deferred) -->
+<!-- Main CSS Bundle (deferred) — pages can opt out by setting $skip_legacy_css = true before the include -->
+<?php if (empty($skip_legacy_css)): ?>
 <link rel="stylesheet" href="/assets/css/bundle.min.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="/assets/css/bundle.min.css"></noscript>
+<?php endif; ?>
 
 <!-- Google Tag Manager -->
 <script>
