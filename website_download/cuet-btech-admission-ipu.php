@@ -209,7 +209,7 @@ We have placed hundreds of students into IPU B.Tech colleges since 2015 &mdash; 
 </div>
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
