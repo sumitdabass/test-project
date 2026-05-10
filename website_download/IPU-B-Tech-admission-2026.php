@@ -22,13 +22,10 @@ include_once("include/form-handler.php");
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET & Counselling)
-</h1>
-</div>
-</section>
+<?php
+$hero_h1 = 'IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET &amp; Counselling)';
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ================= CONTENT ================= -->
 
