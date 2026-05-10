@@ -14,12 +14,11 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- ================= Banner ================= -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-    <div class="container text-center">
-        <h1 class="white ft-35">Maharaja Agrasen Business School (MABS): One of the Best PGDM Colleges in Delhi</h1>
-    </div>
-    <div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Maharaja Agrasen Business School (MABS): One of the Best PGDM Colleges in Delhi';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ================= Blog Content ================= -->
 <section class="blog-wrapper pt-100 pb-100">
