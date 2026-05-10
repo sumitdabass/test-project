@@ -188,13 +188,12 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- BANNER -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-  <div class="container text-center">
-    <h1 class="white ft-35">IPU Management Seat / Management Quota Admission 2026</h1>
-    <p class="text-white">IP University (GGSIPU) &bull; Eligibility &bull; Direct Admission Process &bull; Top Colleges</p>
-  </div>
-  <div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU Management Seat / Management Quota Admission 2026';
+$hero_intro = 'IP University (GGSIPU) &bull; Eligibility &bull; Direct Admission Process &bull; Top Colleges';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- MAIN CONTENT -->
 <section class="blog-wrapper pt-130 pb-130">

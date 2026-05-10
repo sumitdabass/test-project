@@ -69,13 +69,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">BBA Management Quota Admission in IP University (GGSIPU)</h1>
-<p class="text-white">Top Colleges • Eligibility • CET / CUET • Counselling Strategy</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BBA Management Quota Admission in IP University (GGSIPU)';
+$hero_intro = 'Top Colleges • Eligibility • CET / CUET • Counselling Strategy';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ===== CONTENT ===== -->
