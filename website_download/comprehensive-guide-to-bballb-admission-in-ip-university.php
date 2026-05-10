@@ -30,22 +30,11 @@ include_once("include/form-handler.php");
 
     <!--====== BANNER PART START ======-->
 
-    <section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-12 col-md-12">
-                    <div class="banner-content">
-                        <h1 class="white center ft-35">
-                        Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
-                        </h1>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="banner-shape"></div>
-    </section>
+<?php
+$hero_h1 = 'Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
     <!--====== BANNER PART ENDS ======-->
 
 
