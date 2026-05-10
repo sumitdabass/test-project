@@ -188,15 +188,6 @@ select.ipu-input{color:#64748b}
   body{padding-bottom:68px}
 }
 @media(min-width:769px){.mobile-call-cta{display:none}}
-
-/* Desktop Call Widget */
-@media(min-width:769px){
-  .desktop-call-widget{position:fixed;right:20px;bottom:80px;background:#0d1b6e;padding:20px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.2);z-index:999;text-align:center;max-width:220px}
-  .desktop-call-widget p{color:#fff;font-size:13px;margin:6px 0}
-  .desktop-call-widget .widget-call-btn{display:inline-block;background:linear-gradient(135deg,#f59e0b 0%,#FFD700 100%);padding:10px 22px;border-radius:50px;color:#0d1b6e;font-weight:700;text-decoration:none;font-size:14px;margin-top:8px;transition:transform .2s}
-  .desktop-call-widget .widget-call-btn:hover{transform:scale(1.05)}
-}
-@media(max-width:768px){.desktop-call-widget{display:none}}
 </style>
 
 <!-- Self-hosted Fonts -->
