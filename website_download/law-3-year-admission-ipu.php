@@ -19,13 +19,11 @@ include_once("include/form-handler.php");
 
 <?php include_once("include/base-nav.php"); ?>
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU Law (3-Year) Admission 2026 — Programme Code 238 Guide
-</h1>
-</div>
-</section>
+<?php
+$hero_h1 = 'IPU Law (3-Year) Admission 2026 — Programme Code 238 Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <section class="blog-wrapper pt-130 pb-130">
 
