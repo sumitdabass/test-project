@@ -85,20 +85,12 @@ include 'include/components/breadcrumb-schema.php';
 
 <!-- ===== Banner ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-
-<h1 class="white ft-35">
-MBA Admission in IP University 2026 (Programme Code 101) — CAT/CMAT/CET Guide
-</h1>
-
-<p class="text-white">
-CAT • CMAT • Counselling • Fees • Placements • Top MBA Colleges
-</p>
-
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'MBA Admission in IP University 2026 (Programme Code 101) — CAT/CMAT/CET Guide';
+$hero_intro = 'CAT • CMAT • Counselling • Fees • Placements • Top MBA Colleges';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 

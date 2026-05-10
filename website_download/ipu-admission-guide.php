@@ -112,13 +112,12 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- HERO -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IP University Admission Guide 2026–27</h1>
-<p class="white">Courses • Colleges • Counselling • Management Quota • Expert Guidance</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IP University Admission Guide 2026–27';
+$hero_intro = 'Courses • Colleges • Counselling • Management Quota • Expert Guidance';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <section class="blog-wrapper pt-100 pb-100">
 <div class="container">

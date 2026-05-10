@@ -142,13 +142,12 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- BANNER -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-  <div class="container text-center">
-    <h1 class="white ft-35">Best B.Tech Colleges under IP University (GGSIPU)</h1>
-    <p class="text-white">MAIT &bull; MSIT &bull; BPIT &bull; BVP &bull; VIPS &bull; USICT &bull; USAR</p>
-  </div>
-  <div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Best B.Tech Colleges under IP University (GGSIPU)';
+$hero_intro = 'MAIT &bull; MSIT &bull; BPIT &bull; BVP &bull; VIPS &bull; USICT &bull; USAR';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- MAIN CONTENT -->
 <section class="blog-wrapper pt-130 pb-130">

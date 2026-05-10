@@ -23,15 +23,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== Banner ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-BA Economics (Hons) Admission in IP University (GGSIPU)
-</h1>
-<p class="text-white">Eligibility • Colleges • Admission Process • Career Scope</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BA Economics (Hons) Admission in IP University (GGSIPU)';
+$hero_intro = 'Eligibility • Colleges • Admission Process • Career Scope';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ===== Content ===== -->
 
