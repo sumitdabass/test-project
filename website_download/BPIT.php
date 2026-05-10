@@ -231,7 +231,7 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
