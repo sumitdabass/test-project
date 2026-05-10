@@ -24,6 +24,7 @@ include_once("include/form-handler.php");
 
 <?php
 $hero_h1 = 'IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET &amp; Counselling)';
+$hero_show_form = false;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
