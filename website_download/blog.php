@@ -428,7 +428,7 @@ $categories = ["All","B.Tech","MBA","MCA","Law","BBA","BJMC","CET","CUET","Econo
     <!-- Sidebar -->
     <div class="col-lg-3 col-md-12 order-1 order-lg-2 mb-4">
       <div style="position:sticky;top:80px">
-        <?php include_once("include/sidebar-cta.php"); ?>
+        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
       </div>
     </div>
   </div><!-- /.row -->

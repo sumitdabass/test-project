@@ -226,7 +226,7 @@ BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant 
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>

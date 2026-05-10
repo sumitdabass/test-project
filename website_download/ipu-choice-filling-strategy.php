@@ -177,7 +177,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>

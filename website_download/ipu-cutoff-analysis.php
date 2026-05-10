@@ -190,7 +190,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
