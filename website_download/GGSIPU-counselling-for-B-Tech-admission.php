@@ -115,13 +115,12 @@
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- Hero Banner -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IPU Counselling 2026</h1>
-<p class="white">Step-by-step guide to GGSIPU B.Tech counselling &mdash; registration, choice filling, seat allotment &amp; reporting process</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU Counselling 2026';
+$hero_intro = 'Step-by-step guide to GGSIPU B.Tech counselling &mdash; registration, choice filling, seat allotment &amp; reporting process';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- Breadcrumb -->
 <div style="background:#f8f9fa;border-bottom:1px solid #e9ecef;padding:10px 0;">

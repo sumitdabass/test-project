@@ -24,17 +24,12 @@ include_once("include/form-handler.php");
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU CET 2026 – Exam Date, Admit Card & CET-Based Courses
-</h1>
-<p class="text-white">
-BBA • BCA • B.Com • BJMC | Application • Result • Counselling
-</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU CET 2026 – Exam Date, Admit Card &amp; CET-Based Courses';
+$hero_intro = 'BBA • BCA • B.Com • BJMC | Application • Result • Counselling';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ================= CONTENT ================= -->

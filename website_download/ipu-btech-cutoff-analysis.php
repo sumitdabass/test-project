@@ -23,13 +23,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IPU B.Tech Cutoff Analysis (Delhi vs Outside Delhi)</h1>
-<p class="text-white">MAIT • MSIT • BPIT • BVP • USICT – Last 3 Year Trends</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU B.Tech Cutoff Analysis (Delhi vs Outside Delhi)';
+$hero_intro = 'MAIT • MSIT • BPIT • BVP • USICT – Last 3 Year Trends';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ===== CONTENT ===== -->
 
