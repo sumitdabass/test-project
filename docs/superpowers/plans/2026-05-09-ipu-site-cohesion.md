@@ -879,24 +879,20 @@ Note the line numbers of the banner section and breadcrumb section.
 
 - [ ] **Step 3: Apply the migration**
 
-In `website_download/IPU-B-Tech-admission-2026.php`, replace the banner section + breadcrumb section with:
+In `website_download/IPU-B-Tech-admission-2026.php`, replace the banner section ONLY (do NOT touch the in-body breadcrumb that lives inside `.blog-wrapper`) with:
 
 ```php
 <?php
-$hero_kicker = 'B.Tech Course Hub';
-$hero_h1 = '<<EXACT H1 text from existing page, preserve any inline em/strong tags>>';
-$hero_intro = '<<EXACT intro paragraph text from existing page, preserve any inline anchors>>';
-$hero_chips = ['JEE Main / CUET', '60+ Colleges', 'NAAC A++'];
-$hero_breadcrumbs = [
-    ['Home', '/'],
-    ['Admissions', '/ipu-admission-guide.php'],
-    ['B.Tech 2026', null],
-];
+$hero_h1 = '<<EXACT H1 text from existing banner, preserve any inline em/strong tags; replace literal & with &amp;>>';
+$hero_show_form = false;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 ```
 
-> **CRITICAL.** The H1 and intro values MUST be the verbatim strings from the page before. The chips and breadcrumb labels: ONLY use values that already appear on the page somewhere (kicker, related-pages list, page title) — if a chip label doesn't already appear in the page text, omit it. We are not authoring new copy.
+> **CRITICAL.**
+> 1. The H1 value MUST be the verbatim string from the banner-three before. The literal `&` becomes `&amp;` in the PHP string literal (it goes through unescaped echo, so the rendered HTML matches the original).
+> 2. **`$hero_show_form = false;` is required** on any page that already has an in-body enquiry sidebar (course hubs include `sidebar-cta.php` or hand-roll a `<div class="col-lg-4">…<form>` in the body). Two enquiry forms on one page is worse for conversion than one well-placed form. The page-hero on these pages is header-only; the in-body sidebar carries conversion.
+> 3. Do NOT pass `$hero_kicker`, `$hero_chips`, `$hero_intro`, or `$hero_breadcrumbs` unless those exact strings already appear in the page's banner. We are not authoring new copy. If the original banner only had an H1 (typical of `banner-three`), only `$hero_h1` is set. The body breadcrumb stays where it was — it's structurally part of the article.
 
 - [ ] **Step 4: Lint**
 
@@ -1053,14 +1049,14 @@ wc -l /tmp/banner-three-pages.txt
 
 Same as Task 10 steps 1–7, with these added rules:
 
-1. **Read the existing H1 and intro for that file.** Use grep:
+1. **Read the existing H1 for that file.** Use grep:
    ```bash
    grep -n "<h1\|<p class=\"white\"" website_download/<file.php>
    ```
-2. **Copy them verbatim into PHP variables.** Inline emphasis (`<em>`, `<strong>`, `<a>`) preserved.
-3. **Breadcrumbs:** mirror what the page currently has (often `Home > Admissions > <Course Name>`). If the page lacks breadcrumbs, omit the breadcrumb local.
-4. **Chips:** ONLY include chip text that is already a literal substring of the page's HTML — do not invent.
-5. Replace the banner-three section AND any adjacent `breadcrumb-area` section with the single `page-hero` include block.
+2. **Copy the H1 verbatim into the `$hero_h1` PHP variable.** Inline emphasis (`<em>`, `<strong>`, `<a>`) preserved. Replace literal `&` with `&amp;` in the PHP string literal so the rendered HTML stays identical.
+3. **Always set `$hero_show_form = false;`** for banner-three migrations. Course hubs already have an in-body enquiry sidebar (`sidebar-cta.php` include or hand-rolled `col-lg-4` form). Two forms on one page hurts conversion.
+4. **Do NOT pass `$hero_kicker`, `$hero_intro`, `$hero_chips`, or `$hero_breadcrumbs` unless those exact strings already appear on the page somewhere.** Most banner-three pages have only an H1. Don't author new copy.
+5. **Replace ONLY the banner-three section.** Leave any in-body breadcrumb where it is. Leave the in-body sidebar alone (Phase 5 swaps its content). Touch only the 7-line `<section class="banner-area banner-three…">…</section>` block.
 
 - [ ] **Step 2: Snapshot every page first**
 

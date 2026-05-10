@@ -59,18 +59,19 @@ These are the structural moves, ordered by conversion leverage. Each axis is ind
 
 **Why this is Axis 1.** It is the single biggest visual + conversion unifier — 85 pages currently hand-roll this same job 85 different ways. One file fixes all of them.
 
-### Axis 2 — Replace `banner-three` with a form-bearing hero (`include/components/page-hero.php`)
+### Axis 2 — Replace `banner-three` with `page-hero` (`include/components/page-hero.php`)
 
 **What.** A page hero modelled on `index.php`'s split hero:
-- Left column: existing page H1 + intro paragraph + breadcrumbs + tag chips (whatever the page already has — copy unchanged, just rewrapped from `<section class="banner-area banner-three">…</section>` to `<section class="page-hero">…</section>`).
-- Right column on desktop (≥ 992 px): the same sidebar-enquiry from Axis 1, but rendered inline as part of the hero.
-- Mobile: stacks; sidebar-enquiry collapses below the H1, mobile sticky bottom call CTA carries the load above-the-fold.
-- Background: same gradient as index hero (`linear-gradient(135deg, #0d1b6e 0%, #1a3a9c 60%, #2a5ac8 100%)`) — kills the dead `#0b2c5d` slab.
-- Typography: H1 uses `clamp(2rem, 5vw, 3rem)` — stops the 35 px crush on mobile.
+- Left column: existing page H1 + intro paragraph + breadcrumbs + tag chips (whatever the page already has — copy unchanged, just rewrapped from `<section class="banner-area banner-three">…</section>` to `<section class="ipu-page-hero">…</section>`).
+- Right column on desktop (≥ 992 px): the sidebar-enquiry from Axis 1 — only on pages that **do not already have an in-body enquiry sidebar**. Course hubs (and any other page that includes `sidebar-cta.php` or hand-rolls a `col-lg-4` enquiry block in the body) set `$hero_show_form = false` and let their existing in-body sidebar carry conversion. Embedding a second form in the hero on top of an existing in-body form makes the page worse for conversion, not better.
+- Mobile: stacks; mobile sticky bottom call CTA carries the load above-the-fold.
+- Background: same gradient as index hero (`linear-gradient(135deg, var(--ipu-ink) 0%, var(--ipu-ink-2) 60%, var(--ipu-ink-3) 100%)`) — kills the dead `#0b2c5d` slab.
+- Typography: H1 uses `clamp(1.85rem, 4.5vw, 2.8rem)` — stops the 35 px crush on mobile.
+- Phone CTA: `<a href="tel:+919899991342">` always present in the left column (mobile and desktop fallback even when the form is off).
 
-**Where it goes.** All ~33 banner-three pages. Each page swaps its `<section class="banner-area banner-three">…</section>` block (and the matching `breadcrumb-area` if present) for one `<?php include 'include/components/page-hero.php'; ?>` with whatever locals it already uses.
+**Where it goes.** All ~33 banner-three pages. Each page swaps its `<section class="banner-area banner-three">…</section>` block (and the matching `breadcrumb-area` if present) for one `<?php include 'include/components/page-hero.php'; ?>` with whatever locals it already uses, plus `$hero_show_form = false;` on every page that already has an in-body enquiry sidebar.
 
-**Why.** Above-the-fold on the highest-intent pages currently has zero conversion affordance. This axis turns dead real-estate into a phone + form double-tap zone.
+**Why.** Above-the-fold on the highest-intent pages currently has zero conversion affordance from the **chrome** — the dark slab does nothing. This axis swaps the slab for a brand-cohesive header that always has a tappable phone CTA. The actual lead-capture form remains where the in-body sidebar sits today; Axis 4 + Phase 5 unify the in-body sidebar's chrome later.
 
 ### Axis 3 — Token-driven CSS in `base-head.php`
 
