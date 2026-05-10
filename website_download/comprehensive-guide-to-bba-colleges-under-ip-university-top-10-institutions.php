@@ -77,14 +77,11 @@ include_once("include/form-handler.php");
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white center ft-35">
-BBA Admission in IP University — Top Colleges, Eligibility & Counselling Guide
-</h1>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BBA Admission in IP University — Top Colleges, Eligibility &amp; Counselling Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ================= BLOG SECTION ================= -->

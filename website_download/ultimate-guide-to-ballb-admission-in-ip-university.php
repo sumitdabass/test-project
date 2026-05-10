@@ -25,19 +25,11 @@ include_once("include/form-handler.php");
 
 <!-- ===== Banner ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-
-<div class="container text-center">
-
-<h1 class="white ft-35">
-BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide
-</h1>
-
-</div>
-
-<div class="banner-shape"></div>
-
-</section>
+<?php
+$hero_h1 = 'BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 
