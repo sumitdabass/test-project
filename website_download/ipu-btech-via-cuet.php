@@ -193,7 +193,7 @@
 
     </div>
     <div class="col-md-4">
-      <?php include_once("include/sidebar-cta.php"); ?>
+      <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
     </div>
   </div>
 </div>
