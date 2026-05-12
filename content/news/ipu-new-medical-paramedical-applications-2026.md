@@ -1,39 +1,41 @@
 {
-  "title": "IPU Opens Applications for New Paramedical and Medical Programs 2026-27",
+  "title": "IPU Opens Applications for New Medical and Para-Medical Courses 2026-27",
   "slug": "ipu-new-medical-paramedical-applications-2026",
-  "date": "2026-05-10",
-  "date_modified": "2026-05-10",
+  "date": "2026-05-12",
+  "date_modified": "2026-05-12",
   "category": "Admissions",
   "tags": [
-    "IPU Admissions",
-    "Paramedical",
-    "Medical Courses",
+    "Medical Admissions",
+    "Para Medical",
+    "IPU Applications",
     "GGSIPU"
   ],
   "featured": false,
   "is_urgent": false,
-  "tldr": "GGSIPU has launched online applications for newly introduced medical and paramedical courses for the 2026-27 academic session.",
+  "tldr": "GGSIPU has started accepting online applications for its newly introduced medical and para-medical programs for the 2026-27 academic session.",
   "faq": [
     {
-      "q": "What is the update regarding IPU medical admissions?",
-      "a": "IPU has introduced new medical and paramedical programs and started the online application process for the 2026-27 session."
+      "q": "What programs are covered in this notification?",
+      "a": "The notification pertains to the newly introduced medical and para-medical programs for the 2026-27 academic session."
     },
     {
       "q": "How can I apply for these new courses?",
-      "a": "Applications must be submitted online via the official IPU admission portal at ipu.admissions.nic.in."
+      "a": "Interested candidates must submit their application forms online through the official GGSIPU admission portal."
     }
   ],
   "image": "assets/images/news/admissions.jpg"
 }
 ---
-## New Medical and Paramedical Courses at GGSIPU
+## New Medical and Para-Medical Programs Announced
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has officially invited applications for a range of newly introduced medical and paramedical programs for the upcoming 2026-27 academic session. This expansion provides more opportunities for students seeking careers in the healthcare sector.
+Guru Gobind Singh Indraprastha University (GGSIPU) has officially invited online applications for several newly introduced medical and para-medical programs for the Academic Session 2026-27. This move expands the university's offerings in the healthcare sector for the upcoming year.
 
-### Application Process
+## Application Process
 
-Prospective students can now access the online application forms through the official university website. It is essential to review the specific eligibility requirements for each new course before proceeding with the registration. For a broader overview of the university's intake process, students can refer to the [IPU admission guide](/ipu-admission-guide.php).
+Candidates looking to apply for these programs must complete the submission process through the university's online portal. It is essential to review the specific requirements for each course before applying. For general assistance on the registration process, candidates can refer to the [IPU admission guide](/ipu-admission-guide.php).
 
-### Important Considerations
+## Eligibility and Selection
 
-Candidates are advised to keep their academic documents ready for the online submission. Since these are newly introduced programs, students should carefully read the official notification regarding the seat matrix and specific entrance requirements, if any. For information on other competitive tracks, you may also check the [IPU CET cutoff](/ipu-cet-cutoff-2025.php) trends to understand the competitive landscape of the university.
+Applicants are advised to check the official university notification for detailed eligibility criteria related to these new programs. Selection will be based on the university's prescribed admission criteria for the 2026-27 session. To understand the competitive landscape of previous years, students may visit the [IPU CET cutoff 2025](/ipu-cet-cutoff-2025.php) page for historical reference.
+
+For further updates and the official link to the application form, candidates should refer to the official notification at ipu.ac.in.
