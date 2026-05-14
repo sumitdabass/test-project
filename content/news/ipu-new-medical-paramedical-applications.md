@@ -1,41 +1,49 @@
 {
-  "title": "IPU Opens Applications for New Paramedical and Medical Programs",
+  "title": "IPU Opens Applications for New Medical and Para-Medical Programs 2026-27",
   "slug": "ipu-new-medical-paramedical-applications",
-  "date": "2026-05-11",
-  "date_modified": "2026-05-11",
+  "date": "2026-05-14",
+  "date_modified": "2026-05-14",
   "category": "Admissions",
   "tags": [
     "IPU Admissions",
-    "Paramedical",
-    "Medical Courses",
+    "Medical Programs",
+    "Para-Medical",
     "Application Form"
   ],
   "featured": false,
   "is_urgent": false,
-  "tldr": "GGSIPU has opened the online application window for newly introduced medical and paramedical programs for the 2026-27 academic session.",
+  "tldr": "GGSIPU is now accepting online applications for newly introduced medical and para-medical programs for the 2026-27 academic session.",
   "faq": [
     {
-      "q": "Which courses are covered in this announcement?",
-      "a": "The announcement pertains to newly introduced medical and paramedical programs for the 2026-27 academic session."
+      "q": "What programs are covered in this notification?",
+      "a": "The notification concerns the submission of online application forms for newly introduced medical and para-medical programs at IP University."
     },
     {
-      "q": "Where can I find the application form?",
-      "a": "The application forms are available online at the official IPU admission portal."
+      "q": "Which academic session is this for?",
+      "a": "These applications are for the upcoming Academic Session 2026-27."
+    },
+    {
+      "q": "How can I apply for these new courses?",
+      "a": "Interested candidates must submit their application forms online through the official university admission portal."
     }
   ],
   "image": "assets/images/news/admissions.jpg"
 }
 ---
-## Online Applications for New Health Science Courses
+## New Medical and Para-Medical Courses Announced
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has officially started the online application process for several newly introduced medical and paramedical programs. These courses are part of the university's offerings for the 2026-27 academic session.
+Guru Gobind Singh Indraprastha University (GGSIPU) has invited online applications for several newly introduced medical and para-medical programs. These courses are being launched for the 2026-27 academic session, providing new opportunities for students in the healthcare sector.
 
-## Application Procedure
+## Application Details
 
-Prospective students interested in these new programs must register and submit their applications through the official university admission website. It is essential to review the [ipu admission guide](/ipu-admission-guide.php) to understand the standard registration steps and documentation required for GGSIPU admissions.
+Prospective students can now access the registration link on the university's official admission website. It is mandatory to complete the process online. Candidates are advised to read the specific eligibility criteria for these new programs thoroughly before paying the registration fee.
 
-## Eligibility and Selection
+For a comprehensive overview of the registration process, students can refer to our [IPU admission guide](/ipu-admission-guide.php).
 
-Candidates are advised to check the specific eligibility criteria for each new program as outlined in the official university notification. For students looking to understand the competitive landscape of health science courses at the university, checking the [ipu cet cutoff 2025](/ipu-cet-cutoff-2025.php) can provide helpful historical context on admission trends.
+## Important Considerations
 
-Applicants should ensure all information provided in the online form is accurate and matches their official documents to avoid issues during the verification stage.
+- **Official Portal:** All applications must be submitted via the university's dedicated admission portal at ipu.admissions.nic.in.
+- **Eligibility:** Ensure you meet the specific academic requirements for the para-medical or medical stream you are applying for.
+- **Documentation:** Keep scanned copies of necessary documents ready for the online upload process.
+
+While these are new programs, students can gain insights into general university trends by reviewing the [IPU CET cutoff](/ipu-cet-cutoff-2025.php) for existing health science courses. For further details and the full list of new programs, refer to the official notification available on the university website.
