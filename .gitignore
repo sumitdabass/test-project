@@ -19,3 +19,6 @@ deployment/backups/
 
 # Superpowers brainstorm session artifacts
 .superpowers/
+
+# Runtime logs (lead/dedup data — never commit)
+website_download/include/.private/
