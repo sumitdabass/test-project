@@ -132,6 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['submitted_phones'][] = $phone;
     setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
     phone_record_seen($phone);
+    lead_record($phone, 'sendemail');
 
     // Redirect to thank-you with success flag (only genuine submissions get src=submit)
     header("Location: /thank-you.php?src=submit");
