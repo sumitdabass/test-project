@@ -1,0 +1,159 @@
+
+#deny from all
+#AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+
+RewriteEngine On
+
+# =============================================
+# NEWS POST REDIRECTS — duplicate consolidation
+# =============================================
+# Dedup of LLM-rephrased reposts of the same source notification.
+# Each line redirects the dupe URL to the oldest (canonical) version.
+RewriteRule ^news/last-opportunity-ipu-cet-registration\.php$ /news/final-opportunity-ipu-cet-registration.php [L,R=301]
+RewriteRule ^news/ipu-application-deadline-extended\.php$ /news/ipu-application-deadline-extension-national-level-test.php [L,R=301]
+RewriteRule ^news/ipu-bpt-bot-admission-criteria-nomenclature-changes\.php$ /news/ipu-bpt-bot-nomenclature-admission-changes.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-2026\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-announced\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-new-medical-paramedical-applications\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/ipu-new-medical-paramedical-programs-2026\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-applications-open\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-applications\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-programmes-2026-27\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-programmes-introduced\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+
+
+# Renamed 2026-05-15: BBA cutoff page is evergreen (no year in URL); old year-suffixed URLs 301 to canonical
+RewriteRule ^ipu-bba-cutoff-(202[5-9])\.php$ /ipu-bba-cutoff.php [L,R=301]
+
+# =============================================
+# BROKEN-LINK 301s — internal pages reference these URLs but the files don't exist;
+# canonical targets all verified live. Added 2026-05-15 from crosslink audit.
+# =============================================
+RewriteRule ^IPU-BBA-admission-2026\.php$ /comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php [L,R=301]
+RewriteRule ^IPU-BCA-admission-2026\.php$ /bca-admission-ipu.php [L,R=301]
+RewriteRule ^IPU-BCom-admission-2026\.php$ /bcom-admission-ipu.php [L,R=301]
+RewriteRule ^IPU-MCA-admission-2026\.php$ /mca-admission-ipu.php [L,R=301]
+RewriteRule ^bca-colleges-under-IP-university\.php$ /bca-admission-ipu.php [L,R=301]
+RewriteRule ^bjmc-colleges-ipu\.php$ /guide-to-bjmc-colleges-under-ip-university.php [L,R=301]
+RewriteRule ^bpit-delhi\.php$ /BPIT.php [L,R=301]
+RewriteRule ^ipu-b-tech-admission-2025\.php$ /IPU-B-Tech-admission-2026.php [NC,L,R=301]
+RewriteRule ^ipu-ba-llb-admission\.php$ /ultimate-guide-to-ballb-admission-in-ip-university.php [L,R=301]
+RewriteRule ^ipu-cet-2025\.php$ /ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php [L,R=301]
+RewriteRule ^ipu-helpline\.php$ /ipu-helpline-contact-number.php [L,R=301]
+RewriteRule ^ipu-law-admission-2026\.php$ /IPU-Law-Admission-2026.php [L,R=301]
+RewriteRule ^ipu-law-admission\.php$ /IPU-Law-Admission.php [L,R=301]
+RewriteRule ^ipu-mba-admission-2026\.php$ /mba-admission-ip-university.php [L,R=301]
+RewriteRule ^mait-delhi\.php$ /mait-admission.php [L,R=301]
+RewriteRule ^mba-colleges-under-IP-university\.php$ /top-mba-colleges-ipu.php [L,R=301]
+RewriteRule ^msit-delhi\.php$ /msit-admission.php [L,R=301]
+RewriteRule ^usict-delhi\.php$ /usict-admission.php [L,R=301]
+RewriteRule ^uslls-admission\.php$ /usls-admission.php [L,R=301]
+RewriteRule ^vips-pitampura\.php$ /vips-admission.php [L,R=301]
+
+# =============================================
+# CANONICAL HOST — www/mail → apex (single-hop with HTTPS)
+# Fixes: 4 homepage variants indexed in Google
+# (ipu.co.in/, www.ipu.co.in/, www.ipu.co.in/index.php,
+# mail.ipu.co.in/exploring-MAIT-and-MAIMS.php, etc.)
+# =============================================
+RewriteCond %{HTTP_HOST} ^(www|mail)\.ipu\.co\.in$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteRule ^(.*)$ https://ipu.co.in/$1 [L,R=301]
+
+# =============================================
+# HTTPS REDIRECT
+# =============================================
+RewriteCond %{HTTPS} !on
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# =============================================
+# GZIP COMPRESSION
+# =============================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf application/font-woff application/font-woff2
+</IfModule>
+
+# =============================================
+# BROWSER CACHING
+# =============================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# =============================================
+# CACHE-CONTROL HEADERS
+# =============================================
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+  <FilesMatch "\.(woff|woff2|ttf|otf|eot)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(php|html)$">
+    Header set Cache-Control "public, max-age=1800"
+    Header unset Pragma
+  </FilesMatch>
+  # Form / POST handlers must NOT be cached
+  <FilesMatch "^(sendemail|form-handler|form-handler\.php|thank-you|thanku)\.php$">
+    Header set Cache-Control "no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+
+  # Security Headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# =============================================
+# BLOCK ACCESS TO SENSITIVE FILES
+# =============================================
+<FilesMatch "\.(zip|log|sql|bak|old|orig|swp)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Block specific internal docs and audit reports (defence-in-depth)
+<Files "AI_AGENT_README.md">
+  Require all denied
+</Files>
+<Files "seo-report-march-2026.html">
+  Require all denied
+</Files>
+
+# Block direct access to include directory
+<IfModule mod_rewrite.c>
+  RewriteRule ^include/ - [F,L]
+</IfModule>
+
+# =============================================
+# 301 ORPHAN INDEX VARIANTS — collapse to canonical homepage
+# =============================================
+RewriteRule ^index-old\.php$ / [L,R=301]
+RewriteRule ^index-new\.php$ / [L,R=301]
