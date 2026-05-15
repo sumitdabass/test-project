@@ -334,6 +334,45 @@ include 'include/components/related-pages.php';
 }
 </script>
 
+<!-- ===== FAQ section — Phase B Day 3 ===== -->
+<section class="ipu-faq" style="padding:48px 0;background:#fafafa">
+  <div class="container">
+    <h2 style="font-size:clamp(1.6rem,3vw,2rem);font-weight:700;color:#0d1b6e;margin-bottom:24px;text-align:center">Frequently Asked Questions — IPU B.Tech Admission 2026</h2>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the eligibility for IPU B.Tech admission 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Candidates must have passed Class 12 with Physics, Chemistry, Mathematics with minimum 55% aggregate (50% for reserved categories), and a valid JEE Main 2026 Paper-I score. Both 2025 and 2026 Class 12 pass-outs are eligible. Final admission depends on GGSIPU counselling rank. For eligibility verification, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">How do I apply for IPU B.Tech admission?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Apply through GGSIPU online counselling once JEE Main 2026 result is declared. Register on the official portal (ipu.admissions.nic.in), pay the counselling fee, lock your college + branch choices, and await seat allotment. The 2026 counselling process typically opens in the third-fourth week of July. Free step-by-step application help: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU B.Tech admission process for 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">The 6-step IPU B.Tech admission process for 2026: (1) Appear for JEE Main 2026 Paper-I (NTA). (2) Wait for JEE Main result. (3) GGSIPU opens online counselling registration. (4) Pay the counselling fee, fill college and branch choices, lock by deadline. (5) Round 1 seat allotment published 5-7 days later. (6) Accept and report to the allotted college with documents and tuition fee. Up to 3 rounds plus internal sliding round. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for the latest dates.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">Which B.Tech branches are offered at IPU?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">IPU affiliated colleges offer 8+ B.Tech branches: Computer Science Engineering (CSE), Information Technology (IT), Electronics & Communication (ECE), Electrical & Electronics (EEE), Mechanical Engineering, Civil Engineering, Chemical Engineering, Industrial Engineering. Select colleges also offer specialised branches like Artificial Intelligence, Data Science, and Cyber Security. For branch-wise college list, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU B.Tech fee structure?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Tuition fees for IPU B.Tech vary &#x20B9;1.2L-&#x20B9;3.5L per year depending on the college. Government-affiliated colleges (USICT, BPIT, IGDTUW, ADGITM) are at the lower end (&#x20B9;1.2L-&#x20B9;1.6L/yr). Private affiliated colleges range &#x20B9;1.8L-&#x20B9;3.5L/yr. Hostel and mess fees are separate (&#x20B9;50K-&#x20B9;1.2L/yr). For exact per-college fee breakdown, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">Is there a management quota for IPU B.Tech admission?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Yes, select private affiliated colleges under IPU offer 15-20% seats under the management quota for candidates with lower JEE Main ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. For current management-quota seat availability across IPU colleges, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+  </div>
+</section>
+<!-- ===== /FAQ section ===== -->
+
 <?php include_once("include/base-footer.php"); ?>
 
 <!-- Article Schema -->
@@ -360,5 +399,25 @@ include 'include/components/related-pages.php';
 }
 </script>
 
+<!-- ===== HowTo Schema — Phase B Day 3 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to apply for IPU B.Tech admission 2026",
+  "description": "Step-by-step process for IPU B.Tech admission 2026 via GGSIPU counselling.",
+  "totalTime": "P60D",
+  "estimatedCost": {"@type":"MonetaryAmount","currency":"INR","value":"1500"},
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Appear for JEE Main 2026","text":"Register for JEE Main 2026 Paper-I conducted by NTA and appear in the exam."},
+    {"@type":"HowToStep","position":2,"name":"Get JEE Main result","text":"Wait for NTA to declare the JEE Main 2026 result. Your All-India Rank determines GGSIPU counselling eligibility."},
+    {"@type":"HowToStep","position":3,"name":"Register for GGSIPU counselling","text":"Visit ipu.admissions.nic.in once counselling registration opens (typically third-fourth week of July). Create a candidate login."},
+    {"@type":"HowToStep","position":4,"name":"Pay counselling fee","text":"Pay the GGSIPU counselling registration fee (Rs.1,500 general, Rs.750 reserved) online."},
+    {"@type":"HowToStep","position":5,"name":"Fill college and branch choices","text":"Add preferred colleges and B.Tech branches in priority order. Lock choices before deadline."},
+    {"@type":"HowToStep","position":6,"name":"Accept Round 1 allotment and report","text":"Round 1 allotment published 5-7 days after registration closes. Accept the seat and report to the allotted college with documents and tuition fee within the reporting window."}
+  ]
+}
+</script>
+<!-- ===== /Schema ===== -->
 </body>
 </html>
