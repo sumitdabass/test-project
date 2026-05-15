@@ -52,6 +52,10 @@ $hero_slot_html   = $hero_slot_html   ?? null;
             <h1 class="ipu-page-hero__h1"><?= $hero_h1 ?></h1>
           <?php endif; ?>
 
+          <?php if (!empty($last_updated)): ?>
+            <?php $last_updated_theme = 'dark'; include __DIR__ . '/last-updated.php'; ?>
+          <?php endif; ?>
+
           <?php if (!empty($hero_chips)): ?>
             <div class="ipu-page-hero__chips">
               <?php foreach ($hero_chips as $chip): ?>

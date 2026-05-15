@@ -2,8 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1b6e">
 <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/assets/images/favicon.ico">
+
+<!-- Open Graph fallback — pages with their own og:image take precedence -->
+<meta property="og:image" content="<?= htmlspecialchars($og_image ?? 'https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg', ENT_QUOTES) ?>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IPU Admission Guide — GGSIPU counselling, cutoffs, fees, management seats">
+<meta property="og:site_name" content="IPU Admission Guide">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="<?= htmlspecialchars($og_image ?? 'https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg', ENT_QUOTES) ?>">
 
 <!-- Critical CSS (inlined for fast first paint) -->
 <style>
@@ -119,7 +131,7 @@ p{color:#4a5568;margin-bottom:1rem}
 }
 
 /* ===== ipu primitives ===== */
-.ipu-input{width:100%;padding:12px 16px;border:1px solid var(--ipu-rule);border-radius:8px;font-size:14px;font-family:inherit;color:var(--ipu-ink);background:#fff;transition:border-color .2s,box-shadow .2s;margin-bottom:10px;display:block}
+.ipu-input{width:100%;padding:12px 16px;border:1px solid var(--ipu-rule);border-radius:8px;font-size:16px;font-family:inherit;color:var(--ipu-ink);background:#fff;transition:border-color .2s,box-shadow .2s;margin-bottom:10px;display:block}
 .ipu-input:focus{outline:none;border-color:var(--ipu-ink-2);box-shadow:0 0 0 3px rgba(26,58,156,.14)}
 .ipu-input::placeholder{color:#94a3b8}
 select.ipu-input{color:#64748b}
@@ -141,7 +153,7 @@ select.ipu-input{color:#64748b}
 .ipu-enquiry__heading{font-size:1.1rem;color:var(--ipu-ink);margin:0 0 4px;text-align:center;font-weight:700}
 .ipu-enquiry__subheading{font-size:13px;color:#64748b;text-align:center;margin:0 0 14px}
 .ipu-enquiry__error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:8px 12px;border-radius:6px;font-size:13px;margin-bottom:12px}
-.ipu-enquiry__submit{width:100%;margin-top:4px;font-size:15px}
+.ipu-enquiry__submit{width:100%;margin-top:4px;font-size:16px}
 .ipu-enquiry__fine{font-size:11px;color:#94a3b8;text-align:center;margin:10px 0 0}
 .ipu-enquiry__popular{background:var(--ipu-highlight);padding:18px 22px;border-radius:var(--ipu-radius)}
 .ipu-enquiry__popular h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ipu-orange);font-weight:700;margin:0 0 12px}
@@ -183,9 +195,9 @@ select.ipu-input{color:#64748b}
 
 /* Mobile Call CTA */
 @media(max-width:768px){
-  .mobile-call-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 100%);padding:12px 16px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,.3)}
-  .mobile-call-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#f59e0b 0%,#FFD700 100%);border:none;padding:12px;border-radius:50px;color:#0d1b6e;font-weight:700;font-size:15px;text-decoration:none;width:100%;box-shadow:0 2px 8px rgba(0,0,0,.2)}
-  body{padding-bottom:68px}
+  .mobile-call-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 100%);padding:12px 16px calc(12px + env(safe-area-inset-bottom));z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,.3)}
+  .mobile-call-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#f59e0b 0%,#FFD700 100%);border:none;padding:12px;border-radius:50px;color:#0d1b6e;font-weight:700;font-size:16px;text-decoration:none;width:100%;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
 }
 @media(min-width:769px){.mobile-call-cta{display:none}}
 </style>

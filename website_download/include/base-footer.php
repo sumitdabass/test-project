@@ -42,7 +42,7 @@
             <li style="margin-bottom:10px"><a href="/IPU-B-Tech-admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">B.Tech Admission</a></li>
             <li style="margin-bottom:10px"><a href="/mba-admission-ip-university.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">MBA Admission</a></li>
             <li style="margin-bottom:10px"><a href="/IPU-Law-Admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Law Admission</a></li>
-            <li style="margin-bottom:10px"><a href="/ipu-bba-admission.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">BBA Admission</a></li>
+            <li style="margin-bottom:10px"><a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">BBA Admission</a></li>
             <li style="margin-bottom:10px"><a href="/blog.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Blog</a></li>
           </ul>
         </div>

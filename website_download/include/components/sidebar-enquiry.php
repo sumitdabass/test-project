@@ -19,7 +19,7 @@ $enquiry_popular      = $enquiry_popular      ?? [
     ['B.Tech Admission 2026', '/IPU-B-Tech-admission-2026.php'],
     ['MBA Admission Guide',   '/mba-admission-ip-university.php'],
     ['Law Admission 2026',    '/IPU-Law-Admission.php'],
-    ['BBA Admission Guide',   '/ipu-bba-admission.php'],
+    ['BBA Admission Guide',   '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php'],
     ['Management Quota',      '/IP-University-management-quota-admission-eligibility-criteria.php'],
 ];
 

@@ -7,34 +7,85 @@ Disallow: /AI_AGENT_README.md
 Disallow: /seo-report-march-2026.html
 
 # ===== AI AGENTS & CRAWLERS =====
+# OpenAI
 User-agent: GPTBot
 Allow: /
 
-User-agent: CCBot
+User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
 User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: googlebot
+User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: googlebot-extended
+# Google (Search + AI Overviews / Gemini)
+User-agent: Googlebot
 Allow: /
 
-User-agent: bingbot
+User-agent: Google-Extended
 Allow: /
 
-User-agent: slurp
+# Perplexity
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: duckduckbot
+User-agent: Perplexity-User
 Allow: /
 
-User-agent: baiduspider
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta (Llama / AI Assistant)
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Microsoft / Bing
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Common Crawl (foundation-model training corpus)
+User-agent: CCBot
+Allow: /
+
+# Other search
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
 Allow: /
 
 # Crawl settings (no delay for AI agents)
