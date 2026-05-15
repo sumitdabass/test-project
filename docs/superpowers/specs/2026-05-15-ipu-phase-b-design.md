@@ -176,6 +176,8 @@ Default (SC-data-driven if Ads CSVs not in):
 | 13 | Catch-up: re-deploy anything that slipped from Days 8-12 / second watch-term rank check / one parking-lot item if all caught up (priority: BPIT/BVP zero-click investigation) |
 | 14 | Week-2 review: rank deltas, lead-volume delta from server-side logs, Phase C scope decision |
 
+**Cannibalization-risk note (locked 2026-05-15):** The two NEW pillar pages originally proposed for Days 13-14 (`/about-ip-university.php` and `/ipu-counselling-registration-guide.php`) are **deferred to Phase C**. Cannibalization risk with homepage (brand cluster) and counselling page (Tier 3 registration cluster) is real and unquantified. Phase C will assess with proper data — Ads landing-page CSVs, post-Phase-B rank stability, and an explicit positioning strategy (clear intent differentiation, internal-link discipline, canonical handling). Per Sumit's directive: "keep basic, don't hamper current keyword SEO rank, aim is improvement only."
+
 If Ads CSVs arrive before Day 8, the schedule re-ranks by `Ads cost / Ads conversions = CPL` × volume descending. Decision rule fixed; specific picks depend on data.
 
 ## 8. Success metrics
