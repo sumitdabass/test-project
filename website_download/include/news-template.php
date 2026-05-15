@@ -9,7 +9,7 @@ $jsonld_article = news_jsonld_newsarticle($post);
 $jsonld_faq     = news_jsonld_faqpage($post);
 $jsonld_bc      = news_jsonld_breadcrumb($post);
 
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once __DIR__ . '/base-head.php';
 ?>
 

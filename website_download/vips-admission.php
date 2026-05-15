@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>VIPS-TC Pitampura Admission 2026 | BBA, BCA, BCom, BJMC, BA-LLB, B.Tech – IPU</title>
 <meta name="description" content="VIPS Technical Campus, Pitampura — IPU's largest affiliated college. BBA/BCA/BCom/BJMC/BA-LLB/BBA-LLB/B.Tech 2026-27 fees, seats & cutoff. Call 9899991342.">

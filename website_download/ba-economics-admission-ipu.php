@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU BA Economics (Hons) 2026 | Eligibility, CUET, Fees, 4 Top Colleges</title>
 <meta name="description" content="IP University BA Economics (Hons) 2026 via CUET – eligibility, fees Rs.75K-1.2L, top colleges (VIPS, MAIMS, JIMS, USHSS). Call 9899991342.">

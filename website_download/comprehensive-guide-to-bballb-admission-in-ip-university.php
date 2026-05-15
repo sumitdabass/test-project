@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 
 ?>
@@ -44,7 +44,7 @@ include __DIR__ . '/include/components/page-hero.php';
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img fetchpriority="high" decoding="async" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
+                        <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
                         </h2>

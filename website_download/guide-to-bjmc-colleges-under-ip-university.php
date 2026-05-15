@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -48,7 +48,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" src="assets/images/IPU-BJMC-Admission.jpg" class="main-img" alt="BJMC IP University Admission Guide">
+<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IPU-BJMC-Admission.jpg" class="main-img" alt="BJMC IP University Admission Guide">
 
 <?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 

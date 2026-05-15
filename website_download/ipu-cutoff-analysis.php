@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Cutoff 2025 | Course-wise GGSIPU Cutoff Analysis & Predictor</title>
 <meta name="description" content="IPU cutoff 2025 – complete course-wise GGSIPU cutoff analysis for B.Tech, BBA, Law (BA LLB/BBA LLB). JEE Main rank, CUET score & CLAT cutoffs. Call 9899991342 for free rank analysis.">

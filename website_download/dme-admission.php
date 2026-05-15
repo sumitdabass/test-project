@@ -78,7 +78,7 @@ $college_data = [
     ],
     'related_pages' => [
         ['title' => 'CPJ College Admission 2026', 'url' => '/cpj-admission.php', 'desc' => 'Explore Chandarprabhu Jain College for BBA and Law under IPU'],
-        ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
+        ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
         ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Guide to BA-LLB and BBA-LLB admission under GGSIPU'],
     ],
 ];

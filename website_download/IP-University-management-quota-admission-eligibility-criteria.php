@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -212,7 +212,7 @@ include __DIR__ . '/include/components/page-hero.php';
       <div class="col-lg-8">
         <article class="blog-details">
 
-          <img fetchpriority="high" decoding="async" src="assets/images/blog1.jpg" class="main-img" alt="IPU Management Seat and Management Quota Admission 2026 Guide">
+          <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/blog1.jpg" class="main-img" alt="IPU Management Seat and Management Quota Admission 2026 Guide">
 
           <!-- Intro -->
           <div class="section-block">

@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_cache_limiter('public'); session_cache_expire(30); session_start();
 ob_start();
 include_once("include/form-code.php");
 ?>

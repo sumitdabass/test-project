@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MABS Admission 2026 | IPU PGDM Business School</title>
 <meta name="description" content="MABS Rohini admission 2026. PGDM equivalent to MBA, Maharaja Agrasen group, IPU Delhi. Call 9899991342 for free guidance.">

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>M.Tech Admission 2026 IP University (GGSIPU) | Eligibility, GATE Score, Fees &ndash; ipu.co.in</title>
 <meta name="description" content="IPU M.Tech Admission 2026 — CSE, IT, ECE, AI & DS, Robotics specializations. GATE-based entry, eligibility, fees, top colleges. Call 9899991342.">

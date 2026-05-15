@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IITM Delhi Admission 2026 | IPU B.Com, BCA, BBA</title>
 <meta name="description" content="IITM Delhi admission 2026 under IPU. B.Com, BCA, BBA courses, placements & fees at IITM Janakpuri. Call 9899991342 for guidance.">

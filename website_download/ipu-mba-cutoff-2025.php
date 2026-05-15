@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU MBA Cutoff 2025 | CAT & CMAT Score College-wise Analysis</title>
 <meta name="description" content="IPU MBA cutoff 2025 – CAT percentile & CMAT score cutoff for USMS, MAIMS, DIAS, JIMS. Round 1 & Round 3 analysis. Call 9899991342 for free rank analysis.">

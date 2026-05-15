@@ -1,15 +1,17 @@
 <?php
 /**
  * sendemail.php — Form submission handler
- * 5-layer duplicate prevention (no CAPTCHA friction):
+ * 6-layer duplicate prevention (no CAPTCHA friction):
  *   1. Honeypot           — bots fill hidden `website` field
  *   2. Time-based check   — reject submissions faster than 3 seconds
  *   3. 5-min cooldown     — block any resubmission within 5 minutes (session)
  *   4. Phone session dedup — reject same phone number within the session
  *   5. Cookie 24h dedup   — reject same phone hash within 24 hours (cookie)
+ *   6. Persistent phone dedup — reject same phone hash within 7 days (server-side file)
  */
+require_once __DIR__ . '/include/helpers/phone-dedup.php';
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -69,6 +71,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
+    // ── Layer 6: Persistent 7-day dedup — survives cookie clear / new session ─
+    if (phone_recently_seen($phone)) {
+        header("Location: /thank-you.php");
+        exit();
+    }
+
     // Capture UTM & page source
     $page_url = htmlspecialchars($_POST['page_url'] ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
 
@@ -123,6 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['last_submit_time']   = time();
     $_SESSION['submitted_phones'][] = $phone;
     setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
+    phone_record_seen($phone);
 
     // Redirect to thank-you with success flag (only genuine submissions get src=submit)
     header("Location: /thank-you.php?src=submit");

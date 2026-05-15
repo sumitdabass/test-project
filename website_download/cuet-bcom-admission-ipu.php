@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -42,7 +42,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" src="assets/images/Bcom.jpg"
+<img fetchpriority="high" decoding="async" width="470" height="343" src="assets/images/Bcom.jpg"
 class="main-img"
 alt="IPU B.Com (Hons) Admission Through CUET (UG)">
 

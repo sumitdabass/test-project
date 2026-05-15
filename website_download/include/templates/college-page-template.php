@@ -36,7 +36,7 @@
  */
 
 // ── Bootstrap ────────────────────────────────────────────────────────────────
-session_start(); ob_start(); include_once("include/form-handler.php");
+session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php");
 
 // ── Convenience aliases ───────────────────────────────────────────────────────
 $cd          = $college_data;                           // short alias

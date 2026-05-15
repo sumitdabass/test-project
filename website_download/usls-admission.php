@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>USLS (USLLS) Admission 2026 | IPU Law School – CLAT Cutoff & Fees</title>
 <meta name="description" content="USLS/USLLS Dwarka admission 2026 – BA LLB, BBA LLB, LLM at IPU campus. CLAT cutoff, fees & placements. Top IPU law school. Call 9899991342 for help.">

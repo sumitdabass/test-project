@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU B.Com Cutoff 2025 | CUET Score & College-wise Analysis</title>
 <meta name="description" content="IPU B.Com cutoff 2025 – CUET percentile & score-based cutoff for VIPS, MSI, MAIMS, IITM. Round 1 & Round 3 college-wise analysis. Call 9899991342 for guidance.">

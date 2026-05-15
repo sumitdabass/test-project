@@ -66,7 +66,7 @@ $college_data = [
     ],
     'related_pages' => [
         ['title' => 'JIMS Vasant Kunj Admission 2026', 'url' => '/jims-vasant-kunj-admission.php', 'desc' => 'Explore the Vasant Kunj campus of Jagannath International Management School'],
-        ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
+        ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
         ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Check BBA cutoff trends across all IPU colleges'],
     ],
 ];

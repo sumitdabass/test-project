@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Colleges List 2026 | All 80+ GGSIPU Affiliated Colleges in Delhi</title>
 <meta name="description" content="Complete list of IPU affiliated colleges – Engineering, Law, MBA, BBA, BJMC, B.Com. Location, courses & fees. Call 9899991342 for personalized college guidance.">
@@ -311,7 +311,7 @@ include 'include/components/hero-banner.php';
   </table>
   </div>
 
-  <p>BBA and B.Com admissions are based on <strong>CUET</strong> scores, while MBA admission requires <strong>CAT/MAT</strong> or the IPU CET for management. For BBA details, see our <a href="/ipu-bba-admission.php">IPU BBA Admission</a> guide.</p>
+  <p>BBA and B.Com admissions are based on <strong>CUET</strong> scores, while MBA admission requires <strong>CAT/MAT</strong> or the IPU CET for management. For BBA details, see our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">IPU BBA Admission</a> guide.</p>
 
   <!-- Media Colleges -->
   <h2 id="media">Media &amp; Journalism Colleges (BJMC) Under IPU</h2>
@@ -450,7 +450,7 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and the complete admission process'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
   ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
   ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU']
 ];

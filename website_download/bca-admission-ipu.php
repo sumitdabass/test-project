@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU BCA Admission 2026 | CUET Eligibility, Fees, Top 20 Colleges List</title>
 <meta name="description" content="IP University BCA 2026 via CUET – 50% in Class 12, fee Rs.80K-1.5L, 30+ colleges (VIPS/IITM/MSI/MAIMS). Call 9899991342 for free guidance.">
@@ -233,7 +233,7 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU'],
   ['title' => 'B.Com Admission at IPU', 'url' => '/bcom-admission-ipu.php', 'desc' => 'B.Com admission process, colleges and CUET cutoff at IPU'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA admission process, colleges and fees at GGSIPU'],
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA admission process, colleges and fees at GGSIPU'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process']
 ];
 include 'include/components/related-pages.php';

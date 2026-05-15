@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 IPU Colleges 2026 | Best GGSIPU Affiliated Colleges Ranking</title>
 <meta name="description" content="Top 10 best IPU (GGSIPU) colleges 2026 ranked overall: VIPS, MAIT, USICT, MAIMS, MSIT, BPIT, BVP, MSI, JIMS, Tecnia. Fees, cutoff, placements. Call 9899991342.">

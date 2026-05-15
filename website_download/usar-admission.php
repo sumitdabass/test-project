@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>USAR IPU Admission 2026 – Automation & Design Dual-Degree Courses</title>
 <meta name="description" content="USAR IPU admission 2026. University School of Automation & Design — B.Tech/M.Tech Dual-Degree (AI&DS, AI&ML, IIOT, A&R) at 132 seats each. JEE Main cutoff, placements. Call 9899991342.">

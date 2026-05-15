@@ -633,7 +633,7 @@ $pages = [
     ['url' => 'https://ipu.co.in/IPU-B-Tech-admission-2026.php', 'title' => 'B.Tech Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu btech admission', 'btech admission through cuet']],
     ['url' => 'https://ipu.co.in/mba-admission-ip-university.php', 'title' => 'MBA Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu mba admission']],
     ['url' => 'https://ipu.co.in/IPU-Law-Admission-2026.php', 'title' => 'Law Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu ballb admission', 'ipu bballb admission']],
-    ['url' => 'https://ipu.co.in/ipu-bba-admission.php', 'title' => 'BBA Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu bba admission']],
+    ['url' => 'https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'title' => 'BBA Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu bba admission']],
     ['url' => 'https://ipu.co.in/bcom-admission-ipu.php', 'title' => 'B.Com Admission 2026', 'type' => 'admission-guide', 'keywords' => ['ipu b.com admission']],
     ['url' => 'https://ipu.co.in/ba-english-admission-ipu.php', 'title' => 'BA English Admission', 'type' => 'admission-guide', 'keywords' => ['ipu ba english admission']],
     ['url' => 'https://ipu.co.in/ba-economics-admission-ipu.php', 'title' => 'BA Economics Admission', 'type' => 'admission-guide', 'keywords' => ['ipu ba eco admission']],

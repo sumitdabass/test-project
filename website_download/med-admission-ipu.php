@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>M.Ed Admission 2026 IP University (GGSIPU) | Eligibility, CET, Top Colleges &ndash; ipu.co.in</title>
 <meta name="description" content="IPU M.Ed Admission 2026 — Programme Code 120. Eligibility, IPU CET entrance, fee structure, top B.Ed colleges. Call 9899991342.">

@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 
 $email = $_SESSION['enh_email'] ?? '';
@@ -405,7 +405,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
         BA LLB / BBA LLB
         <span class="ty-exam">via CLAT</span>
       </a>
-      <a href="ipu-bba-admission.php" class="ty-course-card">
+      <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" class="ty-course-card">
         <span class="ty-icon">&#127891;</span>
         BBA
         <span class="ty-exam">via CUET</span>

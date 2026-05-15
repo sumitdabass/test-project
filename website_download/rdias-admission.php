@@ -63,7 +63,7 @@ $college_data = [
     ],
     'related_pages' => [
         ['title' => 'GIBS Admission 2026', 'url' => '/gibs-admission.php', 'desc' => 'Explore Gitarattan International Business School for BBA in Rohini'],
-        ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
+        ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
         ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Check BBA cutoff trends across all IPU colleges'],
     ],
 ];

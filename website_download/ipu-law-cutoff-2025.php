@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Law Cutoff 2025 | CLAT Score for BA LLB & BBA LLB</title>
 <meta name="description" content="IPU law cutoff 2025 – CLAT score-based cutoff for USLS (USLLS), VIPS Law, MAIMS Law, Trinity. BA LLB & BBA LLB round-wise cutoff analysis. Call 9899991342.">

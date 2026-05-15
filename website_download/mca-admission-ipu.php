@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU MCA Admission 2026 | Programme Code 105, NIMCET, USICT Fee Rs.1.45L/yr</title>
 <meta name="description" content="IPU MCA 2026 (Programme Code 105) via NIMCET → CET → CUET#. USICT USS tuition Rs.1,45,200/yr per PG Brochure Ch 14. VIPS/JIMS/Tecnia. Call 9899991342.">

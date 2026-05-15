@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 Law Colleges in IPU 2026 | BA LLB Fees, CLAT Cutoff, Placements</title>
 <meta name="description" content="Top 10 Law colleges under IP University 2026: USLLS, VIPS, MAIMS, CPJ, DME, Fairfield, Ideal. BA LLB fees Rs.1.45L, CLAT cutoff, placements. Call 9899991342.">

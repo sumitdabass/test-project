@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>USICT Admission 2026 | IPU's Top B.Tech College – Courses & Placements</title>
 <meta name="description" content="USICT Dwarka (University School of ICT) – B.Tech CSE, IT, ECE at IPU campus. Top placements 12-20 LPA. JEE Main cutoff & fees. Call 9899991342 for guidance.">

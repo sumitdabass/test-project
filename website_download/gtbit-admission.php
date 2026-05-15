@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>GTBIT Admission 2026 | IPU Govt-Aided B.Tech College</title>
 <meta name="description" content="GTBIT admission 2026 under IPU. Govt-aided B.Tech & MCA at low fees. Courses, placements & more. Call 9899991342 for free guidance.">

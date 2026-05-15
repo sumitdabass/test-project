@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>B.Arch Admission in IP University 2026 | NATA, Eligibility & Colleges</title>
 <meta name="description" content="B.Arch admission in IPU 2026 via NATA only (Programme Code 100). Eligibility (Physics + Math + 1-of-many at 45%), top colleges, fees & career scope. Call 9899991342 for free admission guidance.">

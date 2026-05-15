@@ -73,7 +73,7 @@ $college_data = [
     ],
     'related_pages' => [
         ['title' => 'JIMS Kalkaji Admission 2026', 'url' => '/jims-kalkaji-admission.php', 'desc' => 'Explore the Kalkaji campus of Jagannath International Management School'],
-        ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
+        ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete guide to BBA admission process at IP University'],
         ['title' => 'BJMC Colleges Under IPU', 'url' => '/guide-to-bjmc-colleges-under-ip-university.php', 'desc' => 'Guide to BA(JMC) colleges and admission under GGSIPU'],
     ],
 ];

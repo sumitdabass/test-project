@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU B.Com (Hons) Admission 2026 | Fees, CUET Cutoff, Best Colleges</title>
 <meta name="description" content="IP University B.Com (Hons) 2026 via CUET – eligibility, fees Rs.40K-1.5L, top colleges (MAIMS/VIPS/MSI/Trinity). Call 9899991342 for free help.">

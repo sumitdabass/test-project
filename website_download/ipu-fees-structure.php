@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>
 <meta name="description" content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.55L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342.">
@@ -185,7 +185,7 @@ $related_pages = [
   ['title' => 'MAIMS Rohini BBA & MBA Fees', 'url' => '/maims-delhi-fees-courses.php', 'desc' => 'Complete MAIMS course list with fees and placements'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'B.Tech admission with eligibility, JEE Main cutoffs and fees'],
   ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB fees and admission process'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA admission, eligibility, fees and best IPU BBA colleges']
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA admission, eligibility, fees and best IPU BBA colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

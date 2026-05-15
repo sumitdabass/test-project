@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 B.Com (Hons) Colleges in IPU 2026 | Fees, Cutoff, Placements</title>
 <meta name="description" content="Top 10 B.Com Hons colleges IP University 2026 ranked: MAIMS, VIPS, MSI, JIMS, DIAS. Fees Rs.40K-1.5L, CUET cutoff, placements. Call 9899991342.">

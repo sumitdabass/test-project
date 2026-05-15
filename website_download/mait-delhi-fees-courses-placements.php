@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MAIT Delhi: Full Form, Govt or Private, Fees, Cutoff, Placements 2026</title>
 <meta name="description" content="MAIT Delhi (Maharaja Agrasen Institute of Technology) Rohini – is it govt or private? Full form, campus area, B.Tech fees Rs.1.55L, cutoff 83-91%. Call 9899991342.">

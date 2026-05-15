@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 BBA Colleges in IPU 2026 | Fees, Cutoff, Placements Ranking</title>
 <meta name="description" content="Top 10 BBA colleges under IP University 2026 ranked: VIPS, MAIMS, RDIAS, Trinity, JIMS, Tecnia, BVIMR, MSI. Fees Rs.1.2-1.8L, cutoff, placements. Call 9899991342.">

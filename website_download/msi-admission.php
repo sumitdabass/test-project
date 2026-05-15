@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MSI Janakpuri Admission 2026 | BBA, BCA, B.Com Fees & Cutoff – IPU</title>
 <meta name="description" content="Maharaja Surajmal Institute (MSI) Janakpuri 2026 – BBA, BCA, B.Com, Law admission at GGSIPU. Fees, cutoff, placements. Call 9899991342 for expert guidance.">

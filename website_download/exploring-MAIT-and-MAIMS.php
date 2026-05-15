@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 $page_title = "MAIT & MAIMS Rohini 2026 | B.Tech Admission, Courses & Placements";
 $page_description = "MAIT & MAIMS Rohini – B.Tech CSE, IT, ECE, BBA, MBA, BJMC. Cutoff, fees, placements & IPU admission process. Call 9899991342 for free expert guidance.";
 $page_canonical = "https://ipu.co.in/exploring-MAIT-and-MAIMS.php";
@@ -120,7 +120,7 @@ include __DIR__ . '/include/components/page-hero.php';
       <div class="col-lg-8">
         <article class="blog-details">
 
-          <img fetchpriority="high" decoding="async" src="assets/images/exploring-MAIT-and-MAIMS.jpg" class="main-img"
+          <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/exploring-MAIT-and-MAIMS.jpg" class="main-img"
                alt="Campus of MAIT and MAIMS Rohini, affiliated with IP University Delhi" />
 
           <!-- SECTION 1: Intro -->

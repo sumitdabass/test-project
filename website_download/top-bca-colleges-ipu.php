@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 BCA Colleges in IPU 2026 | Fees, Cutoff, Placements Ranking</title>
 <meta name="description" content="Top 10 BCA colleges under IP University 2026 ranked: VIPS, IITM, MSI, MAIMS, JIMS. Fees Rs.80K-1.5L, cutoff, placements. Call 9899991342 for free guidance.">

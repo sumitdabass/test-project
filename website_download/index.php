@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
-session_start();
+session_cache_limiter('public'); session_cache_expire(30); session_start();
 ob_start();
 include_once("include/form-handler.php");
 ?>
@@ -45,6 +45,19 @@ include_once("include/form-handler.php");
         "addressRegion": "Delhi",
         "addressCountry": "IN"
       },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+91-9899991342",
+        "contactType": "admissions",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      }],
       "sameAs": [
         "https://www.facebook.com/ggsipuadmission",
         "https://www.instagram.com/ipu.co.in/"
@@ -80,7 +93,7 @@ include_once("include/form-handler.php");
         {"@type": "ListItem", "position": 1, "item": {"@type": "Course", "name": "B.Tech Admission IP University", "url": "https://ipu.co.in/IPU-B-Tech-admission-2026.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 2, "item": {"@type": "Course", "name": "MBA Admission IP University", "url": "https://ipu.co.in/mba-admission-ip-university.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 3, "item": {"@type": "Course", "name": "Law Admission IP University", "url": "https://ipu.co.in/ultimate-guide-to-ballb-admission-in-ip-university.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
-        {"@type": "ListItem", "position": 4, "item": {"@type": "Course", "name": "BBA Admission IP University", "url": "https://ipu.co.in/ipu-bba-admission.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
+        {"@type": "ListItem", "position": 4, "item": {"@type": "Course", "name": "BBA Admission IP University", "url": "https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 5, "item": {"@type": "Course", "name": "BCA BCom BJMC IP University", "url": "https://ipu.co.in/ipu-admission-guide.php", "provider": {"@id": "https://ipu.co.in/#organization"}}}
       ]
     }
@@ -197,7 +210,7 @@ include_once("include/form-handler.php");
           Free expert guidance for <a href="/IPU-B-Tech-admission-2026.php" style="color:#f59e0b;font-weight:600">B.Tech</a>,
           <a href="/mba-admission-ip-university.php" style="color:#f59e0b;font-weight:600">MBA</a>,
           <a href="/IPU-Law-Admission-2026.php" style="color:#f59e0b;font-weight:600">Law</a>,
-          <a href="/ipu-bba-admission.php" style="color:#f59e0b;font-weight:600">BBA</a>,
+          <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:#f59e0b;font-weight:600">BBA</a>,
           <a href="/bcom-admission-ipu.php" style="color:#f59e0b;font-weight:600">B.Com</a> &amp; more — from exams to seat allotment.
         </p>
 
@@ -288,7 +301,7 @@ include_once("include/form-handler.php");
 $courses = [
     ['name' => 'B.Tech', 'exam' => 'JEE Main / CUET', 'url' => '/IPU-B-Tech-admission-2026.php', 'icon' => 'laptop'],
     ['name' => 'MBA', 'exam' => 'CAT / CMAT', 'url' => '/mba-admission-ip-university.php', 'icon' => 'briefcase'],
-    ['name' => 'BBA', 'exam' => 'CUET / IPU CET', 'url' => '/ipu-bba-admission.php', 'icon' => 'chart'],
+    ['name' => 'BBA', 'exam' => 'CUET / IPU CET', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'icon' => 'chart'],
     ['name' => 'BA LLB', 'exam' => 'CLAT', 'url' => '/ultimate-guide-to-ballb-admission-in-ip-university.php', 'icon' => 'scale'],
     ['name' => 'BBA LLB', 'exam' => 'CLAT', 'url' => '/comprehensive-guide-to-bballb-admission-in-ip-university.php', 'icon' => 'scale'],
     ['name' => 'B.Com', 'exam' => 'CUET', 'url' => '/bcom-admission-ipu.php', 'icon' => 'chart'],

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU BA Economics Cutoff 2025 | CUET Score & Admission Analysis</title>
 <meta name="description" content="IPU BA Economics cutoff 2025 – CUET percentile & score-based cutoff for MSI, VIPS, MAIMS. Round 1 & Round 3 analysis. Call 9899991342 for free rank analysis.">

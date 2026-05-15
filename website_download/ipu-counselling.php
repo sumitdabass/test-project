@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Counselling 2026 – Dates, Registration, Fees, Process & Last Date</title>
 <meta name="description" content="IPU / GGSIPU Counselling 2026 – registration dates, last date, fee, step-by-step choice filling & seat allotment rounds. Call 9899991342 for free expert help.">
@@ -140,7 +140,7 @@ include 'include/components/hero-banner.php';
   <p>B.Tech counselling for IPU 2026 is based on JEE Main 2026 percentile/rank. Registration opens in mid-May 2026 and Round 1 allotment is expected by 1st week of July. Top colleges include USICT Dwarka, MAIT Rohini, MSIT Janakpuri, BPIT, GTBIT, BVP, ADGITM, NDIM. Read our <a href="/IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a> and <a href="/ipu-btech-cutoff-2025.php">B.Tech Cutoff Analysis</a> for branch-wise rank requirements.</p>
 
   <h3>BBA Counselling (CUET based)</h3>
-  <p>BBA admission at IPU is now through CUET-UG scores. Registration on the IPU portal opens by mid-May. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/ipu-bba-admission.php">BBA Admission Guide</a>.</p>
+  <p>BBA admission at IPU is now through CUET-UG scores. Registration on the IPU portal opens by mid-May. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide</a>.</p>
 
   <h3>Law Counselling (CLAT / IPU CET based)</h3>
   <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission-2026.php">Law Admission Guide</a>.</p>

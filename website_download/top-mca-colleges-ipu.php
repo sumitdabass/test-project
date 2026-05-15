@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 MCA Colleges in IPU 2026 | NIMCET, Fees, Placements Ranking</title>
 <meta name="description" content="Top 10 MCA colleges under IP University 2026 ranked: USICT, VIPS, JIMS, Tecnia, Bharati Vidyapeeth. NIMCET cutoff, fees Rs.1.3L, placements. Call 9899991342.">

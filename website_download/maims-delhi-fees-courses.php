@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MAIMS Rohini: Full Form, Govt or Private, BBA/MBA Fees, Placements 2026</title>
 <meta name="description" content="MAIMS Rohini (Maharaja Agrasen Institute of Management Studies) – full form, private/govt, BBA fees Rs.1.2L, MBA, cutoff, placements 5-10 LPA. Call 9899991342.">
@@ -185,7 +185,7 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MAIMS Admission Guide', 'url' => '/maims-admission.php', 'desc' => 'Detailed MAIMS admission process, eligibility and counselling guide'],
   ['title' => 'MAIT Delhi: Full Form, Fees & Placements', 'url' => '/mait-delhi-fees-courses-placements.php', 'desc' => 'Sister institute of MAIMS — engineering college on the same Rohini campus'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete BBA admission guide for IPU colleges including MAIMS'],
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete BBA admission guide for IPU colleges including MAIMS'],
   ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],
   ['title' => 'Maharaja Agrasen Business School (PGDM)', 'url' => '/maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php', 'desc' => 'PGDM programme at Maharaja Agrasen Business School Delhi'],
   ['title' => 'BBA Management Quota IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Eligibility, fees and process for management quota seats in BBA at IPU colleges']

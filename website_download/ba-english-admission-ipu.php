@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU BA English Admission 2026 – CUET, Colleges & Career</title>
 <meta name="description" content="IPU BA English admission 2026. CUET process, curriculum, colleges, eligibility & career opportunities. Call 9899991342 for free admission counselling.">

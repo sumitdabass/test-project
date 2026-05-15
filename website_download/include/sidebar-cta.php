@@ -7,7 +7,7 @@
  */
 
 // Generate form timestamp for anti-spam
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 $_SESSION['form_loaded_at'] = time();
 ?>
 
@@ -103,7 +103,7 @@ $_SESSION['form_loaded_at'] = time();
     <li style="margin-bottom:8px"><a href="/IPU-B-Tech-admission-2026.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ B.Tech Admission 2026</a></li>
     <li style="margin-bottom:8px"><a href="/mba-admission-ip-university.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ MBA Admission Guide</a></li>
     <li style="margin-bottom:8px"><a href="/IPU-Law-Admission-2026.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ Law Admission 2026</a></li>
-    <li style="margin-bottom:8px"><a href="/ipu-bba-admission.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ BBA Admission Guide</a></li>
+    <li style="margin-bottom:8px"><a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ BBA Admission Guide</a></li>
     <li style="margin-bottom:0"><a href="/IP-University-management-quota-admission-eligibility-criteria.php" style="font-size:13px;color:#1a3a9c;text-decoration:none">→ Management Quota</a></li>
   </ul>
 </div>

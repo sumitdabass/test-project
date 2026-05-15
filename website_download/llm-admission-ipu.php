@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU LLM Admission 2026 | Programme Code 112, CLAT PG, USLLS Specialisations</title>
 <meta name="description" content="IPU LLM 1-Year 2026 (Programme Code 112) via CLAT-PG – Corporate/IPR/Criminal Justice/ADR specialisations at USLLS Dwarka. LLB+55% eligibility. Call 9899991342.">

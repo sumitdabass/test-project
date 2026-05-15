@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -42,7 +42,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" src="assets/images/IPU-Law-Admission-2025.jpg"
+<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IPU-Law-Admission-2025.jpg"
 class="main-img"
 alt="IPU Law Admission Through CUET (UG) — BA-LLB and BBA-LLB">
 

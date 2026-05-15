@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU</title>
 <meta name="description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">

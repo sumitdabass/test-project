@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MSIT Janakpuri Admission 2026 | B.Tech Fees, Cutoff, Placements – IPU</title>
 <meta name="description" content="Maharaja Surajmal Institute of Technology (MSIT) Janakpuri – B.Tech admission 2026. Fees, JEE Main cutoff, placements 6-12 LPA. Free admission guidance at 9899991342.">
