@@ -377,7 +377,10 @@ $faqs = [
   ['question' => 'What is the law fee at the IPU campus (USL&LS) 2026-27?', 'answer' => 'Per Part E, Chapter 14 of the brochure, BA-LLB / BBA-LLB at USL&LS for 2026-27 is: tuition Rs. 1,45,200 + university charges Rs. 20,000 + alumni one-time Rs. 2,000 + exam Rs. 3,000 + innovation Rs. 500 + infrastructure Rs. 10,000 = <strong>Rs. 1,80,700 (Year 1 total)</strong>. Year 2: Rs. 1,93,220. Year 3: Rs. 2,09,192. Year 4: Rs. 2,26,761. Year 5: Rs. 2,46,087.'],
   ['question' => 'What is the law fee at IPU affiliated colleges 2026-27?', 'answer' => 'Affiliated colleges charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically <strong>Rs. 1,15,000 to Rs. 1,55,000 per year tuition</strong> for BA-LLB / BBA-LLB. Add Rs. 25,000-30,000 in university charges, exam, innovation, alumni and welfare contributions. Total annual cost ~Rs. 1,40,000-1,80,000 at most affiliated colleges (VIPS, MAIMS, Fairfield, DME, Gitarattan).'],
   ['question' => 'Does IPU also offer LLB (3-year) and LLM?', 'answer' => 'Yes. Per the 2026-27 brochure: <strong>3-year LLB</strong> is offered at USL&LS (60 seats), VIPS-TC Pitampura (30 seats) and Chanderprabhu Jain Narela (60 seats) — total fee at USS Rs. 1,80,700/year. <strong>1-year LLM</strong> is offered at USL&LS (4 specialisations × 30 seats: Corporate Law, Criminal Justice, IPR, ADR) and 12+ affiliated colleges including MAIMS, VIPS, DIST, Fairfield, Gitarattan, Ideal, KCC and JEMTEC. LLM admission is through IPU CET (LLM).'],
-  ['question' => 'What is the eligibility for BA-LLB and BBA-LLB at IPU 2026?', 'answer' => 'Class 12 (10+2) pass with minimum <strong>50% aggregate</strong> from a recognised board (45% for SC/ST/OBC/PwD), with English as a compulsory subject. Maximum age 22 years (24 for SC/ST/OBC) per BCI rules. Admission is through <strong>CUET (UG)</strong> or CLAT (where applicable) followed by centralised online counselling at ipu.ac.in. Marks are not rounded off (Important Instruction #28).']
+  ['question' => 'What is the eligibility for BA-LLB and BBA-LLB at IPU 2026?', 'answer' => 'Class 12 (10+2) pass with minimum <strong>50% aggregate</strong> from a recognised board (45% for SC/ST/OBC/PwD), with English as a compulsory subject. Maximum age 22 years (24 for SC/ST/OBC) per BCI rules. Admission is through <strong>CUET (UG)</strong> or CLAT (where applicable) followed by centralised online counselling at ipu.ac.in. Marks are not rounded off (Important Instruction #28).'],
+  ['question' => 'What is the IPU law admission process for 2026?', 'answer' => '5-step process: (1) Appear for CLAT 2026 (for BA-LLB/BBA-LLB) or graduation completion (for 3-year LLB). (2) Get CLAT rank or apply directly via IPU CET-Law. (3) Register for GGSIPU online counselling once it opens at ipu.admissions.nic.in. (4) Pay counselling fee, fill college and branch choices, lock by deadline. (5) Accept Round 1 seat allotment and report to allotted college with documents and tuition fee within the reporting window. Round 2 and 3 follow for vacant seats. Call 9899991342 for the latest dates.'],
+  ['question' => 'Is there management quota for IPU law colleges?', 'answer' => 'Yes, select private affiliated law colleges under IPU offer 15-20% seats under the management quota for candidates with lower CLAT ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. Call 9899991342 for current management-quota seat availability.'],
+  ['question' => 'Which is the best law college under IPU?', 'answer' => 'USLLS (University School of Law and Legal Studies, the university\'s own on-campus school in Dwarka) is the most reputed law school under GGSIPU with the lowest fee. Among private affiliated colleges, <a href="vips-admission.php">VIPS-TC Pitampura</a> and <a href="maims-admission.php">MAIMS Rohini</a> are highly ranked for placements and intake. Fairfield Bijwasan and <a href="ideal-admission.php">Ideal Karkardooma</a> are strong alternatives for mid-rank CLAT scorers. Call 9899991342 for college-fit consultation.']
 ];
 include 'include/components/faq-section.php';
 ?>
@@ -420,6 +423,27 @@ include 'include/components/related-pages.php';
 </script>
 
 <?php include_once("include/base-footer.php") ?>
+
+<!-- ===== HowTo Schema — Phase B Day 4 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to apply for IPU law admission 2026",
+  "description": "Step-by-step process for IPU BA-LLB, BBA-LLB, LL.B. and LL.M. admission via GGSIPU counselling 2026.",
+  "totalTime": "P60D",
+  "estimatedCost": {"@type":"MonetaryAmount","currency":"INR","value":"1500"},
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Appear for CLAT 2026 or relevant entrance","text":"For BA-LLB/BBA-LLB (5-year integrated), appear for CLAT 2026. For 3-year LL.B., complete graduation. For LL.M., appear for CLAT PG."},
+    {"@type":"HowToStep","position":2,"name":"Get entrance result","text":"Wait for CLAT result or IPU CET-Law result. Your rank determines GGSIPU counselling allotment."},
+    {"@type":"HowToStep","position":3,"name":"Register for GGSIPU counselling","text":"Visit ipu.admissions.nic.in once counselling registration opens. Create candidate login with CLAT/graduation details."},
+    {"@type":"HowToStep","position":4,"name":"Pay counselling fee","text":"Pay GGSIPU counselling registration fee (Rs.1,500 general, Rs.750 reserved) online."},
+    {"@type":"HowToStep","position":5,"name":"Fill college and programme choices","text":"Add preferred law colleges and programmes in priority order. Lock choices before deadline."},
+    {"@type":"HowToStep","position":6,"name":"Accept Round 1 allotment","text":"Round 1 allotment published 5-7 days after registration closes. Accept the seat and report to the allotted college with documents and tuition fee within the reporting window."}
+  ]
+}
+</script>
+<!-- ===== /HowTo Schema ===== -->
 
 </body>
 </html>
