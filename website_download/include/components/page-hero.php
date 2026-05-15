@@ -17,6 +17,7 @@ $hero_intro       = $hero_intro       ?? null;
 $hero_chips       = $hero_chips       ?? [];
 $hero_breadcrumbs = $hero_breadcrumbs ?? [];
 $hero_show_form   = $hero_show_form   ?? true;
+$show_trust_bar   = $show_trust_bar   ?? true;
 $hero_slot_html   = $hero_slot_html   ?? null;
 ?>
 <section class="ipu-page-hero">
@@ -85,3 +86,5 @@ $hero_slot_html   = $hero_slot_html   ?? null;
     </div>
   </div>
 </section>
+
+<?php if ($show_trust_bar): include __DIR__ . '/trust-bar.php'; endif; ?>
