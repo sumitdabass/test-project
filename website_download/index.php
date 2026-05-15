@@ -101,80 +101,6 @@ include_once("include/form-handler.php");
 }
 </script>
 
-<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is IPU / IP University?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU (Guru Gobind Singh Indraprastha University or GGSIPU) is a state university in Delhi, established in 1998 by Government of NCT of Delhi. It offers 80+ affiliated colleges across Delhi NCR for B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA and more courses. Call 9899991342 for free admission guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU full form?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU stands for Indraprastha University. Its official name is Guru Gobind Singh Indraprastha University (GGSIPU), located in Dwarka, Delhi. It is a state university established in 1998 by the Government of NCT of Delhi and offers 80+ affiliated colleges in Delhi NCR. Call 9899991342 for admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is IPU / GGSIPU a government or private university?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GGSIPU is a GOVERNMENT (state) university established by the Govt of NCT Delhi in 1998. However, most of its affiliated colleges (like MAIT, VIPS, MSIT, MAIMS, Tecnia) are private self-financing institutions affiliated to GGSIPU. Call 9899991342 to know which IPU colleges are govt vs private."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU admission process 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU admission 2026 involves: (1) Registration at ipu.ac.in or ipu.admissions.nic.in, (2) Appearing in relevant entrance exam (JEE Main/CUET/CAT/CET/CLAT), (3) Counselling registration, (4) Choice filling, (5) Seat allotment, (6) Document verification and fee payment. Call 9899991342 for step-by-step guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many colleges are under IPU?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GGSIPU has 80+ affiliated colleges across Delhi NCR including MAIT, MSIT, VIPS, USICT, MAIMS, BPIT, BVP, JIMS, Tecnia, and more. The colleges offer B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA, MCA, LLM and other programs. Call 9899991342 for the complete IPU college list and shortlisting help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU counselling 2026 date?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU counselling 2026 is expected to begin in May-June 2026. Registration typically opens after entrance results. Round 1 allotment in July 2026, with classes commencing August 2026. Exact dates will be notified at ipu.ac.in. Call 9899991342 for updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What entrance exams does IPU accept?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU accepts: JEE Main (B.Tech), CUET UG (BBA/BCA/BA/B.Com/BJMC), CLAT (BA LLB/BBA LLB), CAT/CMAT (MBA), NIMCET (MCA), GATE (M.Tech), NEET (MBBS), NATA (B.Arch), and IPU CET for some programs. Call 9899991342 to know which entrance exam you need for your target course."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU B.Tech fees 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU B.Tech fees 2026-27 are approximately Rs. 1,55,700 per year at affiliated colleges (MAIT, MSIT, BPIT, VIPS) and Rs. 1,69,400 to Rs. 2,25,471 per year at University Schools (USICT, USAR, USCT). Total 4-year fee ranges Rs. 6.23L to Rs. 7.86L. Call 9899991342 for fee help."
-      }
-    }
-  ]
-}
-</script>
-
 </head>
 
 <body>
@@ -295,6 +221,45 @@ include_once("include/form-handler.php");
 
 <!-- ===== TRUST STATS BAR ===== -->
 <?php include_once("include/components/trust-bar.php"); ?>
+
+<!-- ===== Homepage FAQ — Phase B Day 6 ===== -->
+<section class="ipu-faq" style="padding:48px 0;background:#fafafa">
+  <div class="container">
+    <h2 style="font-size:clamp(1.6rem,3vw,2rem);font-weight:700;color:#0d1b6e;margin-bottom:24px;text-align:center">Frequently Asked Questions — IP University Admission 2026</h2>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is GGSIPU / IP University?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Guru Gobind Singh Indraprastha University (GGSIPU), also known as IP University, is a state university established by the Government of NCT of Delhi in 1998. The university is named after the tenth Sikh Guru, Guru Gobind Singh, and is recognised by the University Grants Commission (UGC) and accredited NAAC A++. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for admission guidance.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">Where is IP University located?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">The main campus is at Sector 16C, Dwarka, Delhi-110078. GGSIPU has 60+ affiliated colleges spread across Delhi NCR, including East, West, North and South Delhi, Greater Noida, and Ghaziabad. The university operates through 5+ on-campus university schools (USICT for tech, USLLS for law, USMS for management, USS for education, USCT for medical). Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for college-fit consultation.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">How many colleges are under IPU?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU has 60+ affiliated colleges and 5+ on-campus university schools. Major affiliated colleges include MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), BVP (Paschim Vihar), ADGITM, GTBIT, IGDTUW, VIPS-TC, JIMS, and many more. For the complete list with fees and cutoffs, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU admission process for 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Most IPU admissions for 2026 are through counselling based on national entrance exams — JEE Main for B.Tech, CLAT for law, CUET-UG for select UG courses, and IPU CET for some programs. Process: register online once counselling opens, fill choices in priority order, lock before deadline, and await seat allotment. Free step-by-step admission guidance: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU helpline number?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">The 24/7 IPU admission helpline number is <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>. Call for counselling guidance, seat-availability checks, fee structure across 60+ affiliated colleges, and complete process help for B.Tech / BBA / Law / MBA / BCA / BJMC admissions.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">When was IP University established?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">IP University was established in 1998 by an Act of the Delhi Legislative Assembly. The university has completed 25+ years of operation, accredited NAAC A++, and is one of Delhi's largest state universities by enrolment with over 100,000 students graduated. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for the 2026 admission cycle details.</div>
+    </details>
+
+  </div>
+</section>
+<!-- ===== /Homepage FAQ ===== -->
 
 <!-- ===== COURSES SECTION ===== -->
 <?php
@@ -443,6 +408,13 @@ $faqs = [
     ['question' => 'What courses are offered under IP University admission 2026?', 'answer' => 'IP University offers B.Tech, MBA, BBA, MCA, BA LLB, BBA LLB, B.Com, BA Economics, BA English, BCA, BJMC and more through 60+ GGSIPU affiliated colleges across Delhi.'],
     ['question' => 'What is IPU management quota / management seat admission?', 'answer' => 'IPU management quota (also called management seat) refers to a limited percentage of seats in IP University affiliated colleges filled directly, outside centralised counselling. Eligibility and valid entrance score (JEE Main / CUET / CLAT) is still required. See our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management seat guide</a> or call <a href="tel:+919899991342">9899991342</a> to check eligibility and available seats.'],
     ['question' => 'Is IPU counselling 2026 started?', 'answer' => 'IPU counselling 2026 has been announced. Seats are limited and fill quickly. Contact our helpline at <a href="tel:+919899991342">9899991342</a> for the latest schedule and free guidance on choice filling strategy.'],
+    // Day 6 — brand + informational cluster
+    ['question' => 'What is GGSIPU / IP University?', 'answer' => 'Guru Gobind Singh Indraprastha University (GGSIPU), also known as IP University, is a state university established by the Government of NCT of Delhi in 1998. The university is named after the tenth Sikh Guru, Guru Gobind Singh, and is recognised by the University Grants Commission (UGC) and accredited NAAC A++. Call <a href="tel:+919899991342">9899991342</a> for admission guidance.'],
+    ['question' => 'Where is IP University located?', 'answer' => 'The main campus is at Sector 16C, Dwarka, Delhi-110078. GGSIPU has 60+ affiliated colleges spread across Delhi NCR, including East, West, North and South Delhi, Greater Noida, and Ghaziabad. The university operates through 5+ on-campus university schools (USICT for tech, USLLS for law, USMS for management, USS for education, USCT for medical). Call <a href="tel:+919899991342">9899991342</a> for college-fit consultation.'],
+    ['question' => 'How many colleges are under IPU?', 'answer' => 'GGSIPU has 60+ affiliated colleges and 5+ on-campus university schools. Major affiliated colleges include MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), BVP (Paschim Vihar), ADGITM, GTBIT, IGDTUW, VIPS-TC, JIMS, and many more. For the complete list with fees and cutoffs, call <a href="tel:+919899991342">9899991342</a>.'],
+    ['question' => 'What is the IPU admission process for 2026?', 'answer' => 'Most IPU admissions for 2026 are through counselling based on national entrance exams — JEE Main for B.Tech, CLAT for law, CUET-UG for select UG courses, and IPU CET for some programs. Process: register online once counselling opens, fill choices in priority order, lock before deadline, and await seat allotment. Free step-by-step admission guidance: call <a href="tel:+919899991342">9899991342</a>.'],
+    ['question' => 'What is the IPU helpline number?', 'answer' => 'The 24/7 IPU admission helpline number is <a href="tel:+919899991342">9899991342</a>. Call for counselling guidance, seat-availability checks, fee structure across 60+ affiliated colleges, and complete process help for B.Tech / BBA / Law / MBA / BCA / BJMC admissions.'],
+    ['question' => 'When was IP University established?', 'answer' => 'IP University was established in 1998 by an Act of the Delhi Legislative Assembly. The university has completed 25+ years of operation, accredited NAAC A++, and is one of Delhi\'s largest state universities by enrolment with over 100,000 students graduated. Call <a href="tel:+919899991342">9899991342</a> for the 2026 admission cycle details.'],
 ];
 $faq_heading = "Frequently Asked Questions about IPU Admission";
 include_once("include/components/faq-section.php");
