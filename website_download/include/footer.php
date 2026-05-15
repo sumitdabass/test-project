@@ -57,7 +57,7 @@
 
     <!-- Floating Call Button -->
     <a href="tel:9899991342" class="whatsapp_float2">
-        <img src="assets/images/call.gif" alt="Call IPU Admission Helpline">
+        <img src="assets/images/call.gif" alt="Call IPU Admission Helpline" width="400" height="300">
     </a>
 
 </footer>
