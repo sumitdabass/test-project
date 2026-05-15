@@ -61,7 +61,7 @@ Every deploy follows: localhost crosslink test → git commit + tag → FTP push
 ### Day 1 — Baseline + Trust strip site-wide
 
 - **Watch-term baseline:** Save SC top-30 queries with current positions to `seo/baselines/2026-05-15-watch-terms.csv`.
-- **Code change:** Wire `include/components/trust-bar.php` into `include/page-hero.php` once, with a `$show_trust_bar = true` flag (defaulting on; per-page opt-out via setting it false). Placement: between page hero and first body section, matching `index.php` line 297.
+- **Code change:** Wire `include/components/trust-bar.php` into `include/components/page-hero.php` (on disk: `website_download/include/components/page-hero.php`) once, with a `$show_trust_bar = true` flag (defaulting on; per-page opt-out via setting it false). Placement: between page hero and first body section, matching `index.php` line 297. Render via `include_once("include/components/trust-bar.php")` from inside page-hero.php after the hero block closes.
 - **Affected pages:** All 85 cohesion-migrated pages automatically (they all use page-hero.php).
 - **Risk:** Zero rank impact. Pure brand reinforcement.
 
@@ -97,7 +97,7 @@ Every deploy follows: localhost crosslink test → git commit + tag → FTP push
 - **Code change:**
   - FAQPage schema with 6 Q/A pairs targeting brand-cluster queries (`What is GGSIPU?`, `Where is IPU located?`, `How many colleges under IPU?`, `What is the IPU admission process?`, `IPU helpline number?`, `When was IPU established?`).
   - Visible FAQ section below existing trust-bar strip (matches schema content).
-  - One new "About IPU" content block in an available slot (no rewrites to existing copy; if no clean append slot exists, skip the content block and ship FAQ schema only).
+  - One new "About IPU" content block (~250-400 words, evergreen) inserted immediately below the existing trust-bar strip and above the first existing H2 section on `index.php`. Strictly append; no edits to existing copy, H1, or hero. If localhost visual diff shows the block disrupts hero→trust-bar→content rhythm, skip the content block and ship FAQ schema only.
 - **Risk:** Low-medium. Homepage is brand-critical. Stop-loss check Day 7 morning is the safety wire.
 
 ### Day 7 — Rank delta review + stop-loss
@@ -173,7 +173,7 @@ Default (SC-data-driven if Ads CSVs not in):
 | 10 | FAQ + HowTo schema on `ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php` |
 | 11 | `mail.ipu.co.in` subdomain leak fix + crosslink audit re-run |
 | 12 | FAQ schema on `ipu-colleges-list.php` (14,789 impr) + `comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php` (5,558 impr) |
-| 13 | Catch-up day / second watch-term rank check / parking-lot item |
+| 13 | Catch-up: re-deploy anything that slipped from Days 8-12 / second watch-term rank check / one parking-lot item if all caught up (priority: BPIT/BVP zero-click investigation) |
 | 14 | Week-2 review: rank deltas, lead-volume delta from server-side logs, Phase C scope decision |
 
 If Ads CSVs arrive before Day 8, the schedule re-ranks by `Ads cost / Ads conversions = CPL` × volume descending. Decision rule fixed; specific picks depend on data.
