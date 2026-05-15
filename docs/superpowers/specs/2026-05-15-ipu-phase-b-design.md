@@ -15,7 +15,7 @@ Organic SEO compounding is a free byproduct of the additive items shipped, not a
 
 ## 2. Constraints
 
-1. **No URL / title / meta / canonical / H1 changes on any page currently ranking in SC top-30.** Per [[feedback_seo_safety_ipu]]. All page-level changes are additive only.
+1. **Keywords ranking pos 1-10: don't touch (preserve as-is). Keywords ranking pos 11+: fair game to optimize.** Per Sumit 2026-05-15: *"keyword whose rank below 10 can be touched no issue / dont touch 1 to 10 / we will improve those."* In practice: no URL / title / meta / canonical / H1 changes that could affect a query currently ranking top-10. Schema (FAQ, HowTo, etc.), image dimensions, and new sub-sections targeting different (pos 11+) queries are allowed because they don't compete with protected ranking signals. Also per [[feedback_seo_safety_ipu]].
 2. **Trust strip = `include/components/trust-bar.php`, used verbatim.** Per [[feedback_ipu_trust_strip_canonical]]. No variant designs.
 3. **Lead measurement cannot use davya-crm.** Per [[project_ipu_crm_disconnection]] — public-website forms do not feed CRM. Use server-side log counts via SSH (`ipuc@ipu.co.in` with `~/.ssh/davyas-active` per [[reference_ipuc_ssh_key]]).
 4. **Pre-deploy quality gate.** Localhost crosslink test across 5 archetype pages per [[feedback_localhost_crosslink_test]]; curl-verify each changed file on prod after FTP push per [[feedback_pre_deploy_quality_check]].
