@@ -292,7 +292,9 @@ $faqs = [
   ['question' => 'What is the B.Tech fee at the IPU campus (USS) 2026-27?', 'answer' => 'Per Part E, Chapter 14 of the brochure, B.Tech fee at USIC&T / USAR / USCT for 2026-27 is: tuition Rs. 1,69,400 + university charges Rs. 20,000 + alumni one-time Rs. 2,000 + exam Rs. 3,000 + innovation Rs. 500 + infrastructure Rs. 10,000 = <strong>Rs. 2,04,900 (Year 1 total)</strong>. Year 2: Rs. 2,19,840. Year 3: Rs. 2,38,474. Year 4: Rs. 2,58,971.'],
   ['question' => 'What is the B.Tech fee at IPU affiliated colleges (MAIT/MSIT/BPIT)?', 'answer' => 'Affiliated colleges charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically <strong>Rs. 1,41,750 to Rs. 1,55,700 per year tuition</strong> for B.Tech, plus Rs. 25,000-30,000 in university charges, exam fee, innovation fee, alumni and welfare contributions. Total annual cost ~Rs. 1,70,000-1,85,000 at most affiliated colleges.'],
   ['question' => 'What is the eligibility for IPU B.Tech admission?', 'answer' => 'Class 12 (10+2) pass with <strong>Physics, Chemistry & Mathematics (PCM)</strong>, minimum 55% aggregate (50% for SC/ST/OBC/PwD). Admission is through <strong>JEE Main</strong> primary merit followed by centralised online counselling at ipu.ac.in. CUET may apply for vacant-seat filling per Important Instruction #37 of the 2026-27 brochure. Marks are not rounded off (Instruction #28).'],
-  ['question' => 'Which IPU college offers the most B.Tech specialisations 2026-27?', 'answer' => 'Echelon Institute of Technology, Faridabad offers the widest B.Tech menu in IPU per Chapter 13 — 14 specialisations including CSE, ECE, ME, Civil, AI&ML, AI&DS, CSE-Cyber Security, CSE-IOT & Blockchain, Robotics & AI, 3D Modelling & Animation, Architecture & Interior Decoration, Nanoscience & Technology, and Mechatronics. MAIT Rohini also offers 14 specialisations across IT, CSE, ECE, EEE, ME, CST, CSE-AI/AI&ML/DS and Electronics-VLSI/Advanced Communication.']
+  ['question' => 'Which IPU college offers the most B.Tech specialisations 2026-27?', 'answer' => 'Echelon Institute of Technology, Faridabad offers the widest B.Tech menu in IPU per Chapter 13 — 14 specialisations including CSE, ECE, ME, Civil, AI&ML, AI&DS, CSE-Cyber Security, CSE-IOT & Blockchain, Robotics & AI, 3D Modelling & Animation, Architecture & Interior Decoration, Nanoscience & Technology, and Mechatronics. MAIT Rohini also offers 14 specialisations across IT, CSE, ECE, EEE, ME, CST, CSE-AI/AI&ML/DS and Electronics-VLSI/Advanced Communication.'],
+  ['question' => 'How do I apply for IPU B.Tech admission?', 'answer' => 'Apply through GGSIPU online counselling once JEE Main 2026 result is declared. Register on the official portal (ipu.admissions.nic.in), pay the counselling fee, lock your college and branch choices, and await seat allotment. The 2026 counselling process typically opens in the third-fourth week of July. Free step-by-step application help: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.'],
+  ['question' => 'Is there a management quota for IPU B.Tech admission?', 'answer' => 'Yes, select private affiliated colleges under IPU offer 15-20% seats under the management quota for candidates with lower JEE Main ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. For current management-quota seat availability across IPU colleges, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> or see our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management-quota guide</a>.']
 ];
 include 'include/components/faq-section.php';
 ?>
@@ -334,44 +336,11 @@ include 'include/components/related-pages.php';
 }
 </script>
 
-<!-- ===== FAQ section — Phase B Day 3 ===== -->
-<section class="ipu-faq" style="padding:48px 0;background:#fafafa">
-  <div class="container">
-    <h2 style="font-size:clamp(1.6rem,3vw,2rem);font-weight:700;color:#0d1b6e;margin-bottom:24px;text-align:center">Frequently Asked Questions — IPU B.Tech Admission 2026</h2>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the eligibility for IPU B.Tech admission 2026?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">Candidates must have passed Class 12 with Physics, Chemistry, Mathematics with minimum 55% aggregate (50% for reserved categories), and a valid JEE Main 2026 Paper-I score. Both 2025 and 2026 Class 12 pass-outs are eligible. Final admission depends on GGSIPU counselling rank. For eligibility verification, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
-    </details>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">How do I apply for IPU B.Tech admission?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">Apply through GGSIPU online counselling once JEE Main 2026 result is declared. Register on the official portal (ipu.admissions.nic.in), pay the counselling fee, lock your college + branch choices, and await seat allotment. The 2026 counselling process typically opens in the third-fourth week of July. Free step-by-step application help: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
-    </details>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU B.Tech admission process for 2026?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">The 6-step IPU B.Tech admission process for 2026: (1) Appear for JEE Main 2026 Paper-I (NTA). (2) Wait for JEE Main result. (3) GGSIPU opens online counselling registration. (4) Pay the counselling fee, fill college and branch choices, lock by deadline. (5) Round 1 seat allotment published 5-7 days later. (6) Accept and report to the allotted college with documents and tuition fee. Up to 3 rounds plus internal sliding round. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for the latest dates.</div>
-    </details>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">Which B.Tech branches are offered at IPU?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">IPU affiliated colleges offer 8+ B.Tech branches: Computer Science Engineering (CSE), Information Technology (IT), Electronics & Communication (ECE), Electrical & Electronics (EEE), Mechanical Engineering, Civil Engineering, Chemical Engineering, Industrial Engineering. Select colleges also offer specialised branches like Artificial Intelligence, Data Science, and Cyber Security. For branch-wise college list, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
-    </details>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the IPU B.Tech fee structure?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">Tuition fees for IPU B.Tech vary &#x20B9;1.2L-&#x20B9;3.5L per year depending on the college. Government-affiliated colleges (USICT, BPIT, IGDTUW, ADGITM) are at the lower end (&#x20B9;1.2L-&#x20B9;1.6L/yr). Private affiliated colleges range &#x20B9;1.8L-&#x20B9;3.5L/yr. Hostel and mess fees are separate (&#x20B9;50K-&#x20B9;1.2L/yr). For exact per-college fee breakdown, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
-    </details>
-
-    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
-      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">Is there a management quota for IPU B.Tech admission?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">Yes, select private affiliated colleges under IPU offer 15-20% seats under the management quota for candidates with lower JEE Main ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. For current management-quota seat availability across IPU colleges, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
-    </details>
-
-  </div>
-</section>
-<!-- ===== /FAQ section ===== -->
+<!-- (Phase B Day 3 visible-FAQ block removed — duplicate of the existing
+     brochure-sourced accordion at line 289+ which already renders both
+     visible Q/As and FAQPage JSON-LD via include/components/faq-section.php.
+     Two unique Q/As — "How do I apply" + "management quota" — folded into
+     the $faqs array instead.) -->
 
 <?php include_once("include/base-footer.php"); ?>
 
