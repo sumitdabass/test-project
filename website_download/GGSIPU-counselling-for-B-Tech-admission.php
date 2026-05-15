@@ -330,6 +330,95 @@ $related_pages = [
 include 'include/components/related-pages.php';
 ?>
 
+<!-- ===== FAQ section — Phase B Day 2 ===== -->
+<section class="ipu-faq" style="padding:48px 0;background:#fafafa">
+  <div class="container">
+    <h2 style="font-size:clamp(1.6rem,3vw,2rem);font-weight:700;color:#0d1b6e;margin-bottom:24px;text-align:center">Frequently Asked Questions — IPU B.Tech Counselling 2026</h2>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">When does GGSIPU counselling start in 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU B.Tech counselling for 2026 typically begins in the third or fourth week of July, following the announcement of JEE Main Paper-I results by NTA. Exact dates are notified on ipu.ac.in. For real-time updates and seat-confirmation assistance, call our 24/7 admission helpline at <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the GGSIPU counselling registration date for 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU counselling registration for B.Tech 2026 opens around the third week of July and runs for 7-10 days. Candidates register online via the official portal with their JEE Main rank, pay the counselling fee, and lock their preferences in choice-filling. Registration close dates are usually extended once — confirm the latest deadline by calling <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the last date for GGSIPU counselling registration 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">The last date for GGSIPU B.Tech counselling registration in 2026 is typically the first week of August, approximately 10 days after registration opens. Late registration is occasionally permitted with a higher fee, but candidates miss preference-lock if they delay. To avoid missing deadlines, our admission team sends date alerts — call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> to register.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">How do I register for GGSIPU B.Tech counselling 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">To register: (1) Visit the official GGSIPU counselling portal once it opens. (2) Create a candidate login with your JEE Main 2026 application number. (3) Pay the counselling registration fee online (₹1,500-2,000). (4) Fill choice list of preferred colleges + branches in priority order. (5) Lock choices before the deadline. (6) Download counselling letter once seat is allotted. Our team walks you through every step free — call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What are the GGSIPU counselling fees in 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU counselling registration fee for 2026 is approximately ₹1,500 for general category and ₹750 for reserved categories (SC/ST/PwD). This is the non-refundable fee paid online during registration. Note this is separate from the tuition fee charged by the allotted college (which varies ₹1.2L-3.5L/year). For a precise per-college fee breakdown, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What documents are required for GGSIPU counselling?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Documents to keep ready: JEE Main 2026 admit card + scorecard, Class 10 + 12 mark sheets, Class 12 passing certificate, Aadhaar card, passport-size photo (digital), category certificate (if applicable), Delhi region certificate (for Delhi quota), and a valid email + phone. Have all scans (PDF, &lt;2 MB each) ready before registration opens. Need a checklist? Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the GGSIPU counselling process for B.Tech?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">Process in order: (1) JEE Main 2026 result declared. (2) GGSIPU notifies counselling schedule. (3) Online registration opens (7-10 days). (4) Candidates fill choice list + lock. (5) Round 1 allotment based on JEE rank + choice + category. (6) Candidates accept and report to allotted college. (7) Rounds 2 and 3 for vacant seats. (8) Internal sliding round between colleges. Total cycle: ~6-8 weeks from JEE Main result to final classes. Need round-by-round guidance? Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+    <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
+      <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">How many rounds are in GGSIPU counselling 2026?</summary>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU B.Tech counselling 2026 will have 3 main rounds plus one internal sliding round. Round 1 is the largest allotment based on initial choice-fill. Round 2 fills seats vacated by candidates who didn't report. Round 3 is the spot-round for any remaining vacancies. The sliding round lets allotted candidates upgrade to a preferred college if vacancies exist. Counselling closes by mid-September typically. For round-wise seat alerts, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+    </details>
+
+  </div>
+</section>
+<!-- ===== /FAQ section ===== -->
+
 <?php include_once("include/base-footer.php"); ?>
+
+<!-- ===== FAQ + HowTo Schema — Phase B Day 2 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"When does GGSIPU counselling start in 2026?","acceptedAnswer":{"@type":"Answer","text":"GGSIPU B.Tech counselling for 2026 typically begins in the third or fourth week of July, following the announcement of JEE Main Paper-I results by NTA. Exact dates are notified on ipu.ac.in. For real-time updates and seat-confirmation assistance, call our 24/7 admission helpline at 9899991342."}},
+    {"@type":"Question","name":"What is the GGSIPU counselling registration date for 2026?","acceptedAnswer":{"@type":"Answer","text":"GGSIPU counselling registration for B.Tech 2026 opens around the third week of July and runs for 7-10 days. Candidates register online via the official portal with their JEE Main rank, pay the counselling fee, and lock their preferences in choice-filling. Confirm the latest deadline by calling 9899991342."}},
+    {"@type":"Question","name":"What is the last date for GGSIPU counselling registration 2026?","acceptedAnswer":{"@type":"Answer","text":"The last date for GGSIPU B.Tech counselling registration in 2026 is typically the first week of August, approximately 10 days after registration opens. Late registration is occasionally permitted with a higher fee."}},
+    {"@type":"Question","name":"How do I register for GGSIPU B.Tech counselling 2026?","acceptedAnswer":{"@type":"Answer","text":"Visit the official GGSIPU counselling portal, create a candidate login with your JEE Main 2026 application number, pay the counselling registration fee online, fill choice list of preferred colleges + branches in priority order, lock choices before the deadline, and download the counselling letter once seat is allotted."}},
+    {"@type":"Question","name":"What are the GGSIPU counselling fees in 2026?","acceptedAnswer":{"@type":"Answer","text":"GGSIPU counselling registration fee for 2026 is approximately Rs.1,500 for general category and Rs.750 for reserved categories (SC/ST/PwD). This is the non-refundable fee paid online during registration, separate from the tuition fee charged by the allotted college."}},
+    {"@type":"Question","name":"What documents are required for GGSIPU counselling?","acceptedAnswer":{"@type":"Answer","text":"Required documents: JEE Main 2026 admit card and scorecard, Class 10 and 12 mark sheets, Class 12 passing certificate, Aadhaar card, passport-size photo (digital), category certificate (if applicable), Delhi region certificate (for Delhi quota), and a valid email and phone."}},
+    {"@type":"Question","name":"What is the GGSIPU counselling process for B.Tech?","acceptedAnswer":{"@type":"Answer","text":"JEE Main 2026 result declared, GGSIPU notifies counselling schedule, online registration opens, candidates fill choice list and lock, Round 1 allotment based on JEE rank and choice and category, candidates accept and report to allotted college, Rounds 2 and 3 for vacant seats, then internal sliding round between colleges."}},
+    {"@type":"Question","name":"How many rounds are in GGSIPU counselling 2026?","acceptedAnswer":{"@type":"Answer","text":"GGSIPU B.Tech counselling 2026 will have 3 main rounds plus one internal sliding round. Round 1 is the largest allotment, Round 2 fills seats vacated by candidates who didn't report, Round 3 is the spot-round, and the sliding round lets allotted candidates upgrade to a preferred college if vacancies exist."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to register for GGSIPU B.Tech counselling 2026",
+  "description": "Step-by-step process for GGSIPU B.Tech counselling registration 2026 — from JEE Main result to final seat allotment.",
+  "totalTime": "PT45M",
+  "estimatedCost": {"@type":"MonetaryAmount","currency":"INR","value":"1500"},
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Wait for JEE Main 2026 result","text":"GGSIPU counselling registration opens only after NTA declares the JEE Main 2026 Paper-I result."},
+    {"@type":"HowToStep","position":2,"name":"Visit the GGSIPU counselling portal","text":"Go to the official counselling portal once registration opens (date announced on ipu.ac.in)."},
+    {"@type":"HowToStep","position":3,"name":"Create candidate login","text":"Register using your JEE Main 2026 application number and a valid email and phone."},
+    {"@type":"HowToStep","position":4,"name":"Pay the counselling registration fee","text":"Pay Rs.1,500 (general) or Rs.750 (reserved) online via the portal."},
+    {"@type":"HowToStep","position":5,"name":"Fill choice list","text":"Add preferred colleges and branches in priority order. Order matters — Round 1 allots based on this."},
+    {"@type":"HowToStep","position":6,"name":"Lock choices","text":"Lock your choices before the registration close date. Locked choices cannot be edited later."},
+    {"@type":"HowToStep","position":7,"name":"Await Round 1 allotment","text":"Round 1 allotment is published 5-7 days after registration closes. Accept or reject the offered seat."},
+    {"@type":"HowToStep","position":8,"name":"Report to allotted college","text":"If you accept, report to the allotted college with documents and tuition fee within the specified reporting window."}
+  ]
+}
+</script>
+<!-- ===== /Schema ===== -->
 </body>
 </html>
