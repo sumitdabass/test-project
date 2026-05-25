@@ -1,46 +1,47 @@
 {
-  "title": "GGSIPU Withdraws M.Sc. Speech Language Pathology Applications",
+  "title": "GGSIPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)",
   "slug": "msc-speech-language-pathology-applications-withdrawn",
-  "date": "2026-05-24",
-  "date_modified": "2026-05-24",
+  "date": "2026-05-25",
+  "date_modified": "2026-05-25",
   "category": "Admissions",
   "tags": [
-    "ggsipu-admissions",
-    "msc-slp",
-    "application-withdrawal",
-    "ipu-cet-168"
+    "ggsipu",
+    "msc slp",
+    "application withdrawal",
+    "ipu admissions"
   ],
   "featured": false,
   "is_urgent": false,
-  "tldr": "GGSIPU has withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (Code 168) program.",
+  "tldr": "GGSIPU has officially withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (Code 168) program.",
   "faq": [
     {
-      "q": "Which GGSIPU program application has been withdrawn?",
-      "a": "The university has withdrawn the online application form submission for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, which is registered under CET Code 168."
+      "q": "Which IPU program's application process has been withdrawn?",
+      "a": "The submission of online application forms has been withdrawn for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, which is registered under CET Code 168."
     },
     {
-      "q": "When was the withdrawal notification issued?",
-      "a": "The official notification regarding the withdrawal of the application forms was dated May 19, 2026."
+      "q": "When was the notification regarding the application withdrawal released?",
+      "a": "The official notification announcing the withdrawal of the application forms was dated May 19, 2026."
     },
     {
-      "q": "Where can I find updates regarding GGSIPU admissions?",
-      "a": "Candidates can consult the [IPU Admission Guide](/ipu-admission-guide.php) for general procedures or refer directly to the official university portal at ipu.ac.in for the latest notifications."
+      "q": "Where can I find updates on other GGSIPU admission processes?",
+      "a": "For updates on other active programs and general admission procedures, you can check the official university portal at ipu.ac.in."
     }
   ],
   "image": "assets/images/news/admissions.jpg"
 }
 ---
-## Application Process Withdrawn for M.Sc. SLP (Code 168)
+## Application Submission Stopped for M.Sc. SLP
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has issued an official notification announcing the withdrawal of the online application form submission process for the **M.Sc. Speech Language Pathology (M.Sc. SLP)** program for the current academic session. The program is identified under the university's CET Code 168.
+Guru Gobind Singh Indraprastha University (GGSIPU) has issued an official notification regarding the withdrawal of online application form submissions for the **M.Sc. Speech Language Pathology (M.Sc. SLP)** program. This specific postgraduate course is identified under the university's **CET Code 168**.
 
-The decision was formally communicated through a university notification dated May 19, 2026.
+According to the university's announcement dated May 19, 2026, the online portal will no longer accept new application submissions for this program.
 
-## What This Means for Prospective Applicants
+## Impact on Prospective Candidates
 
-With the withdrawal of the application forms, candidates will no longer be able to apply online for this specific postgraduate program. 
+Students who were planning to apply for the M.Sc. SLP program for the current academic session will not be able to proceed with their online registrations. 
 
-### Next Steps for Candidates
+If you are looking to apply for other postgraduate or undergraduate programs at GGSIPU, you can explore the general guidelines and eligibility criteria in our [IPU admission guide](/ipu-admission-guide.php) to plan your next steps.
 
-* **Official Clarifications:** Candidates who have already submitted applications or have queries regarding refunds and alternative options are advised to monitor the official GGSIPU website (ipu.ac.in) for subsequent instructions.
-* **Explore Other Programs:** If you are looking to apply for other courses at GGSIPU, you can review our comprehensive [IPU Admission Guide](/ipu-admission-guide.php) to explore available streams, eligibility criteria, and alternative admission pathways.
+## Official Clarifications
+
+The university has not provided specific details regarding the reasons for this sudden withdrawal in the brief release. Candidates who have already submitted forms or have pending queries are advised to keep a close watch on the official GGSIPU admissions website (ipu.ac.in) for any subsequent circulars or refund policies if applicable.
