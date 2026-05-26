@@ -1,46 +1,39 @@
 {
-  "title": "GGSIPU Withdraws M.Sc. Speech Language Pathology (Code 168) Applications",
+  "title": "GGSIPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)",
   "slug": "ggsipu-withdraws-msc-slp-applications",
-  "date": "2026-05-22",
-  "date_modified": "2026-05-22",
+  "date": "2026-05-26",
+  "date_modified": "2026-05-26",
   "category": "Admissions",
   "tags": [
-    "ggsipu",
-    "msc-slp",
-    "application-withdrawal",
-    "ipu-admission"
+    "ggsipu admissions",
+    "msc speech language pathology",
+    "cet code 168",
+    "application withdrawal"
   ],
   "featured": false,
   "is_urgent": false,
-  "tldr": "GGSIPU has withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (Code 168) program.",
+  "tldr": "GGSIPU has withdrawn the online application form submission for the M.Sc. Speech Language Pathology (Code 168) program.",
   "faq": [
     {
-      "q": "Which program's application process has been withdrawn by GGSIPU?",
-      "a": "GGSIPU has withdrawn the online application form submission for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, which runs under CET Code 168."
+      "q": "Which GGSIPU program application has been withdrawn?",
+      "a": "The online application submission for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, under CET code 168, has been withdrawn."
     },
     {
       "q": "When was this withdrawal notification released?",
-      "a": "The official notification announcing the withdrawal of the application forms was dated May 19, 2026."
-    },
-    {
-      "q": "Where can I check for official updates regarding GGSIPU admissions?",
-      "a": "Candidates must refer to the official university website at ipu.ac.in for all official notifications and updates."
+      "a": "The official notification regarding the withdrawal of the application forms was issued on May 19, 2026."
     }
   ],
   "image": "assets/images/news/admissions.jpg"
 }
 ---
-## Application Process Withdrawn for M.Sc. SLP
+## Application Process Suspended for M.Sc. SLP (Code 168)
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has issued an official notification announcing the withdrawal of the online application form submission process for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, which is registered under CET Code 168. 
+Guru Gobind Singh Indraprastha University (GGSIPU) has announced the withdrawal of the online application form submission process for the M.Sc. Speech Language Pathology (M.Sc. SLP) program. This postgraduate course is designated under the university's CET Code 168.
 
-The notification, dated May 19, 2026, indicates that the application process for this specific postgraduate course will not proceed as previously scheduled.
+The official notification concerning this decision was published on May 19, 2026.
 
-## What This Means for Prospective Students
+## Next Steps for Applicants
 
-Candidates who were intending to apply for the M.Sc. SLP program for the current academic session must take note of this sudden withdrawal. 
+Candidates who intended to apply for the M.Sc. SLP program should note that the online registration portal for this course is no longer accepting submissions. 
 
-* **No Further Submissions:** The portal will no longer accept online application forms for CET Code 168.
-* **Official Clarifications:** For details regarding the reasons behind the withdrawal or potential future updates, candidates are advised to refer to the official notification on the university's website at ipu.ac.in.
-
-If you are looking to apply for other postgraduate or undergraduate programs at the university, you can explore our comprehensive [IPU admission guide](/ipu-admission-guide.php) to understand the eligibility criteria and registration steps for active courses.
+For additional details regarding other active programs or general admission procedures, candidates can review the [IPU Admission Guide](/ipu-admission-guide.php) or check for updates on the official GGSIPU website.
