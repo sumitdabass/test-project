@@ -88,6 +88,7 @@ include 'include/components/hero-banner.php';
   <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);color:#0d1b6e;margin-bottom:16px">Top 10 BCA Colleges in IPU 2026 – Ranking, Fees & Placements</h1>
 
   <p>BCA is one of the most in-demand undergraduate programmes under <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>. With IT services, startups and product companies hiring aggressively, a BCA degree from a top IPU college can lead to placements of 5-9 LPA even before graduation. This 2026 ranking compares the top 10 BCA colleges under IPU on the basis of CUET cutoffs, seats, fees and placement records. Call <a href="tel:+919899991342">9899991342</a> for free expert help on college selection.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Guide</a> for the full round-wise walkthrough.</p>
 
   <h2 style="color:#0d1b6e;margin-top:30px">BCA IPU Ranking Comparison Table 2026</h2>
   <div style="overflow-x:auto">

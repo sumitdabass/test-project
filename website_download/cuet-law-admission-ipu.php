@@ -188,6 +188,8 @@ Per Chapter 12 of the brochure, every unaided affiliated Law college reserves <s
 <li><strong>Parallel track &mdash; Management Quota:</strong> Apply directly during each college's advertised 18-day management-quota window with Class 12 marksheet, CUET scorecard, ID and photo. Confirm your Class 12 was through a regular Board (BCI bar on Open Schooling).</li>
 </ol>
 
+<p>For a deeper walkthrough of each counselling round (registration windows, choice-filling strategy, upgradation, sliding round), see the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Walkthrough</a>.</p>
+
 <hr>
 
 <h2>Need Free CUET-to-IPU Law Admission Help?</h2>

@@ -76,6 +76,7 @@ include 'include/components/hero-banner.php';
   <h1>IPU BA English Admission 2026 – Complete Guide</h1>
 
   <p>Guru Gobind Singh Indraprastha University offers the BA English (Hons) programme at select affiliated colleges in Delhi. The programme combines the study of literature, language, and critical thinking, making it an excellent foundation for diverse career paths. For admission guidance, call <a href="tel:+919899991342">9899991342</a> for free expert counselling.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling &mdash; CUET Choice-Filling Steps</a> for the full round-wise walkthrough.</p>
 
   <h2>About BA English at IPU</h2>
   <p>The BA English (Hons) programme under GGSIPU is a 3-year undergraduate course designed to develop strong analytical, communication, and writing skills. The curriculum covers a wide range of literary traditions — British, American, Indian, and postcolonial — alongside language studies, critical theory, and creative writing.</p>

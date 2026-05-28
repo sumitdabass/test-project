@@ -81,6 +81,7 @@ include 'include/components/hero-banner.php';
   <h1>IPU B.Com Admission 2026 – Complete Guide</h1>
 
   <p>Guru Gobind Singh Indraprastha University (GGSIPU) offers the Bachelor of Commerce (Honours) programme (Programme Code 146) at USMS (on-campus, 60 seats) and through its network of 25+ affiliated colleges across Delhi NCR. Admission priority per UG Brochure 2026-27 Table 1.1: <strong>1. GGSIPU CET (primary)</strong> / <strong>2. CUET# (vacant-seat fallback)</strong>. With competitive fees, IPU B.Com is a popular choice for commerce students who want quality education in the national capital. For admission guidance, call <a href="tel:+919899991342">9899991342</a> for free counselling.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">GGSIPU Counselling Process</a> for the full round-wise walkthrough.</p>
 
   <h2>B.Com Programme at IPU – Overview</h2>
   <p>The B.Com (Hons) programme under IPU is a 4-year undergraduate course (NEP 2020 four-year UG framework, Programme Code 146) that covers core commerce subjects including accounting, business law, taxation, economics, and financial management. The curriculum is aligned with UGC guidelines and prepares students for professional exams like CA, CS, and CMA.</p>

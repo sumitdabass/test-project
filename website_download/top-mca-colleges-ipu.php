@@ -88,6 +88,7 @@ include 'include/components/hero-banner.php';
   <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);color:#0d1b6e;margin-bottom:16px">Top 10 MCA Colleges in IPU 2026 – Fees, Placements & NIMCET Cutoff</h1>
 
   <p>MCA (Master of Computer Applications) is a highly sought-after postgraduate IT programme under <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>. With India's IT sector growing rapidly, an MCA degree from a top IPU college can open doors to software development, data science, cloud engineering and DevOps roles with packages of 6-12 LPA. This 2026 ranking compares the top 10 MCA colleges under IPU on the basis of NIMCET cutoffs, fees, seats and placement records. Call <a href="tel:+919899991342">9899991342</a> for free MCA counselling help.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Steps for MCA Aspirants</a> for the full round-wise walkthrough.</p>
 
   <h2 style="color:#0d1b6e;margin-top:30px">MCA IPU Ranking Comparison Table 2026</h2>
   <div style="overflow-x:auto">

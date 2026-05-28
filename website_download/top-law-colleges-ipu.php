@@ -109,6 +109,7 @@ include 'include/components/hero-banner.php';
   <section id="ai-summary" class="ai-summary-box">
     <p class="label">AI Summary</p>
     <p class="body">The top 10 Law colleges under IP University (GGSIPU) in 2026 are led by <strong>USLLS Dwarka</strong> (the university's own law school), followed by <strong>VIPS Pitampura</strong> (largest law school in IPU), <strong>MAIMS Rohini</strong>, <strong>CPJ College</strong>, <strong>DME Noida</strong> and <strong>Fairfield Institute</strong>. IPU offers 5-year integrated BA LLB (Code 121), BBA LLB (Code 121), 3-year LLB (Code 238) and 1-year LLM (Code 112). Admission for BA LLB/BBA LLB is via <strong>CLAT UG 2026</strong>, for LLM via CLAT PG, and for LLB 3-year via IPU CET. Fees range from Rs 1.20-1.70 lakh/year. Call <a href="tel:+919899991342">9899991342</a> for free IPU law admission guidance.</p>
+    <p class="body" style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process (applies to Law too)</a> for the full round-wise walkthrough.</p>
   </section>
 
   <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>

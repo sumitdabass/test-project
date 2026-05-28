@@ -88,6 +88,7 @@ include 'include/components/hero-banner.php';
   <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);color:#0d1b6e;margin-bottom:16px">Top 10 BBA Colleges in IPU 2026 – Ranking, Fees & Placements</h1>
 
   <p>Choosing the right BBA college under <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong> can shape the next three years of your management career. Delhi-NCR is home to some of the best BBA colleges in India, and IPU's CUET-based centralised counselling makes admission predictable and transparent. In this 2026 ranking we compare the top 10 BBA colleges on the basis of CUET cutoffs, seat intake, fees, placement packages and industry exposure. Whether you are aiming for VIPS, MAIMS, RDIAS or a newer college, this guide helps you pick the right fit. Call <a href="tel:+919899991342">9899991342</a> for free expert guidance on college selection and CUET choice filling.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">GGSIPU Counselling Walkthrough</a> for the full round-wise process.</p>
 
   <h2 style="color:#0d1b6e;margin-top:30px">BBA IPU Ranking Comparison Table 2026</h2>
   <div style="overflow-x:auto">

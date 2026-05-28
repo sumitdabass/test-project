@@ -112,6 +112,7 @@ include 'include/components/hero-banner.php';
   <h1 style="color:#0d1b6e;font-size:32px;margin-bottom:16px">Top 10 MBA Colleges in IPU 2026</h1>
 
   <p style="font-size:16px;line-height:1.8;color:#334155">Guru Gobind Singh Indraprastha University (GGSIPU) hosts some of the most affordable and career-focused MBA programmes in Delhi-NCR. With fees ranging from Rs 1.10 lakh/year at affiliated colleges to Rs 1.93 lakh/year at USMS (per PG Brochure 2026-27 §14.1H) and strong placement records at colleges like USMS, MAIMS and JIMS Rohini, an IPU MBA offers outstanding return on investment compared to private B-schools (Rs 10-20 lakh/year). This guide ranks the <strong>top 10 MBA colleges under IP University</strong> for 2026 admissions based on placements, faculty, alumni network and fees. Call <a href="tel:+919899991342" style="color:#0d1b6e;font-weight:700">9899991342</a> for free expert MBA counselling.</p>
+  <p style="font-size:16px;line-height:1.8;color:#334155;margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU PG Counselling &mdash; Round-by-Round Guide</a> for the full walkthrough.</p>
 
   <h2 class="section-h2">Top 10 MBA Colleges Under IPU 2026 – Comparison Table</h2>
   <div style="overflow-x:auto">

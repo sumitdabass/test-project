@@ -88,6 +88,7 @@ include 'include/components/hero-banner.php';
   <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);color:#0d1b6e;margin-bottom:16px">Top 10 B.Com (Hons) Colleges in IPU 2026 – Fees & Placements</h1>
 
   <p>B.Com (Hons) is one of the most sought-after undergraduate programmes under <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>, especially for students pursuing CA, CS, CMA, or careers in banking and finance. The IPU ecosystem offers a cost-effective alternative to Delhi University B.Com programmes with CUET-based admission and strong industry connections. This 2026 ranking compares the top 10 B.Com Hons colleges under IPU on fees, cutoffs, seats and placement records. Call <a href="tel:+919899991342">9899991342</a> for free expert guidance on B.Com choice filling.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process Explained</a> for the full round-wise walkthrough.</p>
 
   <h2 style="color:#0d1b6e;margin-top:30px">B.Com Hons IPU Ranking Comparison Table 2026</h2>
   <div style="overflow-x:auto">

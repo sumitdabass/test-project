@@ -79,6 +79,7 @@ include 'include/components/hero-banner.php';
   <p>The Master of Computer Applications (MCA) at Guru Gobind Singh Indraprastha University (GGSIPU) is one of the most sought-after postgraduate IT programmes in Delhi NCR. Offered under <strong>Programme Code 105</strong>, this 2-year course prepares graduates for careers in software development, data engineering, cloud, cybersecurity and IT consulting. MCA at IPU is delivered both at the flagship University School of Information &amp; Communication Technology (USICT) and at 12+ affiliated colleges spread across Delhi NCR.</p>
 
   <p>Want to secure an MCA seat at IPU in 2026? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance on NIMCET preparation, college selection and the IPU counselling process.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU PG Counselling Process</a> for the full round-wise walkthrough.</p>
 
   <h2>About MCA at IPU</h2>
   <p>The MCA programme at IPU is a 2-year (4 semester) full-time master's degree designed to develop skilled IT professionals. The curriculum covers advanced programming, software engineering, DBMS, data structures &amp; algorithms, computer networks, machine learning and a final-semester industry project. With both government and self-financed options available under GGSIPU, students get strong academic exposure plus solid placement support across Delhi NCR's IT industry.</p>

@@ -106,6 +106,8 @@ CUET subject papers for Law: Section IA English (Code 101) + Section II Legal St
 <li>Reporting to allotted institute</li>
 </ol>
 
+<p>For a step-by-step explainer of each round (registration windows, choice-filling strategy, upgradation, sliding round), see our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling &mdash; Round-by-Round</a> guide.</p>
+
 <hr>
 
 

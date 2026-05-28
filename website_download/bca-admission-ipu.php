@@ -83,6 +83,7 @@ include 'include/components/hero-banner.php';
   <p>The Bachelor of Computer Applications (BCA) is one of the most popular undergraduate programmes at Guru Gobind Singh Indraprastha University (GGSIPU). This <strong>4-year degree programme (Programme Code 114, NEP 2020 four-year UG framework)</strong> is ideal for students who want to build a career in information technology, software development, or data science without pursuing a B.Tech. IPU BCA admission 2026 priority per the UG Brochure 2026-27 is <strong>1. GGSIPU CET</strong> followed by <strong>2. CUET#</strong> (which fills vacant seats per Important Instruction #37), then centralised IPU counselling.</p>
 
   <p>If you are planning to apply for BCA at IPU, call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance on college selection and the admission process.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling &mdash; Step by Step</a> for the full round-wise walkthrough.</p>
 
   <h2>Why Choose BCA at IPU?</h2>
   <p>IPU's BCA programme stands out for several reasons:</p>
