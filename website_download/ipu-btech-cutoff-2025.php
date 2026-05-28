@@ -168,6 +168,7 @@ include 'include/components/hero-banner.php';
     <li><strong>Delhi vs Outside Delhi:</strong> Delhi quota students get significantly better cutoffs. Outside Delhi students should target colleges where closing ranks are higher.</li>
   </ul>
   <p>For personalized rank analysis and choice filling strategy, call <a href="tel:+919899991342" style="color:#1a3a9c;font-weight:600">9899991342</a> to speak with our expert team.</p>
+  <p style="margin-top:12px">For step-by-step JEE Main &rarr; IPU counselling guidance, see our <a href="/ipu-btech-via-jee-main.php">IPU B.Tech via JEE Main Admission</a> walkthrough.</p>
 
   <!-- ===== Factors Affecting Cutoff ===== -->
   <h2>Factors Affecting IPU B.Tech Cutoff</h2>

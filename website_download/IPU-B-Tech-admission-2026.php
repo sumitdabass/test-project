@@ -116,6 +116,8 @@ JEE Main 2026 Paper 1 is the primary entrance for IPU B.Tech admission. Some cou
 <li><strong>Mode:</strong> Computer Based Test (CBT)</li>
 </ul>
 
+<p>Most B.Tech admissions at IPU go through JEE Main &mdash; see our <a href="/ipu-btech-via-jee-main.php">JEE Main pathway guide</a> for ranks, choice-filling and counselling specifics.</p>
+
 <hr>
 
 <!-- ===== FEE STRUCTURE 2026-27 ===== -->
