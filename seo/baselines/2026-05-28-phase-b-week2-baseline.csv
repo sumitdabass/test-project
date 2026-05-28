@@ -1,0 +1,10 @@
+term,baseline_position,baseline_impr,baseline_clicks,baseline_ctr,target_page,intent
+ipu colleges list,6.59,555,17,0.031,ipu-colleges-list.php,head term
+ipu college list,6.59,555,17,0.031,ipu-colleges-list.php,head term
+ipu colleges list pdf,6.59,200,38,0.190,ipu-colleges-list.php,long-tail
+ipu cet exam date 2026,12.09,130,10,0.077,ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php,head term (deprioritized 2026-05-28 — leaving in baseline for monitoring only)
+ipu btech via jee main,7.0,215,7,0.0326,ipu-btech-via-jee-main.php,evergreen
+ipu bba fees,10.7,224,0,0.0,comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php,head term
+top 10 bba colleges in ipu 2026,7.01,18235,258,0.0141,comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php,workhorse-listicle
+ggsipu counselling,4.8,1569,31,0.020,GGSIPU-counselling-for-B-Tech-admission.php,workhorse
+ipu counselling 2026,1.6,2807,27,0.010,GGSIPU-counselling-for-B-Tech-admission.php,workhorse
