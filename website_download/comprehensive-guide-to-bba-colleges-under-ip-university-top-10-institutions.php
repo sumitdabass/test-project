@@ -257,6 +257,48 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 
 </section>
 
+<!-- BBA Fees Section — additive 2026-05-28 targeting "ipu bba fees" query -->
+<section style="padding:50px 0;background:#f8faff">
+<div class="container">
+<div style="max-width:900px;margin:0 auto">
+
+  <h2 id="bba-fees-ipu-2026">BBA Fees at IPU 2026-27 &mdash; College-wise Annual Tuition</h2>
+
+  <p>BBA annual fees across IPU-affiliated colleges range from <strong>Rs. 1,21,000 (USMS on-campus)</strong> to <strong>Rs. 1,80,000 (top private colleges)</strong>. Fees are regulated by the <strong>6th SFRC Delhi Gazette Notification dated 14.07.2025</strong>; affiliated colleges cannot exceed the notified slabs without prior approval.</p>
+
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;margin:16px 0;min-width:600px;background:#fff">
+    <thead>
+      <tr style="background:#0d1b6e;color:#fff">
+        <th style="padding:10px 14px;text-align:left">College</th>
+        <th style="padding:10px 14px;text-align:left">Location</th>
+        <th style="padding:10px 14px;text-align:left">Annual Tuition (2026-27)</th>
+        <th style="padding:10px 14px;text-align:left">University Charges/yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><strong>USMS (on-campus)</strong></td><td style="padding:10px 14px">Dwarka</td><td style="padding:10px 14px">Rs. 1,21,000</td><td style="padding:10px 14px">Rs. 35,500</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><a href="/vips-admission.php">VIPS-TC Pitampura</a></td><td style="padding:10px 14px">Pitampura</td><td style="padding:10px 14px">Rs. 1,50,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><a href="/msi-admission.php">MSI Janakpuri</a></td><td style="padding:10px 14px">Janakpuri</td><td style="padding:10px 14px">Rs. 1,25,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><a href="/maims-admission.php">MAIMS Rohini</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><a href="/tecnia-admission.php">Tecnia Institute</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 95,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><a href="/jims-admission.php">JIMS Rohini</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,10,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><a href="/dias-admission.php">DIAS Rohini</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,00,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><a href="/dspsr-admission.php">DSPSR Rohini</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 95,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS Rohini</a></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,15,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><a href="/ndim-admission.php">NDIM Tughlakabad</a></td><td style="padding:10px 14px">Tughlakabad</td><td style="padding:10px 14px">Rs. 1,80,000</td><td style="padding:10px 14px">Rs. 25,000-30,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p style="font-size:13px;color:#64748b;margin-top:8px"><strong>Source:</strong> 6th SFRC Delhi Gazette Notification dated 14.07.2025 + GGSIPU UG Admission Brochure 2026-27, Chapter 14 Section 14.1 (USMS) and college fee structures. University charges include exam, infrastructure, alumni and innovation fees. <strong>Note:</strong> Confirm exact fee with the college during counselling &mdash; Fee Fixation Committee may revise.</p>
+
+  <p>For a personalised fee breakdown by JEE/CUET rank and college preference, call <a href="tel:+919899991342"><strong>9899991342</strong></a> or see our <a href="/ipu-bba-cutoff.php">IPU BBA Cutoff Guide</a> for round-wise admission chances. The full <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process</a> applies equally to BBA admissions.</p>
+
+</div>
+</div>
+</section>
+
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php
 $faqs = [
@@ -265,7 +307,9 @@ $faqs = [
   ['question' => 'What is the BBA fee at IPU 2026-27?', 'answer' => 'At <strong>USMS (university campus)</strong> the 2026-27 tuition is Rs. 1,21,000/year, total Rs. 1,56,500/year incl. university charges (Rs. 20,000) + exam (Rs. 3,000) + innovation (Rs. 500) + infrastructure (Rs. 10,000) + alumni one-time (Rs. 2,000) per Part E, Chapter 14. <strong>Affiliated colleges</strong> charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically Rs. 80,000 to Rs. 1,30,000 per year. Add Rs. 25,000-30,000 in university charges per year.'],
   ['question' => 'Is GGSIPU CET or CUET required for BBA admission?', 'answer' => 'For 2026-27, BBA admission priority per UG Brochure 2026-27 Table 1.1 (Code 125) is <strong>1. GGSIPU CET (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>, followed by centralised online counselling at ipu.ac.in. Candidates should appear in BOTH — CET first, CUET fills any unfilled seats. 10% Management Quota seats are reserved at every unaided affiliated BBA college per Chapter 12 of the GGSIPU Brochure 2026-27 (Section 12(1)(a) DPCI Rules 2007). Call 9899991342 for free guidance.'],
   ['question' => 'What is the eligibility for BBA at IPU?', 'answer' => 'Class 12 (10+2) pass with minimum <strong>50% aggregate</strong> from a recognised board (45% for SC/ST/OBC/PwD), with English as a compulsory subject. Per Important Instruction #28 of the 2026-27 brochure, marks are <strong>not rounded off</strong> — 49.99% does not become 50%.'],
-  ['question' => 'Does IPU offer specialised BBA programmes?', 'answer' => 'Yes — beyond general BBA, the 2026-27 brochure lists BBA (B&I = Banking & Insurance) at MSI Janakpuri and SGTBIMIT, BBA (CAM = Computer Aided Management) at CPJ Narela, BBA-MBA Integrated 5-yr at Gitarattan IBS, and BBA (Digital Marketing) + BBA (Financial Services) at Echelon Institute, Faridabad. There are also Integrated BBA-LLB (Hons.) 5-year programmes at 12+ colleges.']
+  ['question' => 'Does IPU offer specialised BBA programmes?', 'answer' => 'Yes — beyond general BBA, the 2026-27 brochure lists BBA (B&I = Banking & Insurance) at MSI Janakpuri and SGTBIMIT, BBA (CAM = Computer Aided Management) at CPJ Narela, BBA-MBA Integrated 5-yr at Gitarattan IBS, and BBA (Digital Marketing) + BBA (Financial Services) at Echelon Institute, Faridabad. There are also Integrated BBA-LLB (Hons.) 5-year programmes at 12+ colleges.'],
+  ['question' => 'What is the IPU BBA fees per year in 2026-27?', 'answer' => 'IPU BBA annual tuition ranges from <strong>Rs. 1,21,000 at USMS (the on-campus university school)</strong> to <strong>Rs. 1,80,000 at top private colleges</strong> like NDIM. Most affiliated colleges sit between Rs. 95,000 and Rs. 1,30,000 per year. Add university charges (exam + infrastructure + alumni + innovation) of approximately Rs. 25,000-Rs. 35,500 per year on top. Fees are capped by the 6th SFRC Delhi Gazette Notification dated 14.07.2025.'],
+  ['question' => 'Which IPU BBA college has the lowest fees in 2026?', 'answer' => 'USMS (University School of Management Studies, on the GGSIPU Dwarka campus) has the lowest BBA tuition at Rs. 1,21,000 per year &mdash; but admission requires a Delhi-region CUET rank inside the top 100. Among affiliated colleges, Tecnia (Rohini) and DSPSR (Rohini) are the most affordable at approximately Rs. 95,000 per year. Call <a href="tel:+919899991342">9899991342</a> to check your CUET rank chances at the lowest-fee IPU BBA colleges.']
 ];
 include 'include/components/faq-section.php';
 ?>
