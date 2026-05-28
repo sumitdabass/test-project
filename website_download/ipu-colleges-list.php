@@ -26,7 +26,45 @@
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-03-24",
-  "dateModified": "2026-03-24"
+  "dateModified": "2026-05-28"
+}
+</script>
+
+<!-- ItemList Schema — all major IPU-affiliated colleges -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "GGSIPU Affiliated Colleges 2026",
+  "description": "Directory of major colleges affiliated to Guru Gobind Singh Indraprastha University across Delhi NCR",
+  "numberOfItems": 25,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"USICT","url":"https://ipu.co.in/usict-admission.php"},
+    {"@type":"ListItem","position":2,"name":"USAR","url":"https://ipu.co.in/usar-admission.php"},
+    {"@type":"ListItem","position":3,"name":"MAIT","url":"https://ipu.co.in/mait-admission.php"},
+    {"@type":"ListItem","position":4,"name":"MSIT","url":"https://ipu.co.in/msit-admission.php"},
+    {"@type":"ListItem","position":5,"name":"BPIT","url":"https://ipu.co.in/BPIT.php"},
+    {"@type":"ListItem","position":6,"name":"BVP / BVCOE","url":"https://ipu.co.in/BVP.php"},
+    {"@type":"ListItem","position":7,"name":"ADGITM","url":"https://ipu.co.in/adgitm-admission.php"},
+    {"@type":"ListItem","position":8,"name":"HMR","url":"https://ipu.co.in/hmr-admission.php"},
+    {"@type":"ListItem","position":9,"name":"GNIT","url":"https://ipu.co.in/gnit-admission.php"},
+    {"@type":"ListItem","position":10,"name":"USMS","url":"https://ipu.co.in/usms-admission.php"},
+    {"@type":"ListItem","position":11,"name":"MAIMS","url":"https://ipu.co.in/maims-admission.php"},
+    {"@type":"ListItem","position":12,"name":"VIPS-TC","url":"https://ipu.co.in/vips-admission.php"},
+    {"@type":"ListItem","position":13,"name":"MSI","url":"https://ipu.co.in/msi-admission.php"},
+    {"@type":"ListItem","position":14,"name":"JIMS Rohini","url":"https://ipu.co.in/jims-admission.php"},
+    {"@type":"ListItem","position":15,"name":"DIAS","url":"https://ipu.co.in/dias-admission.php"},
+    {"@type":"ListItem","position":16,"name":"DSPSR","url":"https://ipu.co.in/dspsr-admission.php"},
+    {"@type":"ListItem","position":17,"name":"USLS","url":"https://ipu.co.in/usls-admission.php"},
+    {"@type":"ListItem","position":18,"name":"VIPS Law","url":"https://ipu.co.in/vips-admission.php"},
+    {"@type":"ListItem","position":19,"name":"BVICAM","url":"https://ipu.co.in/bvicam-admission.php"},
+    {"@type":"ListItem","position":20,"name":"Tecnia","url":"https://ipu.co.in/tecnia-admission.php"},
+    {"@type":"ListItem","position":21,"name":"GIBS","url":"https://ipu.co.in/gibs-admission.php"},
+    {"@type":"ListItem","position":22,"name":"NDIM","url":"https://ipu.co.in/ndim-admission.php"},
+    {"@type":"ListItem","position":23,"name":"Ideal","url":"https://ipu.co.in/ideal-admission.php"},
+    {"@type":"ListItem","position":24,"name":"DME Noida","url":"https://ipu.co.in/dme-admission.php"},
+    {"@type":"ListItem","position":25,"name":"BCIPS","url":"https://ipu.co.in/bcips-admission.php"}
+  ]
 }
 </script>
 </head>
@@ -415,7 +453,7 @@ include 'include/components/hero-banner.php';
     <li><strong>Infrastructure &amp; faculty:</strong> Visit the campus or research student reviews before making your choice.</li>
   </ul>
 
-  <p>Not sure which college fits your JEE/CUET rank and preferences? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance &mdash; our counsellors have helped thousands of students pick the right IPU college.</p>
+  <p>Not sure which college fits your JEE/CUET rank and preferences? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance &mdash; our counsellors have helped thousands of students pick the right IPU college. For the full step-by-step process, see our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process Guide</a>.</p>
 
   <!-- Disclaimer -->
   <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:16px 20px;border-radius:0 8px 8px 0;margin-top:32px">
@@ -440,7 +478,10 @@ $faqs = [
   ['question' => 'Which are the top engineering colleges under IPU?', 'answer' => 'USICT (Dwarka), MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), and BVP/BVCOE (Paschim Vihar) are consistently ranked among the top engineering colleges under IPU based on placements and cutoffs. Call 9899991342 for personalised college recommendations based on your JEE Main rank.'],
   ['question' => 'Which are the top law colleges under IPU?', 'answer' => 'USLS (University School of Law & Legal Studies) on the IPU Dwarka campus is the top law college. VIPS Law School in Pitampura and MAIMS in Rohini are also well-regarded for BA LLB and BBA LLB programmes.'],
   ['question' => 'How does admission to IPU colleges work?', 'answer' => 'Clear the relevant entrance exam (JEE Main for B.Tech, CUET for BBA/B.Com/BJMC/BA, CLAT for Law, NATA for B.Arch), register on ipu.ac.in, fill your college preferences during centralised IPU counselling, and report to the allotted college after seat allocation.'],
-  ['question' => 'Are IPU colleges government or private?', 'answer' => 'IPU has both constituent university schools (government-run, lower fees) and affiliated colleges (self-financed, higher fees). University schools like USICT, USAR, USLS, and USMS are directly managed by IPU. Affiliated colleges like MAIT, BPIT, and VIPS are self-financed but follow IPU curriculum and admission process.']
+  ['question' => 'Are IPU colleges government or private?', 'answer' => 'IPU has both constituent university schools (government-run, lower fees) and affiliated colleges (self-financed, higher fees). University schools like USICT, USAR, USLS, and USMS are directly managed by IPU. Affiliated colleges like MAIT, BPIT, and VIPS are self-financed but follow IPU curriculum and admission process.'],
+  ['question' => 'Is there an official IPU colleges list PDF available?', 'answer' => 'GGSIPU publishes the official affiliated-colleges list each session inside the Admission Brochure on ipu.ac.in. The list above mirrors the latest 6th SFRC Delhi Gazette Notification dated 14.07.2025 plus the Programme Code annexure of the 2026-27 brochure. For a downloadable college-wise seat matrix, call <a href="tel:+919899991342">9899991342</a> &mdash; we share the curated PDF directly on WhatsApp.'],
+  ['question' => 'How many IPU colleges offer B.Tech, BBA, BCA, B.Com and Law?', 'answer' => 'B.Tech: 20+ colleges (MAIT, MSIT, BPIT, BVP, USICT and more). BBA: 38+ colleges (USMS, VIPS-TC, MSI, MAIMS lead the cutoff). BCA: 25+ colleges (USICT BCA, VIPS, MSI). B.Com (Hons): 18+ colleges. Law (BA-LLB / BBA-LLB / LLM): 12+ colleges led by USLS on the Dwarka campus.'],
+  ['question' => 'How do I get the latest IPU college list with seats and fees?', 'answer' => 'See the tables above &mdash; they cover the 25+ most-asked colleges with location and key courses. For the full seat matrix (intake per programme, fee per year, hostel availability) and the latest brochure download, call <a href="tel:+919899991342">9899991342</a> or visit our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process Guide</a>.']
 ];
 include 'include/components/faq-section.php';
 ?>
