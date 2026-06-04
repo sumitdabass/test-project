@@ -139,10 +139,10 @@ include 'include/components/hero-banner.php';
   <h2>Course-wise IPU Counselling Schedule 2026</h2>
 
   <h3>B.Tech Counselling (JEE Main based)</h3>
-  <p>B.Tech counselling for IPU 2026 is based on JEE Main 2026 percentile/rank. Registration opens in mid-May 2026 and Round 1 allotment is expected by 1st week of July. Top colleges include USICT Dwarka, MAIT Rohini, MSIT Janakpuri, BPIT, GTBIT, BVP, ADGITM, NDIM. Read our <a href="/IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a> and <a href="/ipu-btech-cutoff-2025.php">B.Tech Cutoff Analysis</a> for branch-wise rank requirements.</p>
+  <p>B.Tech counselling for IPU 2026 is based on JEE Main 2026 percentile/rank. Centralized online enrolment is likely to open tentatively from 8 June 2026 (Notification 26/2026); round dates are yet to be notified. Top colleges include USICT Dwarka, MAIT Rohini, MSIT Janakpuri, BPIT, GTBIT, BVP, ADGITM, NDIM. Read our <a href="/IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a> and <a href="/ipu-btech-cutoff-2025.php">B.Tech Cutoff Analysis</a> for branch-wise rank requirements.</p>
 
   <h3>BBA Counselling (CUET based)</h3>
-  <p>BBA admission at IPU is now through CUET-UG scores. Registration on the IPU portal opens by mid-May. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide</a>.</p>
+  <p>BBA admission at IPU is now through CUET-UG scores. Centralized online enrolment is likely to open tentatively from 8 June 2026 (Notification 26/2026). Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide</a>.</p>
 
   <h3>Law Counselling (CLAT / IPU CET based)</h3>
   <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission-2026.php">Law Admission Guide</a>.</p>
@@ -151,7 +151,7 @@ include 'include/components/hero-banner.php';
   <p>BJMC, B.Com (H), BA Economics, BA English and BCA admissions are through CUET-UG. IPU counselling registration is the same portal — only the qualifying exam differs. Check eligibility and cutoffs in our course-wise guides.</p>
 
   <h3>MBA, MCA, M.Tech, LLM Counselling (PG)</h3>
-  <p>PG counselling for MBA (USMS) is via CAT/MAT/CMAT, MCA via NIMCET/CUET-PG, M.Tech via GATE, LLM via CUET-PG / IPU CET PG. PG counselling typically opens in June 2026.</p>
+  <p>PG counselling for MBA (USMS) is via CAT/MAT/CMAT, MCA via NIMCET/CUET-PG, M.Tech via GATE, LLM via CUET-PG / IPU CET PG. Per Notification 26/2026, the counselling schedule for MBA (code 101) and MCA (code 105) will be announced separately, while LL.M. (112) is part of the enrolment beginning tentatively 8 June 2026.</p>
 
   <h2>IPU Counselling Rounds Explained</h2>
   <ul>
