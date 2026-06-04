@@ -339,6 +339,20 @@ include 'include/components/related-pages.php';
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "GGSIPU B.Tech Centralized Online Counselling 2026-27",
+  "description": "Enrolment for GGSIPU centralized online counselling for B.Tech (programme code 131), tentatively from 8 June 2026 per University Notification 26/2026 (03.06.2026).",
+  "startDate": "2026-06-08",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {"@type":"VirtualLocation","url":"https://ipu.ac.in"},
+  "organizer": {"@type":"Organization","name":"Guru Gobind Singh Indraprastha University","url":"https://ipu.ac.in"},
+  "image": "https://ipu.co.in/assets/images/news/admissions.jpg"
+}
+</script>
 <!-- ===== /Schema ===== -->
 </body>
 </html>
