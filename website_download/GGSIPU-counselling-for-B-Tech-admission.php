@@ -79,17 +79,17 @@ include __DIR__ . '/include/components/page-hero.php';
               </tr>
             </thead>
             <tbody>
-              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Online Counselling Registration</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">April 2026</td></tr>
-              <tr><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Choice Filling &amp; Locking</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">April &ndash; May 2026</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Round 1 Seat Allotment</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">May 2026</td></tr>
-              <tr><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Round 2 &amp; 3 Seat Allotment</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">May &ndash; June 2026</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Spot Round (if applicable)</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">June &ndash; July 2026</td></tr>
+              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Online Counselling Enrolment Opens</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;"><strong>Tentatively 8 June 2026</strong> (Notification 26/2026)</td></tr>
+              <tr><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Choice Filling &amp; Locking</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">To be notified</td></tr>
+              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Round 1 Seat Allotment</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">To be notified</td></tr>
+              <tr><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Round 2 &amp; 3 Seat Allotment</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">To be notified</td></tr>
+              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Spot Round (if applicable)</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">To be notified</td></tr>
               <tr><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">Document Verification</td><td style="padding:11px 15px;border-bottom:1px solid #e0e0e0;">After Each Allotment Round</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;">Final Admission Closure</td><td style="padding:11px 15px;">July 2026</td></tr>
+              <tr style="background:#f8f9fa;"><td style="padding:11px 15px;">Final Admission Closure</td><td style="padding:11px 15px;">To be notified</td></tr>
             </tbody>
           </table>
         </div>
-        <p style="font-size:0.82rem;color:#888;margin-top:8px;">* Dates are subject to official GGSIPU notifications. Check ipu.ac.in for updates.</p>
+        <p style="font-size:0.82rem;color:#888;margin-top:8px;">* Enrolment start per GGSIPU Notification 26/2026 (03.06.2026) and stated as tentative. Remaining dates are yet to be notified &mdash; check ipu.ac.in for official updates.</p>
       </div>
 
       <!-- Step-by-step Process -->
