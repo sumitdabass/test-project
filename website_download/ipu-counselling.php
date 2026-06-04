@@ -30,6 +30,20 @@
   "dateModified": "2026-06-04"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "GGSIPU Centralized Online Counselling 2026-27",
+  "description": "Enrolment for GGSIPU centralized online counselling 2026-27 across all listed programmes (B.Tech, BCA, Law, BBA, B.Com, BA English/Economics, LL.M., B.Ed.), tentatively from 8 June 2026 per University Notification 26/2026 (03.06.2026). MBA and MCA schedules to be announced separately.",
+  "startDate": "2026-06-08",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {"@type":"VirtualLocation","url":"https://ipu.ac.in"},
+  "organizer": {"@type":"Organization","name":"Guru Gobind Singh Indraprastha University","url":"https://ipu.ac.in"},
+  "image": "https://ipu.co.in/assets/images/news/admissions.jpg"
+}
+</script>
 
 <?php
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['IPU Counselling 2026', '']];
