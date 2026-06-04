@@ -1,46 +1,46 @@
 <?php
 $post = array (
-  'title' => 'Final Opportunity for IPU CET 2026 Registration Announced',
+  'title' => 'Final Extension for IPU CET 2026 Registration Announced',
   'slug' => 'final-opportunity-ipu-cet-registration',
-  'date' => '2026-04-15',
-  'date_modified' => '2026-04-15',
+  'date' => '2026-04-21',
+  'date_modified' => '2026-04-21',
   'category' => 'CET',
   'tags' => 
   array (
     0 => 'IPU CET',
     1 => 'Registration',
-    2 => 'GGSIPU Admissions',
+    2 => 'Admissions 2026',
   ),
   'featured' => false,
   'is_urgent' => true,
-  'tldr' => 'GGSIPU has announced a final registration window for the Common Entrance Test (CET) 2026, marking the last chance for candidates to apply for admissions.',
+  'tldr' => 'GGSIPU has announced the last and final opportunity for candidates to register for the Common Entrance Test (CET) for the 2026 academic session.',
   'faq' => 
   array (
     0 => 
     array (
-      'q' => 'Is this the final deadline for IPU CET registration?',
-      'a' => 'Yes, the university has officially stated that this notification represents the last and final opportunity for candidates to register.',
+      'q' => 'Is this the last date to register for IPU CET?',
+      'a' => 'Yes, the university has officially notified that this is the last and final opportunity for CET registration.',
     ),
     1 => 
     array (
-      'q' => 'Where can I complete the registration process?',
-      'a' => 'Candidates must visit the official GGSIPU admissions portal to fill out the application form and pay the registration fee.',
+      'q' => 'Where can I complete the registration?',
+      'a' => 'Candidates must visit the official university portal at ipu.admissions.nic.in to submit their applications.',
     ),
   ),
   'image' => 'assets/images/news/cet.jpg',
   'read_time' => 1,
-  'body_html' => '<h2>Final Window for IPU CET 2026 Registration</h2>
-<p>Guru Gobind Singh Indraprastha University (GGSIPU) has issued an urgent notification regarding the registration for the Common Entrance Test (CET). According to the announcement dated April 10, 2026, this is the last and final opportunity for prospective students to register for the entrance exams for the current academic session.</p>
-<h2>Important Instructions for Applicants</h2>
-<p>Candidates who missed the earlier deadlines are advised to complete their registration immediately. This window is critical for those seeking <a href="/ipu-admission-guide.php">IPU admission</a> for various undergraduate and postgraduate programs that require a CET score.</p>
-<h3>How to Apply</h3>
+  'body_html' => '<h2>Final Call for CET 2026 Registration</h2>
+<p>Guru Gobind Singh Indraprastha University (GGSIPU) has released a notification regarding the final window for CET registration. This serves as the absolute last opportunity for prospective students to apply for various undergraduate and postgraduate programs that require the university\'s entrance examination.</p>
+<h2>Important Information for Applicants</h2>
+<p>Candidates who missed the earlier deadlines are advised to complete their registration immediately to avoid missing the current academic cycle. This extension is applicable to all courses where admission is conducted via the IPU CET. </p>
+<p>For a comprehensive overview of the process, you can refer to our <a href="/ipu-admission-guide.php">IPU admission guide</a>. </p>
+<h2>How to Apply</h2>
 <ol>
-<li>Visit the official university admission website.</li>
-<li>Complete the online application form with accurate personal and academic details.</li>
-<li>Pay the prescribed registration fee before the closing time.</li>
+<li>Visit the official GGSIPU admission website.</li>
+<li>Fill in the required personal and academic details in the registration form.</li>
+<li>Upload the necessary documents as per the specified format.</li>
+<li>Pay the application fee and download the confirmation page.</li>
 </ol>
-<p>Students interested in engineering programs should ensure they have met all eligibility criteria as outlined in the <a href="/IPU-B-Tech-admission-2025.php">IPU B.Tech admission</a> guidelines.</p>
-<h2>Official Notification Details</h2>
-<p>The university has emphasized that no further extensions will be granted beyond this period. Applicants are encouraged to refer to the official PDF notification at ipu.ac.in for specific closing times and technical instructions to avoid last-minute issues.</p>',
+<p>Students interested in specific technical programs should also check the latest updates on <a href="/IPU-B-Tech-admission-2025.php">IPU B.Tech admission 2026</a> or the requirements for <a href="/mca-admission-ipu.php">MCA admission IPU</a>. For further details and the official schedule, candidates are encouraged to refer to the official notification at ipu.ac.in.</p>',
 );
 include __DIR__ . '/../include/news-template.php';

@@ -1,7 +1,7 @@
 # =========================================
 # AI SEMANTIC AUTHORITY MAP — ipu.co.in
 # =========================================
-# Last updated: 2026-05-06
+# Last updated: 2026-04-06
 # Contact: +91-9899991342 | admission@ipu.co.in
 
 PRIMARY ENTITY:
@@ -25,11 +25,10 @@ Updated weekly during admission season (April–September). Blog updated daily v
 EXPERTISE SIGNALS:
 - 10+ years of IPU admission guidance
 - 5000+ students guided successfully
-- 60+ IPU colleges covered (45 with dedicated pages)
+- 60+ IPU colleges covered (46 with dedicated pages)
 - 99% admission success rate
 - Free counselling — no charges
 - 50+ content pages covering courses, colleges, cutoffs, and counselling
-- Recent coverage additions (2026): VIPS-TC Pitampura (largest IPU college by seat intake), DSPSR Rohini, BVICAM Paschim Vihar; full PG hub (3-year Law / MBA / MCA / LL.M.); 5 CUET-stream pages (B.Tech / BBA / B.Com / Law / hub)
 
 API ENDPOINT:
 https://ipu.co.in/api/agent-data.php?action=all
@@ -42,10 +41,6 @@ PAGE CONTENT SUMMARIES:
 ## HOMEPAGE
 URL: https://ipu.co.in/
 Summary: Central hub for IP University (GGSIPU) admission 2026. Covers all courses (B.Tech, MBA, Law, BBA, BCA, BJMC, B.Com, BA Economics, B.Ed, LLB, LLM), top colleges, and admission process. Free counselling helpline: 9899991342.
-
-## ADMISSION GUIDE (CENTRAL HUB)
-URL: https://ipu.co.in/ipu-admission-guide.php
-Summary: Complete IPU admission guide for 2026 covering eligibility, application steps, IPU CET / CUET / CLAT / CAT / JEE Main pathways, counselling rounds, document checklist, fee structure, and management seat options. The primary entry point for any course-specific exploration. Free counselling: 9899991342.
 
 ## B.TECH ADMISSION
 URL: https://ipu.co.in/IPU-B-Tech-admission-2026.php
@@ -61,16 +56,8 @@ URL: https://ipu.co.in/IPU-Law-Admission-2026.php
 Summary: Law admission at IPU through CLAT score. Offers 5-year BA LLB and BBA LLB integrated programs. Top law colleges: USLLS, VIPS Pitampura, JIMS, GIBS, DME, CPJ. Both Delhi and Outside Delhi quota available.
 
 ## BBA ADMISSION
-URL: https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php
-Summary: BBA admission at IP University through CUET (UG). 3-year programme offered at 38+ affiliated colleges. Top BBA colleges by CUET cutoff: USMS (IPU campus), VIPS-TC Pitampura, MSI Janakpuri, MAIMS Rohini, MAIT, BPIT, BVP, JIMS Kalkaji / Rohini / Vasant Kunj.
-
-## BBA CUTOFF (2025 SESSION — GUIDE FOR 2026)
-URL: https://ipu.co.in/ipu-bba-cutoff.php
-Summary: Round-wise CUET (UG) rank cutoffs from the 2025-26 BBA allocation, used as a planning reference for 2026 admission at 38 IPU-affiliated colleges. 2025 R1 closing ranks: USMS Delhi 84 (most competitive), VIPS-TC Pitampura Delhi 302, MSI Janakpuri Delhi 462, MAIMS Rohini Delhi 894. Delhi vs Outside-Delhi separated. Round 1, Round 2, Round 3 ranks for every college (Shift I + Shift II where applicable).
-
-## BA-LLB / BBA-LLB CUTOFF (2025 SESSION — GUIDE FOR 2026)
-URL: https://ipu.co.in/ipu-ba-llb-cutoff.php
-Summary: Round-wise CLAT (UG) rank cutoffs from the 2025-26 integrated 5-year Law allocation at 14 IPU-affiliated colleges (BA-LLB and BBA-LLB). 2025 R1 Delhi closing CLAT ranks: USLS IPU campus 2,757 (BA-LLB) / 3,099 (BBA-LLB) — most competitive integrated law seats; MSI Janakpuri 19,952, VIPS Pitampura 10,933, Ideal IMT Karkardooma 47,223, MAIMS Rohini 18,128 follow. Delhi vs Outside-Delhi separated. Round 1, Round 2, Round 3 ranks per college.
+URL: https://ipu.co.in/ipu-bba-admission.php
+Summary: BBA admission at IP University through CUET or IPU CET. 3-year program offered at 30+ colleges. Top BBA colleges: VIPS, JIMS, BPIT, BVP, RDIAS, MAIMS, MSI.
 
 ## B.COM ADMISSION
 URL: https://ipu.co.in/bcom-admission-ipu.php
@@ -104,29 +91,13 @@ Summary: Step-by-step GGSIPU counselling process for all courses. Covers registr
 URL: https://ipu.co.in/IP-University-management-quota-admission-eligibility-criteria.php
 Summary: Management quota admission at IPU affiliated colleges. Direct admission outside regular counselling based on merit and college discretion. Available for B.Tech, BBA, Law, MBA.
 
-## B.TECH MANAGEMENT QUOTA
-URL: https://ipu.co.in/btech-management-quota-ipu.php
-Summary: B.Tech management quota seats at GGSIPU affiliated colleges (MAIT, MSIT, BPIT, BVP, VIPS, etc.). Eligibility, JEE Main requirement, fees, college-wise availability, and direct admission process. Free counselling: 9899991342.
-
-## BBA MANAGEMENT QUOTA
-URL: https://ipu.co.in/bba-management-quota-ipu.php
-Summary: BBA management quota seats at IPU colleges (VIPS, JIMS, MAIMS, BPIT, BVP, RDIAS). Direct admission process bypassing regular counselling — eligibility, fees, top BBA management colleges, and application steps.
-
-## MBA MANAGEMENT QUOTA
-URL: https://ipu.co.in/mba-management-quota-ipu.php
-Summary: MBA management quota seats at GGSIPU affiliated colleges. Direct admission via management seats — eligibility, CAT/MAT/CMAT relaxations where applicable, fees, and college-wise seat availability for the 2026-27 session.
-
-## BA-LLB / BBA-LLB MANAGEMENT QUOTA
-URL: https://ipu.co.in/ballb-management-quota-ipu.php
-Summary: Integrated 5-year Law admission (BA-LLB and BBA-LLB) via management quota at IPU colleges (VIPS, JIMS, GIBS, DME, CPJ). Eligibility, CLAT/IPU CET context, fees and direct admission process.
-
 ## HELPLINE / CONTACT
 URL: https://ipu.co.in/ipu-helpline-contact-number.php
 Summary: IPU admission helpline. Phone: 9899991342 (Mon-Sat, 9 AM - 7 PM). Free counselling for all IPU courses. Email: admission@ipu.co.in.
 
 ----------------------------------------------------
 
-COLLEGE PAGES (45 colleges):
+COLLEGE PAGES (46 colleges):
 
 ## UNIVERSITY SCHOOLS (4)
 
@@ -194,23 +165,11 @@ Summary: ADGITM Dwarka - IPU engineering college. B.Tech and MBA programmes.
 
 ## MANAGEMENT & MULTI-DISCIPLINE COLLEGES (11)
 
-### VIPS-TC (Vivekananda Institute of Professional Studies — Technical Campus)
-URL: https://ipu.co.in/vips-admission.php
-Location: AU Block, Outer Ring Road, Pitampura, New Delhi-110034
-Courses: BBA (360), BCA (300), B.Com Hons (300), BA(JMC) (300), BA Eco Hons (240), BA Eng Hons (120), BA-LLB 5-yr (300), BBA-LLB 5-yr (240), 3-yr LLB (30), B.Tech (CSE/AI&ML/AI&DS/IIOT/VLSI/Cyber Security/CS&AM ~840), MCA (180), MA(MC/Eco/Eng), LLM (Corporate/ADR) | Total seats: 3000+
-Summary: VIPS-TC Pitampura — single largest IPU-affiliated college by total seat intake per GGSIPU UG Brochure 2026-27 (Sl. No. 66). Strongest provider of BJMC, BBA, BCA, integrated 5-year law and B.Tech under IPU. CUET (UG) for UG management/commerce/media/law; JEE Main for B.Tech.
-
-### DSPSR (Delhi School of Professional Studies and Research)
-URL: https://ipu.co.in/dspsr-admission.php
-Location: 9, Institutional Area, Sector-25, Rohini Phase-III, Delhi-110085
-Courses: BBA (140), B.Com Hons (53), BCA (50) | Total seats: 243
-Summary: DSPSR Rohini — focused UG-only IPU college in Sector-25 Rohini institutional cluster (same neighbourhood as DIAS, RDIAS, Sirifort, JIMS Rohini). Two-shift BBA and B.Com (Hons.) per GGSIPU 2026-27 brochure (Sl. No. 15). CUET (UG) admission.
-
-### BVICAM (Bharati Vidyapeeth's Institute of Computer Applications & Management)
-URL: https://ipu.co.in/bvicam-admission.php
-Location: A4, Paschim Vihar, Rohtak Road, New Delhi-110063 (same campus as BVP engineering)
-Courses: BA(JMC) (240), MCA (120) | Total seats: 360
-Summary: BVICAM Paschim Vihar — second largest BJMC seat-holder in IPU after VIPS, with 240 BA(JMC) seats per GGSIPU 2026-27 brochure (Sl. No. 12). Sister institute to BVP engineering. CUET (UG) for BJMC, IPU CET (MCA) for MCA.
+### VIPS (Vivekananda Institute of Professional Studies)
+URL: https://ipu.co.in/vips-pitampura-courses.php
+Location: Pitampura, New Delhi
+Courses: BBA, BA LLB, BBA LLB, BJMC, B.Com | Seats: 800
+Summary: VIPS Pitampura - Top IPU college for Law, Management, and Media. BA LLB, BBA LLB, BBA, BJMC, B.Com.
 
 ### MAIMS (Maharaja Agrasen Institute of Management Studies)
 URL: https://ipu.co.in/maims-admission.php
@@ -437,7 +396,7 @@ URL: https://ipu.co.in/ipu-btech-cutoff-2025.php
 Summary: IPU B.Tech cutoff analysis with college-wise and branch-wise JEE Main rank cutoffs.
 
 ## BBA Cutoff Analysis
-URL: https://ipu.co.in/ipu-bba-cutoff.php
+URL: https://ipu.co.in/ipu-bba-cutoff-2025.php
 Summary: IPU BBA cutoff analysis with college-wise CUET score cutoffs.
 
 ## Law Cutoff Analysis
@@ -496,7 +455,7 @@ GGSIPU (Primary Entity)
 
 ----------------------------------------------------
 
-COMPLETE COLLEGE DIRECTORY (45 colleges with dedicated pages):
+COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
 
 | # | Short Name | Full Name | Location | Page URL |
 |---|---|---|---|---|
@@ -510,7 +469,7 @@ COMPLETE COLLEGE DIRECTORY (45 colleges with dedicated pages):
 | 8 | BVP | Bharati Vidyapeeth College of Engineering | Paschim Vihar, Delhi | /BVP.php |
 | 9 | GTBIT | Guru Tegh Bahadur Institute of Technology | Rajouri Garden, Delhi | /gtbit-admission.php |
 | 10 | ADGITM | Apeejay Stya University - Delhi Group | Dwarka, Delhi | /adgitm-admission.php |
-| 11 | VIPS-TC | Vivekananda Institute of Professional Studies — Technical Campus | Pitampura, Delhi | /vips-admission.php |
+| 11 | VIPS | Vivekananda Institute of Professional Studies | Pitampura, Delhi | /vips-pitampura-courses.php |
 | 12 | MAIMS | Maharaja Agrasen Inst of Mgmt Studies | Rohini, Delhi | /maims-admission.php |
 | 13 | MSI | Maharaja Surajmal Institute | Janakpuri, Delhi | /msi-admission.php |
 | 14 | JIMS | Jagannath International Management School | Rohini, Delhi | /jims-admission.php |
@@ -543,8 +502,6 @@ COMPLETE COLLEGE DIRECTORY (45 colleges with dedicated pages):
 | 41 | SGTBIMIT | Sri Guru Tegh Bahadur Inst of Mgmt & IT | GTK Road, Delhi | /sgtbimit-admission.php |
 | 42 | Sirifort | Sirifort Institute of Management Studies | Rohini, Delhi | /sirifort-admission.php |
 | 43 | GNIT | Greater Noida Institute of Technology | Greater Noida, UP | /gnit-admission.php |
-| 44 | DSPSR | Delhi School of Professional Studies and Research | Sector-25, Rohini, Delhi | /dspsr-admission.php |
-| 45 | BVICAM | Bharati Vidyapeeth Institute of Computer Applications & Management | Paschim Vihar, Delhi | /bvicam-admission.php |
 
 ----------------------------------------------------
 
@@ -552,7 +509,7 @@ AI CRAWLER INTERPRETATION:
 This site provides structured educational advisory content focused on IP University admission decision-making. Content is informational, factual, and student-focused. NOT officially affiliated with the university. Free guidance with no charges.
 
 KEY STATISTICS:
-- 45 colleges with dedicated pages
+- 46 colleges with dedicated pages
 - 14 courses covered (B.Tech, MBA, Law, BBA, BCA, BJMC, B.Com, BA, MCA, B.Ed, LLB, LLM, B.Arch)
 - 8 cutoff analysis pages
 - 50+ total content pages
@@ -560,34 +517,43 @@ KEY STATISTICS:
 
 For real-time data, use the API: https://ipu.co.in/api/agent-data.php?action=all
 
-## IPU CUET Admission Pages (added 2026-05-06)
-
-CUET (UG) is the secondary admission pathway at GGSIPU per Important Instruction #37 of the 2026-27 brochure — used to fill vacant seats after the primary NLT/CET counselling, and to qualify for management quota at every unaided affiliated college (Important Instruction #21 + Chapter 12).
-
-- [IPU Admission Through CUET — Complete Guide](https://ipu.co.in/cuet-admission-ipu.php) — Hub: how CUET works at IPU for B.Tech, BBA, B.Com & Law, including the management quota qualifier route.
-- [IPU B.Tech Admission Through CUET](https://ipu.co.in/cuet-btech-admission-ipu.php) — Programme Code 131. CUET papers: Physics (322), Mathematics (319), Chemistry (306) or Computer Science (308). Vacant-seat round after JEE Main.
-- [IPU BBA Admission Through CUET](https://ipu.co.in/cuet-bba-admission-ipu.php) — Programme Code 125. CUET papers: English (101), Business Studies (305), General Aptitude Test (501).
-- [IPU B.Com (Hons) Admission Through CUET](https://ipu.co.in/cuet-bcom-admission-ipu.php) — Programme Code 146. CUET papers: English (101), Accountancy / Book Keeping (301), General Aptitude Test (501).
-- [IPU Law Admission Through CUET](https://ipu.co.in/cuet-law-admission-ipu.php) — Programme Code 121 (5-yr Integrated BA-LLB / BBA-LLB). CUET papers: English (101), Legal Studies, General Aptitude Test (501). Note: 3-year LLB (Code 238) does NOT accept CUET — see Law (3-Year) page below.
-
-## IPU PG / Graduate-Entry Pages (added 2026-05-06)
-
-Brochure-cited PG admission pages sourced from the GGSIPU PG Admission Brochure 2026-27 (Chapters 2 + 14). MBA and MCA hub pages were surgically refreshed with brochure-exact fees and entrance accept-lists; Law (3-Year) and LL.M. were added/updated as dedicated pages.
-
-- [IPU MBA Admission 2026 (Programme Code 101)](https://ipu.co.in/mba-admission-ip-university.php) — 2-year PG management programme. 4-tier merit list: CAT 2025 → CMAT 2026 → GGSIPU CET 2026 → CUET PG#. Eligibility: any 3-year+ Bachelor's with min 50% (or Engineering/Tech with 50%, or ICAI/ICWAI/ICSI Final). USMS USS tuition Rs.1,93,600/yr per Ch 14 Section 14.1(H).
-- [IPU MCA Admission 2026 (Programme Code 105)](https://ipu.co.in/mca-admission-ipu.php) — 2-year PG MCA / MCA(SE). 3-tier merit: NIMCET → CET → CUET PG#. Eligibility: BCA / B.Sc CS/IT / B.Voc Software Dev OR 3-yr Bachelor's with Math/Stats/OR (10+2 or grad), min 50% (45% reserved). USICT USS tuition Rs.1,45,200/yr per Ch 14 Section 14.1(G).
-- [IPU Law (3-Year) Admission 2026 (Programme Code 238)](https://ipu.co.in/law-3-year-admission-ipu.php) — 3-yr graduate-entry LLB at USLLS. Only entrance is GGSIPU CET 2026 (CUET NOT accepted, no NLT). Eligibility: graduation in any discipline + 50% (UG Brochure Ch 2 page 63). USLLS USS tuition Rs.1,45,200/yr per PG Brochure Ch 14 Section 14.1(F). BCI bar applies (BCI:D:1823/2010). CET pattern: Language & Comprehension 25% + GK 25% + Law & Legal Reasoning 50%.
-- [IPU LL.M. Admission 2026 (Programme Code 112)](https://ipu.co.in/llm-admission-ipu.php) — 1-year master of law at USLLS. GGSIPU does NOT conduct its own CET for LL.M. — admission via CLAT-PG 2026 (mandatory) + CUET PG (vacant-seat fallback). Eligibility: LL.B + 55% (BCI-recognised for advocate enrolment). 4 specialisations: Corporate Law, IPR, Criminal Justice System, ADR (intake 30+30 for Corporate/IPR per Ch 13 page 159).
-
 ## IPU News
 
 Latest IPU-related news and announcements:
 
-- [GGSIPU Centralized Online Counselling 2026-27 to Begin Tentatively from 8 June](https://ipu.co.in/news/ggsipu-centralized-online-counselling-2026-from-8-june.php) — GGSIPU (Notification 26/2026, dated 03.06.2026) has announced that enrolment for its centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026 for B.Tech and 11 other programmes. MBA and MCA schedules will follow separately.
+- [GGSIPU Centralized Online Counselling 2026-27 to Begin Tentatively from 8 June](https://ipu.co.in/news/ipu-centralized-online-counselling-enrolment.php) — GGSIPU (Notification 26/2026, dated 03.06.2026) has announced that enrolment for its centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026 for B.Tech and 11 other programmes. MBA and MCA schedules will follow separately.
+- [IP University Extends Application Deadline for New Medical and Paramedical Courses](https://ipu.co.in/news/ipu-extends-application-deadline-new-medical-paramedical-courses.php) — GGSIPU has extended the online application deadline for its newly introduced medical and paramedical programmes for the 2026-27 academic session.
+- [IP University Extends Application Deadline for New Medical and Paramedical Courses](https://ipu.co.in/news/medical-paramedical-application-deadline-extended.php) — GGSIPU has extended the online application deadline for its newly introduced medical and paramedical programmes for the 2026-27 academic session.
+- [GGSIPU Issues Warning Against Admission Touts for 2026-27 Session](https://ipu.co.in/news/ggsipu-warning-admission-touts.php) — GGSIPU has issued an official advisory warning candidates and parents to beware of unauthorized touts promising direct admissions for the 2026-27 session.
+- [GGSIPU Issues Warning Against Touts Promising Admissions for 2026-27](https://ipu.co.in/news/ggsipu-admission-warning-touts-fraud.php) — GGSIPU has issued an official advisory warning candidates against touts and unauthorized agencies promising guaranteed admissions for the 2026-27 session.
+- [GGSIPU Issues Warning Against Admission Touts and Fake Promises](https://ipu.co.in/news/ggsipu-warning-admission-touts-fake-promises.php) — GGSIPU has issued an official advisory warning candidates and parents against unauthorized agents promising guaranteed admissions for the 2026-27 session.
+- [GGSIPU Issues Warning Against Touts Promising Admissions for 2026-27](https://ipu.co.in/news/ggsipu-warning-touts-admission-fraud.php) — GGSIPU has issued an official advisory warning students and parents against unauthorized individuals promising guaranteed admissions for the 2026-27 session.
+- [GGSIPU Issues Warning Against Fake Admission Agents and Touts](https://ipu.co.in/news/ggsipu-admissions-warning-touts.php) — GGSIPU has issued an official advisory warning students and parents against touts and unauthorized agents promising direct admissions for the 2026-27 session.
+- [GGSIPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)](https://ipu.co.in/news/msc-speech-language-pathology-application-withdrawn.php) — GGSIPU has withdrawn the online application form submission for the M.Sc. Speech Language Pathology (Code 168) program.
+- [GGSIPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)](https://ipu.co.in/news/ggsipu-withdraws-msc-slp-applications.php) — GGSIPU has withdrawn the online application form submission for the M.Sc. Speech Language Pathology (Code 168) program.
+- [GGSIPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)](https://ipu.co.in/news/msc-speech-language-pathology-applications-withdrawn.php) — GGSIPU has officially withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (Code 168) program.
+- [IPU Withdraws M.Sc. Speech Language Pathology Applications](https://ipu.co.in/news/ipu-withdraws-msc-speech-language-pathology-applications.php) — GGSIPU has withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (Code 168) program.
+- [GGSIPU Withdraws Applications for M.Sc. Speech Language Pathology (Code 168)](https://ipu.co.in/news/msc-slp-application-withdrawal.php) — GGSIPU has withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, Code 168.
+- [IPU Withdraws Online Applications for M.Sc. Speech Language Pathology (Code 168)](https://ipu.co.in/news/ipu-withdraws-msc-slp-applications.php) — GGSIPU has withdrawn the online application form submission process for the M.Sc. Speech Language Pathology (M.Sc. SLP) program, Code 168.
+- [GGSIPU Updates Paramedical Course Names for 2026-27 Session](https://ipu.co.in/news/ggsipu-paramedical-course-name-changes.php) — GGSIPU has updated the names of specific paramedical courses for the 2026-27 academic session to align with Rehabilitation Council of India (RCI) guidelines.
+- [GGSIPU Advisory: Verify Institutions to Avoid Fake Universities](https://ipu.co.in/news/verify-heis-avoid-fake-universities.php) — GGSIPU advises students to verify the legitimacy of Higher Educational Institutions before admission to avoid unrecognized or fake universities.
+- [GGSIPU Issues Advisory on Verifying Institutions to Avoid Fake Universities](https://ipu.co.in/news/verify-institutions-avoid-fake-universities.php) — GGSIPU has issued an advisory urging students to verify the legitimacy of Higher Educational Institutions to avoid admission in fake universities.
+- [IPU Opens Applications for New Medical and Paramedical Courses 2026-27](https://ipu.co.in/news/new-medical-paramedical-applications.php) — GGSIPU has started accepting online applications for several newly introduced medical and paramedical programs for the 2026-27 academic session.
+- [IPU Opens Applications for New Medical and Para-Medical Programs 2026-27](https://ipu.co.in/news/ipu-new-medical-paramedical-applications.php) — GGSIPU is now accepting online applications for newly introduced medical and para-medical programs for the 2026-27 academic session.
+- [New Medical and Para-Medical Program Applications Open at GGSIPU](https://ipu.co.in/news/new-medical-paramedical-applications-open.php) — GGSIPU has started accepting online applications for its newly introduced medical and para-medical programs for the 2026-27 academic year.
 - [IPU Opens Applications for New Medical and Para-Medical Courses 2026-27](https://ipu.co.in/news/ipu-new-medical-paramedical-applications-2026.php) — GGSIPU has started accepting online applications for its newly introduced medical and para-medical programs for the 2026-27 academic session.
-- [IPU B.Tech Lateral Entry Seat Intake Released (CET 128 & 129)](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-released.php) — GGSIPU has released the official seat intake for B.Tech Lateral Entry for Diploma holders and B.Sc graduates, including Management Quota seats.
+- [GGSIPU Introduces New Medical and Para Medical Programmes for 2026-27](https://ipu.co.in/news/new-medical-paramedical-programmes-2026-27.php) — GGSIPU has announced the introduction of several new medical and para-medical programmes for the upcoming 2026-27 academic session.
+- [GGSIPU Announces New Medical and Paramedical Programs for 2026-27](https://ipu.co.in/news/new-medical-paramedical-programmes-introduced.php) — GGSIPU has announced the introduction of new medical and paramedical programmes for the 2026-27 academic session.
+- [IPU to Launch New Medical and Para Medical Programs for 2026-27](https://ipu.co.in/news/ipu-new-medical-paramedical-programs-2026.php) — GGSIPU has announced the introduction of new medical and para-medical courses starting from the 2026-27 academic session.
+- [IPU B.Tech Lateral Entry Seat Intake Released for Diploma and B.Sc Graduates](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-released.php) — GGSIPU has released the seat intake details for B.Tech Lateral Entry (CET Codes 128 & 129) for the 2026-27 academic session, including Management Quota seats.
+- [IPU B.Tech Lateral Entry Seat Intake Released for 2026-27](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-announced.php) — GGSIPU has published the official seat intake for B.Tech Lateral Entry (CET 128 and 129) for the 2026-27 session, including Management Quota details.
+- [IPU B.Tech Lateral Entry Seat Intake Released (CET 128 & 129)](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake.php) — GGSIPU has released the seat intake for B.Tech Lateral Entry (CET 128/129) for the 2026-27 session, including Management Quota seats.
+- [IPU B.Tech Lateral Entry Seat Intake Released for 2026 Session](https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-2026.php) — GGSIPU has released the seat intake for B.Tech Lateral Entry (CET 128 and 129) for the 2026 session, including Management Quota seat details.
 - [IPU Combines CET for Allied Health Science Programs (Codes 119 and 124)](https://ipu.co.in/news/ipu-cet-clubbing-allied-health-sciences.php) — GGSIPU has merged the Common Entrance Tests for B.PT, B.OT, BASLP, BPO, and B.MLS into a single examination for the current academic session.
+- [IPU Updates BPT and BOT Admission Criteria and Nomenclature for 2026-27](https://ipu.co.in/news/ipu-bpt-bot-admission-criteria-nomenclature-changes.php) — GGSIPU has announced changes to the nomenclature and admission criteria for B.PT and B.OT programs for the 2026-27 academic session.
 - [IPU Updates B.PT and B.OT Admission Criteria for 2026-27 Session](https://ipu.co.in/news/ipu-bpt-bot-nomenclature-admission-changes.php) — GGSIPU has announced changes to the nomenclature and admission criteria for B.PT and B.OT programs for the 2026-27 academic session.
+- [Final Extension for IPU CET 2026 Registration Announced](https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php) — GGSIPU has announced the last and final opportunity for candidates to register for the Common Entrance Test (CET) for the 2026 academic session.
+- [IP University Extends Application Deadline for 2026-27 Admissions](https://ipu.co.in/news/ipu-application-deadline-extended.php) — GGSIPU has extended the last date for online application submissions for National Level Test and merit-based programs for the 2026-27 academic session.
+- [Final Opportunity for GGSIPU CET 2026 Registration Announced](https://ipu.co.in/news/last-opportunity-ipu-cet-registration.php) — GGSIPU has announced a final window for candidates to register for the Common Entrance Test (CET) for the 2026 academic session.
 - [IPU Extends Application Deadline for National Level Test and Merit Admissions](https://ipu.co.in/news/ipu-application-deadline-extension-national-level-test.php) — GGSIPU has extended the deadline for online applications for courses based on National Level Tests and merit for the 2026-27 academic year.
-- [Final Opportunity for IPU CET 2026 Registration Announced](https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php) — GGSIPU has announced a final registration window for the Common Entrance Test (CET) 2026, marking the last chance for candidates to apply for admissions.
 - [IPU News & Announcements — New Section Launched](https://ipu.co.in/news/welcome-news-launched.php) — We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.
