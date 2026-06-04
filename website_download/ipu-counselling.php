@@ -27,7 +27,7 @@
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
-  "dateModified": "2026-04-07"
+  "dateModified": "2026-06-04"
 }
 </script>
 
@@ -59,13 +59,18 @@ include 'include/components/hero-banner.php';
     <p><strong>AI Summary:</strong> IPU Counselling 2026 is the centralized admission process at Guru Gobind Singh Indraprastha University (GGSIPU) Delhi. Registration opens in May-June 2026 on ipu.ac.in / ipu.admissions.nic.in. Counselling is conducted in multiple rounds for B.Tech, BBA, BCA, Law (BA LLB / BBA LLB / LLB / LLM), BJMC, B.Com, MBA, MCA and other programmes. The counselling fee is Rs. 1,500 for General/OBC and Rs. 750 for SC/ST. The process includes online registration, fee payment, choice filling, seat allotment, document verification and reporting to the allotted college. For free expert help on choice filling and seat predictions, call 9899991342.</p>
   </section>
 
-  <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>
+  <?php $last_updated = '2026-06-04'; include 'include/components/last-updated.php'; ?>
 
   <h1>IPU Counselling 2026 – Complete Schedule, Registration & Process</h1>
 
   <p>IPU Counselling 2026 is the official, centralized admission process conducted by <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>, Delhi for admission to all undergraduate, postgraduate and doctoral programmes at the University Schools of Studies (USS) and 100+ affiliated colleges. If you have appeared for JEE Main, CUET, IPU CET, CLAT, NEET or any other qualifying exam and want a seat at GGSIPU, you must register and participate in the IPU counselling rounds.</p>
 
   <p>For free expert help on registration, choice filling strategy and seat predictions, call our IPU admission helpline at <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
+
+  <div style="background:#fff8e6;border:1px solid #f7b731;border-left:5px solid #f7b731;border-radius:8px;padding:16px 18px;margin:18px 0;">
+    <p style="margin:0 0 6px;font-weight:700;color:#0d1b6e;font-size:1.02rem;">&#128226; Counselling Update &mdash; 3 June 2026</p>
+    <p style="margin:0;line-height:1.7;font-size:0.96rem;">GGSIPU has notified (Notification No. 26/2026, dated 03.06.2026) that enrolment for <strong>Centralized Online Counselling 2026-27</strong> is <strong>likely to begin tentatively from 8 June 2026</strong> for all listed programmes &mdash; including B.Tech (131), BCA (114), BA LL.B./BBA LL.B. (121), LL.M. (112), BBA &amp; 5-year Integrated (125), B.Com Hons (146), BA English (184) and BA Economics (197). <strong>MBA (101) and MCA (105)</strong> schedules will be announced separately. Confirm on <a href="https://ipu.ac.in" target="_blank" rel="noopener">ipu.ac.in</a> or call <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
+  </div>
 
   <h2>What is IPU Counselling?</h2>
   <p>IPU Counselling (also called <strong>GGSIPU Online Counselling</strong>) is a multi-round, online admission process. After your qualifying entrance exam result is declared, you need to register on the official IPU admission portal, pay the counselling fee, fill in your college and course preferences (choice filling), and wait for seat allotment based on your rank, category and Delhi/Outside-Delhi region. Once a seat is allotted, you must pay the fee and report to the college for document verification.</p>
