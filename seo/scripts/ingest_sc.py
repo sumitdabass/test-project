@@ -51,7 +51,10 @@ def parse_window(ws_filters, ws_chart=None) -> tuple[str, str]:
     for row in ws_filters.iter_rows(values_only=True):
         if row and row[0] == "Date":
             raw = row[1]  # e.g. "14 May 2026-20 May 2026" or "14 May 2026 - 20 May 2026"
-            m = re.match(r"\s*(.+?)\s*-\s*(.+?)\s*$", raw)
+            # raw may be None / a datetime / numeric for odd exports (single-day,
+            # blank cell). Coerce to str so re.match can't raise TypeError — a
+            # non-range value then falls through to the Chart-sheet fallback.
+            m = re.match(r"\s*(.+?)\s*-\s*(.+?)\s*$", str(raw) if raw is not None else "")
             if m:
                 try:
                     start = datetime.strptime(m.group(1), "%d %b %Y").date().isoformat()
