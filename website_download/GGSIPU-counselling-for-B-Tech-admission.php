@@ -61,6 +61,12 @@ include __DIR__ . '/include/components/page-hero.php';
         <p style="color:#444;line-height:1.8;font-size:0.98rem;margin-top:10px;">The counselling process is completely online and managed by the GGSIPU admissions portal. There is no offline reporting until document verification at the allotted college.</p>
       </div>
 
+      <!-- Counselling Update Callout (Notification 26/2026, 03.06.2026) -->
+      <div style="background:#fff8e6;border:1px solid #f7b731;border-left:5px solid #f7b731;border-radius:8px;padding:16px 18px;margin-bottom:32px;">
+        <p style="margin:0 0 6px;font-weight:700;color:#1a3a6b;font-size:1.02rem;">&#128226; Counselling Update &mdash; 3 June 2026</p>
+        <p style="margin:0;color:#444;line-height:1.7;font-size:0.96rem;">GGSIPU has notified (Notification No. 26/2026, dated 03.06.2026) that enrolment for <strong>Centralized Online Counselling 2026-27</strong> is <strong>likely to begin tentatively from 8 June 2026</strong>. B.Tech is listed under <strong>programme code 131</strong>. Exact registration, choice-filling and seat-allotment dates are yet to be notified on <a href="https://ipu.ac.in" target="_blank" rel="noopener">ipu.ac.in</a>. For real-time help, call our 24x7 admission helpline <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
+      </div>
+
       <!-- Counselling Timeline -->
       <div style="margin-bottom:32px;">
         <h2 style="color:#1a3a6b;font-size:1.5rem;font-weight:700;border-left:4px solid #f7b731;padding-left:12px;margin-bottom:16px;">GGSIPU B.Tech Counselling Timeline 2026</h2>
