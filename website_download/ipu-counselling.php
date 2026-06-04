@@ -76,7 +76,7 @@ include 'include/components/hero-banner.php';
   <p>IPU Counselling (also called <strong>GGSIPU Online Counselling</strong>) is a multi-round, online admission process. After your qualifying entrance exam result is declared, you need to register on the official IPU admission portal, pay the counselling fee, fill in your college and course preferences (choice filling), and wait for seat allotment based on your rank, category and Delhi/Outside-Delhi region. Once a seat is allotted, you must pay the fee and report to the college for document verification.</p>
 
   <h2>IPU Counselling 2026 Important Dates (Tentative)</h2>
-  <p>The schedule below is tentative based on the past 3 years' GGSIPU counselling pattern. Official dates will be released in May 2026 on the IPU website. For real-time alerts, save our number <a href="tel:+919899991342">9899991342</a> on WhatsApp.</p>
+  <p>Per GGSIPU Notification 26/2026 (03.06.2026), centralized online counselling enrolment is likely to begin tentatively from 8 June 2026. The remaining dates below are indicative (based on past pattern) and will be confirmed by official GGSIPU notifications. For real-time alerts, save our number <a href="tel:+919899991342">9899991342</a> on WhatsApp.</p>
 
   <table style="width:100%;border-collapse:collapse;margin:16px 0">
     <thead>
@@ -86,16 +86,13 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Release of Admission Brochure 2026-27</td><td style="padding:10px 14px">April 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">IPU Counselling Registration Opens</td><td style="padding:10px 14px">2nd week of May 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Last Date to Register & Pay Counselling Fee</td><td style="padding:10px 14px">3rd week of June 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Choice Filling Opens (B.Tech, BBA, BCA, Law)</td><td style="padding:10px 14px">Last week of June 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 1 Seat Allotment Result</td><td style="padding:10px 14px">1st week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Fee Payment & Reporting</td><td style="padding:10px 14px">2nd week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 2 Seat Allotment Result</td><td style="padding:10px 14px">3rd week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 3 / Sliding Round</td><td style="padding:10px 14px">1st week of August 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Spot / Physical Counselling Round</td><td style="padding:10px 14px">2nd-3rd week of August 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Commencement of Classes</td><td style="padding:10px 14px">Last week of August 2026</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Online Counselling Enrolment Opens</td><td style="padding:10px 14px"><strong>Tentatively 8 June 2026</strong> (Notification 26/2026)</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Last Date to Register & Pay Counselling Fee</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Choice Filling (B.Tech, BBA, BCA, Law)</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Seat Allotment Result</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 2 & 3 Seat Allotment</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Spot / Physical Counselling Round</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (101) & MCA (105) Schedule</td><td style="padding:10px 14px">To be announced separately</td></tr>
     </tbody>
   </table>
 
