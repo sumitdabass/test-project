@@ -664,6 +664,11 @@
     <priority>0.30</priority>
   </url>
   <url>
+    <loc>https://ipu.co.in/news/ggsipu-centralized-online-counselling-2026-from-8-june.php</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://ipu.co.in/news/ipu-new-medical-paramedical-applications-2026.php</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -700,7 +705,7 @@
   </url>
   <url>
     <loc>https://ipu.co.in/news/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>

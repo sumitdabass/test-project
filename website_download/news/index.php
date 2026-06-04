@@ -94,6 +94,45 @@ include_once __DIR__ . '/../include/form-handler.php';
   <div class="row">
     <div class="col-lg-9 col-md-12 order-2 order-lg-1">
       <div class="row" id="newsGrid">
+        <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="Admissions" data-title="ggsipu centralized online counselling 2026-27 to begin tentatively from 8 june">
+          <?php $post = array (
+  'title' => 'GGSIPU Centralized Online Counselling 2026-27 to Begin Tentatively from 8 June',
+  'slug' => 'ggsipu-centralized-online-counselling-2026-from-8-june',
+  'date' => '2026-06-04',
+  'date_modified' => '2026-06-04',
+  'category' => 'Admissions',
+  'tags' => 
+  array (
+    0 => 'GGSIPU',
+    1 => 'IPU Counselling',
+    2 => 'Counselling 2026',
+    3 => 'Admissions',
+  ),
+  'featured' => true,
+  'is_urgent' => true,
+  'tldr' => 'GGSIPU (Notification 26/2026, dated 03.06.2026) has announced that enrolment for its centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026 for B.Tech and 11 other programmes. MBA and MCA schedules will follow separately.',
+  'faq' => 
+  array (
+    0 => 
+    array (
+      'q' => 'When does GGSIPU online counselling 2026 start?',
+      'a' => 'Per GGSIPU Notification 26/2026 (03.06.2026), enrolment for centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026. The university has stated the date is tentative; confirm on ipu.ac.in.',
+    ),
+    1 => 
+    array (
+      'q' => 'Which programmes are covered in this counselling?',
+      'a' => 'B.Tech (131), BCA (114), BA LL.B./BBA LL.B. (121), LL.M. (112), B.Ed. (122), BBA & 5-year Integrated (125), BA JMC (126), LE B.Tech (128), B.Com Hons (146), B.Ed. Special Education (159), BA English Hons (184) and BA Economics Hons (197). MBA (101) and MCA (105) schedules will be announced separately.',
+    ),
+    2 => 
+    array (
+      'q' => 'Is the 8 June 2026 date confirmed?',
+      'a' => 'No. GGSIPU\'s notification states the start is \'likely\' and \'tentative\'. Check ipu.ac.in and ipu.admissions.nic.in for the confirmed schedule, or call 9899991342.',
+    ),
+  ),
+  'image' => 'assets/images/news/admissions.jpg',
+  'read_time' => 2,
+); include __DIR__ . '/../include/news-card.php'; ?>
+        </div>
         <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="Admissions" data-title="ipu opens applications for new medical and para-medical courses 2026-27">
           <?php $post = array (
   'title' => 'IPU Opens Applications for New Medical and Para-Medical Courses 2026-27',
@@ -267,6 +306,15 @@ include_once __DIR__ . '/../include/form-handler.php';
   'read_time' => 1,
 ); include __DIR__ . '/../include/news-card.php'; ?>
         </div>
+        <div class="col-12 mid-cta-strip-col">
+          <div class="mid-cta-strip">
+            <div class="cta-text">
+              <h3>&#128222; Confused About IPU Admission 2026?</h3>
+              <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
+            </div>
+            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="CET" data-title="final opportunity for ipu cet 2026 registration announced">
           <?php $post = array (
   'title' => 'Final Opportunity for IPU CET 2026 Registration Announced',
@@ -299,15 +347,6 @@ include_once __DIR__ . '/../include/form-handler.php';
   'image' => 'assets/images/news/cet.jpg',
   'read_time' => 1,
 ); include __DIR__ . '/../include/news-card.php'; ?>
-        </div>
-        <div class="col-12 mid-cta-strip-col">
-          <div class="mid-cta-strip">
-            <div class="cta-text">
-              <h3>&#128222; Confused About IPU Admission 2026?</h3>
-              <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
-            </div>
-            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
-          </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="General" data-title="ipu news &amp; announcements — new section launched">
           <?php $post = array (
