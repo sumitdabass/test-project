@@ -257,17 +257,17 @@ include 'include/components/related-pages.php';
 
     <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
       <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">When does GGSIPU counselling start in 2026?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU B.Tech counselling for 2026 typically begins in the third or fourth week of July, following the announcement of JEE Main Paper-I results by NTA. Exact dates are notified on ipu.ac.in. For real-time updates and seat-confirmation assistance, call our 24/7 admission helpline at <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">As per GGSIPU Notification 26/2026 (03.06.2026), enrolment for centralized online B.Tech counselling 2026-27 is likely to begin tentatively from 8 June 2026. The university has stated this date is tentative; confirm on ipu.ac.in. For real-time updates and seat-confirmation assistance, call our 24/7 admission helpline at <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
     </details>
 
     <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
       <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the GGSIPU counselling registration date for 2026?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU counselling registration for B.Tech 2026 opens around the third week of July and runs for 7-10 days. Candidates register online via the official portal with their JEE Main rank, pay the counselling fee, and lock their preferences in choice-filling. Registration close dates are usually extended once — confirm the latest deadline by calling <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">GGSIPU counselling enrolment for B.Tech 2026 is scheduled to open tentatively from 8 June 2026 (Notification 26/2026). Candidates register online via the official portal with their JEE Main rank, pay the counselling fee, and lock their preferences in choice-filling. Registration close dates are usually extended once — confirm the latest deadline by calling <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.</div>
     </details>
 
     <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
       <summary style="font-weight:600;font-size:17px;color:#0d1b6e;cursor:pointer">What is the last date for GGSIPU counselling registration 2026?</summary>
-      <div style="margin-top:12px;line-height:1.7;color:#374151">The last date for GGSIPU B.Tech counselling registration in 2026 is typically the first week of August, approximately 10 days after registration opens. Late registration is occasionally permitted with a higher fee, but candidates miss preference-lock if they delay. To avoid missing deadlines, our admission team sends date alerts — call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> to register.</div>
+      <div style="margin-top:12px;line-height:1.7;color:#374151">With enrolment beginning tentatively from 8 June 2026 (Notification 26/2026), the last date for GGSIPU B.Tech counselling registration is yet to be officially notified. Late registration is occasionally permitted with a higher fee, but candidates miss preference-lock if they delay. To avoid missing deadlines, our admission team sends date alerts — call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> to register.</div>
     </details>
 
     <details style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:12px">
