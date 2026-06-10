@@ -19,6 +19,10 @@ on:
         required: false
         type: string
 
+concurrency:
+  group: ipu-deploy
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -78,3 +82,10 @@ jobs:
           echo "- Posts in content/news/: $(ls content/news/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
           echo "- Generated in website_download/news/: $(ls website_download/news/*.php 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
           echo "- Slug input: ${{ github.event.inputs.slug || '(full deploy)' }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::News build & deploy FAILED — prod may be unchanged or partially deployed."
+          echo "### ❌ News build & deploy FAILED" >> $GITHUB_STEP_SUMMARY
+          echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
