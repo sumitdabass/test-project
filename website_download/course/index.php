@@ -5,12 +5,6 @@
 
 ?>
 
-<?php 
-
-    include_once(__DIR__ . "/../include/form-handler.php");
-
-?>
-
 
 
 	<!--====== Title ======-->
@@ -71,37 +65,29 @@
 				<div class="col-lg-5">
 					<div class="banner-form">
 						<div class="banner-form-inner white-bg">
-							<form method="POST" action="">
-								<h3 class="title">Enquire now </h3>
-								<div class="input-box mt-10">
-									<input type="text" id="name" name="name" value="<?= htmlspecialchars($name ?? '') ?>" required="" placeholder="Your Name" />
-								</div>
-								<div class="input-box mt-10">
-									<input  type="email" id="email" name="email" value="<?= htmlspecialchars($email ?? '') ?>" required="" placeholder="Your Email" />
-								</div>
-								<div class="input-box mt-10">
-									<input type="text" id="phone" name="phone" value="<?= htmlspecialchars($phone ?? '') ?>" required placeholder="Phone Number" />
-								</div>
-								<div class="input-box mt-10">
-									<input type="text" id="course" name="course" value="<?= htmlspecialchars($course ?? '') ?>" required placeholder="Enter Course" />
-								</div>
-								<?php if ($error): ?>
-                                <div class="error"><?= $error ?></div>
-                        		<?php endif; ?>
-                        
-                        		<?php if ($success): ?>
-                        			<div class="success"><?= $success ?></div>
-                        		<?php endif; ?>
-								
-								<div class="input-box mt-10">
-								<label for="captcha">What is <?= $_SESSION['captcha']['num1'] ?> + <?= $_SESSION['captcha']['num2'] ?>?</label>
-									<input type="number" id="captcha" name="captcha" required>
-									<button type="submit" name="submit">
-									     
-										Submit Now 
-									</button>
-								</div>
-							</form>
+<form method="POST" action="/sendemail.php" class="enquiry-form" novalidate>
+    <div style="position:absolute;left:-9999px" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off">
+    </div>
+    <input type="hidden" name="page_url" value="<?= htmlspecialchars($_SERVER['REQUEST_URI'] ?? '') ?>">
+    <input type="hidden" name="form_loaded_at" value="">
+    <h3 class="title">Enquire now</h3>
+    <div class="input-box mt-10">
+        <input type="text" name="name" required placeholder="Your Name" autocomplete="name" />
+    </div>
+    <div class="input-box mt-10">
+        <input type="email" name="email" placeholder="Your Email (optional)" autocomplete="email" />
+    </div>
+    <div class="input-box mt-10">
+        <input type="tel" name="phone" required placeholder="Phone Number" inputmode="tel" autocomplete="tel" pattern="[6-9][0-9]{9}" maxlength="10" />
+    </div>
+    <div class="input-box mt-10">
+        <input type="text" name="course" required placeholder="Enter Course" />
+    </div>
+    <div class="input-box mt-10">
+        <button type="submit" name="submit">Submit Now</button>
+    </div>
+</form>
 						</div>
 					</div>
 				</div>
