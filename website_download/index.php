@@ -168,6 +168,7 @@ include_once("include/form-handler.php");
               <input type="text" name="website" tabindex="-1" autocomplete="off">
             </div>
             <input type="hidden" name="page_url" value="<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
+            <input type="hidden" name="form_loaded_at" value="">
 
             <div style="margin-bottom:10px">
               <input type="text" name="name" placeholder="Full Name" required autocomplete="name"

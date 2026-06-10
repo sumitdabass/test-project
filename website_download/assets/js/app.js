@@ -262,3 +262,9 @@
   });
 
 })();
+
+// Stamp enquiry forms with browser load time (seconds) so the server-side
+// 3s time-gate works even on edge-cached HTML. Fail-open if JS is off.
+document.querySelectorAll('form.enquiry-form input[name="form_loaded_at"]').forEach(function (el) {
+  el.value = Math.floor(Date.now() / 1000);
+});

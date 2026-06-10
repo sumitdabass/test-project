@@ -23,7 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // ── Layer 2: Time-based check — reject submissions faster than 3 seconds ─
-    $form_loaded = $_SESSION['form_loaded_at'] ?? 0;
+    $form_loaded = (int)($_POST['form_loaded_at'] ?? 0);
+    if ($form_loaded <= 0) { $form_loaded = $_SESSION['form_loaded_at'] ?? 0; }
     if ($form_loaded > 0 && (time() - $form_loaded) < 3) {
         header("Location: /thank-you.php");
         exit();
@@ -34,6 +35,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($last_submit > 0 && (time() - $last_submit) < 300) {
         header("Location: /thank-you.php");
         exit();
+    }
+
+    // ── Layer 3b: per-IP rate limit — max 5 submissions / 10 min ─────────────
+    $ip = $_SERVER['REMOTE_ADDR'] ?? '';
+    if ($ip !== '') {
+        $rl_dir = __DIR__ . '/include/.private';
+        if (!is_dir($rl_dir)) { @mkdir($rl_dir, 0700, true); }
+        $rl_file = $rl_dir . '/rate-' . hash('sha256', $ip) . '.txt';
+        $now = time();
+        $hits = is_file($rl_file) ? array_filter(array_map('intval', explode(',', (string)@file_get_contents($rl_file))), fn($t) => $t > $now - 600) : [];
+        if (count($hits) >= 5) {
+            header("Location: /thank-you.php");
+            exit();
+        }
+        $hits[] = $now;
+        @file_put_contents($rl_file, implode(',', $hits), LOCK_EX);
     }
 
     // Sanitize input
