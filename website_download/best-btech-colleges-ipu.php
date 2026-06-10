@@ -293,7 +293,7 @@ include __DIR__ . '/include/components/page-hero.php';
           <div class="cta-box">
             <h3>Need Help with IPU B.Tech Admission?</h3>
             <p>Get expert guidance on rank analysis, college selection and choice filling strategy.</p>
-            <a href="tel:<?php echo trim(file_get_contents('include/phone.php')); ?>" class="btn-cta">&#128222; Call Now</a>
+            <a href="tel:+919899991342" class="btn-cta">&#128222; Call Now</a>
           </div>
 
           <hr style="margin-top:2rem;">

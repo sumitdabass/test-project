@@ -175,7 +175,7 @@ Counselling strategy guide:
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </b>
 </p>
 
