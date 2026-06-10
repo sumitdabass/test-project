@@ -22,3 +22,16 @@ deployment/backups/
 
 # Runtime logs (lead/dedup data — never commit)
 website_download/include/.private/
+
+# SEO tooling: GCP service account key — never commit
+seo/.credentials/
+seo/.venv/
+seo/data/*.db
+
+# Production runtime logs — never commit, never deploy
+website_download/error_log
+website_download/course/error_log
+
+# Local-only artifacts that must not deploy to webroot
+website_download/assets/images.zip
+website_download/seo-report-march-2026.html
