@@ -10,10 +10,10 @@ Flow:
   2. Extract candidate links whose anchor text or URL contains admission/
      counselling/CET/result/notification keywords.
   3. Skip items whose target slug already exists under content/news/.
-  4. For each new item, call OpenAI GPT-4o mini with the system prompt from
+  4. For each new item, call Gemini (gemini-flash-latest) with the system prompt from
      deployment/prompts/news-rewrite-system.md, asking for JSON matching our
      news post schema.
-  5. If OpenAI returns `{"skip": true}`, skip the item.
+  5. If Gemini returns `{"skip": true}`, skip the item.
   6. Otherwise write the MD file to content/news/<slug>.md.
 
 Env vars (required in GH Actions; loaded from .env locally):
@@ -345,9 +345,9 @@ def main() -> int:
                 for t, e in errors:
                     f.write(f"- {t[:80]} — `{e[:200]}`\n")
 
-    # exit success even on some errors, as long as at least one post wrote or
-    # everything hit the model-skip gate. Fail only if ALL candidates errored.
-    return 1 if (errors and not written) else 0
+    if errors:
+        print(f"::warning::scraper had {len(errors)} error(s); see step summary", file=sys.stderr)
+    return 0 if (written or not errors) else 1
 
 
 if __name__ == "__main__":

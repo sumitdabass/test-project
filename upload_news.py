@@ -97,6 +97,9 @@ def sync_delete_remote_orphans(ftp: ftplib.FTP, remote_news_dir: str, local_news
     """List .php files in the remote /news/ dir; delete any that don't have a local
     counterpart. Preserves anything else (subdirectories, non-PHP files)."""
     local_names = {p.name for p in local_news_dir.glob("*.php")}
+    if len(local_names) < 3:
+        print(f"  ⚠ SAFETY: only {len(local_names)} local news posts — refusing to sync-delete remote orphans", file=sys.stderr)
+        return []
     # LIST the remote dir
     listing: list[str] = []
     try:

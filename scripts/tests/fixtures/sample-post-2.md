@@ -14,4 +14,4 @@
 ---
 ## Result Details
 
-Results will be published on the official portal at 10 AM IST.
+Results will be published on the official portal at 10 AM IST on May 20, 2026. Candidates can check their scores by logging in with their application number and date of birth. The merit list will be displayed immediately after the results are declared. Students are advised to keep a printout of their scorecard for future reference during the counselling process.
