@@ -10,6 +10,7 @@
  *   6. Persistent phone dedup — reject same phone hash within 7 days (server-side file)
  */
 require_once __DIR__ . '/include/helpers/phone-dedup.php';
+require_once __DIR__ . '/include/helpers/lead-fallback.php';
 ob_start();
 if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 
@@ -97,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
     $headers .= "X-Priority: 1\r\n";
 
-    mail($to, $subject, $message, $headers);
+    $mail_ok = mail($to, $subject, $message, $headers);
 
     // Send to Google Sheet
     $url = "https://script.google.com/macros/s/AKfycbz_8geQQfgTGW5FT6kVahb7KeVGh0EGyIBzKvwcISjqA0ZN7GhALp9jXqTGN0iqiQaQvw/exec";
@@ -120,8 +121,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         CURLOPT_TIMEOUT        => 5,
         CURLOPT_FOLLOWLOCATION => true,
     ]);
-    curl_exec($ch);
+    $sheet_resp = curl_exec($ch);
+    $sheet_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $sheet_err  = curl_errno($ch);
     curl_close($ch);
+    $sheet_ok = ($sheet_err === 0 && $sheet_code >= 200 && $sheet_code < 400);
+
+    // If EITHER delivery channel failed, persist the full lead so it is recoverable.
+    if (!$mail_ok || !$sheet_ok) {
+        lead_fallback_save([
+            'name' => $name, 'phone' => $phone, 'email' => $email,
+            'course' => $course, 'source' => $page_url,
+            'mail_ok' => (bool)$mail_ok, 'sheet_ok' => $sheet_ok, 'sheet_code' => $sheet_code,
+        ], 'delivery_failure');
+    }
 
     // Store for enhanced conversions
     $_SESSION['enh_email'] = $email;
