@@ -200,6 +200,9 @@ select.ipu-input{color:#64748b}
   body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
 }
 @media(min-width:769px){.mobile-call-cta{display:none}}
+/* go-top: 48px tap target; lift above mobile-call-cta on small screens */
+.go-top{width:48px;height:48px;}
+@media (max-width:768px){.go-top{width:48px;height:48px;bottom:calc(84px + env(safe-area-inset-bottom)) !important;z-index:9998;}}
 </style>
 
 <!-- Self-hosted Fonts -->
