@@ -114,7 +114,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/bvb-engineering-college.jpg" class="main-img" alt="Bharati Vidyapeeth's College of Engineering IP University">
+<picture><source srcset="assets/images/IP-University-b-tech-admission.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="Bharati Vidyapeeth's College of Engineering IP University"></picture>
 
 
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
