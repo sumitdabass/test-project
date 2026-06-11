@@ -94,7 +94,7 @@
 </footer>
 
 <!-- Scroll to Top -->
-<a href="#" class="go-top" aria-label="Scroll to top" style="position:fixed;bottom:20px;left:20px;width:40px;height:40px;background:#1a3a9c;color:#fff;border-radius:50%;display:none;align-items:center;justify-content:center;z-index:998;box-shadow:0 2px 10px rgba(0,0,0,.2);transition:all .3s">
+<a href="#" class="go-top" aria-label="Scroll to top" style="position:fixed;bottom:20px;left:20px;width:48px;height:48px;background:#1a3a9c;color:#fff;border-radius:50%;display:none;align-items:center;justify-content:center;z-index:998;box-shadow:0 2px 10px rgba(0,0,0,.2);transition:all .3s">
   <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
 </a>
 <style>.go-top.active{display:flex!important}</style>
