@@ -9,7 +9,14 @@
 
 	<!--====== Title ======-->
 	<title>IPU|GGSIPU</title>
-	
+	<link rel="canonical" href="https://ipu.co.in/course/">
+	<meta name="description" content="Explore courses offered under GGSIPU (IP University) — B.Tech, BBA, BCA, B.Com, BA LLB, MBA and more. Admission process, eligibility and counselling guidance.">
+	<meta name="robots" content="index, follow">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ipu.co.in/course/">
+	<meta property="og:title" content="Courses Offered Under GGSIPU (IP University) — Admission Guide">
+	<meta property="og:description" content="B.Tech, BBA, BCA, B.Com, BA LLB, MBA and more under IP University. Eligibility, process and counselling guidance.">
+	<meta name="twitter:card" content="summary_large_image">
 
 </head>
 
@@ -378,6 +385,7 @@
 	<!--====== waypoints js ======-->
 	<!--====== Ajax Contact js ======-->
 	<!--====== Main js ======-->
+	<?php $breadcrumbs = [['Home', '/'], ['Courses', '']]; include __DIR__ . '/../include/components/breadcrumb-schema.php'; ?>
 	</body>
 
 </html>
