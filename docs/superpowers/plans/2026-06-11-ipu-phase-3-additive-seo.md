@@ -8,7 +8,21 @@
 
 **Tech Stack:** PHP 8.x, Bootstrap 5. No website unit tests — verify with lint + grep + curl + JSON parse.
 
-**Reference:** program spec §5 Phase 3/4; reanalysis findings O3–O7 (2026-06-11); 3-month GSC data + baseline `seo/baselines/2026-06-11-3month-watch-terms.csv`.
+**Reference:** program spec §5 Phase 3/4; reanalysis findings O3–O7 (2026-06-11); 3-month GSC data + baselines `seo/baselines/2026-06-11-3month-watch-terms.csv` and `seo/baselines/2026-06-11-primary-targets.csv`.
+
+---
+
+## PRIMARY TARGETS (owner-stated 2026-06-11 — drive prioritisation)
+
+17 target keywords with current 3-month GSC standing (`seo/baselines/2026-06-11-primary-targets.csv`):
+
+| Status | Targets (current best position) | Phase-3 posture |
+|---|---|---|
+| **Strong — DEFEND** | counselling (~1.8), btech (~3.5), ggsipu (~1.2) | additive only; do NOT touch these pages' ranking elements |
+| **Page-1-bottom — GROW** | ipu (~9.3, 179K impr), bba (~9.6), admission (~11), management quota (~8.3), ballb (~8.6), bballb (~6.9), mait (~8.1), contact number (~9.2), helpline (~7.0) | route internal-link equity here + add schema |
+| **Page-2 / invisible — RESCUE** | msit (~10.3), **vips (NOT ranking — 0 queries in top-1000)** | strongest schema + inbound-link push; VIPS is the #1 gap |
+
+Target pages on disk (link to / enrich these): colleges = `mait-admission.php`, `msit-admission.php`, `vips-admission.php`, `maims-admission.php`, `msi-admission.php`; management quota = `btech-management-quota-ipu.php`, `bba-management-quota-ipu.php`, `ballb-management-quota-ipu.php`, `mba-management-quota-ipu.php`, `IP-University-management-quota-admission-eligibility-criteria.php`; BA/BCom = `ba-economics-admission-ipu.php`, `ba-english-admission-ipu.php`, `bcom-admission-ipu.php`, `top-bcom-colleges-ipu.php`; helpline+contact = `ipu-helpline-contact-number.php`.
 
 ---
 
@@ -30,7 +44,7 @@
 - Modify: `website_download/ipu-colleges-list.php`, `website_download/ipu-bba-cutoff.php` (Task 3 — add related-pages where missing, verify-first)
 - Modify: `website_download/best-btech-colleges-ipu.php` (Task 4 — comparison table)
 - Modify: `website_download/ipu-b-tech-pillar.php` (Task 5 — BreadcrumbList JSON-LD)
-- Modify: `website_download/BPIT.php` (Task 6 — CollegeOrUniversity schema)
+- Modify: `website_download/vips-admission.php`, `website_download/msit-admission.php`, `website_download/mait-admission.php`, `website_download/BPIT.php` (Task 6 — CollegeOrUniversity schema, VIPS-first)
 - Modify: `website_download/llms.txt`, `website_download/index.php` (Task 7 — llms.txt refresh + Org sameAs)
 
 ---
@@ -87,7 +101,12 @@ The hubs (`ipu-b-tech-pillar.php`, `ipu-admission-guide.php`, `college-admission
     ['title' => 'IPU B.Tech via CUET', 'url' => '/ipu-btech-via-cuet.php', 'desc' => 'How CUET scores map to IPU B.Tech admission.'],
     ['title' => 'IPU Choice-Filling Strategy', 'url' => '/ipu-choice-filling-strategy.php', 'desc' => 'Order your college/branch preferences to maximise your seat.'],
     ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Delhi NCR engineering colleges accepting IPU counselling.'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Management-quota B.Tech seats, eligibility and process under IPU.'],
+    ['title' => 'MAIT Rohini — Admission', 'url' => '/mait-admission.php', 'desc' => 'Maharaja Agrasen Institute of Technology: branches, fees, placements.'],
+    ['title' => 'MSIT Janakpuri — Admission', 'url' => '/msit-admission.php', 'desc' => 'Maharaja Surajmal Institute of Technology admission under IPU.'],
+    ['title' => 'VIPS — Admission', 'url' => '/vips-admission.php', 'desc' => 'Vivekananda Institute of Professional Studies courses & admission.'],
 ```
+**(Primary-target routing: these push equity to the GROW/RESCUE targets — management quota, MAIT, MSIT, and VIPS, the worst-ranking named target.)**
 
 - [ ] **Step 3: `ipu-admission-guide.php` — append** (verify URLs exist; drop missing):
 
@@ -96,7 +115,12 @@ The hubs (`ipu-b-tech-pillar.php`, `ipu-admission-guide.php`, `college-admission
     ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Full directory of colleges affiliated to IP University.'],
     ['title' => 'IPU Law Admission', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB / BBA LLB admission and counselling under IPU.'],
     ['title' => 'IPU BBA Cutoff', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Programme-wise BBA closing ranks under IP University.'],
+    ['title' => 'IPU BA LLB Admission', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'BA LLB seats, eligibility and management quota under IPU.'],
+    ['title' => 'IPU B.Com Admission', 'url' => '/bcom-admission-ipu.php', 'desc' => 'B.Com (Hons) admission and top colleges under IP University.'],
+    ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Management-quota eligibility and process across IPU courses.'],
+    ['title' => 'IPU Helpline & Contact Number', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Official IPU admission helpline and contact details.'],
 ```
+**(Primary-target routing: BA LLB, B.Com, management quota, and helpline/contact-number — all GROW targets.)**
 
 - [ ] **Step 4: `college-admission-delhi.php` — append** (verify URLs exist; drop missing):
 
@@ -264,50 +288,52 @@ git commit -m "feat(seo): add BreadcrumbList JSON-LD to B.Tech pillar (additive,
 
 ---
 
-## Task 6: Add CollegeOrUniversity schema to BPIT.php
+## Task 6: Add CollegeOrUniversity schema to the named target colleges (VIPS, MSIT, MAIT, BPIT)
 
-`BPIT.php` emits FAQ + Breadcrumb but no CollegeOrUniversity entity schema (O5, verified — it lacks the `college-schema.php` include). Add it, sourcing facts ONLY from the page's existing "About BPIT" body. **Verify-first.**
+These pages mostly emit FAQ/Breadcrumb but lack the `CollegeOrUniversity` entity schema (O5). Add it via the component, sourcing facts ONLY from each page's existing "About …" body. **Process in priority order: `vips-admission.php` (RESCUE — not ranking at all), `msit-admission.php` (page-2), `mait-admission.php` (page-1-bottom), `BPIT.php`.** **Verify-first per page.**
 
-**Files:** Modify `website_download/BPIT.php`
+**Files:** Modify `website_download/vips-admission.php`, `website_download/msit-admission.php`, `website_download/mait-admission.php`, `website_download/BPIT.php`
 
-- [ ] **Step 1: Verify missing.** Run: `grep -c 'CollegeOrUniversity' website_download/BPIT.php`. If ≥1, SKIP and note it.
+- [ ] **Step 1: Per page, verify schema is genuinely missing.** Run: `for p in vips-admission msit-admission mait-admission BPIT; do echo "$p: $(grep -c 'CollegeOrUniversity' website_download/$p.php)"; done`. For any page returning ≥1, SKIP that page (note it).
 
-- [ ] **Step 2: Read BPIT.php's body** to extract the real college name, location/address, founding year, courses, seats, accreditation **as already stated on the page**. Omit any optional field not present on-site (the component drops unset optional fields).
+- [ ] **Step 2: Per page, read the body** to extract the real college name, location/address, founding year, courses/branches, seats, accreditation **as already stated on that page**. Never invent — omit any optional field not present on-site (the component drops unset optionals).
 
-- [ ] **Step 3: Insert the college-schema include** near the existing breadcrumb-schema include (~line 17). Fill ONLY from Step 2 (example shape — replace values with sourced ones; omit fields you can't source):
+- [ ] **Step 3: Per page, insert the college-schema include** near the existing breadcrumb-schema/top-of-body includes. Fill ONLY from Step 2. Shape (replace values per college; omit unsourced optionals):
 
 ```php
 <?php
 $college = [
-  'name'       => 'Bhagwan Parshuram Institute of Technology',
-  'short_name' => 'BPIT',
-  'url'        => 'https://ipu.co.in/BPIT.php',
+  'name'       => '<full official name from page, e.g. Vivekananda Institute of Professional Studies>',
+  'short_name' => '<VIPS | MSIT | MAIT | BPIT>',
+  'url'        => 'https://ipu.co.in/<this-file>.php',
   'address'    => '<sourced from page, else omit this key>',
   // 'founded' => '<year if on page>',
-  // 'courses' => [<branches listed on page>],
+  // 'courses' => [<branches/programmes listed on page>],
   // 'total_seats' => <int if on page>,
-  // 'accreditation' => '<if on page>',
+  // 'accreditation' => '<if on page, e.g. NAAC/AICTE>',
 ];
 include 'include/components/college-schema.php';
 ?>
 ```
 
-- [ ] **Step 4: Lint + validate + exactly one CollegeOrUniversity.**
+- [ ] **Step 4: Lint + validate + exactly one CollegeOrUniversity per page.**
 
 ```bash
-php -l website_download/BPIT.php
 cd website_download && php -S localhost:8000 >/tmp/ipu-srv.log 2>&1 & sleep 1
-curl -s http://localhost:8000/BPIT.php | grep -c 'CollegeOrUniversity'
-curl -s http://localhost:8000/BPIT.php | python3 -c "import sys,re,json; [json.loads(b) for b in re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', sys.stdin.read(), re.S)]; print('JSON-LD OK')"
+for p in vips-admission msit-admission mait-admission BPIT; do
+  php -l "$p.php" | grep -q "No syntax" && \
+  echo "$p: cou=$(curl -s http://localhost:8000/$p.php | grep -c 'CollegeOrUniversity') $(curl -s http://localhost:8000/$p.php | python3 -c "import sys,re,json; [json.loads(b) for b in re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', sys.stdin.read(), re.S)]; print('JSON-LD OK')")" \
+  || echo "$p: LINT FAIL"
+done
 kill %1
 ```
-Expected: `No syntax errors detected`; CollegeOrUniversity count = 1; `JSON-LD OK`.
+Expected: each non-skipped page → lint ok, `cou=1`, `JSON-LD OK`.
 
 - [ ] **Step 5: Commit.**
 
 ```bash
-git add website_download/BPIT.php
-git commit -m "feat(seo): add CollegeOrUniversity schema to BPIT (additive, sourced facts, verify-first)"
+git add website_download/vips-admission.php website_download/msit-admission.php website_download/mait-admission.php website_download/BPIT.php
+git commit -m "feat(seo): add CollegeOrUniversity schema to VIPS/MSIT/MAIT/BPIT (additive, sourced, verify-first)"
 ```
 
 ---
@@ -360,6 +386,9 @@ website_download/college-admission-delhi.php
 website_download/ipu-colleges-list.php
 website_download/ipu-bba-cutoff.php
 website_download/best-btech-colleges-ipu.php
+website_download/vips-admission.php
+website_download/msit-admission.php
+website_download/mait-admission.php
 website_download/BPIT.php
 website_download/llms.txt
 website_download/index.php
@@ -387,15 +416,22 @@ Expected: each page parses; BreadcrumbList/CollegeOrUniversity counts are exactl
 
 - [ ] **Step 4: Localhost crosslink walk** (Task 1 changed the sitewide footer — `feedback_localhost_crosslink_test`). Load homepage + a B.Tech page + a college page + a cutoff page on `php -S localhost:8000`; click/curl the footer pillar link and the new hub spoke links; confirm all resolve 200 and nav/footer render intact on each archetype.
 
-- [ ] **Step 5: Diff-guard — confirm NO ranking element changed.** For each modified PHP page, diff against the last deployed version and confirm `<title>`, `<h1>`, canonical, and meta description are unchanged:
+- [ ] **Step 5: Diff-guard — confirm NO ranking element changed, vs LIVE PROD.** Prod has NOT received Phase 3 yet, so the live page is the pre-Phase-3 truth. For each modified page, compare the title/H1/canonical/meta-description rendered locally vs live prod — they must be identical (additive changes don't touch these):
 
 ```bash
+cd website_download && php -S localhost:8000 >/tmp/ipu-srv.log 2>&1 & sleep 1
+rank(){ grep -oiE '<title>[^<]*</title>|<h1[^>]*>[^<]*</h1>|rel="canonical"[^>]*|name="description"[^>]*content="[^"]*"'; }
 for f in $(grep '\.php$' /tmp/phase3-manifest.txt); do
-  echo "== $f =="; diff <(git show HEAD~8:"$f" 2>/dev/null | grep -iE '<title>|<h1|rel="canonical"|name="description"') \
-                       <(grep -iE '<title>|<h1|rel="canonical"|name="description"' "$f") && echo "  ranking elements UNCHANGED" || echo "  ⚠️ REVIEW DIFF ABOVE";
+  rel="${f#website_download/}"
+  if diff <(curl -s "https://ipu.co.in/$rel" | rank) <(curl -s "http://localhost:8000/$rel" | rank) >/dev/null; then
+    echo "  ✓ $rel — ranking elements UNCHANGED vs prod"
+  else
+    echo "  ⚠️ $rel — DIFF vs prod, REVIEW:"; diff <(curl -s "https://ipu.co.in/$rel" | rank) <(curl -s "http://localhost:8000/$rel" | rank)
+  fi
 done
+kill %1
 ```
-Expected: "ranking elements UNCHANGED" for every file. Any diff = STOP and review (must be additive only).
+Expected: `✓ … UNCHANGED` for every file. Any diff = STOP and review (must be additive only). (Note: `base-footer.php` is an include — verify it via one of the pages that uses it, already covered by the page rows above.)
 
 - [ ] **Step 6: Dry-run.** Run: `python3 deploy.py --manifest /tmp/phase3-manifest.txt --dry-run`. Expected: lists exactly the manifest files, no deletions.
 
@@ -409,7 +445,7 @@ python3 deploy.py --manifest /tmp/phase3-manifest.txt
 # live spot-checks
 curl -s https://ipu.co.in/index.php | grep -c 'ipu-b-tech-pillar.php'
 curl -s https://ipu.co.in/ipu-b-tech-pillar.php | grep -c 'BreadcrumbList'
-curl -s https://ipu.co.in/BPIT.php | grep -c 'CollegeOrUniversity'
+for p in vips-admission msit-admission mait-admission BPIT; do echo "$p cou=$(curl -s https://ipu.co.in/$p.php | grep -c 'CollegeOrUniversity')"; done
 curl -s https://ipu.co.in/best-btech-colleges-ipu.php | grep -c '<table'
 curl -s https://ipu.co.in/llms.txt | grep 'Last updated'
 ```
