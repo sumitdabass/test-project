@@ -1,55 +1,50 @@
 {
-  "title": "IPU LE B.Tech (Diploma) Code 128: Round 1 Counselling Schedule Released",
+  "title": "IPU LE B.Tech Diploma Code 128 Round 1 Counselling Schedule Released",
   "slug": "ipu-le-btech-diploma-code-128-round-1-schedule",
-  "date": "2026-06-20",
-  "date_modified": "2026-06-20",
+  "date": "2026-06-21",
+  "date_modified": "2026-06-21",
   "category": "Counselling",
   "tags": [
     "IPU Counselling",
     "LE B.Tech",
-    "Diploma Entry",
-    "Code 128"
+    "Diploma Code 128",
+    "Seat Allotment"
   ],
   "featured": false,
   "is_urgent": true,
-  "tldr": "GGSIPU has released the post-allotment schedule of activities for Round 1 of Lateral Entry B.Tech (Diploma) Code 128 for the 2026-27 academic session.",
+  "tldr": "GGSIPU has announced the post-allotment activity schedule for Round 1 of Lateral Entry B.Tech (Diploma) Code 128 admissions.",
   "faq": [
     {
       "q": "Which program does this schedule apply to?",
-      "a": "This schedule is specifically for the Lateral Entry B.Tech (Diploma) program, under CET Code 128, for the 2026-27 academic session."
+      "a": "This schedule applies to candidates seeking admission to the Lateral Entry (LE) B.Tech program for Diploma holders under CET Code 128 for the academic session 2026-27."
     },
     {
-      "q": "Where can I find the exact dates for the Round 1 activities?",
-      "a": "Candidates must refer to the official notification PDF on the IPU admissions portal (ipu.admissions.nic.in) to verify the exact dates and deadlines."
-    },
-    {
-      "q": "What happens if I miss the deadline for the part academic fee payment?",
-      "a": "If you fail to pay the part academic fee within the specified timeline, your allotted seat will be forfeited, and you will lose your claim on it."
+      "q": "Where can I find the exact deadlines for fee payment and seat freezing?",
+      "a": "The specific deadlines for all post-allotment activities are detailed in the official schedule PDF available on the GGSIPU admissions portal."
     }
   ],
   "image": "assets/images/news/counselling.jpg"
 }
 ---
-## Round 1 Counselling Schedule for LE B.Tech (Diploma) Code 128
+## Round 1 Seat Allotment Activities Announced
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has officially announced the schedule of activities following the declaration of the Round 1 seat allotment results for the Lateral Entry B.Tech (Diploma) program, under CET Code 128, for the academic session 2026-27.
+Guru Gobind Singh Indraprastha University (GGSIPU) has officially released the schedule of activities following the declaration of the Round 1 seat allotment results for the Lateral Entry (LE) B.Tech (Diploma) program, CET Code 128, for the academic session 2026-27.
 
-Candidates who participated in this round can now check their allotment status and must follow the prescribed schedule for subsequent admission steps.
+Candidates who participated in this round must now follow the prescribed steps to secure their allotted seats. Failure to complete these activities within the designated timeline will result in the forfeiture of the allotted seat.
 
-### Key Activities and Next Steps
+## Key Post-Allotment Steps
 
-As details of the specific deadlines and fee payment structures are detailed in the official notification, candidates are advised to immediately download the schedule to avoid missing critical timelines. Generally, post-allotment activities include:
+While specific deadlines are detailed in the official notification, candidates are required to complete the following activities within the stipulated timeframe:
 
-*   **Checking Allotment Status:** Logging into the IPU admission portal to view seat allotment.
-*   **Payment of Part Academic Fee:** Paying the required fee to confirm the allotted seat.
-*   **Willingness Submission:** Opting to 'Freeze' or 'Float' the allotted seat for subsequent rounds.
-*   **Document Verification:** Ensuring all academic and category certificates are verified.
+*   **Check Allotment Status:** Log in to the admission portal to view your Round 1 seat allotment result.
+*   **Pay Part Academic Fee:** Submit the required seat acceptance fee online to secure the allotted seat.
+*   **Choose Willingness Option:** Select either 'Freeze' to lock the allotted seat or 'Float' to participate in subsequent rounds.
+*   **Document Verification:** Ensure all required documents are ready for verification as per the university's guidelines.
 
-For comprehensive guidance on the overall process, you can refer to our [IPU admission guide](/ipu-admission-guide.php) or check the general [GGSIPU counselling for B-Tech admission](/GGSIPU-counselling-for-B-Tech-admission.php) page.
+For comprehensive guidance on the overall process, you can refer to our [IPU Admission Guide](/ipu-admission-guide.php) and read more about [GGSIPU B.Tech Counselling](/GGSIPU-counselling-for-B-Tech-admission.php).
 
-### Important Instructions for Candidates
+## Important Instructions
 
-To ensure your seat is secured, please keep the following in mind:
+Candidates are strongly advised to download the official schedule PDF from the university's admissions website (ipu.admissions.nic.in) to verify the exact start and end dates for each activity. 
 
-*   **Strict Deadlines:** All activities, including fee payments and willingness submissions, must be completed within the timelines specified in the official PDF. Failure to pay the part academic fee within the stipulated time will lead to the forfeiture of the allotted seat.
-*   **Official Notification:** Since specific dates and times are subject to strict university timelines, candidates must refer to the official notification PDF available on the IPU admissions website (ipu.admissions.nic.in) to verify the exact schedule.
+Keep track of updates regarding [IPU B.Tech Admissions](/IPU-B-Tech-admission-2025.php) to stay informed about subsequent rounds.
