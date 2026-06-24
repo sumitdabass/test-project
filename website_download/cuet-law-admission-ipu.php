@@ -46,7 +46,7 @@ include __DIR__ . '/include/components/page-hero.php';
 class="main-img"
 alt="IPU Law Admission Through CUET (UG) — BA-LLB and BBA-LLB">
 
-<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
@@ -105,7 +105,7 @@ A Law aspirant who only has a CUET score (and not CLAT) is still admissible &mda
 English is mandatory since the BCI requires English as a Class 12 subject. Legal Studies is the most directly aligned domain paper. General Aptitude Test covers the analytical reasoning, current affairs and quantitative reasoning that overlap with CLAT.
 </p>
 
-<p style="font-size:13px;color:#666"><em>Per Section 1.2 of the brochure: paper-mapping shown above is from CUET 2025; final CUET 2026 paper structure will be notified by GGSIPU before counselling.</em></p>
+<p style="font-size:13px;color:#666"><em>Per Section 1.2 of the brochure: <em>"during the Academic Session 2026-27, the methodology for conduct of CUET may be as per the notification to be issued by the University in due course of time"</em>. Final paper-mapping will be confirmed by GGSIPU on ipu.ac.in before counselling.</em></p>
 
 <hr>
 

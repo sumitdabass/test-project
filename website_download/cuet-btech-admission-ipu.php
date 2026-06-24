@@ -46,7 +46,7 @@ include __DIR__ . '/include/components/page-hero.php';
 class="main-img"
 alt="IPU B.Tech Admission Through CUET (UG)">
 
-<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
