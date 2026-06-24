@@ -40,6 +40,7 @@
           <h4 style="color:#fff;font-size:16px;margin-bottom:16px">Popular Courses</h4>
           <ul style="list-style:none;padding:0;margin:0">
             <li style="margin-bottom:10px"><a href="/IPU-B-Tech-admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">B.Tech Admission</a></li>
+            <li style="margin-bottom:10px"><a href="/ipu-b-tech-pillar.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">B.Tech Admission Hub</a></li>
             <li style="margin-bottom:10px"><a href="/mba-admission-ip-university.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">MBA Admission</a></li>
             <li style="margin-bottom:10px"><a href="/IPU-Law-Admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Law Admission</a></li>
             <li style="margin-bottom:10px"><a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">BBA Admission</a></li>
