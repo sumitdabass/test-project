@@ -55,6 +55,22 @@ Summary: MBA admission at IP University through CAT or CMAT score followed by ce
 URL: https://ipu.co.in/IPU-Law-Admission-2026.php
 Summary: Law admission at IPU through CLAT score. Offers 5-year BA LLB and BBA LLB integrated programs. Top law colleges: USLLS, VIPS Pitampura, JIMS, GIBS, DME, CPJ. Both Delhi and Outside Delhi quota available.
 
+## IPU BJMC ADMISSION THROUGH CUET
+URL: https://ipu.co.in/cuet-bjmc-admission-ipu.php
+Summary: BJMC / BA(JMC) admission at IP University through CUET (UG). Programme Code 126. CUET papers: English (101), Mass Media & Mass Communication (318), General Aptitude (501). IPU CET is primary; CUET fills vacant seats. Management quota route available.
+
+## IPU BA ECONOMICS ADMISSION THROUGH CUET
+URL: https://ipu.co.in/cuet-ba-economics-admission-ipu.php
+Summary: BA Economics (Hons) admission at IP University through CUET (UG). Programme Code 197. CUET papers: English (101), Economics/Business Economics (309), Mathematics/Applied Mathematics (319). IPU CET is primary; CUET fills vacant seats.
+
+## IPU BCA ADMISSION THROUGH CUET
+URL: https://ipu.co.in/cuet-bca-admission-ipu.php
+Summary: BCA admission at IP University through CUET (UG). Programme Code 114. CUET papers: English (101), Mathematics/Applied Mathematics (319), Computer Science/Informatics Practices (308), General Aptitude (501). IPU CET is primary; CUET fills vacant seats. Management quota route available.
+
+## IPU BA ENGLISH ADMISSION THROUGH CUET
+URL: https://ipu.co.in/cuet-ba-english-admission-ipu.php
+Summary: BA English (Hons) admission at IP University through CUET (UG). Programme Code 184. CUET papers: English Language (101) + General Aptitude (501) only — no domain subject required. IPU CET is primary; CUET fills vacant seats.
+
 ## BBA ADMISSION
 URL: https://ipu.co.in/ipu-bba-admission.php
 Summary: BBA admission at IP University through CUET or IPU CET. 3-year program offered at 30+ colleges. Top BBA colleges: VIPS, JIMS, BPIT, BVP, RDIAS, MAIMS, MSI.
