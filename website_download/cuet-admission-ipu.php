@@ -50,7 +50,7 @@ include __DIR__ . '/include/components/page-hero.php';
 class="main-img"
 alt="IPU Admission Through CUET — B.Tech, BBA, B.Com, Law">
 
-<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -64,7 +64,7 @@ Guru Gobind Singh Indraprastha University accepts the <strong>Common University 
 </p>
 
 <p>
-This page explains <em>exactly</em> how CUET fits into the IPU admission process per the official <strong>GGSIPU UG Admission Brochure 2026-27</strong>, and links to course-specific CUET guides for B.Tech, BBA, B.Com and Law.
+This page explains <em>exactly</em> how CUET fits into the IPU admission process per the official <strong>GGSIPU UG Admission Brochure 2026-27</strong>, and links to course-specific CUET guides for B.Tech, BBA, B.Com, Law, BJMC, BA Economics, BCA and BA English.
 </p>
 
 <hr>
@@ -112,6 +112,10 @@ This is reinforced in <em>Chapter 12, Note 2</em> of the Management Quota chapte
 <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA &amp; 5-yr BBA-MBA</td><td style="padding:10px 14px">125</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-bba-admission-ipu.php"><strong>BBA via CUET &rarr;</strong></a></td></tr>
 <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Com (Honours)</td><td style="padding:10px 14px">146</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-bcom-admission-ipu.php"><strong>B.Com via CUET &rarr;</strong></a></td></tr>
 <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Integrated BA-LLB / BBA-LLB</td><td style="padding:10px 14px">121</td><td style="padding:10px 14px">CLAT UG 2026</td><td style="padding:10px 14px"><a href="cuet-law-admission-ipu.php"><strong>Law via CUET &rarr;</strong></a></td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BA(JMC) / BJMC</td><td style="padding:10px 14px">126</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-bjmc-admission-ipu.php"><strong>BJMC via CUET &rarr;</strong></a></td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BA Economics (Hons)</td><td style="padding:10px 14px">197</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-ba-economics-admission-ipu.php"><strong>BA Economics via CUET &rarr;</strong></a></td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BCA</td><td style="padding:10px 14px">114</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-bca-admission-ipu.php"><strong>BCA via CUET &rarr;</strong></a></td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BA English (Hons)</td><td style="padding:10px 14px">184</td><td style="padding:10px 14px">IPU CET</td><td style="padding:10px 14px"><a href="cuet-ba-english-admission-ipu.php"><strong>BA English via CUET &rarr;</strong></a></td></tr>
 </tbody>
 </table>
 </div>
@@ -234,6 +238,10 @@ $related_pages = [
     ['title' => 'IPU Law Admission Through CUET', 'url' => '/cuet-law-admission-ipu.php', 'desc' => 'BA-LLB and BBA-LLB via CUET — Legal Studies subject paper'],
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => '10% reserved seats at every unaided IPU college — CUET qualifier route'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi NCR'],
+    ['title' => 'IPU BJMC Admission Through CUET', 'url' => '/cuet-bjmc-admission-ipu.php', 'desc' => 'BA(JMC)/BJMC via CUET — Mass Media + General Aptitude papers'],
+    ['title' => 'IPU BA Economics Admission Through CUET', 'url' => '/cuet-ba-economics-admission-ipu.php', 'desc' => 'BA Economics Hons via CUET — Economics and Maths domain papers'],
+    ['title' => 'IPU BCA Admission Through CUET', 'url' => '/cuet-bca-admission-ipu.php', 'desc' => 'BCA via CUET — Maths + CS/Informatics papers'],
+    ['title' => 'IPU BA English Admission Through CUET', 'url' => '/cuet-ba-english-admission-ipu.php', 'desc' => 'BA English Hons via CUET — English Language + General Aptitude only'],
 ];
 include 'include/components/related-pages.php';
 ?>
