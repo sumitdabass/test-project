@@ -49,6 +49,25 @@
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MSIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<?php
+$college = [
+  'name'          => 'Maharaja Surajmal Institute of Technology',
+  'short_name'    => 'MSIT',
+  'url'           => 'https://ipu.co.in/msit-admission.php',
+  'address'       => 'C-4, Janakpuri, West Delhi',
+  'founded'       => '2001',
+  'accreditation' => 'NAAC, AICTE',
+  'courses'       => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Electrical & Electronics Engineering',
+  ],
+  // total_seats omitted – no aggregate figure stated on page
+];
+include 'include/components/college-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>

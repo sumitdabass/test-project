@@ -49,6 +49,34 @@
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<?php
+$college = [
+  'name'          => 'Maharaja Agrasen Institute of Technology',
+  'short_name'    => 'MAIT',
+  'url'           => 'https://ipu.co.in/mait-admission.php',
+  'address'       => 'Sector 22, Rohini, Delhi',
+  'founded'       => '1999',
+  'accreditation' => 'NAAC, AICTE',
+  'courses'       => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Electrical & Electronics Engineering',
+    'B.Tech Mechanical Engineering',
+    'B.Tech Computer Science & Technology',
+    'B.Tech CSE (AI & ML)',
+    'B.Tech CSE (AI)',
+    'B.Tech CSE (Data Science)',
+    'B.Tech Electronics Engineering (VLSI Design & Technology)',
+    'B.Tech ECE (Advanced Communication Technology)',
+    'BBA',
+    'MBA',
+  ],
+  // total_seats omitted – no aggregate figure stated on page
+];
+include 'include/components/college-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
