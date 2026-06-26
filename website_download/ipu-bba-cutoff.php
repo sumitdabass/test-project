@@ -1407,6 +1407,14 @@ For 2026 admission, GGSIPU BBA requires: <strong>Class 12 with 50% aggregate</st
 </div><!-- /.container -->
 </section>
 
+<?php
+$related_pages = [
+  ['title' => 'Top BBA Colleges under IPU', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Compare the top 10 BBA colleges under IP University.'],
+  ['title' => 'IPU BBA Admission', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA admission process and eligibility under IPU.'],
+  ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Full IP University affiliated-college directory.'],
+];
+include 'include/components/related-pages.php';
+?>
 <?php include_once("include/base-footer.php"); ?>
 
 </body>
