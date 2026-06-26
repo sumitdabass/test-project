@@ -120,8 +120,7 @@ include __DIR__ . '/include/components/page-hero.php';
       <div class="col-lg-8">
         <article class="blog-details">
 
-          <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/exploring-MAIT-and-MAIMS.jpg" class="main-img"
-               alt="Campus of MAIT and MAIMS Rohini, affiliated with IP University Delhi" />
+          <?php webp_img('assets/images/exploring-MAIT-and-MAIMS.jpg', 'Campus of MAIT and MAIMS Rohini, affiliated with IP University Delhi', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
           <!-- SECTION 1: Intro -->
           <div class="section-block">

@@ -29,7 +29,7 @@ include __DIR__ . '/include/components/page-hero.php';
             <div class="col-lg-8">
                 <article class="blog-details blog-content">
 
-                    <img loading="lazy" src="assets/images/blog7.jpg" class="img-fluid rounded mb-40" alt="MABS Campus" width="1000" height="600">
+                    <?php webp_img('assets/images/blog7.jpg', 'MABS Campus', 'img-fluid rounded mb-40', true); ?>
 
                     <h2>
                         Maharaja Agrasen Business School (MABS):  

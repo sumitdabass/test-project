@@ -40,7 +40,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="IPU B.Tech Cutoff Analysis">
+<?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Cutoff Analysis', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
 <h2>IP University B.Tech Cutoff Analysis</h2>

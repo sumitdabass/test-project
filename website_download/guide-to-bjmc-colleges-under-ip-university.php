@@ -48,7 +48,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IPU-BJMC-Admission.jpg" class="main-img" alt="BJMC IP University Admission Guide">
+<?php webp_img('assets/images/IPU-BJMC-Admission.jpg', 'BJMC IP University Admission Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 

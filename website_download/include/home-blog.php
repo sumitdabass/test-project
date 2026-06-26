@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/image-helper.php'; // self-sufficient: webp_img() ?>
 <section class="blog-area pt-100 pb-100">
 	<div class="container">
 
@@ -5,7 +6,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-6 col-md-8">
 				<div class="section-title text-center">
-					<img src="assets/images/item.png" alt="IP University Admission Blogs" width="50" height="50">
+					<?php webp_img('assets/images/item.png', 'IP University Admission Blogs', '', true); ?>
 					<h2 class="title">
 						Admission Guides & Counselling Updates
 					</h2>
@@ -25,7 +26,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="IP-University-management-quota-admission-eligibility-criteria.php">
-							<img src="assets/images/blog1.jpg" alt="IP University Management Quota Admission" width="1000" height="600">
+							<?php webp_img('assets/images/blog1.jpg', 'IP University Management Quota Admission', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">
@@ -44,7 +45,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="IPU-B-Tech-admission-2026.php">
-							<img src="assets/images/IP-University-b-tech-admission.jpg" alt="IPU B.Tech Admission 2026" width="1000" height="600">
+							<?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Admission 2026', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">
@@ -63,7 +64,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="GGSIPU-counselling-for-B-Tech-admission.php">
-							<img src="assets/images/ggsipu-counselling.jpg" alt="GGSIPU Counselling Process" width="1000" height="600">
+							<?php webp_img('assets/images/ggsipu-counselling.jpg', 'GGSIPU Counselling Process', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">
@@ -82,7 +83,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php">
-							<img src="assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg" alt="IPU CET Based Courses" width="1000" height="600">
+							<?php webp_img('assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg', 'IPU CET Based Courses', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">
@@ -101,7 +102,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="exploring-MAIT-and-MAIMS.php">
-							<img src="assets/images/exploring-MAIT-and-MAIMS.jpg" alt="MAIT and MAIMS Colleges" width="1000" height="600">
+							<?php webp_img('assets/images/exploring-MAIT-and-MAIMS.jpg', 'MAIT and MAIMS Colleges', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">
@@ -120,7 +121,7 @@
 				<div class="blog-item blog-item-two mt-30">
 					<div class="blog-thumb">
 						<a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">
-							<img src="assets/images/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.jpg" alt="BBA Colleges under IP University" width="1000" height="600">
+							<?php webp_img('assets/images/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.jpg', 'BBA Colleges under IP University', '', true); ?>
 						</a>
 					</div>
 					<div class="blog-content">

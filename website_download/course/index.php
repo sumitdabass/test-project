@@ -110,7 +110,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6 col-md-8">
 					<div class="section-title text-center">
-						<img loading="lazy" src="assets/images/item.png" alt="" width="50" height="50">
+						<?php webp_img('assets/images/item.png', '', '', true); ?>
 						<h2 class="title">
 							OUR COURSES
 						</h2>
@@ -122,7 +122,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/blog-4.jpg" alt="" width="370" height="270">
+							<?php webp_img('assets/images/blog-4.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -144,7 +144,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/BBA.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/BBA.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -162,7 +162,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/BJMC.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/BJMC.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -182,7 +182,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/Bcom.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/Bcom.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -200,7 +200,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/MBA.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/MBA.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -218,7 +218,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/BA-ENGLISH.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/BA-ENGLISH.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -236,7 +236,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/bca.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/bca.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -254,7 +254,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/mca.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/mca.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -272,7 +272,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/mbbs.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/mbbs.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -290,7 +290,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/barch.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/barch.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -307,7 +307,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/law.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/law.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">
@@ -325,7 +325,7 @@
 					<div class="blog-item blog-item-two mt-30">
 						<div class="blog-thumb">
 							<a href="#">
-							<img loading="lazy" src="assets/images/BA-ENGLISH.jpg" alt="" width="470" height="343">
+							<?php webp_img('assets/images/BA-ENGLISH.jpg', '', '', true); ?>
 							</a>
 						</div>
 						<div class="blog-content">

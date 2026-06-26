@@ -46,9 +46,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg"
-class="main-img"
-alt="IPU Admission Through CUET — B.Tech, BBA, B.Com, Law">
+<?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU Admission Through CUET — B.Tech, BBA, B.Com, Law', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 

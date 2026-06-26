@@ -42,9 +42,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="470" height="343" src="assets/images/BA-ENGLISH.jpg"
-class="main-img"
-alt="BA English Hons admission through CUET at GGSIPU — subject papers and eligible colleges">
+<?php webp_img('assets/images/BA-ENGLISH.jpg', 'BA English Hons admission through CUET at GGSIPU — subject papers and eligible colleges', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 

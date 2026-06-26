@@ -41,9 +41,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg"
-class="main-img"
-alt="IPU CET Exam Guide">
+<?php webp_img('assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg', 'IPU CET Exam Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <!-- ================= WHAT IS CET ================= -->
 

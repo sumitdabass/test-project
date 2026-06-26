@@ -44,7 +44,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/ipu-bballb.jpg" class="main-img" alt="BA LL.B Admission in IP University">
+<?php webp_img('assets/images/ipu-bballb.jpg', 'BA LL.B Admission in IP University', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
 <h2>Overview: BA LL.B at IP University</h2>

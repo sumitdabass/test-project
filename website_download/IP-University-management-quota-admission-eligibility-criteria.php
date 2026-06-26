@@ -212,7 +212,7 @@ include __DIR__ . '/include/components/page-hero.php';
       <div class="col-lg-8">
         <article class="blog-details">
 
-          <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/blog1.jpg" class="main-img" alt="IPU Management Seat and Management Quota Admission 2026 Guide">
+          <?php webp_img('assets/images/blog1.jpg', 'IPU Management Seat and Management Quota Admission 2026 Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
           <!-- Intro -->
           <div class="section-block">

@@ -44,7 +44,7 @@ include __DIR__ . '/include/components/page-hero.php';
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
+                        <?php webp_img('assets/images/ipu-bballb.jpg', 'Images', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
                         </h2>

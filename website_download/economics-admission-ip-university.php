@@ -39,7 +39,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/economics-admission-2025.jpg" class="main-img" alt="BA Economics IP University Admission">
+<?php webp_img('assets/images/economics-admission-2025.jpg', 'BA Economics IP University Admission', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <h2>BA Economics (Hons) Admission in IP University</h2>
 

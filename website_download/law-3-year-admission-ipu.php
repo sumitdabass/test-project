@@ -42,9 +42,7 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IPU-Law-Admission-2025.jpg"
-class="main-img"
-alt="IPU Law (3-Year) Admission — Programme Code 238 — graduate-entry LLB at GGSIPU">
+<?php webp_img('assets/images/IPU-Law-Admission-2025.jpg', 'IPU Law (3-Year) Admission - Programme Code 238 - graduate-entry LLB at GGSIPU', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
 

@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/image-helper.php'; // webp_img()/responsive_img() available site-wide ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,11 +132,11 @@ p{color:#4a5568;margin-bottom:1rem}
 }
 
 /* ===== ipu primitives ===== */
-.ipu-input{width:100%;padding:12px 16px;border:1px solid var(--ipu-rule);border-radius:8px;font-size:16px;font-family:inherit;color:var(--ipu-ink);background:#fff;transition:border-color .2s,box-shadow .2s;margin-bottom:10px;display:block}
+.ipu-input{width:100%;min-height:44px;padding:12px 16px;border:1px solid var(--ipu-rule);border-radius:8px;font-size:16px;font-family:inherit;color:var(--ipu-ink);background:#fff;transition:border-color .2s,box-shadow .2s;margin-bottom:10px;display:block}
 .ipu-input:focus{outline:none;border-color:var(--ipu-ink-2);box-shadow:0 0 0 3px rgba(26,58,156,.14)}
 .ipu-input::placeholder{color:#94a3b8}
 select.ipu-input{color:#64748b}
-.ipu-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;background:var(--ipu-orange);color:#fff;border:none;border-radius:8px;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;box-shadow:var(--ipu-cta-shadow);text-decoration:none}
+.ipu-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:14px 22px;background:var(--ipu-orange);color:#fff;border:none;border-radius:8px;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;box-shadow:var(--ipu-cta-shadow);text-decoration:none}
 .ipu-btn-primary:hover{background:var(--ipu-orange-hover);color:#fff}
 
 /* ===== sidebar-enquiry component ===== */
@@ -196,13 +197,13 @@ select.ipu-input{color:#64748b}
 /* Mobile Call CTA */
 @media(max-width:768px){
   .mobile-call-cta{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#0d1b6e 0%,#1a3a9c 100%);padding:12px 16px calc(12px + env(safe-area-inset-bottom));z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,.3)}
-  .mobile-call-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#f59e0b 0%,#FFD700 100%);border:none;padding:12px;border-radius:50px;color:#0d1b6e;font-weight:700;font-size:16px;text-decoration:none;width:100%;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+  .mobile-call-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;background:linear-gradient(135deg,#f59e0b 0%,#FFD700 100%);border:none;padding:12px;border-radius:50px;color:#0d1b6e;font-weight:700;font-size:16px;text-decoration:none;width:100%;box-shadow:0 2px 8px rgba(0,0,0,.2)}
   body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
 }
 @media(min-width:769px){.mobile-call-cta{display:none}}
 /* go-top: 48px tap target; lift above mobile-call-cta on small screens */
 .go-top{width:48px;height:48px;}
-@media (max-width:768px){.go-top{width:48px;height:48px;bottom:calc(84px + env(safe-area-inset-bottom)) !important;z-index:9998;}}
+@media (max-width:768px){.go-top{width:48px;height:48px;bottom:calc(96px + env(safe-area-inset-bottom)) !important;z-index:9998;}}
 </style>
 
 <!-- Self-hosted Fonts -->

@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/image-helper.php'; // self-sufficient: webp_img() ?>
 <!--====== OUR COURSES START ======-->
 <section class="blog-area pt-80 pb-70">
 <div class="container">
@@ -5,7 +6,7 @@
 <div class="row justify-content-center">
 <div class="col-lg-6 col-md-8">
 <div class="section-title text-center">
-<img src="assets/images/item.png" alt="IP University Courses" width="50" height="50">
+<?php webp_img('assets/images/item.png', 'IP University Courses', '', true); ?>
 <h2 class="title">OUR COURSES</h2>
 <p>Admission pathways, entrance exams and counselling guidance under GGSIPU</p>
 </div>
@@ -19,7 +20,7 @@
 <div class="blog-item blog-item-two mt-30">
 <div class="blog-thumb">
 <a href="mba-admission-ip-university.php">
-<img src="assets/images/MBA.jpg" alt="IPU MBA Admission" width="470" height="343">
+<?php webp_img('assets/images/MBA.jpg', 'IPU MBA Admission', '', true); ?>
 </a>
 </div>
 <div class="blog-content">
@@ -38,7 +39,7 @@ followed by centralized counselling.
 <div class="blog-item blog-item-two mt-30">
 <div class="blog-thumb">
 <a href="ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php">
-<img src="assets/images/mca.jpg" alt="IPU MCA Admission" width="470" height="343">
+<?php webp_img('assets/images/mca.jpg', 'IPU MCA Admission', '', true); ?>
 </a>
 </div>
 <div class="blog-content">
@@ -57,7 +58,7 @@ Read More <i class="flaticon-add"></i></a>
 <div class="blog-item blog-item-two mt-30">
 <div class="blog-thumb">
 <a href="IPU-B-Tech-admission-2026.php">
-<img src="assets/images/blog-4.jpg" alt="IPU B.Tech Admission 2026" width="370" height="270">
+<?php webp_img('assets/images/blog-4.jpg', 'IPU B.Tech Admission 2026', '', true); ?>
 </a>
 </div>
 <div class="blog-content">
@@ -75,7 +76,7 @@ B.Tech admission is based on JEE Main rank through GGSIPU counselling.
 <div class="blog-item blog-item-two mt-30">
 <div class="blog-thumb">
 <a href="ultimate-guide-to-ballb-admission-in-ip-university.php">
-<img src="assets/images/law.jpg" alt="IPU Law Admission" width="470" height="343">
+<?php webp_img('assets/images/law.jpg', 'IPU Law Admission', '', true); ?>
 </a>
 </div>
 <div class="blog-content">
@@ -94,7 +95,7 @@ Read More <i class="flaticon-add"></i></a>
 <div class="blog-item blog-item-two mt-30">
 <div class="blog-thumb">
 <a href="ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php">
-<img src="assets/images/BBA.jpg" alt="IPU CET Courses" width="470" height="343">
+<?php webp_img('assets/images/BBA.jpg', 'IPU CET Courses', '', true); ?>
 </a>
 </div>
 <div class="blog-content">
