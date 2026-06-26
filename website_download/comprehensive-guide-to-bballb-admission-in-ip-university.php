@@ -71,8 +71,8 @@ include __DIR__ . '/include/components/page-hero.php';
                             <li>University School of Law &amp; Legal Studies(USLS)</li>
                             <li>Vivekanand Institute of Professional Studies (VIPS)</li>
                             <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
-                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Gitarattan International Business School (GIBS)</li>
+                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Delhi Metropolitan Education (DME)</li>
                             <li>Chandarprabhu Jain College&nbsp;School of Law (CPJ)</li>
                             <li>Dr. Akhilesh Das Gupta Institute of Technology &amp; Management</li>
@@ -108,8 +108,8 @@ include __DIR__ . '/include/components/page-hero.php';
                             <li>University School of Law &amp; Legal Studies(USLS)</li>
                             <li>Vivekanand Institute of Professional Studies (VIPS)</li>
                             <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
-                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Gitarattan International Business School (GIBS)</li>
+                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Delhi Metropolitan Education (DME)</li>
                             <li>Chandarprabhu Jain College&nbsp;School of Law (CPJ)</li>
                             <li>Dr. Akhilesh Das Gupta Institute of Technology &amp; Management</li>

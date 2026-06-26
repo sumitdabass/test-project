@@ -129,12 +129,13 @@ include 'include/components/hero-banner.php';
   <ul>
     <li>USLLS (University School of Law &amp; Legal Studies)</li>
     <li>VIPS &mdash; Vivekananda Institute of Professional Studies</li>
+    <li>Gitarattan International Business School (GIBS)</li>
     <li>MAIMS &mdash; Maharaja Agrasen Institute of Management Studies</li>
     <li>CPJ College of Higher Studies &amp; School of Law</li>
     <li>DIST &mdash; Delhi Institute of Science &amp; Technology</li>
     <li>DME Noida &mdash; Delhi Metropolitan Education</li>
     <li>Fairfield Institute of Management &amp; Technology</li>
-    <li>Gitarattan IBS &amp; Ideal Institute of Management &amp; Technology</li>
+    <li>Ideal Institute of Management &amp; Technology</li>
   </ul>
 
   <h2>Fee Structure 2026-27 (1-Year LL.M. at USLLS)</h2>

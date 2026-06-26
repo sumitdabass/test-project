@@ -403,11 +403,11 @@ $knowledge_base = [
         ],
         [
             'code' => 'GIBS',
-            'name' => 'Gitarattan Institute of Business Studies',
+            'name' => 'Gitarattan International Business School',
             'short_name' => 'GIBS',
             'location' => 'Rohini, New Delhi',
-            'courses' => ['BBA', 'BA LLB', 'BBA LLB', 'LLM'],
-            'total_seats' => 680,
+            'courses' => ['MBA', 'MBA-IB', 'BBA-MBA Integrated', 'BBA', 'BCA', 'BA LLB', 'BBA LLB', 'LLM'],
+            'total_seats' => 960,
             'page' => '/gibs-admission.php'
         ],
         [

@@ -296,9 +296,9 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">MBA, BBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (Gitarattan Institute of Business Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (Gitarattan International Business School)</a></td>
         <td style="padding:10px 14px">Rohini</td>
-        <td style="padding:10px 14px">MBA, BBA</td>
+        <td style="padding:10px 14px">MBA, BBA, BCA, Law</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
         <td style="padding:10px 14px"><a href="/cpj-admission.php">CPJ College of Higher Studies &amp; School of Law</a></td>

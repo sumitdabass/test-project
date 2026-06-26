@@ -46,13 +46,13 @@
     {"@type": "ListItem", "position": 1, "name": "USLLS (University School of Law & Legal Studies)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#uslls"},
     {"@type": "ListItem", "position": 2, "name": "VIPS Pitampura", "url": "https://ipu.co.in/top-law-colleges-ipu.php#vips"},
     {"@type": "ListItem", "position": 3, "name": "MAIMS Rohini", "url": "https://ipu.co.in/top-law-colleges-ipu.php#maims"},
-    {"@type": "ListItem", "position": 4, "name": "CPJ College (Chandarprabhu Jain)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#cpj"},
-    {"@type": "ListItem", "position": 5, "name": "DME (Delhi Metropolitan Education)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#dme"},
-    {"@type": "ListItem", "position": 6, "name": "Fairfield Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#fairfield"},
-    {"@type": "ListItem", "position": 7, "name": "Ideal Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#ideal"},
-    {"@type": "ListItem", "position": 8, "name": "JEMTEC Greater Noida", "url": "https://ipu.co.in/top-law-colleges-ipu.php#jemtec"},
-    {"@type": "ListItem", "position": 9, "name": "KCC Institute of Legal & Higher Education", "url": "https://ipu.co.in/top-law-colleges-ipu.php#kcc"},
-    {"@type": "ListItem", "position": 10, "name": "Trinity Institute of Professional Studies (TIPS)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#tips"}
+    {"@type": "ListItem", "position": 4, "name": "GIBS (Gitarattan International Business School)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#gibs"},
+    {"@type": "ListItem", "position": 5, "name": "CPJ College (Chandarprabhu Jain)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#cpj"},
+    {"@type": "ListItem", "position": 6, "name": "DME (Delhi Metropolitan Education)", "url": "https://ipu.co.in/top-law-colleges-ipu.php#dme"},
+    {"@type": "ListItem", "position": 7, "name": "Fairfield Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#fairfield"},
+    {"@type": "ListItem", "position": 8, "name": "Ideal Institute of Management & Technology", "url": "https://ipu.co.in/top-law-colleges-ipu.php#ideal"},
+    {"@type": "ListItem", "position": 9, "name": "JEMTEC Greater Noida", "url": "https://ipu.co.in/top-law-colleges-ipu.php#jemtec"},
+    {"@type": "ListItem", "position": 10, "name": "KCC Institute of Legal & Higher Education", "url": "https://ipu.co.in/top-law-colleges-ipu.php#kcc"}
   ]
 }
 </script>
@@ -108,7 +108,7 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" class="ai-summary-box">
     <p class="label">AI Summary</p>
-    <p class="body">The top 10 Law colleges under IP University (GGSIPU) in 2026 are led by <strong>USLLS Dwarka</strong> (the university's own law school), followed by <strong>VIPS Pitampura</strong> (largest law school in IPU), <strong>MAIMS Rohini</strong>, <strong>CPJ College</strong>, <strong>DME Noida</strong> and <strong>Fairfield Institute</strong>. IPU offers 5-year integrated BA LLB (Code 121), BBA LLB (Code 121), 3-year LLB (Code 238) and 1-year LLM (Code 112). Admission for BA LLB/BBA LLB is via <strong>CLAT UG 2026</strong>, for LLM via CLAT PG, and for LLB 3-year via IPU CET. Fees range from Rs 1.20-1.70 lakh/year. Call <a href="tel:+919899991342">9899991342</a> for free IPU law admission guidance.</p>
+    <p class="body">The top 10 Law colleges under IP University (GGSIPU) in 2026 are led by <strong>USLLS Dwarka</strong> (the university's own law school), followed by <strong>VIPS Pitampura</strong> (largest law school in IPU), <strong>MAIMS Rohini</strong>, <strong>GIBS Rohini</strong>, <strong>CPJ College</strong>, <strong>DME Noida</strong> and <strong>Fairfield Institute</strong>. IPU offers 5-year integrated BA LLB (Code 121), BBA LLB (Code 121), 3-year LLB (Code 238) and 1-year LLM (Code 112). Admission for BA LLB/BBA LLB is via <strong>CLAT UG 2026</strong>, for LLM via CLAT PG, and for LLB 3-year via IPU CET. Fees range from Rs 1.20-1.70 lakh/year. Call <a href="tel:+919899991342">9899991342</a> for free IPU law admission guidance.</p>
     <p class="body" style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process (applies to Law too)</a> for the full round-wise walkthrough.</p>
   </section>
 
@@ -137,13 +137,13 @@ include 'include/components/hero-banner.php';
       <tr><td><strong>1</strong></td><td><a href="#uslls" style="color:#0d1b6e;font-weight:700">USLLS</a></td><td>Dwarka</td><td>Rs 1,45,200</td><td>Govt / CLAT</td><td>5-15 LPA</td></tr>
       <tr><td><strong>2</strong></td><td><a href="#vips" style="color:#0d1b6e;font-weight:700">VIPS Pitampura</a></td><td>Pitampura</td><td>Rs 1,70,000</td><td>Top 15%</td><td>6-12 LPA</td></tr>
       <tr><td><strong>3</strong></td><td><a href="#maims" style="color:#0d1b6e;font-weight:700">MAIMS</a></td><td>Rohini</td><td>Rs 1,50,000</td><td>Top 20%</td><td>5-10 LPA</td></tr>
-      <tr><td><strong>4</strong></td><td><a href="#cpj" style="color:#0d1b6e;font-weight:700">CPJ College</a></td><td>Narela</td><td>Rs 1,30,000</td><td>Top 25%</td><td>4-8 LPA</td></tr>
-      <tr><td><strong>5</strong></td><td><a href="#dme" style="color:#0d1b6e;font-weight:700">DME Noida</a></td><td>Noida</td><td>Rs 1,50,000</td><td>Top 22%</td><td>5-9 LPA</td></tr>
-      <tr><td><strong>6</strong></td><td><a href="#fairfield" style="color:#0d1b6e;font-weight:700">Fairfield Institute</a></td><td>Kapashera</td><td>Rs 1,40,000</td><td>Top 30%</td><td>4-7 LPA</td></tr>
-      <tr><td><strong>7</strong></td><td><a href="#ideal" style="color:#0d1b6e;font-weight:700">Ideal Institute</a></td><td>Karkardooma</td><td>Rs 1,25,000</td><td>Top 30%</td><td>4-7 LPA</td></tr>
-      <tr><td><strong>8</strong></td><td><a href="#jemtec" style="color:#0d1b6e;font-weight:700">JEMTEC</a></td><td>Gr. Noida</td><td>Rs 1,30,000</td><td>Top 28%</td><td>4-7 LPA</td></tr>
-      <tr><td><strong>9</strong></td><td><a href="#kcc" style="color:#0d1b6e;font-weight:700">KCC Institute</a></td><td>Gr. Noida</td><td>Rs 1,20,000</td><td>Top 32%</td><td>4-6 LPA</td></tr>
-      <tr><td><strong>10</strong></td><td><a href="#tips" style="color:#0d1b6e;font-weight:700">Trinity (TIPS)</a></td><td>Dwarka</td><td>Rs 1,30,000</td><td>Top 30%</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>4</strong></td><td><a href="#gibs" style="color:#0d1b6e;font-weight:700">GIBS Rohini</a></td><td>Rohini</td><td>Rs 1,10,250</td><td>Top 20%</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>5</strong></td><td><a href="#cpj" style="color:#0d1b6e;font-weight:700">CPJ College</a></td><td>Narela</td><td>Rs 1,30,000</td><td>Top 25%</td><td>4-8 LPA</td></tr>
+      <tr><td><strong>6</strong></td><td><a href="#dme" style="color:#0d1b6e;font-weight:700">DME Noida</a></td><td>Noida</td><td>Rs 1,50,000</td><td>Top 22%</td><td>5-9 LPA</td></tr>
+      <tr><td><strong>7</strong></td><td><a href="#fairfield" style="color:#0d1b6e;font-weight:700">Fairfield Institute</a></td><td>Kapashera</td><td>Rs 1,40,000</td><td>Top 30%</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>8</strong></td><td><a href="#ideal" style="color:#0d1b6e;font-weight:700">Ideal Institute</a></td><td>Karkardooma</td><td>Rs 1,25,000</td><td>Top 30%</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>9</strong></td><td><a href="#jemtec" style="color:#0d1b6e;font-weight:700">JEMTEC</a></td><td>Gr. Noida</td><td>Rs 1,30,000</td><td>Top 28%</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>10</strong></td><td><a href="#kcc" style="color:#0d1b6e;font-weight:700">KCC Institute</a></td><td>Gr. Noida</td><td>Rs 1,20,000</td><td>Top 32%</td><td>4-6 LPA</td></tr>
     </tbody>
   </table>
   </div>
@@ -171,15 +171,22 @@ include 'include/components/hero-banner.php';
     <p>MAIMS offers one of the most comprehensive law programmes under IPU with 340+ law seats. The college has a modern moot court hall, experienced faculty and active legal aid clinic. Popular for its industry-ready curriculum, corporate law specialisations and strong placement cell.</p>
   </div>
 
+  <div class="college-block" id="gibs">
+    <h3><span class="rank-badge">4</span>GIBS – Gitarattan International Business School</h3>
+    <p><strong>Location:</strong> Madhuban Chowk, Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 120 + BBA LLB 120 + LLM 60</p>
+    <p><strong>Fees:</strong> Rs 1,10,250/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 20% &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
+    <p>GIBS is a NAAC 'A'-accredited, BCI-approved IPU law college at Madhuban Chowk, Rohini, with 20+ years of academic experience. It offers both 5-year integrated BA LLB and BBA LLB programmes alongside three LLM specialisations — Criminal Law, Corporate Law and ADR. With a dedicated moot court hall, experienced faculty and strong industry linkages through its management wing, GIBS is a standout choice for integrated law-and-business education under GGSIPU. See the full <a href="/gibs-admission.php">GIBS admission guide</a>.</p>
+  </div>
+
   <div class="college-block" id="cpj">
-    <h3><span class="rank-badge">4</span>CPJ College – Chandarprabhu Jain College of Higher Studies</h3>
+    <h3><span class="rank-badge">5</span>CPJ College – Chandarprabhu Jain College of Higher Studies</h3>
     <p><strong>Location:</strong> Narela, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 180 + BBA LLB 90 + LLB 3yr 60 + LLM 90</p>
     <p><strong>Fees:</strong> Rs 1,30,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 25% &nbsp;|&nbsp; <strong>Placement:</strong> 4-8 LPA</p>
     <p>CPJ College is one of the few IPU colleges offering all four law programmes — BA LLB, BBA LLB, 3-year LLB and LLM. It is especially popular for the 3-year LLB programme for graduates seeking a law career. The college has experienced faculty and decent placement record.</p>
   </div>
 
   <div class="college-block" id="dme">
-    <h3><span class="rank-badge">5</span>DME – Delhi Metropolitan Education</h3>
+    <h3><span class="rank-badge">6</span>DME – Delhi Metropolitan Education</h3>
     <p><strong>Location:</strong> Noida, UP &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 180 + BBA LLB 120 + LLM 90</p>
     <p><strong>Fees:</strong> Rs 1,50,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 22% &nbsp;|&nbsp; <strong>Placement:</strong> 5-9 LPA</p>
     <p>DME is a reputed Noida-based IPU law college with modern infrastructure, ICSI-affiliated company secretary programme and an active legal research centre. Known for its international exchange programmes and moot court victories at national level.</p>
@@ -190,38 +197,31 @@ include 'include/components/hero-banner.php';
   </div>
 
   <div class="college-block" id="fairfield">
-    <h3><span class="rank-badge">6</span>Fairfield Institute of Management & Technology</h3>
+    <h3><span class="rank-badge">7</span>Fairfield Institute of Management & Technology</h3>
     <p><strong>Location:</strong> Kapashera, New Delhi &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 200 + BBA LLB 120 + LLM 90</p>
     <p><strong>Fees:</strong> Rs 1,40,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 30% &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
     <p>Fairfield offers a large law school with 400+ seats across BA LLB, BBA LLB and LLM. The college has a good focus on practical legal training through internships and legal aid clinics. Good option for students seeking a mid-tier IPU law college with varied specialisations.</p>
   </div>
 
   <div class="college-block" id="ideal">
-    <h3><span class="rank-badge">7</span>Ideal Institute of Management & Technology</h3>
+    <h3><span class="rank-badge">8</span>Ideal Institute of Management & Technology</h3>
     <p><strong>Location:</strong> Karkardooma, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 80 + LLM 30</p>
     <p><strong>Fees:</strong> Rs 1,25,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 30% &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
     <p>Ideal Institute offers small-batch BA LLB programme with personalised mentoring and affordable fees. Located close to Karkardooma Courts complex, it provides excellent exposure to working courts and legal practice.</p>
   </div>
 
   <div class="college-block" id="jemtec">
-    <h3><span class="rank-badge">8</span>JEMTEC – Jagannath International Management School</h3>
+    <h3><span class="rank-badge">9</span>JEMTEC – Jagannath International Management School</h3>
     <p><strong>Location:</strong> Greater Noida, UP &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 60 + BBA LLB 60</p>
     <p><strong>Fees:</strong> Rs 1,30,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 28% &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
     <p>JEMTEC Greater Noida is part of the Jagannath group and offers both BA LLB and BBA LLB. Good campus environment, dedicated moot court hall and active student legal society.</p>
   </div>
 
   <div class="college-block" id="kcc">
-    <h3><span class="rank-badge">9</span>KCC Institute of Legal & Higher Education</h3>
+    <h3><span class="rank-badge">10</span>KCC Institute of Legal & Higher Education</h3>
     <p><strong>Location:</strong> Greater Noida, UP &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 120 + BBA LLB 60</p>
     <p><strong>Fees:</strong> Rs 1,20,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 32% &nbsp;|&nbsp; <strong>Placement:</strong> 4-6 LPA</p>
     <p>KCC Institute offers one of the most affordable IPU law programmes. Known for decent infrastructure, experienced faculty and focus on core legal subjects including constitutional law and corporate law.</p>
-  </div>
-
-  <div class="college-block" id="tips">
-    <h3><span class="rank-badge">10</span>Trinity Institute of Professional Studies (TIPS)</h3>
-    <p><strong>Location:</strong> Dwarka Sector 9, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> BA LLB 60</p>
-    <p><strong>Fees:</strong> Rs 1,30,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CLAT top 30% &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
-    <p>Trinity Institute in Dwarka offers a focused BA LLB programme with small batch size. Benefit of Dwarka location with proximity to USLLS and other IPU institutions, giving students a strong legal academic ecosystem.</p>
   </div>
 
   <h2 class="section-h2">IPU Law Programme Options 2026</h2>
@@ -286,7 +286,7 @@ $faqs = [
   ['question' => 'What is the BA LLB fee in IPU?', 'answer' => 'BA LLB fees at IPU law colleges range from Rs 1.20 lakh to Rs 1.70 lakh per year. USLLS charges Rs 1.45 lakh/year while VIPS Pitampura charges Rs 1.70 lakh/year. Total 5-year BA LLB cost ranges from Rs 6 lakh to Rs 8.5 lakh — significantly lower than private law universities.'],
   ['question' => 'Is CLAT mandatory for IPU law admission?', 'answer' => 'Yes, CLAT is mandatory for BA LLB and BBA LLB admissions at IPU law colleges. From 2022 onwards, IPU accepts CLAT UG scores for all 5-year integrated law programmes. For LLM, CLAT PG is required. Only the 3-year LLB programme uses IPU CET instead of CLAT.'],
   ['question' => 'Does IPU offer LLB 3-year?', 'answer' => 'Yes, IPU offers a 3-year LLB programme (Code 238) for graduates. However, it is available at only 3 colleges: USLLS Dwarka, CPJ Narela and VIPS Pitampura. Admission is through IPU CET — not CLAT. Total seats are limited (around 180).'],
-  ['question' => 'What are the top law colleges under IPU for BA LLB?', 'answer' => 'The top BA LLB colleges under IPU are: (1) USLLS Dwarka, (2) VIPS Pitampura, (3) MAIMS Rohini, (4) CPJ College Narela, (5) DME Noida, (6) Fairfield Institute. Call 9899991342 for personalised recommendations based on your CLAT rank.'],
+  ['question' => 'What are the top law colleges under IPU for BA LLB?', 'answer' => 'The top BA LLB colleges under IPU are: (1) USLLS Dwarka, (2) VIPS Pitampura, (3) MAIMS Rohini, (4) GIBS Rohini, (5) CPJ College Narela, (6) DME Noida. Call 9899991342 for personalised recommendations based on your CLAT rank.'],
   ['question' => 'What is the placement of USLLS Dwarka?', 'answer' => 'USLLS Dwarka placements range from 5-15 LPA with an average around 7-9 LPA. Top recruiters include Luthra & Luthra, S&R Associates, AZB & Partners, Khaitan & Co, JSA, Shardul Amarchand and leading PSUs like ONGC and NTPC. Many graduates also pursue judicial services and higher studies abroad.'],
   ['question' => 'What is the law admission process in IPU 2026?', 'answer' => 'IPU law admission process: (1) Appear in CLAT UG 2026 (for BA LLB/BBA LLB) or CLAT PG (for LLM), (2) Register on IPU counselling portal, (3) Import CLAT scores and pay counselling fee, (4) Document verification, (5) Choice filling — select colleges in order of preference, (6) Seat allotment, (7) Fee payment and reporting. Call 9899991342 for step-by-step guidance.']
 ];

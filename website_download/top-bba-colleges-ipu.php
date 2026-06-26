@@ -22,7 +22,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Top 10 BBA Colleges in IPU 2026 – Ranking, Fees, Cutoff & Placements",
-  "description": "Ranked list of the top 10 BBA colleges under Guru Gobind Singh Indraprastha University (GGSIPU) 2026 including VIPS, MAIMS, RDIAS, Trinity, JIMS, Tecnia, BVIMR, MSI, JIMS Vasant Kunj and KCC.",
+  "description": "Ranked list of the top 10 BBA colleges under Guru Gobind Singh Indraprastha University (GGSIPU) 2026 including VIPS, MAIMS, RDIAS, Trinity, JIMS, GIBS, Tecnia, BVIMR, MSI and JIMS Vasant Kunj.",
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
@@ -45,11 +45,11 @@
     {"@type": "ListItem", "position": 3, "name": "RDIAS Rohini", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#rdias"},
     {"@type": "ListItem", "position": 4, "name": "Trinity Institute of Professional Studies", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#trinity"},
     {"@type": "ListItem", "position": 5, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#jims"},
-    {"@type": "ListItem", "position": 6, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#tecnia"},
-    {"@type": "ListItem", "position": 7, "name": "BVIMR Paschim Vihar", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#bvimr"},
-    {"@type": "ListItem", "position": 8, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#msi"},
-    {"@type": "ListItem", "position": 9, "name": "JIMS Vasant Kunj", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#jims-vk"},
-    {"@type": "ListItem", "position": 10, "name": "KCC Institute Greater Noida", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#kcc"}
+    {"@type": "ListItem", "position": 6, "name": "GIBS (Gitarattan International Business School)", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#gibs"},
+    {"@type": "ListItem", "position": 7, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#tecnia"},
+    {"@type": "ListItem", "position": 8, "name": "BVIMR Paschim Vihar", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#bvimr"},
+    {"@type": "ListItem", "position": 9, "name": "MSI Janakpuri", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#msi"},
+    {"@type": "ListItem", "position": 10, "name": "JIMS Vasant Kunj", "url": "https://ipu.co.in/top-bba-colleges-ipu.php#jims-vk"}
   ]
 }
 </script>
@@ -80,7 +80,7 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">The top 10 BBA colleges under IP University in 2026 are led by <strong>VIPS Pitampura</strong>, <strong>MAIMS Rohini</strong> and <strong>RDIAS Rohini</strong>, followed by Trinity Dwarka, JIMS Rohini, Tecnia, BVIMR, MSI Janakpuri, JIMS Vasant Kunj and KCC Greater Noida. BBA admission is through <strong>CUET UG</strong> scores and IPU centralised counselling. Fees range from <strong>Rs. 1.10 lakh to Rs. 1.65 lakh per year</strong>, with average placements between 4-10 LPA. Top recruiters include Deloitte, EY, KPMG, TCS, HCL, Accenture and ICICI Bank. Call <a href="tel:+919899991342">9899991342</a> for free admission guidance.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">The top 10 BBA colleges under IP University in 2026 are led by <strong>VIPS Pitampura</strong>, <strong>MAIMS Rohini</strong> and <strong>RDIAS Rohini</strong>, followed by Trinity Dwarka, JIMS Rohini, GIBS Rohini, Tecnia, BVIMR, MSI Janakpuri and JIMS Vasant Kunj. BBA admission is through <strong>CUET UG</strong> scores and IPU centralised counselling. Fees range from <strong>Rs. 1.10 lakh to Rs. 1.65 lakh per year</strong>, with average placements between 4-10 LPA. Top recruiters include Deloitte, EY, KPMG, TCS, HCL, Accenture and ICICI Bank. Call <a href="tel:+919899991342">9899991342</a> for free admission guidance.</p>
   </section>
 
   <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>
@@ -109,11 +109,11 @@ include 'include/components/hero-banner.php';
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">3</span></td><td style="padding:10px 14px"><strong><a href="/rdias-admission.php" style="color:inherit">RDIAS</a></strong></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">82-90%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">4</span></td><td style="padding:10px 14px"><strong><a href="/tips-admission.php" style="color:inherit">Trinity (TIPS)</a></strong></td><td style="padding:10px 14px">Dwarka</td><td style="padding:10px 14px">Rs. 1,25,000</td><td style="padding:10px 14px">80-88%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">5</span></td><td style="padding:10px 14px"><strong><a href="/jims-admission.php" style="color:inherit">JIMS Rohini</a></strong></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,50,000</td><td style="padding:10px 14px">85-92%ile</td><td style="padding:10px 14px">5-9 LPA</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">6</span></td><td style="padding:10px 14px"><strong><a href="/tecnia-admission.php" style="color:inherit">Tecnia</a></strong></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,20,000</td><td style="padding:10px 14px">78-85%ile</td><td style="padding:10px 14px">4-6 LPA</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">7</span></td><td style="padding:10px 14px"><strong><a href="/BVP.php" style="color:inherit">BVIMR</a></strong></td><td style="padding:10px 14px">Paschim Vihar</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">82-88%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">8</span></td><td style="padding:10px 14px"><strong><a href="/msi-admission.php" style="color:inherit">MSI</a></strong></td><td style="padding:10px 14px">Janakpuri</td><td style="padding:10px 14px">Rs. 1,20,000</td><td style="padding:10px 14px">80-87%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">9</span></td><td style="padding:10px 14px"><strong><a href="/jims-vasant-kunj-admission.php" style="color:inherit">JIMS Vasant Kunj</a></strong></td><td style="padding:10px 14px">Vasant Kunj</td><td style="padding:10px 14px">Rs. 1,40,000</td><td style="padding:10px 14px">78-85%ile</td><td style="padding:10px 14px">4-6 LPA</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">10</span></td><td style="padding:10px 14px"><strong><a href="/kcc-admission.php" style="color:inherit">KCC Institute</a></strong></td><td style="padding:10px 14px">Greater Noida</td><td style="padding:10px 14px">Rs. 1,10,000</td><td style="padding:10px 14px">70-80%ile</td><td style="padding:10px 14px">3-6 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">6</span></td><td style="padding:10px 14px"><strong><a href="#gibs" style="color:inherit">GIBS</a></strong></td><td style="padding:10px 14px">Rohini (Madhuban Chowk)</td><td style="padding:10px 14px">Rs. 1,15,000</td><td style="padding:10px 14px">80-86%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">7</span></td><td style="padding:10px 14px"><strong><a href="/tecnia-admission.php" style="color:inherit">Tecnia</a></strong></td><td style="padding:10px 14px">Rohini</td><td style="padding:10px 14px">Rs. 1,20,000</td><td style="padding:10px 14px">78-85%ile</td><td style="padding:10px 14px">4-6 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">8</span></td><td style="padding:10px 14px"><strong><a href="/BVP.php" style="color:inherit">BVIMR</a></strong></td><td style="padding:10px 14px">Paschim Vihar</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">82-88%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">9</span></td><td style="padding:10px 14px"><strong><a href="/msi-admission.php" style="color:inherit">MSI</a></strong></td><td style="padding:10px 14px">Janakpuri</td><td style="padding:10px 14px">Rs. 1,20,000</td><td style="padding:10px 14px">80-87%ile</td><td style="padding:10px 14px">4-7 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">10</span></td><td style="padding:10px 14px"><strong><a href="/jims-vasant-kunj-admission.php" style="color:inherit">JIMS Vasant Kunj</a></strong></td><td style="padding:10px 14px">Vasant Kunj</td><td style="padding:10px 14px">Rs. 1,40,000</td><td style="padding:10px 14px">78-85%ile</td><td style="padding:10px 14px">4-6 LPA</td></tr>
     </tbody>
   </table>
   </div>
@@ -158,39 +158,39 @@ include 'include/components/hero-banner.php';
     <li><strong>Placements:</strong> 5-9 LPA average</li>
   </ul>
 
-  <h2 id="tecnia" style="color:#0d1b6e;margin-top:30px">6. Tecnia Institute of Advanced Studies Rohini</h2>
+  <h2 id="gibs" style="color:#0d1b6e;margin-top:30px">6. <a href="/gibs-admission.php" style="color:inherit">GIBS (Gitarattan International Business School)</a> Rohini</h2>
+  <p>GIBS (Gitarattan International Business School) is a GGSIPU-affiliated, NAAC 'A' grade and AICTE-approved institute with over 20 years of management education at Madhuban Chowk, Rohini. It offers 360 BBA seats across two shifts plus the unique 5-year integrated BBA-MBA programme, and was ranked No. 1 for BBA in the Times B-School Survey 2023. With strong metro connectivity, GIBS records placements of 4-7 LPA with recruiters such as Deloitte, EY, ICICI, HDFC and Axis Bank.</p>
+  <ul>
+    <li><strong>Seats:</strong> 360 (two shifts) | <strong>Fees:</strong> Rs. 1,15,000/year | <strong>CUET Cutoff:</strong> 80-86 percentile</li>
+    <li><strong>Placements:</strong> 4-7 LPA average; top recruiters Deloitte, EY, ICICI, HDFC, Axis Bank</li>
+  </ul>
+
+  <h2 id="tecnia" style="color:#0d1b6e;margin-top:30px">7. Tecnia Institute of Advanced Studies Rohini</h2>
   <p>Tecnia Rohini offers BBA with 240 seats and is a favourite among students who want a balance of reasonable fees and industry exposure. It has NAAC A accreditation.</p>
   <ul>
     <li><strong>Seats:</strong> 240 | <strong>Fees:</strong> Rs. 1,20,000/year | <strong>CUET Cutoff:</strong> 78-85 percentile</li>
     <li><strong>Placements:</strong> 4-6 LPA average</li>
   </ul>
 
-  <h2 id="bvimr" style="color:#0d1b6e;margin-top:30px">7. BVIMR Paschim Vihar</h2>
+  <h2 id="bvimr" style="color:#0d1b6e;margin-top:30px">8. BVIMR Paschim Vihar</h2>
   <p>Bharati Vidyapeeth Institute of Management and Research (BVIMR), Paschim Vihar, offers a boutique BBA programme with just 60 seats – ideal for students who prefer small batches and personal mentoring.</p>
   <ul>
     <li><strong>Seats:</strong> 60 | <strong>Fees:</strong> Rs. 1,30,000/year | <strong>CUET Cutoff:</strong> 82-88 percentile</li>
     <li><strong>Placements:</strong> 4-7 LPA average</li>
   </ul>
 
-  <h2 id="msi" style="color:#0d1b6e;margin-top:30px">8. Maharaja Surajmal Institute (MSI) Janakpuri</h2>
+  <h2 id="msi" style="color:#0d1b6e;margin-top:30px">9. Maharaja Surajmal Institute (MSI) Janakpuri</h2>
   <p>MSI Janakpuri is a trusted name in West Delhi with BBA and BBA B&amp;I programmes totalling 360 seats. Known for its academic rigour and disciplined environment, MSI has excellent metro connectivity.</p>
   <ul>
     <li><strong>Seats:</strong> 360 (including B&amp;I) | <strong>Fees:</strong> Rs. 1,20,000/year | <strong>CUET Cutoff:</strong> 80-87 percentile</li>
     <li><strong>Placements:</strong> 4-7 LPA average</li>
   </ul>
 
-  <h2 id="jims-vk" style="color:#0d1b6e;margin-top:30px">9. JIMS Vasant Kunj</h2>
+  <h2 id="jims-vk" style="color:#0d1b6e;margin-top:30px">10. JIMS Vasant Kunj</h2>
   <p>JIMS Vasant Kunj offers BBA with 240 seats and serves as a good alternative for students who prefer South Delhi. The campus is modern and has active industry partnerships.</p>
   <ul>
     <li><strong>Seats:</strong> 240 | <strong>Fees:</strong> Rs. 1,40,000/year | <strong>CUET Cutoff:</strong> 78-85 percentile</li>
     <li><strong>Placements:</strong> 4-6 LPA average</li>
-  </ul>
-
-  <h2 id="kcc" style="color:#0d1b6e;margin-top:30px">10. KCC Institute Greater Noida</h2>
-  <p>KCC Institute, Greater Noida, is an affordable BBA college under IPU with 240 seats. It is an excellent fallback option for students with CUET percentiles between 70-80.</p>
-  <ul>
-    <li><strong>Seats:</strong> 240 | <strong>Fees:</strong> Rs. 1,10,000/year | <strong>CUET Cutoff:</strong> 70-80 percentile</li>
-    <li><strong>Placements:</strong> 3-6 LPA average</li>
   </ul>
 
   <h2 style="color:#0d1b6e;margin-top:36px">Why Choose IPU for BBA in 2026?</h2>
@@ -229,7 +229,7 @@ include 'include/components/hero-banner.php';
 $faqs = [
   ['question' => 'Which is the best BBA college in IPU?', 'answer' => 'VIPS Pitampura is ranked the best BBA college under IPU in 2026, followed by MAIMS Rohini and RDIAS. The best college for you depends on your CUET percentile, budget and location preference. Call 9899991342 for personalised recommendations.'],
   ['question' => 'What is the BBA cutoff in IPU for VIPS?', 'answer' => 'VIPS BBA typically closes around 90-95 CUET percentile for the General category. Cutoffs vary by round of counselling and category. Call 9899991342 for your personalised cutoff analysis.'],
-  ['question' => 'What is the fee for BBA in IPU top colleges?', 'answer' => 'BBA annual fees in IPU top colleges range from Rs. 1.10 lakh (KCC, Tecnia) to Rs. 1.65 lakh (VIPS). Most popular colleges like MAIMS, MSI and Trinity charge around Rs. 1.20-1.30 lakh per year. Call 9899991342 for college-wise fee details.'],
+  ['question' => 'What is the fee for BBA in IPU top colleges?', 'answer' => 'BBA annual fees in IPU top colleges range from Rs. 1.15 lakh (GIBS) to Rs. 1.65 lakh (VIPS). Most popular colleges like MAIMS, MSI and Trinity charge around Rs. 1.20-1.30 lakh per year. Call 9899991342 for college-wise fee details.'],
   ['question' => 'Which BBA college in IPU has the best placements?', 'answer' => 'VIPS Pitampura has the best BBA placements under IPU with 5-10 LPA average packages and recruiters like Deloitte, EY and KPMG. JIMS Rohini and MAIMS follow closely with 5-9 LPA averages. Call 9899991342 for detailed placement data.'],
   ['question' => 'Is VIPS better than MAIMS for BBA?', 'answer' => 'VIPS has higher placement packages and a stronger brand, but MAIMS offers better value with lower fees (Rs. 1.20 lakh vs Rs. 1.65 lakh) and more seats. If budget is a concern, MAIMS is excellent; if maximum placements are the goal, VIPS leads. Call 9899991342 for personalised guidance.'],
   ['question' => 'Can I get BBA admission in IPU without maths?', 'answer' => 'Yes. Maths is not mandatory for most BBA programmes under IPU – students from Arts, Commerce and Science streams are eligible. Some colleges like VIPS may give preference to Maths students for BBA B&I. Call 9899991342 to confirm eligibility.'],

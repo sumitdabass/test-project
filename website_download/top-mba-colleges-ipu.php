@@ -47,12 +47,12 @@
     {"@type": "ListItem", "position": 2, "name": "MAIMS (via MAIT)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#maims"},
     {"@type": "ListItem", "position": 3, "name": "RDIAS (Rukmini Devi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#rdias"},
     {"@type": "ListItem", "position": 4, "name": "JIMS Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#jims"},
-    {"@type": "ListItem", "position": 5, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#tecnia"},
-    {"@type": "ListItem", "position": 6, "name": "MAIT Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#mait"},
-    {"@type": "ListItem", "position": 7, "name": "HMR Institute of Technology & Management", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#hmr"},
-    {"@type": "ListItem", "position": 8, "name": "DIAS (Delhi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#dias"},
-    {"@type": "ListItem", "position": 9, "name": "Don Bosco Institute of Technology", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#donbosco"},
-    {"@type": "ListItem", "position": 10, "name": "DTC (Delhi Technical Campus)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#dtc"}
+    {"@type": "ListItem", "position": 5, "name": "GIBS (Gitarattan International Business School)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#gibs"},
+    {"@type": "ListItem", "position": 6, "name": "Tecnia Institute of Advanced Studies", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#tecnia"},
+    {"@type": "ListItem", "position": 7, "name": "MAIT Rohini", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#mait"},
+    {"@type": "ListItem", "position": 8, "name": "HMR Institute of Technology & Management", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#hmr"},
+    {"@type": "ListItem", "position": 9, "name": "DIAS (Delhi Institute of Advanced Studies)", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#dias"},
+    {"@type": "ListItem", "position": 10, "name": "Don Bosco Institute of Technology", "url": "https://ipu.co.in/top-mba-colleges-ipu.php#donbosco"}
   ]
 }
 </script>
@@ -104,7 +104,7 @@ include 'include/components/hero-banner.php';
   <!-- AI Summary -->
   <section id="ai-summary" class="ai-summary-box">
     <p class="label">AI Summary</p>
-    <p class="body">The top 10 MBA colleges under IP University (GGSIPU) in 2026 are led by <strong>USMS</strong> (the university's own management school in Dwarka), followed by <strong>MAIMS</strong>, <strong>RDIAS</strong>, <strong>JIMS Rohini</strong> and <strong>Tecnia</strong>. Fees range from Rs 1.10 lakh (smaller affiliated colleges) to <strong>Rs 1.93 lakh at USMS</strong> per PG Brochure 2026-27 §14.1H — still roughly one-third of private B-schools. Admission priority per Table 1.1 (Code 101): <strong>1. CAT 2025 &rarr; 2. CMAT 2026 &rarr; 3. CET &rarr; 4. CUET#</strong>. Placements range from 4-18 LPA with USMS leading. Call <a href="tel:+919899991342">9899991342</a> for free MBA college selection guidance.</p>
+    <p class="body">The top 10 MBA colleges under IP University (GGSIPU) in 2026 are led by <strong>USMS</strong> (the university's own management school in Dwarka), followed by <strong>MAIMS</strong>, <strong>RDIAS</strong>, <strong>JIMS Rohini</strong> and <strong>GIBS</strong>. Fees range from Rs 1.10 lakh (smaller affiliated colleges) to <strong>Rs 1.93 lakh at USMS</strong> per PG Brochure 2026-27 §14.1H — still roughly one-third of private B-schools. Admission priority per Table 1.1 (Code 101): <strong>1. CAT 2025 &rarr; 2. CMAT 2026 &rarr; 3. CET &rarr; 4. CUET#</strong>. Placements range from 4-18 LPA with USMS leading. Call <a href="tel:+919899991342">9899991342</a> for free MBA college selection guidance.</p>
   </section>
 
   <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>
@@ -132,12 +132,12 @@ include 'include/components/hero-banner.php';
       <tr><td><strong>2</strong></td><td><a href="#maims" style="color:#0d1b6e;font-weight:700">MAIMS</a></td><td>Rohini</td><td>Rs 1,30,000</td><td>55+ %ile</td><td>6-12 LPA</td></tr>
       <tr><td><strong>3</strong></td><td><a href="#rdias" style="color:#0d1b6e;font-weight:700">RDIAS</a></td><td>Rohini</td><td>Rs 1,40,000</td><td>50+ %ile</td><td>5-10 LPA</td></tr>
       <tr><td><strong>4</strong></td><td><a href="#jims" style="color:#0d1b6e;font-weight:700">JIMS Rohini</a></td><td>Rohini</td><td>Rs 1,60,000</td><td>60+ %ile</td><td>7-14 LPA</td></tr>
-      <tr><td><strong>5</strong></td><td><a href="#tecnia" style="color:#0d1b6e;font-weight:700">Tecnia Institute</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>45+ %ile</td><td>5-8 LPA</td></tr>
-      <tr><td><strong>6</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>Rs 1,55,700</td><td>50+ %ile</td><td>6-10 LPA</td></tr>
-      <tr><td><strong>7</strong></td><td><a href="#hmr" style="color:#0d1b6e;font-weight:700">HMR Institute</a></td><td>Hameedpur</td><td>Rs 1,20,000</td><td>45+ %ile</td><td>4-7 LPA</td></tr>
-      <tr><td><strong>8</strong></td><td><a href="#dias" style="color:#0d1b6e;font-weight:700">DIAS</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>48+ %ile</td><td>4-8 LPA</td></tr>
-      <tr><td><strong>9</strong></td><td><a href="#donbosco" style="color:#0d1b6e;font-weight:700">Don Bosco Institute</a></td><td>Okhla</td><td>Rs 1,20,000</td><td>42+ %ile</td><td>4-7 LPA</td></tr>
-      <tr><td><strong>10</strong></td><td><a href="#dtc" style="color:#0d1b6e;font-weight:700">DTC</a></td><td>Gr. Noida</td><td>Rs 1,10,000</td><td>40+ %ile</td><td>4-6 LPA</td></tr>
+      <tr><td><strong>5</strong></td><td><a href="#gibs" style="color:#0d1b6e;font-weight:700">GIBS</a></td><td>Rohini (Madhuban Chowk)</td><td>Rs 1,30,000</td><td>50+ %ile</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>6</strong></td><td><a href="#tecnia" style="color:#0d1b6e;font-weight:700">Tecnia Institute</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>45+ %ile</td><td>5-8 LPA</td></tr>
+      <tr><td><strong>7</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>Rs 1,55,700</td><td>50+ %ile</td><td>6-10 LPA</td></tr>
+      <tr><td><strong>8</strong></td><td><a href="#hmr" style="color:#0d1b6e;font-weight:700">HMR Institute</a></td><td>Hameedpur</td><td>Rs 1,20,000</td><td>45+ %ile</td><td>4-7 LPA</td></tr>
+      <tr><td><strong>9</strong></td><td><a href="#dias" style="color:#0d1b6e;font-weight:700">DIAS</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>48+ %ile</td><td>4-8 LPA</td></tr>
+      <tr><td><strong>10</strong></td><td><a href="#donbosco" style="color:#0d1b6e;font-weight:700">Don Bosco Institute</a></td><td>Okhla</td><td>Rs 1,20,000</td><td>42+ %ile</td><td>4-7 LPA</td></tr>
     </tbody>
   </table>
   </div>
@@ -172,8 +172,15 @@ include 'include/components/hero-banner.php';
     <p>JIMS Rohini is one of the most established B-schools under IPU with AICTE approval and a growing reputation for finance and consulting placements. <strong>Top recruiters include Deloitte, KPMG, HDFC Bank, Axis Bank and Genpact</strong>. JIMS has a strong placement cell and regularly organises industry conclaves and HR events.</p>
   </div>
 
+  <div class="college-block" id="gibs">
+    <h3><span class="rank-badge">5</span><a href="/gibs-admission.php" style="color:#0d1b6e">GIBS – Gitarattan International Business School</a></h3>
+    <p><strong>Location:</strong> Madhuban Chowk, Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 120</p>
+    <p><strong>Fees:</strong> Rs 1,30,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 50+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
+    <p>GIBS is a GGSIPU-affiliated, NAAC 'A' grade and AICTE-approved B-school with over 20 years of standing. It offers MBA in two shifts plus MBA-IB (International Business) and a flagship 5-year integrated BBA-MBA programme with dual specialisation. Backed by strong corporate MoUs and an active placement cell at Madhuban Chowk, Rohini, placements range 4-7 LPA (up to ~10 LPA for integrated BBA-MBA graduates) with recruiters such as Deloitte, EY, ICICI, HDFC and Axis Bank.</p>
+  </div>
+
   <div class="college-block" id="tecnia">
-    <h3><span class="rank-badge">5</span>Tecnia Institute of Advanced Studies</h3>
+    <h3><span class="rank-badge">6</span>Tecnia Institute of Advanced Studies</h3>
     <p><strong>Location:</strong> Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 120</p>
     <p><strong>Fees:</strong> Rs 1,25,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 45+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 5-8 LPA</p>
     <p>Tecnia Institute offers a well-rounded MBA programme with affordable fees and decent placement records. The college focuses on holistic development, soft skills training and entrepreneurship. Popular specialisations include Marketing, HR and Finance.</p>
@@ -184,38 +191,31 @@ include 'include/components/hero-banner.php';
   </div>
 
   <div class="college-block" id="mait">
-    <h3><span class="rank-badge">6</span>MAIT – Maharaja Agrasen Institute of Technology (MBA)</h3>
+    <h3><span class="rank-badge">7</span>MAIT – Maharaja Agrasen Institute of Technology (MBA)</h3>
     <p><strong>Location:</strong> Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 60 (via MAIT campus)</p>
     <p><strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 50+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 6-10 LPA</p>
     <p>MAIT's MBA programme benefits from the engineering college's strong corporate network and infrastructure. Many B.Tech + MBA dual opportunities exist, making it popular with tech-focused MBA aspirants. Placements are solid in IT services, analytics and consulting roles.</p>
   </div>
 
   <div class="college-block" id="hmr">
-    <h3><span class="rank-badge">7</span>HMR Institute of Technology & Management</h3>
+    <h3><span class="rank-badge">8</span>HMR Institute of Technology & Management</h3>
     <p><strong>Location:</strong> Hameedpur, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 60</p>
     <p><strong>Fees:</strong> Rs 1,20,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 45+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
     <p>HMR Institute is a budget-friendly choice for IPU MBA with a small batch size that ensures personalised attention. The college has a dedicated placement cell and focuses on building practical business skills through live projects and internships.</p>
   </div>
 
   <div class="college-block" id="dias">
-    <h3><span class="rank-badge">8</span>DIAS – Delhi Institute of Advanced Studies</h3>
+    <h3><span class="rank-badge">9</span>DIAS – Delhi Institute of Advanced Studies</h3>
     <p><strong>Location:</strong> Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 60</p>
     <p><strong>Fees:</strong> Rs 1,25,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 48+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 4-8 LPA</p>
     <p>DIAS offers a quality MBA programme at reasonable fees with a focus on finance, marketing and IT specialisations. It is a good choice for students targeting BFSI sector roles with average placements in the 4-8 LPA range.</p>
   </div>
 
   <div class="college-block" id="donbosco">
-    <h3><span class="rank-badge">9</span>Don Bosco Institute of Technology</h3>
+    <h3><span class="rank-badge">10</span>Don Bosco Institute of Technology</h3>
     <p><strong>Location:</strong> Okhla, New Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 60</p>
     <p><strong>Fees:</strong> Rs 1,20,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 42+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 4-7 LPA</p>
     <p>Don Bosco Institute's MBA programme is affordable and offers a solid academic base. The college has industry tie-ups for internships and placements, and is conveniently located in South Delhi with excellent metro connectivity.</p>
-  </div>
-
-  <div class="college-block" id="dtc">
-    <h3><span class="rank-badge">10</span>DTC – Delhi Technical Campus</h3>
-    <p><strong>Location:</strong> Greater Noida &nbsp;|&nbsp; <strong>Seats:</strong> MBA 30</p>
-    <p><strong>Fees:</strong> Rs 1,10,000/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 40+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 4-6 LPA</p>
-    <p>DTC offers the lowest MBA fees among IPU colleges, making it an excellent option for budget-conscious aspirants. The small batch size ensures focused learning and personalised career guidance.</p>
   </div>
 
   <h2 class="section-h2">Why Choose IPU for MBA in 2026?</h2>

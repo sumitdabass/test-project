@@ -128,13 +128,13 @@ CUET subject papers for Law: Section IA English (Code 101) + Section II Legal St
 <a href="exploring-MAIT-and-MAIMS.php">MAIMS Rohini – Law Programs</a>
 </li>
 
+<li>Gitarattan International Business School</li>
+
 <li>Maharaja Surajmal Institute (MSI), Janakpuri</li>
 
 <li>Trinity Institute of Professional Studies (TIPS)</li>
 
 <li>Ideal Institute of Management & Technology</li>
-
-<li>Gitarattan International Business School</li>
 
 <li>Delhi Metropolitan Education</li>
 

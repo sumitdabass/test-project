@@ -169,8 +169,8 @@ The following 14 colleges are affiliated to GGSIPU for law programmes:
 <li>CPJ College of Higher Studies &amp; School of Law</li>
 <li>ADGIPS &mdash; Amity Delhi</li>
 <li>DME &mdash; Delhi Metropolitan Education, Noida</li>
-<li>Fairfield Institute of Management &amp; Technology</li>
 <li>GIBS &mdash; Gitarattan International Business School</li>
+<li>Fairfield Institute of Management &amp; Technology</li>
 <li>Ideal Institute of Management &amp; Technology</li>
 <li>JEMTEC &mdash; Jagannath Education &amp; Management</li>
 <li>KCC Institute of Legal &amp; Higher Education</li>
