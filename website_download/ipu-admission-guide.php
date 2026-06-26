@@ -233,6 +233,12 @@ $related_pages = [
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+    ['title' => 'GGSIPU B.Tech Counselling', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU B.Tech counselling, dates and registration.'],
+    ['title' => 'IPU Law Admission', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB / BBA LLB admission and counselling under IPU.'],
+    ['title' => 'IPU BBA Cutoff', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Programme-wise BBA closing ranks under IP University.'],
+    ['title' => 'IPU BA LLB Admission', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'BA LLB seats, eligibility and management quota under IPU.'],
+    ['title' => 'IPU B.Com Admission', 'url' => '/bcom-admission-ipu.php', 'desc' => 'B.Com (Hons) admission and top colleges under IP University.'],
+    ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Management-quota eligibility and process across IPU courses.'],
 ];
 include 'include/components/related-pages.php';
 ?>

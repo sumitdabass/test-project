@@ -142,7 +142,9 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU'],
-  ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process']
+  ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process'],
+  ['title' => 'Top IPU Colleges', 'url' => '/top-ipu-colleges.php', 'desc' => 'Highest-ranked colleges under IP University.'],
+  ['title' => 'Best B.Tech Colleges under IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare IPU engineering colleges.'],
 ];
 include 'include/components/related-pages.php';
 ?>

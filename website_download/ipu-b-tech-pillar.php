@@ -116,6 +116,15 @@ $related_pages = [
     ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & admission process'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
+    ['title' => 'IPU B.Tech Cutoff 2025 (Round-wise)', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Branch & college-wise closing ranks across counselling rounds.'],
+    ['title' => 'Best B.Tech Colleges under IPU — Compared', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top IPU engineering colleges on cutoff, fees and placements.'],
+    ['title' => 'IPU B.Tech via CUET', 'url' => '/ipu-btech-via-cuet.php', 'desc' => 'How CUET scores map to IPU B.Tech admission.'],
+    ['title' => 'IPU Choice-Filling Strategy', 'url' => '/ipu-choice-filling-strategy.php', 'desc' => 'Order your college/branch preferences to maximise your seat.'],
+    ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Delhi NCR engineering colleges accepting IPU counselling.'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Management-quota B.Tech seats, eligibility and process under IPU.'],
+    ['title' => 'MAIT Rohini — Admission', 'url' => '/mait-admission.php', 'desc' => 'Maharaja Agrasen Institute of Technology: branches, fees, placements.'],
+    ['title' => 'MSIT Janakpuri — Admission', 'url' => '/msit-admission.php', 'desc' => 'Maharaja Surajmal Institute of Technology admission under IPU.'],
+    ['title' => 'VIPS — Admission', 'url' => '/vips-admission.php', 'desc' => 'Vivekananda Institute of Professional Studies courses & admission.'],
 ];
 include 'include/components/related-pages.php';
 ?>
