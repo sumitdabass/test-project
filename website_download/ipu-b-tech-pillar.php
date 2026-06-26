@@ -38,6 +38,8 @@ include __DIR__ . '/include/components/page-hero.php';
 </ol>
 </nav>
 
+<?php $breadcrumbs = [['Home', '/'], ['IPU Admission Guide', '/ipu-admission-guide.php'], ['B.Tech Admission Hub', '']]; include 'include/components/breadcrumb-schema.php'; ?>
+
 <div class="row justify-content-center">
 <div class="col-lg-8">
 
