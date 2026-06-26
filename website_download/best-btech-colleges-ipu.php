@@ -256,6 +256,25 @@ include __DIR__ . '/include/components/page-hero.php';
           <div class="section-block">
             <h2>Compare Top IPU Engineering Colleges</h2>
             <p>Looking for a side-by-side comparison of MAIT, MSIT, BPIT and other colleges based on cutoff rank, fees, location and placements?</p>
+
+            <div class="table-responsive" style="margin:24px 0">
+              <table class="table table-bordered table-striped" style="font-size:14px">
+                <thead style="background:#0d1b6e;color:#fff">
+                  <tr><th>College</th><th>Popular B.Tech Branches</th><th>Approx. Closing Rank (IPU)</th><th>Approx. Annual Fee</th><th>Placement Highlight</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>USICT, Dwarka</td><td>CSE, IT, ECE</td><td>~38,638 (CSE R1, Delhi)</td><td>&mdash;</td><td>Strong placements; top government college under IPU</td></tr>
+                  <tr><td>USAR, Dwarka</td><td>AI-DS, AI-ML, Robotics, IIoT</td><td>~99,067 (AI-DS R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>MAIT, Rohini</td><td>CSE, IT, ECE, AIML</td><td>~70,889 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Consistently ranked best among private IPU colleges</td></tr>
+                  <tr><td>MSIT, Janakpuri</td><td>CSE, IT, ECE</td><td>~96,135 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Strong placement records; top private college under IPU</td></tr>
+                  <tr><td>BPIT, Rohini</td><td>CSE, IT, ECE</td><td>~142,454 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>BVP, Paschim Vihar</td><td>CSE, IT, ECE, AIML</td><td>~132,350 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>VIPS, Pitampura</td><td>CSE, AI&amp;DS, AI&amp;ML</td><td>~194,876 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:12px;color:#94a3b8;margin:-16px 0 16px">Closing ranks are JEE Main All India Rank (General category, Delhi quota, Round 1, 2025). Source: official GGSIPU 2025 counselling data.</p>
+
             <p><a href="top-btech-colleges-ipu-comparison.php" class="arrow-link">See the Full College Comparison Guide &rarr;</a></p>
           </div>
 
