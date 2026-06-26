@@ -16,6 +16,28 @@ include_once("include/form-handler.php");
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['BPIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<?php
+$college = [
+  'name'        => 'Bhagwan Parshuram Institute of Technology',
+  'short_name'  => 'BPIT',
+  'url'         => 'https://ipu.co.in/BPIT.php',
+  'address'     => 'Rohini, Delhi',
+  'courses'     => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Computer Science – Data Science',
+    'B.Tech Electrical Engineering',
+    'BBA',
+    'MBA',
+  ],
+  'total_seats' => 780,
+  // 'founded'       => omitted – not stated on page
+  // 'accreditation' => omitted – not stated on page
+];
+include 'include/components/college-schema.php';
+?>
 </head>
 
 <body>
