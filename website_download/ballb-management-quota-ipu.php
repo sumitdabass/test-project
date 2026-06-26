@@ -49,7 +49,7 @@ include_once("include/form-handler.php");
       "name": "Is CLAT score required for BA LLB Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A valid CLAT UG 2026 score IS mandatory for BA LLB Management Quota at IPU per Chapter 12 Note 2 + Important Instruction #21 of the GGSIPU Brochure 2026-27. CUET (UG) is also accepted as the second-priority qualifier. Open School / NIOS candidates are NOT eligible per BCI Letter BCI:D:1823/2010 dated 31.11.2010. The college runs the management-quota counselling but cannot waive the entrance qualifier or BCI bar."
+        "text": "A valid CLAT UG 2026 score IS mandatory for BA LLB Management Quota at IPU per Chapter 12 Note 2 + Important Instruction #21 of the GGSIPU Brochure 2026-27. CUET (UG) is also accepted as the second-priority qualifier. Open School / NIOS candidates are NOT eligible per BCI Letter BCI:D:1823/2010 dated 30.11.2010. The college runs the management-quota counselling but cannot waive the entrance qualifier or BCI bar."
       }
     }
   ]
@@ -89,7 +89,7 @@ Every unaided affiliated law college under Guru Gobind Singh Indraprastha Univer
 </p>
 
 <p>
-Management quota does NOT bypass the entrance qualifier. Per <strong>Chapter 12 Note 2</strong> + <strong>Important Instruction #21</strong> of the brochure, the candidate must have qualified <strong>CLAT UG 2026 (priority 1) or CUET UG 2026 (priority 2)</strong> — otherwise the application is rejected at registration. Open School / NIOS candidates are NOT eligible per <strong>BCI Letter BCI:D:1823/2010</strong> dated 31.11.2010.
+Management quota does NOT bypass the entrance qualifier. Per <strong>Chapter 12 Note 2</strong> + <strong>Important Instruction #21</strong> of the brochure, the candidate must have qualified <strong>CLAT UG 2026 (priority 1) or CUET UG 2026 (priority 2)</strong> — otherwise the application is rejected at registration. Open School / NIOS candidates are NOT eligible per <strong>BCI Letter BCI:D:1823/2010</strong> dated 30.11.2010.
 </p>
 
 <p>
@@ -103,7 +103,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 <ul>
 <li>Passed Class 12 from recognised board with English (core / elective / functional) as a subject — <strong>50% aggregate</strong> minimum (45% for SC/ST/OBC/PwD) per UG Brochure 2026-27 Ch 2.</li>
 <li><strong>Valid CLAT UG 2026 score is mandatory</strong> (priority 1). CUET UG 2026 is also accepted (priority 2 — vacant-seat fallback per Important Instruction #37).</li>
-<li><strong>BCI eligibility bar:</strong> Open School / NIOS candidates are NOT eligible (BCI Letter BCI:D:1823/2010 dated 31.11.2010).</li>
+<li><strong>BCI eligibility bar:</strong> Open School / NIOS candidates are NOT eligible (BCI Letter BCI:D:1823/2010 dated 30.11.2010).</li>
 <li>Maximum age 22 years (24 years for reserved categories) as on the cut-off date per BCI rules.</li>
 <li>Participation in the college's published management-quota admission process (newspaper advertisement + online portal per Rule 8(2)(a)(ii) of DPCI Rules 2007).</li>
 </ul>
@@ -116,6 +116,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 <li>University School of Law & Legal Studies (USLLS) – Regular counselling only</li>
 <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
 <li>Vivekananda Institute of Professional Studies (VIPS)</li>
+<li>Gitarattan International Business School (GIBS), Rohini &ndash; BA-LLB &amp; BBA-LLB management/direct seats</li>
 <li>Maharaja Surajmal Institute (MSI)</li>
 <li>Trinity Institute of Professional Studies</li>
 <li>Delhi Metropolitan Education</li>
