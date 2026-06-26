@@ -42,6 +42,10 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="blog-details">
 
+<div style="border-left:4px solid #0d1b6e;background:#f5f7ff;padding:14px 16px;border-radius:6px;margin:0 0 22px;">
+<p style="margin:0;line-height:1.7;font-size:0.96rem;"><strong>Round 1 update (25 June 2026):</strong> The GGSIPU Round 1 seat allotment result for 2026-27 has been declared on <a href="https://ipu.admissions.nic.in" target="_blank" rel="noopener">ipu.admissions.nic.in</a>. If you have a seat, this is the moment to decide <strong>Freeze vs Float</strong> (explained below) and pay the fee within the stipulated window; if you missed Round 1 or want an upgrade, plan your choices for Round 2. See the full <a href="/ipu-counselling.php">IPU Counselling 2026 schedule</a> or call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free choice-filling help.</p>
+</div>
+
 <h2>Why Choice Filling Strategy is Important in IPU Counselling</h2>
 
 <p>
