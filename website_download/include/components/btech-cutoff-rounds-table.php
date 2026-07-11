@@ -39,7 +39,7 @@ $cutoff_table_id = 'btc-' . substr(md5($cutoff_institute), 0, 8);
       Lower numbers mean tighter competition. Source: GGSIPU 2025-26 official counselling.
     </p>
     <p style="font-size:13px;color:#64748b;margin-bottom:20px">
-      Need help reading these numbers or planning your choice list? Call <a href="tel:9899991342" style="color:#e65c00;font-weight:600">9899991342</a> for free guidance.
+      Need help reading these numbers or planning your choice list? Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for free guidance.
     </p>
 
     <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e2e8f0;border-radius:8px">

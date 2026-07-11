@@ -94,7 +94,7 @@ include_once("include/base-head.php");
 </nav>
 
 <div class="row align-items-center" style="padding:30px 0">
-<div class="col-lg-7 mb-4 mb-lg-0">
+<div class="col-lg-12 mb-4 mb-lg-0">
 
 <p style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 8px">Round-wise CLAT Rank Cutoffs · 2025 Session · Guide for 2026 Admission</p>
 
@@ -114,9 +114,6 @@ Round-wise CLAT rank cutoffs for every IPU-affiliated integrated 5-year Law coll
 Free CLAT Rank Counselling: 9899991342
 </a>
 
-</div>
-<div class="col-lg-5">
-<?php include 'include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>

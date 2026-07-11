@@ -9,6 +9,7 @@ include_once("include/form-handler.php");
 <title>BA Economics (Hons) Admission in IP University 2026 | MAIT, VIPS, JIMS Colleges Guide</title>
 
 <meta name="description" content="Complete guide to BA Economics (Hons) admission in IP University (GGSIPU). Check eligibility, colleges like MAIT, VIPS, JIMS, admission process, counselling and career opportunities.">
+<link rel="canonical" href="https://ipu.co.in/economics-admission-ip-university.php">
 
 <meta name="keywords" content="BA Economics IP University, Eco Hons IPU, Economics Colleges IPU, MAIT Economics, VIPS Economics, JIMS Economics">
 
@@ -136,7 +137,7 @@ Economics honours is ideal for students interested in analytics, finance and pol
 
 <p>
 <strong>Need Admission Guidance?</strong><br>
-Call <a href="tel:9899991342">9899991342</a>
+Call <a href="tel:+919899991342">9899991342</a>
 </p>
 
 </div>
@@ -157,7 +158,7 @@ Call <a href="tel:9899991342">9899991342</a>
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

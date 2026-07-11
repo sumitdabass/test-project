@@ -204,7 +204,7 @@ The following 14 colleges are affiliated to GGSIPU for law programmes:
 GGSIPU follows the UGC refund policy. Refund of entire fees (after deduction of Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After classes start, refunds follow UGC slabs &mdash; 100% before classes start, 80% within 15 days of commencement, 50% within 30 days, and 0% after 30 days.
 </p>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free Law admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free Law admission guidance.</em></p>
 
 <hr>
 
@@ -296,7 +296,7 @@ plays a major role during seat allotment.
 
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
-<h3>Call Our Helpline <a href="tel:9899991342">+91-9899991342</a></h3>
+<h3>Call Our Helpline <a href="tel:+919899991342">+91-9899991342</a></h3>
 </div>
 </section>
 

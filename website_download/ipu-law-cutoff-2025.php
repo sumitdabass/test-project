@@ -38,7 +38,7 @@
 <?php
 $hero_title = "IPU Law Cutoff 2025 – CLAT Score for BA LLB & BBA LLB";
 $hero_subtitle = "College-wise CLAT cutoff for USLS, VIPS Law, MAIMS Law & Trinity – General Category, Delhi Quota";
-$hero_breadcrumbs = [['Home', '/'], ['Law Admission', '/IPU-Law-Admission-2026.php'], ['Law Cutoff 2025', '']];
+$hero_breadcrumbs = [['Home', '/'], ['Law Admission', '/IPU-Law-Admission.php'], ['Law Cutoff 2025', '']];
 $hero_compact = true;
 include 'include/components/hero-banner.php';
 ?>
@@ -191,7 +191,7 @@ include 'include/components/faq-section.php';
 <?php
 $related_pages = [
   ['title' => 'USLS IPU Admission 2026', 'url' => '/usls-admission.php', 'desc' => 'Complete guide to USLS – courses, CLAT admission, moot courts & career'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
   ['title' => 'BA LLB Management Quota', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Direct law admission without CLAT cutoff – process & fees'],
   ['title' => 'Trinity Law Admission', 'url' => '/trinity-law-admission.php', 'desc' => 'Trinity Institute of Professional Studies – law courses & admission'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, Law and more at IPU'],

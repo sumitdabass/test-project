@@ -104,11 +104,6 @@ p{color:#4a5568;margin-bottom:1rem}
 .hero-compact{padding:40px 0 30px}
 .hero-compact h1{font-size:clamp(1.5rem,3vw,2.2rem)}
 
-/* Preloader */
-#preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:99999;display:flex;align-items:center;justify-content:center}
-#preloader .spinner{width:40px;height:40px;border:3px solid #f0f4ff;border-top-color:#1a3a9c;border-radius:50%;animation:spin .8s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-
 /* ===== ipu design tokens ===== */
 :root{
   --ipu-ink:#0d1b6e;

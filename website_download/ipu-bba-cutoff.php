@@ -94,7 +94,7 @@ include_once("include/base-head.php");
 </nav>
 
 <div class="row align-items-center" style="padding:30px 0">
-<div class="col-lg-7 mb-4 mb-lg-0">
+<div class="col-lg-12 mb-4 mb-lg-0">
 
 <p style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 8px">Round-wise CUET Rank Cutoffs · 2025 Session · Guide for 2026</p>
 
@@ -114,9 +114,6 @@ Round-wise CUET (UG) rank cutoffs for every IPU-affiliated BBA college from the 
 Free Rank Counselling: 9899991342
 </a>
 
-</div>
-<div class="col-lg-5">
-<?php include 'include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -1410,7 +1407,7 @@ For 2026 admission, GGSIPU BBA requires: <strong>Class 12 with 50% aggregate</st
 <?php
 $related_pages = [
   ['title' => 'Top BBA Colleges under IPU', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Compare the top 10 BBA colleges under IP University.'],
-  ['title' => 'IPU BBA Admission', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA admission process and eligibility under IPU.'],
+  ['title' => 'IPU BBA Admission', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA admission process and eligibility under IPU.'],
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Full IP University affiliated-college directory.'],
 ];
 include 'include/components/related-pages.php';

@@ -6,6 +6,8 @@ include_once("include/form-handler.php");
 ?>
 
 <title>Maharaja Agrasen Business School (MABS) | Best PGDM College in Delhi</title>
+<meta name="description" content="Maharaja Agrasen Business School (MABS), Delhi – PGDM courses, specialisations, fees, admission process & placements. Call 9899991342 for free admission guidance.">
+<link rel="canonical" href="https://ipu.co.in/maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php">
 
 </head>
 
@@ -166,7 +168,7 @@ include __DIR__ . '/include/components/page-hero.php';
                     <!-- ===== CTA ===== -->
                     <div class="cta-box text-center">
                         <h4>Admissions & Counselling</h4>
-                        <a href="tel:9899991342" class="cta-btn">
+                        <a href="tel:+919899991342" class="cta-btn">
                             Call: +91 98999 91342
                         </a>
                     </div>

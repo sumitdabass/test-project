@@ -8,6 +8,7 @@ include_once("include/form-handler.php");
 <title>Top BJMC Colleges in IPU 2026 | Fees, Cutoff, CUET Eligibility Guide</title>
 
 <meta name="description" content="Best BJMC (Journalism & Mass Comm) colleges under IP University 2026 – VIPS, BVIMR, MAIMS, JIMS. Fees, CUET cutoff, placements. Call 9899991342.">
+<link rel="canonical" href="https://ipu.co.in/guide-to-bjmc-colleges-under-ip-university.php">
 
 
 
@@ -171,7 +172,7 @@ BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant 
 
 <p>GGSIPU follows the UGC refund policy. Refund of entire fees (less Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After commencement: 100% before classes start, 80% within 15 days, 50% within 30 days, 0% after 30 days.</p>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free BJMC admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free BJMC admission guidance.</em></p>
 
 
 <!-- ===== CAREER SCOPE ===== -->
@@ -217,7 +218,7 @@ BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant 
 <div class="cta-box text-center mt-5">
 <h4>Need Help with BJMC Admission?</h4>
 <p>Get expert counselling and admission guidance.</p>
-<a href="tel:9899991342" class="cta-btn">Call Now: +91 98999 91342</a>
+<a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
 
 </div>

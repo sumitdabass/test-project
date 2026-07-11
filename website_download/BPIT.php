@@ -10,6 +10,7 @@ include_once("include/form-handler.php");
 
 <title>BPIT Rohini 2026 | B.Tech Admission, Courses & Placements – IPU</title>
 <meta name="description" content="BPIT (Bhagwan Parshuram Institute of Technology) Rohini – B.Tech CSE, IT, ECE, BBA, MBA. Cutoff, fees & placements. Call 9899991342 for free IPU admission help.">
+<link rel="canonical" href="https://ipu.co.in/BPIT.php">
 
 
 <?php

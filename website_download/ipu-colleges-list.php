@@ -194,6 +194,21 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, ECE</td>
       </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/sbit-admission.php">SBIT (Shri Balwant Institute of Technology)</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, EEE, ECE, IT</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/tiips-admission.php">TIIPS (Trinity Institute of Innovations in Professional Studies)</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, IT, CSE-AIML</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/tribhuvan-admission.php">Tribhuvan College</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, AI&amp;ML, AI&amp;DS</td>
+      </tr>
     </tbody>
   </table>
   </div>
@@ -241,7 +256,7 @@ include 'include/components/hero-banner.php';
   </table>
   </div>
 
-  <p>Law admissions at IPU are based on <strong>CLAT</strong> scores or the <strong>IPU CET</strong> for BA LLB and BBA LLB programmes. LLM admission requires a valid LLB degree. See our <a href="/IPU-Law-Admission-2026.php">IPU Law Admission 2026</a> guide for the complete process.</p>
+  <p>Law admissions at IPU are based on <strong>CLAT</strong> scores or the <strong>IPU CET</strong> for BA LLB and BBA LLB programmes. LLM admission requires a valid LLB degree. See our <a href="/IPU-Law-Admission.php">IPU Law Admission 2026</a> guide for the complete process.</p>
 
   <!-- Management Colleges -->
   <h2 id="management">Management &amp; Commerce Colleges (MBA / BBA / B.Com) Under IPU</h2>
@@ -492,7 +507,7 @@ $related_pages = [
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and the complete admission process'],
   ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
   ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU']
 ];
 include 'include/components/related-pages.php';

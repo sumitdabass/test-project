@@ -153,7 +153,7 @@ The table below lists all UG and PG programmes at GGSIPU along with their offici
 <li><strong>Classes Commence:</strong> August 2026</li>
 </ul>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free entrance test &amp; admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free entrance test &amp; admission guidance.</em></p>
 
 <hr>
 
@@ -222,7 +222,7 @@ IPU Counselling Process
 <h2>Need Help with IPU CET?</h2>
 
 <p>
-Call <a href="tel:9899991342">9899991342</a> for admission guidance.
+Call <a href="tel:+919899991342">9899991342</a> for admission guidance.
 </p>
 
 </div>

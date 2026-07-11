@@ -306,7 +306,7 @@ include_once __DIR__ . '/../include/form-handler.php';
               <h3>&#128222; Confused About IPU Admission 2026?</h3>
               <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
             </div>
-            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
+            <a href="tel:+919899991342" class="cta-btn">📞 Call Free: 9899991342</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="Admissions" data-title="ggsipu issues warning against touts promising admissions for 2026-27">

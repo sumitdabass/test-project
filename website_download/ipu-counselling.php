@@ -159,7 +159,7 @@ include 'include/components/hero-banner.php';
   <p>BBA admission at IPU is now through CUET-UG scores. Centralized online enrolment opened on 8 June 2026 (Notification 26/2026) and the Round 1 seat allotment result was declared on 25 June 2026. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide</a>.</p>
 
   <h3>Law Counselling (CLAT / IPU CET based)</h3>
-  <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission-2026.php">Law Admission Guide</a>.</p>
+  <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission.php">Law Admission Guide</a>.</p>
 
   <h3>BJMC, B.Com, BCA, BA Counselling</h3>
   <p>BJMC, B.Com (H), BA Economics, BA English and BCA admissions are through CUET-UG. IPU counselling registration is the same portal — only the qualifying exam differs. Check eligibility and cutoffs in our course-wise guides.</p>
@@ -219,7 +219,7 @@ $related_pages = [
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with eligibility, fees and JEE Main cutoffs'],
   ['title' => 'IPU Choice Filling Strategy', 'url' => '/ipu-choice-filling-strategy.php', 'desc' => 'Smart choice filling strategy to maximise your seat at the best IPU college'],
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Round-wise JEE Main closing ranks for all IPU B.Tech colleges'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB admission via CLAT and IPU CET'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB admission via CLAT and IPU CET'],
   ['title' => 'IPU Helpline & Contact Number', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Official GGSIPU contact details and admission helpline'],
   ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees and process for management quota seats at IPU colleges']
 ];

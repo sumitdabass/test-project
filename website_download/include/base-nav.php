@@ -6,10 +6,6 @@
 <!-- GTM noscript fallback -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXCN7Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- Preloader -->
-<div id="preloader"><div class="spinner"></div></div>
-
-
 <!-- Header -->
 <header class="header-area">
   <div class="header-nav">

@@ -166,7 +166,7 @@ $related_pages = [
   ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Bhagwan Parshuram Institute — neighbouring engineering college in Rohini'],
   ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, process & college list for management quota seats'],
   ['title' => 'BBA Management Quota in IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct BBA admission process — MAIMS is among the top BBA colleges'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA-LLB and BBA-LLB admission at GGSIPU including MAIMS'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA-LLB and BBA-LLB admission at GGSIPU including MAIMS'],
 ];
 include 'include/components/related-pages.php';
 ?>

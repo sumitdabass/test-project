@@ -66,8 +66,8 @@ $hero_show_form = $hero_show_form ?? false;
     </div>
   </div>
 
-  <?php if (!empty($hero_breadcrumbs)): ?>
-  <!-- BreadcrumbList Schema -->
+  <?php if (!empty($hero_breadcrumbs) && empty($GLOBALS['__ipu_breadcrumb_ld'])): $GLOBALS['__ipu_breadcrumb_ld'] = true; ?>
+  <!-- BreadcrumbList Schema (emit-once; see breadcrumb-schema.php guard) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

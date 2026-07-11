@@ -160,7 +160,7 @@ include __DIR__ . '/include/components/page-hero.php';
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="counter-item text-center mt-30">
 
-                        <h3 class="title"> Call Our Helpline <a href="tel:9899991342"> +91- 9899991342 </a> </h3>
+                        <h3 class="title"> Call Our Helpline <a href="tel:+919899991342"> +91- 9899991342 </a> </h3>
 
                     </div>
                 </div>

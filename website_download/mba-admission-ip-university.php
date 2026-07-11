@@ -300,7 +300,7 @@ GGSIPU <strong>does</strong> conduct its own CET for Programme Code 101 (after C
 
 <p style="font-size:13px;background:#fff8e6;padding:12px 16px;border-left:4px solid #f59e0b;border-radius:4px;color:#7c5410"><strong>Affiliated Colleges</strong> (MAIMS, RDIAS, JIMS, BVIMR etc.): tuition fee per <strong>F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14th July 2025</strong> (6th SFRC notification, Appendix 13(i) of the brochure). Plus University Charges Rs. 20,000/year, Security Deposit Rs. 10,000 (one-time refundable), Alumni Fund Rs. 2,000, Examination Fee Rs. 3,000/year, Innovation Fee Rs. 500/year, Student Welfare Activity Fee Rs. 1,000/year. Capitation fee in any form is illegal under the Delhi Professional Colleges Act, 2007 (Section 6).</p>
 
-<p>Need help understanding the total cost across all 2 years? Call <a href="tel:9899991342"><strong>9899991342</strong></a> for guidance.</p>
+<p>Need help understanding the total cost across all 2 years? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for guidance.</p>
 
 <hr>
 
@@ -329,7 +329,7 @@ GGSIPU follows the standard UGC refund policy for fee withdrawal. Withdrawal of 
 </table>
 </div>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free MBA admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free MBA admission guidance.</em></p>
 
 <hr>
 
@@ -420,7 +420,7 @@ depending on college, specialization and student performance.
 <ul>
 <li><a href="mca-admission-ipu.php">MCA Admission (Programme Code 105)</a> &mdash; another 2-year PG path at IPU via NIMCET / CET.</li>
 <li><a href="llm-admission-ipu.php">LL.M. Admission (Programme Code 112)</a> &mdash; 1-year master of law via CLAT-PG.</li>
-<li><a href="law-admission-ip-university.php">Law Admission Guide</a></li>
+<li><a href="IPU-Law-Admission.php">Law Admission Guide</a></li>
 <li><a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a></li>
 <li><a href="IP-University-management-quota-admission-eligibility-criteria.php">Management Quota Admission</a></li>
 </ul>
@@ -432,7 +432,7 @@ depending on college, specialization and student performance.
 <h2>Need Help with MBA Admission?</h2>
 
 <p>
-Call <a href="tel:9899991342">9899991342</a> for guidance on:
+Call <a href="tel:+919899991342">9899991342</a> for guidance on:
 </p>
 
 <ul>
@@ -460,7 +460,7 @@ Call <a href="tel:9899991342">9899991342</a> for guidance on:
 
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
-<h3>MBA Admission Help: <a href="tel:9899991342">+91-9899991342</a></h3>
+<h3>MBA Admission Help: <a href="tel:+919899991342">+91-9899991342</a></h3>
 </div>
 </section>
 

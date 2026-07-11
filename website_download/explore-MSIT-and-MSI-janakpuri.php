@@ -277,7 +277,7 @@ include __DIR__ . '/include/components/page-hero.php';
                               <li style="margin: 8px 0;">✓ Management quota guidance</li>
                               <li style="margin: 8px 0;">✓ Placement insights & academic details</li>
                             </ul>
-                            <a href="tel:9899991342"
+                            <a href="tel:+919899991342"
                                style="display:inline-block; text-decoration:none;
                                       background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
                                       padding: 15px 30px;
@@ -346,7 +346,7 @@ include __DIR__ . '/include/components/page-hero.php';
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="counter-item text-center mt-30">
 
-                        <h3 class="title"> Call Our Helpline <a href="tel:9899991342"> +91- 9899991342 </a> </h3>
+                        <h3 class="title"> Call Our Helpline <a href="tel:+919899991342"> +91- 9899991342 </a> </h3>
 
                     </div>
                 </div>

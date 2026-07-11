@@ -123,7 +123,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 </ul>
 
 👉 Explore law admission guide:
-<a href="law-admission-ip-university.php">IP University Law Admission Guide</a>
+<a href="IPU-Law-Admission.php">IP University Law Admission Guide</a>
 
 <hr>
 
@@ -195,7 +195,7 @@ Guidance available for:
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -217,7 +217,7 @@ Guidance available for:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Law Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

@@ -21,6 +21,11 @@ $breadcrumbs = $breadcrumbs ?? [];
 
 if (count($breadcrumbs) < 2) return;
 
+// Emit-once guard: prevent a second BreadcrumbList when a page also renders one
+// via hero-banner.php (or vice-versa). Whichever runs first wins; the other skips.
+if (!empty($GLOBALS['__ipu_breadcrumb_ld'])) return;
+$GLOBALS['__ipu_breadcrumb_ld'] = true;
+
 $base_url = 'https://ipu.co.in';
 ?>
 <script type="application/ld+json">

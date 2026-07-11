@@ -160,7 +160,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
   ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses, counselling and admission process'],
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU']
 ];

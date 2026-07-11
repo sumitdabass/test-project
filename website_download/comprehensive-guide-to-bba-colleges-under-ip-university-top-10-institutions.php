@@ -239,7 +239,7 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 <div class="cta-box text-center mt-5">
 <h4>Need Help with BBA Admission?</h4>
 <p>Get expert counselling and admission guidance.</p>
-<a href="tel:9899991342" class="cta-btn">Call Now: +91 98999 91342</a>
+<a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
 
 </div>

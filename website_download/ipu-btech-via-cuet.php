@@ -80,7 +80,7 @@
   <div class="container">
     <h1 style="font-size:2.2rem;font-weight:700;margin-bottom:15px;">IPU B.Tech Admission via CUET 2026</h1>
     <p style="font-size:1.1rem;margin-bottom:25px;">Complete Guide: Eligibility, CUET Score, GGSIPU Counselling &amp; Top Colleges</p>
-    <a href="tel:9899991342" style="background:#f7b731;color:#1a3a6b;padding:14px 32px;border-radius:30px;font-weight:700;font-size:1rem;text-decoration:none;">&#128222; Call Helpline: 9899991342</a>
+    <a href="tel:+919899991342" style="background:#f7b731;color:#1a3a6b;padding:14px 32px;border-radius:30px;font-weight:700;font-size:1rem;text-decoration:none;">&#128222; Call Helpline: 9899991342</a>
   </div>
 </div>
 
@@ -187,7 +187,7 @@
       <div style="text-align:center;background:#f0f4ff;border-radius:10px;padding:30px;margin-top:40px;">
         <h3 style="color:#1a3a6b;font-weight:700;">Need Admission Guidance?</h3>
         <p>Call our helpline for expert counselling on IPU B.Tech admission via CUET 2026</p>
-        <a href="tel:9899991342" style="background:#1a3a6b;color:#fff;padding:12px 28px;border-radius:25px;font-weight:700;text-decoration:none;margin:5px;display:inline-block;">&#128222; Call: 9899991342</a>
+        <a href="tel:+919899991342" style="background:#1a3a6b;color:#fff;padding:12px 28px;border-radius:25px;font-weight:700;text-decoration:none;margin:5px;display:inline-block;">&#128222; Call: 9899991342</a>
         <a href="https://wa.me/919899991342" style="background:#25D366;color:#fff;padding:12px 28px;border-radius:25px;font-weight:700;text-decoration:none;margin:5px;display:inline-block;">WhatsApp Us</a>
       </div>
 

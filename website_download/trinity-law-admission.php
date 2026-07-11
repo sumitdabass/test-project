@@ -125,7 +125,7 @@ include 'include/components/faq-section.php';
 
 <?php
 $related_pages = [
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at GGSIPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at GGSIPU'],
   ['title' => 'BA LLB Management Quota', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Management quota options for law admission in IPU'],
   ['title' => 'MAIMS College Profile', 'url' => '/maims-admission.php', 'desc' => 'BA LLB and other courses at MAIMS Rohini'],
 ];

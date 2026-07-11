@@ -228,7 +228,7 @@ include __DIR__ . '/include/components/page-hero.php';
       <div style="text-align:center;background:linear-gradient(135deg,#1a3a6b,#2563a8);border-radius:12px;padding:32px 24px;color:#fff;">
         <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:10px;">Need Help with IPU Counselling?</h3>
         <p style="opacity:0.9;margin-bottom:20px;font-size:0.97rem;">Our experts guide you through every step of GGSIPU B.Tech counselling &mdash; from registration to seat confirmation.</p>
-        <a href="tel:9899991342" style="background:#f7b731;color:#1a3a6b;padding:13px 32px;border-radius:30px;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block;">&#128222; Call: 9899991342</a>
+        <a href="tel:+919899991342" style="background:#f7b731;color:#1a3a6b;padding:13px 32px;border-radius:30px;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block;">&#128222; Call: 9899991342</a>
       </div>
 
     </div><!-- /.col-md-8 -->

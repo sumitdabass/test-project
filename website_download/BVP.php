@@ -307,7 +307,7 @@ Master of Computer Applications program focuses on software development, program
       <li style="margin: 8px 0;">✓ Management quota guidance</li>
       <li style="margin: 8px 0;">✓ Placement & academic insights</li>
     </ul>
-    <a href="tel:9899991342"
+    <a href="tel:+919899991342"
        style="display:inline-block; text-decoration:none;
               background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
               padding: 15px 30px;

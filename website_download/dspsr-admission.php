@@ -40,7 +40,7 @@ include 'include/components/hero-banner.php';
 
 <p>Per Sl. No. 15 of the 2026-27 GGSIPU brochure, DSPSR runs <strong>BBA, B.Com (Hons.) and BCA</strong> across two shifts &mdash; with a combined intake of 191 BBA, 53 B.Com (Hons.) and 50 BCA seats per the 2025-26 sanctioned strength.</p>
 
-<p>For step-by-step DSPSR admission guidance, call <a href="tel:9899991342"><strong>9899991342</strong></a>.</p>
+<p>For step-by-step DSPSR admission guidance, call <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
 
 <hr>
 

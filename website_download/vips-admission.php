@@ -102,7 +102,7 @@ include 'include/components/hero-banner.php';
 
 <p>10% Management Quota seats are reserved at VIPS-TC across most unaided programmes per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). Candidates seeking management quota must still qualify the corresponding national-level entrance test (CUET / JEE Main / CLAT) per Important Instruction #21 + Chapter 12 Note 2; registration fee is capped at Rs. 2,500.</p>
 
-<p>For complete VIPS admission assistance, call <a href="tel:9899991342"><strong>9899991342</strong></a>.</p>
+<p>For complete VIPS admission assistance, call <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
 
 <hr>
 

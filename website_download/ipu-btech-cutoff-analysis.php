@@ -167,7 +167,7 @@ For personalised counselling and college selection strategy:
 
 <p>
 <b>Call:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -205,7 +205,7 @@ For personalised counselling and college selection strategy:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Admission Guidance:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

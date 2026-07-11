@@ -152,7 +152,7 @@ table.fees-table tr:hover,table.cutoff-table tr:hover{background:#fff3e6;}
 <div class="container">
 <h1 style="font-size:2rem;font-weight:800;margin-bottom:12px;color:#fff;">Best B.Tech Colleges under IP University (GGSIPU)</h1>
 <p style="font-size:1.1rem;opacity:0.9;max-width:680px;margin:0 auto 20px;">Complete 2026 Guide — Fees, Seats, NAAC Grades, Cutoffs &amp; Placements</p>
-<a href="tel:9899991342" style="background:#e87722;color:#fff;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;">📞 Free Expert Help: 9899991342</a>
+<a href="tel:+919899991342" style="background:#e87722;color:#fff;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;">📞 Free Expert Help: 9899991342</a>
 </div>
 </section>
 
@@ -264,7 +264,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 
 <!-- Mid-page Call CTA Strip -->
 <div class="call-strip">
-📞 Confused which college to choose? <a href="tel:9899991342">Call 9899991342 — Free Expert Guidance</a>
+📞 Confused which college to choose? <a href="tel:+919899991342">Call 9899991342 — Free Expert Guidance</a>
 </div>
 
 <h2 style="color:#1a1a2e;border-bottom:3px solid #e87722;padding-bottom:8px;margin-bottom:20px;">B.Tech Fees in IP University Colleges 2026</h2>
@@ -303,7 +303,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <h2 style="color:#1a1a2e;border-bottom:3px solid #e87722;padding-bottom:8px;margin-top:30px;margin-bottom:20px;">How IP University B.Tech Counselling Works</h2>
 <p style="font-size:15px;line-height:1.8;color:#444;">GGSIPU conducts centralised counselling for B.Tech admissions based on <strong>JEE Main scores</strong>. The process involves online registration, document verification, mock rounds for practice, followed by actual choice-filling rounds and seat allotment. There are typically 3 rounds before spot rounds begin. Getting your choice order right is <strong>the single most important factor</strong> in securing your preferred college and branch. Our experts help you build a winning choice-filling strategy based on your rank and preferences.</p>
 <div class="call-strip" style="margin:20px 0;">
-🎯 Want a personalised cutoff analysis? <a href="tel:9899991342">Call 9899991342 — Our Experts Will Help You</a>
+🎯 Want a personalised cutoff analysis? <a href="tel:+919899991342">Call 9899991342 — Our Experts Will Help You</a>
 </div>
 
 <!-- FAQ Section -->
@@ -322,7 +322,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <!-- Bottom WhatsApp -->
 <div style="text-align:center;margin:30px 0 10px;padding:20px;background:#f0fdf4;border-radius:10px;border:1px solid #bbf7d0;">
 <p style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:10px;">Still have questions? Connect with our experts instantly:</p>
-<a href="tel:9899991342" style="background:#e87722;color:#fff;padding:11px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;margin:4px;">📞 Call 9899991342</a>
+<a href="tel:+919899991342" style="background:#e87722;color:#fff;padding:11px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;margin:4px;">📞 Call 9899991342</a>
 <a href="https://wa.me/919899991342?text=Hi%2C+I+need+help+with+B.Tech+admission+in+IP+University" class="whatsapp-btn" target="_blank" rel="noopener">💬 WhatsApp Us</a>
 </div>
 
@@ -333,7 +333,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;overflow:hidden;margin-bottom:25px;box-shadow:0 2px 10px rgba(0,0,0,0.08);">
 <div class="sidebar-expert-badge">🎓 EXPERTS AVAILABLE NOW<span>Free guidance for B.Tech admission 2026</span></div>
 <div style="padding:15px;">
-<a href="tel:9899991342" class="sidebar-call-btn">📞 Call 9899991342</a>
+<a href="tel:+919899991342" class="sidebar-call-btn">📞 Call 9899991342</a>
 <a href="https://wa.me/919899991342?text=Hi%2C+I+need+help+with+B.Tech+admission+in+IP+University" class="sidebar-wa-btn" target="_blank" rel="noopener">💬 WhatsApp Now</a>
 <p style="font-size:12px;color:#888;text-align:center;margin:8px 0 0;">Mon–Sat 9AM–7PM | Free Guidance</p>
 </div>

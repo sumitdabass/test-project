@@ -135,7 +135,7 @@ include_once("include/form-handler.php");
         <p style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.7;max-width:560px;margin-bottom:16px">
           Free expert guidance for <a href="/IPU-B-Tech-admission-2026.php" style="color:#f59e0b;font-weight:600">B.Tech</a>,
           <a href="/mba-admission-ip-university.php" style="color:#f59e0b;font-weight:600">MBA</a>,
-          <a href="/IPU-Law-Admission-2026.php" style="color:#f59e0b;font-weight:600">Law</a>,
+          <a href="/IPU-Law-Admission.php" style="color:#f59e0b;font-weight:600">Law</a>,
           <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:#f59e0b;font-weight:600">BBA</a>,
           <a href="/bcom-admission-ipu.php" style="color:#f59e0b;font-weight:600">B.Com</a> &amp; more — from exams to seat allotment.
         </p>

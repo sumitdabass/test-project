@@ -40,7 +40,7 @@ include 'include/components/hero-banner.php';
 
 <p>Per the 2026-27 GGSIPU brochure (Sl. No. 12), BVICAM has a substantial BA(JMC) intake of <strong>240 seats</strong> (120 Shift 1 + 120 Shift 2), making it one of the largest single-college BJMC providers in IPU after VIPS-TC Pitampura. The MCA programme has 120 seats per the brochure.</p>
 
-<p>For step-by-step BVICAM admission guidance, call <a href="tel:9899991342"><strong>9899991342</strong></a>.</p>
+<p>For step-by-step BVICAM admission guidance, call <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
 
 <hr>
 

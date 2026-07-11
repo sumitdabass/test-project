@@ -229,7 +229,7 @@ include 'include/components/faq-section.php';
 
 <?php
 $related_pages = [
-    ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Full BA-LLB / BBA-LLB admission guide via CLAT'],
+    ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Full BA-LLB / BBA-LLB admission guide via CLAT'],
     ['title' => 'BBA-LLB Admission Comprehensive Guide', 'url' => '/comprehensive-guide-to-bballb-admission-in-ip-university.php', 'desc' => 'BBA-LLB programme details, top colleges, fees'],
     ['title' => 'BA-LLB Management Quota', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Direct admission via 10% management quota'],
     ['title' => 'CUET Admission Hub', 'url' => '/cuet-admission-ipu.php', 'desc' => 'Complete CUET-to-IPU guide for all 4 major courses'],

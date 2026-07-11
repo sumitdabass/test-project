@@ -92,7 +92,7 @@ $college_data = [
         ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu.php', 'desc' => 'Compare the top 10 MBA colleges under IP University'],
         ['title' => 'Top BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu.php', 'desc' => 'Ranking of the best BBA colleges under GGSIPU'],
         ['title' => 'RDIAS Admission 2026', 'url' => '/rdias-admission.php', 'desc' => 'Explore Rukmini Devi Institute for BBA in Rohini'],
-        ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Guide to BA-LLB and BBA-LLB admission under GGSIPU'],
+        ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Guide to BA-LLB and BBA-LLB admission under GGSIPU'],
     ],
 ];
 include 'include/templates/college-page-template.php';

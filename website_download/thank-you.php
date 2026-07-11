@@ -343,7 +343,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
     <span class="ty-call-badge">&#9679; Lines Open Now</span>
     <h2>Don't Wait — Call Us Right Now</h2>
     <p>Get <strong>instant answers</strong> on seat availability, cutoffs &amp; counselling steps. Our experts are available <strong>Mon–Sat, 9AM–7PM</strong>.</p>
-    <a href="tel:9899991342" class="ty-call-btn">
+    <a href="tel:+919899991342" class="ty-call-btn">
       <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> 9899991342 — Call Free
     </a>
     <br>
@@ -400,7 +400,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
         MBA
         <span class="ty-exam">via CAT / CMAT</span>
       </a>
-      <a href="IPU-Law-Admission-2026.php" class="ty-course-card">
+      <a href="IPU-Law-Admission.php" class="ty-course-card">
         <span class="ty-icon">&#9878;</span>
         BA LLB / BBA LLB
         <span class="ty-exam">via CLAT</span>
@@ -451,7 +451,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
     <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="vertical-align:-0.125em"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg> 100% Free Guidance</div>
     <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M12 2L2 7v2h20V7L12 2zM4 11v7H3v2h18v-2h-1v-7h-2v7h-3v-7h-2v7h-2v-7H9v7H6v-7H4z"/></svg> 50+ IPU Colleges Covered</div>
     <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-      <a href="tel:9899991342" style="color:#f9a825;font-weight:700;text-decoration:none;">Call: 9899991342</a>
+      <a href="tel:+919899991342" style="color:#f9a825;font-weight:700;text-decoration:none;">Call: 9899991342</a>
     </div>
   </div>
 </div>

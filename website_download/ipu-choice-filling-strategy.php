@@ -112,7 +112,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Choose backup law colleges strategically.</li>
 </ul>
 
-👉 <a href="law-admission-ip-university.php">Law Admission Guide</a>
+👉 <a href="IPU-Law-Admission.php">Law Admission Guide</a>
 
 <hr>
 
@@ -161,7 +161,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 
 <p>
 <b>Call for counselling help:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -194,7 +194,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Need Choice Filling Strategy Help?
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

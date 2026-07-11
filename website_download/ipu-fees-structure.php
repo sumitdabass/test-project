@@ -184,7 +184,7 @@ $related_pages = [
   ['title' => 'MAIT Delhi Fees & Placements', 'url' => '/mait-delhi-fees-courses-placements.php', 'desc' => 'MAIT Rohini B.Tech fees, courses, cutoff and placements'],
   ['title' => 'MAIMS Rohini BBA & MBA Fees', 'url' => '/maims-delhi-fees-courses.php', 'desc' => 'Complete MAIMS course list with fees and placements'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'B.Tech admission with eligibility, JEE Main cutoffs and fees'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB fees and admission process'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB fees and admission process'],
   ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA admission, eligibility, fees and best IPU BBA colleges']
 ];
 include 'include/components/related-pages.php';

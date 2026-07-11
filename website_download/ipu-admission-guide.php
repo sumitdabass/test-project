@@ -149,10 +149,10 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <ul>
 <li><a href="mba-admission-ip-university.php">MBA Admission in IP University (CAT / CMAT / CET Guide)</a></li>
 <li><a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide (JEE Main / CUET)</a></li>
-<li><a href="IPU-Law-Admission-2025.php">BALLB & BBALLB Law Admission Guide</a></li>
+<li><a href="IPU-Law-Admission.php">BALLB & BBALLB Law Admission Guide</a></li>
 <li><a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide & Top Colleges</a></li>
 <li><a href="guide-to-bjmc-colleges-under-ip-university.php">BJMC Admission Guide</a></li>
-<li><a href="economics-admission-2025.php">BA Economics (Hons) Admission Guide</a></li>
+<li><a href="ba-economics-admission-ipu.php">BA Economics (Hons) Admission Guide</a></li>
 </ul>
 
 <hr>
@@ -215,7 +215,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <div class="cta-box text-center mt-5">
 <h4>Need Expert Admission Guidance?</h4>
 <p>Get help with college selection and counselling strategy.</p>
-<a href="tel:9899991342" class="cta-btn">Call Now: +91 98999 91342</a>
+<a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
 
 </div>
@@ -244,20 +244,6 @@ include 'include/components/related-pages.php';
 ?>
 
 <?php include_once("include/base-footer.php"); ?>
-
-<!-- FAQ Schema -->
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"BreadcrumbList",
-"itemListElement":[
-{"@type":"ListItem","position":1,"name":"Home","item":"https://ipu.co.in/"},
-{"@type":"ListItem","position":2,"name":"IP University Admission Guide","item":"https://ipu.co.in/ipu-admission-guide.php"}
-]
-}
-</script>
 
 </body>
 </html>

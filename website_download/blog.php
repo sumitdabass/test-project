@@ -416,7 +416,7 @@ $categories = ["All","B.Tech","MBA","MCA","Law","BBA","BJMC","CET","CUET","Econo
               <h3>&#128222; Confused About IPU Admission 2026?</h3>
               <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
             </div>
-            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
+            <a href="tel:+919899991342" class="cta-btn">📞 Call Free: 9899991342</a>
           </div>
         </div>
         <?php endif; ?>

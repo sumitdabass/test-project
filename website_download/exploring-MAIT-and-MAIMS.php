@@ -348,7 +348,7 @@ include __DIR__ . '/include/components/page-hero.php';
           <div class="cta-box">
             <h3>Need Expert Guidance for MAIT / MAIMS Admission?</h3>
             <p>Get help with rank analysis, college shortlisting, management quota options and choice filling strategy for IP University 2026.</p>
-            <a href="tel:9899991342" class="btn-cta">&#128222; Call Now</a>
+            <a href="tel:+919899991342" class="btn-cta">&#128222; Call Now</a>
           </div>
 
         </article>

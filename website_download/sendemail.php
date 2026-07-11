@@ -98,9 +98,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Capture UTM & page source
     $page_url = htmlspecialchars($_POST['page_url'] ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
 
-    // Send email
+    // Send email — strip CR/LF from header-bound fields to prevent header injection
+    $subject_name   = str_replace(["\r", "\n"], ' ', $name);
+    $subject_course = str_replace(["\r", "\n"], ' ', $course);
     $to = "sumitdabass@gmail.com,sonamdabas222@gmail.com";
-    $subject = "New Enquiry: $name - $course";
+    $subject = "New Enquiry: $subject_name - $subject_course";
 
     $message  = "Name: $name\r\n";
     $message .= "Phone: $phone\r\n";

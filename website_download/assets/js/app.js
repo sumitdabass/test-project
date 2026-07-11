@@ -7,20 +7,6 @@
 (function () {
   'use strict';
 
-  // ===== Preloader =====
-  window.addEventListener('load', function () {
-    var preloader = document.getElementById('preloader');
-    if (preloader) {
-      setTimeout(function () {
-        preloader.style.opacity = '0';
-        preloader.style.transition = 'opacity 0.5s ease';
-        setTimeout(function () {
-          preloader.style.display = 'none';
-        }, 500);
-      }, 300);
-    }
-  });
-
   // ===== Sticky Header =====
   var headerNav = document.querySelector('.header-nav');
   if (headerNav) {

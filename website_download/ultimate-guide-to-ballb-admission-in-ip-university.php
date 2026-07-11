@@ -55,7 +55,7 @@ Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is <strong>1. C
 </p>
 
 👉 Complete Law Admission Guide:
-<a href="law-admission-ip-university.php"><strong>IP University Law Admission Master Guide</strong></a>
+<a href="IPU-Law-Admission.php"><strong>IP University Law Admission Master Guide</strong></a>
 
 <p>Already a graduate? See the dedicated <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> (Programme Code 238) for the 3-year LLB path through GGSIPU CET.</p>
 

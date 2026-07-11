@@ -205,7 +205,7 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 </table>
 </div>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free B.Tech admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Tech admission guidance.</em></p>
 
 <hr>
 

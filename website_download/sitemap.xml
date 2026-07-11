@@ -417,12 +417,6 @@
 </url>
 
 <url>
-<loc>https://ipu.co.in/ipu-bba-cutoff-2025.php</loc>
-<lastmod>2026-03-25</lastmod>
-<priority>0.90</priority>
-</url>
-
-<url>
 <loc>https://ipu.co.in/ipu-law-cutoff-2025.php</loc>
 <lastmod>2026-03-25</lastmod>
 <priority>0.90</priority>
@@ -862,6 +856,30 @@
 <loc>https://ipu.co.in/privacy-policy.php</loc>
 <lastmod>2026-06-11</lastmod>
 <priority>0.30</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/sbit-admission.php</loc>
+<lastmod>2026-07-11</lastmod>
+<priority>0.60</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/tiips-admission.php</loc>
+<lastmod>2026-07-11</lastmod>
+<priority>0.60</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/tribhuvan-admission.php</loc>
+<lastmod>2026-07-11</lastmod>
+<priority>0.60</priority>
+</url>
+
+<url>
+<loc>https://ipu.co.in/usct-admission.php</loc>
+<lastmod>2026-07-11</lastmod>
+<priority>0.60</priority>
 </url>
 
 </urlset>
