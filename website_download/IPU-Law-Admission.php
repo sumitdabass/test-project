@@ -321,6 +321,7 @@ $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+    ['title' => 'IPU BA-LLB Cutoff', 'url' => '/ipu-ba-llb-cutoff.php', 'desc' => 'Round-wise CLAT rank cutoffs for BA-LLB and BBA-LLB at IPU law schools'],
 ];
 include 'include/components/related-pages.php';
 ?>

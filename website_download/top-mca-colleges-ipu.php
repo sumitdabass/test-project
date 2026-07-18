@@ -241,7 +241,7 @@ $related_pages = [
   ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
   ['title' => 'Top 10 BCA Colleges in IPU 2026', 'url' => '/top-bca-colleges-ipu.php', 'desc' => 'Ranked BCA colleges under IPU with fees and placements'],
   ['title' => 'Top 10 B.Com Colleges in IPU 2026', 'url' => '/top-bcom-colleges-ipu.php', 'desc' => 'Ranked B.Com Hons colleges under IPU with fees and placements'],
-  ['title' => 'IPU MCA Admission 2026', 'url' => '/IPU-MCA-admission-2026.php', 'desc' => 'Complete MCA admission guide with NIMCET eligibility and dates'],
+  ['title' => 'IPU MCA Admission 2026', 'url' => '/mca-admission-ipu.php', 'desc' => 'Complete MCA admission guide with NIMCET eligibility and dates'],
   ['title' => 'USICT Admission Guide', 'url' => '/usict-admission.php', 'desc' => 'Complete admission guide for University School of ICT Dwarka'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi']
 ];

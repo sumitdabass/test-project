@@ -181,7 +181,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>92%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">USICT is the flagship engineering school of GGSIPU, offering highly competitive B.Tech programmes in Computer Science, IT, and ECE. It has the best academic environment and placement record among all IP University colleges.</p>
-<a href="usict-delhi.php" class="learn-more">Learn More →</a>
+<a href="usict-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -194,7 +194,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>90%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">MAIT is consistently ranked among the top IP University colleges. Strong placement record with companies like TCS, Wipro, Infosys, HCL and top startups. Excellent infrastructure and active student bodies. CSE and IT are the most sought-after branches here.</p>
-<a href="mait-delhi.php" class="learn-more">Learn More →</a>
+<a href="mait-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -207,7 +207,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>88%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">MSIT in West Delhi is famous for its strong academics and consistent placement performance. The college has a vibrant tech culture with annual fests, hackathons and inter-college competitions. CSE, IT and ECE are top-performing branches.</p>
-<a href="msit-delhi.php" class="learn-more">Learn More →</a>
+<a href="msit-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -233,7 +233,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>82%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">BPIT is a well-recognised name in the GGSIPU ecosystem with good infrastructure and a dedicated placement team. It is especially popular for Computer Science and Electronics &amp; Communication Engineering programmes.</p>
-<a href="bpit-delhi.php" class="learn-more">Learn More →</a>
+<a href="BPIT.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -365,11 +365,11 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <div style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:25px;">
 <h3 style="font-size:16px;color:#1a1a2e;margin-bottom:14px;border-bottom:2px solid #e87722;padding-bottom:6px;">Popular Admission Guides</h3>
 <ul style="list-style:none;padding:0;margin:0;">
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mait-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MAIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="msit-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MSIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bpit-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BPIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bca-colleges-under-IP-university.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BCA Colleges under IP University</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mba-colleges-under-IP-university.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MBA Colleges under IP University</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mait-admission.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MAIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="msit-admission.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MSIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="BPIT.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BPIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bca-admission-ipu.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BCA Colleges under IP University</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="top-mba-colleges-ipu.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MBA Colleges under IP University</a></li>
 <li style="padding:8px 0;"><a href="blog.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ IPU Admission Blog</a></li>
 </ul>
 </div>

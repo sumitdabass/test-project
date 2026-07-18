@@ -239,6 +239,9 @@ $related_pages = [
     ['title' => 'IPU BA LLB Admission', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'BA LLB seats, eligibility and management quota under IPU.'],
     ['title' => 'IPU B.Com Admission', 'url' => '/bcom-admission-ipu.php', 'desc' => 'B.Com (Hons) admission and top colleges under IP University.'],
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Management-quota eligibility and process across IPU courses.'],
+    ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA under IPU.'],
+    ['title' => 'IPU B.Arch Admission 2026', 'url' => '/barch-admission-ipu.php', 'desc' => 'B.Arch eligibility, NATA requirement, fees and colleges under GGSIPU.'],
+    ['title' => 'IPU M.Ed Admission 2026', 'url' => '/med-admission-ipu.php', 'desc' => 'Master of Education (M.Ed) eligibility, IPU CET and top colleges.'],
 ];
 include 'include/components/related-pages.php';
 ?>

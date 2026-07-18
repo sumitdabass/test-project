@@ -83,7 +83,7 @@ $college_data = [
     'related_pages' => [
         ['title' => 'DME Admission 2026', 'url' => '/dme-admission.php', 'desc' => 'Explore Delhi Metropolitan Education for BBA and Law in Noida'],
         ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA-LLB and BBA-LLB admission under GGSIPU'],
-        ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Check BBA cutoff trends across IPU colleges'],
+        ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Check BBA cutoff trends across IPU colleges'],
     ],
 ];
 include 'include/templates/college-page-template.php';

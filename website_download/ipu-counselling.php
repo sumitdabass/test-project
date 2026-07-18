@@ -221,7 +221,8 @@ $related_pages = [
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Round-wise JEE Main closing ranks for all IPU B.Tech colleges'],
   ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB admission via CLAT and IPU CET'],
   ['title' => 'IPU Helpline & Contact Number', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Official GGSIPU contact details and admission helpline'],
-  ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees and process for management quota seats at IPU colleges']
+  ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees and process for management quota seats at IPU colleges'],
+  ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA across IPU colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

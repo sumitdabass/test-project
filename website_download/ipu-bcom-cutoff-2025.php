@@ -189,10 +189,10 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'B.Com Admission at IPU', 'url' => '/bcom-admission-ipu.php', 'desc' => 'Complete guide to B.Com admission at IPU – eligibility, fees & process'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, B.Com, Law and more at IPU'],
-  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
+  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU counselling process – choice filling & seat allotment'],
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'College-wise B.Tech cutoff for all branches at IPU'],
-  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
+  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
 ];
 include 'include/components/related-pages.php';
 ?>

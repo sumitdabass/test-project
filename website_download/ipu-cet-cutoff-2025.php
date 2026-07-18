@@ -139,7 +139,7 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BBA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~92 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~83 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bba-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View BBA Cutoff</a></td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BBA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~92 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~83 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bba-cutoff.php" style="color:#1a3a9c;font-weight:600">View BBA Cutoff</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><strong>BCA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~70 (IITM)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/bca-admission-ipu.php" style="color:#1a3a9c;font-weight:600">View BCA Details</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BJMC</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bjmc-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View BJMC Cutoff</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><strong>B.Com</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~78 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~60 (IITM)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bcom-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View B.Com Cutoff</a></td></tr>
@@ -200,11 +200,11 @@ include 'include/components/faq-section.php';
 <?php
 $related_pages = [
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'College-wise B.Tech cutoff for all branches at IPU based on JEE Main'],
-  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
+  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU BJMC Cutoff 2025', 'url' => '/ipu-bjmc-cutoff-2025.php', 'desc' => 'Round-wise BJMC cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, Law and more at IPU'],
   ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU counselling process – choice filling & seat allotment'],
-  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
+  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
 ];
 include 'include/components/related-pages.php';
 ?>

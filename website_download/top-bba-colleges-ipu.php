@@ -245,7 +245,7 @@ $related_pages = [
   ['title' => 'Top 10 BCA Colleges in IPU 2026', 'url' => '/top-bca-colleges-ipu.php', 'desc' => 'Ranked BCA colleges under IPU with fees, cutoff and placements'],
   ['title' => 'Top 10 B.Com Colleges in IPU 2026', 'url' => '/top-bcom-colleges-ipu.php', 'desc' => 'Ranked B.Com Hons colleges under IPU with fees and placements'],
   ['title' => 'Top 10 MCA Colleges in IPU 2026', 'url' => '/top-mca-colleges-ipu.php', 'desc' => 'Ranked MCA colleges under IPU with NIMCET cutoffs and fees'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/IPU-BBA-admission-2026.php', 'desc' => 'Complete BBA admission guide with eligibility and dates'],
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete BBA admission guide with eligibility and dates'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
   ['title' => 'Top B.Tech Colleges Delhi 2026', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Ranked B.Tech colleges under IPU with cutoffs and placements']
 ];

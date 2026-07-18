@@ -508,7 +508,10 @@ $related_pages = [
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and the complete admission process'],
   ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
   ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
-  ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU']
+  ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU'],
+  ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA across IPU colleges'],
+  ['title' => 'IPU B.Arch Admission 2026', 'url' => '/barch-admission-ipu.php', 'desc' => 'B.Arch eligibility, NATA requirement, fees and colleges under GGSIPU'],
+  ['title' => 'IPU M.Ed Admission 2026', 'url' => '/med-admission-ipu.php', 'desc' => 'Master of Education (M.Ed) eligibility, IPU CET and top colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

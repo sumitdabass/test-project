@@ -266,10 +266,9 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'IPU MBA Admission 2026', 'url' => '/ipu-mba-admission-2026.php', 'desc' => 'Complete MBA admission guide with CAT/CMAT/CET eligibility'],
+  ['title' => 'IPU MBA Admission 2026', 'url' => '/mba-admission-ip-university.php', 'desc' => 'Complete MBA admission guide with CAT/CMAT/CET eligibility'],
   ['title' => 'USMS Dwarka Admission Guide', 'url' => '/usms-admission.php', 'desc' => 'Admission guide for University School of Management Studies'],
-  ['title' => 'MBA Colleges under IP University', 'url' => '/mba-colleges-under-IP-university.php', 'desc' => 'Complete list of MBA colleges under GGSIPU with fees'],
-  ['title' => 'IPU CET PG 2026', 'url' => '/ipu-cet-2025.php', 'desc' => 'IPU CET PG exam dates, eligibility and syllabus'],
+  ['title' => 'IPU CET PG 2026', 'url' => '/ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php', 'desc' => 'IPU CET PG exam dates, eligibility and syllabus'],
   ['title' => 'Top Law Colleges in IPU 2026', 'url' => '/top-law-colleges-ipu.php', 'desc' => 'Top 10 law colleges under IP University ranking'],
   ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges.php', 'desc' => 'Best IPU colleges across all programmes ranked']
 ];

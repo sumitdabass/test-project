@@ -296,12 +296,13 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
-  ['title' => 'IPU Law Admission 2026', 'url' => '/ipu-law-admission-2026.php', 'desc' => 'Complete law admission guide with CLAT eligibility and dates'],
-  ['title' => 'USLLS Dwarka Admission Guide', 'url' => '/uslls-admission.php', 'desc' => 'Detailed guide for USLLS BA LLB and LLM programmes'],
-  ['title' => 'VIPS Pitampura Law', 'url' => '/vips-pitampura.php', 'desc' => 'VIPS Pitampura law programme admission and fees'],
-  ['title' => 'IPU BA LLB Admission', 'url' => '/ipu-ba-llb-admission.php', 'desc' => '5-year integrated BA LLB admission under IPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete law admission guide with CLAT eligibility and dates'],
+  ['title' => 'USLLS Dwarka Admission Guide', 'url' => '/usls-admission.php', 'desc' => 'Detailed guide for USLLS BA LLB and LLM programmes'],
+  ['title' => 'VIPS Pitampura Law', 'url' => '/vips-admission.php', 'desc' => 'VIPS Pitampura law programme admission and fees'],
+  ['title' => 'IPU BA LLB Admission', 'url' => '/ultimate-guide-to-ballb-admission-in-ip-university.php', 'desc' => '5-year integrated BA LLB admission under IPU'],
   ['title' => 'Top MBA Colleges in IPU 2026', 'url' => '/top-mba-colleges-ipu.php', 'desc' => 'Top 10 MBA colleges under IP University ranking'],
-  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges.php', 'desc' => 'Best IPU colleges across all programmes ranked']
+  ['title' => 'Top 10 IPU Colleges Overall 2026', 'url' => '/top-ipu-colleges.php', 'desc' => 'Best IPU colleges across all programmes ranked'],
+  ['title' => 'IPU BA-LLB Cutoff', 'url' => '/ipu-ba-llb-cutoff.php', 'desc' => 'Round-wise CLAT rank cutoffs for BA-LLB and BBA-LLB at top IPU law colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

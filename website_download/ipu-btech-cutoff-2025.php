@@ -225,7 +225,8 @@ $related_pages = [
   ['title' => 'Best B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top engineering colleges under GGSIPU – placements, fees & ranking'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, Law and more'],
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ colleges affiliated to GGSIPU Delhi'],
-  ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step counselling process, choice filling and seat allotment']
+  ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step counselling process, choice filling and seat allotment'],
+  ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual B.Tech fees and total programme cost across IPU colleges']
 ];
 include 'include/components/related-pages.php';
 ?>
