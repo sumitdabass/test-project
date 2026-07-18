@@ -30,4 +30,24 @@ Predicted post-season recovery is materializing (ggsipu counselling 2026 back to
 
 ### Follow-up
 - Next recheck ~2 weeks, or after any deploy.
-- Backlog to action = `docs/audits/2026-07-11-full-site-recheck.md` (additive-safe batch H1–H7/M1 + C1 FTP rotation). None deployed yet.
+- Backlog to action = `docs/audits/2026-07-11-full-site-recheck.md` (additive-safe batch H1–H7/M1 + C1 FTP rotation).
+
+---
+
+## DEPLOY LOG — 2026-07-18 (68 clean files → prod)
+
+**Deployed** commit `a43ed33` (internal-linking push) + the non-Phase-2 slice of `1f85241` (audit batch) via `deploy.py --manifest` (FTP, 68/68 uploaded, exit 0).
+
+**Scoping decision:** 13 files are edited by BOTH the audit batch and the HELD Phase 2 (`a7627b8`); a file on disk carries both edits, so uploading them would ship Phase 2. Excluded those 13 (incl. global `include/base-head.php` + `IPU-Law-Admission.php`) → deployed only the 68 Phase-2-clean files. Phase 2 stays fully held for the post-15-Aug window.
+
+**What went live:**
+- Internal-linking push (23 of 24 files): 29 stub links repointed off 301s + 4 orphans de-orphaned (`ipu-fees-structure` +4 inbound, `ipu-ba-llb-cutoff` +3, `barch-admission-ipu` +2, `med-admission-ipu` +2).
+- Audit fixes (non-entangled): sitemap 404 drop, duplicate enquiry-form removals, CRLF mail-header hardening (form-handler + sendemail), breadcrumb dedup (breadcrumb-schema + hero-banner shipped together), preloader removal (base-nav + app.js; base-head dead CSS waits with Phase 2).
+
+**Live verification (curl):** 58 pages HTTP 200; 10 non-200 all expected-correct (8 `include/*` `.htaccess`-blocked 403, `law-admission-ip-university.php` 301 source, `sendemail.php` 302 on GET). De-orphan links confirmed present on prod. Live crosslink scan = **845 links across 22 content pages, 0 stub links.**
+
+**Still held / open:**
+- Phase 2 speed `a7627b8` + its 13 entangled files → post-15-Aug deploy.
+- C1: FTP password still committed in git history — rotate cPanel pw (Sumit) → then de-hardcode scripts.
+
+**Watch for next recheck (~01-Aug):** did the de-orphaned high-intent pages move? `ipu-fees-structure.php` (was pos 6.1 / 2.2% CTR), `ipu-ba-llb-cutoff.php`, and whether the 301→direct repoints firmed up any positions.
