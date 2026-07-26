@@ -20,7 +20,7 @@ $cta_subtext = $cta_subtext ?? 'Talk to our expert counsellors for free guidance
       </div>
       <div class="col-lg-4 col-md-5 text-md-end">
         <a href="tel:+919899991342" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#f59e0b,#FFD700);color:#0d1b6e;padding:14px 32px;border-radius:50px;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 4px 15px rgba(245,158,11,.3);transition:transform .2s"
-           onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+           onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'" data-cta-src="hero">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#0d1b6e"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
           Call: 9899991342
         </a>
