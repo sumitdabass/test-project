@@ -40,7 +40,7 @@ $form_error = $form_error ?? null;
   </div>
   <?php endif; ?>
 
-  <div class="ipu-enquiry__form-wrap">
+  <div class="ipu-enquiry__form-wrap" id="enquiry-form">
     <h3 class="ipu-enquiry__heading"><?= htmlspecialchars($enquiry_heading) ?></h3>
     <p class="ipu-enquiry__subheading"><?= htmlspecialchars($enquiry_subheading) ?></p>
 
