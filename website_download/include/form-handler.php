@@ -11,6 +11,9 @@
  */
 
 require_once __DIR__ . '/helpers/phone-dedup.php';
+// Ensure webp_img()/responsive_img() are defined for pages that call them.
+// Bridge until the Phase-2 base-head.php (which also include_once's this) ships; include_once dedupes.
+require_once __DIR__ . '/image-helper.php';
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
