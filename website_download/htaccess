@@ -5,6 +5,76 @@
 RewriteEngine On
 
 # =============================================
+# NEWS POST REDIRECTS — duplicate consolidation
+# =============================================
+# Dedup of LLM-rephrased reposts of the same source notification.
+# Each line redirects the dupe URL to the oldest (canonical) version.
+RewriteRule ^news/last-opportunity-ipu-cet-registration\.php$ /news/final-opportunity-ipu-cet-registration.php [L,R=301]
+RewriteRule ^news/ipu-application-deadline-extended\.php$ /news/ipu-application-deadline-extension-national-level-test.php [L,R=301]
+RewriteRule ^news/ipu-bpt-bot-admission-criteria-nomenclature-changes\.php$ /news/ipu-bpt-bot-nomenclature-admission-changes.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-2026\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-btech-lateral-entry-seat-intake-announced\.php$ /news/ipu-btech-lateral-entry-seat-intake-released.php [L,R=301]
+RewriteRule ^news/ipu-new-medical-paramedical-applications\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/ipu-new-medical-paramedical-programs-2026\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-applications-open\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-applications\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-programmes-2026-27\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+RewriteRule ^news/new-medical-paramedical-programmes-introduced\.php$ /news/ipu-new-medical-paramedical-applications-2026.php [L,R=301]
+# Added 2026-09-24: second dedup pass (same notice re-slugged on consecutive days).
+RewriteRule ^news/verify-heis-avoid-fake-universities\.php$ /news/verify-institutions-avoid-fake-universities.php [L,R=301]
+RewriteRule ^news/msc-slp-application-withdrawal\.php$ /news/ipu-withdraws-msc-slp-applications.php [L,R=301]
+RewriteRule ^news/ipu-withdraws-msc-speech-language-pathology-applications\.php$ /news/ipu-withdraws-msc-slp-applications.php [L,R=301]
+RewriteRule ^news/msc-speech-language-pathology-applications-withdrawn\.php$ /news/ipu-withdraws-msc-slp-applications.php [L,R=301]
+RewriteRule ^news/ggsipu-withdraws-msc-slp-applications\.php$ /news/ipu-withdraws-msc-slp-applications.php [L,R=301]
+RewriteRule ^news/msc-speech-language-pathology-application-withdrawn\.php$ /news/ipu-withdraws-msc-slp-applications.php [L,R=301]
+RewriteRule ^news/ggsipu-warning-touts-admission-fraud\.php$ /news/ggsipu-admissions-warning-touts.php [L,R=301]
+RewriteRule ^news/ggsipu-warning-admission-touts-fake-promises\.php$ /news/ggsipu-admissions-warning-touts.php [L,R=301]
+RewriteRule ^news/ggsipu-admission-warning-touts-fraud\.php$ /news/ggsipu-admissions-warning-touts.php [L,R=301]
+RewriteRule ^news/ggsipu-warning-admission-touts\.php$ /news/ggsipu-admissions-warning-touts.php [L,R=301]
+RewriteRule ^news/ipu-extends-application-deadline-new-medical-paramedical-courses\.php$ /news/medical-paramedical-application-deadline-extended.php [L,R=301]
+RewriteRule ^news/ipu-law-admission-clat-portal-consent\.php$ /news/clat-consent-nlu-portal-ipu-law-admissions.php [L,R=301]
+RewriteRule ^news/ipu-law-admissions-clat-consent-nlu-portal\.php$ /news/clat-consent-nlu-portal-ipu-law-admissions.php [L,R=301]
+RewriteRule ^news/ggsipu-med-offline-counselling-schedule\.php$ /news/ipu-med-cet-120-offline-counselling-schedule.php [L,R=301]
+RewriteRule ^news/ipu-le-btech-diploma-round-1-schedule\.php$ /news/ipu-le-btech-diploma-code-128-round-1-schedule.php [L,R=301]
+RewriteRule ^news/ipu-mpo-cet-109-offline-counselling-schedule\.php$ /news/mpo-cet-code-109-first-offline-counselling-schedule.php [L,R=301]
+RewriteRule ^news/ipu-physical-reporting-offline-courses\.php$ /news/physical-reporting-offline-courses-announced.php [L,R=301]
+RewriteRule ^news/bsc-yoga-round-1-seat-status\.php$ /news/bsc-yoga-round-1-offline-counselling-seat-status.php [L,R=301]
+RewriteRule ^news/ggsipu-online-spot-round-counselling-schedule\.php$ /news/ipu-online-spot-round-counselling-notice.php [L,R=301]
+RewriteRule ^news/spot-round-offline-counselling-academic-session\.php$ /news/ipu-spot-round-offline-counselling-2026-2027.php [L,R=301]
+RewriteRule ^news/spot-round-two-fee-payment-and-reporting-schedule\.php$ /news/spot-round-2-fee-payment-reporting-schedule.php [L,R=301]
+RewriteRule ^news/ba-english-fee-refund-order-issued\.php$ /news/ba-english-admission-withdrawal-refund-order.php [L,R=301]
+
+
+# Renamed 2026-05-15: BBA cutoff page is evergreen (no year in URL); old year-suffixed URLs 301 to canonical
+RewriteRule ^ipu-bba-cutoff-(202[5-9])\.php$ /ipu-bba-cutoff.php [L,R=301]
+
+# =============================================
+# BROKEN-LINK 301s — internal pages reference these URLs but the files don't exist;
+# canonical targets all verified live. Added 2026-05-15 from crosslink audit.
+# =============================================
+RewriteRule ^IPU-BBA-admission-2026\.php$ /comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php [L,R=301]
+RewriteRule ^IPU-BCA-admission-2026\.php$ /bca-admission-ipu.php [L,R=301]
+RewriteRule ^IPU-BCom-admission-2026\.php$ /bcom-admission-ipu.php [L,R=301]
+RewriteRule ^IPU-MCA-admission-2026\.php$ /mca-admission-ipu.php [L,R=301]
+RewriteRule ^bca-colleges-under-IP-university\.php$ /bca-admission-ipu.php [L,R=301]
+RewriteRule ^bjmc-colleges-ipu\.php$ /guide-to-bjmc-colleges-under-ip-university.php [L,R=301]
+RewriteRule ^bpit-delhi\.php$ /BPIT.php [L,R=301]
+RewriteRule ^ipu-b-tech-admission-2025\.php$ /IPU-B-Tech-admission-2026.php [NC,L,R=301]
+RewriteRule ^ipu-ba-llb-admission\.php$ /ultimate-guide-to-ballb-admission-in-ip-university.php [L,R=301]
+RewriteRule ^ipu-cet-2025\.php$ /ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php [L,R=301]
+RewriteRule ^ipu-helpline\.php$ /ipu-helpline-contact-number.php [L,R=301]
+RewriteRule ^ipu-law-admission-2026\.php$ /IPU-Law-Admission-2026.php [L,R=301]
+RewriteRule ^ipu-law-admission\.php$ /IPU-Law-Admission.php [L,R=301]
+RewriteRule ^ipu-mba-admission-2026\.php$ /mba-admission-ip-university.php [L,R=301]
+RewriteRule ^mait-delhi\.php$ /mait-admission.php [L,R=301]
+RewriteRule ^mba-colleges-under-IP-university\.php$ /top-mba-colleges-ipu.php [L,R=301]
+RewriteRule ^msit-delhi\.php$ /msit-admission.php [L,R=301]
+RewriteRule ^usict-delhi\.php$ /usict-admission.php [L,R=301]
+RewriteRule ^uslls-admission\.php$ /usls-admission.php [L,R=301]
+RewriteRule ^vips-pitampura\.php$ /vips-admission.php [L,R=301]
+
+# =============================================
 # CANONICAL HOST — www/mail → apex (single-hop with HTTPS)
 # Fixes: 4 homepage variants indexed in Google
 # (ipu.co.in/, www.ipu.co.in/, www.ipu.co.in/index.php,
@@ -68,7 +138,12 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     Header set Cache-Control "max-age=31536000, public, immutable"
   </FilesMatch>
   <FilesMatch "\.(php|html)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Cache-Control "public, max-age=1800"
+    Header unset Pragma
+  </FilesMatch>
+  # Form / POST handlers must NOT be cached
+  <FilesMatch "^(sendemail|form-handler|form-handler\.php|thank-you|thanku)\.php$">
+    Header set Cache-Control "no-store, must-revalidate"
     Header set Pragma "no-cache"
   </FilesMatch>
 
@@ -87,7 +162,21 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   Deny from all
 </FilesMatch>
 
+# Block specific internal docs and audit reports (defence-in-depth)
+<Files "AI_AGENT_README.md">
+  Require all denied
+</Files>
+<Files "seo-report-march-2026.html">
+  Require all denied
+</Files>
+
 # Block direct access to include directory
 <IfModule mod_rewrite.c>
   RewriteRule ^include/ - [F,L]
 </IfModule>
+
+# =============================================
+# 301 ORPHAN INDEX VARIANTS — collapse to canonical homepage
+# =============================================
+RewriteRule ^index-old\.php$ / [L,R=301]
+RewriteRule ^index-new\.php$ / [L,R=301]
