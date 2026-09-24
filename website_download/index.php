@@ -81,6 +81,12 @@ include_once("include/form-handler.php");
       "url": "https://ipu.co.in/",
       "name": "IP University (GGSIPU) Admissions 2026 – B.Tech, MBA, MCA, Law and More",
       "isPartOf": {"@id": "https://ipu.co.in/#website"},
+      "about": {
+        "@type": "CollegeOrUniversity",
+        "name": "Guru Gobind Singh Indraprastha University, Delhi",
+        "alternateName": ["GGSIPU", "IP University", "IPU"],
+        "url": "https://www.ipu.ac.in/"
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ipu.co.in/"}]
@@ -119,8 +125,6 @@ include_once("include/form-handler.php");
 
       <!-- Left: Content -->
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <p style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:8px">Guru Gobind Singh Indraprastha University, Delhi</p>
-
         <h1 style="font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:16px">
           Expert Guidance for<br>
           <span style="color:#f59e0b">IPU Admission 2026</span>
