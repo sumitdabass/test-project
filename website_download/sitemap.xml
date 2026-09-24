@@ -51,12 +51,6 @@
 </url>
 
 <url>
-<loc>https://ipu.co.in/law-admission-ip-university.php</loc>
-<lastmod>2026-02-15</lastmod>
-<priority>0.96</priority>
-</url>
-
-<url>
 <loc>https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php</loc>
 <lastmod>2026-02-15</lastmod>
 <priority>0.92</priority>
@@ -66,12 +60,6 @@
 <loc>https://ipu.co.in/guide-to-bjmc-colleges-under-ip-university.php</loc>
 <lastmod>2026-02-15</lastmod>
 <priority>0.90</priority>
-</url>
-
-<url>
-<loc>https://ipu.co.in/economics-admission-2025.php</loc>
-<lastmod>2026-02-15</lastmod>
-<priority>0.88</priority>
 </url>
 
 <!-- ================= EXAMS & PROCESS ================= -->
@@ -167,7 +155,7 @@
 </url>
 
 <url>
-<loc>https://ipu.co.in/vips-pitampura-courses.php</loc>
+<loc>https://ipu.co.in/vips-admission.php</loc>
 <lastmod>2026-02-15</lastmod>
 <priority>0.84</priority>
 </url>
@@ -201,13 +189,6 @@
 
 <url>
 <loc>https://ipu.co.in/ipu-btech-via-cuet.php</loc>
-<lastmod>2026-03-20</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.80</priority>
-</url>
-
-<url>
-<loc>https://ipu.co.in/ipu-bba-admission.php</loc>
 <lastmod>2026-03-20</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.80</priority>
@@ -417,7 +398,7 @@
 </url>
 
 <url>
-<loc>https://ipu.co.in/ipu-bba-cutoff-2025.php</loc>
+<loc>https://ipu.co.in/ipu-bba-cutoff.php</loc>
 <lastmod>2026-03-25</lastmod>
 <priority>0.90</priority>
 </url>
@@ -539,18 +520,528 @@
 <priority>0.85</priority>
 </url>
   <url>
+    <loc>https://ipu.co.in/news/ggsipu-round-one-bhms-counselling-schedule-announced.php</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ba-english-fee-refund-order-issued.php</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mca-withdrawal-refund-order-issued.php</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ba-english-admission-withdrawal-refund-order.php</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bed-se-round-three-cutoff.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bcom-cet-merit-rank-list-declared.php</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/paramedical-round-one-cutoff-released.php</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bba-cuet-rank-merit-list-released.php</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/b-pharm-extended-open-house-offline-counselling.php</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/final-offline-registration-unregistered-candidates.php</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mba-cat-round-three-cutoff-released.php</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mpt-first-counselling-schedule-released.php</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bba-code-vacancy-position-status.php</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mbbs-round-1-counselling-schedule-extended.php</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bed-special-education-seat-intake.php</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-two-fee-payment-and-reporting-schedule.php</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-offline-counselling-schedule-withdrawn.php</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-2-fee-payment-reporting-schedule.php</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-mbbs-registration-and-correction-window-extension.php</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/revised-cuet-merit-list-bca-admissions.php</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bachelor-clinical-psychology-round-two-counselling-schedule.php</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-two-counselling-schedule-ba-llb-bba-llb.php</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bba-spot-round-two-vacant-seats.php</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/tentative-vacant-seats-btech-spot-round-two.php</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bcom-hons-spot-round-two-vacant-seats.php</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mba-spot-and-sliding-round-counselling-schedule.php</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-1-counselling-mba-mca.php</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/physical-spot-round-2-counselling-postponed.php</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mba-mca-spot-round-offline-counselling-registration.php</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-special-offline-counselling-bhmct-bms.php</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-offline-counselling-academic-session.php</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-spot-round-offline-counselling-2026-2027.php</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/spot-round-results-postponed.php</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/dpharm-mpharm-application-deadline-extended.php</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-sports-quota-document-verification-trial-schedule.php</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-sports-quota-applicant-list-released.php</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-online-spot-round-counselling-schedule.php</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-online-spot-round-counselling-notice.php</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-med-cuet-pg-admission-notice.php</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-key-points-round-3-sliding-round.php</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mtech-ibt-application-deadline-extended.php</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-document-category-certificate-validity-notice.php</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bpharm-second-offline-counselling-schedule.php</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-3-year-llb-second-offline-counselling-schedule.php</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-round-2-counselling-schedule-btech-llb-bba.php</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-round-2-counselling-schedule-released.php</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-single-girl-child-quota-tentative-merit-list.php</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bba-round-2-available-institutes.php</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-ba-bed-first-offline-counselling-schedule.php</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bsc-yoga-round-1-seat-status.php</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/bsc-yoga-round-1-offline-counselling-seat-status.php</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-mba-round-1-post-result-activities.php</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-single-girl-child-quota-revised-list.php</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bpharm-offline-counselling-schedule-round-1.php</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-extends-round-1-part-academic-fee-deadline.php</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-offline-counselling-orphaned-children.php</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ba-liberal-arts-counselling-suspended-july-3.php</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-physical-reporting-offline-courses.php</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/physical-reporting-offline-courses-announced.php</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-post-round-1-counselling-schedule-btech-bba-bca-llm.php</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-mca-round-1-counselling-choice-filling.php</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-round-1-post-allotment-schedule-llb-ug.php</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bms-round-1-counselling-schedule-released.php</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-mpo-cet-109-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mpo-cet-code-109-first-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/post-basic-bsc-nursing-merit-list-released.php</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-llm-round-1-counselling-debarred-candidates.php</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-b-mrit-cet-134-round-1-counselling-schedule.php</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-ms-packaging-technology-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-le-btech-diploma-round-1-schedule.php</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-le-btech-diploma-code-128-round-1-schedule.php</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-ma-english-first-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-round-1-counselling-schedule-extended.php</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-med-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-med-cet-120-offline-counselling-schedule.php</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-law-admissions-clat-consent-nlu-portal.php</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-law-admission-clat-portal-consent.php</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/clat-consent-nlu-portal-ipu-law-admissions.php</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-extends-application-submission-deadline.php</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/mplan-urp-first-round-offline-counselling.php</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-centralized-online-counselling-enrolment.php</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-extends-application-deadline-new-medical-paramedical-courses.php</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/medical-paramedical-application-deadline-extended.php</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-warning-admission-touts.php</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-admission-warning-touts-fraud.php</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-warning-admission-touts-fake-promises.php</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-warning-touts-admission-fraud.php</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-admissions-warning-touts.php</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/msc-speech-language-pathology-application-withdrawn.php</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-withdraws-msc-slp-applications.php</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/msc-speech-language-pathology-applications-withdrawn.php</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-withdraws-msc-speech-language-pathology-applications.php</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/msc-slp-application-withdrawal.php</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-withdraws-msc-slp-applications.php</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ggsipu-paramedical-course-name-changes.php</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/verify-heis-avoid-fake-universities.php</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/verify-institutions-avoid-fake-universities.php</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-new-medical-paramedical-applications-2026.php</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-btech-lateral-entry-seat-intake-released.php</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-cet-clubbing-allied-health-sciences.php</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-bpt-bot-nomenclature-admission-changes.php</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/news/ipu-application-deadline-extension-national-level-test.php</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://ipu.co.in/news/welcome-news-launched.php</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://ipu.co.in/news/final-opportunity-ipu-cet-registration.php</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://ipu.co.in/news/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>

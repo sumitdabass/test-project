@@ -5,7 +5,7 @@
   "date_modified": "2026-04-15",
   "category": "General",
   "tags": ["announcement"],
-  "featured": true,
+  "featured": false,
   "is_urgent": false,
   "image": "assets/images/news/general.jpg",
   "tldr": "We've launched a dedicated section for IPU admission news, counselling schedules, CET updates, and results. Real updates begin here shortly, sourced directly from official IPU channels.",

@@ -9,7 +9,8 @@ Flow:
   1. Fetch each source's HTML.
   2. Extract candidate links whose anchor text or URL contains admission/
      counselling/CET/result/notification keywords.
-  3. Skip items whose target slug already exists under content/news/.
+  3. Skip items whose source link is in content/news/.seen-links.json, or
+     whose target slug already exists under content/news/.
   4. For each new item, call OpenAI GPT-4o mini with the system prompt from
      deployment/prompts/news-rewrite-system.md, asking for JSON matching our
      news post schema.
@@ -41,6 +42,9 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 CONTENT_DIR = REPO / "content" / "news"
 PROMPT_PATH = REPO / "deployment" / "prompts" / "news-rewrite-system.md"
+# Source links already turned into a post (or rejected by the model). Lives in
+# content/news/ so the workflow's `git add content/news/` commits it.
+SEEN_PATH = CONTENT_DIR / ".seen-links.json"
 
 SOURCES = [
     {"name": "ipu.admissions.nic.in/current-events",      "url": "https://ipu.admissions.nic.in/current-events/"},
@@ -138,6 +142,32 @@ def existing_slugs() -> set[str]:
     return {p.stem for p in CONTENT_DIR.glob("*.md")}
 
 
+def normalise_link(url: str) -> str:
+    return url.split("#", 1)[0].strip().rstrip("/").lower()
+
+
+def load_seen_links() -> set[str] | None:
+    """None means no state file yet (first run after dedup was introduced)."""
+    if not SEEN_PATH.exists():
+        return None
+    seen = set(json.loads(SEEN_PATH.read_text(encoding="utf-8")))
+    # Posts written since source_url was added also carry their link.
+    for md in CONTENT_DIR.glob("*.md"):
+        head = md.read_text(encoding="utf-8").split("\n---", 1)[0]
+        try:
+            src = json.loads(head).get("source_url")
+        except json.JSONDecodeError:
+            continue
+        if src:
+            seen.add(normalise_link(src))
+    return seen
+
+
+def save_seen_links(seen: set[str]) -> None:
+    SEEN_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SEEN_PATH.write_text(json.dumps(sorted(seen), indent=2) + "\n", encoding="utf-8")
+
+
 def call_llm(system_prompt: str, user_message: str) -> dict:
     """Call Gemini via AI Studio REST API. Returns the parsed JSON object the
     model produced."""
@@ -178,11 +208,12 @@ def call_llm(system_prompt: str, user_message: str) -> dict:
     return json.loads(text)
 
 
-def write_post(fm: dict, body_md: str, image: str) -> Path:
+def write_post(fm: dict, body_md: str, image: str, source_url: str) -> Path:
     slug = fm["slug"]
     out = CONTENT_DIR / f"{slug}.md"
     fm_to_write = {k: v for k, v in fm.items() if k != "body_md"}
     fm_to_write["image"] = image
+    fm_to_write["source_url"] = source_url
     payload = json.dumps(fm_to_write, indent=2, ensure_ascii=False)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(f"{payload}\n---\n{body_md.strip()}\n", encoding="utf-8")
@@ -226,6 +257,19 @@ def main() -> int:
 
     candidates = gather_candidates()
 
+    # The model rewrites each notice under a new slug, so slug checks alone let
+    # the same notice through day after day. Dedup on the source link instead.
+    seen_links = load_seen_links()
+    if seen_links is None:
+        if not candidates:
+            print("no candidates and no seen-links state; not baselining on an empty fetch")
+            return 0
+        # Older posts never recorded their source link, so treat everything
+        # currently listed as already published and start fresh from tomorrow.
+        save_seen_links({normalise_link(c["link"]) for c in candidates})
+        print(f"baseline: marked {len(candidates)} current source links as seen; no posts this run")
+        return 0
+
     written: list[Path] = []
     errors: list[tuple[str, str]] = []
 
@@ -233,6 +277,10 @@ def main() -> int:
         if len(written) >= MAX_ITEMS:
             print(f"hit MAX_ITEMS ({MAX_ITEMS}); stopping")
             break
+
+        link_key = normalise_link(item["link"])
+        if link_key in seen_links:
+            continue
 
         tentative = slugify(item["text"])
         if not tentative:
@@ -256,6 +304,8 @@ def main() -> int:
 
         if rewritten.get("skip"):
             print(f"  skip (model): {rewritten.get('reason', '')}")
+            seen_links.add(link_key)
+            save_seen_links(seen_links)
             continue
 
         missing = [k for k in ("title", "slug", "date", "category", "tldr", "body_md") if k not in rewritten]
@@ -270,9 +320,11 @@ def main() -> int:
             category_slug = "general"
         image = f"assets/images/news/{category_slug}.jpg"
 
-        out_path = write_post(rewritten, rewritten["body_md"], image)
+        out_path = write_post(rewritten, rewritten["body_md"], image, item["link"])
         written.append(out_path)
         seen_slugs.add(rewritten["slug"])
+        seen_links.add(link_key)
+        save_seen_links(seen_links)
         print(f"  wrote: {out_path.relative_to(REPO)}")
 
     print(f"\nRun complete. Wrote {len(written)} posts, {len(errors)} errors.")
