@@ -64,3 +64,11 @@ def test_usms_mba_fee_matches_pg_brochure():
     t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
     assert "Rs. 1,93,600 (2026-27)" in t and "Rs. 2,12,960" in t
     assert "is Rs. 1,30,000 per year. The total 2-year MBA cost" not in t
+
+
+def test_usicts_mca_and_usllss_llb_fees_match_pg_brochure():
+    t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
+    assert "Rs. 1,45,200 (2026-27)" in t                      # MCA at USICT
+    assert "Rs. 1,45,200 (yr 1); Rs. 1,93,220 (yr 2); Rs. 2,09,192 (yr 3)" in t
+    assert "Rs. 1,30,000</td><td style=\"padding:10px 14px\">~Rs. 3.9 L" not in t
+    assert "LLM Rs. 1,30,000" not in t

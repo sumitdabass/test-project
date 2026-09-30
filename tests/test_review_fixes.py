@@ -25,8 +25,11 @@ def test_fee_answers_carry_the_table_scope_qualifier():
     # ipu-fees-structure.php Type column: law + LLM rows are USLLS (university school); affiliated colleges differ.
     pattern = re.compile(r"At USLLS[^<]{0,200}?Rs\. 1,(?:45,200|30,000).{0,700}?[Aa]ffiliated", re.S)
     for page in ("IPU-Law-Admission.php", "top-law-colleges-ipu.php", "law-3-year-admission-ipu.php",
-                 "llm-admission-ipu.php", "comprehensive-guide-to-bballb-admission-in-ip-university.php"):
+                 "comprehensive-guide-to-bballb-admission-in-ip-university.php"):
         assert pattern.search(read(page)), page
+    # LLM: no tuition figure is sourced on the site, so only the scope + affiliated qualifier is required
+    assert re.search(r"At USLLS[^<]{0,600}?[Aa]ffiliated", read("llm-admission-ipu.php"), re.S)
+    assert "Rs. 1,30,000 in tuition" not in read("llm-admission-ipu.php")
 
 
 def test_mba_mq_page_does_not_present_usms_fee_as_quota_fee():
