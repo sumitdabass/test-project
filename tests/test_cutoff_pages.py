@@ -80,3 +80,10 @@ def test_mbs_and_dwarka_pages(server):
         assert phrase in mbs, phrase
     _, hub = _get(f"{server}/ipu-colleges-in-dwarka.php")
     assert "/mbs-college-admission.php" in hub and "/usict-admission.php" in hub
+
+
+def test_dwarka_hub_does_not_claim_usar_is_in_dwarka(server):
+    # ipu.ac.in and usar-admission.php both place USAR on the East Campus (Surajmal Vihar).
+    _, hub = _get(f"{server}/ipu-colleges-in-dwarka.php")
+    assert "USICT, USAR, USMS" not in hub
+    assert "Surajmal Vihar" in hub            # hub clarifies where USAR actually is

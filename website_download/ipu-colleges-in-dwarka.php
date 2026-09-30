@@ -1,12 +1,12 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Colleges in Dwarka – List of GGSIPU Affiliated Colleges Near Dwarka Metro</title>
-<meta name="description" content="IPU colleges in Dwarka, Delhi: USICT, USAR, USMS, USLLS on the GGSIPU campus plus MBS College and other affiliated colleges. Courses, location and admission links.">
+<meta name="description" content="IPU colleges in Dwarka, Delhi: USICT, USMS and USLLS on the GGSIPU main campus plus MBS College and other affiliated colleges. Courses, location and admission links.">
 <link rel="canonical" href="https://ipu.co.in/ipu-colleges-in-dwarka.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="IPU Colleges in Dwarka – GGSIPU Campus and Affiliated Colleges">
-<meta property="og:description" content="Colleges under IP University in Dwarka: USICT, USAR, USMS, USLLS and MBS College, with courses and admission links.">
+<meta property="og:description" content="Colleges under IP University in Dwarka: USICT, USMS, USLLS and MBS College, with courses and admission links.">
 <meta property="og:url" content="https://ipu.co.in/ipu-colleges-in-dwarka.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
@@ -46,7 +46,7 @@ include 'include/components/hero-banner.php';
 
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">Dwarka hosts the main GGSIPU campus (Sector 16C), which houses university schools such as USICT, USAR, USMS and USLLS, and affiliated colleges such as MBS College in Sector 9. This page links each college to its admission guide.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">Dwarka hosts the main GGSIPU campus (Sector 16C), which houses university schools such as USICT, USMS and USLLS, and affiliated colleges such as MBS College in Sector 9. USAR is not in Dwarka: it is on the GGSIPU East Campus at Surajmal Vihar. This page links each college to its admission guide.</p>
   </section>
   <?php $last_updated = '2026-11-27'; include 'include/components/last-updated.php'; ?>
 
@@ -56,13 +56,14 @@ include 'include/components/hero-banner.php';
     <thead><tr style="background:#0d1b6e;color:#fff"><th style="padding:10px 14px;text-align:left">College</th><th style="padding:10px 14px;text-align:left">Type</th><th style="padding:10px 14px;text-align:left">Guide</th></tr></thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USICT</td><td style="padding:10px 14px">University school (engineering, ICT)</td><td style="padding:10px 14px"><a href="/usict-admission.php">USICT admission</a></td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">USAR</td><td style="padding:10px 14px">University school (automation &amp; design)</td><td style="padding:10px 14px"><a href="/usar-admission.php">USAR admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USMS</td><td style="padding:10px 14px">University school (management)</td><td style="padding:10px 14px"><a href="/usms-admission.php">USMS admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">USLLS (USLS)</td><td style="padding:10px 14px">University school (law and legal studies)</td><td style="padding:10px 14px"><a href="/usls-admission.php">USLLS admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBS College</td><td style="padding:10px 14px">Affiliated college (B.Arch, B.Tech, BBA, BCA, B.Com Hons)</td><td style="padding:10px 14px"><a href="/mbs-college-admission.php">MBS College admission</a></td></tr>
     </tbody>
   </table>
   </div>
+
+  <p><strong>Note:</strong> USAR is often searched together with the Dwarka schools, but it is on the GGSIPU East Campus at Surajmal Vihar, not in Dwarka. See the <a href="/usar-admission.php">USAR admission guide</a>.</p>
 
   <p>Want help choosing between the campus schools and affiliated colleges? Call <a href="tel:+919899991342">9899991342</a> for free guidance.</p>
 
@@ -78,7 +79,7 @@ include 'include/components/hero-banner.php';
 
 <?php
 $faqs = [
-  ['question' => 'Which IPU colleges are in Dwarka?', 'answer' => 'The GGSIPU campus in Dwarka houses USICT, USAR, USMS and USLLS. MBS College in Sector 9 is an affiliated college in Dwarka.'],
+  ['question' => 'Which IPU colleges are in Dwarka?', 'answer' => 'The GGSIPU main campus in Dwarka houses USICT, USMS and USLLS. MBS College in Sector 9 is an affiliated college in Dwarka. USAR is on the East Campus at Surajmal Vihar, not in Dwarka.'],
   ['question' => 'Is USICT in Dwarka?', 'answer' => 'Yes. USICT is on the GGSIPU campus in Dwarka, Delhi.'],
   ['question' => 'Which affiliated IPU colleges are near Dwarka metro?', 'answer' => 'MBS College in Sector 9 is about two minutes from Dwarka Sector 10 metro station.'],
 ];
