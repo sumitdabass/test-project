@@ -55,6 +55,10 @@ include __DIR__ . '/include/components/page-hero.php';
 
                         <p>If you are already a graduate, the <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission</strong></a> route (Programme Code 238) may be a faster path than the 5-year integrated programme.</p>
 
+                        <p><strong>BBALLB Fees at IP University :</strong></p>
+
+                        <p>IPU BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.</p>
+
                         <p><strong>Eligibility Criteria for BBALLB Admission :</strong></p>
 
                         <p>To secure admission in the BBALLB program at IP University, candidates must meet specific eligibility criteria. These criteria encompass educational qualifications, age limits, and minimum qualifying marks in the qualifying examination. We will delve into each criterion in detail, providing comprehensive explanations and insights into the requirements for aspiring BBALLB students.</p>

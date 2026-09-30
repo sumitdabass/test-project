@@ -466,6 +466,7 @@ Call <a href="tel:+919899991342">9899991342</a> for guidance on:
 
 <?php
 $related_pages = [
+    ['title' => 'MBA Management Quota at IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Management-quota seats, entrance score rules and fees for MBA at IPU'],
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],

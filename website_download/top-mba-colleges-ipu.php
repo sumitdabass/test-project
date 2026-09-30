@@ -266,6 +266,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+    ['title' => 'MBA Management Quota at IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Management-quota seats, entrance score rules and fees for MBA at IPU'],
   ['title' => 'IPU MBA Admission 2026', 'url' => '/mba-admission-ip-university.php', 'desc' => 'Complete MBA admission guide with CAT/CMAT/CET eligibility'],
   ['title' => 'USMS Dwarka Admission Guide', 'url' => '/usms-admission.php', 'desc' => 'Admission guide for University School of Management Studies'],
   ['title' => 'IPU CET PG 2026', 'url' => '/ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php', 'desc' => 'IPU CET PG exam dates, eligibility and syllabus'],

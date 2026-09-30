@@ -166,6 +166,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+    ['title' => 'MBA Management Quota at IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Management-quota seats, entrance score rules and fees for MBA at IPU'],
   ['title' => 'MBA Admission at IPU', 'url' => '/mba-admission-ip-university.php', 'desc' => 'Complete MBA admission guide for all IPU affiliated colleges'],
   ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process'],
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all colleges affiliated to GGSIPU']

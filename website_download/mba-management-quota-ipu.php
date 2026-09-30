@@ -176,6 +176,30 @@ These institutes are among the most preferred MBA colleges under IP University d
 
 <hr>
 
+<h2>How Many MBA Management Quota Seats Are There at IPU?</h2>
+
+<p>
+10% of the total seats in IPU affiliated MBA colleges are reserved as management quota under Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools, including USMS, minority institutions and government institutions are excluded from this quota.
+</p>
+
+<hr>
+
+<h2>Is an Entrance Score Mandatory for MBA Management Quota?</h2>
+
+<p>
+Yes. A valid CAT, CMAT or GGSIPU CET score is mandatory (Important Instruction #21 and Chapter 12 Note 2 of the GGSIPU Brochure 2026-27). The college runs the management-quota counselling but cannot waive the entrance qualifier. Capitation fee is prohibited under the Delhi Professional Colleges Act, 2007.
+</p>
+
+<hr>
+
+<h2>MBA Fees at IPU</h2>
+
+<p>
+IPU MBA tuition is Rs. 1,30,000 per year, about Rs. 2.6 lakh for the two-year programme, regulated under the 6th SFRC Notification dated 14.07.2025. University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#mba-fees">IPU fee structure</a> for the full table, and read the <a href="/mba-admission-ip-university.php">MBA admission guide</a> and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
+</p>
+
+<hr>
+
 <h2>Need Help with MBA Admission?</h2>
 
 <ul>
