@@ -152,7 +152,7 @@ If you have already completed your graduation, see the <a href="/law-3-year-admi
 <ul>
 <li>University Charges: Rs. 20,000/year</li>
 <li><strong>Total Year 1 (approx):</strong> Rs. 1,80,700</li>
-<li><strong>LLM Fee:</strong> ~Rs. 1,30,000 &ndash; Rs. 1,50,000 per year</li>
+<li><strong>LLM Fee:</strong> tuition as notified in PG Brochure 2026-27, Section 14.1 (confirm with USLLS); see the <a href="/llm-admission-ipu.php">LLM admission guide</a></li>
 </ul>
 
 <hr>
