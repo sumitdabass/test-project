@@ -27,6 +27,28 @@
       "v": "NAAC 'A' grade, NBA accreditation for CSE, IT, ECE and EEE, AICTE approved and affiliated to GGSIPU",
       "source": "https://www.msit.in/",
       "as_of": "2026-09-30"
+    },
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "300"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "240"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "60"
+        }
+      ],
+      "source": "https://msit.in/about",
+      "as_of": "2026-09-30"
     }
   },
   "bpit": {
@@ -79,6 +101,104 @@
     "accreditation": {
       "v": "NAAC 'A' grade, Category 'A' by SFRC and 'A' by JAC (Delhi Government), AICTE and BCI approved",
       "source": "https://www.msijanakpuri.com/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "adgitm": {
+    "short": "ADGIPS (formerly ADGITM)",
+    "name": "Dr. Akhilesh Das Gupta Institute of Professional Studies (formerly ADGITM)",
+    "campus_area_acres": {
+      "v": 8.08,
+      "source": "https://adgips.ac.in/about-adgips/",
+      "as_of": "2026-09-30"
+    },
+    "accreditation": {
+      "v": "NBA-accredited programmes (CSE, ECE, ME and Civil), approved by AICTE and BCI, affiliated to GGSIPU",
+      "source": "https://adgips.ac.in/about-adgips/",
+      "as_of": "2026-09-30"
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 160100,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BBA",
+        "per_year_inr": 124900,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BA LLB / BBA LLB",
+        "per_year_inr": 128500,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "MBA",
+        "per_year_inr": 174000,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      }
+    ]
+  },
+  "mait": {
+    "short": "MAIT",
+    "name": "Maharaja Agrasen Institute of Technology",
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "360 + 60"
+        },
+        {
+          "programme": "B.Tech CSE (AI & ML)",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Computer Science & Technology",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "120"
+        },
+        {
+          "programme": "B.Tech Electronics Engineering (VLSI Design and Technology)",
+          "seats": "60"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "90"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "300"
+        },
+        {
+          "programme": "B.Tech Mechanical Engineering",
+          "seats": "90"
+        },
+        {
+          "programme": "BBA",
+          "seats": "120"
+        },
+        {
+          "programme": "BBA-MBA (5-year integrated)",
+          "seats": "60"
+        },
+        {
+          "programme": "MBA",
+          "seats": "180"
+        }
+      ],
+      "source": "https://mait.ac.in/index.php/abouts/about-us.html",
       "as_of": "2026-09-30"
     }
   }

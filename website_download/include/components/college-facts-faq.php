@@ -34,10 +34,21 @@ if ($__c) {
         $f = $__c['accreditation'];
         $faqs[] = ['question' => "What accreditation does $__short have?", 'answer' => "$__short: {$f['v']}." . $__cite($f)];
     }
+    if (isset($__c['intake']) && $__ok($__c['intake']) && is_array($__c['intake']['v'] ?? null)) {
+        $f = $__c['intake'];
+        $parts = array_map(fn($r) => $r['programme'] . ' ' . $r['seats'], $f['v']);
+        $faqs[] = ['question' => "What is the intake at $__short?", 'answer' => "Intake listed by $__short: " . implode('; ', $parts) . "." . $__cite($f)];
+    }
+    // Indian digit grouping (1,60,100), as used in the site's fee tables.
+    $__inr = function (int $n): string {
+        $s = (string) $n;
+        if (strlen($s) <= 3) { return $s; }
+        return preg_replace('/\B(?=(\d{2})+(?!\d))/', ',', substr($s, 0, -3)) . ',' . substr($s, -3);
+    };
     foreach (($__c['fees'] ?? []) as $fee) {
         if ($__ok($fee) && isset($fee['course'], $fee['per_year_inr'])) {
             $faqs[] = ['question' => "What are the {$fee['course']} fees at $__short?",
-                       'answer' => "{$fee['course']} tuition at $__short is Rs. " . number_format((int) $fee['per_year_inr']) . " per year." . $__cite($fee) . " University, exam and other charges are extra."];
+                       'answer' => "{$fee['course']} fee at $__short: Rs. " . $__inr((int) $fee['per_year_inr']) . (!empty($fee['note']) ? ' (' . $fee['note'] . ')' : ' per year') . "." . $__cite($fee)];
         }
     }
 }

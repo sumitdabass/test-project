@@ -151,6 +151,7 @@ $faqs = [
   ['question' => 'What is the placement record at ADGITM?', 'answer' => 'ADGITM has a dedicated placement cell that invites companies from IT, consulting, and manufacturing sectors. CSE and IT students generally receive the best placement offers.'],
   ['question' => 'Where is ADGITM located?', 'answer' => 'ADGITM is located at FC-26, Shastri Park, New Delhi-110053, close to Shastri Park Metro Station on the Red Line.'],
 ];
+$facts_key = 'adgitm'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 

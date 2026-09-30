@@ -73,3 +73,28 @@ def test_cutoff_template_does_not_duplicate_admission_page_table():
     t = read("include/components/college-cutoff-page.php")
     assert "btech-cutoff-rounds-table.php" not in t
     assert "Round 1 to Round 3" in t
+
+
+def test_adgitm_page_uses_current_name_and_sourced_facts():
+    facts = json.loads(read("include/data/college-facts-2026.json"))
+    a = facts["adgitm"]
+    assert "ADGIPS" in a["short"] and "formerly ADGITM" in a["short"]
+    assert a["campus_area_acres"]["v"] == 8.08
+    assert {f["course"] for f in a["fees"]} >= {"B.Tech", "BBA", "BA LLB / BBA LLB", "MBA"}
+    assert "facts_key = 'adgitm'" in read("adgitm-admission.php")
+
+
+def test_mait_and_msit_intake_rows_are_sourced():
+    facts = json.loads(read("include/data/college-facts-2026.json"))
+    mait = facts["mait"]["intake"]; msit = facts["msit"]["intake"]
+    assert mait["source"].startswith("https://mait.ac.in/") and msit["source"].startswith("https://msit.in/")
+    assert {"programme": "B.Tech Information Technology", "seats": "300"} in mait["v"]
+    assert {"programme": "B.Tech Computer Science & Engineering", "seats": "300"} in msit["v"]
+    assert "facts_key = 'mait'" in read("mait-admission.php")
+
+
+def test_mbs_page_states_eligibility_from_college_admission_page():
+    t = read("mbs-college-admission.php")
+    for phrase in ("NATA", "45% aggregate", "JEE / CUET", "GGSIPU CET / CUET", "50% aggregate"):
+        assert phrase in t, phrase
+    assert "mbscollege.org/web/mbsclg/admission-v8.html" in t

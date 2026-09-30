@@ -93,10 +93,11 @@ include 'include/components/hero-banner.php';
 
   <h2>Admission Process at MBS College</h2>
   <ol>
-    <li><strong>B.Arch:</strong> admission goes through GGSIPU counselling on the qualifying architecture entrance score. Read the <a href="/barch-admission-ipu.php">IPU B.Arch admission guide</a>.</li>
-    <li><strong>B.Tech:</strong> admission is by JEE Main rank through GGSIPU counselling. See the <a href="/IPU-B-Tech-admission-2026.php">IPU B.Tech admission guide</a> and the <a href="/ipu-btech-cutoff-analysis.php">cutoff analysis</a>.</li>
-    <li><strong>BBA, BCA and B.Com (Hons):</strong> admission follows the GGSIPU process for each programme. See the <a href="/top-bba-colleges-ipu.php">BBA</a>, <a href="/top-bca-colleges-ipu.php">BCA</a> and <a href="/top-bcom-colleges-ipu.php">B.Com</a> college guides.</li>
+    <li><strong>B.Arch (5 years):</strong> 10+2 with Physics, Chemistry and Mathematics and a minimum of 45% aggregate; entrance exam NATA. Read the <a href="/barch-admission-ipu.php">IPU B.Arch admission guide</a>.</li>
+    <li><strong>B.Tech CSE, AI &amp; ML, ECE, Civil (4 years each):</strong> 50% marks in Class 12 with the PCM stream; entrance via JEE / CUET. See the <a href="/IPU-B-Tech-admission-2026.php">IPU B.Tech admission guide</a> and the <a href="/ipu-btech-cutoff-analysis.php">cutoff analysis</a>.</li>
+    <li><strong>BBA, BCA and B.Com (Hons) (3 years):</strong> Class 12 with a minimum of 50% aggregate; entrance via GGSIPU CET / CUET. See the <a href="/top-bba-colleges-ipu.php">BBA</a>, <a href="/top-bca-colleges-ipu.php">BCA</a> and <a href="/top-bcom-colleges-ipu.php">B.Com</a> college guides.</li>
   </ol>
+  <p style="font-size:13px;color:#64748b">Eligibility and entrance exams as listed on the college's <a href="https://mbscollege.org/web/mbsclg/admission-v8.html" rel="nofollow noopener">2026-27 admission page</a>. Registration and counselling dates are set by GGSIPU and were still to be notified when this page was written.</p>
 
   <h2>MBS College (formerly MBS School of Planning &amp; Architecture)</h2>
   <p>Earlier IPU listings on this site refer to this institution as MBS School of Planning &amp; Architecture. If you see either name in GGSIPU notices, it is the same Dwarka college.</p>

@@ -233,6 +233,7 @@ $faqs = [
   ['question' => 'What is the fee for B.Tech at MAIT?', 'answer' => 'B.Tech fees at MAIT are approximately Rs 2 lakh per year, which is affordable compared to private engineering colleges in Delhi NCR.'],
   ['question' => 'Is MAIT better than MSIT or BPIT?', 'answer' => 'MAIT consistently ranks above MSIT and BPIT in terms of JEE Main cutoffs and placement packages. However, MSIT has a strong reputation for its faculty and academic rigour. Call 9899991342 for personalised comparison.']
 ];
+$facts_key = 'mait'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 
