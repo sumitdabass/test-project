@@ -80,3 +80,9 @@ def test_ug_programme_durations_are_four_years_per_nep():
     for name in ("BBA", "BCA", "B.Com (Hons)", "BJMC"):
         assert re.search(re.escape(name) + r"</td><td[^>]*>4 Yrs</td>", t), name
     assert "3-year BBA" not in t and "Rs. 4.3-5.2 lakh" not in t
+
+
+def test_law_admission_page_has_no_unsourced_llm_fee():
+    t = open("website_download/IPU-Law-Admission.php", encoding="utf-8").read()
+    assert "Rs. 1,30,000 &ndash; Rs. 1,50,000 per year" not in t
+    assert "/llm-admission-ipu.php" in t
