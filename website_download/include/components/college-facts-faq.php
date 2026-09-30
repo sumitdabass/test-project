@@ -34,10 +34,14 @@ if ($__c) {
         $f = $__c['accreditation'];
         $faqs[] = ['question' => "What accreditation does $__short have?", 'answer' => "$__short: {$f['v']}." . $__cite($f)];
     }
+    if (isset($__c['last_rank_cse']) && $__ok($__c['last_rank_cse'])) {
+        $f = $__c['last_rank_cse'];
+        $faqs[] = ['question' => "What was the last admission rank for CSE at $__short?", 'answer' => "According to its published mandatory disclosure, the last admission rank for CSE at $__short was {$f['v']}." . $__cite($f)];
+    }
     if (isset($__c['intake']) && $__ok($__c['intake']) && is_array($__c['intake']['v'] ?? null)) {
         $f = $__c['intake'];
         $parts = array_map(fn($r) => $r['programme'] . ' ' . $r['seats'], $f['v']);
-        $faqs[] = ['question' => "What is the intake at $__short?", 'answer' => "Intake listed by $__short: " . implode('; ', $parts) . "." . $__cite($f)];
+        $faqs[] = ['question' => "What is the intake at $__short?", 'answer' => "Intake listed by $__short: " . implode('; ', $parts) . $__note($f) . "." . $__cite($f)];
     }
     // Indian digit grouping (1,60,100), as used in the site's fee tables.
     $__inr = function (int $n): string {

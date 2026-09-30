@@ -46,7 +46,7 @@ def faq_answers(html):
 
 # (page, question, fragment that must appear in the answer; all figures come from ipu-fees-structure.php)
 CASES = [
-    ("IPU-B-Tech-admission-2026.php", "What are IPU B.Tech fees?", "1,55,700"),
+    ("IPU-B-Tech-admission-2026.php", "What are IPU B.Tech fees?", "1,65,770"),
     ("IPU-B-Tech-admission-2026.php", "What is the B.Tech cutoff for IPU colleges?", "round-wise JEE Main ranks"),
     ("law-3-year-admission-ipu.php", "What are IPU 3-year LLB fees?", "USLLS"),
     ("llm-admission-ipu.php", "What are IPU LLM fees?", "USLLS"),

@@ -109,3 +109,30 @@ def test_adgips_tier_c_title_test_applied_exactly_as_approved():
     # everything else in the head stays as it was: canonical, hero heading
     assert 'rel="canonical" href="https://ipu.co.in/adgitm-admission.php"' in t
     assert '$hero_title = "ADGITM Admission 2026 &ndash; Courses, Fees &amp; Placements";' in t
+
+
+def test_pdf_pass_rows_are_sourced_to_the_pdfs():
+    facts = json.loads(read("include/data/college-facts-2026.json"))
+    bp = {f["course"]: f for f in facts["bpit"]["fees"]}
+    assert bp["B.Tech"]["per_year_inr"] == 202270 and bp["BBA"]["per_year_inr"] == 161020 and bp["MBA"]["per_year_inr"] == 240220
+    assert all(f["source"].endswith("Annual-fee-for-first-year-2026-27_compressed.pdf") for f in bp.values())
+    bv = facts["bvp"]
+    assert bv["fees"][0]["per_year_inr"] == 212270 and "1,65,770" in bv["fees"][0]["note"]
+    assert {"programme": "B.Tech Computer Science & Engineering", "seats": "240"} in bv["intake"]["v"]
+    assert "30.06.2028" in bv["accreditation"]["v"]
+    assert "159,959 (2025-26)" in bv["last_rank_cse"]["v"]
+    assert all(v["source"].startswith("https://bvcoend.ac.in/") for v in (bv["intake"], bv["last_rank_cse"], bv["accreditation"]))
+    mbs = facts["mbs"]["intake"]
+    assert {"programme": "B.Arch", "seats": "120"} in mbs["v"] and {"programme": "BCA", "seats": "60"} in mbs["v"]
+    mait = facts["mait"]["highest_package_lpa"]
+    assert mait["v"] == 130 and "1,375 offers" in mait["note"] and mait["source"].endswith("/images/placement/2021-25.pdf")
+
+
+def test_pdf_pass_facts_render_on_pages():
+    import subprocess, textwrap
+    def faqs(key):
+        code = f"<?php $faqs = []; $facts_key = '{key}'; include '{WEB}/include/components/college-facts-faq.php'; echo json_encode($faqs);"
+        return " ".join(o["answer"] for o in json.loads(subprocess.run(["php"], input=code, text=True, capture_output=True).stdout))
+    assert "Rs. 2,02,270" in faqs("bpit") and "Rs. 2,40,220" in faqs("bpit")
+    assert "Rs. 2,12,270" in faqs("bvp") and "B.Tech Computer Science & Engineering 240" in faqs("bvp")
+    assert "B.Arch 120" in faqs("mbs") and "130 LPA" in faqs("mait")

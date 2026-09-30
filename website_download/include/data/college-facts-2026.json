@@ -1,7 +1,26 @@
 {
   "mbs": {
     "short": "MBS College",
-    "name": "MBS College, Dwarka"
+    "name": "MBS College, Dwarka",
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Arch",
+          "seats": "120"
+        },
+        {
+          "programme": "BBA",
+          "seats": "120"
+        },
+        {
+          "programme": "BCA",
+          "seats": "60"
+        }
+      ],
+      "source": "https://c9.shauryasoft.com/media/bny-wcp-2602222019-1815874162-1.pdf",
+      "as_of": "2026-09-30",
+      "note": "list of courses with approved intake published in the college's mandatory disclosure; B.Tech and B.Com (Hons) are not in that list"
+    }
   },
   "msit": {
     "short": "MSIT",
@@ -75,7 +94,30 @@
       "v": "NBA-accredited B.Tech programmes (CSE, ECE and EEE), AICTE approved and affiliated to GGSIPU",
       "source": "https://bpitindia.ac.in/about/",
       "as_of": "2026-09-30"
-    }
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 202270,
+        "note": "total first-year fee for session 2026-27, including Rs. 1,65,770 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BBA",
+        "per_year_inr": 161020,
+        "note": "total first-year fee for session 2026-27, including Rs. 1,24,520 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "MBA",
+        "per_year_inr": 240220,
+        "note": "total first-year fee for session 2026-27, including Rs. 2,03,720 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      }
+    ]
   },
   "maims": {
     "short": "MAIMS",
@@ -90,10 +132,55 @@
     "short": "BVP (BVCOE)",
     "name": "Bharati Vidyapeeth's College of Engineering, New Delhi",
     "accreditation": {
-      "v": "AICTE approved, affiliated to GGSIPU, ISO 9001:2015 certified and placed in the NIRF 2024 engineering rank band 201-300",
-      "source": "https://bvcoend.ac.in/",
+      "v": "AICTE approved, affiliated to GGSIPU, ISO 9001:2015 certified, NBA-accredited B.Tech programmes (CSE, IT, ECE and EEE) from A.Y. 2025-26 to 2027-28 (valid up to 30.06.2028), and placed in the NIRF 2024 engineering rank band 201-300",
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
       "as_of": "2026-09-30"
-    }
+    },
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "240"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "60"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "120"
+        },
+        {
+          "programme": "B.Tech Instrumentation & Control Engineering",
+          "seats": "30"
+        },
+        {
+          "programme": "B.Tech CSE (AI & ML)",
+          "seats": "120"
+        }
+      ],
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
+      "as_of": "2026-09-30",
+      "note": "AICTE-approved intake for A.Y. 2025-26, total 750"
+    },
+    "last_rank_cse": {
+      "v": "125,163 (2023-24), 143,048 (2024-25) and 159,959 (2025-26)",
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
+      "as_of": "2026-09-30"
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 212270,
+        "note": "total first-year payment for the 2026-27 batch, including Rs. 1,65,770 academic fee, university fee and other charges",
+        "source": "https://bvcoend.ac.in/wp-content/uploads/2026/07/Fee-Structure-1st-Year-LE-Batch-2026-2027.pdf",
+        "as_of": "2026-09-30"
+      }
+    ]
   },
   "msi": {
     "short": "MSI",
@@ -200,6 +287,12 @@
       ],
       "source": "https://mait.ac.in/index.php/abouts/about-us.html",
       "as_of": "2026-09-30"
+    },
+    "highest_package_lpa": {
+      "v": 130,
+      "source": "https://mait.ac.in/images/placement/2021-25.pdf",
+      "as_of": "2026-09-30",
+      "note": "2025 B.Tech batch, Clay Construction Group (USA); the college lists 1,375 offers across 159 companies and drives"
     }
   }
 }

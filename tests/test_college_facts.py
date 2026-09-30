@@ -64,3 +64,22 @@ def test_intake_and_fee_note_render(tmp_path):
     fee = qs["What are the B.Tech fees at X?"]
     assert "1,60,100" in fee and "first-year fee, 2026-27" in fee
     assert all("9899991342" not in a for a in qs.values())
+
+
+def test_last_rank_cse_renders(tmp_path):
+    f = tmp_path / "f.json"
+    f.write_text(json.dumps({"x": {"short": "X", "name": "X College",
+        "last_rank_cse": {"v": "125,163 (2023-24), 143,048 (2024-25) and 159,959 (2025-26)",
+                          "source": "https://example.test/md.pdf", "as_of": "2026-09-30"}}}))
+    qs = {o["question"]: o["answer"] for o in _run(f, "x")}
+    a = qs["What was the last admission rank for CSE at X?"]
+    assert "159,959 (2025-26)" in a and "last admission rank" in a
+
+
+def test_intake_note_is_rendered(tmp_path):
+    f = tmp_path / "f.json"
+    f.write_text(json.dumps({"x": {"short": "X", "name": "X College",
+        "intake": {"v": [{"programme": "B.Arch", "seats": "120"}], "note": "B.Tech is not in that list",
+                   "source": "https://example.test/i.pdf", "as_of": "2026-09-30"}}}))
+    qs = {o["question"]: o["answer"] for o in _run(f, "x")}
+    assert "B.Tech is not in that list" in qs["What is the intake at X?"]
