@@ -6,8 +6,8 @@ include_once("include/form-handler.php");
 ?>
 <?php include_once("include/base-head.php"); ?>
 
-<title>IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help</title>
-<meta name="description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
+<title>IPU (IP University) Admission 2026 – Colleges, Cutoff, Fees & Counselling</title>
+<meta name="description" content="IP University (GGSIPU) admission 2026: colleges list, cutoffs, fees, counselling dates and management-quota help for B.Tech, BBA, Law. Free helpline 9899991342.">
 <meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, ipu counselling 2026, ipu btech counselling 2026, ggsipu counselling date 2026, ipu management seat, ipu management quota, ggsipu management quota, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
 <link rel="canonical" href="https://ipu.co.in/">
 
