@@ -10,6 +10,10 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: ipu-deploy
+  cancel-in-progress: false
+
 jobs:
   scrape-and-commit:
     runs-on: ubuntu-latest
@@ -65,3 +69,10 @@ jobs:
           # explicitly dispatch the build-and-deploy workflow here.
           gh workflow run news-build-deploy.yml --ref main
           echo "dispatched news-build-deploy.yml"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::News scrape workflow FAILED — check the run log."
+          echo "### ❌ News scrape FAILED" >> $GITHUB_STEP_SUMMARY
+          echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY

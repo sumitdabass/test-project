@@ -81,6 +81,24 @@ LINK_RE = re.compile(r'<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', re.I 
 TAG_RE = re.compile(r"<[^>]+>")
 
 
+VALID_CATEGORIES = ("Counselling", "CET", "Admissions", "Results", "General")
+
+
+def coerce_category(category) -> str:
+    """Map the model's category onto the five the site uses (case-insensitive); anything else becomes General,
+    so one stray label can never fail validation and block the whole news deploy."""
+    wanted = str(category or "").strip().lower()
+    for c in VALID_CATEGORIES:
+        if c.lower() == wanted:
+            return c
+    return "General"
+
+
+def exit_code(errors, written) -> int:
+    """Fail the run only when every candidate errored; partial success is success."""
+    return 1 if (errors and not written) else 0
+
+
 def slugify(title: str) -> str:
     s = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
     s = s.lower()
@@ -314,10 +332,8 @@ def main() -> int:
             errors.append((item["text"], f"missing fields {missing}"))
             continue
 
-        category_slug = rewritten.get("category", "General").lower()
-        valid_cats = {"counselling", "cet", "admissions", "results", "general"}
-        if category_slug not in valid_cats:
-            category_slug = "general"
+        rewritten["category"] = coerce_category(rewritten.get("category"))
+        category_slug = rewritten["category"].lower()
         image = f"assets/images/news/{category_slug}.jpg"
 
         out_path = write_post(rewritten, rewritten["body_md"], image, item["link"])
@@ -342,7 +358,9 @@ def main() -> int:
 
     # exit success even on some errors, as long as at least one post wrote or
     # everything hit the model-skip gate. Fail only if ALL candidates errored.
-    return 1 if (errors and not written) else 0
+    if errors:
+        print(f"::warning::scraper had {len(errors)} error(s); see step summary", file=sys.stderr)
+    return exit_code(errors, written)
 
 
 if __name__ == "__main__":
