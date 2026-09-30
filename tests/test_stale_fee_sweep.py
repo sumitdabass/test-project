@@ -47,7 +47,7 @@ def test_range_sentences_cite_the_colleges_notices():
 
 def test_fee_page_meta_updated_with_approval_and_nothing_else_in_head():
     t = read("ipu-fees-structure")
-    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t
+    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.94L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t
     assert "<title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>" in t
     assert "Appendix 13(i)" in t and "23.07.2025" in t          # explains the brochure-vs-notice difference
 
