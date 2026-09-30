@@ -3,7 +3,8 @@
 
   python3 seo/scripts/watch_terms.py build  <queries.csv> <out.csv>
   python3 seo/scripts/watch_terms.py compare <baseline.csv> <new-queries.csv>
-A term is flagged when its average position worsens by more than 2.0 versus baseline.
+A term is flagged when its average position worsens by more than 2.0 versus baseline,
+or when it is absent from the new export (reported as MISSING).
 """
 from __future__ import annotations
 import csv, sys
@@ -44,6 +45,9 @@ def compare(baseline_csv, new_queries_csv, max_drop: float = 2.0) -> list[dict]:
         for r in csv.DictReader(f):
             n = new.get(r["term"])
             if not n:
+                # A term that fell out of the (1,000-row) export is the worst case: report it, never skip it.
+                out.append({"term": r["term"], "base_pos": float(r["position"]),
+                            "new_pos": None, "drop": None, "missing": True})
                 continue
             drop = float(n["Position"]) - float(r["position"])
             if drop > max_drop:
@@ -58,7 +62,10 @@ if __name__ == "__main__":
     elif len(sys.argv) == 4 and sys.argv[1] == "compare":
         bad = compare(sys.argv[2], sys.argv[3])
         for b in bad:
-            print(f"REVERT? {b['term']}: {b['base_pos']:.2f} -> {b['new_pos']:.2f} (+{b['drop']:.2f})")
+            if b.get("missing"):
+                print(f"MISSING {b['term']}: was {b['base_pos']:.2f}, absent from the new export")
+            else:
+                print(f"REVERT? {b['term']}: {b['base_pos']:.2f} -> {b['new_pos']:.2f} (+{b['drop']:.2f})")
         sys.exit(1 if bad else 0)
     else:
         print(__doc__)

@@ -20,10 +20,12 @@ def test_build_and_compare_flags_only_drops_over_two(tmp_path):
     assert [b["term"] for b in bad] == ["mait cutoff"]
     assert round(bad[0]["drop"], 2) == 3.13
 
-def test_missing_term_is_not_flagged(tmp_path):
+def test_missing_term_is_reported_as_missing(tmp_path):
+    # A term that falls out of the (1,000-row) GSC export is the worst stop-loss case: it must be reported, not skipped.
     base_q, new_q, base = tmp_path / "b.csv", tmp_path / "n.csv", tmp_path / "base.csv"
     _q(base_q, [["usar", 48, 9384, "0.5%", 9.13]])
     _q(new_q, [])
     wt.WATCH[:] = ["usar"]
     wt.build_baseline(base_q, base)
-    assert wt.compare(base, new_q) == []
+    out = wt.compare(base, new_q)
+    assert len(out) == 1 and out[0]["term"] == "usar" and out[0].get("missing") is True

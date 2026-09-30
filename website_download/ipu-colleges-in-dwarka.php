@@ -46,7 +46,7 @@ include 'include/components/hero-banner.php';
 
   <section id="ai-summary" style="background:#f0f7ff;border-left:4px solid #1a3a9c;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px">
     <p style="font-weight:700;color:#0d1b6e;margin-bottom:8px">AI Summary</p>
-    <p style="margin:0;color:#4a5568;font-size:15px">Dwarka hosts the main GGSIPU campus (Sector 16C), which houses university schools such as USICT, USMS and USLLS, and affiliated colleges such as MBS College in Sector 9. USAR is not in Dwarka: it is on the GGSIPU East Campus at Surajmal Vihar. This page links each college to its admission guide.</p>
+    <p style="margin:0;color:#4a5568;font-size:15px">Dwarka hosts the main GGSIPU campus (Sector 16C), which houses university schools such as USICT, USMS and USLLS, and affiliated colleges such as MBS College and TIPS, both in Sector 9. USAR is not in Dwarka: it is on the GGSIPU East Campus at Surajmal Vihar. This page links each college to its admission guide.</p>
   </section>
   <?php $last_updated = '2026-11-27'; include 'include/components/last-updated.php'; ?>
 
@@ -58,6 +58,7 @@ include 'include/components/hero-banner.php';
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USICT</td><td style="padding:10px 14px">University school (engineering, ICT)</td><td style="padding:10px 14px"><a href="/usict-admission.php">USICT admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">USMS</td><td style="padding:10px 14px">University school (management)</td><td style="padding:10px 14px"><a href="/usms-admission.php">USMS admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">USLLS (USLS)</td><td style="padding:10px 14px">University school (law and legal studies)</td><td style="padding:10px 14px"><a href="/usls-admission.php">USLLS admission</a></td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">TIPS (Trinity Institute of Professional Studies)</td><td style="padding:10px 14px">Affiliated college (Sector 9, Dwarka)</td><td style="padding:10px 14px"><a href="/tips-admission.php">TIPS admission</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBS College</td><td style="padding:10px 14px">Affiliated college (B.Arch, B.Tech, BBA, BCA, B.Com Hons)</td><td style="padding:10px 14px"><a href="/mbs-college-admission.php">MBS College admission</a></td></tr>
     </tbody>
   </table>

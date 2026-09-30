@@ -1,6 +1,6 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>MBS College Dwarka – Admission, Courses, Fees & Seats | IPU Affiliated</title>
+<title>MBS College Dwarka – Admission Process & Courses | IPU Affiliated</title>
 <meta name="description" content="MBS College Dwarka (Sector 9), affiliated to GGSIPU: B.Arch, B.Tech CSE, AI & ML, ECE, Civil, BBA, BCA and B.Com Hons. Courses, admission process and how to apply. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/mbs-college-admission.php">
 
@@ -15,7 +15,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "MBS College Dwarka Admission – Courses, Fees & Admission Process",
+  "headline": "MBS College Dwarka Admission – Courses & Admission Process",
   "description": "MBS College Dwarka is affiliated to GGSIPU and approved by COA and AICTE. Courses, location and admission process.",
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
@@ -44,7 +44,7 @@ include 'include/components/breadcrumb-schema.php';
 <?php include_once("include/base-nav.php"); ?>
 
 <?php
-$hero_title = "MBS College Dwarka Admission – Courses, Fees & Admission Process";
+$hero_title = "MBS College Dwarka Admission – Courses & Admission Process";
 $hero_breadcrumbs = $breadcrumbs;
 $hero_compact = true;
 include 'include/components/hero-banner.php';

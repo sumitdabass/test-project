@@ -314,7 +314,7 @@ $faqs = [
   ['question' => 'Which is the best law college under IPU?', 'answer' => 'USLLS (University School of Law and Legal Studies, the university\'s own on-campus school in Dwarka) is the most reputed law school under GGSIPU with the lowest fee. Among private affiliated colleges, <a href="vips-admission.php">VIPS-TC Pitampura</a> and <a href="maims-admission.php">MAIMS Rohini</a> are highly ranked for placements and intake. Fairfield Bijwasan and <a href="ideal-admission.php">Ideal Karkardooma</a> are strong alternatives for mid-rank CLAT scorers. Call 9899991342 for college-fit consultation.']
 ];
 $faqs = array_merge($faqs ?? [], [
-  ['question' => 'What are IPU law college fees?', 'answer' => 'IPU BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total, and the 3-year LLB is Rs. 1,30,000 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.']
+  ['question' => 'What are IPU law college fees?', 'answer' => 'At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total, and the 3-year LLB is Rs. 1,30,000 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated law colleges have their own SFRC-regulated fees. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.']
 ]);
 include 'include/components/faq-section.php';
 ?>

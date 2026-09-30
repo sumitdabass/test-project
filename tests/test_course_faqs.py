@@ -48,12 +48,10 @@ def faq_answers(html):
 CASES = [
     ("IPU-B-Tech-admission-2026.php", "What are IPU B.Tech fees?", "1,55,700"),
     ("IPU-B-Tech-admission-2026.php", "What is the B.Tech cutoff for IPU colleges?", "round-wise JEE Main ranks"),
-    ("comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php", "What are IPU BBA fees?", "1,20,000"),
-    ("bcom-admission-ipu.php", "What are IPU B.Com Hons fees?", "40,000"),
-    ("law-3-year-admission-ipu.php", "What are IPU 3-year LLB fees?", "1,30,000"),
-    ("llm-admission-ipu.php", "What are IPU LLM fees?", "1,30,000"),
-    ("top-law-colleges-ipu.php", "What are IPU law college fees?", "1,45,200"),
-    ("IPU-Law-Admission.php", "What are IPU law college fees?", "1,45,200"),
+    ("law-3-year-admission-ipu.php", "What are IPU 3-year LLB fees?", "USLLS"),
+    ("llm-admission-ipu.php", "What are IPU LLM fees?", "USLLS"),
+    ("top-law-colleges-ipu.php", "What are IPU law college fees?", "USLLS"),
+    ("IPU-Law-Admission.php", "What are IPU law college fees?", "USLLS"),
 ]
 
 

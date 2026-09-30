@@ -41,6 +41,15 @@ $cse_spans = function (string $quota) use ($rows, $span) {
     return $all ? [min(array_column($all, 0)), max(array_column($all, 1))] : null;
 };
 
+// Closing rank (Max Rank) of the last Delhi-quota seat in a round, for one branch.
+$close = function (array $b, string $round) { return $b[$round]['delhi']['max'] ?? null; };
+$cse_close = function (string $round) use ($rows, $close) {
+    $vals = [];
+    foreach ($rows as $branch => $rounds) {
+        if (strpos($branch, 'Computer Science & Engineering') === 0 && ($v = $close($rounds, $round)) !== null) { $vals[] = $v; }
+    }
+    return $vals ? max($vals) : null;
+};
 $faqs = [];
 if ($s = $cse_spans('delhi')) {
     $faqs[] = ['question' => "What is the {$cp['short']} cutoff for CSE?",
@@ -49,6 +58,10 @@ if ($s = $cse_spans('delhi')) {
 if ($s = $cse_spans('outside')) {
     $faqs[] = ['question' => "What is the {$cp['short']} cutoff for students from outside Delhi?",
         'answer' => "For outside-Delhi candidates, CSE at {$cp['short']} closed between rank " . $fmt($s[0]) . " and " . $fmt($s[1]) . " in the {$data_year} counselling. Outside-Delhi ranks are much tighter because far fewer seats are reserved for them."];
+}
+if (($c1 = $cse_close('round_1')) !== null && ($c2 = $cse_close('round_2')) !== null && ($c3 = $cse_close('round_3')) !== null) {
+    $faqs[] = ['question' => "Do closing ranks change between rounds at {$cp['short']}?",
+        'answer' => "Yes. For CSE, the last Delhi-quota seat at {$cp['short']} closed at rank " . $fmt($c1) . " in Round 1, " . $fmt($c2) . " in Round 2 and " . $fmt($c3) . " in Round 3, a movement of " . $fmt(abs($c3 - $c1)) . " ranks from Round 1 to Round 3. Seats released by candidates who freeze or leave push the cutoff later in each round."];
 }
 $faqs[] = ['question' => "How do I read Min Rank and Max Rank in the {$cp['short']} cutoff table?",
     'answer' => "Min Rank is the best (lowest) JEE Main rank that received a seat in that round; Max Rank is the last rank that received one. If your rank is below the Max Rank for your branch and quota in an earlier round, you had a realistic chance."];
@@ -115,6 +128,25 @@ include __DIR__ . '/hero-banner.php';
   </div>
   <p style="font-size:13px;color:#64748b;margin-top:8px">Source: GGSIPU <?= $data_year ?> B.Tech counselling, rounds 1, 2 and 3. Read the ranks as Min – Max JEE Main rank.</p>
 
+
+  <h2 style="font-size:1.5rem;color:#0d1b6e;margin-top:32px">How closing ranks move from Round 1 to Round 3</h2>
+  <p style="font-size:14px;color:#4a5568">Last Delhi-quota seat (Max Rank) in each round. A larger number in a later round means the cutoff opened up as seats were released.</p>
+  <div style="overflow-x:auto;border:1px solid #e2e8f0;border-radius:8px">
+    <table style="width:100%;min-width:560px;border-collapse:collapse;font-size:14px">
+      <thead><tr style="background:#0d1b6e;color:#fff"><th style="padding:10px;text-align:left">Branch</th><th style="padding:10px;text-align:center">Round 1</th><th style="padding:10px;text-align:center">Round 2</th><th style="padding:10px;text-align:center">Round 3</th><th style="padding:10px;text-align:center">Round 1 to Round 3</th></tr></thead>
+      <tbody>
+      <?php foreach ($rows as $branch => $rounds): $c1 = $close($rounds, 'round_1'); $c2 = $close($rounds, 'round_2'); $c3 = $close($rounds, 'round_3'); ?>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px"><?= htmlspecialchars($branch) ?></td>
+          <td style="padding:10px;text-align:center"><?= $c1 !== null ? $fmt($c1) : '—' ?></td>
+          <td style="padding:10px;text-align:center"><?= $c2 !== null ? $fmt($c2) : '—' ?></td>
+          <td style="padding:10px;text-align:center"><?= $c3 !== null ? $fmt($c3) : '—' ?></td>
+          <td style="padding:10px;text-align:center"><?= ($c1 !== null && $c3 !== null) ? ($c3 >= $c1 ? '+' : '−') . $fmt(abs($c3 - $c1)) : '—' ?></td></tr>
+      <?php endforeach; ?>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:#64748b;margin-top:8px">Source: GGSIPU <?= $data_year ?> B.Tech counselling. Compare Round 1 to Round 3 before deciding how many rounds to wait.</p>
+
   <p>Planning your choice list? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free rank guidance.</p>
 
 </div>
@@ -123,9 +155,6 @@ include __DIR__ . '/hero-banner.php';
 </section>
 
 <?php
-// Round-by-round detail table (2025 data component); renders nothing if the institute key is absent.
-$cutoff_institute = $cp['institute'];
-include __DIR__ . '/btech-cutoff-rounds-table.php';
 $cta_heading = "Need Help with {$cp['short']} Cutoff Analysis?";
 $cta_subtext = "Get free rank analysis and a realistic choice-filling plan";
 include __DIR__ . '/cta-strip.php';

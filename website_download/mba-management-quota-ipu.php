@@ -195,7 +195,7 @@ Yes. A valid CAT, CMAT or GGSIPU CET score is mandatory (Important Instruction #
 <h2>MBA Fees at IPU</h2>
 
 <p>
-IPU MBA tuition is Rs. 1,30,000 per year, about Rs. 2.6 lakh for the two-year programme, regulated under the 6th SFRC Notification dated 14.07.2025. University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#mba-fees">IPU fee structure</a> for the full table, and read the <a href="/mba-admission-ip-university.php">MBA admission guide</a> and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
+Tuition at USMS (the university school, which is outside the management quota) is Rs. 1,30,000 per year, about Rs. 2.6 lakh for the two-year programme. Affiliated MBA colleges, where management-quota seats exist, charge fees regulated under the 6th SFRC Notification dated 14.07.2025; ask the college for its exact figure. University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#mba-fees">IPU fee structure</a> for the full table, and read the <a href="/mba-admission-ip-university.php">MBA admission guide</a> and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
 </p>
 
 <hr>

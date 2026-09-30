@@ -57,7 +57,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
                         <p><strong>BBALLB Fees at IP University :</strong></p>
 
-                        <p>IPU BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.</p>
+                        <p>At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated colleges have their own SFRC-regulated fees, and university, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.</p>
 
                         <p><strong>Eligibility Criteria for BBALLB Admission :</strong></p>
 

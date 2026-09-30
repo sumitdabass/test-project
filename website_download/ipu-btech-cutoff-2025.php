@@ -65,7 +65,7 @@ include 'include/components/hero-banner.php';
 
   $cutoff_colleges = [
     'University School of Information & Communication Technology' => ['short' => 'USICT Dwarka',          'page' => '/usict-admission.php'],
-    'University School of Automation & Robotics'                  => ['short' => 'USAR Dwarka',           'page' => '/usar-admission.php'],
+    'University School of Automation & Robotics'                  => ['short' => 'USAR',           'page' => '/usar-admission.php'],
     'University School of Chemical Technology'                    => ['short' => 'USCT Dwarka',           'page' => '/usct-admission.php'],
     'Maharaja Agrasen Institute of Technology'                    => ['short' => 'MAIT Rohini',           'page' => '/mait-admission.php'],
     'Maharaja Surajmal Institute Technology'                      => ['short' => 'MSIT Janakpuri',        'page' => '/msit-admission.php'],

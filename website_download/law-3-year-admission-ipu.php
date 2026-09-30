@@ -211,7 +211,7 @@ $faqs = [
   ['question' => 'How is the 3-year LLB different from the 5-year Integrated BA-LLB / BBA-LLB?', 'answer' => '<strong>Code 238 (3-year LLB)</strong> is a graduate-entry programme: requires bachelor degree + 50%, admission only via GGSIPU CET, duration 3 years. <strong>Code 121 (5-year Integrated BA-LLB / BBA-LLB)</strong> is a Class-12-entry programme: requires 10+2 with 50% (best of 4 incl. English), admission via CLAT (primary) + CUET (vacant-seat), duration 5 years. Both lead to BCI-recognised LLB enrolment subject to BCI rules.']
 ];
 $faqs = array_merge($faqs ?? [], [
-  ['question' => 'What are IPU 3-year LLB fees?', 'answer' => 'IPU 3-year LLB tuition is Rs. 1,30,000 per year, about Rs. 3.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#llb-fees">IPU fee structure</a>.']
+  ['question' => 'What are IPU 3-year LLB fees?', 'answer' => 'At USLLS (the university school), 3-year LLB tuition is Rs. 1,30,000 per year, about Rs. 3.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated colleges have their own SFRC-regulated fees. See the <a href="/ipu-fees-structure.php#llb-fees">IPU fee structure</a>.']
 ]);
 include 'include/components/faq-section.php';
 ?>

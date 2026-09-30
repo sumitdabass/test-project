@@ -264,7 +264,7 @@ include __DIR__ . '/include/components/page-hero.php';
                 </thead>
                 <tbody>
                   <tr><td>USICT, Dwarka</td><td>CSE, IT, ECE</td><td>~38,638 (CSE R1, Delhi)</td><td>&mdash;</td><td>Strong placements; top government college under IPU</td></tr>
-                  <tr><td>USAR, Dwarka</td><td>AI-DS, AI-ML, Robotics, IIoT</td><td>~99,067 (AI-DS R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>USAR, East Campus</td><td>AI-DS, AI-ML, Robotics, IIoT</td><td>~99,067 (AI-DS R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
                   <tr><td>MAIT, Rohini</td><td>CSE, IT, ECE, AIML</td><td>~70,889 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Consistently ranked best among private IPU colleges</td></tr>
                   <tr><td>MSIT, Janakpuri</td><td>CSE, IT, ECE</td><td>~96,135 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Strong placement records; top private college under IPU</td></tr>
                   <tr><td>BPIT, Rohini</td><td>CSE, IT, ECE</td><td>~142,454 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>

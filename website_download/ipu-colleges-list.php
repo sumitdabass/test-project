@@ -116,7 +116,7 @@ include 'include/components/hero-banner.php';
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
         <td style="padding:10px 14px"><a href="/usar-admission.php">USAR (University School of Automation &amp; Robotics)</a></td>
-        <td style="padding:10px 14px">Dwarka</td>
+        <td style="padding:10px 14px">East Campus, Surajmal Vihar</td>
         <td style="padding:10px 14px">B.Tech Automation, Robotics</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">

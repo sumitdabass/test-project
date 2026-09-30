@@ -291,7 +291,7 @@ $faqs = [
   ['question' => 'What is the law admission process in IPU 2026?', 'answer' => 'IPU law admission process: (1) Appear in CLAT UG 2026 (for BA LLB/BBA LLB) or CLAT PG (for LLM), (2) Register on IPU counselling portal, (3) Import CLAT scores and pay counselling fee, (4) Document verification, (5) Choice filling — select colleges in order of preference, (6) Seat allotment, (7) Fee payment and reporting. Call 9899991342 for step-by-step guidance.']
 ];
 $faqs = array_merge($faqs ?? [], [
-  ['question' => 'What are IPU law college fees?', 'answer' => 'IPU BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total, and the 3-year LLB is Rs. 1,30,000 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.']
+  ['question' => 'What are IPU law college fees?', 'answer' => 'At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total, and the 3-year LLB is Rs. 1,30,000 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated law colleges have their own SFRC-regulated fees. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.']
 ]);
 include 'include/components/faq-section.php';
 ?>
