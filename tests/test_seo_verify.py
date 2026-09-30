@@ -56,3 +56,11 @@ def test_short_faq_fails():
 def test_tel_in_css_or_js_selector_is_not_a_bare_link():
     sel = GOOD.replace("</body>", '<style>a[href^="tel:"]{color:red}</style><script>e.closest(\'a[href^="tel:"]\')</script></body>')
     assert check_html(sel) == []
+
+
+def test_two_faqpage_blocks_fail():
+    second = ('<script type="application/ld+json">{"@type":"FAQPage","mainEntity":['
+              '{"@type":"Question","name":"Z1","acceptedAnswer":{"@type":"Answer","text":"a"}},'
+              '{"@type":"Question","name":"Z2","acceptedAnswer":{"@type":"Answer","text":"a"}},'
+              '{"@type":"Question","name":"Z3","acceptedAnswer":{"@type":"Answer","text":"a"}}]}</script>')
+    assert any("FAQPage blocks" in p for p in check_html(GOOD.replace("</head>", second + "</head>")))

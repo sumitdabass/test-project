@@ -222,6 +222,7 @@ $faqs = [
   ['question' => 'Is MSIT better than BPIT or BVP?', 'answer' => 'MSIT generally ranks above BPIT and BVP in terms of JEE Main cutoffs and placement averages. It is particularly strong in CSE and IT programmes.'],
   ['question' => 'Does MSIT have management quota seats?', 'answer' => 'Yes, MSIT has some management quota seats available. Call 9899991342 for guidance on management quota admission process and eligibility.']
 ];
+$facts_key = 'msit'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 

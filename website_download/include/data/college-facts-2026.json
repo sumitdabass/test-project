@@ -1,3 +1,85 @@
 {
-  "mbs": {"short": "MBS College", "name": "MBS College, Dwarka"}
+  "mbs": {
+    "short": "MBS College",
+    "name": "MBS College, Dwarka"
+  },
+  "msit": {
+    "short": "MSIT",
+    "name": "Maharaja Surajmal Institute of Technology",
+    "campus_area_acres": {
+      "v": 8,
+      "source": "https://msit.in/about",
+      "as_of": "2026-09-30"
+    },
+    "avg_package_lpa": {
+      "v": 7.1,
+      "source": "https://msit.in/placements",
+      "as_of": "2026-09-30",
+      "note": "2025 placements as published by the college, all branches; 2024 was 7.5 LPA and 2023 was 8.5 LPA"
+    },
+    "highest_package_lpa": {
+      "v": 50,
+      "source": "https://msit.in/placements",
+      "as_of": "2026-09-30",
+      "note": "2025 placements as published by the college"
+    },
+    "accreditation": {
+      "v": "NAAC 'A' grade, NBA accreditation for CSE, IT, ECE and EEE, AICTE approved and affiliated to GGSIPU",
+      "source": "https://www.msit.in/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "bpit": {
+    "short": "BPIT",
+    "name": "Bhagwan Parshuram Institute of Technology",
+    "campus_area_acres": {
+      "v": "about 6",
+      "source": "https://bpitindia.ac.in/about/",
+      "as_of": "2026-09-30"
+    },
+    "avg_package_cse_lpa": {
+      "v": 7.7,
+      "source": "https://bpitindia.ac.in/placement-record/",
+      "as_of": "2026-09-30",
+      "note": "2026 placements as published by the college; 2025 was 9.5 LPA"
+    },
+    "highest_package_lpa": {
+      "v": 53.35,
+      "source": "https://bpitindia.ac.in/placement-record/",
+      "as_of": "2026-09-30",
+      "note": "2022-26 batch, Adobe, as published by the college"
+    },
+    "accreditation": {
+      "v": "NBA-accredited B.Tech programmes (CSE, ECE and EEE), AICTE approved and affiliated to GGSIPU",
+      "source": "https://bpitindia.ac.in/about/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "maims": {
+    "short": "MAIMS",
+    "name": "Maharaja Agrasen Institute of Management Studies",
+    "accreditation": {
+      "v": "NAAC Grade 'A++' institution, affiliated to GGSIP University, recognised under section 2(f) of UGC, recognised by the Bar Council of India and ISO 9001:2015 certified",
+      "source": "https://maims.ac.in/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "bvp": {
+    "short": "BVP (BVCOE)",
+    "name": "Bharati Vidyapeeth's College of Engineering, New Delhi",
+    "accreditation": {
+      "v": "AICTE approved, affiliated to GGSIPU, ISO 9001:2015 certified and placed in the NIRF 2024 engineering rank band 201-300",
+      "source": "https://bvcoend.ac.in/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "msi": {
+    "short": "MSI",
+    "name": "Maharaja Surajmal Institute",
+    "accreditation": {
+      "v": "NAAC 'A' grade, Category 'A' by SFRC and 'A' by JAC (Delhi Government), AICTE and BCI approved",
+      "source": "https://www.msijanakpuri.com/",
+      "as_of": "2026-09-30"
+    }
+  }
 }

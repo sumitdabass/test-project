@@ -156,6 +156,7 @@ $faqs = [
   ['question' => 'Is MAIMS related to MAIT?', 'answer' => 'Yes, both MAIMS and MAIT are run by the Maharaja Agrasen Education Society. They share the same Rohini Sector-22 campus area but offer different programmes &mdash; MAIT focuses on engineering while MAIMS covers management, law, and media.'],
   ['question' => 'What are the placements like at MAIMS?', 'answer' => 'MAIMS has a strong placement record with students placed in banking, IT, consulting, media, and legal sectors. The Corporate Resource Centre actively supports students with training and campus drives.'],
 ];
+$facts_key = 'maims'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 

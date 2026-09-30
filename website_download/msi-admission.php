@@ -144,6 +144,7 @@ $faqs = [
   ['question' => 'Is MSI the same as MSIT?', 'answer' => 'No. MSI (Maharaja Surajmal Institute) focuses on commerce, management, and humanities, while MSIT (Maharaja Surajmal Institute of Technology) is an engineering college. Both share the same Janakpuri campus area.'],
   ['question' => 'What are the placements like at MSI?', 'answer' => 'MSI has strong placements in banking, finance, IT, and consulting sectors. BBA and B.Com students are placed well through the college placement cell.'],
 ];
+$facts_key = 'msi'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 

@@ -37,3 +37,16 @@ def test_component_skips_unsourced_fields(tmp_path):
 def test_component_empty_when_key_missing(tmp_path):
     f = tmp_path / "f.json"; f.write_text("{}")
     assert _run(f, "nope") == []
+
+
+def test_note_avg_package_and_accreditation_render(tmp_path):
+    f = tmp_path / "f.json"
+    f.write_text(json.dumps({"x": {"short": "X", "name": "X College",
+        "avg_package_lpa": {"v": 7.1, "note": "2025 batch, all branches", "source": "https://example.test/p", "as_of": "2026-09-30"},
+        "accreditation": {"v": "NAAC 'A' grade; NBA for CSE and IT", "source": "https://example.test/a", "as_of": "2026-09-30"}}}))
+    out = _run(f, "x")
+    qs = {o["question"]: o["answer"] for o in out}
+    assert "7.1 LPA" in qs["What is the average package at X?"]
+    assert "2025 batch, all branches" in qs["What is the average package at X?"]
+    assert "NAAC 'A' grade" in qs["What accreditation does X have?"]
+    assert all("9899991342" not in a for a in qs.values())

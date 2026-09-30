@@ -12,6 +12,7 @@ $__c = ($facts_key && is_array($__all)) ? ($__all[$facts_key] ?? null) : null;
 if ($__c) {
     $__ok = fn($f) => is_array($f) && !empty($f['source']) && !empty($f['as_of']);
     $__short = $__c['short'] ?? strtoupper($facts_key);
+    $__note = fn($f) => !empty($f['note']) ? ' (' . $f['note'] . ')' : '';
     $__cite = fn($f) => ' (Source: ' . $f['source'] . ', as of ' . $f['as_of'] . '.)';
     if (isset($__c['campus_area_acres']) && $__ok($__c['campus_area_acres'])) {
         $f = $__c['campus_area_acres'];
@@ -19,11 +20,19 @@ if ($__c) {
     }
     if (isset($__c['avg_package_cse_lpa']) && $__ok($__c['avg_package_cse_lpa'])) {
         $f = $__c['avg_package_cse_lpa'];
-        $faqs[] = ['question' => "What is the average CSE package at $__short?", 'answer' => "The average package reported for CSE at $__short is {$f['v']} LPA." . $__cite($f)];
+        $faqs[] = ['question' => "What is the average CSE package at $__short?", 'answer' => "The average package reported for CSE at $__short is {$f['v']} LPA" . $__note($f) . "." . $__cite($f)];
+    }
+    if (isset($__c['avg_package_lpa']) && $__ok($__c['avg_package_lpa'])) {
+        $f = $__c['avg_package_lpa'];
+        $faqs[] = ['question' => "What is the average package at $__short?", 'answer' => "The average package reported at $__short is {$f['v']} LPA" . $__note($f) . "." . $__cite($f)];
     }
     if (isset($__c['highest_package_lpa']) && $__ok($__c['highest_package_lpa'])) {
         $f = $__c['highest_package_lpa'];
-        $faqs[] = ['question' => "What is the highest package at $__short?", 'answer' => "The highest package reported at $__short is {$f['v']} LPA." . $__cite($f)];
+        $faqs[] = ['question' => "What is the highest package at $__short?", 'answer' => "The highest package reported at $__short is {$f['v']} LPA" . $__note($f) . "." . $__cite($f)];
+    }
+    if (isset($__c['accreditation']) && $__ok($__c['accreditation'])) {
+        $f = $__c['accreditation'];
+        $faqs[] = ['question' => "What accreditation does $__short have?", 'answer' => "$__short: {$f['v']}." . $__cite($f)];
     }
     foreach (($__c['fees'] ?? []) as $fee) {
         if ($__ok($fee) && isset($fee['course'], $fee['per_year_inr'])) {

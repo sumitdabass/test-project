@@ -87,3 +87,19 @@ def test_dwarka_hub_does_not_claim_usar_is_in_dwarka(server):
     _, hub = _get(f"{server}/ipu-colleges-in-dwarka.php")
     assert "USICT, USAR, USMS" not in hub
     assert "Surajmal Vihar" in hub            # hub clarifies where USAR actually is
+
+
+def test_sourced_facts_render_on_college_pages(server):
+    expect = {
+        "msit-admission.php": ["What is the campus area of MSIT?", "8 acres", "NAAC 'A' grade"],
+        "maims-admission.php": ["What accreditation does MAIMS have?", "A++"],
+        "msi-admission.php": ["What accreditation does MSI have?", "Category 'A' by SFRC"],
+        "BPIT.php": ["about 6 acres", "53.35 LPA", "7.7 LPA"],
+        "BVP.php": ["NIRF 2024 engineering rank band 201-300"],
+    }
+    for page, phrases in expect.items():
+        status, html = _get(f"{server}/{page}")
+        assert status == 200, page
+        for ph in phrases:
+            assert ph in html, (page, ph)
+        assert html.count('"@type":"FAQPage"') + html.count('"@type": "FAQPage"') == 1, page

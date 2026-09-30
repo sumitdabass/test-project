@@ -41,6 +41,7 @@ def check_html(html: str, strict_faq_phone: bool = False) -> list[str]:
         problems.append("bare tel: link (must be tel:+91...)")
 
     breadcrumbs = 0
+    faq_blocks = 0
     for block in LD_RE.findall(html):
         try:
             data = json.loads(block)
@@ -52,6 +53,7 @@ def check_html(html: str, strict_faq_phone: bool = False) -> list[str]:
             if t == "BreadcrumbList":
                 breadcrumbs += 1
             if t == "FAQPage":
+                faq_blocks += 1
                 qs = [q for q in node.get("mainEntity", []) if q.get("@type") == "Question"]
                 if len(qs) < 3:
                     problems.append(f"FAQPage has {len(qs)} questions (< 3)")
@@ -60,6 +62,8 @@ def check_html(html: str, strict_faq_phone: bool = False) -> list[str]:
                         if PHONE in q.get("acceptedAnswer", {}).get("text", ""):
                             problems.append("phone number inside FAQ answer")
                             break
+    if faq_blocks > 1:
+        problems.append(f"FAQPage blocks {faq_blocks} > 1")
     if breadcrumbs > 1:
         problems.append(f"BreadcrumbList count {breadcrumbs} > 1")
     return problems

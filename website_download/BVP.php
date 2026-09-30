@@ -385,6 +385,7 @@ $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
 ];
+$facts_key = 'bvp'; include 'include/components/college-facts-block.php';
 // B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
 
 $cutoff_institute = 'Bharati Vidyapeeths College of Engineering';
