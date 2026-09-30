@@ -42,7 +42,7 @@ def test_sources_are_stated():
 def test_title_unchanged_and_meta_is_the_approved_one():
     t = text()
     assert "<title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>" in t
-    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t   # approved by Sumit 2026-09-30
+    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.94L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t   # approved by Sumit 2026-09-30
 
 
 def test_bvcoe_dataset_matches_published_last_admission_ranks():
@@ -58,3 +58,9 @@ def test_bvcoe_dataset_matches_published_last_admission_ranks():
     assert ice == 377275          # disclosure prints 377275 for ICE
     facts = json.loads((WEB / "include/data/college-facts-2026.json").read_text())
     assert "159,959 (2025-26)" in facts["bvp"]["last_rank_cse"]["v"]
+
+
+def test_usms_mba_fee_matches_pg_brochure():
+    t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
+    assert "Rs. 1,93,600 (2026-27)" in t and "Rs. 2,12,960" in t
+    assert "is Rs. 1,30,000 per year. The total 2-year MBA cost" not in t
