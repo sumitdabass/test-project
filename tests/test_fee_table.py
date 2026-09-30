@@ -94,3 +94,9 @@ def test_barch_and_mtech_totals_match_the_sourced_schedules():
     assert 1_69_400 + 1_86_340 + 2_04_974 + 2_25_471 + 2_48_019 == 10_34_204
     assert "~Rs. 10.3 L" in t and "~Rs. 9.5 L" not in t
     assert "~Rs. 3.55 L" in t and "~Rs. 3.4 L" not in t
+
+
+def test_mbbs_row_has_no_unsourced_lakh_range():
+    t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
+    assert "Rs. 15 - 30 L" not in t and "Rs. 15-30 lakh" not in t and "75 L - 1.5 Cr" not in t
+    assert "Rs. 25,000 university charges per year" in t
