@@ -52,3 +52,7 @@ def test_short_faq_fails():
                        '{"@type":"Question","name":"Q2b","acceptedAnswer":{"@type":"Answer","text":"A2b"}}').replace(
                        ',\n{"@type":"Question","name":"Q2","acceptedAnswer":{"@type":"Answer","text":"A2"}}', "")
     assert any("FAQPage" in p for p in check_html(bad))
+
+def test_tel_in_css_or_js_selector_is_not_a_bare_link():
+    sel = GOOD.replace("</body>", '<style>a[href^="tel:"]{color:red}</style><script>e.closest(\'a[href^="tel:"]\')</script></body>')
+    assert check_html(sel) == []

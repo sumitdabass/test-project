@@ -37,7 +37,7 @@ def check_html(html: str, strict_faq_phone: bool = False) -> list[str]:
     n = len(re.findall(r'id="enquiry-form"', html))
     if n > 1:
         problems.append(f"enquiry form count {n} > 1")
-    if re.search(r"tel:(?!\+91)", html):
+    if re.search(r"""href=["']tel:(?!\+91)""", html):
         problems.append("bare tel: link (must be tel:+91...)")
 
     breadcrumbs = 0

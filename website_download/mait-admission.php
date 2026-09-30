@@ -244,6 +244,7 @@ $related_pages = [
   ['title' => 'USICT IPU Admission', 'url' => '/usict-admission.php', 'desc' => 'Admission guide for IPU\'s flagship engineering school USICT'],
   ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Sister college from the same Maharaja Agrasen group — BBA, MBA, Law'],
   ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Neighbouring engineering college — fees, cutoff, placements'],
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round'],
   ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
 // B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)

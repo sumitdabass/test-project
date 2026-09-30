@@ -233,6 +233,7 @@ $related_pages = [
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with counselling dates and eligibility'],
   ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Top IPU college for BBA, MBA, BA-LLB — Maharaja Agrasen group'],
   ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Peer engineering college — fees, cutoff, placements at IPU'],
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round'],
   ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
 // B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
