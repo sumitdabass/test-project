@@ -37,7 +37,7 @@ GSC figures are impressions (clicks) and average position across the matching to
 | **BA LLB** | `ultimate-guide-to-ballb-admission-in-ip-university.php` (p7.0); `ipu-ba-llb-cutoff.php` (p5.0); `ballb-management-quota-ipu.php` (p7.9) | `uslls ba llb fees` (844, p6.2); `ipu ba llb fees` (473, p5); `ipu ba llb counselling 2026` (371, p8.9); `ggsipu ba llb admission 2026` | Counselling term weak | A: fees table, counselling section. |
 | **BBA LLB** | `comprehensive-guide-to-bballb-admission-in-ip-university.php` (402 impr, p13) | `ggsipu bba llb fees` (266, p4.8 from another page); `ipu bba llb admission` | The dedicated page barely ranks while another page wins the query | A: fees and admission-process content on the BBA LLB guide; check which page is actually winning and whether the guide is being cannibalised or is under-indexed. |
 | **Law 3-year (LLB)** | `law-3-year-admission-ipu.php` (2.99% CTR, p6.0) | `vips 3 year llb fees` (278, p4.2); `ipu llb admission`; `ipu 3 year llb fees` | Healthy | A: fees FAQ only. Protect. |
-| **Law (general)** | `IPU-Law-Admission.php` (canonical); `top-law-colleges-ipu.php` (p5.6); `ipu-law-cutoff-2025.php` (2.0% CTR) | `ipu law college` (887, p5); `ipu law colleges` (182, p8.2); `ggsipu law colleges` (434, p4.4); `ipu llm admission 2026` (352, p6.2) | `ipu law colleges` weak; LLM has no dedicated page | B candidate: year-free LLM admission page (confirm none exists); A on top-law page. |
+| **Law (general)** | `IPU-Law-Admission.php` (canonical); `top-law-colleges-ipu.php` (p5.6); `ipu-law-cutoff-2025.php` (2.0% CTR) | `ipu law college` (887, p5); `ipu law colleges` (182, p8.2); `ggsipu law colleges` (434, p4.4); `ipu llm admission 2026` (352, p6.2) | `ipu law colleges` weak; LLM has no dedicated page | LLM page exists (`llm-admission-ipu.php`); A: fee FAQ only. A on top-law page. |
 
 ## 4. Colleges
 
@@ -75,7 +75,7 @@ GSC figures are impressions (clicks) and average position across the matching to
 ## 7. Open items before an implementation plan
 
 1. Locate the UG Brochure 2026-27 PDF (memory says `~/Desktop/UG 2026.pdf`, but the file is not there).
-2. Confirm with `curl` that no `mait-cutoff`, `msit-cutoff`, LLM admission or MBS page already exists at any URL.
+2. Confirmed 2026-09-30: no mait-cutoff, msit-cutoff or MBS page exists; LLM page exists (`llm-admission-ipu.php`).
 3. Sumit decides which C-tier title tests to approve, if any.
 4. Junk-parameter URLs (`?q=`, `?u=`, `index.php?p=`) and legacy `blog-detail.php?url=` pages from the GSC export still need a live `curl` check; that is a separate hygiene task, not part of this keyword map.
 5. Stop-loss baseline for any C-tier edit: `seo/baselines/2026-09-30-gsc-export/`.
