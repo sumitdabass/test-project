@@ -41,7 +41,7 @@ TestCase::assertContains('2026-04-14', $idx, 'older date present');
 
 $pos_featured = strpos($idx, 'CET Result Date Confirmed');
 $pos_other = strpos($idx, 'Round 2 Counselling Schedule');
-TestCase::assertTrue($pos_featured < $pos_other, 'featured post renders before non-featured');
+TestCase::assertTrue($pos_other < $pos_featured, 'newest post renders first regardless of featured flag');
 
 exec('rm -rf ' . escapeshellarg($tmp2));
 
@@ -89,3 +89,42 @@ TestCase::assertTrue(!file_exists($tmp4 . '/website_download/news/stale-old-post
 TestCase::assertTrue(file_exists($tmp4 . '/website_download/news/index.php'), 'index.php preserved');
 
 exec('rm -rf ' . escapeshellarg($tmp4));
+
+// --- news_validate_post() ---
+TestCase::assertTrue(news_validate_post([
+    'title' => 'GGSIPU Counselling 2026 Schedule', 'slug' => 'ggsipu-counselling-2026-schedule',
+    'date' => '2026-06-10', 'category' => 'Counselling',
+], str_repeat('Real body content. ', 30)) === [], 'valid post yields no errors');
+TestCase::assertTrue(count(news_validate_post([
+    'title' => 'X', 'slug' => 'x', 'date' => '2026-06-10', 'category' => 'Counselling',
+], '   ')) > 0, 'empty body rejected');
+TestCase::assertTrue(count(news_validate_post([
+    'title' => 'X', 'slug' => 'x', 'date' => '1999-13-99', 'category' => 'Counselling',
+], str_repeat('body ', 30))) > 0, 'bad date rejected');
+TestCase::assertTrue(count(news_validate_post([
+    'title' => 'X', 'slug' => 'x', 'date' => '2026-06-10', 'category' => 'NotARealCategory',
+], str_repeat('body ', 30))) > 0, 'unknown category rejected');
+foreach (['Counselling', 'CET', 'Admissions', 'Results', 'General'] as $cat) {
+    TestCase::assertTrue(news_validate_post([
+        'title' => 'X', 'slug' => 'x', 'date' => '2026-06-10', 'category' => $cat,
+    ], str_repeat('body ', 60)) === [], "category $cat (the scraper prompt's own list) is accepted");
+}
+
+// every post already published must pass validation, so the validator can never block the live pipeline
+$bad = [];
+foreach (glob(__DIR__ . '/../../content/news/*.md') as $p) {
+    [$vfm, $vbody] = news_parse_mdfile($p);
+    $errs = news_validate_post($vfm, $vbody);
+    if ($errs) { $bad[basename($p)] = implode('; ', $errs); }
+}
+TestCase::assertTrue($bad === [], 'all published posts pass validation: ' . json_encode($bad));
+
+// the build refuses an invalid post instead of deploying it
+$tmp5 = sys_get_temp_dir() . '/news-invalid-' . uniqid();
+mkdir($tmp5 . '/website_download/news', 0755, true);
+file_put_contents($tmp5 . '/bad.md', "{\n  \"title\": \"Bad\",\n  \"slug\": \"bad\",\n  \"date\": \"2026-06-10\",\n  \"category\": \"Counselling\"\n}\n---\nToo short.\n");
+$threw = false;
+try { news_build_single_post($tmp5 . '/bad.md', $tmp5 . '/website_download/news/'); } catch (RuntimeException $e) { $threw = true; }
+TestCase::assertTrue($threw, 'build throws on a post that fails validation');
+TestCase::assertTrue(!file_exists($tmp5 . '/website_download/news/bad.php'), 'no page written for the invalid post');
+exec('rm -rf ' . escapeshellarg($tmp5));

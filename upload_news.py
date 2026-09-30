@@ -93,10 +93,18 @@ def files_for_full(remote_root: str) -> list[tuple[Path, str]]:
     return out
 
 
+# Safety rails for --sync: never mass-delete because a build came out (almost) empty.
+MIN_LOCAL_POSTS = 3          # refuse if fewer local pages than this
+MAX_DELETE_FRACTION = 0.25   # refuse if more than this share of remote pages (min 10) would go
+
+
 def sync_delete_remote_orphans(ftp: ftplib.FTP, remote_news_dir: str, local_news_dir: Path) -> list[str]:
     """List .php files in the remote /news/ dir; delete any that don't have a local
     counterpart. Preserves anything else (subdirectories, non-PHP files)."""
     local_names = {p.name for p in local_news_dir.glob("*.php")}
+    if len(local_names) < MIN_LOCAL_POSTS:
+        print(f"  ⚠ SAFETY: only {len(local_names)} local news pages — refusing to sync-delete remote orphans", file=sys.stderr)
+        return []
     # LIST the remote dir
     listing: list[str] = []
     try:
@@ -106,6 +114,13 @@ def sync_delete_remote_orphans(ftp: ftplib.FTP, remote_news_dir: str, local_news
         return []  # remote dir doesn't exist yet — nothing to clean
     finally:
         ftp.cwd("/")
+
+    remote_php = [n for n in listing if n.endswith(".php")]
+    orphans = [n for n in remote_php if n not in local_names]
+    limit = max(10, int(len(remote_php) * MAX_DELETE_FRACTION))
+    if len(orphans) > limit:
+        print(f"  ⚠ SAFETY: {len(orphans)} of {len(remote_php)} remote pages would be deleted (limit {limit}) — refusing", file=sys.stderr)
+        return []
 
     deleted: list[str] = []
     for remote_name in listing:
