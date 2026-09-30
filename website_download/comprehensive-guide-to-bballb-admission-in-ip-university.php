@@ -177,6 +177,15 @@ include __DIR__ . '/include/components/page-hero.php';
 
 
     <?php
+    $faqs = [
+        ['question' => 'What are IPU BBA LLB fees?', 'answer' => 'At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated colleges have their own SFRC-regulated fees; see the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.'],
+        ['question' => 'Which colleges offer BBA LLB in IPU?', 'answer' => 'Colleges listed on this page include the University School of Law &amp; Legal Studies (USLLS), VIPS, MAIMS, GIBS, MSIT, Delhi Metropolitan Education (DME), Chandarprabhu Jain College School of Law (CPJ), Dr. Akhilesh Das Gupta Institute (ADGIPS), Fairfield Institute of Management &amp; Technology, JIMS and KCC Institute of Legal &amp; Higher Education.'],
+        ['question' => 'Is CLAT required for IPU BBA LLB?', 'answer' => 'CLAT UG is the primary entrance for BBA LLB (Programme Code 121) per UG Brochure 2026-27 Table 1.1. Vacant seats after CLAT counselling are filled on the CUET (UG) merit list. The 3-year LLB (Code 238) is different: it is admitted only through GGSIPU CET.'],
+    ];
+    include 'include/components/faq-section.php';
+    ?>
+
+    <?php
     $related_pages = [
         ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB & BBA LLB through CLAT – top colleges, fees & process'],
         ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],

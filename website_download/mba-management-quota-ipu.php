@@ -49,7 +49,7 @@ include_once("include/form-handler.php");
       "name": "What is the fee for MBA under Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The fee for MBA under Management Quota at IPU affiliated colleges is typically higher than merit seats. Contact the specific college or call 9899991342 for the exact fee structure."
+        "text": "Affiliated MBA colleges charge fees regulated under the 6th SFRC Notification dated 14.07.2025, and capitation fee is prohibited under the Delhi Professional Colleges Act, 2007. Ask the college for its exact fee in writing. USMS, the university school, has no management quota; its 2026-27 tuition is Rs. 1,93,600 per year per the PG Brochure 2026-27."
       }
     }
   ]
@@ -176,6 +176,34 @@ These institutes are among the most preferred MBA colleges under IP University d
 
 <hr>
 
+<h2>Which IPU Colleges Offer MBA Management Quota Seats?</h2>
+
+<p>
+Every unaided affiliated MBA college under IPU reserves 10 percent of its seats as management quota (PG Brochure 2026-27, Chapter 12). The MBA colleges listed on this site include MAIMS Rohini, RDIAS Pitampura, JIMS Rohini, JIMS Kalkaji, BVIMR Paschim Vihar, IINTM Janakpuri and Tecnia Institute; compare them in the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> guide. USMS is a university school, so it fills all its seats through GGSIPU centralised counselling and has no management quota. To see the college-wise fee and admission page, start with <a href="/usms-admission.php">USMS admission</a> for the university route.
+</p>
+
+<hr>
+
+<h2>Entrance Scores Accepted for IPU MBA (Code 101)</h2>
+
+<p>
+The PG Brochure 2026-27 (Section 1.1) accepts MBA entrance scores in this order of priority: CAT 2025, then CMAT 2026 for seats left vacant after CAT counselling, then GGSIPU CET 2026, then CUET PG. MAT is not in the brochure's accepted list for Programme Code 101. Management-quota applicants need one of these valid scores as well.
+</p>
+
+<hr>
+
+<h2>How to Apply for an MBA Management Quota Seat</h2>
+
+<ol>
+<li>Register on the official GGSIPU admission portal and keep your CAT, CMAT, CET or CUET PG score card ready.</li>
+<li>Shortlist affiliated colleges that run a management-quota window and ask each admission office for its dates, seat count and fee.</li>
+<li>Submit the college's management-quota form with your score card and academic documents.</li>
+<li>Pay only the registration fee the college is allowed to charge (the Admission Regulatory Committee cap is Rs. 2,500) and get a receipt.</li>
+<li>Complete document verification and admission formalities at the college.</li>
+</ol>
+
+<hr>
+
 <h2>How Many MBA Management Quota Seats Are There at IPU?</h2>
 
 <p>
@@ -195,7 +223,7 @@ Yes. A valid CAT, CMAT or GGSIPU CET score is mandatory (Important Instruction #
 <h2>MBA Fees at IPU</h2>
 
 <p>
-Tuition at USMS (the university school, which is outside the management quota) is Rs. 1,30,000 per year, about Rs. 2.6 lakh for the two-year programme. Affiliated MBA colleges, where management-quota seats exist, charge fees regulated under the 6th SFRC Notification dated 14.07.2025; ask the college for its exact figure. University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#mba-fees">IPU fee structure</a> for the full table, and read the <a href="/mba-admission-ip-university.php">MBA admission guide</a> and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
+Tuition at USMS (the university school, which is outside the management quota) is Rs. 1,93,600 per year for 2026-27 (PG Brochure 2026-27, Chapter 14, Section 14.1(H)); university, exam and other charges are extra. Affiliated MBA colleges, where management-quota seats exist, charge fees regulated under the 6th SFRC Notification dated 14.07.2025, and a management-quota seat carries no separate capitation fee, so ask the college for its exact figure in writing. See the <a href="/mba-admission-ip-university.php">MBA admission guide</a> for the fee breakdown and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
 </p>
 
 <hr>
