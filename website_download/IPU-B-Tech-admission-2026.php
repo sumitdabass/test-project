@@ -8,7 +8,7 @@ include_once("include/form-handler.php");
 <!-- SEO META -->
 <title>IPU B.Tech Admission 2026 | JEE Main Cutoff, Fees, Top Colleges List</title>
 
-<meta name="description" content="IP University B.Tech Admission 2026 via JEE Main – eligibility, fee Rs.1.55L/yr, cutoff 65-95 percentile, top colleges MAIT/MSIT/USICT. Call 9899991342.">
+<meta name="description" content="IP University B.Tech Admission 2026 via JEE Main – eligibility, year-1 fee Rs.1.6-1.66L, cutoff 65-95 percentile, top colleges MAIT/MSIT/USICT. Call 9899991342.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ipu.co.in/IPU-B-Tech-admission-2026.php" />

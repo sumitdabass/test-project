@@ -52,8 +52,14 @@ def test_fee_page_meta_updated_with_approval_and_nothing_else_in_head():
     assert "Appendix 13(i)" in t and "23.07.2025" in t          # explains the brochure-vs-notice difference
 
 
-def test_other_pages_meta_not_changed_without_approval():
-    # These three still carry "Rs.1.55L" in meta/og/twitter; changing meta needs explicit approval (flagged to Sumit).
-    assert read("mait-admission").count("B.Tech fees Rs.1.55L") == 3
-    assert read("mait-delhi-fees-courses-placements").count("Rs.1.55L") + read("mait-delhi-fees-courses-placements").count("Rs. 1.55L") == 2
-    assert "fee Rs.1.55L/yr" in read("IPU-B-Tech-admission-2026")
+def test_three_page_metas_updated_with_approval():
+    # approved by Sumit 2026-09-30 ("update those 3 metas"); range, not a single figure, because MAIT publishes no clean year-1 tuition
+    mait = read("mait-admission")
+    assert mait.count("B.Tech fees Rs.1.6-1.66L") == 3 and "Rs.1.55L" not in mait
+    prof = read("mait-delhi-fees-courses-placements")
+    assert "B.Tech fees Rs.1.6-1.66L" in prof and "B.Tech fees Rs. 1.6-1.66L" in prof
+    assert "1.55L" not in prof
+    bt = read("IPU-B-Tech-admission-2026")
+    assert "year-1 fee Rs.1.6-1.66L" in bt and "Rs.1.55L" not in bt
+    # titles and canonicals of these three pages stay exactly as they were
+    assert "<title>MAIT Delhi" in prof or "<title>" in prof

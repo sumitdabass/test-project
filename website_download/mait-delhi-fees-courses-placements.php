@@ -1,13 +1,13 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MAIT Delhi: Full Form, Govt or Private, Fees, Cutoff, Placements 2026</title>
-<meta name="description" content="MAIT Delhi (Maharaja Agrasen Institute of Technology) Rohini – is it govt or private? Full form, campus area, B.Tech fees Rs.1.55L, cutoff 83-91%. Call 9899991342.">
+<meta name="description" content="MAIT Delhi (Maharaja Agrasen Institute of Technology) Rohini – is it govt or private? Full form, campus area, B.Tech fees Rs.1.6-1.66L, cutoff 83-91%. Call 9899991342.">
 <meta name="keywords" content="mait full form, mait delhi private or government, mait btech fees, mait delhi, maharaja agrasen institute of technology, mait ipu, mait rohini, mait campus area, mait nirf ranking, mait address, mait college">
 <link rel="canonical" href="https://ipu.co.in/mait-delhi-fees-courses-placements.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="MAIT Delhi: Full Form, Govt or Private, Fees, Cutoff, Placements 2026">
-<meta property="og:description" content="MAIT Rohini Delhi complete profile – private affiliated to GGSIPU, B.Tech fees Rs. 1.55L, 83-91% cutoff, 7-15 LPA placements. Call 9899991342.">
+<meta property="og:description" content="MAIT Rohini Delhi complete profile – private affiliated to GGSIPU, B.Tech fees Rs. 1.6-1.66L, 83-91% cutoff, 7-15 LPA placements. Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/mait-delhi-fees-courses-placements.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
