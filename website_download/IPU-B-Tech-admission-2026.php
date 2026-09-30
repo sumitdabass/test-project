@@ -296,6 +296,10 @@ $faqs = [
   ['question' => 'How do I apply for IPU B.Tech admission?', 'answer' => 'Apply through GGSIPU online counselling once JEE Main 2026 result is declared. Register on the official portal (ipu.admissions.nic.in), pay the counselling fee, lock your college and branch choices, and await seat allotment. The 2026 counselling process typically opens in the third-fourth week of July. Free step-by-step application help: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.'],
   ['question' => 'Is there a management quota for IPU B.Tech admission?', 'answer' => 'Yes, select private affiliated colleges under IPU offer 15-20% seats under the management quota for candidates with lower JEE Main ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. For current management-quota seat availability across IPU colleges, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> or see our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management-quota guide</a>.']
 ];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU B.Tech fees?', 'answer' => 'IPU B.Tech tuition is Rs. 1,69,400 - 2,25,471 per year at USICT and Rs. 1,55,700 per year at colleges such as MAIT, MSIT, VIPS and BPIT (2026-27 fee table, GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#btech-fees">IPU fee structure</a>.'],
+  ['question' => 'What is the B.Tech cutoff for IPU colleges?', 'answer' => 'Closing ranks differ by college, branch and round. See the <a href="/ipu-btech-cutoff-2025.php">IPU B.Tech cutoff</a> page for round-wise JEE Main ranks.']
+]);
 include 'include/components/faq-section.php';
 ?>
 

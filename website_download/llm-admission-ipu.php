@@ -235,6 +235,9 @@ $faqs = [
   ['question' => 'What is the duration and fee of LLM at IPU?', 'answer' => 'LL.M. at IPU is a 1-year programme (2 semesters). Per Chapter 14 of the PG Brochure 2026-27, USLLS USS fee includes tuition + university charges Rs. 20,000/year + examination fee Rs. 3,000/year + innovation & incubation fee Rs. 500/year + development charges Rs. 10,000/year + one-time alumni Rs. 2,000. Affiliated colleges follow the 6th SFRC notification dated 14.07.2025. Call 9899991342 for the latest LL.M. tuition figure.'],
   ['question' => 'How is the LLM (Code 112) different from the 3-year LLB (Code 238)?', 'answer' => 'Code 112 (LL.M.) is a 1-year postgraduate Master of Law degree, requires LL.B + 55%, admission via CLAT-PG 2026 (no IPU CET). <a href="/law-3-year-admission-ipu.php">Code 238 (LLB 3-Year)</a> is a 3-year graduate-entry Bachelor of Laws degree, requires graduation in any discipline + 50%, admission only via GGSIPU CET 2026 (no CUET, no CLAT). They are entirely different programmes — Code 238 is the LLB itself, Code 112 is the master degree built on top of LLB.']
 ];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU LLM fees?', 'answer' => 'The IPU 1-year LLM programme costs Rs. 1,30,000 in tuition (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#llm-fees">IPU fee structure</a>.']
+]);
 include 'include/components/faq-section.php';
 ?>
 

@@ -311,6 +311,9 @@ $faqs = [
   ['question' => 'What is the IPU BBA fees per year in 2026-27?', 'answer' => 'IPU BBA annual tuition ranges from <strong>Rs. 1,21,000 at USMS (the on-campus university school)</strong> to <strong>Rs. 1,80,000 at top private colleges</strong> like NDIM. Most affiliated colleges sit between Rs. 95,000 and Rs. 1,30,000 per year. Add university charges (exam + infrastructure + alumni + innovation) of approximately Rs. 25,000-Rs. 35,500 per year on top. Fees are capped by the 6th SFRC Delhi Gazette Notification dated 14.07.2025.'],
   ['question' => 'Which IPU BBA college has the lowest fees in 2026?', 'answer' => 'USMS (University School of Management Studies, on the GGSIPU Dwarka campus) has the lowest BBA tuition at Rs. 1,21,000 per year &mdash; but admission requires a Delhi-region CUET rank inside the top 100. Among affiliated colleges, Tecnia (Rohini) and DSPSR (Rohini) are the most affordable at approximately Rs. 95,000 per year. Call <a href="tel:+919899991342">9899991342</a> to check your CUET rank chances at the lowest-fee IPU BBA colleges.']
 ];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU BBA fees?', 'answer' => 'IPU BBA tuition is Rs. 1,20,000 - 1,50,000 per year, about Rs. 3.6 - 4.5 lakh for the three-year programme (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#bba-fees">IPU fee structure</a>.']
+]);
 include 'include/components/faq-section.php';
 ?>
 

@@ -210,6 +210,9 @@ $faqs = [
   ['question' => 'Which colleges offer the 3-year LLB under IPU?', 'answer' => 'The University School of Law and Legal Studies (USLLS, Dwarka campus) is the on-campus USS option for Programme Code 238. Affiliated colleges that have offered the 3-year LLB in past admission cycles include VIPS-TC Pitampura, MAIMS, BCIPS, Fairfield, Ideal Institute, DME Noida, CPJ Narela and BVP Paschim Vihar. Final 2026-27 intake per college is per Chapter 13 of the brochure — verify before locking counselling preferences.'],
   ['question' => 'How is the 3-year LLB different from the 5-year Integrated BA-LLB / BBA-LLB?', 'answer' => '<strong>Code 238 (3-year LLB)</strong> is a graduate-entry programme: requires bachelor degree + 50%, admission only via GGSIPU CET, duration 3 years. <strong>Code 121 (5-year Integrated BA-LLB / BBA-LLB)</strong> is a Class-12-entry programme: requires 10+2 with 50% (best of 4 incl. English), admission via CLAT (primary) + CUET (vacant-seat), duration 5 years. Both lead to BCI-recognised LLB enrolment subject to BCI rules.']
 ];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU 3-year LLB fees?', 'answer' => 'IPU 3-year LLB tuition is Rs. 1,30,000 per year, about Rs. 3.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#llb-fees">IPU fee structure</a>.']
+]);
 include 'include/components/faq-section.php';
 ?>
 

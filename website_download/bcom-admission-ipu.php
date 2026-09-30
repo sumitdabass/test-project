@@ -185,6 +185,9 @@ $faqs = [
   ['question' => 'What is the eligibility for B.Com at IPU?', 'answer' => 'Class 12 (10+2) pass with minimum 50% aggregate from a recognised board (45% for SC/ST/OBC/PwD), with at least one of English/Mathematics/Accountancy/Economics/Business Studies as a subject. Per Important Instruction #28 of the 2026-27 brochure, marks are <strong>not rounded off</strong> — 49.99% does not become 50%.'],
   ['question' => 'Does IPU itself offer B.Com (Hons.) at the university campus?', 'answer' => 'Yes — University School of Management Studies (USMS) at the GGSIPU Dwarka campus offers a 4-year B.Com (Hons.) programme with 60 seats per the 2026-27 brochure. USMS also offers BBA, MBA, MBA (FA/A/W).']
 ];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU B.Com Hons fees?', 'answer' => 'IPU B.Com (Hons) tuition is Rs. 40,000 - 1,50,000 per year, about Rs. 1.2 - 4.5 lakh in total, depending on the college (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). See the <a href="/ipu-fees-structure.php#bcom-fees">IPU fee structure</a>.']
+]);
 include 'include/components/faq-section.php';
 ?>
 
