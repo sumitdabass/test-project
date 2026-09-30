@@ -72,3 +72,11 @@ def test_usicts_mca_and_usllss_llb_fees_match_pg_brochure():
     assert "Rs. 1,45,200 (yr 1); Rs. 1,93,220 (yr 2); Rs. 2,09,192 (yr 3)" in t
     assert "Rs. 1,30,000</td><td style=\"padding:10px 14px\">~Rs. 3.9 L" not in t
     assert "LLM Rs. 1,30,000" not in t
+
+
+def test_ug_programme_durations_are_four_years_per_nep():
+    import re
+    t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
+    for name in ("BBA", "BCA", "B.Com (Hons)", "BJMC"):
+        assert re.search(re.escape(name) + r"</td><td[^>]*>4 Yrs</td>", t), name
+    assert "3-year BBA" not in t and "Rs. 4.3-5.2 lakh" not in t
