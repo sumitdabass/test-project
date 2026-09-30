@@ -232,12 +232,12 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr><td><strong>1</strong></td><td><a href="#vips" style="color:#0d1b6e;font-weight:700">VIPS</a></td><td>Pitampura</td><td>All (11+)</td><td>Rs 1.55-1.80L</td><td>5-15 LPA</td></tr>
-      <tr><td><strong>2</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>B.Tech, BBA, BJMC, MBA</td><td>Rs 1,55,700</td><td>7-15 LPA</td></tr>
+      <tr><td><strong>2</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>B.Tech, BBA, BJMC, MBA</td><td>Rs 1.60-1.66L (yr 1)</td><td>7-15 LPA</td></tr>
       <tr><td><strong>3</strong></td><td><a href="#usict" style="color:#0d1b6e;font-weight:700">USICT</a></td><td>Dwarka</td><td>B.Tech, M.Tech, MCA</td><td>Rs 1,69,400</td><td>10-25 LPA</td></tr>
       <tr><td><strong>4</strong></td><td><a href="#maims" style="color:#0d1b6e;font-weight:700">MAIMS</a></td><td>Rohini</td><td>BBA, BCA, B.Com, Law, MBA</td><td>Rs 1,20,000</td><td>5-12 LPA</td></tr>
-      <tr><td><strong>5</strong></td><td><a href="#msit" style="color:#0d1b6e;font-weight:700">MSIT</a></td><td>Janakpuri</td><td>B.Tech (IT/CSE/ECE/EEE)</td><td>Rs 1,55,700</td><td>6-12 LPA</td></tr>
-      <tr><td><strong>6</strong></td><td><a href="#bpit" style="color:#0d1b6e;font-weight:700">BPIT</a></td><td>Rohini</td><td>B.Tech, BBA, MBA</td><td>Rs 1,55,700</td><td>6-11 LPA</td></tr>
-      <tr><td><strong>7</strong></td><td><a href="#bvp" style="color:#0d1b6e;font-weight:700">BVP</a></td><td>Paschim Vihar</td><td>B.Tech, MCA</td><td>Rs 1,55,700</td><td>6-12 LPA</td></tr>
+      <tr><td><strong>5</strong></td><td><a href="#msit" style="color:#0d1b6e;font-weight:700">MSIT</a></td><td>Janakpuri</td><td>B.Tech (IT/CSE/ECE/EEE)</td><td>Rs 1.60-1.66L (yr 1)</td><td>6-12 LPA</td></tr>
+      <tr><td><strong>6</strong></td><td><a href="#bpit" style="color:#0d1b6e;font-weight:700">BPIT</a></td><td>Rohini</td><td>B.Tech, BBA, MBA</td><td>Rs 1,65,770 (yr 1)</td><td>6-11 LPA</td></tr>
+      <tr><td><strong>7</strong></td><td><a href="#bvp" style="color:#0d1b6e;font-weight:700">BVP</a></td><td>Paschim Vihar</td><td>B.Tech, MCA</td><td>Rs 1,65,770 (yr 1)</td><td>6-12 LPA</td></tr>
       <tr><td><strong>8</strong></td><td><a href="#msi" style="color:#0d1b6e;font-weight:700">MSI</a></td><td>Janakpuri</td><td>BBA, BCA, B.Com, Law, B.Ed</td><td>Rs 1,20,000</td><td>4-9 LPA</td></tr>
       <tr><td><strong>9</strong></td><td><a href="#jims" style="color:#0d1b6e;font-weight:700">JIMS Rohini</a></td><td>Rohini</td><td>BBA, BCA, B.Com, MCA, MBA</td><td>Rs 1.45-1.60L</td><td>5-12 LPA</td></tr>
       <tr><td><strong>10</strong></td><td><a href="#tecnia" style="color:#0d1b6e;font-weight:700">Tecnia</a></td><td>Rohini</td><td>BBA, BCA, B.Com, BJMC, MCA</td><td>Rs 1,20,000</td><td>4-8 LPA</td></tr>
@@ -257,7 +257,7 @@ include 'include/components/hero-banner.php';
   <div class="college-block" id="mait">
     <h3><span class="rank-badge">2</span>MAIT – Maharaja Agrasen Institute of Technology</h3>
     <p><strong>Location:</strong> Sector 22, Rohini, Delhi &nbsp;|&nbsp; <strong>Top engineering college under IPU</strong></p>
-    <p><strong>Programmes:</strong> B.Tech (CSE, IT, ECE, EEE, AIML), BBA, BJMC, MBA &nbsp;|&nbsp; <strong>Seats:</strong> 1200+ &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Placements:</strong> 7-15 LPA</p>
+    <p><strong>Programmes:</strong> B.Tech (CSE, IT, ECE, EEE, AIML), BBA, BJMC, MBA &nbsp;|&nbsp; <strong>Seats:</strong> 1200+ &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1.60-1.66 lakh (year 1, 2026-27) &nbsp;|&nbsp; <strong>Placements:</strong> 7-15 LPA</p>
     <p>MAIT is consistently the <strong>best affiliated engineering college under IPU</strong>. Known for its strong coding culture, active hackathons, alumni network at top tech companies and placement record of 7-15 LPA. MAIT's CSE and IT branches are among the most sought-after in IPU. Top recruiters include TCS, Wipro, Infosys, HCL, Accenture and leading startups.</p>
   </div>
 
@@ -278,7 +278,7 @@ include 'include/components/hero-banner.php';
   <div class="college-block" id="msit">
     <h3><span class="rank-badge">5</span>MSIT – Maharaja Surajmal Institute of Technology</h3>
     <p><strong>Location:</strong> C-4, Janakpuri, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> 900+</p>
-    <p><strong>Programmes:</strong> B.Tech (IT, CSE, ECE, EEE) &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Placements:</strong> 6-12 LPA</p>
+    <p><strong>Programmes:</strong> B.Tech (IT, CSE, ECE, EEE) &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1.60-1.66 lakh (year 1, 2026-27) &nbsp;|&nbsp; <strong>Placements:</strong> 6-12 LPA</p>
     <p>MSIT is one of the top engineering colleges under IPU based in West Delhi. Known for its experienced faculty, consistent placement performance and strong CSE/IT branches. The Janakpuri location offers excellent metro connectivity and a vibrant campus life.</p>
   </div>
 
@@ -289,14 +289,14 @@ include 'include/components/hero-banner.php';
   <div class="college-block" id="bpit">
     <h3><span class="rank-badge">6</span>BPIT – Bhagwan Parshuram Institute of Technology</h3>
     <p><strong>Location:</strong> PSP Area, Sector 17, Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> 800+</p>
-    <p><strong>Programmes:</strong> B.Tech (ECE, CSE, IT, EEE), BBA, MBA &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Placements:</strong> 6-11 LPA</p>
+    <p><strong>Programmes:</strong> B.Tech (ECE, CSE, IT, EEE), BBA, MBA &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,65,770 (year 1, 2026-27) &nbsp;|&nbsp; <strong>Placements:</strong> 6-11 LPA</p>
     <p>BPIT is a reputed IPU engineering college in Rohini offering a wide range of branches. Strong focus on industry collaborations, active placement cell, and good ECE/CSE programme quality. Also popular for BBA and MBA programmes.</p>
   </div>
 
   <div class="college-block" id="bvp">
     <h3><span class="rank-badge">7</span>BVP – Bharati Vidyapeeth College of Engineering</h3>
     <p><strong>Location:</strong> A-4, Paschim Vihar, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> 800+</p>
-    <p><strong>Programmes:</strong> B.Tech (CSE, ECE, IT, ICE, EEE, AIML), MCA &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Placements:</strong> 6-12 LPA</p>
+    <p><strong>Programmes:</strong> B.Tech (CSE, ECE, IT, ICE, EEE, AIML), MCA &nbsp;|&nbsp; <strong>Fees:</strong> Rs 1,65,770 (year 1, 2026-27) &nbsp;|&nbsp; <strong>Placements:</strong> 6-12 LPA</p>
     <p>Bharati Vidyapeeth's College of Engineering (BVCOE) is well-known for its engineering programmes with good CSE/ECE/IT placements. The college has a green campus, quality faculty and an active placement cell attracting top IT and core companies.</p>
   </div>
 
@@ -393,7 +393,7 @@ $faqs = [
   ['question' => 'Which is the top IPU college for B.Tech?', 'answer' => 'USICT Dwarka is the top B.Tech college under IPU. As a government constituent school, it offers the highest placements (10-25 LPA average), lowest fees and most competitive cutoffs. MAIT Rohini is the best affiliated B.Tech college, followed by MSIT Janakpuri, BPIT and BVP Paschim Vihar.'],
   ['question' => 'Which is the top IPU college for BBA?', 'answer' => 'VIPS Pitampura is the top BBA college under IPU, followed by MAIMS Rohini, RDIAS Rohini, JIMS Rohini and Trinity Institute. VIPS leads due to its large BBA programme, active placement cell and diverse corporate tie-ups. Fees range from Rs 1.20-1.70 lakh/year.'],
   ['question' => 'Which IPU college has the best placements?', 'answer' => 'USICT Dwarka has the best placements among all IPU colleges with average packages of 10-25 LPA. For B.Tech, MAIT (7-15 LPA) and MSIT (6-12 LPA) follow. For MBA, USMS leads at 8-18 LPA. For law, USLLS at 5-15 LPA is the best. VIPS has strong placements across all programmes.'],
-  ['question' => 'What is the fee of top IPU colleges?', 'answer' => 'IPU college fees range from Rs 1.20 lakh to Rs 1.80 lakh per year depending on the programme. Government schools (USICT, USMS, USLLS) have the lowest fees around Rs 1.30-1.70 lakh/year. Private affiliated colleges like MAIT, MSIT, BPIT, BVP charge around Rs 1.55 lakh/year. VIPS charges Rs 1.55-1.80 lakh/year.'],
+  ['question' => 'What is the fee of top IPU colleges?', 'answer' => 'IPU college fees range from Rs 1.20 lakh to Rs 1.80 lakh per year depending on the programme. Government schools (USICT, USMS, USLLS) have the lowest fees around Rs 1.30-1.70 lakh/year. Private affiliated colleges like MAIT, MSIT, BPIT, BVP charge around Rs 1.60-1.66 lakh in year 1 (2026-27). VIPS charges Rs 1.55-1.80 lakh/year.'],
   ['question' => 'How are IPU colleges ranked?', 'answer' => 'IPU colleges are ranked based on: (1) Placement records — average and highest packages, (2) Entrance cutoffs (CAT, JEE, CLAT), (3) Faculty quality and research output, (4) Infrastructure and campus, (5) Industry connections, (6) Alumni network, (7) Student strength and programme diversity, (8) NAAC accreditation. USICT, MAIT, VIPS and USMS consistently rank in the top positions.'],
   ['question' => 'Which IPU college offers the most courses?', 'answer' => 'VIPS Pitampura offers the most courses among all IPU colleges — 11+ programmes including B.Tech, BBA, BCA, B.Com, BA LLB, BBA LLB, LLB 3yr, BJMC, BA Economics, BA English, MBA, MCA and LLM. With 3000+ total seats, VIPS is effectively a mini-university within IPU.']
 ];

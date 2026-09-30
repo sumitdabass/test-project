@@ -191,12 +191,12 @@ include 'include/components/hero-banner.php';
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">180</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">180</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
       </tbody>
     </table>
     <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at MSIT: ~600.</p>

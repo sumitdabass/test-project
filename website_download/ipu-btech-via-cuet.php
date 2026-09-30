@@ -181,7 +181,7 @@
 
       <div style="border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">
         <h3 style="color:#1a3a6b;font-size:1.1rem;font-weight:700;">What is the fee for B.Tech at IPU colleges?</h3>
-        <p>USS (University Schools) tuition is Rs. 1,69,400 per year per UG Brochure 2026-27 Ch 14. Affiliated colleges charge Rs. 1,41,750 to Rs. 1,55,700 per year per the 6th SFRC Notification dated 14.07.2025 (F.No. DHE.18(1)/6th SFRC/2023/3205-15). Capitation fee is prohibited under Section 12 of the Delhi Professional Colleges Act 2007.</p>
+        <p>USS (University Schools) tuition is Rs. 1,69,400 per year per UG Brochure 2026-27 Ch 14. Affiliated colleges charge Rs. 1,60,100 to Rs. 1,65,770 in year 1 of 2026-27 per their own fee notices; the 6th SFRC Notification dated 14.07.2025 (F.No. DHE.18(1)/6th SFRC/2023/3205-15) gave Rs. 1,41,750 to Rs. 1,55,700. Capitation fee is prohibited under Section 12 of the Delhi Professional Colleges Act 2007.</p>
       </div>
 
       <div style="text-align:center;background:#f0f4ff;border-radius:10px;padding:30px;margin-top:40px;">

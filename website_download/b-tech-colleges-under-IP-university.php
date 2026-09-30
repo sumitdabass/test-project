@@ -216,7 +216,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">📍 <strong>Paschim Vihar, Delhi</strong></span>
 <span class="stat-badge">NAAC: <strong>A</strong></span>
 <span class="stat-badge">Seats: <strong>480</strong></span>
-<span class="stat-badge">Fees: <strong>~₹1.55L/yr</strong></span>
+<span class="stat-badge">Fees: <strong>~₹1.60-1.66L (yr 1)</strong></span>
 <span class="stat-badge">Placement: <strong>85%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">BVCOE offers strong engineering programmes backed by a well-equipped campus. The college is known for quality faculty and an active placement cell that consistently attracts leading IT and core engineering companies.</p>

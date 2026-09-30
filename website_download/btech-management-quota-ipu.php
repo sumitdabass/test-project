@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "What is the fee for B.Tech under Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Management Quota tuition is the same as merit seats — regulated by the Govt of NCT Delhi 6th SFRC Notification dated 14.07.2025 (Appendix 13(i) of the GGSIPU Brochure 2026-27): approximately Rs. 1,41,750 to Rs. 1,55,700 per year for B.Tech at affiliated colleges. Capitation fee is prohibited per Section 12 of the Delhi Professional Colleges Act 2007. An additional Rs. 2,500 registration fee applies per Chapter 12."
+        "text": "Management Quota tuition is the same as merit seats — regulated by the Govt of NCT Delhi 6th SFRC Notification dated 14.07.2025 (Appendix 13(i) of the GGSIPU Brochure 2026-27): the brochure range was approximately Rs. 1,41,750 to Rs. 1,55,700 per year, and affiliated colleges' own 2026-27 fee notices show year-1 B.Tech tuition of Rs. 1,60,100 to Rs. 1,65,770 (BPIT, BVCOE, ADGIPS). Capitation fee is prohibited per Section 12 of the Delhi Professional Colleges Act 2007. An additional Rs. 2,500 registration fee applies per Chapter 12."
       }
     },
     {

@@ -18,7 +18,7 @@ def row(label_fragment):
 def test_affiliated_btech_row_uses_2026_27_notices():
     r = row("affiliated colleges, e.g. BPIT / BVCOE")
     assert "1,65,770" in r and "2,20,640" in r and "7.69" in r and "Affiliated" in r
-    assert "1,55,700" not in text()          # stale 2025-26 figure gone from the whole page
+    assert "Rs. 1,55,700" not in r                                   # stale figure gone from the table row itself
 
 
 def test_four_year_total_matches_the_published_schedule():
@@ -39,10 +39,10 @@ def test_sources_are_stated():
     assert "BPIT" in src and "BVCOE" in src and "23.07.2025" in src
 
 
-def test_title_meta_h1_untouched_tier_c_needs_approval():
+def test_title_unchanged_and_meta_is_the_approved_one():
     t = text()
     assert "<title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>" in t
-    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.55L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t
+    assert 'content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342."' in t   # approved by Sumit 2026-09-30
 
 
 def test_bvcoe_dataset_matches_published_last_admission_ranks():

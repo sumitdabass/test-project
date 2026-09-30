@@ -1,7 +1,7 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Fee Structure 2026 – B.Tech, BBA, Law, MBA, BCA, B.Com Fees</title>
-<meta name="description" content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.55L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342.">
+<meta name="description" content="IP University (GGSIPU) Fee Structure 2026 – B.Tech Rs.1.66L, BBA Rs.1.2L, BA LLB Rs.1.45L, MBA Rs.1.3L, BCA Rs.80K. Official brochure fees. Call 9899991342.">
 <meta name="keywords" content="ipu fees structure, ipu fees for bba, ipu llb fees, ipu law fees, ggsipu law fees, ggsipu ba llb fees, ip university ba llb fees, mait btech fees, ipu bba fees, ipu mba fees, ipu bca fees, ipu counselling fees, ipu llb 3 year fees, maims bba fees, bjmc course fees, indraprastha university fees">
 <link rel="canonical" href="https://ipu.co.in/ipu-fees-structure.php">
 
@@ -104,7 +104,7 @@ include 'include/components/hero-banner.php';
   </table>
   </div>
 
-  <p style="font-size:13px;color:#64748b">Affiliated-college B.Tech and other rows for 2026-27 follow the colleges' own fee notices issued under SFRC letter F.IPU/Academic/Notice/2025/1001 dated 23.07.2025 (BPIT: first-year tuition B.Tech Rs. 1,65,770, BBA Rs. 1,24,520, MBA Rs. 2,03,720; BVCOE: B.Tech academic fee Rs. 1,65,770, Rs. 1,82,347, Rs. 2,00,582 and Rs. 2,20,640 over years 1 to 4; ADGIPS first-year fees B.Tech Rs. 1,60,100, BBA Rs. 1,24,900, BA LLB / BBA LLB Rs. 1,28,500, MBA Rs. 1,74,000). Fees differ by college and batch, so confirm with your college.</p>
+  <p style="font-size:13px;color:#64748b">Affiliated-college B.Tech and other rows for 2026-27 follow the colleges' own fee notices issued under SFRC letter F.IPU/Academic/Notice/2025/1001 dated 23.07.2025 (BPIT: first-year tuition B.Tech Rs. 1,65,770, BBA Rs. 1,24,520, MBA Rs. 2,03,720; BVCOE: B.Tech academic fee Rs. 1,65,770, Rs. 1,82,347, Rs. 2,00,582 and Rs. 2,20,640 over years 1 to 4; ADGIPS first-year fees B.Tech Rs. 1,60,100, BBA Rs. 1,24,900, BA LLB / BBA LLB Rs. 1,28,500, MBA Rs. 1,74,000). Fees differ by college and batch, so confirm with your college. The brochure's Appendix 13(i), based on the 14.07.2025 SFRC gazette, lists Rs. 1,41,750 to Rs. 1,55,700 for affiliated B.Tech; the colleges' 2026-27 notices (SFRC letter dated 23.07.2025) show the higher figures above.</p>
 
   <h2>Additional Charges (Beyond Tuition)</h2>
   <p>The tuition fee shown above is only one component. Every IPU student pays the following additional charges per year:</p>

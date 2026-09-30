@@ -134,7 +134,7 @@ include 'include/components/hero-banner.php';
       <tr><td><strong>4</strong></td><td><a href="#jims" style="color:#0d1b6e;font-weight:700">JIMS Rohini</a></td><td>Rohini</td><td>Rs 1,60,000</td><td>60+ %ile</td><td>7-14 LPA</td></tr>
       <tr><td><strong>5</strong></td><td><a href="#gibs" style="color:#0d1b6e;font-weight:700">GIBS</a></td><td>Rohini (Madhuban Chowk)</td><td>Rs 1,30,000</td><td>50+ %ile</td><td>4-7 LPA</td></tr>
       <tr><td><strong>6</strong></td><td><a href="#tecnia" style="color:#0d1b6e;font-weight:700">Tecnia Institute</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>45+ %ile</td><td>5-8 LPA</td></tr>
-      <tr><td><strong>7</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>Rs 1,55,700</td><td>50+ %ile</td><td>6-10 LPA</td></tr>
+      <tr><td><strong>7</strong></td><td><a href="#mait" style="color:#0d1b6e;font-weight:700">MAIT</a></td><td>Rohini</td><td>Rs 1.74-2.04L (yr 1, affiliated; confirm with MAIT)</td><td>50+ %ile</td><td>6-10 LPA</td></tr>
       <tr><td><strong>8</strong></td><td><a href="#hmr" style="color:#0d1b6e;font-weight:700">HMR Institute</a></td><td>Hameedpur</td><td>Rs 1,20,000</td><td>45+ %ile</td><td>4-7 LPA</td></tr>
       <tr><td><strong>9</strong></td><td><a href="#dias" style="color:#0d1b6e;font-weight:700">DIAS</a></td><td>Rohini</td><td>Rs 1,25,000</td><td>48+ %ile</td><td>4-8 LPA</td></tr>
       <tr><td><strong>10</strong></td><td><a href="#donbosco" style="color:#0d1b6e;font-weight:700">Don Bosco Institute</a></td><td>Okhla</td><td>Rs 1,20,000</td><td>42+ %ile</td><td>4-7 LPA</td></tr>
@@ -193,7 +193,7 @@ include 'include/components/hero-banner.php';
   <div class="college-block" id="mait">
     <h3><span class="rank-badge">7</span>MAIT – Maharaja Agrasen Institute of Technology (MBA)</h3>
     <p><strong>Location:</strong> Rohini, Delhi &nbsp;|&nbsp; <strong>Seats:</strong> MBA 60 (via MAIT campus)</p>
-    <p><strong>Fees:</strong> Rs 1,55,700/year &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 50+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 6-10 LPA</p>
+    <p><strong>Fees:</strong> Rs 1.74-2.04 lakh in year 1 at affiliated MBA colleges (BPIT / ADGIPS notices; confirm with MAIT) &nbsp;|&nbsp; <strong>Cutoff:</strong> CAT 50+ percentile &nbsp;|&nbsp; <strong>Placement:</strong> 6-10 LPA</p>
     <p>MAIT's MBA programme benefits from the engineering college's strong corporate network and infrastructure. Many B.Tech + MBA dual opportunities exist, making it popular with tech-focused MBA aspirants. Placements are solid in IT services, analytics and consulting roles.</p>
   </div>
 
