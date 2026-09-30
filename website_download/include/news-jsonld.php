@@ -16,11 +16,6 @@ function news_jsonld_newsarticle(array $post): string {
         'image' => $img,
         'datePublished' => $post['date'],
         'dateModified' => $post['date_modified'] ?? $post['date'],
-        'author' => [
-            '@type' => 'Organization',
-            'name' => 'IPU.co.in Editorial Team',
-            'url' => NEWS_SITE_ORIGIN . '/about',
-        ],
         'publisher' => [
             '@type' => 'Organization',
             'name' => 'IPU.co.in',
@@ -30,12 +25,7 @@ function news_jsonld_newsarticle(array $post): string {
             ],
         ],
         'articleSection' => $post['category'],
-        'keywords' => !empty($post['tags']) ? implode(', ', $post['tags']) : null,
-        'inLanguage' => 'en-IN',
-        'isAccessibleForFree' => true,
     ];
-    // Drop nulls
-    $data = array_filter($data, fn($v) => $v !== null);
 
     return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 }
