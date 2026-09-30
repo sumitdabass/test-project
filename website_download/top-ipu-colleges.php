@@ -403,6 +403,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'IPU Colleges in Dwarka', 'url' => '/ipu-colleges-in-dwarka.php', 'desc' => 'GGSIPU campus schools and affiliated colleges near Dwarka metro'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Complete IPU admission guide for all programmes'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 110+ IPU affiliated colleges in Delhi'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Top IPU engineering colleges ranking for 2026'],

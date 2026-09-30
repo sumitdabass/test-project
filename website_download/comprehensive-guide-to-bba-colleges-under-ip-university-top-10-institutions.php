@@ -316,6 +316,7 @@ include 'include/components/faq-section.php';
 
 <?php
 $related_pages = [
+  ['title' => 'MBS College Dwarka Admission', 'url' => '/mbs-college-admission.php', 'desc' => 'B.Arch, B.Tech, BBA, BCA and B.Com Hons at MBS College, Dwarka'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],

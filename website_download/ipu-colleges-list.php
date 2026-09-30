@@ -504,6 +504,8 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'IPU Colleges in Dwarka', 'url' => '/ipu-colleges-in-dwarka.php', 'desc' => 'GGSIPU campus schools and affiliated colleges near Dwarka metro'],
+  ['title' => 'MBS College Dwarka', 'url' => '/mbs-college-admission.php', 'desc' => 'B.Arch, B.Tech, BBA, BCA and B.Com Hons at MBS College'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and the complete admission process'],
   ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],

@@ -66,3 +66,17 @@ def test_unknown_institute_fails_loudly(server):
 def test_admission_pages_link_to_cutoff_pages():
     for adm, cut in (("mait-admission.php", "/mait-cutoff.php"), ("msit-admission.php", "/msit-cutoff.php")):
         assert cut in (WEB / adm).read_text()
+
+
+def test_mbs_and_dwarka_pages(server):
+    for page in ("mbs-college-admission.php", "ipu-colleges-in-dwarka.php"):
+        status, html = _get(f"{server}/{page}")
+        assert status == 200, page
+        assert check_html(html, strict_faq_phone=True) == [], page
+        assert f"https://ipu.co.in/{page}" in html
+    _, mbs = _get(f"{server}/mbs-college-admission.php")
+    for phrase in ("MBS College Dwarka", "Courses Offered", "How to Reach", "Admission Process",
+                   "Sector 9", "COA", "AICTE"):
+        assert phrase in mbs, phrase
+    _, hub = _get(f"{server}/ipu-colleges-in-dwarka.php")
+    assert "/mbs-college-admission.php" in hub and "/usict-admission.php" in hub

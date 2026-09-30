@@ -252,6 +252,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'MBS College Dwarka Admission', 'url' => '/mbs-college-admission.php', 'desc' => 'B.Arch, B.Tech, BBA, BCA and B.Com Hons at MBS College, Dwarka'],
   ['title' => 'IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'B.Tech admission process via JEE Main at GGSIPU'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
