@@ -1,5 +1,5 @@
 {
-  "title": "GGSIPU Centralized Online Counselling 2026-27 to Begin Tentatively from 8 June",
+  "title": "GGSIPU Releases Notification for Centralized Online Counselling Enrolment 2026-27",
   "slug": "ipu-centralized-online-counselling-enrolment",
   "date": "2026-06-04",
   "date_modified": "2026-06-04",
@@ -7,65 +7,48 @@
   "tags": [
     "GGSIPU Counselling",
     "IPU Admission 2026",
-    "Online Counselling Enrolment",
-    "Counselling 2026"
+    "Online Counselling Enrolment"
   ],
-  "featured": true,
-  "is_urgent": true,
-  "tldr": "GGSIPU (Notification 26/2026, dated 03.06.2026) has announced that enrolment for its centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026 for B.Tech and 11 other programmes. MBA and MCA schedules will follow separately.",
+  "featured": false,
+  "is_urgent": false,
+  "tldr": "GGSIPU has issued an official notification regarding enrolment for the centralized online counselling process for the 2026-27 academic session.",
   "faq": [
     {
-      "q": "When does GGSIPU online counselling 2026 start?",
-      "a": "Per GGSIPU Notification 26/2026 (03.06.2026), enrolment for centralized online counselling 2026-27 is likely to begin tentatively from 8 June 2026. The university has stated the date is tentative; confirm on ipu.ac.in."
+      "q": "What is the purpose of this GGSIPU notification?",
+      "a": "The notification provides official instructions and guidelines regarding the enrolment process for centralized online counselling for the 2026-27 academic session."
     },
     {
-      "q": "Which programmes are covered in this counselling?",
-      "a": "B.Tech (131), BCA (114), BA LL.B./BBA LL.B. (121), LL.M. (112), B.Ed. (122), BBA & 5-year Integrated (125), BA JMC (126), LE B.Tech (128), B.Com Hons (146), B.Ed. Special Education (159), BA English Hons (184) and BA Economics Hons (197). MBA (101) and MCA (105) schedules will be announced separately."
+      "q": "Which programmes are covered under this online counselling notification?",
+      "a": "It applies to all university programmes for which GGSIPU conducts centralized online counselling."
     },
     {
-      "q": "Is the 8 June 2026 date confirmed?",
-      "a": "No. GGSIPU's notification states the start is 'likely' and 'tentative'. Check ipu.ac.in and ipu.admissions.nic.in for the confirmed schedule, or call 9899991342."
+      "q": "Where can I find the specific dates and deadlines for enrolment?",
+      "a": "Candidates must refer to the official PDF notification dated June 3, 2026, on the IPU admissions website for the exact schedule."
     }
   ],
   "image": "assets/images/news/counselling.jpg"
 }
 ---
-## GGSIPU Notifies Counselling 2026-27 Start
+## Centralized Online Counselling Enrolment Initiated
 
-Guru Gobind Singh Indraprastha University (GGSIPU) has issued **Notification No. 26/2026** (F.No. IPU-7/Academic/2026-27/2289), dated **3 June 2026**, on enrolment for its **Centralized Online Counselling** for the 2026-27 academic session.
+Guru Gobind Singh Indraprastha University (GGSIPU) has released an important notification dated June 3, 2026, regarding the enrolment process for centralized online counselling. This enrolment is mandatory for candidates seeking admission to various undergraduate and postgraduate programmes where online counselling is conducted for the academic session 2026-27.
 
-As per the notification, enrolment is **likely to be started from 8 June 2026, tentatively**. The university has explicitly stated this date is tentative, and candidates are advised to check the official websites — [ipu.ac.in](https://ipu.ac.in) and [ipu.admissions.nic.in](https://ipu.admissions.nic.in) — regularly for updated information. To see how these rounds fit the wider cycle, read our [IPU admission guide](/ipu-admission-guide.php).
+To understand how these counselling rounds fit into the overall admission cycle, candidates can refer to our comprehensive [IPU admission guide](/ipu-admission-guide.php).
 
-## Programmes Covered
+## Key Details of the Notification
 
-| Programme | Code |
-|---|---|
-| LL.M. | 112 |
-| BCA | 114 |
-| BA LL.B. / BBA LL.B. | 121 |
-| B.Ed. | 122 |
-| BBA & Allied / 5-year BBA-MBA Integrated | 125 |
-| BA (JMC) | 126 |
-| LE B.Tech (for Diploma Holders) | 128 |
-| B.Tech | 131 |
-| B.Com (Hons) | 146 |
-| B.Ed. (Special Education) | 159 |
-| BA English (Hons / Hons with Research) | 184 |
-| BA Economics (Hons / Hons with Research) | 197 |
+According to the official release, candidates must register and enrol themselves to participate in the upcoming centralized online counselling rounds. 
 
-The schedule for **MBA (code 101)** and **MCA / MCA (SE) (code 105)** will be displayed on the University websites separately, in due course.
+* **Notification Date:** June 3, 2026
+* **Academic Session:** 2026-27
+* **Applicability:** All programmes for which GGSIPU conducts centralized online counselling.
 
 ## What Candidates Should Do Next
 
-Keep your documents and entrance-exam scorecard (JEE Main / CUET / CLAT / IPU CET, as applicable) ready and watch the official portals for the live enrolment link.
+Since specific deadlines, eligible programmes, and registration steps are detailed in the official PDF, candidates are strongly advised to download and read the notification carefully.
 
 1. Visit the official IPU admissions portal at ipu.admissions.nic.in.
 2. Access the PDF notification dated 03.06.2026 to verify the schedule for your specific course.
 3. Complete the online enrolment within the prescribed timeline to secure your participation in the seat allotment process.
 
-For free, step-by-step help with registration, choice filling and seat predictions, call our 24x7 admission helpline at **9899991342**.
-
-Related guides:
-- [GGSIPU B.Tech Counselling 2026](/GGSIPU-counselling-for-B-Tech-admission.php)
-- [IPU Counselling 2026 — Complete Schedule & Process](/ipu-counselling.php)
-- [IPU B.Tech Admission 2026](/IPU-B-Tech-admission-2026.php)
+If you are applying for engineering programmes, you can also check our detailed [GGSIPU B.Tech counselling guide](/GGSIPU-counselling-for-B-Tech-admission.php) for context on how the seat allocation rounds generally proceed.

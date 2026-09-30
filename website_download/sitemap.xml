@@ -520,26 +520,6 @@
 <priority>0.85</priority>
 </url>
   <url>
-    <loc>https://ipu.co.in/news/btech-online-refund-list-released.php</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://ipu.co.in/news/bed-seat-cancellation-refund-order-released.php</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://ipu.co.in/news/vacant-seats-llb-admissions.php</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://ipu.co.in/news/ba-economics-vacant-seats-announced.php</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://ipu.co.in/news/ggsipu-round-one-bhms-counselling-schedule-announced.php</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -951,7 +931,7 @@
   </url>
   <url>
     <loc>https://ipu.co.in/news/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>

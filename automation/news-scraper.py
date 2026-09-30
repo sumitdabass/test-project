@@ -9,11 +9,12 @@ Flow:
   1. Fetch each source's HTML.
   2. Extract candidate links whose anchor text or URL contains admission/
      counselling/CET/result/notification keywords.
-  3. Skip items whose target slug already exists under content/news/.
-  4. For each new item, call Gemini (gemini-flash-latest) with the system prompt from
+  3. Skip items whose source link is in content/news/.seen-links.json, or
+     whose target slug already exists under content/news/.
+  4. For each new item, call OpenAI GPT-4o mini with the system prompt from
      deployment/prompts/news-rewrite-system.md, asking for JSON matching our
      news post schema.
-  5. If Gemini returns `{"skip": true}`, skip the item.
+  5. If OpenAI returns `{"skip": true}`, skip the item.
   6. Otherwise write the MD file to content/news/<slug>.md.
 
 Env vars (required in GH Actions; loaded from .env locally):
@@ -41,6 +42,9 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 CONTENT_DIR = REPO / "content" / "news"
 PROMPT_PATH = REPO / "deployment" / "prompts" / "news-rewrite-system.md"
+# Source links already turned into a post (or rejected by the model). Lives in
+# content/news/ so the workflow's `git add content/news/` commits it.
+SEEN_PATH = CONTENT_DIR / ".seen-links.json"
 
 SOURCES = [
     {"name": "ipu.admissions.nic.in/current-events",      "url": "https://ipu.admissions.nic.in/current-events/"},
@@ -138,45 +142,30 @@ def existing_slugs() -> set[str]:
     return {p.stem for p in CONTENT_DIR.glob("*.md")}
 
 
-def existing_source_urls() -> set[str]:
-    """Pull source_url from each existing post's frontmatter so we can dedup by
-    canonical link rather than anchor-text slug. Older posts that predate
-    source_url persistence simply contribute nothing — fuzzy_slug_collision
-    covers them."""
-    urls: set[str] = set()
-    if not CONTENT_DIR.exists():
-        return urls
-    for p in CONTENT_DIR.glob("*.md"):
-        try:
-            raw = p.read_text(encoding="utf-8")
-            head, _sep, _ = raw.partition("\n---")
-            fm = json.loads(head)
-            url = fm.get("source_url")
-            if isinstance(url, str) and url:
-                urls.add(url.strip())
-        except Exception:
-            # Malformed frontmatter on an old post shouldn't break the run.
-            continue
-    return urls
+def normalise_link(url: str) -> str:
+    return url.split("#", 1)[0].strip().rstrip("/").lower()
 
 
-def fuzzy_slug_collision(candidate_slug: str, seen_slugs: set[str], threshold: float = 0.6) -> str | None:
-    """Token-Jaccard similarity between two slugs. Catches rephrased anchor
-    texts like 'final-opportunity-ipu-cet-registration' vs
-    'last-opportunity-ipu-cet-registration' that the strict substring check
-    misses. Returns the colliding existing slug, or None."""
-    cand_tokens = {t for t in candidate_slug.split("-") if t and len(t) > 2}
-    if not cand_tokens:
+def load_seen_links() -> set[str] | None:
+    """None means no state file yet (first run after dedup was introduced)."""
+    if not SEEN_PATH.exists():
         return None
-    for s in seen_slugs:
-        s_tokens = {t for t in s.split("-") if t and len(t) > 2}
-        if not s_tokens:
+    seen = set(json.loads(SEEN_PATH.read_text(encoding="utf-8")))
+    # Posts written since source_url was added also carry their link.
+    for md in CONTENT_DIR.glob("*.md"):
+        head = md.read_text(encoding="utf-8").split("\n---", 1)[0]
+        try:
+            src = json.loads(head).get("source_url")
+        except json.JSONDecodeError:
             continue
-        union = cand_tokens | s_tokens
-        inter = cand_tokens & s_tokens
-        if union and len(inter) / len(union) >= threshold:
-            return s
-    return None
+        if src:
+            seen.add(normalise_link(src))
+    return seen
+
+
+def save_seen_links(seen: set[str]) -> None:
+    SEEN_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SEEN_PATH.write_text(json.dumps(sorted(seen), indent=2) + "\n", encoding="utf-8")
 
 
 def call_llm(system_prompt: str, user_message: str) -> dict:
@@ -264,10 +253,22 @@ def main() -> int:
     system_prompt += f"\n\nToday's date is {today}."
 
     seen_slugs = existing_slugs()
-    seen_urls = existing_source_urls()
-    print(f"starting: {len(seen_slugs)} existing posts, {len(seen_urls)} known source URLs")
+    print(f"starting: {len(seen_slugs)} existing posts in {CONTENT_DIR}")
 
     candidates = gather_candidates()
+
+    # The model rewrites each notice under a new slug, so slug checks alone let
+    # the same notice through day after day. Dedup on the source link instead.
+    seen_links = load_seen_links()
+    if seen_links is None:
+        if not candidates:
+            print("no candidates and no seen-links state; not baselining on an empty fetch")
+            return 0
+        # Older posts never recorded their source link, so treat everything
+        # currently listed as already published and start fresh from tomorrow.
+        save_seen_links({normalise_link(c["link"]) for c in candidates})
+        print(f"baseline: marked {len(candidates)} current source links as seen; no posts this run")
+        return 0
 
     written: list[Path] = []
     errors: list[tuple[str, str]] = []
@@ -277,24 +278,15 @@ def main() -> int:
             print(f"hit MAX_ITEMS ({MAX_ITEMS}); stopping")
             break
 
-        # Layer 1: exact source URL match — same notification link already published.
-        if item["link"] in seen_urls:
-            print(f"  skip (url already published): {item['text'][:80]}")
+        link_key = normalise_link(item["link"])
+        if link_key in seen_links:
             continue
 
         tentative = slugify(item["text"])
         if not tentative:
             continue
-        # Layer 2: strict slug substring (handles identical/contained titles).
         if tentative in seen_slugs or any(tentative in s or s in tentative for s in seen_slugs):
             print(f"  skip (slug collision): {item['text'][:80]}")
-            continue
-        # Layer 3: token-Jaccard fuzzy match (catches rephrased anchor text —
-        # e.g. 'final-opportunity-ipu-cet-registration' vs
-        # 'last-opportunity-ipu-cet-registration' for the same notification).
-        fuzzy_hit = fuzzy_slug_collision(tentative, seen_slugs)
-        if fuzzy_hit:
-            print(f"  skip (fuzzy match → {fuzzy_hit}): {item['text'][:80]}")
             continue
 
         user_message = (
@@ -312,6 +304,8 @@ def main() -> int:
 
         if rewritten.get("skip"):
             print(f"  skip (model): {rewritten.get('reason', '')}")
+            seen_links.add(link_key)
+            save_seen_links(seen_links)
             continue
 
         missing = [k for k in ("title", "slug", "date", "category", "tldr", "body_md") if k not in rewritten]
@@ -329,7 +323,8 @@ def main() -> int:
         out_path = write_post(rewritten, rewritten["body_md"], image, item["link"])
         written.append(out_path)
         seen_slugs.add(rewritten["slug"])
-        seen_urls.add(item["link"])
+        seen_links.add(link_key)
+        save_seen_links(seen_links)
         print(f"  wrote: {out_path.relative_to(REPO)}")
 
     print(f"\nRun complete. Wrote {len(written)} posts, {len(errors)} errors.")
@@ -345,9 +340,9 @@ def main() -> int:
                 for t, e in errors:
                     f.write(f"- {t[:80]} — `{e[:200]}`\n")
 
-    if errors:
-        print(f"::warning::scraper had {len(errors)} error(s); see step summary", file=sys.stderr)
-    return 0 if (written or not errors) else 1
+    # exit success even on some errors, as long as at least one post wrote or
+    # everything hit the model-skip gate. Fail only if ALL candidates errored.
+    return 1 if (errors and not written) else 0
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ $is_urgent = !empty($post['is_urgent']);
 ?>
 <div class="blog-card-wrap">
   <a href="<?= $post_url ?>">
-    <img src="/<?= htmlspecialchars(ltrim($image, '/'), ENT_QUOTES) ?>"
+    <img src="/<?= htmlspecialchars(ltrim($image, '/'), ENT_QUOTES) ?>?v=2"
          alt="<?= htmlspecialchars($post['title'], ENT_QUOTES) ?>"
          loading="lazy">
   </a>
