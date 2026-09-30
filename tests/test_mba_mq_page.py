@@ -9,12 +9,17 @@ def test_sourced_sections_present_and_match_the_page_schema():
     text = PAGE.read_text()
     for h in ("How Many MBA Management Quota Seats Are There at IPU?",
               "Is an Entrance Score Mandatory for MBA Management Quota?",
-              "MBA Fees at IPU"):
+              "MBA Fees at IPU",
+              "Which IPU Colleges Offer MBA Management Quota Seats?",
+              "Entrance Scores Accepted for IPU MBA (Code 101)",
+              "How to Apply for an MBA Management Quota Seat"):
         assert f"<h2>{h}</h2>" in text, h
     # visible copy must state the same sourced facts the FAQ schema states
     assert "10% of the total seats" in text and "Section 12(1)(a)" in text
     assert "CAT, CMAT or GGSIPU CET" in text
-    assert "Rs. 1,30,000" in text
+    # USMS tuition must match the PG Brochure figure the other MBA pages cite
+    assert "Rs. 1,93,600" in text and "Rs. 1,30,000" not in text
+    assert "Section 14.1(H)" in text
 
 
 def test_page_has_at_least_five_inbound_links():
