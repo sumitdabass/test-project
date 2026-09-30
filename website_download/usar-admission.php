@@ -1,7 +1,7 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>USAR IPU Admission 2026 – Automation & Design Dual-Degree Courses</title>
-<meta name="description" content="USAR IPU admission 2026. University School of Automation & Design — B.Tech/M.Tech Dual-Degree (AI&DS, AI&ML, IIOT, A&R) at 132 seats each. JEE Main cutoff, placements. Call 9899991342.">
+<title>USAR IPU Delhi 2026 – Admission, Cutoff & Placements</title>
+<meta name="description" content="USAR IPU Delhi: dual-degree B.Tech/M.Tech in AI&DS, AI&ML, IIOT and A&R with 132 seats each. Cutoff, placements and admission process. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/usar-admission.php">
 
 <!-- Open Graph -->
