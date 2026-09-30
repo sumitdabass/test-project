@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 ?>
 
@@ -18,13 +18,12 @@ include_once("include/base-head.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IPU B.Tech Admission Hub 2026–27</h1>
-<p class="white">All Counselling, Eligibility, Cutoff &amp; College Guides in One Place</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU B.Tech Admission Hub 2026–27';
+$hero_intro = 'All Counselling, Eligibility, Cutoff &amp; College Guides in One Place';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <section class="blog-wrapper pt-130 pb-130">
 <div class="container">
@@ -38,6 +37,8 @@ include_once("include/base-head.php");
 <li class="breadcrumb-item active">B.Tech Admission Hub</li>
 </ol>
 </nav>
+
+<?php $breadcrumbs = [['Home', '/'], ['IPU Admission Guide', '/ipu-admission-guide.php'], ['B.Tech Admission Hub', '']]; include 'include/components/breadcrumb-schema.php'; ?>
 
 <div class="row justify-content-center">
 <div class="col-lg-8">
@@ -117,6 +118,15 @@ $related_pages = [
     ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & admission process'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
+    ['title' => 'IPU B.Tech Cutoff 2025 (Round-wise)', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Branch & college-wise closing ranks across counselling rounds.'],
+    ['title' => 'Best B.Tech Colleges under IPU — Compared', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top IPU engineering colleges on cutoff, fees and placements.'],
+    ['title' => 'IPU B.Tech via CUET', 'url' => '/ipu-btech-via-cuet.php', 'desc' => 'How CUET scores map to IPU B.Tech admission.'],
+    ['title' => 'IPU Choice-Filling Strategy', 'url' => '/ipu-choice-filling-strategy.php', 'desc' => 'Order your college/branch preferences to maximise your seat.'],
+    ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Delhi NCR engineering colleges accepting IPU counselling.'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Management-quota B.Tech seats, eligibility and process under IPU.'],
+    ['title' => 'MAIT Rohini — Admission', 'url' => '/mait-admission.php', 'desc' => 'Maharaja Agrasen Institute of Technology: branches, fees, placements.'],
+    ['title' => 'MSIT Janakpuri — Admission', 'url' => '/msit-admission.php', 'desc' => 'Maharaja Surajmal Institute of Technology admission under IPU.'],
+    ['title' => 'VIPS — Admission', 'url' => '/vips-admission.php', 'desc' => 'Vivekananda Institute of Professional Studies courses & admission.'],
 ];
 include 'include/components/related-pages.php';
 ?>

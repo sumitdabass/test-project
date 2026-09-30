@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -142,13 +142,12 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- BANNER -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-  <div class="container text-center">
-    <h1 class="white ft-35">Best B.Tech Colleges under IP University (GGSIPU)</h1>
-    <p class="text-white">MAIT &bull; MSIT &bull; BPIT &bull; BVP &bull; VIPS &bull; USICT &bull; USAR</p>
-  </div>
-  <div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Best B.Tech Colleges under IP University (GGSIPU)';
+$hero_intro = 'MAIT &bull; MSIT &bull; BPIT &bull; BVP &bull; VIPS &bull; USICT &bull; USAR';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- MAIN CONTENT -->
 <section class="blog-wrapper pt-130 pb-130">
@@ -206,7 +205,7 @@ include_once("include/form-handler.php");
                 </a>
               </div>
               <div class="col-md-6">
-                <a href="vips-pitampura-courses.php" class="college-card">
+                <a href="vips-admission.php" class="college-card">
                   <span class="college-tag">Pitampura</span>
                   <h4>VIPS</h4>
                   <p>Vivekananda Institute of Professional Studies</p>
@@ -257,6 +256,25 @@ include_once("include/form-handler.php");
           <div class="section-block">
             <h2>Compare Top IPU Engineering Colleges</h2>
             <p>Looking for a side-by-side comparison of MAIT, MSIT, BPIT and other colleges based on cutoff rank, fees, location and placements?</p>
+
+            <div class="table-responsive" style="margin:24px 0">
+              <table class="table table-bordered table-striped" style="font-size:14px">
+                <thead style="background:#0d1b6e;color:#fff">
+                  <tr><th>College</th><th>Popular B.Tech Branches</th><th>Approx. Closing Rank (IPU)</th><th>Approx. Annual Fee</th><th>Placement Highlight</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>USICT, Dwarka</td><td>CSE, IT, ECE</td><td>~38,638 (CSE R1, Delhi)</td><td>&mdash;</td><td>Strong placements; top government college under IPU</td></tr>
+                  <tr><td>USAR, East Campus</td><td>AI-DS, AI-ML, Robotics, IIoT</td><td>~99,067 (AI-DS R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>MAIT, Rohini</td><td>CSE, IT, ECE, AIML</td><td>~70,889 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Consistently ranked best among private IPU colleges</td></tr>
+                  <tr><td>MSIT, Janakpuri</td><td>CSE, IT, ECE</td><td>~96,135 (CSE Shift-I R1, Delhi)</td><td>&mdash;</td><td>Strong placement records; top private college under IPU</td></tr>
+                  <tr><td>BPIT, Rohini</td><td>CSE, IT, ECE</td><td>~142,454 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>BVP, Paschim Vihar</td><td>CSE, IT, ECE, AIML</td><td>~132,350 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                  <tr><td>VIPS, Pitampura</td><td>CSE, AI&amp;DS, AI&amp;ML</td><td>~194,876 (CSE R1, Delhi)</td><td>&mdash;</td><td>&mdash;</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:12px;color:#94a3b8;margin:-16px 0 16px">Closing ranks are JEE Main All India Rank (General category, Delhi quota, Round 1, 2025). Source: official GGSIPU 2025 counselling data.</p>
+
             <p><a href="top-btech-colleges-ipu-comparison.php" class="arrow-link">See the Full College Comparison Guide &rarr;</a></p>
           </div>
 
@@ -294,7 +312,7 @@ include_once("include/form-handler.php");
           <div class="cta-box">
             <h3>Need Help with IPU B.Tech Admission?</h3>
             <p>Get expert guidance on rank analysis, college selection and choice filling strategy.</p>
-            <a href="tel:<?php echo trim(file_get_contents('include/phone.php')); ?>" class="btn-cta">&#128222; Call Now</a>
+            <a href="tel:+919899991342" class="btn-cta">&#128222; Call Now</a>
           </div>
 
           <hr style="margin-top:2rem;">
@@ -362,7 +380,7 @@ include_once("include/form-handler.php");
       </div>
 
       <div class="col-lg-4">
-        <?php include_once("include/sidebar-cta.php"); ?>
+        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
       </div>
     </div>
   </div>

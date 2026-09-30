@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>College Admission in Delhi 2026 – IPU Courses & Process</title>
 <meta name="description" content="College admission in Delhi 2026 through IPU. B.Tech, MBA, Law, BBA, B.Com courses at 60+ colleges. Affordable fees. Call 9899991342 for free guidance.">
@@ -116,7 +116,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -142,7 +142,9 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU'],
-  ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process']
+  ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process'],
+  ['title' => 'Top IPU Colleges', 'url' => '/top-ipu-colleges.php', 'desc' => 'Highest-ranked colleges under IP University.'],
+  ['title' => 'Best B.Tech Colleges under IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare IPU engineering colleges.'],
 ];
 include 'include/components/related-pages.php';
 ?>

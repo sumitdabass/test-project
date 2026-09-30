@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -18,14 +18,11 @@ include_once("include/form-handler.php");
 
 <!-- BANNER -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-Best B.Tech Colleges under IP University – Complete Comparison Guide
-</h1>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Best B.Tech Colleges under IP University – Complete Comparison Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- CONTENT -->
 
@@ -98,7 +95,7 @@ Choosing the right B.Tech college under IP University is one of the most importa
 </tr>
 
 <tr>
-<td><a href="vips-pitampura-courses.php">VIPS</a></td>
+<td><a href="vips-admission.php">VIPS</a></td>
 <td>CSE, AIML, AIDS, VLSI, IoT</td>
 <td>Pitampura</td>
 <td>Yes</td>
@@ -189,7 +186,7 @@ IPU Counselling Strategy Guide
 </div>
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>

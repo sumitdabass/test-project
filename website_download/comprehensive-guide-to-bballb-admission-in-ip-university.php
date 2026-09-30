@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 
 ?>
@@ -30,22 +30,11 @@ include_once("include/form-handler.php");
 
     <!--====== BANNER PART START ======-->
 
-    <section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-12 col-md-12">
-                    <div class="banner-content">
-                        <h1 class="white center ft-35">
-                        Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
-                        </h1>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="banner-shape"></div>
-    </section>
+<?php
+$hero_h1 = 'Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
     <!--====== BANNER PART ENDS ======-->
 
 
@@ -55,7 +44,7 @@ include_once("include/form-handler.php");
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img loading="lazy" src="assets/images/ipu-bballb.jpg" class="main-img" alt="Images">
+                        <?php webp_img('assets/images/ipu-bballb.jpg', 'Images', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
                         </h2>
@@ -63,6 +52,12 @@ include_once("include/form-handler.php");
                         <p>Welcome to the comprehensive and professional guide on BBALLB admission in IP University. Pursuing a Bachelor of Business Administration Bachelor of Legislative Law (BBALLB) degree offers a promising career path in the intersection of law and business. IP University is renowned for its esteemed BBALLB program, and in this extensive blog, we will provide you with all the information you need to successfully navigate the admission process.</p>
 
                         <p><strong>For more information regarding Counselling , Admission process and Managment Quota Call: 9899991342</strong></p>
+
+                        <p>If you are already a graduate, the <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission</strong></a> route (Programme Code 238) may be a faster path than the 5-year integrated programme.</p>
+
+                        <p><strong>BBALLB Fees at IP University :</strong></p>
+
+                        <p>At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated colleges have their own SFRC-regulated fees, and university, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.</p>
 
                         <p><strong>Eligibility Criteria for BBALLB Admission :</strong></p>
 
@@ -80,8 +75,8 @@ include_once("include/form-handler.php");
                             <li>University School of Law &amp; Legal Studies(USLS)</li>
                             <li>Vivekanand Institute of Professional Studies (VIPS)</li>
                             <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
-                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Gitarattan International Business School (GIBS)</li>
+                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Delhi Metropolitan Education (DME)</li>
                             <li>Chandarprabhu Jain College&nbsp;School of Law (CPJ)</li>
                             <li>Dr. Akhilesh Das Gupta Institute of Technology &amp; Management</li>
@@ -117,8 +112,8 @@ include_once("include/form-handler.php");
                             <li>University School of Law &amp; Legal Studies(USLS)</li>
                             <li>Vivekanand Institute of Professional Studies (VIPS)</li>
                             <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
-                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Gitarattan International Business School (GIBS)</li>
+                            <li>Maharaja Surajmal Institute (MSIT)</li>
                             <li>Delhi Metropolitan Education (DME)</li>
                             <li>Chandarprabhu Jain College&nbsp;School of Law (CPJ)</li>
                             <li>Dr. Akhilesh Das Gupta Institute of Technology &amp; Management</li>
@@ -128,7 +123,7 @@ include_once("include/form-handler.php");
 
                         <p><strong>Admission in IP University BBALLB through CLAT</strong>&nbsp;</p>
 
-                        <p>The admission process for BBALLB in IP University is exclusively based on the Common Law Admission Test (CLAT). In this section, we will explain the significance of CLAT, its structure, syllabus, and marking scheme. We will also guide you through the application process, important dates, and preparation strategies for CLAT. Understanding the admission process through CLAT is crucial for BBALLB aspirants aiming to secure a seat in IP University.</p>
+                        <p>The BBA-LLB admission process at IP University (Programme Code 121) follows a two-tier merit list per UG Brochure 2026-27 Table 1.1: <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>. CLAT is the dominant entrance &mdash; most seats fill from the CLAT merit list &mdash; but vacant seats after CLAT counselling are filled on the CUET (UG) merit list. CUET-qualified candidates also become eligible for the 10% Management Quota at unaided affiliated Law colleges (Chapter 12). In this section we explain CLAT structure, syllabus, marking scheme, application process, important dates, and preparation strategies. Note: the 3-year LLB (Code 238) is admitted only through GGSIPU CET &mdash; CUET does NOT apply to the 3-yr LLB.</p>
 
                         <p><strong>Difference between BBALLB and BALLB</strong></p>
 
@@ -154,7 +149,7 @@ include_once("include/form-handler.php");
 
                 </div>
                 <div class="col-lg-4">
-                    <?php include_once("include/sidebar-cta.php") ?>
+                    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
                 </div>
             </div>
         </div>
@@ -169,7 +164,7 @@ include_once("include/form-handler.php");
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="counter-item text-center mt-30">
 
-                        <h3 class="title"> Call Our Helpline <a href="tel:9899991342"> +91- 9899991342 </a> </h3>
+                        <h3 class="title"> Call Our Helpline <a href="tel:+919899991342"> +91- 9899991342 </a> </h3>
 
                     </div>
                 </div>

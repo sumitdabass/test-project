@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -112,13 +112,12 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- HERO -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IP University Admission Guide 2026–27</h1>
-<p class="white">Courses • Colleges • Counselling • Management Quota • Expert Guidance</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IP University Admission Guide 2026–27';
+$hero_intro = 'Courses • Colleges • Counselling • Management Quota • Expert Guidance';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <section class="blog-wrapper pt-100 pb-100">
 <div class="container">
@@ -150,10 +149,10 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <ul>
 <li><a href="mba-admission-ip-university.php">MBA Admission in IP University (CAT / CMAT / CET Guide)</a></li>
 <li><a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide (JEE Main / CUET)</a></li>
-<li><a href="IPU-Law-Admission-2025.php">BALLB & BBALLB Law Admission Guide</a></li>
+<li><a href="IPU-Law-Admission.php">BALLB & BBALLB Law Admission Guide</a></li>
 <li><a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide & Top Colleges</a></li>
 <li><a href="guide-to-bjmc-colleges-under-ip-university.php">BJMC Admission Guide</a></li>
-<li><a href="economics-admission-2025.php">BA Economics (Hons) Admission Guide</a></li>
+<li><a href="ba-economics-admission-ipu.php">BA Economics (Hons) Admission Guide</a></li>
 </ul>
 
 <hr>
@@ -176,7 +175,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS College Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT & MSI Janakpuri Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura Complete Guide</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura Complete Guide</a></li>
 <li><a href="b-tech-colleges-under-IP-university.php">All B.Tech Colleges under IPU</a></li>
 </ul>
 
@@ -216,13 +215,13 @@ Guru Gobind Singh Indraprastha University (GGSIPU) is among the top universities
 <div class="cta-box text-center mt-5">
 <h4>Need Expert Admission Guidance?</h4>
 <p>Get help with college selection and counselling strategy.</p>
-<a href="tel:9899991342" class="cta-btn">Call Now: +91 98999 91342</a>
+<a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
 
 </div>
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -234,35 +233,20 @@ $related_pages = [
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+    ['title' => 'GGSIPU B.Tech Counselling', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU B.Tech counselling, dates and registration.'],
+    ['title' => 'IPU Law Admission', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB / BBA LLB admission and counselling under IPU.'],
+    ['title' => 'IPU BBA Cutoff', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Programme-wise BBA closing ranks under IP University.'],
+    ['title' => 'IPU BA LLB Admission', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'BA LLB seats, eligibility and management quota under IPU.'],
+    ['title' => 'IPU B.Com Admission', 'url' => '/bcom-admission-ipu.php', 'desc' => 'B.Com (Hons) admission and top colleges under IP University.'],
+    ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Management-quota eligibility and process across IPU courses.'],
+    ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA under IPU.'],
+    ['title' => 'IPU B.Arch Admission 2026', 'url' => '/barch-admission-ipu.php', 'desc' => 'B.Arch eligibility, NATA requirement, fees and colleges under GGSIPU.'],
+    ['title' => 'IPU M.Ed Admission 2026', 'url' => '/med-admission-ipu.php', 'desc' => 'Master of Education (M.Ed) eligibility, IPU CET and top colleges.'],
 ];
 include 'include/components/related-pages.php';
 ?>
 
 <?php include_once("include/base-footer.php"); ?>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Which entrance exams are accepted for IPU admission?","acceptedAnswer":{"@type":"Answer","text":"Different programs accept JEE Main, CAT, CMAT, CLAT, CET or CUET depending on course."}},
-{"@type":"Question","name":"Is counselling mandatory for IP University?","acceptedAnswer":{"@type":"Answer","text":"Yes, most courses require centralized counselling participation."}}
-]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"BreadcrumbList",
-"itemListElement":[
-{"@type":"ListItem","position":1,"name":"Home","item":"https://ipu.co.in/"},
-{"@type":"ListItem","position":2,"name":"IP University Admission Guide","item":"https://ipu.co.in/ipu-admission-guide.php"}
-]
-}
-</script>
 
 </body>
 </html>

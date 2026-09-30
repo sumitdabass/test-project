@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'gtb4cec-admission',
+    'cutoff_institute' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
     'name' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
     'short_name' => 'GTB4CEC',
     'title' => 'GTB4CEC Admission 2026 | B.Tech CSE, AIML, DS, IT, ECE – IPU',
@@ -69,7 +70,7 @@ $college_data = [
         ['title' => 'MAIT College Profile', 'url' => '/mait-admission.php', 'desc' => 'B.Tech, MBA and MCA at MAIT Rohini'],
         ['title' => 'GNIT Greater Noida', 'url' => '/gnit-admission.php', 'desc' => 'B.Tech CSE and AIML at GNIT Greater Noida'],
         ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'B.Tech and BBA at ADGITM Delhi'],
-        ['title' => 'IPU B.Tech Admission Guide', 'url' => '/ipu-b-tech-admission-2025.php', 'desc' => 'Complete guide to B.Tech admission under IPU'],
+        ['title' => 'IPU B.Tech Admission Guide', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete guide to B.Tech admission under IPU'],
     ],
 ];
 include 'include/templates/college-page-template.php';

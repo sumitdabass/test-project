@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -9,6 +9,7 @@ include_once("include/form-handler.php");
 <title>BA Economics (Hons) Admission in IP University 2026 | MAIT, VIPS, JIMS Colleges Guide</title>
 
 <meta name="description" content="Complete guide to BA Economics (Hons) admission in IP University (GGSIPU). Check eligibility, colleges like MAIT, VIPS, JIMS, admission process, counselling and career opportunities.">
+<link rel="canonical" href="https://ipu.co.in/economics-admission-ip-university.php">
 
 <meta name="keywords" content="BA Economics IP University, Eco Hons IPU, Economics Colleges IPU, MAIT Economics, VIPS Economics, JIMS Economics">
 
@@ -23,15 +24,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== Banner ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-BA Economics (Hons) Admission in IP University (GGSIPU)
-</h1>
-<p class="text-white">Eligibility • Colleges • Admission Process • Career Scope</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BA Economics (Hons) Admission in IP University (GGSIPU)';
+$hero_intro = 'Eligibility • Colleges • Admission Process • Career Scope';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ===== Content ===== -->
 
@@ -42,7 +40,7 @@ BA Economics (Hons) Admission in IP University (GGSIPU)
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/economics-admission-2025.jpg" class="main-img" alt="BA Economics IP University Admission">
+<?php webp_img('assets/images/economics-admission-2025.jpg', 'BA Economics IP University Admission', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <h2>BA Economics (Hons) Admission in IP University</h2>
 
@@ -61,7 +59,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers BA Economics (Hons) th
 
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php"><strong>MAIT (Maharaja Agrasen Institute of Technology)</strong></a></li>
-<li><a href="vips-pitampura-courses.php"><strong>VIPS Pitampura</strong></a></li>
+<li><a href="vips-admission.php"><strong>VIPS Pitampura</strong></a></li>
 <li><strong>JIMS Rohini</strong></li>
 </ul>
 
@@ -139,7 +137,7 @@ Economics honours is ideal for students interested in analytics, finance and pol
 
 <p>
 <strong>Need Admission Guidance?</strong><br>
-Call <a href="tel:9899991342">9899991342</a>
+Call <a href="tel:+919899991342">9899991342</a>
 </p>
 
 </div>
@@ -148,7 +146,7 @@ Call <a href="tel:9899991342">9899991342</a>
 <!-- Sidebar -->
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -160,7 +158,7 @@ Call <a href="tel:9899991342">9899991342</a>
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

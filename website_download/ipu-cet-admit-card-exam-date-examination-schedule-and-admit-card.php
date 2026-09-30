@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -24,17 +24,12 @@ include_once("include/form-handler.php");
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU CET 2026 – Exam Date, Admit Card & CET-Based Courses
-</h1>
-<p class="text-white">
-BBA • BCA • B.Com • BJMC | Application • Result • Counselling
-</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU CET 2026 – Exam Date, Admit Card &amp; CET-Based Courses';
+$hero_intro = 'BBA • BCA • B.Com • BJMC | Application • Result • Counselling';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ================= CONTENT ================= -->
@@ -46,9 +41,7 @@ BBA • BCA • B.Com • BJMC | Application • Result • Counselling
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg"
-class="main-img"
-alt="IPU CET Exam Guide">
+<?php webp_img('assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg', 'IPU CET Exam Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <!-- ================= WHAT IS CET ================= -->
 
@@ -160,7 +153,7 @@ The table below lists all UG and PG programmes at GGSIPU along with their offici
 <li><strong>Classes Commence:</strong> August 2026</li>
 </ul>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free entrance test &amp; admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free entrance test &amp; admission guidance.</em></p>
 
 <hr>
 
@@ -229,7 +222,7 @@ IPU Counselling Process
 <h2>Need Help with IPU CET?</h2>
 
 <p>
-Call <a href="tel:9899991342">9899991342</a> for admission guidance.
+Call <a href="tel:+919899991342">9899991342</a> for admission guidance.
 </p>
 
 </div>
@@ -237,7 +230,7 @@ Call <a href="tel:9899991342">9899991342</a> for admission guidance.
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>

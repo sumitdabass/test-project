@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'jemtec-admission',
+    'cutoff_institute' => 'JIMS Engineering Management Technical Campus',
     'name' => 'JIMS Engineering Management Technical Campus',
     'short_name' => 'JEMTEC',
     'title' => 'JEMTEC Greater Noida Admission 2026 | B.Tech, BBA, BCA, Law Courses & Cutoff – IPU',
@@ -77,7 +78,7 @@ $college_data = [
     ],
     'related_pages' => [
         ['title' => 'DTC Admission 2026', 'url' => '/dtc-admission.php', 'desc' => 'Explore Delhi Technical Campus, another large engineering college in Greater Noida'],
-        ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'Complete guide to BBA admission under IP University'],
+        ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Complete guide to BBA admission under IP University'],
         ['title' => 'Top B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare the best engineering colleges under GGSIPU'],
     ],
 ];

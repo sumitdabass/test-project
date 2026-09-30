@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -33,7 +33,7 @@ include_once("include/form-handler.php");
       "name": "How many Management Quota seats are available for B.Tech at IPU colleges?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 15-20% of the total seats in IPU affiliated B.Tech colleges are available under Management Quota. The exact number varies by college and branch."
+        "text": "10% of the total seats in IPU affiliated B.Tech colleges are reserved as Management Quota per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools (USS), minority and government institutions are excluded."
       }
     },
     {
@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "What is the fee for B.Tech under Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The fee for B.Tech under Management Quota at IPU affiliated colleges is typically higher than merit seats, ranging from Rs. 2 lakh to Rs. 4 lakh per year depending on the college and branch."
+        "text": "Management Quota tuition is the same as merit seats — regulated by the Govt of NCT Delhi 6th SFRC Notification dated 14.07.2025 (Appendix 13(i) of the GGSIPU Brochure 2026-27): the brochure range was approximately Rs. 1,41,750 to Rs. 1,55,700 per year, and affiliated colleges' own 2026-27 fee notices show year-1 B.Tech tuition of Rs. 1,60,100 to Rs. 1,65,770 (BPIT, BVCOE, ADGIPS). Capitation fee is prohibited per Section 12 of the Delhi Professional Colleges Act 2007. An additional Rs. 2,500 registration fee applies per Chapter 12."
       }
     },
     {
@@ -90,13 +90,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">B.Tech Management Quota Admission in IP University (GGSIPU)</h1>
-<p class="text-white">Eligibility • Colleges • Counselling • Direct Admission Guidance</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'B.Tech Management Quota Admission in IP University (GGSIPU)';
+$hero_intro = 'Eligibility • Colleges • Counselling • Direct Admission Guidance';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ===== CONTENT ===== -->
@@ -139,8 +138,8 @@ Management quota provides an alternative pathway for students who may not secure
 <li>Maharaja Surajmal Institute of Technology (MSIT)</li>
 <li>Bhagwan Parshuram Institute of Technology (BPIT)</li>
 <li>Bharati Vidyapeeth Engineering College (BVP)</li>
-<li>VIPS Engineering Programs</li>
 <li>GTBIT Engineering College</li>
+<li>ADGITM (Dr. Akhilesh Das Gupta Institute of Technology &amp; Management)</li>
 <li>Northern India Engineering Institute</li>
 </ul>
 
@@ -217,7 +216,7 @@ If you need assistance regarding:
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -226,7 +225,7 @@ If you need assistance regarding:
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -239,7 +238,7 @@ If you need assistance regarding:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>
@@ -250,6 +249,9 @@ $related_pages = [
     ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & admission process'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
+    ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees, college list & process for management quota seats'],
+    ['title' => 'BBA Management Quota in IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct BBA admission process & top BBA management colleges'],
+    ['title' => 'MBA Management Quota in IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Direct MBA admission via management seats — eligibility & colleges'],
 ];
 include 'include/components/related-pages.php';
 ?>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Trinity Law College Admission 2026 | IPU BA LLB</title>
 <meta name="description" content="Trinity Institute Dwarka admission 2026. BA LLB & BBA LLB under IPU, law college in Sector-9 Dwarka. Call 9899991342 for help.">
@@ -105,7 +105,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-<?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div></div>
 </section>
@@ -125,7 +125,7 @@ include 'include/components/faq-section.php';
 
 <?php
 $related_pages = [
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at GGSIPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at GGSIPU'],
   ['title' => 'BA LLB Management Quota', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Management quota options for law admission in IPU'],
   ['title' => 'MAIMS College Profile', 'url' => '/maims-admission.php', 'desc' => 'BA LLB and other courses at MAIMS Rohini'],
 ];

@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 
@@ -10,23 +10,31 @@ include_once("include/form-handler.php");
 
 $blogs = [
     ["category"=>"MBA","title"=>"MBA Admission in IP University 2026–27: Fees, CAT Cutoff & Colleges","url"=>"mba-admission-ip-university.php","img"=>"assets/images/blog-ipu-mba.jpg","alt"=>"MBA Admission in IP University","excerpt"=>"Complete guide to MBA admission at GGSIPU — CAT/CMAT cutoffs, top colleges, fees structure & career scope.","read_time"=>"7"],
-    ["category"=>"Economics","title"=>"Economics Admission 2025: Eligibility, Colleges & Career Scope","url"=>"economics-admission-2025.php","img"=>"assets/images/economics-admission-2025.jpg","alt"=>"Economics Admission 2025","excerpt"=>"Everything you need to know about Economics programmes under IPU — eligibility, top colleges & career paths.","read_time"=>"5"],
-    ["category"=>"Law","title"=>"IPU Law Admission 2025: Eligibility, Colleges & Guidance Process","url"=>"IPU-Law-Admission-2025.php","img"=>"assets/images/IPU-Law-Admission-2025.jpg","alt"=>"IPU Law Admission","excerpt"=>"Step-by-step guide to IPU Law admission — eligibility criteria, top law colleges, fees & admission process.","read_time"=>"6"],
+    ["category"=>"Economics","title"=>"Economics Admission 2026: Eligibility, Colleges & Career Scope","url"=>"economics-admission-ip-university.php","img"=>"assets/images/economics-admission-2025.jpg","alt"=>"Economics Admission 2026","excerpt"=>"Everything you need to know about Economics programmes under IPU — eligibility, top colleges & career paths.","read_time"=>"5"],
+    ["category"=>"Law","title"=>"IPU Law Admission 2026: Eligibility, Colleges & Guidance Process","url"=>"IPU-Law-Admission.php","img"=>"assets/images/IPU-Law-Admission-2025.jpg","alt"=>"IPU Law Admission","excerpt"=>"Step-by-step guide to IPU Law admission — eligibility criteria, top law colleges, fees & admission process.","read_time"=>"6"],
     ["category"=>"Law","title"=>"Ultimate Guide to BA LL.B & BBA LL.B Admission in IP University","url"=>"ultimate-guide-to-ballb-admission-in-ip-university.php","img"=>"assets/images/ipu-bballb.jpg","alt"=>"BALLB Admission","excerpt"=>"Detailed guide covering BA LL.B and BBA LL.B admissions at IP University — process, cutoffs & top colleges.","read_time"=>"8"],
     ["category"=>"Law","title"=>"Comprehensive Guide to BBA LL.B Admission in IP University","url"=>"comprehensive-guide-to-bballb-admission-in-ip-university.php","img"=>"assets/images/ipu-bballb.jpg","alt"=>"BBALLB Admission","excerpt"=>"All you need to know about BBA LL.B admission — eligibility, entrance process, best colleges & placement.","read_time"=>"7"],
     ["category"=>"BJMC","title"=>"Guide to BJMC Colleges under IP University","url"=>"guide-to-bjmc-colleges-under-ip-university.php","img"=>"assets/images/IPU-BJMC-Admission.jpg","alt"=>"BJMC Colleges","excerpt"=>"Top BJMC colleges affiliated with IP University — admission process, seats, fees & media career scope.","read_time"=>"5"],
     ["category"=>"CET","title"=>"IPU CET Exam Date, Result & Admit Card","url"=>"ipu-cet-admit-card-exam-date-examination-schedule-and-admit-card.php","img"=>"assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg","alt"=>"IPU CET","excerpt"=>"Stay updated on IPU CET 2026 exam schedule, admit card release dates, result declaration & how to apply.","read_time"=>"4"],
-    ["category"=>"B.Tech","title"=>"IPU B.Tech Admission 2025: Eligibility & Guidance","url"=>"IPU-B-Tech-admission-2025.php","img"=>"assets/images/ipu-b-tech-admission-2025.jpg","alt"=>"IPU BTech Admission","excerpt"=>"Complete B.Tech admission guide for GGSIPU — JEE cutoffs, eligibility, top engineering colleges & fees.","read_time"=>"8"],
+    ["category"=>"B.Tech","title"=>"IPU B.Tech Admission 2026: Eligibility & Guidance","url"=>"IPU-B-Tech-admission-2026.php","img"=>"assets/images/ipu-b-tech-admission-2025.jpg","alt"=>"IPU BTech Admission","excerpt"=>"Complete B.Tech admission guide for GGSIPU — JEE cutoffs, eligibility, top engineering colleges & fees.","read_time"=>"8"],
     ["category"=>"B.Tech","title"=>"How to Participate in GGSIPU Guidance Process","url"=>"GGSIPU-counselling-for-B-Tech-admission.php","img"=>"assets/images/ggsipu-counselling.jpg","alt"=>"GGSIPU Guidance Process","excerpt"=>"Step-by-step walkthrough of the GGSIPU guidance process — document checklist, round schedule & allotment.","read_time"=>"6"],
     ["category"=>"B.Tech","title"=>"Best B.Tech Colleges under IP University","url"=>"b-tech-colleges-under-IP-university.php","img"=>"assets/images/IP-University-b-tech-admission.jpg","alt"=>"Best BTech Colleges IPU","excerpt"=>"Ranked list of top B.Tech colleges under IP University with placement records, fees & admission cut-offs.","read_time"=>"7"],
     ["category"=>"BBA","title"=>"Top BBA Colleges under IP University","url"=>"comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php","img"=>"assets/images/BBA.jpg","alt"=>"Top BBA Colleges IPU","excerpt"=>"Discover the best BBA colleges under GGSIPU — placements, fees, specialisations & entrance requirements.","read_time"=>"6"],
     ["category"=>"Colleges","title"=>"Explore MSIT & MSI Janakpuri","url"=>"explore-MSIT-and-MSI-janakpuri.php","img"=>"assets/images/explore-MSIT-and-MSI-janakpuri.jpg","alt"=>"MSIT MSI Janakpuri","excerpt"=>"In-depth look at MSIT and MSI Janakpuri — courses offered, admission process, campus & placements.","read_time"=>"5"],
     ["category"=>"Colleges","title"=>"Exploring MAIT & MAIMS Rohini","url"=>"exploring-MAIT-and-MAIMS.php","img"=>"assets/images/exploring-MAIT-and-MAIMS.jpg","alt"=>"MAIT MAIMS Rohini","excerpt"=>"Everything about MAIT and MAIMS Rohini — programmes, eligibility, fees, infrastructure & career prospects.","read_time"=>"5"],
-    ["category"=>"Colleges","title"=>"VIPS Pitampura: Courses & Law Programs","url"=>"vips-pitampura-courses.php","img"=>"assets/images/vips-pitampura-courses.jpg","alt"=>"VIPS Pitampura","excerpt"=>"Detailed profile of VIPS Pitampura — law and management programmes, fees, placements & admission guide.","read_time"=>"5"],
+    ["category"=>"Colleges","title"=>"VIPS Pitampura: Courses & Law Programs","url"=>"vips-admission.php","img"=>"assets/images/vips-pitampura-courses.jpg","alt"=>"VIPS Pitampura","excerpt"=>"Detailed profile of VIPS Pitampura — law and management programmes, fees, placements & admission guide.","read_time"=>"5"],
     ["category"=>"Admissions","title"=>"IP University Management Quota Admission","url"=>"IP-University-management-quota-admission-eligibility-criteria.php","img"=>"assets/images/blog1.jpg","alt"=>"IPU Management Quota","excerpt"=>"How to secure a seat through Management Quota at IPU — eligibility, process, fees & which colleges offer it.","read_time"=>"6"],
+    ["category"=>"CUET","title"=>"IPU Admission Through CUET — Complete Guide","url"=>"cuet-admission-ipu.php","img"=>"assets/images/IP-University-b-tech-admission.jpg","alt"=>"IPU Admission Through CUET","excerpt"=>"How CUET (UG) score works at IPU for B.Tech, BBA, B.Com & Law — vacant-seat round + management quota route.","read_time"=>"7"],
+    ["category"=>"CUET","title"=>"IPU B.Tech Admission Through CUET (UG)","url"=>"cuet-btech-admission-ipu.php","img"=>"assets/images/IP-University-b-tech-admission.jpg","alt"=>"IPU B.Tech CUET","excerpt"=>"PCM domain papers, vacant-seat counselling after JEE Main, management quota qualifier — full CUET-to-B.Tech guide.","read_time"=>"6"],
+    ["category"=>"CUET","title"=>"IPU BBA Admission Through CUET (UG)","url"=>"cuet-bba-admission-ipu.php","img"=>"assets/images/BBA.jpg","alt"=>"IPU BBA CUET","excerpt"=>"Business Studies + General Aptitude papers, vacant-seat round after IPU CET, management quota route for BBA.","read_time"=>"6"],
+    ["category"=>"CUET","title"=>"IPU B.Com (Hons) Admission Through CUET","url"=>"cuet-bcom-admission-ipu.php","img"=>"assets/images/Bcom.jpg","alt"=>"IPU B.Com CUET","excerpt"=>"Accountancy + General Aptitude papers, eligibility, top B.Com Hons colleges accepting CUET vacant seats.","read_time"=>"6"],
+    ["category"=>"CUET","title"=>"IPU Law (BA-LLB / BBA-LLB) Admission Through CUET","url"=>"cuet-law-admission-ipu.php","img"=>"assets/images/IPU-Law-Admission-2025.jpg","alt"=>"IPU Law CUET","excerpt"=>"Legal Studies + General Aptitude papers, BCI eligibility bar, vacant-seat round after CLAT, management quota.","read_time"=>"7"],
+    ["category"=>"Law","title"=>"IPU Law (3-Year) Admission 2026: Programme Code 238 Eligibility, Fees & Top Colleges","url"=>"law-3-year-admission-ipu.php","img"=>"assets/images/IPU-Law-Admission-2025.jpg","alt"=>"IPU Law 3-Year Admission","excerpt"=>"Complete guide to Programme Code 238 — graduate-entry 3-yr LLB via GGSIPU CET, USLLS Rs.1.45L tuition, BCI rules.","read_time"=>"7"],
+    ["category"=>"Law","title"=>"IPU LL.M. Admission 2026: Programme Code 112, CLAT-PG, USLLS Specialisations","url"=>"llm-admission-ipu.php","img"=>"assets/images/IPU-Law-Admission-2025.jpg","alt"=>"IPU LLM Admission","excerpt"=>"1-year LL.M. via CLAT-PG — Corporate Law/IPR/Criminal Justice/ADR specialisations at USLLS Dwarka. LL.B + 55%.","read_time"=>"6"],
+    ["category"=>"MCA","title"=>"IPU MCA Admission 2026: Programme Code 105, NIMCET, USICT Fee Rs.1.45L","url"=>"mca-admission-ipu.php","img"=>"assets/images/mca.jpg","alt"=>"IPU MCA Admission","excerpt"=>"2-year MCA via NIMCET → CET → CUET#. USICT USS tuition Rs.1,45,200/yr per PG Brochure Ch 14. 12+ affiliated colleges.","read_time"=>"6"],
 ];
 
-$categories = ["All","B.Tech","MBA","Law","BBA","BJMC","CET","Economics","Colleges","Admissions"];
+$categories = ["All","B.Tech","MBA","MCA","Law","BBA","BJMC","CET","CUET","Economics","Colleges","Admissions"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -408,7 +416,7 @@ $categories = ["All","B.Tech","MBA","Law","BBA","BJMC","CET","Economics","Colleg
               <h3>&#128222; Confused About IPU Admission 2026?</h3>
               <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
             </div>
-            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
+            <a href="tel:+919899991342" class="cta-btn">📞 Call Free: 9899991342</a>
           </div>
         </div>
         <?php endif; ?>
@@ -420,7 +428,7 @@ $categories = ["All","B.Tech","MBA","Law","BBA","BJMC","CET","Economics","Colleg
     <!-- Sidebar -->
     <div class="col-lg-3 col-md-12 order-1 order-lg-2 mb-4">
       <div style="position:sticky;top:80px">
-        <?php include_once("include/sidebar-cta.php"); ?>
+        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
       </div>
     </div>
   </div><!-- /.row -->

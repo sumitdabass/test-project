@@ -1,13 +1,19 @@
 <?php
 /**
  * Form Handler — Replaces form-codecopy.php
- * 5-layer duplicate prevention (no CAPTCHA friction):
+ * 6-layer duplicate prevention (no CAPTCHA friction):
  *   1. Honeypot           — bots fill hidden `website` field
  *   2. Time-based check   — reject submissions faster than 3 seconds
  *   3. 5-min cooldown     — block any resubmission within 5 minutes (session)
  *   4. Phone session dedup — reject same phone number within the session
  *   5. Cookie 24h dedup   — reject same phone hash within 24 hours (cookie)
+ *   6. Persistent phone dedup — reject same phone hash within 7 days (server-side file)
  */
+
+require_once __DIR__ . '/helpers/phone-dedup.php';
+// Ensure webp_img()/responsive_img() are defined for pages that call them.
+// Bridge until the Phase-2 base-head.php (which also include_once's this) ships; include_once dedupes.
+require_once __DIR__ . '/image-helper.php';
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -68,15 +74,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         }
 
+        // ── Layer 6: Persistent 7-day dedup — survives cookie clear / new session ─
+        if (phone_recently_seen($phone)) {
+            header("Location: /thank-you.php");
+            exit();
+        }
+
         // Capture UTM parameters if present
         $utm_source   = htmlspecialchars($_POST['utm_source']   ?? $_GET['utm_source']   ?? '', ENT_QUOTES, 'UTF-8');
         $utm_medium   = htmlspecialchars($_POST['utm_medium']   ?? $_GET['utm_medium']   ?? '', ENT_QUOTES, 'UTF-8');
         $utm_campaign = htmlspecialchars($_POST['utm_campaign'] ?? $_GET['utm_campaign'] ?? '', ENT_QUOTES, 'UTF-8');
         $page_url     = htmlspecialchars($_POST['page_url']     ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
 
-        // Build email
+        // Build email — strip CR/LF from header-bound fields to prevent header injection
+        $subject_name   = str_replace(["\r", "\n"], ' ', $name);
+        $subject_course = str_replace(["\r", "\n"], ' ', $course);
         $to      = "sumitdabass@gmail.com,sonamdabas222@gmail.com";
-        $subject = "New Enquiry: $name - $course";
+        $subject = "New Enquiry: $subject_name - $subject_course";
 
         $body  = "Name: $name\r\n";
         $body .= "Phone: $phone\r\n";
@@ -128,10 +142,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Record dedup state so subsequent submissions are blocked
         $_SESSION['last_submit_time']  = time();
         $_SESSION['submitted_phones'][] = $phone;
-        setcookie($phone_hash, '1', time() + 86400, '/', '', false, true);
+        setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
+        phone_record_seen($phone);
+        lead_record($phone, 'form-handler');
 
-        // Redirect to thank-you
-        header("Location: /thank-you.php");
+        // Redirect to thank-you with success flag (only genuine submissions get src=submit)
+        header("Location: /thank-you.php?src=submit");
         exit();
     }
 }

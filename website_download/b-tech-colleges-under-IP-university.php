@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -152,7 +152,7 @@ table.fees-table tr:hover,table.cutoff-table tr:hover{background:#fff3e6;}
 <div class="container">
 <h1 style="font-size:2rem;font-weight:800;margin-bottom:12px;color:#fff;">Best B.Tech Colleges under IP University (GGSIPU)</h1>
 <p style="font-size:1.1rem;opacity:0.9;max-width:680px;margin:0 auto 20px;">Complete 2026 Guide — Fees, Seats, NAAC Grades, Cutoffs &amp; Placements</p>
-<a href="tel:9899991342" style="background:#e87722;color:#fff;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;">📞 Free Expert Help: 9899991342</a>
+<a href="tel:+919899991342" style="background:#e87722;color:#fff;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;">📞 Free Expert Help: 9899991342</a>
 </div>
 </section>
 
@@ -181,7 +181,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>92%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">USICT is the flagship engineering school of GGSIPU, offering highly competitive B.Tech programmes in Computer Science, IT, and ECE. It has the best academic environment and placement record among all IP University colleges.</p>
-<a href="usict-delhi.php" class="learn-more">Learn More →</a>
+<a href="usict-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -194,7 +194,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>90%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">MAIT is consistently ranked among the top IP University colleges. Strong placement record with companies like TCS, Wipro, Infosys, HCL and top startups. Excellent infrastructure and active student bodies. CSE and IT are the most sought-after branches here.</p>
-<a href="mait-delhi.php" class="learn-more">Learn More →</a>
+<a href="mait-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -207,7 +207,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>88%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">MSIT in West Delhi is famous for its strong academics and consistent placement performance. The college has a vibrant tech culture with annual fests, hackathons and inter-college competitions. CSE, IT and ECE are top-performing branches.</p>
-<a href="msit-delhi.php" class="learn-more">Learn More →</a>
+<a href="msit-admission.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -216,7 +216,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">📍 <strong>Paschim Vihar, Delhi</strong></span>
 <span class="stat-badge">NAAC: <strong>A</strong></span>
 <span class="stat-badge">Seats: <strong>480</strong></span>
-<span class="stat-badge">Fees: <strong>~₹1.55L/yr</strong></span>
+<span class="stat-badge">Fees: <strong>~₹1.60-1.66L (yr 1)</strong></span>
 <span class="stat-badge">Placement: <strong>85%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">BVCOE offers strong engineering programmes backed by a well-equipped campus. The college is known for quality faculty and an active placement cell that consistently attracts leading IT and core engineering companies.</p>
@@ -233,7 +233,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <span class="stat-badge">Placement: <strong>82%+</strong></span>
 </div>
 <p style="font-size:14px;color:#555;margin:8px 0;">BPIT is a well-recognised name in the GGSIPU ecosystem with good infrastructure and a dedicated placement team. It is especially popular for Computer Science and Electronics &amp; Communication Engineering programmes.</p>
-<a href="bpit-delhi.php" class="learn-more">Learn More →</a>
+<a href="BPIT.php" class="learn-more">Learn More →</a>
 </div>
 
 <div class="college-card">
@@ -264,7 +264,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 
 <!-- Mid-page Call CTA Strip -->
 <div class="call-strip">
-📞 Confused which college to choose? <a href="tel:9899991342">Call 9899991342 — Free Expert Guidance</a>
+📞 Confused which college to choose? <a href="tel:+919899991342">Call 9899991342 — Free Expert Guidance</a>
 </div>
 
 <h2 style="color:#1a1a2e;border-bottom:3px solid #e87722;padding-bottom:8px;margin-bottom:20px;">B.Tech Fees in IP University Colleges 2026</h2>
@@ -303,7 +303,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <h2 style="color:#1a1a2e;border-bottom:3px solid #e87722;padding-bottom:8px;margin-top:30px;margin-bottom:20px;">How IP University B.Tech Counselling Works</h2>
 <p style="font-size:15px;line-height:1.8;color:#444;">GGSIPU conducts centralised counselling for B.Tech admissions based on <strong>JEE Main scores</strong>. The process involves online registration, document verification, mock rounds for practice, followed by actual choice-filling rounds and seat allotment. There are typically 3 rounds before spot rounds begin. Getting your choice order right is <strong>the single most important factor</strong> in securing your preferred college and branch. Our experts help you build a winning choice-filling strategy based on your rank and preferences.</p>
 <div class="call-strip" style="margin:20px 0;">
-🎯 Want a personalised cutoff analysis? <a href="tel:9899991342">Call 9899991342 — Our Experts Will Help You</a>
+🎯 Want a personalised cutoff analysis? <a href="tel:+919899991342">Call 9899991342 — Our Experts Will Help You</a>
 </div>
 
 <!-- FAQ Section -->
@@ -322,7 +322,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <!-- Bottom WhatsApp -->
 <div style="text-align:center;margin:30px 0 10px;padding:20px;background:#f0fdf4;border-radius:10px;border:1px solid #bbf7d0;">
 <p style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:10px;">Still have questions? Connect with our experts instantly:</p>
-<a href="tel:9899991342" style="background:#e87722;color:#fff;padding:11px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;margin:4px;">📞 Call 9899991342</a>
+<a href="tel:+919899991342" style="background:#e87722;color:#fff;padding:11px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;margin:4px;">📞 Call 9899991342</a>
 <a href="https://wa.me/919899991342?text=Hi%2C+I+need+help+with+B.Tech+admission+in+IP+University" class="whatsapp-btn" target="_blank" rel="noopener">💬 WhatsApp Us</a>
 </div>
 
@@ -333,7 +333,7 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;overflow:hidden;margin-bottom:25px;box-shadow:0 2px 10px rgba(0,0,0,0.08);">
 <div class="sidebar-expert-badge">🎓 EXPERTS AVAILABLE NOW<span>Free guidance for B.Tech admission 2026</span></div>
 <div style="padding:15px;">
-<a href="tel:9899991342" class="sidebar-call-btn">📞 Call 9899991342</a>
+<a href="tel:+919899991342" class="sidebar-call-btn">📞 Call 9899991342</a>
 <a href="https://wa.me/919899991342?text=Hi%2C+I+need+help+with+B.Tech+admission+in+IP+University" class="sidebar-wa-btn" target="_blank" rel="noopener">💬 WhatsApp Now</a>
 <p style="font-size:12px;color:#888;text-align:center;margin:8px 0 0;">Mon–Sat 9AM–7PM | Free Guidance</p>
 </div>
@@ -342,18 +342,21 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <!-- Enquiry Form -->
 <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:25px;box-shadow:0 2px 10px rgba(0,0,0,0.08);">
 <h3 style="font-size:17px;color:#1a1a2e;margin-bottom:15px;text-align:center;">Enquire Now — Free Help</h3>
-<form method="POST" action="b-tech-colleges-under-IP-university.php">
-<div style="margin-bottom:12px;"><input type="text" name="name" placeholder="Your Name *" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:12px;"><input type="tel" name="mobile" placeholder="Mobile Number *" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:12px;"><input type="email" name="email" placeholder="Email Address" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
-<div style="margin-bottom:15px;"><select name="course" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;background:#fff;box-sizing:border-box;">
-<option value="">Select Course</option>
+<form method="POST" action="b-tech-colleges-under-IP-university.php" novalidate>
+<?php $_SESSION['form_loaded_at'] = time(); ?>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+<div style="margin-bottom:12px;"><input type="text" name="name" placeholder="Your Name *" required autocomplete="name" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:12px;"><input type="tel" name="phone" placeholder="Mobile Number *" required pattern="[6-9][0-9]{9}" maxlength="10" inputmode="tel" autocomplete="tel" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:12px;"><input type="email" name="email" placeholder="Email Address" autocomplete="email" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;box-sizing:border-box;"></div>
+<div style="margin-bottom:15px;"><select name="course" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;font-size:14px;background:#fff;box-sizing:border-box;">
+<option value="">Select Course *</option>
 <option value="btech">B.Tech</option>
 <option value="bca">BCA</option>
 <option value="mba">MBA</option>
 <option value="mca">MCA</option>
 <option value="bba">BBA</option>
 </select></div>
+<?php if (!empty($form_error)): ?><p style="color:#c0392b;font-size:13px;margin:0 0 10px;text-align:center;"><?= htmlspecialchars($form_error) ?></p><?php endif; ?>
 <button type="submit" name="submit" style="width:100%;background:#e87722;color:#fff;padding:12px;border:none;border-radius:6px;font-size:16px;font-weight:700;cursor:pointer;">Get Free Expert Help →</button>
 </form>
 </div>
@@ -362,11 +365,11 @@ Choosing the right B.Tech college under <strong>Guru Gobind Singh Indraprastha U
 <div style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:25px;">
 <h3 style="font-size:16px;color:#1a1a2e;margin-bottom:14px;border-bottom:2px solid #e87722;padding-bottom:6px;">Popular Admission Guides</h3>
 <ul style="list-style:none;padding:0;margin:0;">
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mait-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MAIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="msit-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MSIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bpit-delhi.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BPIT Delhi — Complete Guide</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bca-colleges-under-IP-university.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BCA Colleges under IP University</a></li>
-<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mba-colleges-under-IP-university.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MBA Colleges under IP University</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="mait-admission.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MAIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="msit-admission.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MSIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="BPIT.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BPIT Delhi — Complete Guide</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="bca-admission-ipu.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ BCA Colleges under IP University</a></li>
+<li style="padding:8px 0;border-bottom:1px solid #e9ecef;"><a href="top-mba-colleges-ipu.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ MBA Colleges under IP University</a></li>
 <li style="padding:8px 0;"><a href="blog.php" style="color:#e87722;text-decoration:none;font-size:14px;">→ IPU Admission Blog</a></li>
 </ul>
 </div>

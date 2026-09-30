@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MSIT Janakpuri Admission 2026 | B.Tech Fees, Cutoff, Placements – IPU</title>
 <meta name="description" content="Maharaja Surajmal Institute of Technology (MSIT) Janakpuri – B.Tech admission 2026. Fees, JEE Main cutoff, placements 6-12 LPA. Free admission guidance at 9899991342.">
@@ -49,6 +49,25 @@
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MSIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
+
+<?php
+$college = [
+  'name'          => 'Maharaja Surajmal Institute of Technology',
+  'short_name'    => 'MSIT',
+  'url'           => 'https://ipu.co.in/msit-admission.php',
+  'address'       => 'C-4, Janakpuri, West Delhi',
+  'founded'       => '2001',
+  'accreditation' => 'NAAC, AICTE',
+  'courses'       => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Electrical & Electronics Engineering',
+  ],
+  // total_seats omitted – no aggregate figure stated on page
+];
+include 'include/components/college-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -92,9 +111,10 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">240 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering (EEE)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
     </tbody>
   </table>
 
@@ -171,12 +191,12 @@ include 'include/components/hero-banner.php';
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">180</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">180</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
       </tbody>
     </table>
     <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at MSIT: ~600.</p>
@@ -184,7 +204,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -202,6 +222,7 @@ $faqs = [
   ['question' => 'Is MSIT better than BPIT or BVP?', 'answer' => 'MSIT generally ranks above BPIT and BVP in terms of JEE Main cutoffs and placement averages. It is particularly strong in CSE and IT programmes.'],
   ['question' => 'Does MSIT have management quota seats?', 'answer' => 'Yes, MSIT has some management quota seats available. Call 9899991342 for guidance on management quota admission process and eligibility.']
 ];
+$facts_key = 'msit'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 
@@ -210,8 +231,18 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MAIT Admission Guide', 'url' => '/mait-admission.php', 'desc' => 'Complete admission guide for Maharaja Agrasen Institute of Technology'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
-  ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with counselling dates and eligibility']
+  ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with counselling dates and eligibility'],
+  ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Top IPU college for BBA, MBA, BA-LLB — Maharaja Agrasen group'],
+  ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Peer engineering college — fees, cutoff, placements at IPU'],
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round'],
+  ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Maharaja Surajmal Institute Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

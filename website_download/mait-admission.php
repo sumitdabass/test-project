@@ -1,12 +1,12 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU</title>
-<meta name="description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
+<meta name="description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.6-1.66L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/mait-admission.php">
 
 <!-- Open Graph -->
 <meta property="og:title" content="MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU">
-<meta property="og:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
+<meta property="og:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.6-1.66L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 <meta property="og:url" content="https://ipu.co.in/mait-admission.php">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="IPU Admission Guide">
@@ -14,7 +14,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MAIT Delhi Admission 2026 | Fees, Cutoff, Govt/Private, Placements – IPU">
-<meta name="twitter:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.55L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
+<meta name="twitter:description" content="Maharaja Agrasen Institute of Technology (MAIT) Rohini 2026 – private college under GGSIPU. B.Tech fees Rs.1.6-1.66L, 83-91 percentile cutoff, 7-15 LPA placements. Call 9899991342.">
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -50,79 +50,33 @@ $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['MAI
 include 'include/components/breadcrumb-schema.php';
 ?>
 
-<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is MAIT?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT is Maharaja Agrasen Institute of Technology, a top private engineering college affiliated to GGSIPU, located in Sector-22 Rohini, Delhi. Established in 1999, MAIT offers B.Tech, M.Tech and MCA programmes with strong placements (7-15 LPA average). It is one of the most preferred IPU colleges. Call 9899991342 for MAIT admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT full form?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT full form is Maharaja Agrasen Institute of Technology. It is a private self-financing engineering college affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), located at PSP Area, Sector-22, Rohini, Delhi-110086. Founded in 1999 by Maharaja Agrasen Technical Education Society. Call 9899991342 for admission guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MAIT Delhi private or government?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT Delhi is a PRIVATE self-financing engineering college, NOT a government college. It is affiliated to GGSIPU (which is a state government university) but is run by Maharaja Agrasen Technical Education Society. Fees are higher than government colleges (Rs. 1.55L per year). Call 9899991342 for fee and admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MAIT under IPU?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, MAIT (Maharaja Agrasen Institute of Technology) is affiliated to GGSIPU (Guru Gobind Singh Indraprastha University) Delhi. Admission to MAIT B.Tech is through IPU counselling based on JEE Main score. MAIT consistently ranks among the top 5 IPU engineering colleges. Call 9899991342 for MAIT IPU admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are MAIT B.Tech fees 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT B.Tech fees 2026-27 are approximately Rs. 1,55,700 per year (tuition + university charges), making the total 4-year fee around Rs. 6.23 lakh. Hostel and mess are additional. Caution money and one-time charges apply in first year. Fees are decided by State Fee Regulatory Committee. Call 9899991342 for exact fee breakup."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is MAIT located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT is located at PSP Area, Plot 1, Sector-22, Rohini, Delhi-110086, near Rithala metro station (Red Line). The campus is spread over a sprawling area in North-West Delhi, with easy public transport connectivity. Approximately 15 minutes from Rohini West metro. Call 9899991342 for campus visit help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT NIRF ranking?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT has been featured in NIRF rankings in the engineering category and is consistently rated among the top private engineering colleges in Delhi NCR. It holds NBA accreditation for several B.Tech branches and is rated A+ by NAAC, signalling strong academic quality. Call 9899991342 for MAIT branch-wise ranking details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is MAIT campus area and infrastructure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MAIT campus in Sector-22 Rohini covers a large built-up area with modern academic blocks, computer labs, library, auditorium, sports facilities, cafeteria and separate boys/girls hostels. It has Wi-Fi enabled smart classrooms, well-equipped engineering labs and an active placement cell. Call 9899991342 for MAIT admission and campus tour."
-      }
-    }
-  ]
-}
-</script>
+<?php
+$college = [
+  'name'          => 'Maharaja Agrasen Institute of Technology',
+  'short_name'    => 'MAIT',
+  'url'           => 'https://ipu.co.in/mait-admission.php',
+  'address'       => 'Sector 22, Rohini, Delhi',
+  'founded'       => '1999',
+  'accreditation' => 'NAAC, AICTE',
+  'courses'       => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Electrical & Electronics Engineering',
+    'B.Tech Mechanical Engineering',
+    'B.Tech Computer Science & Technology',
+    'B.Tech CSE (AI & ML)',
+    'B.Tech CSE (AI)',
+    'B.Tech CSE (Data Science)',
+    'B.Tech Electronics Engineering (VLSI Design & Technology)',
+    'B.Tech ECE (Advanced Communication Technology)',
+    'BBA',
+    'MBA',
+  ],
+  // total_seats omitted – no aggregate figure stated on page
+];
+include 'include/components/college-schema.php';
+?>
 </head>
 <body>
 <?php include_once("include/base-nav.php"); ?>
@@ -166,14 +120,19 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Computer Science & Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech AI & Machine Learning</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA (Bachelor of Business Administration)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BJMC (Bachelor of Journalism & Mass Communication)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (incl. 2nd Shift)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">360 + 60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Information Technology</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">300</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Electronics & Communication Engineering</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electrical & Electronics Engineering (EEE)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech Mechanical Engineering (ME)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech CST</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (AI&ML)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech CSE (AI)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech CSE (Data Science)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Tech Electronics Engineering (VLSI Design & Tech)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">B.Tech ECE (Advanced Communication Tech)</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">BBA (Bachelor of Business Administration)</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Master of Business Administration)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">180</td></tr>
     </tbody>
   </table>
 
@@ -232,7 +191,7 @@ include 'include/components/hero-banner.php';
   <!-- Fee & Seat Intake -->
   <div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
     <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
-    <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
+    <p style="font-size:13px;color:#64748b;margin-bottom:12px">Source: UG Brochure 2026-27 Ch 13 SN 47 (MAIT seat intake) + 6th SFRC Notification F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i)) for fees</p>
     <table style="width:100%;border-collapse:collapse;font-size:14px">
       <thead>
         <tr style="background:#0d1b6e;color:#fff">
@@ -242,21 +201,21 @@ include 'include/components/hero-banner.php';
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">360</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">360</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">300</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+        <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">60</td></tr>
       </tbody>
     </table>
-    <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at MAIT: ~780.</p>
+    <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: UG Brochure 2026-27 Ch 13 SN 47 (MAIT) + 6th SFRC Notification dated 14.07.2025. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Note: this fee table shows 7 of MAIT's 12+ B.Tech streams; for the complete brochure-listed programmes (incl. ME, CST, AI, CSE-AI, VLSI, Adv Comm) see the courses table above. MAIT also offers BBA 120 + MBA 180.</p>
   </div>
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -274,6 +233,7 @@ $faqs = [
   ['question' => 'What is the fee for B.Tech at MAIT?', 'answer' => 'B.Tech fees at MAIT are approximately Rs 2 lakh per year, which is affordable compared to private engineering colleges in Delhi NCR.'],
   ['question' => 'Is MAIT better than MSIT or BPIT?', 'answer' => 'MAIT consistently ranks above MSIT and BPIT in terms of JEE Main cutoffs and placement packages. However, MSIT has a strong reputation for its faculty and academic rigour. Call 9899991342 for personalised comparison.']
 ];
+$facts_key = 'mait'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 
@@ -282,8 +242,18 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'MSIT Admission Guide', 'url' => '/msit-admission.php', 'desc' => 'Complete admission guide for Maharaja Surajmal Institute of Technology'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
-  ['title' => 'USICT IPU Admission', 'url' => '/usict-admission.php', 'desc' => 'Admission guide for IPU\'s flagship engineering school USICT']
+  ['title' => 'USICT IPU Admission', 'url' => '/usict-admission.php', 'desc' => 'Admission guide for IPU\'s flagship engineering school USICT'],
+  ['title' => 'MAIMS Delhi Admission', 'url' => '/maims-admission.php', 'desc' => 'Sister college from the same Maharaja Agrasen group — BBA, MBA, Law'],
+  ['title' => 'BPIT Rohini Admission', 'url' => '/BPIT.php', 'desc' => 'Neighbouring engineering college — fees, cutoff, placements'],
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round'],
+  ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission process & eligibility for management seats'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Maharaja Agrasen Institute of Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

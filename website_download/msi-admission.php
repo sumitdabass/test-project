@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>MSI Janakpuri Admission 2026 | BBA, BCA, B.Com Fees & Cutoff – IPU</title>
 <meta name="description" content="Maharaja Surajmal Institute (MSI) Janakpuri 2026 – BBA, BCA, B.Com, Law admission at GGSIPU. Fees, cutoff, placements. Call 9899991342 for expert guidance.">
@@ -129,7 +129,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-<?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div></div>
 </section>
@@ -144,6 +144,7 @@ $faqs = [
   ['question' => 'Is MSI the same as MSIT?', 'answer' => 'No. MSI (Maharaja Surajmal Institute) focuses on commerce, management, and humanities, while MSIT (Maharaja Surajmal Institute of Technology) is an engineering college. Both share the same Janakpuri campus area.'],
   ['question' => 'What are the placements like at MSI?', 'answer' => 'MSI has strong placements in banking, finance, IT, and consulting sectors. BBA and B.Com students are placed well through the college placement cell.'],
 ];
+$facts_key = 'msi'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 

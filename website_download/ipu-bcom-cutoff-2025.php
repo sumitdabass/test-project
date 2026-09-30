@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU B.Com Cutoff 2025 | CUET Score & College-wise Analysis</title>
 <meta name="description" content="IPU B.Com cutoff 2025 – CUET percentile & score-based cutoff for VIPS, MSI, MAIMS, IITM. Round 1 & Round 3 college-wise analysis. Call 9899991342 for guidance.">
@@ -40,21 +40,6 @@
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ipu.co.in/"},
     {"@type": "ListItem", "position": 2, "name": "Cutoff Analysis", "item": "https://ipu.co.in/ipu-cutoff-analysis.php"},
     {"@type": "ListItem", "position": 3, "name": "B.Com Cutoff 2025"}
-  ]
-}
-</script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CUET percentile is needed for B.Com at VIPS IPU?", "acceptedAnswer": {"@type": "Answer", "text": "VIPS Pitampura typically requires a CUET percentile of 78+ in Round 1 for B.Com (General category, Delhi quota). In Round 3, the cutoff may relax to around 70 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Is IPU B.Com admission based on CUET or IPU CET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU B.Com admission is now based on CUET scores. The university transitioned from IPU CET to CUET in recent years. Always verify the current admission notification on the official IPU portal."}},
-    {"@type": "Question", "name": "Which is the best B.Com college under IPU based on cutoff?", "acceptedAnswer": {"@type": "Answer", "text": "Based on cutoff trends, VIPS Pitampura has the highest B.Com cutoff, followed closely by MSI Janakpuri and MAIMS Rohini. These colleges are preferred for their strong commerce faculty and placement support."}},
-    {"@type": "Question", "name": "What is the difference between B.Com and BBA at IPU?", "acceptedAnswer": {"@type": "Answer", "text": "B.Com focuses on accounting, taxation, finance and commerce fundamentals while BBA emphasizes management, marketing and business administration. B.Com cutoffs are slightly lower than BBA. Both use CUET scores for IPU admission."}},
-    {"@type": "Question", "name": "Can I get B.Com at IPU with a CUET percentile of 60?", "acceptedAnswer": {"@type": "Answer", "text": "With a CUET percentile of 60 (Delhi quota, General category), you can target IITM Janakpuri in Round 1. In Round 3, colleges like MAIMS may also become available. Call 9899991342 for a complete college list."}}
   ]
 }
 </script>
@@ -101,7 +86,7 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/vips-pitampura-courses.php" style="color:#1a3a9c;font-weight:600">VIPS Pitampura</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~88</td><td style="padding:12px 14px;text-align:center;font-size:14px">~78</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/vips-admission.php" style="color:#1a3a9c;font-weight:600">VIPS Pitampura</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~88</td><td style="padding:12px 14px;text-align:center;font-size:14px">~78</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/msi-admission.php" style="color:#1a3a9c;font-weight:600">MSI Janakpuri</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85</td><td style="padding:12px 14px;text-align:center;font-size:14px">~72</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/maims-admission.php" style="color:#1a3a9c;font-weight:600">MAIMS Rohini</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~82</td><td style="padding:12px 14px;text-align:center;font-size:14px">~68</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px">IITM Janakpuri</td><td style="padding:12px 14px;text-align:center;font-size:14px">~75</td><td style="padding:12px 14px;text-align:center;font-size:14px">~60</td></tr>
@@ -178,7 +163,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -204,10 +189,10 @@ include 'include/components/faq-section.php';
 $related_pages = [
   ['title' => 'B.Com Admission at IPU', 'url' => '/bcom-admission-ipu.php', 'desc' => 'Complete guide to B.Com admission at IPU – eligibility, fees & process'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, B.Com, Law and more at IPU'],
-  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
+  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU counselling process – choice filling & seat allotment'],
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'College-wise B.Tech cutoff for all branches at IPU'],
-  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
+  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
 ];
 include 'include/components/related-pages.php';
 ?>

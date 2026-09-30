@@ -1,0 +1,133 @@
+Name of Institute	Branch	Delhi	Outside Delhi
+Bhagwan Parshuram Institute of Technology	Computer Science & Engineering	Min Rank - 103410 Max Rank - 179114	Min Rank - 58591 Max Rank - 79034
+Bhagwan Parshuram Institute of Technology	CSE- DS	Min Rank - 129609 Max Rank - 186009	Min Rank - 61784 Max Rank - 81396
+Bhagwan Parshuram Institute of Technology	Electrical & Electronics Engineering	Min Rank - 212417 Max Rank - 354619	Min Rank - 102985 Max Rank - 112421
+Bhagwan Parshuram Institute of Technology	Electronics & Communication Engineering	Min Rank - 201392 Max Rank - 286487	Min Rank - 85798 Max Rank - 100042
+Bhagwan Parshuram Institute of Technology	Information Technology	Min Rank - 172125 Max Rank - 215269	Min Rank - 71440 Max Rank - 86992
+Bharati Vidyapeeths College of Engineering	Computer Science & Engineering	Min Rank - 81514 Max Rank - 159959	Min Rank - 65507 Max Rank - 79459
+Bharati Vidyapeeths College of Engineering	CSE- AIML	Min Rank - 101096 Max Rank - 167623	Min Rank - 67452 Max Rank - 81593
+Bharati Vidyapeeths College of Engineering	Electrical & Electronics Engineering	Min Rank - 233709 Max Rank - 325165	Min Rank - 83873 Max Rank - 110304
+Bharati Vidyapeeths College of Engineering	Electronics & Communication Engineering	Min Rank - 142087 Max Rank - 257480	Min Rank - 86956 Max Rank - 96114
+Bharati Vidyapeeths College of Engineering	Information Technology	Min Rank - 102406 Max Rank - 188921	Min Rank - 81810 Max Rank - 84481
+Bharati Vidyapeeths College of Engineering	Instrumentation & Control Engineering (Shift I)	Min Rank - 264835 Max Rank - 377275	Min Rank - 109261 Max Rank - 117932
+Delhi Institute of Sciences & Technology 	Computer Science & Engineering	Min Rank - 179136 Max Rank - 754791	Min Rank - 110045 Max Rank - 187551
+Delhi Technical Campus 	Artificial Intelligence & Data Science	Min Rank - 228882 Max Rank - 1424341	Min Rank - 214081 Max Rank - 231380
+Delhi Technical Campus	Artificial Intelligence & Machine Learning	Min Rank - 300362 Max Rank - 1365234	Min Rank - 202504 Max Rank - 231770
+Delhi Technical Campus	B. Tech. (Computer Science & Applied Mathematics)	Min Rank - 366040 Max Rank - 1401259	Min Rank - 162145 Max Rank - 236425
+Delhi Technical Campus	Computer Science & Engineering	Min Rank - 164365 Max Rank - 960734	Min Rank - 109025 Max Rank - 214611
+Delhi Technical Campus	Computer Science & Technology	Min Rank - 369269 Max Rank - 1344834	Min Rank - 179643 Max Rank - 224777
+Delhi Technical Campus	CSE (Cyber Security)	Min Rank - 367415 Max Rank - 1469925	Min Rank - 189703 Max Rank - 232312
+Delhi Technical Campus	CSE- AIML	Min Rank - 159224 Max Rank - 896507	Min Rank - 126693 Max Rank - 220264
+Delhi Technical Campus	CSE- DS	Min Rank - 373972 Max Rank - 1345618	Min Rank - 200958 Max Rank - 229851
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Artificial Intelligence & Data Science	Min Rank - 220016 Max Rank - 381339	Min Rank - 91692 Max Rank - 148999
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Artificial Intelligence & Data Science (Shift II)	Min Rank - 218804 Max Rank - 397263	Min Rank - 147809 Max Rank - 152663
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Artificial Intelligence & Machine Learning	Min Rank - 189441 Max Rank - 369157	Min Rank - 104229 Max Rank - 147793
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Artificial Intelligence & Machine Learning (Shift II)	Min Rank - 265508 Max Rank - 395466	Min Rank - 147822 Max Rank - 154302
+Dr. Akhilesh Das Gupta Institute of Professional Studies	B. Tech. (Computer Science)	Min Rank - 222606 Max Rank - 322333	Min Rank - 103159 Max Rank - 129879
+Dr. Akhilesh Das Gupta Institute of Professional Studies	B.Tech (CS) II- Shift	Min Rank - 249928 Max Rank - 354073	Min Rank - 130453 Max Rank - 137636
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Civil Engineering	Min Rank - 238773 Max Rank - 507940	Min Rank - 126448 Max Rank - 189286
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Computer Science & Engineering (Shift I)	Min Rank - 111661 Max Rank - 287513	Min Rank - 96330 Max Rank - 122166
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Computer Science & Engineering (Shift II)	Min Rank - 231175 Max Rank - 305489	Min Rank - 107275 Max Rank - 125075
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Computer Science & Technology	Min Rank - 210514 Max Rank - 326896	Min Rank - 93816 Max Rank - 131295
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Computer Science and Technology (II Shift)	Min Rank - 247360 Max Rank - 371589	Min Rank - 133851 Max Rank - 141886
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Electronics & Communication Engineering (Shift I)	Min Rank - 295268 Max Rank - 431522	Min Rank - 99215 Max Rank - 154976
+Dr. Akhilesh Das Gupta Institute of Professional Studies	Electronics & Communication Engineering (Shift II)	Min Rank - 314064 Max Rank - 443939	Min Rank - 129000 Max Rank - 163125
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Information Technology (Shift I)	Min Rank - 192317 Max Rank - 406567	Min Rank - 127316 Max Rank - 148171
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Information Technology (Shift II)	Min Rank - 354653 Max Rank - 417130	Min Rank - 119090 Max Rank - 151404
+Dr. Akhilesh Das Gupta Institute of Professional Studies 	Mechanical Engineering	Min Rank - 308663 Max Rank - 465099	Min Rank - 158342 Max Rank - 171348
+Echelon Institute of Technology	Artificial Intelligence and Data Science	Min Rank - 340574 Max Rank - 1274533	Min Rank - 225949 Max Rank - 273386
+Echelon Institute of Technology	B.Tech. (3D Modelling & Animation)		Min Rank - 272158 Max Rank - 289578
+Echelon Institute of Technology	B.Tech. (Architecture & interior Decoration)	Min Rank - 1215621 Max Rank - 1215621	Min Rank - 272522 Max Rank - 291452
+Echelon Institute of Technology	B.Tech. (Nanoscience & Technology)		Min Rank - 270820 Max Rank - 290715
+Echelon Institute of Technology	B.Tech. (Robotics & Artificial Intelligence)	Min Rank - 662099 Max Rank - 1409354	Min Rank - 246615 Max Rank - 270141
+Echelon Institute of Technology	B.Tech. CSE (IOT) & CS including Blockchain Technology	Min Rank - 325262 Max Rank - 1070864	Min Rank - 226519 Max Rank - 271082
+Echelon Institute of Technology	Civil Engineering	Min Rank - 836045 Max Rank - 1434319	Min Rank - 272264 Max Rank - 279883
+Echelon Institute of Technology	Computer Science & Engineering	Min Rank - 4003989 Max Rank - 1414970	Min Rank - 145154 Max Rank - 258621
+Echelon Institute of Technology	CSE (Cyber Security)	Min Rank - 389458 Max Rank - 1464383	Min Rank - 260143 Max Rank - 270750
+Echelon Institute of Technology	CSE- AIML	Min Rank - 361521 Max Rank - 1459433	Min Rank - 195943 Max Rank - 254706
+Echelon Institute of Technology	CSE- DS	Min Rank - 729233 Max Rank - 1117467	Min Rank - 167153 Max Rank - 270363
+Echelon Institute of Technology	Electronics & Communication Engineering	Min Rank - 492448 Max Rank - 1277450	Min Rank - 221582 Max Rank - 248727
+Echelon Institute of Technology	Mechanical Engineering	Min Rank - 677961 Max Rank - 1460192	Min Rank - 231226 Max Rank - 264180
+Echelon Institute of Technology	Mechatronics	Min Rank - 713083 Max Rank - 766408	Min Rank - 243598 Max Rank - 282930
+Fairfield Institute of Management & Technology	Artificial Intelligence & Machine Learning	Min Rank - 327658 Max Rank - 670434	Min Rank - 251993 Max Rank - 254241
+Fairfield Institute of Management & Technology	Computer Science & Engineering	Min Rank - 245254 Max Rank - 624880	Min Rank - 227603 Max Rank - 250247
+Fairfield Institute of Management & Technology	Electronics and Communication Engineering	Min Rank - 513242 Max Rank - 983938	Min Rank - 261886 Max Rank - 266935
+Fairfield Institute of Management & Technology	Information Technology	Min Rank - 414498 Max Rank - 828630	Min Rank - 255072 Max Rank - 260954
+Greater Noida Institute of Technology	Artificial Intelligence & Machine Learning	Min Rank - 282136 Max Rank - 1312632	Min Rank - 129898 Max Rank - 218092
+Greater Noida Institute of Technology	Computer Science & Engineering	Min Rank - 287956 Max Rank - 1133110	Min Rank - 93805 Max Rank - 217947
+Guru Teg Bahadur Institute of Technology	Computer Science & Engineering (Shift I)	Min Rank - 169080 Max Rank - 223597	Min Rank - 87486 Max Rank - 94662
+Guru Teg Bahadur Institute of Technology	Computer Science & Engineering (Shift II)	Min Rank - 141880 Max Rank - 230520	Min Rank - 94926 Max Rank - 96509
+Guru Teg Bahadur Institute of Technology	CSE- AIML	Min Rank - 162240 Max Rank - 213360	Min Rank - 97055 Max Rank - 98499
+Guru Teg Bahadur Institute of Technology	CSE- DS	Min Rank - 186295 Max Rank - 237938	Min Rank - 95094 Max Rank - 101473
+Guru Teg Bahadur Institute of Technology	Electronics & Communication Engineering	Min Rank - 266666 Max Rank - 358743	Min Rank - 101427 Max Rank - 115721
+Guru Teg Bahadur Institute of Technology	Information Technology (Shift I)	Min Rank - 223096 Max Rank - 271460	Min Rank - 99005 Max Rank - 105637
+Guru Teg Bahadur Institute of Technology	Information Technology (Shift II)	Min Rank - 271478 Max Rank - 286748	Min Rank - 107009 Max Rank - 109158
+Guru Tegh Bahadur 4th Centenary Engineering College	Computer Science & Engineering	Min Rank - 190042 Max Rank - 318341	Min Rank - 87338 Max Rank - 121312
+Guru Tegh Bahadur 4th Centenary Engineering College	CSE (Data Science)	Min Rank - 188606 Max Rank - 351308	Min Rank - 114052 Max Rank - 136306
+Guru Tegh Bahadur 4th Centenary Engineering College	CSE- AIML	Min Rank - 173639 Max Rank - 325106	Min Rank - 84540 Max Rank - 135246
+Guru Tegh Bahadur 4th Centenary Engineering College	Electronics & Communication Engineering	Min Rank - 262421 Max Rank - 422062	Min Rank - 145000 Max Rank - 159170
+Guru Tegh Bahadur 4th Centenary Engineering College	Information Technology	Min Rank - 310814 Max Rank - 378320	Min Rank - 137380 Max Rank - 145654
+HMR Institute of Technology & Management	Artificial Intelligence & Data Science	Min Rank - 426530 Max Rank - 691709	Min Rank - 192088 Max Rank - 208077
+HMR Institute of Technology & Management	Artificial Intelligence & Machine Learning	Min Rank - 437696 Max Rank - 789707	Min Rank - 162946 Max Rank - 220494
+HMR Institute of Technology & Management	Computer Science & Engineering (Shift I)	Min Rank - 252843 Max Rank - 494393	Min Rank - 84128 Max Rank - 176201
+HMR Institute of Technology & Management	Computer Science & Engineering (Shift II)	Min Rank - 357782 Max Rank - 550390	Min Rank - 179386 Max Rank - 188501
+HMR Institute of Technology & Management	Computer Science & Technology	Min Rank - 368124 Max Rank - 648455	Min Rank - 155285 Max Rank - 211713
+HMR Institute of Technology & Management	CSE - AI	Min Rank - 334982 Max Rank - 715592	Min Rank - 194454 Max Rank - 213472
+HMR Institute of Technology & Management	CSE (Cyber Security)	Min Rank - 365606 Max Rank - 627069	Min Rank - 95621 Max Rank - 177070
+HMR Institute of Technology & Management	CSE- AIML	Min Rank - 370760 Max Rank - 621069	Min Rank - 155545 Max Rank - 197450
+HMR Institute of Technology & Management	CSE- DS	Min Rank - 427804 Max Rank - 774847	Min Rank - 199471 Max Rank - 216456
+HMR Institute of Technology & Management	Information Technology	Min Rank - 487906 Max Rank - 818989	Min Rank - 189067 Max Rank - 212621
+JIMS Engineering Management Technical Campus	Artificial Intelligence & Data Science	Min Rank - 329727 Max Rank - 1412240	Min Rank - 222320 Max Rank - 248167
+JIMS Engineering Management Technical Campus	Artificial Intelligence & Machine Learning	Min Rank - 474133 Max Rank - 1438118	Min Rank - 167225 Max Rank - 243690
+JIMS Engineering Management Technical Campus	Computer Science & Engineering	Min Rank - 230614 Max Rank - 1204953	Min Rank - 158572 Max Rank - 241374
+JIMS Engineering Management Technical Campus	Computer Science & Technology	Min Rank - 452429 Max Rank - 1466559	Min Rank - 190832 Max Rank - 242471
+JIMS Engineering Management Technical Campus	CSE- AIML	Min Rank - 212245 Max Rank - 729408	Min Rank - 144147 Max Rank - 226331
+Maharaja Agrasen Institute of Technology	Computer Science & Engineering (Shift I)	Min Rank - 19737 Max Rank - 85429	Min Rank - 29267 Max Rank - 54096
+Maharaja Agrasen Institute of Technology	Computer Science & Engineering (Shift II)	Min Rank - 74100 Max Rank - 91234	Min Rank - 52373 Max Rank - 55785
+Maharaja Agrasen Institute of Technology	Computer Science & Technology	Min Rank - 78599 Max Rank - 109371	Min Rank - 51459 Max Rank - 60512
+Maharaja Agrasen Institute of Technology	CSE - AI	Min Rank - 41156 Max Rank - 92818	Min Rank - 45545 Max Rank - 55923
+Maharaja Agrasen Institute of Technology	CSE- AIML	Min Rank - 36395 Max Rank - 86421	Min Rank - 21436 Max Rank - 54071
+Maharaja Agrasen Institute of Technology	CSE- DS	Min Rank - 63592 Max Rank - 96531	Min Rank - 52632 Max Rank - 57886
+Maharaja Agrasen Institute of Technology	Electrical & Electronics Engineering	Min Rank - 100885 Max Rank - 223405	Min Rank - 67457 Max Rank - 83363
+Maharaja Agrasen Institute of Technology	Electronics & Comm.- Advance Comm. Technology	Min Rank - 76396 Max Rank - 175191	Min Rank - 59218 Max Rank - 80577
+Maharaja Agrasen Institute of Technology	Electronics & Communication Engineering	Min Rank - 35180 Max Rank - 138006	Min Rank - 61961 Max Rank - 69754
+Maharaja Agrasen Institute of Technology	Electronics Engg.- VLSI Design & Technology	Min Rank - 55276 Max Rank - 192391	Min Rank - 67620 Max Rank - 78188
+Maharaja Agrasen Institute of Technology	Information Technology	Min Rank - 89926 Max Rank - 135548	Min Rank - 57787 Max Rank - 67344
+Maharaja Agrasen Institute of Technology	Mechanical Engineering	Min Rank - 120575 Max Rank - 284455	Min Rank - 85174 Max Rank - 99033
+Maharaja Surajmal Institute Technology	Computer Science & Engineering (Shift I)	Min Rank - 52036 Max Rank - 117485	Min Rank - 31517 Max Rank - 62496
+Maharaja Surajmal Institute Technology	Computer Science & Engineering (Shift II)	Min Rank - 98763 Max Rank - 123155	Min Rank - 38142 Max Rank - 64997
+Maharaja Surajmal Institute Technology	Electrical & Electronics Engineering	Min Rank - 133485 Max Rank - 268614	Min Rank - 85818 Max Rank - 88974
+Maharaja Surajmal Institute Technology	Electronics & Communication Engineering (Shift I)	Min Rank - 100021 Max Rank - 199561	Min Rank - 73762 Max Rank - 82193
+Maharaja Surajmal Institute Technology	Electronics & Communication Engineering (Shift II)	Min Rank - 160989 Max Rank - 215297	Min Rank - 82566 Max Rank - 85518
+Maharaja Surajmal Institute Technology	Information Technology (Shift I)	Min Rank - 118748 Max Rank - 149164	Min Rank - 65998 Max Rank - 70646
+Maharaja Surajmal Institute Technology	Information Technology (Shift II)	Min Rank - 123150 Max Rank - 155081	Min Rank - 70690 Max Rank - 72620
+Shri Balwant Institute of Technology	Computer Science & Engineering	Min Rank - 383160 Max Rank - 1342898	Min Rank - 200557 Max Rank - 243432
+Shri Balwant Institute of Technology	Electrical & Electronics Engineering	Min Rank - 787235 Max Rank - 1096075	Min Rank - 208530 Max Rank - 208530
+Shri Balwant Institute of Technology	Electronics & Communication Engineering	Min Rank - 380448 Max Rank - 1155077	Min Rank - 180700 Max Rank - 180700
+Shri Balwant Institute of Technology	Information Technology	Min Rank - 487648 Max Rank - 1116909	Min Rank - 210367 Max Rank - 244669
+Shri Balwant Institute of Technology	Mechanical Engineering	Min Rank - 396268 Max Rank - 1427444	Min Rank - 254114 Max Rank - 254739
+Tribhuvan College	B.Tech (AI&DS)	Min Rank - 1138263 Max Rank - 1138263	Min Rank - 258488 Max Rank - 265983
+Tribhuvan College	B.Tech (AI&ML)	Min Rank - 1427356 Max Rank - 1427356	Min Rank - 224281 Max Rank - 266811
+Tribhuvan College	Computer Science & Engineering	Min Rank - 408711 Max Rank - 1158265	Min Rank - 254365 Max Rank - 269242
+Trinity Institute of Innovations in Professional Studies	Computer Science & Engineering	Min Rank - 52002 Max Rank - 948497	Min Rank - 188911 Max Rank - 224014
+Trinity Institute of Innovations in Professional Studies	Computer Science & Technology	Min Rank - 438565 Max Rank - 1412818	Min Rank - 209806 Max Rank - 247730
+Trinity Institute of Innovations in Professional Studies	CSE-AIML	Min Rank - 342413 Max Rank - 1388026	Min Rank - 163251 Max Rank - 249219
+Trinity Institute of Innovations in Professional Studies	Information Technology	Min Rank - 697488 Max Rank - 1375947	Min Rank - 157436 Max Rank - 204689
+University School of Automation & Robotics	B.Tech./M. Tech. (DD) (AI-DS)	Min Rank - 62074 Max Rank - 116805	Min Rank - 47706 Max Rank - 68845
+University School of Automation & Robotics	B.Tech./M. Tech. (DD) (AI-ML)	Min Rank - 53495 Max Rank - 122653	Min Rank - 55448 Max Rank - 72354
+University School of Automation & Robotics	B.Tech./M. Tech. (DD) (AR)	Min Rank - 88310 Max Rank - 207300	Min Rank - 54262 Max Rank - 85427
+University School of Automation & Robotics	B.Tech./M. Tech. (DD) (IIOT)	Min Rank - 124403 Max Rank - 203772	Min Rank - 74987 Max Rank - 91639
+University School of Chemical Technology	B. Tech. (Energy)	Min Rank - 192420 Max Rank - 373904	Min Rank - 77926 Max Rank - 143287
+University School of Chemical Technology	B. Tech./M. Tech. (Dual Degree in Chemical Engineering	Min Rank - 117814 Max Rank - 388718	Min Rank - 111242 Max Rank - 159799
+University School of Information & Communication Technology 	B. Tech./M. Tech.(DD) (CSE)	Min Rank - 6566 Max Rank - 51798	Min Rank - 12955 Max Rank - 35838
+University School of Information & Communication Technology	B. Tech./M. Tech.(DD) (ECE)	Min Rank - 38907 Max Rank - 73324	Min Rank - 43143 Max Rank - 54854
+University School of Information & Communication Technology	B. Tech./M. Tech.(DD) (IT)	Min Rank - 55582 Max Rank - 61607	Min Rank - 38047 Max Rank - 45706
+University School of Information & Communication Technology	B. Tech/M. Tech.(DD) (CSE-AI)	Min Rank - 31036 Max Rank - 45729	Min Rank - 16413 Max Rank - 37487
+University School of Information & Communication Technology	B. Tech/M. Tech.(DD) (CSE-DS)	Min Rank - 48858 Max Rank - 55844	Min Rank - 37840 Max Rank - 42737
+Vivekananda Institute of Professional Studies	Artificial Intelligence & Data Science	Min Rank - 91961 Max Rank - 281411	Min Rank - 94880 Max Rank - 130061
+Vivekananda Institute of Professional Studies	Artificial Intelligence & Machine Learning	Min Rank - 187109 Max Rank - 290309	Min Rank - 106550 Max Rank - 134040
+Vivekananda Institute of Professional Studies	B. Tech. (Computer Science & Applied Mathematics)	Min Rank - 207957 Max Rank - 308071	Min Rank - 111004 Max Rank - 148360
+Vivekananda Institute of Professional Studies	Computer Science & Engineering	Min Rank - 79209 Max Rank - 230736	Min Rank - 62327 Max Rank - 107324
+Vivekananda Institute of Professional Studies	CSE (Cyber Security)	Min Rank - 127345 Max Rank - 273530	Min Rank - 83432 Max Rank - 123527
+Vivekananda Institute of Professional Studies	Electronics Engg.- VLSI Design & Technology	Min Rank - 223341 Max Rank - 420571	Min Rank - 116806 Max Rank - 169716
+Vivekananda Institute of Professional Studies	Industrial Internet of Things	Min Rank - 261859 Max Rank - 382513	Min Rank - 136599 Max Rank - 157905

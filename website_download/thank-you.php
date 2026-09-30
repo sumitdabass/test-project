@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 
 $email = $_SESSION['enh_email'] ?? '';
@@ -318,8 +318,10 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
 }
 </style>
 
-<!-- Conversion tracked via GTM on thank-you pageview -->
+<!-- Conversion tracked via GTM on thank-you pageview — gated on success flag so honeypot/dedup redirects don't inflate counts -->
+<?php if (($_GET['src'] ?? '') === 'submit'): ?>
 <script>window.dataLayer = window.dataLayer || []; dataLayer.push({'event': 'form_submission', 'page_type': 'thank-you'});</script>
+<?php endif; ?>
 </head>
 <body>
 
@@ -341,14 +343,14 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
     <span class="ty-call-badge">&#9679; Lines Open Now</span>
     <h2>Don't Wait — Call Us Right Now</h2>
     <p>Get <strong>instant answers</strong> on seat availability, cutoffs &amp; counselling steps. Our experts are available <strong>Mon–Sat, 9AM–7PM</strong>.</p>
-    <a href="tel:9899991342" class="ty-call-btn">
-      <i class="fa fa-phone"></i> 9899991342 — Call Free
+    <a href="tel:+919899991342" class="ty-call-btn">
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> 9899991342 — Call Free
     </a>
     <br>
     <a href="https://wa.me/919899991342?text=Hi%2C+I+just+submitted+an+enquiry+for+IPU+Admission+2026.+Please+guide+me." class="ty-whatsapp-btn" target="_blank" rel="noopener">
-      <i class="fa fa-whatsapp"></i> WhatsApp Us Instead
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.5-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.8 1.7.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4.1.2.1.7-.1 1.3z"/></svg> WhatsApp Us Instead
     </a>
-    <p class="ty-timing"><i class="fa fa-clock-o"></i> Mon–Sat &nbsp;9:00 AM – 7:00 PM &nbsp;|&nbsp; 100% Free Guidance</p>
+    <p class="ty-timing"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="vertical-align:-0.125em"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Mon–Sat &nbsp;9:00 AM – 7:00 PM &nbsp;|&nbsp; 100% Free Guidance</p>
   </div>
 </div>
 
@@ -398,12 +400,12 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
         MBA
         <span class="ty-exam">via CAT / CMAT</span>
       </a>
-      <a href="IPU-Law-Admission-2026.php" class="ty-course-card">
+      <a href="IPU-Law-Admission.php" class="ty-course-card">
         <span class="ty-icon">&#9878;</span>
         BA LLB / BBA LLB
         <span class="ty-exam">via CLAT</span>
       </a>
-      <a href="ipu-bba-admission.php" class="ty-course-card">
+      <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" class="ty-course-card">
         <span class="ty-icon">&#127891;</span>
         BBA
         <span class="ty-exam">via CUET</span>
@@ -436,7 +438,7 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
       <a href="b-tech-colleges-under-IP-university.php" class="ty-college-link">&#127963; MSIT – Janakpuri</a>
       <a href="BPIT.php" class="ty-college-link">&#127963; BPIT – Rohini</a>
       <a href="BVP.php" class="ty-college-link">&#127963; BVP – Paschim Vihar</a>
-      <a href="vips-pitampura-courses.php" class="ty-college-link">&#127963; VIPS – Pitampura</a>
+      <a href="vips-admission.php" class="ty-college-link">&#127963; VIPS – Pitampura</a>
     </div>
   </div>
 </section>
@@ -444,12 +446,12 @@ unset($_SESSION['enh_email'], $_SESSION['enh_phone']);
 <!-- ===== TRUST STRIP ===== -->
 <div class="ty-trust-strip">
   <div class="ty-trust-items">
-    <div class="ty-trust-item"><i class="fa fa-users"></i> 5000+ Students Guided</div>
-    <div class="ty-trust-item"><i class="fa fa-star"></i> 10+ Years Experience</div>
-    <div class="ty-trust-item"><i class="fa fa-check-circle"></i> 100% Free Guidance</div>
-    <div class="ty-trust-item"><i class="fa fa-university"></i> 50+ IPU Colleges Covered</div>
-    <div class="ty-trust-item"><i class="fa fa-phone"></i>
-      <a href="tel:9899991342" style="color:#f9a825;font-weight:700;text-decoration:none;">Call: 9899991342</a>
+    <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="vertical-align:-0.125em"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg> 5000+ Students Guided</div>
+    <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg> 10+ Years Experience</div>
+    <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="vertical-align:-0.125em"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg> 100% Free Guidance</div>
+    <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M12 2L2 7v2h20V7L12 2zM4 11v7H3v2h18v-2h-1v-7h-2v7h-3v-7h-2v7h-2v-7H9v7H6v-7H4z"/></svg> 50+ IPU Colleges Covered</div>
+    <div class="ty-trust-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      <a href="tel:+919899991342" style="color:#f9a825;font-weight:700;text-decoration:none;">Call: 9899991342</a>
     </div>
   </div>
 </div>
@@ -471,8 +473,17 @@ const hashSHA256 = async (data) => {
   if(email) userData.email = await hashSHA256(email);
   if(phone) userData.phone_number = await hashSHA256(phone);
   if(Object.keys(userData).length){
-    gtag('set','user_data',userData);
-    gtag('event','conversion',{'send_to':'AW-10900888879/YU9JCMP9m74DEK-6-c0o'});
+    // GTM dataLayer push for enhanced conversions — GTM tag listens for this
+    // event and forwards to Google Ads (AW-10900888879/IVcxCLiB87IbEK-6-c0o)
+    // with user_data attached. Replaces direct gtag() calls (gtag.js is not
+    // loaded — only GTM is — so the prior code threw ReferenceError and every
+    // enhanced conversion since the GTM-only migration was lost).
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'enhanced_conversion',
+      'enhanced_conversion_user_data': userData,
+      'send_to': 'AW-10900888879/IVcxCLiB87IbEK-6-c0o'
+    });
   }
 })();
 </script>

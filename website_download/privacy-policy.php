@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Privacy Policy & Terms – IPU Admission Guide</title>
 <meta name="robots" content="noindex, nofollow">

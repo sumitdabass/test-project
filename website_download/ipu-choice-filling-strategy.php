@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -24,13 +24,12 @@ include_once("include/form-handler.php");
 
 <!-- BANNER -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IP University Choice Filling Strategy (All Courses)</h1>
-<p class="text-white">B.Tech • BBA • Law • B.Com • BA(Eco) • MBA • MCA Counselling Guide</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IP University Choice Filling Strategy (All Courses)';
+$hero_intro = 'B.Tech • BBA • Law • B.Com • BA(Eco) • MBA • MCA Counselling Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- CONTENT -->
@@ -42,6 +41,10 @@ include_once("include/form-handler.php");
 <div class="col-lg-8">
 
 <div class="blog-details">
+
+<div style="border-left:4px solid #0d1b6e;background:#f5f7ff;padding:14px 16px;border-radius:6px;margin:0 0 22px;">
+<p style="margin:0;line-height:1.7;font-size:0.96rem;"><strong>Round 1 update (25 June 2026):</strong> The GGSIPU Round 1 seat allotment result for 2026-27 has been declared on <a href="https://ipu.admissions.nic.in" target="_blank" rel="noopener">ipu.admissions.nic.in</a>. If you have a seat, this is the moment to decide <strong>Freeze vs Float</strong> (explained below) and pay the fee within the stipulated window; if you missed Round 1 or want an upgrade, plan your choices for Round 2. See the full <a href="/ipu-counselling.php">IPU Counselling 2026 schedule</a> or call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free choice-filling help.</p>
+</div>
 
 <h2>Why Choice Filling Strategy is Important in IPU Counselling</h2>
 
@@ -109,7 +112,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Choose backup law colleges strategically.</li>
 </ul>
 
-👉 <a href="law-admission-ip-university.php">Law Admission Guide</a>
+👉 <a href="IPU-Law-Admission.php">Law Admission Guide</a>
 
 <hr>
 
@@ -158,7 +161,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 
 <p>
 <b>Call for counselling help:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -178,7 +181,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -191,7 +194,7 @@ If you are confused regarding choice filling strategy, branch selection or colle
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Need Choice Filling Strategy Help?
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Colleges List 2026 | All 80+ GGSIPU Affiliated Colleges in Delhi</title>
 <meta name="description" content="Complete list of IPU affiliated colleges – Engineering, Law, MBA, BBA, BJMC, B.Com. Location, courses & fees. Call 9899991342 for personalized college guidance.">
@@ -26,7 +26,45 @@
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-03-24",
-  "dateModified": "2026-03-24"
+  "dateModified": "2026-05-28"
+}
+</script>
+
+<!-- ItemList Schema — all major IPU-affiliated colleges -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "GGSIPU Affiliated Colleges 2026",
+  "description": "Directory of major colleges affiliated to Guru Gobind Singh Indraprastha University across Delhi NCR",
+  "numberOfItems": 25,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"USICT","url":"https://ipu.co.in/usict-admission.php"},
+    {"@type":"ListItem","position":2,"name":"USAR","url":"https://ipu.co.in/usar-admission.php"},
+    {"@type":"ListItem","position":3,"name":"MAIT","url":"https://ipu.co.in/mait-admission.php"},
+    {"@type":"ListItem","position":4,"name":"MSIT","url":"https://ipu.co.in/msit-admission.php"},
+    {"@type":"ListItem","position":5,"name":"BPIT","url":"https://ipu.co.in/BPIT.php"},
+    {"@type":"ListItem","position":6,"name":"BVP / BVCOE","url":"https://ipu.co.in/BVP.php"},
+    {"@type":"ListItem","position":7,"name":"ADGITM","url":"https://ipu.co.in/adgitm-admission.php"},
+    {"@type":"ListItem","position":8,"name":"HMR","url":"https://ipu.co.in/hmr-admission.php"},
+    {"@type":"ListItem","position":9,"name":"GNIT","url":"https://ipu.co.in/gnit-admission.php"},
+    {"@type":"ListItem","position":10,"name":"USMS","url":"https://ipu.co.in/usms-admission.php"},
+    {"@type":"ListItem","position":11,"name":"MAIMS","url":"https://ipu.co.in/maims-admission.php"},
+    {"@type":"ListItem","position":12,"name":"VIPS-TC","url":"https://ipu.co.in/vips-admission.php"},
+    {"@type":"ListItem","position":13,"name":"MSI","url":"https://ipu.co.in/msi-admission.php"},
+    {"@type":"ListItem","position":14,"name":"JIMS Rohini","url":"https://ipu.co.in/jims-admission.php"},
+    {"@type":"ListItem","position":15,"name":"DIAS","url":"https://ipu.co.in/dias-admission.php"},
+    {"@type":"ListItem","position":16,"name":"DSPSR","url":"https://ipu.co.in/dspsr-admission.php"},
+    {"@type":"ListItem","position":17,"name":"USLS","url":"https://ipu.co.in/usls-admission.php"},
+    {"@type":"ListItem","position":18,"name":"VIPS Law","url":"https://ipu.co.in/vips-admission.php"},
+    {"@type":"ListItem","position":19,"name":"BVICAM","url":"https://ipu.co.in/bvicam-admission.php"},
+    {"@type":"ListItem","position":20,"name":"Tecnia","url":"https://ipu.co.in/tecnia-admission.php"},
+    {"@type":"ListItem","position":21,"name":"GIBS","url":"https://ipu.co.in/gibs-admission.php"},
+    {"@type":"ListItem","position":22,"name":"NDIM","url":"https://ipu.co.in/ndim-admission.php"},
+    {"@type":"ListItem","position":23,"name":"Ideal","url":"https://ipu.co.in/ideal-admission.php"},
+    {"@type":"ListItem","position":24,"name":"DME Noida","url":"https://ipu.co.in/dme-admission.php"},
+    {"@type":"ListItem","position":25,"name":"BCIPS","url":"https://ipu.co.in/bcips-admission.php"}
+  ]
 }
 </script>
 </head>
@@ -78,7 +116,7 @@ include 'include/components/hero-banner.php';
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
         <td style="padding:10px 14px"><a href="/usar-admission.php">USAR (University School of Automation &amp; Robotics)</a></td>
-        <td style="padding:10px 14px">Dwarka</td>
+        <td style="padding:10px 14px">East Campus, Surajmal Vihar</td>
         <td style="padding:10px 14px">B.Tech Automation, Robotics</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
@@ -102,7 +140,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Tech CSE, IT, ECE</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS-TC (Vivekananda Institute)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS-TC (Vivekananda Institute)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">B.Tech CSE, IT</td>
       </tr>
@@ -156,6 +194,21 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">New Delhi</td>
         <td style="padding:10px 14px">B.Tech CSE, ECE</td>
       </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/sbit-admission.php">SBIT (Shri Balwant Institute of Technology)</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, EEE, ECE, IT</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/tiips-admission.php">TIIPS (Trinity Institute of Innovations in Professional Studies)</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, IT, CSE-AIML</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/tribhuvan-admission.php">Tribhuvan College</a></td>
+        <td style="padding:10px 14px">Delhi NCR</td>
+        <td style="padding:10px 14px">B.Tech CSE, AI&amp;ML, AI&amp;DS</td>
+      </tr>
     </tbody>
   </table>
   </div>
@@ -180,7 +233,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BA LLB, BBA LLB, LLM</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS Law School</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS Law School</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BA LLB, BBA LLB</td>
       </tr>
@@ -203,7 +256,7 @@ include 'include/components/hero-banner.php';
   </table>
   </div>
 
-  <p>Law admissions at IPU are based on <strong>CLAT</strong> scores or the <strong>IPU CET</strong> for BA LLB and BBA LLB programmes. LLM admission requires a valid LLB degree. See our <a href="/IPU-Law-Admission-2026.php">IPU Law Admission 2026</a> guide for the complete process.</p>
+  <p>Law admissions at IPU are based on <strong>CLAT</strong> scores or the <strong>IPU CET</strong> for BA LLB and BBA LLB programmes. LLM admission requires a valid LLB degree. See our <a href="/IPU-Law-Admission.php">IPU Law Admission 2026</a> guide for the complete process.</p>
 
   <!-- Management Colleges -->
   <h2 id="management">Management &amp; Commerce Colleges (MBA / BBA / B.Com) Under IPU</h2>
@@ -228,7 +281,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">BBA, MBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BBA, BJMC, B.Com</td>
       </tr>
@@ -258,9 +311,9 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">MBA, BBA, B.Com</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (Gitarattan Institute of Business Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/gibs-admission.php">GIBS (Gitarattan International Business School)</a></td>
         <td style="padding:10px 14px">Rohini</td>
-        <td style="padding:10px 14px">MBA, BBA</td>
+        <td style="padding:10px 14px">MBA, BBA, BCA, Law</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
         <td style="padding:10px 14px"><a href="/cpj-admission.php">CPJ College of Higher Studies &amp; School of Law</a></td>
@@ -302,11 +355,16 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">Rohini</td>
         <td style="padding:10px 14px">MBA, BBA, BCA</td>
       </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/dspsr-admission.php">DSPSR (Delhi School of Professional Studies and Research)</a></td>
+        <td style="padding:10px 14px">Sector-25, Rohini</td>
+        <td style="padding:10px 14px">BBA, B.Com (Hons.), BCA</td>
+      </tr>
     </tbody>
   </table>
   </div>
 
-  <p>BBA and B.Com admissions are based on <strong>CUET</strong> scores, while MBA admission requires <strong>CAT/MAT</strong> or the IPU CET for management. For BBA details, see our <a href="/ipu-bba-admission.php">IPU BBA Admission</a> guide.</p>
+  <p>BBA and B.Com admissions are based on <strong>CUET</strong> scores, while MBA admission requires <strong>CAT/MAT</strong> or the IPU CET for management. For BBA details, see our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">IPU BBA Admission</a> guide.</p>
 
   <!-- Media Colleges -->
   <h2 id="media">Media &amp; Journalism Colleges (BJMC) Under IPU</h2>
@@ -321,7 +379,7 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">BJMC, MJMC</td>
       </tr>
@@ -344,6 +402,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/jims-kalkaji-admission.php">JIMS Kalkaji</a></td>
         <td style="padding:10px 14px">Kalkaji</td>
         <td style="padding:10px 14px">BJMC, BBA, BCA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
+        <td style="padding:10px 14px"><a href="/bvicam-admission.php">BVICAM (Bharati Vidyapeeth Institute of Computer Applications &amp; Management)</a></td>
+        <td style="padding:10px 14px">Paschim Vihar</td>
+        <td style="padding:10px 14px">BA(JMC), MCA</td>
       </tr>
     </tbody>
   </table>
@@ -369,7 +432,7 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px">B.Com, BA Economics, BA English</td>
       </tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff">
-        <td style="padding:10px 14px"><a href="/vips-pitampura-courses.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
+        <td style="padding:10px 14px"><a href="/vips-admission.php">VIPS (Vivekananda Institute of Professional Studies)</a></td>
         <td style="padding:10px 14px">Pitampura</td>
         <td style="padding:10px 14px">B.Com, BA Economics</td>
       </tr>
@@ -382,6 +445,11 @@ include 'include/components/hero-banner.php';
         <td style="padding:10px 14px"><a href="/iitm-admission.php">IITM (International Institute of Technology &amp; Management)</a></td>
         <td style="padding:10px 14px">Janakpuri</td>
         <td style="padding:10px 14px">B.Com, BCA</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e2e8f0">
+        <td style="padding:10px 14px"><a href="/dspsr-admission.php">DSPSR (Delhi School of Professional Studies and Research)</a></td>
+        <td style="padding:10px 14px">Sector-25, Rohini</td>
+        <td style="padding:10px 14px">B.Com (Hons.), BBA, BCA</td>
       </tr>
     </tbody>
   </table>
@@ -400,7 +468,7 @@ include 'include/components/hero-banner.php';
     <li><strong>Infrastructure &amp; faculty:</strong> Visit the campus or research student reviews before making your choice.</li>
   </ul>
 
-  <p>Not sure which college fits your JEE/CUET rank and preferences? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance &mdash; our counsellors have helped thousands of students pick the right IPU college.</p>
+  <p>Not sure which college fits your JEE/CUET rank and preferences? Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free expert guidance &mdash; our counsellors have helped thousands of students pick the right IPU college. For the full step-by-step process, see our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process Guide</a>.</p>
 
   <!-- Disclaimer -->
   <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:16px 20px;border-radius:0 8px 8px 0;margin-top:32px">
@@ -409,7 +477,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -425,7 +493,10 @@ $faqs = [
   ['question' => 'Which are the top engineering colleges under IPU?', 'answer' => 'USICT (Dwarka), MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), and BVP/BVCOE (Paschim Vihar) are consistently ranked among the top engineering colleges under IPU based on placements and cutoffs. Call 9899991342 for personalised college recommendations based on your JEE Main rank.'],
   ['question' => 'Which are the top law colleges under IPU?', 'answer' => 'USLS (University School of Law & Legal Studies) on the IPU Dwarka campus is the top law college. VIPS Law School in Pitampura and MAIMS in Rohini are also well-regarded for BA LLB and BBA LLB programmes.'],
   ['question' => 'How does admission to IPU colleges work?', 'answer' => 'Clear the relevant entrance exam (JEE Main for B.Tech, CUET for BBA/B.Com/BJMC/BA, CLAT for Law, NATA for B.Arch), register on ipu.ac.in, fill your college preferences during centralised IPU counselling, and report to the allotted college after seat allocation.'],
-  ['question' => 'Are IPU colleges government or private?', 'answer' => 'IPU has both constituent university schools (government-run, lower fees) and affiliated colleges (self-financed, higher fees). University schools like USICT, USAR, USLS, and USMS are directly managed by IPU. Affiliated colleges like MAIT, BPIT, and VIPS are self-financed but follow IPU curriculum and admission process.']
+  ['question' => 'Are IPU colleges government or private?', 'answer' => 'IPU has both constituent university schools (government-run, lower fees) and affiliated colleges (self-financed, higher fees). University schools like USICT, USAR, USLS, and USMS are directly managed by IPU. Affiliated colleges like MAIT, BPIT, and VIPS are self-financed but follow IPU curriculum and admission process.'],
+  ['question' => 'Is there an official IPU colleges list PDF available?', 'answer' => 'GGSIPU publishes the official affiliated-colleges list each session inside the Admission Brochure on ipu.ac.in. The list above mirrors the latest 6th SFRC Delhi Gazette Notification dated 14.07.2025 plus the Programme Code annexure of the 2026-27 brochure. For a downloadable college-wise seat matrix, call <a href="tel:+919899991342">9899991342</a> &mdash; we share the curated PDF directly on WhatsApp.'],
+  ['question' => 'How many IPU colleges offer B.Tech, BBA, BCA, B.Com and Law?', 'answer' => 'B.Tech: 20+ colleges (MAIT, MSIT, BPIT, BVP, USICT and more). BBA: 38+ colleges (USMS, VIPS-TC, MSI, MAIMS lead the cutoff). BCA: 25+ colleges (USICT BCA, VIPS, MSI). B.Com (Hons): 18+ colleges. Law (BA-LLB / BBA-LLB / LLM): 12+ colleges led by USLS on the Dwarka campus.'],
+  ['question' => 'How do I get the latest IPU college list with seats and fees?', 'answer' => 'See the tables above &mdash; they cover the 25+ most-asked colleges with location and key courses. For the full seat matrix (intake per programme, fee per year, hostel availability) and the latest brochure download, call <a href="tel:+919899991342">9899991342</a> or visit our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process Guide</a>.']
 ];
 include 'include/components/faq-section.php';
 ?>
@@ -433,11 +504,16 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'IPU Colleges in Dwarka', 'url' => '/ipu-colleges-in-dwarka.php', 'desc' => 'GGSIPU campus schools and affiliated colleges near Dwarka metro'],
+  ['title' => 'MBS College Dwarka', 'url' => '/mbs-college-admission.php', 'desc' => 'B.Arch, B.Tech, BBA, BCA and B.Com Hons at MBS College'],
   ['title' => 'Top B.Tech Colleges in Delhi', 'url' => '/top-btech-colleges-delhi.php', 'desc' => 'Compare the best engineering colleges under IPU in Delhi'],
   ['title' => 'IPU Admission Guide 2026', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and the complete admission process'],
-  ['title' => 'IPU BBA Admission 2026', 'url' => '/ipu-bba-admission.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
-  ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU']
+  ['title' => 'IPU BBA Admission 2026', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'BBA colleges, CUET cutoff and admission process at IPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and LLM admission process at GGSIPU'],
+  ['title' => 'College Admission in Delhi', 'url' => '/college-admission-delhi.php', 'desc' => 'Complete guide to college admissions in Delhi through IPU'],
+  ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA across IPU colleges'],
+  ['title' => 'IPU B.Arch Admission 2026', 'url' => '/barch-admission-ipu.php', 'desc' => 'B.Arch eligibility, NATA requirement, fees and colleges under GGSIPU'],
+  ['title' => 'IPU M.Ed Admission 2026', 'url' => '/med-admission-ipu.php', 'desc' => 'Master of Education (M.Ed) eligibility, IPU CET and top colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

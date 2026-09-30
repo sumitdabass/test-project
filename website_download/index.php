@@ -1,28 +1,29 @@
 <?php
-session_start();
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+session_cache_limiter('public'); session_cache_expire(30); session_start();
 ob_start();
 include_once("include/form-handler.php");
 ?>
 <?php include_once("include/base-head.php"); ?>
 
-<title>IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help</title>
-<meta name="description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
-<meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU counselling 2026, GGSIPU management quota, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
+<title>IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help</title>
+<meta name="description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
+<meta name="keywords" content="IPU admission 2026, IP University admission, GGSIPU admission, ipu counselling 2026, ipu btech counselling 2026, ggsipu counselling date 2026, ipu management seat, ipu management quota, ggsipu management quota, B.Tech admission IPU, MBA admission IPU, BBA admission IPU, BA LLB admission IPU, BBA LLB admission IPU, B.Com admission IPU, BA Economics IPU, IPU helpline, IPU contact number, ipu admission guide, college admission in delhi, top btech college in delhi">
 <link rel="canonical" href="https://ipu.co.in/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ipu.co.in/">
-<meta property="og:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta property="og:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta property="og:title" content="IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help">
+<meta property="og:description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 <meta property="og:site_name" content="IPU Admission Guide">
 <meta property="og:locale" content="en_IN">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IPU Admission 2026 | IP University Guide – Dates, Fees, Cutoff & Free Help">
-<meta name="twitter:description" content="IPU (GGSIPU) Delhi — 2026 admission, counselling & Management quota eligibility, cutoffs, fees, college selection. Free helpline 9899991342.">
+<meta name="twitter:title" content="IPU Admission 2026 | IP University (GGSIPU) Counselling & Management Seat Help">
+<meta name="twitter:description" content="IP University (GGSIPU) admission 2026 — counselling dates, cutoffs, fees, management seat &amp; quota for B.Tech, BBA, Law. Free helpline 9899991342.">
 <meta name="twitter:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- Schema.org JSON-LD -->
@@ -44,6 +45,19 @@ include_once("include/form-handler.php");
         "addressRegion": "Delhi",
         "addressCountry": "IN"
       },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+91-9899991342",
+        "contactType": "admissions",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      }],
       "sameAs": [
         "https://www.facebook.com/ggsipuadmission",
         "https://www.instagram.com/ipu.co.in/"
@@ -67,6 +81,12 @@ include_once("include/form-handler.php");
       "url": "https://ipu.co.in/",
       "name": "IP University (GGSIPU) Admissions 2026 – B.Tech, MBA, MCA, Law and More",
       "isPartOf": {"@id": "https://ipu.co.in/#website"},
+      "about": {
+        "@type": "CollegeOrUniversity",
+        "name": "Guru Gobind Singh Indraprastha University, Delhi",
+        "alternateName": ["GGSIPU", "IP University", "IPU"],
+        "url": "https://www.ipu.ac.in/"
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ipu.co.in/"}]
@@ -79,83 +99,9 @@ include_once("include/form-handler.php");
         {"@type": "ListItem", "position": 1, "item": {"@type": "Course", "name": "B.Tech Admission IP University", "url": "https://ipu.co.in/IPU-B-Tech-admission-2026.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 2, "item": {"@type": "Course", "name": "MBA Admission IP University", "url": "https://ipu.co.in/mba-admission-ip-university.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 3, "item": {"@type": "Course", "name": "Law Admission IP University", "url": "https://ipu.co.in/ultimate-guide-to-ballb-admission-in-ip-university.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
-        {"@type": "ListItem", "position": 4, "item": {"@type": "Course", "name": "BBA Admission IP University", "url": "https://ipu.co.in/ipu-bba-admission.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
+        {"@type": "ListItem", "position": 4, "item": {"@type": "Course", "name": "BBA Admission IP University", "url": "https://ipu.co.in/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php", "provider": {"@id": "https://ipu.co.in/#organization"}}},
         {"@type": "ListItem", "position": 5, "item": {"@type": "Course", "name": "BCA BCom BJMC IP University", "url": "https://ipu.co.in/ipu-admission-guide.php", "provider": {"@id": "https://ipu.co.in/#organization"}}}
       ]
-    }
-  ]
-}
-</script>
-
-<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is IPU / IP University?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU (Guru Gobind Singh Indraprastha University or GGSIPU) is a state university in Delhi, established in 1998 by Government of NCT of Delhi. It offers 80+ affiliated colleges across Delhi NCR for B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA and more courses. Call 9899991342 for free admission guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU full form?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU stands for Indraprastha University. Its official name is Guru Gobind Singh Indraprastha University (GGSIPU), located in Dwarka, Delhi. It is a state university established in 1998 by the Government of NCT of Delhi and offers 80+ affiliated colleges in Delhi NCR. Call 9899991342 for admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is IPU / GGSIPU a government or private university?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GGSIPU is a GOVERNMENT (state) university established by the Govt of NCT Delhi in 1998. However, most of its affiliated colleges (like MAIT, VIPS, MSIT, MAIMS, Tecnia) are private self-financing institutions affiliated to GGSIPU. Call 9899991342 to know which IPU colleges are govt vs private."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU admission process 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU admission 2026 involves: (1) Registration at ipu.ac.in or ipu.admissions.nic.in, (2) Appearing in relevant entrance exam (JEE Main/CUET/CAT/CET/CLAT), (3) Counselling registration, (4) Choice filling, (5) Seat allotment, (6) Document verification and fee payment. Call 9899991342 for step-by-step guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many colleges are under IPU?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GGSIPU has 80+ affiliated colleges across Delhi NCR including MAIT, MSIT, VIPS, USICT, MAIMS, BPIT, BVP, JIMS, Tecnia, and more. The colleges offer B.Tech, BBA, BCA, BA LLB, BJMC, B.Com, MBA, MCA, LLM and other programs. Call 9899991342 for the complete IPU college list and shortlisting help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU counselling 2026 date?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU counselling 2026 is expected to begin in May-June 2026. Registration typically opens after entrance results. Round 1 allotment in July 2026, with classes commencing August 2026. Exact dates will be notified at ipu.ac.in. Call 9899991342 for updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What entrance exams does IPU accept?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU accepts: JEE Main (B.Tech), CUET UG (BBA/BCA/BA/B.Com/BJMC), CLAT (BA LLB/BBA LLB), CAT/CMAT (MBA), NIMCET (MCA), GATE (M.Tech), NEET (MBBS), NATA (B.Arch), and IPU CET for some programs. Call 9899991342 to know which entrance exam you need for your target course."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU B.Tech fees 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU B.Tech fees 2026-27 are approximately Rs. 1,55,700 per year at affiliated colleges (MAIT, MSIT, BPIT, VIPS) and Rs. 1,69,400 to Rs. 2,25,471 per year at University Schools (USICT, USAR, USCT). Total 4-year fee ranges Rs. 6.23L to Rs. 7.86L. Call 9899991342 for fee help."
-      }
     }
   ]
 }
@@ -179,8 +125,6 @@ include_once("include/form-handler.php");
 
       <!-- Left: Content -->
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <p style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:8px">Guru Gobind Singh Indraprastha University, Delhi</p>
-
         <h1 style="font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:16px">
           Expert Guidance for<br>
           <span style="color:#f59e0b">IPU Admission 2026</span>
@@ -195,8 +139,8 @@ include_once("include/form-handler.php");
         <p style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.7;max-width:560px;margin-bottom:16px">
           Free expert guidance for <a href="/IPU-B-Tech-admission-2026.php" style="color:#f59e0b;font-weight:600">B.Tech</a>,
           <a href="/mba-admission-ip-university.php" style="color:#f59e0b;font-weight:600">MBA</a>,
-          <a href="/IPU-Law-Admission-2026.php" style="color:#f59e0b;font-weight:600">Law</a>,
-          <a href="/ipu-bba-admission.php" style="color:#f59e0b;font-weight:600">BBA</a>,
+          <a href="/IPU-Law-Admission.php" style="color:#f59e0b;font-weight:600">Law</a>,
+          <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:#f59e0b;font-weight:600">BBA</a>,
           <a href="/bcom-admission-ipu.php" style="color:#f59e0b;font-weight:600">B.Com</a> &amp; more — from exams to seat allotment.
         </p>
 
@@ -228,6 +172,7 @@ include_once("include/form-handler.php");
               <input type="text" name="website" tabindex="-1" autocomplete="off">
             </div>
             <input type="hidden" name="page_url" value="<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
+            <input type="hidden" name="form_loaded_at" value="">
 
             <div style="margin-bottom:10px">
               <input type="text" name="name" placeholder="Full Name" required autocomplete="name"
@@ -282,12 +227,17 @@ include_once("include/form-handler.php");
 <!-- ===== TRUST STATS BAR ===== -->
 <?php include_once("include/components/trust-bar.php"); ?>
 
+<!-- (Phase B Day 6 visible-FAQ block removed — duplicated the 6 new Q/As
+     already in the $faqs array rendered by faq-section.php below. The
+     existing accordion now has 12 Q/As total, 1 compliant FAQPage emitted
+     via the component, no UI duplication.) -->
+
 <!-- ===== COURSES SECTION ===== -->
 <?php
 $courses = [
     ['name' => 'B.Tech', 'exam' => 'JEE Main / CUET', 'url' => '/IPU-B-Tech-admission-2026.php', 'icon' => 'laptop'],
     ['name' => 'MBA', 'exam' => 'CAT / CMAT', 'url' => '/mba-admission-ip-university.php', 'icon' => 'briefcase'],
-    ['name' => 'BBA', 'exam' => 'CUET / IPU CET', 'url' => '/ipu-bba-admission.php', 'icon' => 'chart'],
+    ['name' => 'BBA', 'exam' => 'CUET / IPU CET', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'icon' => 'chart'],
     ['name' => 'BA LLB', 'exam' => 'CLAT', 'url' => '/ultimate-guide-to-ballb-admission-in-ip-university.php', 'icon' => 'scale'],
     ['name' => 'BBA LLB', 'exam' => 'CLAT', 'url' => '/comprehensive-guide-to-bballb-admission-in-ip-university.php', 'icon' => 'scale'],
     ['name' => 'B.Com', 'exam' => 'CUET', 'url' => '/bcom-admission-ipu.php', 'icon' => 'chart'],
@@ -311,12 +261,73 @@ $colleges = [
     ['name' => 'MSIT', 'full_name' => 'Maharaja Surajmal Institute of Technology', 'location' => 'Janakpuri, Delhi', 'url' => '/explore-MSIT-and-MSI-janakpuri.php', 'img' => 'assets/images/explore-MSIT-and-MSI-janakpuri.jpg'],
     ['name' => 'BPIT', 'full_name' => 'Bhagwan Parshuram Institute of Technology', 'location' => 'Rohini, Delhi', 'url' => '/BPIT.php', 'img' => 'assets/images/breadcrumbs.jpg'],
     ['name' => 'BVP', 'full_name' => 'Bharatiya Vidya Bhavan Engineering College', 'location' => 'Paschim Vihar, Delhi', 'url' => '/BVP.php', 'img' => 'assets/images/blog-1.jpg'],
-    ['name' => 'VIPS', 'full_name' => 'Vivekananda Institute of Professional Studies', 'location' => 'Pitampura, Delhi', 'url' => '/vips-pitampura-courses.php', 'img' => 'assets/images/vips-pitampura-courses.jpg'],
+    ['name' => 'VIPS', 'full_name' => 'Vivekananda Institute of Professional Studies', 'location' => 'Pitampura, Delhi', 'url' => '/vips-admission.php', 'img' => 'assets/images/vips-pitampura-courses.jpg'],
     ['name' => 'USICT', 'full_name' => 'University School of ICT', 'location' => 'Dwarka, Delhi', 'url' => '/usict-admission.php', 'img' => 'assets/images/IP-University-b-tech-admission.jpg'],
 ];
 $college_section_title = "Top IPU Affiliated Colleges in Delhi";
 include_once("include/components/college-card.php");
 ?>
+
+<!-- ===== MANAGEMENT SEAT / QUOTA SECTION ===== -->
+<section style="padding:50px 0;background:#f8faff">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:10px">IPU Management Seat &amp; Management Quota 2026</h2>
+    <p style="text-align:center;color:#4a5568;max-width:780px;margin:0 auto 30px;line-height:1.7">
+      Explore <strong>IPU management seat</strong> and <strong>management quota</strong> admission in GGSIPU affiliated colleges for B.Tech, BBA and Law.
+      Eligibility, colleges, fees and the direct admission process — all verified for 2026. Call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> for eligibility check.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <a href="/IP-University-management-quota-admission-eligibility-criteria.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#fff3e0;color:#e65c00;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">ALL COURSES</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">IPU Management Seat Guide — Eligibility &amp; Process</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Full eligibility, process, fees &amp; college list for IP University management quota seats.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">Read the guide →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/btech-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">B.TECH</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">B.Tech Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Engineering management seats at MAIT, MSIT, BPIT, BVP, VIPS — JEE Main requirement &amp; fees.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View B.Tech seats →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/bba-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">BBA</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">BBA Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Top BBA colleges with management seats — MAIMS, VIPS, JIMS, Tecnia &amp; fees guide.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View BBA seats →</span>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="/ballb-management-quota-ipu.php"
+           style="display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px;text-decoration:none;color:inherit;height:100%;transition:all .2s"
+           onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';this.style.transform='translateY(-3px)';this.style.borderColor='#1a3a9c'"
+           onmouseout="this.style.boxShadow='none';this.style.transform='none';this.style.borderColor='#e2e8f0'">
+          <span style="display:inline-block;background:#e8f0ff;color:#1a3a9c;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 10px;border-radius:12px;margin-bottom:10px">BA LLB / LAW</span>
+          <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px;line-height:1.35">BA LLB Management Quota in IPU</h3>
+          <p style="font-size:13px;color:#4a5568;margin:0 0 10px;line-height:1.6">Law management seats — CLAT requirement, top law colleges under GGSIPU &amp; admission process.</p>
+          <span style="color:#1a3a9c;font-size:13px;font-weight:600">View Law seats →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== BLOG HIGHLIGHTS ===== -->
 <section style="padding:50px 0">
@@ -366,8 +377,15 @@ $faqs = [
     ['question' => 'What is the MBA admission process at IP University?', 'answer' => 'MBA admission under IP University (GGSIPU) is based on CAT or CMAT score, followed by centralized counselling conducted by the university. Top MBA colleges include USMS and Maharaja Agrasen Business School.'],
     ['question' => 'How to apply for BA LLB or BBA LLB in IP University?', 'answer' => 'BA LLB and BBA LLB admissions in IPU are through CLAT score. Register on the GGSIPU portal and participate in counselling. Top law colleges include USLLS, VIPS, and JIMS. Call <a href="tel:+919899991342">9899991342</a> for step-by-step guidance.'],
     ['question' => 'What courses are offered under IP University admission 2026?', 'answer' => 'IP University offers B.Tech, MBA, BBA, MCA, BA LLB, BBA LLB, B.Com, BA Economics, BA English, BCA, BJMC and more through 60+ GGSIPU affiliated colleges across Delhi.'],
-    ['question' => 'What is IPU management quota admission?', 'answer' => 'Management quota seats in IPU affiliated colleges are filled outside of counselling. Admission is direct based on merit and college discretion. Contact us at <a href="tel:+919899991342">9899991342</a> to check eligibility and available seats.'],
+    ['question' => 'What is IPU management quota / management seat admission?', 'answer' => 'IPU management quota (also called management seat) refers to a limited percentage of seats in IP University affiliated colleges filled directly, outside centralised counselling. Eligibility and valid entrance score (JEE Main / CUET / CLAT) is still required. See our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management seat guide</a> or call <a href="tel:+919899991342">9899991342</a> to check eligibility and available seats.'],
     ['question' => 'Is IPU counselling 2026 started?', 'answer' => 'IPU counselling 2026 has been announced. Seats are limited and fill quickly. Contact our helpline at <a href="tel:+919899991342">9899991342</a> for the latest schedule and free guidance on choice filling strategy.'],
+    // Day 6 — brand + informational cluster
+    ['question' => 'What is GGSIPU / IP University?', 'answer' => 'Guru Gobind Singh Indraprastha University (GGSIPU), also known as IP University, is a state university established by the Government of NCT of Delhi in 1998. The university is named after the tenth Sikh Guru, Guru Gobind Singh, and is recognised by the University Grants Commission (UGC) and accredited NAAC A++. Call <a href="tel:+919899991342">9899991342</a> for admission guidance.'],
+    ['question' => 'Where is IP University located?', 'answer' => 'The main campus is at Sector 16C, Dwarka, Delhi-110078. GGSIPU has 60+ affiliated colleges spread across Delhi NCR, including East, West, North and South Delhi, Greater Noida, and Ghaziabad. The university operates through 5+ on-campus university schools (USICT for tech, USLLS for law, USMS for management, USS for education, USCT for medical). Call <a href="tel:+919899991342">9899991342</a> for college-fit consultation.'],
+    ['question' => 'How many colleges are under IPU?', 'answer' => 'GGSIPU has 60+ affiliated colleges and 5+ on-campus university schools. Major affiliated colleges include MAIT (Rohini), MSIT (Janakpuri), BPIT (Rohini), BVP (Paschim Vihar), ADGITM, GTBIT, IGDTUW, VIPS-TC, JIMS, and many more. For the complete list with fees and cutoffs, call <a href="tel:+919899991342">9899991342</a>.'],
+    ['question' => 'What is the IPU admission process for 2026?', 'answer' => 'Most IPU admissions for 2026 are through counselling based on national entrance exams — JEE Main for B.Tech, CLAT for law, CUET-UG for select UG courses, and IPU CET for some programs. Process: register online once counselling opens, fill choices in priority order, lock before deadline, and await seat allotment. Free step-by-step admission guidance: call <a href="tel:+919899991342">9899991342</a>.'],
+    ['question' => 'What is the IPU helpline number?', 'answer' => 'The 24/7 IPU admission helpline number is <a href="tel:+919899991342">9899991342</a>. Call for counselling guidance, seat-availability checks, fee structure across 60+ affiliated colleges, and complete process help for B.Tech / BBA / Law / MBA / BCA / BJMC admissions.'],
+    ['question' => 'When was IP University established?', 'answer' => 'IP University was established in 1998 by an Act of the Delhi Legislative Assembly. The university has completed 25+ years of operation, accredited NAAC A++, and is one of Delhi\'s largest state universities by enrolment with over 100,000 students graduated. Call <a href="tel:+919899991342">9899991342</a> for the 2026 admission cycle details.'],
 ];
 $faq_heading = "Frequently Asked Questions about IPU Admission";
 include_once("include/components/faq-section.php");

@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 
 ?>
@@ -128,22 +128,11 @@ include_once("include/form-handler.php");
 
     <!--====== BANNER PART START ======-->
 
-    <section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-12 col-md-12">
-                    <div class="banner-content">
-                        <h1 class="white center ft-35">
-                            Explore MSIT & MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More
-                        </h1>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="banner-shape"></div>
-    </section>
+<?php
+$hero_h1 = 'Explore MSIT &amp; MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
     <!--====== BANNER PART ENDS ======-->
 
 
@@ -153,7 +142,7 @@ include_once("include/form-handler.php");
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <img loading="lazy" src="assets/images/explore-MSIT-and-MSI-janakpuri.jpg" class="main-img" alt="Exploring MAIT & MAIMS Rohini">
+                        <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/explore-MSIT-and-MSI-janakpuri.jpg" class="main-img" alt="Exploring MAIT & MAIMS Rohini">
 
                         <h2 class="title">Explore MSIT & MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More
                         </h2>
@@ -288,19 +277,19 @@ include_once("include/form-handler.php");
                               <li style="margin: 8px 0;">✓ Management quota guidance</li>
                               <li style="margin: 8px 0;">✓ Placement insights & academic details</li>
                             </ul>
-                            <button onclick="gtag_report_conversion('tel:9899991342')" 
-                                    style="background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); 
-                                           border: none; 
-                                           padding: 15px 30px; 
-                                           border-radius: 30px; 
-                                           color: #0b2c5d; 
-                                           font-size: 18px; 
-                                           font-weight: 700; 
-                                           cursor: pointer;
-                                           margin-top: 15px;
-                                           box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                            <a href="tel:+919899991342"
+                               style="display:inline-block; text-decoration:none;
+                                      background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+                                      padding: 15px 30px;
+                                      border-radius: 30px;
+                                      color: #0b2c5d;
+                                      font-size: 18px;
+                                      font-weight: 700;
+                                      cursor: pointer;
+                                      margin-top: 15px;
+                                      box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                               📱 CALL: 9899991342
-                            </button>
+                            </a>
                           </div>
                         </section>
 
@@ -329,7 +318,7 @@ include_once("include/form-handler.php");
                               <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center;">
                                 <h4 style="color: #0b2c5d; margin-bottom: 10px;">VIPS</h4>
                                 <p style="color: #666; margin-bottom: 10px; font-size: 12px;">Law & Management</p>
-                                <a href="vips-pitampura-courses.php" style="background: #0b2c5d; color: white; padding: 7px 12px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 11px;">Compare</a>
+                                <a href="vips-admission.php" style="background: #0b2c5d; color: white; padding: 7px 12px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 11px;">Compare</a>
                               </div>
                               
                             </div>
@@ -342,7 +331,7 @@ include_once("include/form-handler.php");
 
                 </div>
                 <div class="col-lg-4">
-                    <?php include_once("include/sidebar-cta.php") ?>
+                    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
                 </div>
             </div>
         </div>
@@ -357,7 +346,7 @@ include_once("include/form-handler.php");
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="counter-item text-center mt-30">
 
-                        <h3 class="title"> Call Our Helpline <a href="tel:9899991342"> +91- 9899991342 </a> </h3>
+                        <h3 class="title"> Call Our Helpline <a href="tel:+919899991342"> +91- 9899991342 </a> </h3>
 
                     </div>
                 </div>
@@ -371,6 +360,7 @@ include_once("include/form-handler.php");
 
     <?php
     $related_pages = [
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MSIT'],
         ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & counselling process'],
         ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
         ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],

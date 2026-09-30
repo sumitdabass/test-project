@@ -1,15 +1,18 @@
 <?php
 /**
  * sendemail.php — Form submission handler
- * 5-layer duplicate prevention (no CAPTCHA friction):
+ * 6-layer duplicate prevention (no CAPTCHA friction):
  *   1. Honeypot           — bots fill hidden `website` field
  *   2. Time-based check   — reject submissions faster than 3 seconds
  *   3. 5-min cooldown     — block any resubmission within 5 minutes (session)
  *   4. Phone session dedup — reject same phone number within the session
  *   5. Cookie 24h dedup   — reject same phone hash within 24 hours (cookie)
+ *   6. Persistent phone dedup — reject same phone hash within 7 days (server-side file)
  */
+require_once __DIR__ . '/include/helpers/phone-dedup.php';
+require_once __DIR__ . '/include/helpers/lead-fallback.php';
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -20,7 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // ── Layer 2: Time-based check — reject submissions faster than 3 seconds ─
-    $form_loaded = $_SESSION['form_loaded_at'] ?? 0;
+    $form_loaded = (int)($_POST['form_loaded_at'] ?? 0);
+    if ($form_loaded <= 0) { $form_loaded = $_SESSION['form_loaded_at'] ?? 0; }
     if ($form_loaded > 0 && (time() - $form_loaded) < 3) {
         header("Location: /thank-you.php");
         exit();
@@ -31,6 +35,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($last_submit > 0 && (time() - $last_submit) < 300) {
         header("Location: /thank-you.php");
         exit();
+    }
+
+    // ── Layer 3b: per-IP rate limit — max 5 submissions / 10 min ─────────────
+    $ip = $_SERVER['REMOTE_ADDR'] ?? '';
+    if ($ip !== '') {
+        $rl_dir = __DIR__ . '/include/.private';
+        if (!is_dir($rl_dir)) { @mkdir($rl_dir, 0700, true); }
+        $rl_file = $rl_dir . '/rate-' . hash('sha256', $ip) . '.txt';
+        $now = time();
+        $hits = is_file($rl_file) ? array_filter(array_map('intval', explode(',', (string)@file_get_contents($rl_file))), fn($t) => $t > $now - 600) : [];
+        if (count($hits) >= 5) {
+            header("Location: /thank-you.php");
+            exit();
+        }
+        $hits[] = $now;
+        @file_put_contents($rl_file, implode(',', $hits), LOCK_EX);
     }
 
     // Sanitize input
@@ -47,6 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!preg_match('/^[6-9]\d{9}$/', $phone)) {
         header("Location: /?error=phone");
         exit();
+    }
+    // Reject email values containing CR/LF (header-injection guard on Reply-To)
+    if ($email !== '' && (preg_match('/[\r\n]/', $email) || !filter_var($email, FILTER_VALIDATE_EMAIL))) {
+        $email = '';
     }
 
     // ── Layer 4: Phone session dedup — reject same phone in this session ──────
@@ -65,12 +89,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
+    // ── Layer 6: Persistent 7-day dedup — survives cookie clear / new session ─
+    if (phone_recently_seen($phone)) {
+        header("Location: /thank-you.php");
+        exit();
+    }
+
     // Capture UTM & page source
     $page_url = htmlspecialchars($_POST['page_url'] ?? $_SERVER['HTTP_REFERER'] ?? '', ENT_QUOTES, 'UTF-8');
 
-    // Send email
+    // Send email — strip CR/LF from header-bound fields to prevent header injection
+    $subject_name   = str_replace(["\r", "\n"], ' ', $name);
+    $subject_course = str_replace(["\r", "\n"], ' ', $course);
     $to = "sumitdabass@gmail.com,sonamdabas222@gmail.com";
-    $subject = "New Enquiry: $name - $course";
+    $subject = "New Enquiry: $subject_name - $subject_course";
 
     $message  = "Name: $name\r\n";
     $message .= "Phone: $phone\r\n";
@@ -85,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
     $headers .= "X-Priority: 1\r\n";
 
-    mail($to, $subject, $message, $headers);
+    $mail_ok = mail($to, $subject, $message, $headers);
 
     // Send to Google Sheet
     $url = "https://script.google.com/macros/s/AKfycbz_8geQQfgTGW5FT6kVahb7KeVGh0EGyIBzKvwcISjqA0ZN7GhALp9jXqTGN0iqiQaQvw/exec";
@@ -108,8 +140,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         CURLOPT_TIMEOUT        => 5,
         CURLOPT_FOLLOWLOCATION => true,
     ]);
-    curl_exec($ch);
+    $sheet_resp = curl_exec($ch);
+    $sheet_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $sheet_err  = curl_errno($ch);
     curl_close($ch);
+    $sheet_ok = ($sheet_err === 0 && $sheet_code >= 200 && $sheet_code < 400);
+
+    // If EITHER delivery channel failed, persist the full lead so it is recoverable.
+    if (!$mail_ok || !$sheet_ok) {
+        lead_fallback_save([
+            'name' => $name, 'phone' => $phone, 'email' => $email,
+            'course' => $course, 'source' => $page_url,
+            'mail_ok' => (bool)$mail_ok, 'sheet_ok' => $sheet_ok, 'sheet_code' => $sheet_code,
+        ], 'delivery_failure');
+    }
 
     // Store for enhanced conversions
     $_SESSION['enh_email'] = $email;
@@ -119,9 +163,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['last_submit_time']   = time();
     $_SESSION['submitted_phones'][] = $phone;
     setcookie($phone_hash, '1', time() + 86400, '/', '', true, true);
+    phone_record_seen($phone);
+    lead_record($phone, 'sendemail');
 
-    // Redirect to thank-you page
-    header("Location: /thank-you.php");
+    // Redirect to thank-you with success flag (only genuine submissions get src=submit)
+    header("Location: /thank-you.php?src=submit");
     exit();
 
 } else {

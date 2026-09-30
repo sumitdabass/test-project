@@ -1,11 +1,13 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
 
 <title>Maharaja Agrasen Business School (MABS) | Best PGDM College in Delhi</title>
+<meta name="description" content="Maharaja Agrasen Business School (MABS), Delhi – PGDM courses, specialisations, fees, admission process & placements. Call 9899991342 for free admission guidance.">
+<link rel="canonical" href="https://ipu.co.in/maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php">
 
 </head>
 
@@ -14,12 +16,11 @@ include_once("include/form-handler.php");
 <?php include_once("include/base-nav.php"); ?>
 
 <!-- ================= Banner ================= -->
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-    <div class="container text-center">
-        <h1 class="white ft-35">Maharaja Agrasen Business School (MABS): One of the Best PGDM Colleges in Delhi</h1>
-    </div>
-    <div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Maharaja Agrasen Business School (MABS): One of the Best PGDM Colleges in Delhi';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ================= Blog Content ================= -->
 <section class="blog-wrapper pt-100 pb-100">
@@ -30,7 +31,7 @@ include_once("include/form-handler.php");
             <div class="col-lg-8">
                 <article class="blog-details blog-content">
 
-                    <img loading="lazy" src="assets/images/blog7.jpg" class="img-fluid rounded mb-40" alt="MABS Campus">
+                    <?php webp_img('assets/images/blog7.jpg', 'MABS Campus', 'img-fluid rounded mb-40', true); ?>
 
                     <h2>
                         Maharaja Agrasen Business School (MABS):  
@@ -167,7 +168,7 @@ include_once("include/form-handler.php");
                     <!-- ===== CTA ===== -->
                     <div class="cta-box text-center">
                         <h4>Admissions & Counselling</h4>
-                        <a href="tel:9899991342" class="cta-btn">
+                        <a href="tel:+919899991342" class="cta-btn">
                             Call: +91 98999 91342
                         </a>
                     </div>
@@ -177,7 +178,7 @@ include_once("include/form-handler.php");
 
             <!-- Sidebar -->
             <div class="col-lg-4">
-                <?php include_once("include/sidebar-cta.php"); ?>
+                <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
             </div>
 
         </div>

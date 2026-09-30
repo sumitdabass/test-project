@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -25,7 +25,7 @@ include_once("include/form-handler.php");
       "name": "What is Management Quota for BA LLB at IP University?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Management Quota for BA LLB at IP University (GGSIPU) refers to seats reserved for direct admission by law colleges under IPU without going through the regular CLAT-based counselling process."
+        "text": "Management Quota for BA LLB (Programme Code 121) at IP University (GGSIPU) refers to 10% of seats at unaided affiliated law colleges that are filled through college-level counselling per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). The candidate must still have qualified a valid entrance test (CLAT UG / GGSIPU CET / CUET) per Important Instruction #21 + Chapter 12 Note 2 — management quota is NOT a bypass of the entrance qualifier."
       }
     },
     {
@@ -33,7 +33,7 @@ include_once("include/form-handler.php");
       "name": "How many Management Quota seats are available for BA LLB at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 15% of the total seats in IPU affiliated BA LLB colleges are available under Management Quota. The exact number varies by college."
+        "text": "10% of the total seats in IPU affiliated BA LLB colleges are reserved as Management Quota per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools, minority and government institutions are excluded."
       }
     },
     {
@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "What is the fee for BA LLB under Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The fee for BA LLB under Management Quota at IPU affiliated colleges is typically higher than merit seats. Contact the college directly or call 9899991342 for the latest fee structure."
+        "text": "Management Quota tuition for BA LLB at IPU affiliated colleges is the SAME as merit seats — regulated by the Govt of NCT Delhi 6th SFRC Notification dated 14.07.2025 (Appendix 13(i) of the GGSIPU Brochure 2026-27): approximately Rs. 1,15,000 to Rs. 1,55,000 per year. Capitation fee is prohibited per Section 12 of the DPCI Act 2007. An additional Rs. 2,500 registration fee applies per Chapter 12. Call 9899991342 for the latest college-wise fee structure."
       }
     },
     {
@@ -49,7 +49,7 @@ include_once("include/form-handler.php");
       "name": "Is CLAT score required for BA LLB Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CLAT score is not mandatory for Management Quota seats in BA LLB at IPU. These seats are filled by the college management directly based on merit and availability."
+        "text": "A valid CLAT UG 2026 score IS mandatory for BA LLB Management Quota at IPU per Chapter 12 Note 2 + Important Instruction #21 of the GGSIPU Brochure 2026-27. CUET (UG) is also accepted as the second-priority qualifier. Open School / NIOS candidates are NOT eligible per BCI Letter BCI:D:1823/2010 dated 30.11.2010. The college runs the management-quota counselling but cannot waive the entrance qualifier or BCI bar."
       }
     }
   ]
@@ -64,13 +64,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">BA LL.B Management Quota Admission in IP University (GGSIPU)</h1>
-<p class="text-white">Eligibility • CLAT • Law Colleges • Counselling Guidance</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BA LL.B Management Quota Admission in IP University (GGSIPU)';
+$hero_intro = 'Eligibility • CLAT • Law Colleges • Counselling Guidance';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ===== CONTENT ===== -->
@@ -86,22 +85,27 @@ include_once("include/form-handler.php");
 <h2>What is Management Quota for Law Admission in IP University?</h2>
 
 <p>
-Some private affiliated law colleges under Guru Gobind Singh Indraprastha University (GGSIPU) offer limited management quota seats (approximately 10%). These seats provide an alternative admission pathway for students based on eligibility and institute-level admission procedures.
+Every unaided affiliated law college under Guru Gobind Singh Indraprastha University (GGSIPU) reserves <strong>10% of total seats</strong> as Management Quota per <strong>Section 12(1)(a) of the Delhi Professional Colleges Act, 2007</strong> (Chapter 12 of the GGSIPU UG Brochure 2026-27, pages 121-128). University Schools (USL&amp;LS), minority and government institutions are excluded.
 </p>
 
 <p>
-Management quota does NOT bypass university eligibility requirements. Students must still meet CLAT and academic criteria.
+Management quota does NOT bypass the entrance qualifier. Per <strong>Chapter 12 Note 2</strong> + <strong>Important Instruction #21</strong> of the brochure, the candidate must have qualified <strong>CLAT UG 2026 (priority 1) or CUET UG 2026 (priority 2)</strong> — otherwise the application is rejected at registration. Open School / NIOS candidates are NOT eligible per <strong>BCI Letter BCI:D:1823/2010</strong> dated 30.11.2010.
+</p>
+
+<p>
+Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi Gazette Notification dated 14.07.2025</strong> (Appendix 13(i)). Capitation fee is prohibited under Section 12 of the DPCI Act 2007. An <strong>additional Rs. 2,500 registration fee</strong> applies per Chapter 12.
 </p>
 
 <hr>
 
-<h2>Eligibility for BA LL.B Management Quota</h2>
+<h2>Eligibility for BA LL.B Management Quota (Programme Code 121)</h2>
 
 <ul>
-<li>Passed Class 12 from recognised board.</li>
-<li>Minimum percentage as per GGSIPU norms.</li>
-<li>Valid CLAT score generally required.</li>
-<li>Participation in admission process.</li>
+<li>Passed Class 12 from recognised board with English (core / elective / functional) as a subject — <strong>50% aggregate</strong> minimum (45% for SC/ST/OBC/PwD) per UG Brochure 2026-27 Ch 2.</li>
+<li><strong>Valid CLAT UG 2026 score is mandatory</strong> (priority 1). CUET UG 2026 is also accepted (priority 2 — vacant-seat fallback per Important Instruction #37).</li>
+<li><strong>BCI eligibility bar:</strong> Open School / NIOS candidates are NOT eligible (BCI Letter BCI:D:1823/2010 dated 30.11.2010).</li>
+<li>Maximum age 22 years (24 years for reserved categories) as on the cut-off date per BCI rules.</li>
+<li>Participation in the college's published management-quota admission process (newspaper advertisement + online portal per Rule 8(2)(a)(ii) of DPCI Rules 2007).</li>
 </ul>
 
 <hr>
@@ -112,13 +116,14 @@ Management quota does NOT bypass university eligibility requirements. Students m
 <li>University School of Law & Legal Studies (USLLS) – Regular counselling only</li>
 <li>Maharaja Agrasen Institute of Management Studies (MAIMS)</li>
 <li>Vivekananda Institute of Professional Studies (VIPS)</li>
+<li>Gitarattan International Business School (GIBS), Rohini &ndash; BA-LLB &amp; BBA-LLB management/direct seats</li>
 <li>Maharaja Surajmal Institute (MSI)</li>
 <li>Trinity Institute of Professional Studies</li>
 <li>Delhi Metropolitan Education</li>
 </ul>
 
 👉 Explore law admission guide:
-<a href="law-admission-ip-university.php">IP University Law Admission Guide</a>
+<a href="IPU-Law-Admission.php">IP University Law Admission Guide</a>
 
 <hr>
 
@@ -138,11 +143,12 @@ Management quota does NOT bypass university eligibility requirements. Students m
 <h2>Law Admission Process through Management Quota</h2>
 
 <ol>
-<li>Check CLAT eligibility.</li>
-<li>Contact college admission department.</li>
-<li>Submit documents.</li>
-<li>Merit verification.</li>
-<li>Seat confirmation based on availability.</li>
+<li><strong>Appear in CLAT UG 2026</strong> (mandatory) and CUET UG 2026 (recommended for vacant-seat round).</li>
+<li><strong>Watch for the college's management-quota newspaper advertisement</strong> — at least one Hindi + one English daily, displayed at least 14 days before the application closing date (Rule 8(2)(a)(ii) DPCI Rules 2007).</li>
+<li><strong>Apply online via the college's management-quota portal</strong> with your CLAT/CUET scorecard. Rs. 2,500 registration fee cap applies.</li>
+<li><strong>College publishes Rank Ordered Merit List</strong> within 2 days of application closing date (DPCI Rule 8(2)(a)(iv)).</li>
+<li><strong>Counselling at the college</strong> on the published date — choice filling and seat allotment based on rank-ordered merit list.</li>
+<li><strong>Document verification, fee payment, and provisional admission.</strong> All admissions are provisional until ratified by GGSIPU as the designated agency.</li>
 </ol>
 
 <hr>
@@ -189,7 +195,7 @@ Guidance available for:
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -198,7 +204,7 @@ Guidance available for:
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -211,7 +217,7 @@ Guidance available for:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Law Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>
@@ -222,6 +228,9 @@ $related_pages = [
     ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB & BBA LLB through CLAT – top colleges, fees & process'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
+    ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees, college list & process for management quota seats'],
+    ['title' => 'BBA Management Quota in IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct BBA admission process & top BBA management colleges'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission via management seats — colleges & eligibility'],
 ];
 include 'include/components/related-pages.php';
 ?>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Law Cutoff 2025 | CLAT Score for BA LLB & BBA LLB</title>
 <meta name="description" content="IPU law cutoff 2025 – CLAT score-based cutoff for USLS (USLLS), VIPS Law, MAIMS Law, Trinity. BA LLB & BBA LLB round-wise cutoff analysis. Call 9899991342.">
@@ -38,7 +38,7 @@
 <?php
 $hero_title = "IPU Law Cutoff 2025 – CLAT Score for BA LLB & BBA LLB";
 $hero_subtitle = "College-wise CLAT cutoff for USLS, VIPS Law, MAIMS Law & Trinity – General Category, Delhi Quota";
-$hero_breadcrumbs = [['Home', '/'], ['Law Admission', '/IPU-Law-Admission-2026.php'], ['Law Cutoff 2025', '']];
+$hero_breadcrumbs = [['Home', '/'], ['Law Admission', '/IPU-Law-Admission.php'], ['Law Cutoff 2025', '']];
 $hero_compact = true;
 include 'include/components/hero-banner.php';
 ?>
@@ -74,7 +74,7 @@ include 'include/components/hero-banner.php';
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/usls-admission.php" style="color:#1a3a9c;font-weight:600">USLS (USLLS) Dwarka</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~95</td><td style="padding:12px 14px;text-align:center;font-size:14px">~78</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/vips-pitampura-courses.php" style="color:#1a3a9c;font-weight:600">VIPS Law (Pitampura)</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~80</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/vips-admission.php" style="color:#1a3a9c;font-weight:600">VIPS Law (Pitampura)</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~80</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><a href="/maims-admission.php" style="color:#1a3a9c;font-weight:600">MAIMS Law (Rohini)</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~72</td><td style="padding:12px 14px;text-align:center;font-size:14px">~58</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><a href="/trinity-law-admission.php" style="color:#1a3a9c;font-weight:600">Trinity Law College</a></td><td style="padding:12px 14px;text-align:center;font-size:14px">~60</td><td style="padding:12px 14px;text-align:center;font-size:14px">~42</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px">JIMS Law</td><td style="padding:12px 14px;text-align:center;font-size:14px">~55</td><td style="padding:12px 14px;text-align:center;font-size:14px">~38</td></tr>
@@ -166,7 +166,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -191,7 +191,7 @@ include 'include/components/faq-section.php';
 <?php
 $related_pages = [
   ['title' => 'USLS IPU Admission 2026', 'url' => '/usls-admission.php', 'desc' => 'Complete guide to USLS – courses, CLAT admission, moot courts & career'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to BA LLB and BBA LLB admission at IPU'],
   ['title' => 'BA LLB Management Quota', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Direct law admission without CLAT cutoff – process & fees'],
   ['title' => 'Trinity Law Admission', 'url' => '/trinity-law-admission.php', 'desc' => 'Trinity Institute of Professional Studies – law courses & admission'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, Law and more at IPU'],

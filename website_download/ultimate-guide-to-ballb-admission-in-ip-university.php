@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -25,19 +25,11 @@ include_once("include/form-handler.php");
 
 <!-- ===== Banner ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-
-<div class="container text-center">
-
-<h1 class="white ft-35">
-BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide
-</h1>
-
-</div>
-
-<div class="banner-shape"></div>
-
-</section>
+<?php
+$hero_h1 = 'BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 
@@ -52,18 +44,20 @@ BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/ipu-bballb.jpg" class="main-img" alt="BA LL.B Admission in IP University">
+<?php webp_img('assets/images/ipu-bballb.jpg', 'BA LL.B Admission in IP University', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
 <h2>Overview: BA LL.B at IP University</h2>
 
 <p>
 The BA LL.B (Bachelor of Arts + Bachelor of Laws) is a five-year integrated law programme offered by colleges affiliated with Guru Gobind Singh Indraprastha University (GGSIPU).
-Admissions are conducted strictly through CLAT-based counselling ensuring merit-based selection.
+Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong> followed by centralised GGSIPU counselling. CLAT-qualified candidates fill seats first; any remaining vacant seats are then filled from the CUET (UG) merit list.
 </p>
 
 👉 Complete Law Admission Guide:
-<a href="law-admission-ip-university.php"><strong>IP University Law Admission Master Guide</strong></a>
+<a href="IPU-Law-Admission.php"><strong>IP University Law Admission Master Guide</strong></a>
+
+<p>Already a graduate? See the dedicated <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> (Programme Code 238) for the 3-year LLB path through GGSIPU CET.</p>
 
 <hr>
 
@@ -72,9 +66,10 @@ Admissions are conducted strictly through CLAT-based counselling ensuring merit-
 <h2>Eligibility Criteria for BA LL.B (GGSIPU)</h2>
 
 <ul>
-<li>Passed Class 12 from recognised board</li>
-<li>Minimum qualifying marks as prescribed by university</li>
-<li>Valid CLAT score (mandatory)</li>
+<li>Passed Class 12 from recognised board with English (core / elective / functional) as a subject</li>
+<li>Minimum 50% aggregate (45% for SC/ST/OBC/PwD) per UG Brochure 2026-27 Ch 2 (Programme Code 121)</li>
+<li>Valid CLAT UG 2026 score (priority 1) OR CUET (UG) 2026 score (priority 2 — vacant-seat round)</li>
+<li>BCI eligibility bar: candidates who obtained 10+2 through Open Universities (NIOS etc.) are NOT eligible (BCI Letter BCI:D:1823/2010 dated 31.11.2010)</li>
 <li>Age criteria as per Bar Council of India norms</li>
 </ul>
 
@@ -82,11 +77,19 @@ Admissions are conducted strictly through CLAT-based counselling ensuring merit-
 
 
 
-<h2>CLAT-Based Admission Process</h2>
+<h2>Two-Tier Admission: CLAT (Primary) + CUET (Vacant-Seat Fallback)</h2>
 
 <p>
-IP University does not conduct its own entrance test for law programmes.
-Admission is strictly based on CLAT rank followed by centralised GGSIPU counselling.
+IP University does not conduct its own CET for the 5-year integrated Law programme. Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is:
+</p>
+
+<ol>
+<li><strong>CLAT UG 2026 (priority 1)</strong> — primary national-level test conducted by the Consortium of NLUs. Candidates with CLAT scores fill seats first through centralised GGSIPU counselling.</li>
+<li><strong>CUET (UG) 2026 (priority 2)</strong> — vacant-seat fallback per Important Instruction #37. CUET-qualified candidates fill any remaining seats after CLAT counselling exhausts. CUET also qualifies you for the 10% Management Quota at unaided affiliated Law colleges per Chapter 12.</li>
+</ol>
+
+<p>
+CUET subject papers for Law: Section IA English (Code 101) + Section II Legal Studies + Section III General Aptitude (Code 501). Note: the 3-year LLB (Programme Code 238) is admitted only through GGSIPU CET — CUET does NOT apply to the 3-yr LLB.
 </p>
 
 <hr>
@@ -103,6 +106,8 @@ Admission is strictly based on CLAT rank followed by centralised GGSIPU counsell
 <li>Reporting to allotted institute</li>
 </ol>
 
+<p>For a step-by-step explainer of each round (registration windows, choice-filling strategy, upgradation, sliding round), see our <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling &mdash; Round-by-Round</a> guide.</p>
+
 <hr>
 
 
@@ -116,20 +121,20 @@ Admission is strictly based on CLAT rank followed by centralised GGSIPU counsell
 </li>
 
 <li>
-<a href="vips-pitampura-courses.php">VIPS Pitampura – BA LL.B & BBA LL.B</a>
+<a href="vips-admission.php">VIPS Pitampura – BA LL.B & BBA LL.B</a>
 </li>
 
 <li>
 <a href="exploring-MAIT-and-MAIMS.php">MAIMS Rohini – Law Programs</a>
 </li>
 
+<li>Gitarattan International Business School</li>
+
 <li>Maharaja Surajmal Institute (MSI), Janakpuri</li>
 
 <li>Trinity Institute of Professional Studies (TIPS)</li>
 
 <li>Ideal Institute of Management & Technology</li>
-
-<li>Gitarattan International Business School</li>
 
 <li>Delhi Metropolitan Education</li>
 
@@ -200,7 +205,7 @@ Call <strong><?php include("include/phone.php"); ?></strong> for:
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>

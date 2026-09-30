@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -8,7 +8,7 @@ include_once("include/form-handler.php");
 <!-- SEO META -->
 <title>IPU B.Tech Admission 2026 | JEE Main Cutoff, Fees, Top Colleges List</title>
 
-<meta name="description" content="IP University B.Tech Admission 2026 via JEE Main – eligibility, fee Rs.1.55L/yr, cutoff 65-95 percentile, top colleges MAIT/MSIT/USICT. Call 9899991342.">
+<meta name="description" content="IP University B.Tech Admission 2026 via JEE Main – eligibility, year-1 fee Rs.1.6-1.66L, cutoff 65-95 percentile, top colleges MAIT/MSIT/USICT. Call 9899991342.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ipu.co.in/IPU-B-Tech-admission-2026.php" />
@@ -22,13 +22,11 @@ include_once("include/form-handler.php");
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET & Counselling)
-</h1>
-</div>
-</section>
+<?php
+$hero_h1 = 'IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET &amp; Counselling)';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ================= CONTENT ================= -->
 
@@ -51,11 +49,14 @@ IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET & Co
 <div class="col-lg-8">
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IP-University-b-tech-admission.jpg"
-class="main-img"
-alt="IPU B.Tech Admission 2026 Guide">
+<?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Admission 2026 Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
-<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
+
+<!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<section id="ai-summary" style="display:none">
+<p>B.Tech admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at four on-campus University Schools of Studies (USIC&amp;T, USAR, USCT, USBT — combined ~720 seats including B.Tech-M.Tech Dual Degree programmes) and across 20+ affiliated engineering colleges in Delhi NCR with a combined intake of approximately 11,000+ seats. The largest single-college intake is at Echelon Institute Faridabad (~1,000 seats across 14 specialisations) followed by MAIT Rohini (~900 across 14 specialisations). Admission is through JEE Main primary merit followed by centralised online counselling at ipu.ac.in; CUET applies for vacant-seat filling. USS tuition is Rs. 1,69,400/year (total Rs. 2,04,900/year incl. all charges); affiliated colleges charge Rs. 1,60,100-1,65,770 tuition in year 1 of 2026-27 per their own fee notices (the 14.07.2025 SFRC gazette range was Rs. 1,41,750 to Rs. 1,55,700). Eligibility: Class 12 with PCM, min 55% (50% reserved). For free admission counselling call 9899991342.</p>
+</section>
 
 <h2>Overview of IPU B.Tech Admission 2026–27</h2>
 
@@ -113,6 +114,8 @@ JEE Main 2026 Paper 1 is the primary entrance for IPU B.Tech admission. Some cou
 <li><strong>Mode:</strong> Computer Based Test (CBT)</li>
 </ul>
 
+<p>Most B.Tech admissions at IPU go through JEE Main &mdash; see our <a href="/ipu-btech-via-jee-main.php">JEE Main pathway guide</a> for ranks, choice-filling and counselling specifics.</p>
+
 <hr>
 
 <!-- ===== FEE STRUCTURE 2026-27 ===== -->
@@ -148,7 +151,7 @@ JEE Main 2026 Paper 1 is the primary entrance for IPU B.Tech admission. Some cou
 <p><strong>Total Year 1 (approx):</strong> Rs. 2,04,900</p>
 
 <p>
-<strong>For affiliated colleges (MAIT, MSIT, BPIT, BVP, GTBIT etc.):</strong> Annual fee ranges from <strong>Rs. 1,41,750 to Rs. 1,55,700</strong> (as per the 6th SFRC, Delhi Gazette Notification dated 14.07.2025).
+<strong>For affiliated colleges (MAIT, MSIT, BPIT, BVP, GTBIT etc.):</strong> Year-1 tuition for 2026-27 is <strong>Rs. 1,60,100 to Rs. 1,65,770</strong> per the colleges' fee notices (BPIT, BVCOE, ADGIPS); the 14.07.2025 SFRC gazette range was Rs. 1,41,750 to Rs. 1,55,700.
 </p>
 
 <hr>
@@ -202,7 +205,7 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 </table>
 </div>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free B.Tech admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free B.Tech admission guidance.</em></p>
 
 <hr>
 
@@ -216,6 +219,11 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 <li>Document verification.</li>
 <li>Reporting to allotted college.</li>
 </ul>
+
+<p>
+👉 Don't have a JEE Main score? Read our dedicated guide on
+<a href="cuet-btech-admission-ipu.php"><strong>IPU B.Tech Admission Through CUET (UG)</strong></a> &mdash; vacant-seat counselling and management quota route.
+</p>
 
 👉 Detailed counselling guide:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Process Explained</strong></a>
@@ -268,13 +276,32 @@ IPU B.Tech admission is competitive and structured. Since JEE Main receives firs
 </div>
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
 </div>
 
 </section>
+
+<!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<?php
+$faqs = [
+  ['question' => 'Which colleges offer B.Tech under IPU 2026-27?', 'answer' => 'Per the GGSIPU UG Admission Brochure 2026-27 (Chapter 13), B.Tech is offered at <strong>4 University Schools of Studies (USS)</strong> on the IPU Dwarka campus — USIC&T (CSE/IT/ECE/CSE-AI/CSE-DS as B.Tech-M.Tech Dual Degree), USAR (CSE-AI&DS / AI&ML / IIOT / Robotics & Automation), USCT (Chemical Engineering / Energy) and USBT (Biotechnology) — and across <strong>20+ affiliated engineering colleges</strong> including <a href="mait-admission.php">MAIT Rohini</a>, <a href="msit-admission.php">MSIT Janakpuri</a>, <a href="BPIT.php">BPIT Rohini</a>, <a href="BVP.php">BVP Paschim Vihar</a>, <a href="adgitm-admission.php">ADGITM (formerly ADGITM/ADGIPS) Shastri Park</a>, <a href="gtbit-admission.php">GTBIT Rajouri Garden</a>, <a href="gtb4cec-admission.php">GTB 4th Centenary Engineering College</a>, <a href="hmr-admission.php">HMR IT&M</a>, JEMTEC Greater Noida, DTC Greater Noida, JIMS Engineering Greater Noida, Trinity Greater Noida, <a href="vips-admission.php">VIPS-TC Pitampura</a>, <a href="dist-admission.php">DIST</a>, Echelon Faridabad, Greater Noida Inst of Tech, Shri Balwant Sonipat, and Tribhuvan College Neemrana.'],
+  ['question' => 'How many B.Tech seats does IPU offer in total?', 'answer' => 'The 2026-27 brochure shows roughly <strong>11,000+ B.Tech seats</strong> across IPU colleges (Shift 1 + Shift 2, all specialisations). USS on-campus alone offers ~720 seats (USICT 540 + USAR 528 across 4 dual-degree programmes + USCT 180). Echelon Faridabad has the largest single-college intake (~1,000+ across 14 specialisations). Final sanctioned intake for 2026-27 is notified on ipu.ac.in before counselling.'],
+  ['question' => 'What is the B.Tech fee at the IPU campus (USS) 2026-27?', 'answer' => 'Per Part E, Chapter 14 of the brochure, B.Tech fee at USIC&T / USAR / USCT for 2026-27 is: tuition Rs. 1,69,400 + university charges Rs. 20,000 + alumni one-time Rs. 2,000 + exam Rs. 3,000 + innovation Rs. 500 + infrastructure Rs. 10,000 = <strong>Rs. 2,04,900 (Year 1 total)</strong>. Year 2: Rs. 2,19,840. Year 3: Rs. 2,38,474. Year 4: Rs. 2,58,971.'],
+  ['question' => 'What is the B.Tech fee at IPU affiliated colleges (MAIT/MSIT/BPIT)?', 'answer' => 'Affiliated colleges publish SFRC-recommended fees every year: for 2026-27, first-year B.Tech tuition is <strong>Rs. 1,60,100 to Rs. 1,65,770</strong> at BPIT, BVCOE and ADGIPS (the 14.07.2025 SFRC gazette range was Rs. 1,41,750 to Rs. 1,55,700), plus university charges, exam fee, innovation fee, alumni and welfare contributions. First-year totals are about Rs. 2,02,270 at BPIT and Rs. 2,12,270 at BVCOE.'],
+  ['question' => 'What is the eligibility for IPU B.Tech admission?', 'answer' => 'Class 12 (10+2) pass with <strong>Physics, Chemistry & Mathematics (PCM)</strong>, minimum 55% aggregate (50% for SC/ST/OBC/PwD). Admission is through <strong>JEE Main</strong> primary merit followed by centralised online counselling at ipu.ac.in. CUET may apply for vacant-seat filling per Important Instruction #37 of the 2026-27 brochure. Marks are not rounded off (Instruction #28).'],
+  ['question' => 'Which IPU college offers the most B.Tech specialisations 2026-27?', 'answer' => 'Echelon Institute of Technology, Faridabad offers the widest B.Tech menu in IPU per Chapter 13 — 14 specialisations including CSE, ECE, ME, Civil, AI&ML, AI&DS, CSE-Cyber Security, CSE-IOT & Blockchain, Robotics & AI, 3D Modelling & Animation, Architecture & Interior Decoration, Nanoscience & Technology, and Mechatronics. MAIT Rohini also offers 14 specialisations across IT, CSE, ECE, EEE, ME, CST, CSE-AI/AI&ML/DS and Electronics-VLSI/Advanced Communication.'],
+  ['question' => 'How do I apply for IPU B.Tech admission?', 'answer' => 'Apply through GGSIPU online counselling once JEE Main 2026 result is declared. Register on the official portal (ipu.admissions.nic.in), pay the counselling fee, lock your college and branch choices, and await seat allotment. The 2026 counselling process typically opens in the third-fourth week of July. Free step-by-step application help: call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a>.'],
+  ['question' => 'Is there a management quota for IPU B.Tech admission?', 'answer' => 'Yes, select private affiliated colleges under IPU offer 15-20% seats under the management quota for candidates with lower JEE Main ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. For current management-quota seat availability across IPU colleges, call <a href="tel:+919899991342" style="color:#e65c00;font-weight:600">9899991342</a> or see our <a href="/IP-University-management-quota-admission-eligibility-criteria.php">management-quota guide</a>.']
+];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU B.Tech fees?', 'answer' => 'At USICT (the university school), IPU B.Tech tuition is Rs. 1,69,400 - 2,25,471 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated colleges publish SFRC-recommended fees every year: for 2026-27, BPIT and BVCOE list first-year B.Tech tuition of Rs. 1,65,770 in their own fee notices, and total first-year payments are higher once university and other charges are added. See the <a href="/ipu-fees-structure.php#btech-fees">IPU fee structure</a>.'],
+  ['question' => 'What is the B.Tech cutoff for IPU colleges?', 'answer' => 'Closing ranks differ by college, branch and round. See the <a href="/ipu-btech-cutoff-2025.php">IPU B.Tech cutoff</a> page for round-wise JEE Main ranks.']
+]);
+include 'include/components/faq-section.php';
+?>
 
 <?php
 $related_pages = [
@@ -285,33 +312,41 @@ $related_pages = [
 include 'include/components/related-pages.php';
 ?>
 
-<?php include_once("include/base-footer.php"); ?>
-
-
-<!-- FAQ Schema -->
+<!-- Course Schema (B.Tech at GGSIPU) -->
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{
-"@type":"Question",
-"name":"What is eligibility for IPU B.Tech admission?",
-"acceptedAnswer":{"@type":"Answer","text":"Students must secure minimum 55% marks in Class 12 with PCM subjects and qualify JEE Main or CUET as per admission guidelines."}
-},
-{
-"@type":"Question",
-"name":"Which entrance exam has first preference for IPU B.Tech?",
-"acceptedAnswer":{"@type":"Answer","text":"JEE Main is the primary entrance exam. CUET may be considered as secondary pathway depending on official notification."}
-},
-{
-"@type":"Question",
-"name":"Is counselling compulsory for IPU B.Tech?",
-"acceptedAnswer":{"@type":"Answer","text":"Yes, centralized online counselling conducted by GGSIPU is mandatory."}
-}
-]
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Bachelor of Technology (B.Tech) at Guru Gobind Singh Indraprastha University",
+  "description": "4-year B.Tech programme offered at four on-campus University Schools of Studies (USIC&T, USAR, USCT, USBT — combined ~720 seats including B.Tech-M.Tech Dual Degree) and 20+ affiliated engineering colleges with combined intake of 11,000+ seats per the 2026-27 brochure. Admission via JEE Main.",
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+    "sameAs": "https://www.ipu.ac.in/"
+  },
+  "educationalCredentialAwarded": "Bachelor of Technology (B.Tech)",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "courseWorkload": "P4Y",
+    "location": {"@type": "Place", "name": "Delhi NCR"}
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition",
+    "priceCurrency": "INR",
+    "priceSpecification": {"@type": "PriceSpecification", "price": "169400", "priceCurrency": "INR", "description": "USS tuition per annum 2026-27 (affiliated colleges Rs. 1,60,100-1,65,770 in year 1 per their 2026-27 fee notices)"}
+  }
 }
 </script>
+
+<!-- (Phase B Day 3 visible-FAQ block removed — duplicate of the existing
+     brochure-sourced accordion at line 289+ which already renders both
+     visible Q/As and FAQPage JSON-LD via include/components/faq-section.php.
+     Two unique Q/As — "How do I apply" + "management quota" — folded into
+     the $faqs array instead.) -->
+
+<?php include_once("include/base-footer.php"); ?>
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -337,5 +372,25 @@ include 'include/components/related-pages.php';
 }
 </script>
 
+<!-- ===== HowTo Schema — Phase B Day 3 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to apply for IPU B.Tech admission 2026",
+  "description": "Step-by-step process for IPU B.Tech admission 2026 via GGSIPU counselling.",
+  "totalTime": "P60D",
+  "estimatedCost": {"@type":"MonetaryAmount","currency":"INR","value":"1500"},
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Appear for JEE Main 2026","text":"Register for JEE Main 2026 Paper-I conducted by NTA and appear in the exam."},
+    {"@type":"HowToStep","position":2,"name":"Get JEE Main result","text":"Wait for NTA to declare the JEE Main 2026 result. Your All-India Rank determines GGSIPU counselling eligibility."},
+    {"@type":"HowToStep","position":3,"name":"Register for GGSIPU counselling","text":"Visit ipu.admissions.nic.in once counselling registration opens (typically third-fourth week of July). Create a candidate login."},
+    {"@type":"HowToStep","position":4,"name":"Pay counselling fee","text":"Pay the GGSIPU counselling registration fee (Rs.1,500 general, Rs.750 reserved) online."},
+    {"@type":"HowToStep","position":5,"name":"Fill college and branch choices","text":"Add preferred colleges and B.Tech branches in priority order. Lock choices before deadline."},
+    {"@type":"HowToStep","position":6,"name":"Accept Round 1 allotment and report","text":"Round 1 allotment published 5-7 days after registration closes. Accept the seat and report to the allotted college with documents and tuition fee within the reporting window."}
+  ]
+}
+</script>
+<!-- ===== /Schema ===== -->
 </body>
 </html>

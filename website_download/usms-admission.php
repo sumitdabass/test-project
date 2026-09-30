@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>USMS IPU Admission 2026 – MBA Programme & Placements</title>
 <meta name="description" content="USMS IPU admission 2026. MBA programme, CAT cutoff, specializations, placements & fees at IPU management school. Call 9899991342 for free guidance.">
@@ -92,12 +92,16 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (Full-Time, General)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (International Business)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (General, Full-Time)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (FA — Financial Analysis)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (A — Analytics)</td><td style="padding:10px 14px">2 Years</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">MBA (W — Weekend / Working Executives)</td><td style="padding:10px 14px">2-3 Years</td><td style="padding:10px 14px">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">BBA</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">B.Com (H)</td><td style="padding:10px 14px">4 Years (NEP)</td><td style="padding:10px 14px">60</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">PhD in Management</td><td style="padding:10px 14px">3-5 Years</td><td style="padding:10px 14px">Varies</td></tr>
     </tbody>
   </table>
-  <p style="font-size:13px;color:#64748b;margin-top:8px">As per GGSIPU Admission Brochure 2026-27, USMS operates its programmes from USMS Sector 16C, Dwarka campus.</p>
+  <p style="font-size:13px;color:#64748b;margin-up:8px">Source: UG Brochure 2026-27 Ch 13 SN 3 (USMS programmes + intake) and PG Brochure 2026-27 §14.1H (MBA tuition Rs. 1,93,600/yr). USMS operates from the GGSIPU Sector 16C, Dwarka campus. Note: there is no &ldquo;MBA International Business&rdquo; in the 2026-27 brochure &mdash; the four MBA streams are General, FA (Financial Analysis), A (Analytics) and W (Weekend / Working Executives).</p>
 
   <h3>MBA Specializations</h3>
   <ul>
@@ -138,7 +142,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -162,6 +166,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+    ['title' => 'MBA Management Quota at IPU', 'url' => '/mba-management-quota-ipu.php', 'desc' => 'Management-quota seats, entrance score rules and fees for MBA at IPU'],
   ['title' => 'MBA Admission at IPU', 'url' => '/mba-admission-ip-university.php', 'desc' => 'Complete MBA admission guide for all IPU affiliated colleges'],
   ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses and admission process'],
   ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all colleges affiliated to GGSIPU']

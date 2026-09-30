@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Best B.Tech Colleges in Delhi 2026 | Top 10 IPU Engineering Colleges</title>
 <meta name="description" content="Top B.Tech colleges in Delhi under IPU – USICT, MAIT, MSIT, BPIT, BVP ranked by cutoff, placement & fees. Free admission help – call 9899991342.">
@@ -122,7 +122,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -146,6 +146,8 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MAIT'],
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MSIT'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with eligibility and counselling dates'],
   ['title' => 'MAIT Admission Guide', 'url' => '/mait-admission.php', 'desc' => 'Detailed admission guide for Maharaja Agrasen Institute of Technology'],
   ['title' => 'MSIT Admission Guide', 'url' => '/msit-admission.php', 'desc' => 'Complete admission guide for MSIT Janakpuri']

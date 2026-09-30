@@ -41,6 +41,8 @@ Confirm on your side; plan assumes all are done:
 
 **Output:** Fresh Laravel + Filament app runs locally at `http://localhost:8000`, **AND** an empty Filament login is live at `https://davyas.ipu.co.in` over SSL. `DEPLOY.md` committed with re-deploy + rollback recipe. Tag `v0-scaffold` pushed.
 
+> **Path note (2026-04-17 execution):** Plan's `/home/<user>/davyas_public/` references below were superseded during execution. Actual server paths: app at `/home/ipuc/davya-crm/`, symlink `/home/ipuc/home/ipuc/davya-crm → /home/ipuc/davya-crm` bridges cPanel's doubled docroot. CLI PHP uses `/opt/alt/php84/usr/bin/php`; webserver runs 8.5 via MultiPHP. DB/user both named `ipuc_ipuc_davyapp` (cPanel prefix doubling). See `davya-crm/DEPLOY.md` as the source of truth for deploy mechanics; the per-task recipes below are historical/intent.
+
 ### Task 1.1: Create Laravel project and initial commit
 
 **Files:**

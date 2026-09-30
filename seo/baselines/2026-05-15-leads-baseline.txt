@@ -1,0 +1,11 @@
+Generated: 2026-05-15
+Source: ssh ipuc@ipu.co.in 'wc -l ~/public_html/include/.private/*.log'
+
+     7 /home/ipuc/public_html/include/.private/phone_dedup.log
+
+---
+CONCERN: No lead-capture log files found.
+- form-handler.php and sendemail.php exist at prod but contain NO fwrite/file_put_contents/log calls.
+- The only log in .private/ is phone_dedup.log (7 lines) — this is the Phase A phone-dedup helper, not a lead-capture log.
+- Phase B Day-7/Day-14 lead-volume measurement cannot use server-side logs until logging is added to form-handler.php or sendemail.php.
+- Recommend: add a one-liner append to form-handler.php (or sendemail.php) that writes each submission to .private/leads.log before Day 1 kicks off.

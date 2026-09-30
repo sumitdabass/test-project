@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -23,13 +23,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">IPU B.Tech Cutoff Analysis (Delhi vs Outside Delhi)</h1>
-<p class="text-white">MAIT • MSIT • BPIT • BVP • USICT – Last 3 Year Trends</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU B.Tech Cutoff Analysis (Delhi vs Outside Delhi)';
+$hero_intro = 'MAIT • MSIT • BPIT • BVP • USICT – Last 3 Year Trends';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!-- ===== CONTENT ===== -->
 
@@ -41,7 +40,7 @@ include_once("include/form-handler.php");
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="IPU B.Tech Cutoff Analysis">
+<?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Cutoff Analysis', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
 <h2>IP University B.Tech Cutoff Analysis</h2>
@@ -168,7 +167,7 @@ For personalised counselling and college selection strategy:
 
 <p>
 <b>Call:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -193,7 +192,7 @@ For personalised counselling and college selection strategy:
 <!-- SIDEBAR -->
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -206,7 +205,7 @@ For personalised counselling and college selection strategy:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>Admission Guidance:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>

@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 ?>
 
@@ -18,8 +18,8 @@ include_once("include/form-handler.php");
 <!-- Open Graph Tags -->
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ipu.co.in/BVP.php">
-<meta property="og:title" content="Bharatiya Vidya Bhavan Engineering College - B.Tech Admission Guide">
-<meta property="og:description" content="Complete guide to BVP Engineering College under GGSIPU. B.Tech programs, placements, admission process and counselling support.">
+<meta property="og:title" content="Bharati Vidyapeeth's College of Engineering - B.Tech Admission Guide">
+<meta property="og:description" content="Complete guide to Bharati Vidyapeeth's College of Engineering (BVP), Paschim Vihar — affiliated with GGSIPU (Sr. No. 11 in UG Brochure 2026-27 Ch 13). B.Tech programs, placements, admission process and counselling support.">
 <meta property="og:image" content="https://ipu.co.in/assets/images/IP-University-b-tech-admission.jpg">
 
 <!-- FAQ Schema -->
@@ -49,7 +49,7 @@ include_once("include/form-handler.php");
       "name": "Is management quota available at BVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, BVP offers management quota seats for B.Tech programs as per GGSIPU regulations. Management quota typically comprises 10-15% of total seats. Call us at 9899991342 for management quota counselling."
+        "text": "Yes, BVP offers Management Quota seats for B.Tech as per GGSIPU regulations. Per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27), 10% of total seats at unaided affiliated colleges are reserved as Management Quota. The candidate must still have qualified JEE Main / GGSIPU CET / CUET per Important Instruction #21. Call us at 9899991342 for management quota counselling."
       }
     },
     {
@@ -86,14 +86,11 @@ include 'include/components/breadcrumb-schema.php';
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
-</h1>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'Bharati Vidyapeeth\'s College of Engineering – Complete IPU Admission Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <section class="blog-wrapper pt-130 pb-130">
@@ -106,7 +103,7 @@ Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
 <li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">Bharatiya Vidya Bhavan Engineering College</li>
+<li class="breadcrumb-item active">Bharati Vidyapeeth's College of Engineering</li>
 </ol>
 </nav>
 
@@ -117,15 +114,15 @@ Bharatiya Vidya Bhavan Engineering College – Complete IPU Admission Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/bvb-engineering-college.jpg" class="main-img" alt="Bharatiya Vidya Bhavan Engineering College IP University">
+<picture><source srcset="assets/images/IP-University-b-tech-admission.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="Bharati Vidyapeeth's College of Engineering IP University"></picture>
 
 
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
-<h2>About Bharatiya Vidya Bhavan Engineering College (IP University)</h2>
+<h2>About Bharati Vidyapeeth's College of Engineering (IP University)</h2>
 
 <p>
-Bharatiya Vidya Bhavan Engineering College is an affiliated institute under Guru Gobind Singh Indraprastha University (GGSIPU). Located in Paschim Vihar, Delhi, the college provides engineering, media and computer application programs aligned with industry requirements.
+Bharati Vidyapeeth's College of Engineering (BVP) is an unaided affiliated institute under Guru Gobind Singh Indraprastha University (GGSIPU), listed at Sr. No. 11 in UG Brochure 2026-27 Ch 13. Located in Paschim Vihar, Delhi, the college provides engineering, media and computer application programs aligned with industry requirements. (Note: this is Bharati Vidyapeeth — a separate trust from Bharatiya Vidya Bhavan, which has a different KG Marg Delhi campus that does NOT offer engineering under IPU.)
 </p>
 
 <ul>
@@ -245,7 +242,7 @@ Master of Computer Applications program focuses on software development, program
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT College Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura</a></li>
 <li><a href="b-tech-colleges-under-IP-university.php">Top B.Tech Colleges under IPU</a></li>
 </ul>
 
@@ -255,7 +252,7 @@ Master of Computer Applications program focuses on software development, program
 <!-- Fee & Seat Intake -->
 <div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
   <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
-  <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
+  <p style="font-size:13px;color:#64748b;margin-bottom:12px">Source: 6th SFRC Delhi Gazette Notification — F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i) of UG Brochure 2026-27)</p>
   <table style="width:100%;border-collapse:collapse;font-size:14px">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
@@ -265,12 +262,12 @@ Master of Computer Applications program focuses on software development, program
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">210</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">180</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ME</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">210</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ME</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
     </tbody>
   </table>
   <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at BVP: ~750.</p>
@@ -280,7 +277,7 @@ Master of Computer Applications program focuses on software development, program
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is Bharatiya Vidya Bhavan Engineering College affiliated with IP University?</h3>
+<h3>Is Bharati Vidyapeeth's College of Engineering affiliated with IP University?</h3>
 <p>Yes, the college is affiliated with Guru Gobind Singh Indraprastha University (GGSIPU).</p>
 
 <h3>Which courses are offered?</h3>
@@ -310,19 +307,19 @@ Master of Computer Applications program focuses on software development, program
       <li style="margin: 8px 0;">✓ Management quota guidance</li>
       <li style="margin: 8px 0;">✓ Placement & academic insights</li>
     </ul>
-    <button onclick="gtag_report_conversion('tel:9899991342')" 
-            style="background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); 
-                   border: none; 
-                   padding: 15px 30px; 
-                   border-radius: 30px; 
-                   color: #0b2c5d; 
-                   font-size: 18px; 
-                   font-weight: 700; 
-                   cursor: pointer;
-                   margin-top: 15px;
-                   box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    <a href="tel:+919899991342"
+       style="display:inline-block; text-decoration:none;
+              background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+              padding: 15px 30px;
+              border-radius: 30px;
+              color: #0b2c5d;
+              font-size: 18px;
+              font-weight: 700;
+              cursor: pointer;
+              margin-top: 15px;
+              box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
       📱 CALL: 9899991342
-    </button>
+    </a>
   </div>
 </section>
 
@@ -360,7 +357,7 @@ Master of Computer Applications program focuses on software development, program
         <h3 style="color: #0b2c5d; margin-bottom: 10px;">VIPS Pitampura</h3>
         <p style="color: #666; margin-bottom: 10px; font-size: 13px;">Law & Management Institute</p>
         <p style="font-size: 12px; margin-bottom: 15px;"><strong>Programs:</strong> Law, BBA</p>
-        <a href="vips-pitampura-courses.php" 
+        <a href="vips-admission.php" 
            style="background: #0b2c5d; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 12px;">
           Explore VIPS
         </a>
@@ -374,7 +371,7 @@ Master of Computer Applications program focuses on software development, program
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -388,6 +385,13 @@ $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
 ];
+$facts_key = 'bvp'; include 'include/components/college-facts-block.php';
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Bharati Vidyapeeths College of Engineering';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 
@@ -395,18 +399,6 @@ include 'include/components/related-pages.php';
 
 
 <!-- FAQ SCHEMA -->
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Is Bharatiya Vidya Bhavan Engineering College affiliated with IP University?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is affiliated with Guru Gobind Singh Indraprastha University."}},
-{"@type":"Question","name":"Which courses are offered?","acceptedAnswer":{"@type":"Answer","text":"CSE, IT, ECE, CS-AIML, BJMC and MCA programs."}},
-{"@type":"Question","name":"Which exam is required for B.Tech admission?","acceptedAnswer":{"@type":"Answer","text":"JEE Main is primary admission criteria under IP University."}}
-]
-}
-</script>
 
 
 </body>

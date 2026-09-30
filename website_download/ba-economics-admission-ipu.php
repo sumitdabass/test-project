@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU BA Economics (Hons) 2026 | Eligibility, CUET, Fees, 4 Top Colleges</title>
 <meta name="description" content="IP University BA Economics (Hons) 2026 via CUET – eligibility, fees Rs.75K-1.2L, top colleges (VIPS, MAIMS, JIMS, USHSS). Call 9899991342.">
@@ -76,6 +76,7 @@ include 'include/components/hero-banner.php';
   <h1>IPU BA Economics Admission 2026 – Complete Guide</h1>
 
   <p>Guru Gobind Singh Indraprastha University offers the BA Economics (Hons) programme through its affiliated colleges in Delhi. Economics is one of the most versatile undergraduate programmes, opening doors to careers in finance, consulting, government, and research. For admission guidance, call <a href="tel:+919899991342">9899991342</a> for free expert counselling.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Process &mdash; CUET Choice-Filling</a> for the full round-wise walkthrough.</p>
 
   <h2>About BA Economics at IPU</h2>
   <p>The BA Economics (Hons) programme under GGSIPU is a 3-year undergraduate course that provides a strong foundation in economic theory, quantitative methods, and policy analysis. The curriculum blends theoretical knowledge with practical applications, including statistical tools and data analysis.</p>
@@ -185,7 +186,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>

@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'gnit-admission',
+    'cutoff_institute' => 'Greater Noida Institute of Technology',
     'name' => 'Greater Noida Institute of Technology',
     'short_name' => 'GNIT',
     'title' => 'GNIT Greater Noida Admission 2026 | B.Tech CSE, AIML – IPU',
@@ -63,7 +64,7 @@ $college_data = [
         ['title' => 'MAIT College Profile', 'url' => '/mait-admission.php', 'desc' => 'B.Tech, MBA and MCA at MAIT Rohini'],
         ['title' => 'GTBIT College Profile', 'url' => '/gtbit-admission.php', 'desc' => 'B.Tech CSE, IT and ECE at GTBIT Rajouri Garden'],
         ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'B.Tech and BBA at ADGITM Delhi'],
-        ['title' => 'IPU B.Tech Admission Guide', 'url' => '/ipu-b-tech-admission-2025.php', 'desc' => 'Complete guide to B.Tech admission under IPU'],
+        ['title' => 'IPU B.Tech Admission Guide', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete guide to B.Tech admission under IPU'],
     ],
 ];
 include 'include/templates/college-page-template.php';

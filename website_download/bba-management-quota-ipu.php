@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/form-handler.php");
 ?>
 <!DOCTYPE html>
@@ -69,13 +69,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">BBA Management Quota Admission in IP University (GGSIPU)</h1>
-<p class="text-white">Top Colleges • Eligibility • CET / CUET • Counselling Strategy</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BBA Management Quota Admission in IP University (GGSIPU)';
+$hero_intro = 'Top Colleges • Eligibility • CET / CUET • Counselling Strategy';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ===== CONTENT ===== -->
@@ -116,7 +115,7 @@ Complete admission guide:
 <h2>Top BBA Colleges under IP University (Management Quota Availability)</h2>
 
 <ul>
-<li><a href="vips-pitampura-courses.php">Vivekananda Institute of Professional Studies (VIPS)</a></li>
+<li><a href="vips-admission.php">Vivekananda Institute of Professional Studies (VIPS)</a></li>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIMS Rohini (Maharaja Agrasen Institute of Management Studies)</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT / MSI Janakpuri</a></li>
 <li>JIMS Rohini</li>
@@ -176,7 +175,7 @@ Counselling strategy guide:
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </b>
 </p>
 
@@ -185,7 +184,7 @@ Counselling strategy guide:
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -198,7 +197,7 @@ Counselling strategy guide:
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>BBA Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>
@@ -209,6 +208,9 @@ $related_pages = [
     ['title' => 'Top BBA Colleges in IPU', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Top 10 BBA colleges under IPU with fees & placements'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
+    ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees, college list & process for management quota seats'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission via management seats — colleges & eligibility'],
+    ['title' => 'BA-LLB Management Quota in IPU', 'url' => '/ballb-management-quota-ipu.php', 'desc' => 'Integrated 5-year Law admission via management quota'],
 ];
 include 'include/components/related-pages.php';
 ?>

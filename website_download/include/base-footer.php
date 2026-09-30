@@ -31,6 +31,7 @@
             <li style="margin-bottom:10px"><a href="/IP-University-management-quota-admission-eligibility-criteria.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Management Quota</a></li>
             <li style="margin-bottom:10px"><a href="/GGSIPU-counselling-for-B-Tech-admission.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Counselling</a></li>
             <li style="margin-bottom:10px"><a href="/ipu-helpline-contact-number.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Helpline</a></li>
+            <li style="margin-bottom:10px"><a href="https://davyas.ipu.co.in/admin/login" rel="nofollow noopener" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Login</a></li>
           </ul>
         </div>
 
@@ -39,9 +40,10 @@
           <h4 style="color:#fff;font-size:16px;margin-bottom:16px">Popular Courses</h4>
           <ul style="list-style:none;padding:0;margin:0">
             <li style="margin-bottom:10px"><a href="/IPU-B-Tech-admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">B.Tech Admission</a></li>
+            <li style="margin-bottom:10px"><a href="/ipu-b-tech-pillar.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">B.Tech Admission Hub</a></li>
             <li style="margin-bottom:10px"><a href="/mba-admission-ip-university.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">MBA Admission</a></li>
-            <li style="margin-bottom:10px"><a href="/IPU-Law-Admission-2026.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Law Admission</a></li>
-            <li style="margin-bottom:10px"><a href="/ipu-bba-admission.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">BBA Admission</a></li>
+            <li style="margin-bottom:10px"><a href="/IPU-Law-Admission.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Law Admission</a></li>
+            <li style="margin-bottom:10px"><a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">BBA Admission</a></li>
             <li style="margin-bottom:10px"><a href="/blog.php" style="color:rgba(255,255,255,.7);font-size:14px;text-decoration:none">Blog</a></li>
           </ul>
         </div>
@@ -93,11 +95,11 @@
 </footer>
 
 <!-- Scroll to Top -->
-<a href="#" class="go-top" aria-label="Scroll to top" style="position:fixed;bottom:20px;left:20px;width:40px;height:40px;background:#1a3a9c;color:#fff;border-radius:50%;display:none;align-items:center;justify-content:center;z-index:998;box-shadow:0 2px 10px rgba(0,0,0,.2);transition:all .3s">
+<a href="#" class="go-top" aria-label="Scroll to top" style="position:fixed;bottom:20px;left:20px;width:48px;height:48px;background:#1a3a9c;color:#fff;border-radius:50%;display:none;align-items:center;justify-content:center;z-index:998;box-shadow:0 2px 10px rgba(0,0,0,.2);transition:all .3s">
   <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
 </a>
 <style>.go-top.active{display:flex!important}</style>
 
 <!-- JavaScript -->
-<script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/app.js"></script>
+<script src="/assets/js/vendor/bootstrap.bundle.min.js" defer></script>
+<script src="/assets/js/app.js" defer></script>

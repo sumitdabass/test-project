@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>HMR Institute Admission 2026 | IPU B.Tech Courses</title>
 <meta name="description" content="HMR Institute (HIT) admission 2026 under IPU. B.Tech CSE, IT, ECE, ME courses & placements. Call 9899991342 for free admission help.">
@@ -115,7 +115,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-<?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div></div>
 </section>
@@ -139,6 +139,12 @@ $related_pages = [
   ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'Explore ADGITM courses, placements and admission'],
   ['title' => 'GTBIT College Profile', 'url' => '/gtbit-admission.php', 'desc' => 'Government-aided B.Tech college under IPU'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'HMR Institute of Technology & Management';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

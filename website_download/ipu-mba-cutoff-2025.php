@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU MBA Cutoff 2025 | CAT & CMAT Score College-wise Analysis</title>
 <meta name="description" content="IPU MBA cutoff 2025 – CAT percentile & CMAT score cutoff for USMS, MAIMS, DIAS, JIMS. Round 1 & Round 3 analysis. Call 9899991342 for free rank analysis.">
@@ -40,21 +40,6 @@
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ipu.co.in/"},
     {"@type": "ListItem", "position": 2, "name": "Cutoff Analysis", "item": "https://ipu.co.in/ipu-cutoff-analysis.php"},
     {"@type": "ListItem", "position": 3, "name": "MBA Cutoff 2025"}
-  ]
-}
-</script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What CAT percentile is needed for MBA at USMS IPU?", "acceptedAnswer": {"@type": "Answer", "text": "USMS Dwarka typically requires a CAT percentile of 55+ in Round 1 for MBA (General category, Delhi quota). In Round 3, the cutoff may relax to around 45 percentile. Call 9899991342 for personalized prediction."}},
-    {"@type": "Question", "name": "Does IPU accept both CAT and CMAT scores for MBA?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, IPU accepts both CAT and CMAT scores for MBA admission. Students can apply through either exam. CMAT is generally considered easier and is preferred by students who find CAT too competitive."}},
-    {"@type": "Question", "name": "Which is the best MBA college under IPU?", "acceptedAnswer": {"@type": "Answer", "text": "USMS (University School of Management Studies) Dwarka is the top MBA college under IPU, being a university department. Among affiliated colleges, MAIMS Rohini and DIAS Rohini are highly ranked for placements and faculty."}},
-    {"@type": "Question", "name": "What is the MBA fee at IPU colleges?", "acceptedAnswer": {"@type": "Answer", "text": "MBA fees at IPU affiliated colleges typically range from Rs 1.5-3 lakh per year. USMS, being a university department, has lower fees of around Rs 50,000-70,000 per year. Exact fees vary by college."}},
-    {"@type": "Question", "name": "Can I get MBA at IPU with a CAT percentile of 40?", "acceptedAnswer": {"@type": "Answer", "text": "With a CAT percentile of 40 (Delhi quota, General category), you can target colleges like DIAS and JIMS in Round 3. Alternatively, apply through CMAT where a score of 150+ can get you admission. Call 9899991342 for guidance."}}
   ]
 }
 </script>
@@ -210,7 +195,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -237,9 +222,9 @@ $related_pages = [
   ['title' => 'MBA Admission at IPU', 'url' => '/mba-admission-ip-university.php', 'desc' => 'Complete guide to MBA admission at IPU – eligibility, fees & process'],
   ['title' => 'MBA Management Quota IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct MBA admission without CAT/CMAT cutoff – process, fees & colleges'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, MBA, Law and more at IPU'],
-  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
+  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU counselling process – choice filling & seat allotment'],
-  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
+  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
 ];
 include 'include/components/related-pages.php';
 ?>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Counselling 2026 – Dates, Registration, Fees, Process & Last Date</title>
 <meta name="description" content="IPU / GGSIPU Counselling 2026 – registration dates, last date, fee, step-by-step choice filling & seat allotment rounds. Call 9899991342 for free expert help.">
@@ -27,7 +27,21 @@
   "author": {"@type": "Organization", "name": "IPU Admission Guide"},
   "publisher": {"@type": "Organization", "name": "IPU Admission Guide", "url": "https://ipu.co.in"},
   "datePublished": "2026-04-07",
-  "dateModified": "2026-04-07"
+  "dateModified": "2026-06-26"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "GGSIPU Centralized Online Counselling 2026-27",
+  "description": "GGSIPU centralized online counselling 2026-27 across all listed programmes (B.Tech, BCA, Law, BBA, B.Com, BA English/Economics, LL.M., B.Ed.). Enrolment opened 8 June 2026 (Notification 26/2026), Round 1 choice filling from 10 June 2026 (Notification 34/2026), and Round 1 seat allotment result declared 25 June 2026. MBA and MCA schedules announced separately.",
+  "startDate": "2026-06-08",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {"@type":"VirtualLocation","url":"https://ipu.ac.in"},
+  "organizer": {"@type":"Organization","name":"Guru Gobind Singh Indraprastha University","url":"https://ipu.ac.in"},
+  "image": "https://ipu.co.in/assets/images/news/admissions.jpg"
 }
 </script>
 
@@ -56,10 +70,10 @@ include 'include/components/hero-banner.php';
 
   <!-- AI Summary (visually hidden, indexed by AI/search) -->
   <section id="ai-summary" aria-label="AI Summary" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">
-    <p><strong>AI Summary:</strong> IPU Counselling 2026 is the centralized admission process at Guru Gobind Singh Indraprastha University (GGSIPU) Delhi. Registration opens in May-June 2026 on ipu.ac.in / ipu.admissions.nic.in. Counselling is conducted in multiple rounds for B.Tech, BBA, BCA, Law (BA LLB / BBA LLB / LLB / LLM), BJMC, B.Com, MBA, MCA and other programmes. The counselling fee is Rs. 1,500 for General/OBC and Rs. 750 for SC/ST. The process includes online registration, fee payment, choice filling, seat allotment, document verification and reporting to the allotted college. For free expert help on choice filling and seat predictions, call 9899991342.</p>
+    <p><strong>AI Summary:</strong> IPU Counselling 2026 is the centralized admission process at Guru Gobind Singh Indraprastha University (GGSIPU) Delhi. Centralized online counselling enrolment opened on 8 June 2026 (Notification 26/2026), Round 1 choice filling ran from 10 June 2026 (Notification 34/2026, later extended), and the GGSIPU Round 1 seat allotment result was declared on 25 June 2026 on ipu.ac.in / ipu.admissions.nic.in. Counselling is conducted in multiple rounds for B.Tech, BBA, BCA, Law (BA LLB / BBA LLB / LLB / LLM), BJMC, B.Com, MBA, MCA and other programmes. The counselling fee is Rs. 1,500 for General/OBC and Rs. 750 for SC/ST. The process includes online registration, fee payment, choice filling, seat allotment, document verification and reporting to the allotted college. For free expert help on choice filling and seat predictions, call 9899991342.</p>
   </section>
 
-  <?php $last_updated = '2026-04-07'; include 'include/components/last-updated.php'; ?>
+  <?php $last_updated = '2026-06-26'; include 'include/components/last-updated.php'; ?>
 
   <h1>IPU Counselling 2026 – Complete Schedule, Registration & Process</h1>
 
@@ -67,30 +81,32 @@ include 'include/components/hero-banner.php';
 
   <p>For free expert help on registration, choice filling strategy and seat predictions, call our IPU admission helpline at <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
 
+  <div style="background:#fff8e6;border:1px solid #f7b731;border-left:5px solid #f7b731;border-radius:8px;padding:16px 18px;margin:18px 0;">
+    <p style="margin:0 0 6px;font-weight:700;color:#0d1b6e;font-size:1.02rem;">&#128226; Counselling Update &mdash; 3 June 2026</p>
+    <p style="margin:0;line-height:1.7;font-size:0.96rem;"><strong>Round 1 update:</strong> Enrolment for <strong>Centralized Online Counselling 2026-27</strong> opened on <strong>8 June 2026</strong> (Notification 26/2026), Round 1 choice filling and document upload began <strong>10 June 2026</strong> (Notification 34/2026, later extended), and the <strong>Round 1 seat allotment result was declared on 25 June 2026</strong>. If you have been allotted a seat, pay the fee and choose Freeze / Float within the stipulated window; if not, wait for Round 2. <strong>MBA (101) and MCA (105)</strong> schedules are announced separately. Confirm dates on <a href="https://ipu.admissions.nic.in" target="_blank" rel="noopener">ipu.admissions.nic.in</a> or call <a href="tel:+919899991342"><strong>9899991342</strong></a>.</p>
+  </div>
+
   <h2>What is IPU Counselling?</h2>
   <p>IPU Counselling (also called <strong>GGSIPU Online Counselling</strong>) is a multi-round, online admission process. After your qualifying entrance exam result is declared, you need to register on the official IPU admission portal, pay the counselling fee, fill in your college and course preferences (choice filling), and wait for seat allotment based on your rank, category and Delhi/Outside-Delhi region. Once a seat is allotted, you must pay the fee and report to the college for document verification.</p>
 
-  <h2>IPU Counselling 2026 Important Dates (Tentative)</h2>
-  <p>The schedule below is tentative based on the past 3 years' GGSIPU counselling pattern. Official dates will be released in May 2026 on the IPU website. For real-time alerts, save our number <a href="tel:+919899991342">9899991342</a> on WhatsApp.</p>
+  <h2>IPU Counselling 2026 Important Dates &amp; Round 1 Schedule</h2>
+  <p>The GGSIPU Round 1 schedule below is based on official University notifications on <a href="https://ipu.admissions.nic.in" target="_blank" rel="noopener">ipu.admissions.nic.in</a>. Round 2/3 and Spot round dates are yet to be notified and will be added once announced. For real-time alerts, save our number <a href="tel:+919899991342">9899991342</a> on WhatsApp.</p>
 
   <table style="width:100%;border-collapse:collapse;margin:16px 0">
     <thead>
       <tr style="background:#0d1b6e;color:#fff">
         <th style="padding:10px 14px;text-align:left">Event</th>
-        <th style="padding:10px 14px;text-align:left">Tentative Date</th>
+        <th style="padding:10px 14px;text-align:left">Date</th>
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Release of Admission Brochure 2026-27</td><td style="padding:10px 14px">April 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">IPU Counselling Registration Opens</td><td style="padding:10px 14px">2nd week of May 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Last Date to Register & Pay Counselling Fee</td><td style="padding:10px 14px">3rd week of June 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Choice Filling Opens (B.Tech, BBA, BCA, Law)</td><td style="padding:10px 14px">Last week of June 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 1 Seat Allotment Result</td><td style="padding:10px 14px">1st week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Fee Payment & Reporting</td><td style="padding:10px 14px">2nd week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 2 Seat Allotment Result</td><td style="padding:10px 14px">3rd week of July 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 3 / Sliding Round</td><td style="padding:10px 14px">1st week of August 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Spot / Physical Counselling Round</td><td style="padding:10px 14px">2nd-3rd week of August 2026</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Commencement of Classes</td><td style="padding:10px 14px">Last week of August 2026</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Online Counselling Enrolment Opens</td><td style="padding:10px 14px"><strong>8 June 2026</strong> (Notification 26/2026)</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Choice Filling &amp; Document Upload</td><td style="padding:10px 14px"><strong>From 10 June 2026</strong> (Notification 34/2026); window later extended</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 1 Seat Allotment Result</td><td style="padding:10px 14px"><strong>Declared 25 June 2026</strong></td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Round 1 Fee Payment, Freeze / Float &amp; Reporting</td><td style="padding:10px 14px">As per your allotment letter — check portal</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Round 2 &amp; 3 Seat Allotment</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px">Spot / Physical Counselling Round</td><td style="padding:10px 14px">To be notified</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">MBA (101) &amp; MCA (105) Schedule</td><td style="padding:10px 14px">To be announced separately</td></tr>
     </tbody>
   </table>
 
@@ -137,19 +153,19 @@ include 'include/components/hero-banner.php';
   <h2>Course-wise IPU Counselling Schedule 2026</h2>
 
   <h3>B.Tech Counselling (JEE Main based)</h3>
-  <p>B.Tech counselling for IPU 2026 is based on JEE Main 2026 percentile/rank. Registration opens in mid-May 2026 and Round 1 allotment is expected by 1st week of July. Top colleges include USICT Dwarka, MAIT Rohini, MSIT Janakpuri, BPIT, GTBIT, BVP, ADGITM, NDIM. Read our <a href="/IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a> and <a href="/ipu-btech-cutoff-2025.php">B.Tech Cutoff Analysis</a> for branch-wise rank requirements.</p>
+  <p>B.Tech counselling for IPU 2026 is based on JEE Main 2026 percentile/rank. Centralized online enrolment opened on 8 June 2026 (Notification 26/2026), Round 1 choice filling ran from 10 June 2026 (Notification 34/2026), and the Round 1 seat allotment result was declared on 25 June 2026. Top colleges include USICT Dwarka, MAIT Rohini, MSIT Janakpuri, BPIT, GTBIT, BVP, ADGITM, NDIM. Read our <a href="/IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a> and <a href="/ipu-btech-cutoff-2025.php">B.Tech Cutoff Analysis</a> for branch-wise rank requirements.</p>
 
   <h3>BBA Counselling (CUET based)</h3>
-  <p>BBA admission at IPU is now through CUET-UG scores. Registration on the IPU portal opens by mid-May. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/ipu-bba-admission.php">BBA Admission Guide</a>.</p>
+  <p>BBA admission at IPU is now through CUET-UG scores. Centralized online enrolment opened on 8 June 2026 (Notification 26/2026) and the Round 1 seat allotment result was declared on 25 June 2026. Top BBA colleges: VIPS Pitampura, MAIMS Rohini, JIMS Vasant Kunj, TIPS Dwarka, FAIRFIELD Kapashera. See our <a href="/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA Admission Guide</a>.</p>
 
   <h3>Law Counselling (CLAT / IPU CET based)</h3>
-  <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission-2026.php">Law Admission Guide</a>.</p>
+  <p>BA LLB, BBA LLB and 3-Year LLB counselling at IPU is based on CLAT-UG / IPU CET scores. The flagship USLLS (University School of Law and Legal Studies) admits 240 students yearly. See our <a href="/IPU-Law-Admission.php">Law Admission Guide</a>.</p>
 
   <h3>BJMC, B.Com, BCA, BA Counselling</h3>
   <p>BJMC, B.Com (H), BA Economics, BA English and BCA admissions are through CUET-UG. IPU counselling registration is the same portal — only the qualifying exam differs. Check eligibility and cutoffs in our course-wise guides.</p>
 
   <h3>MBA, MCA, M.Tech, LLM Counselling (PG)</h3>
-  <p>PG counselling for MBA (USMS) is via CAT/MAT/CMAT, MCA via NIMCET/CUET-PG, M.Tech via GATE, LLM via CUET-PG / IPU CET PG. PG counselling typically opens in June 2026.</p>
+  <p>PG counselling for MBA (USMS) is via CAT/MAT/CMAT, MCA via NIMCET/CUET-PG, M.Tech via GATE, LLM via CUET-PG / IPU CET PG. Per Notification 26/2026, the counselling schedule for MBA (code 101) and MCA (code 105) will be announced separately, while LL.M. (112) is part of the enrolment beginning tentatively 8 June 2026.</p>
 
   <h2>IPU Counselling Rounds Explained</h2>
   <ul>
@@ -171,7 +187,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -183,10 +199,10 @@ include 'include/components/hero-banner.php';
 <!-- FAQ Section -->
 <?php
 $faqs = [
-  ['question' => 'When will IPU Counselling 2026 start?', 'answer' => 'IPU Counselling 2026 registration is expected to start in the 2nd week of May 2026. Round 1 seat allotment is expected by the 1st week of July 2026. Save 9899991342 on WhatsApp for real-time date alerts.'],
+  ['question' => 'When did IPU Counselling 2026 start and what is the latest update?', 'answer' => 'Enrolment for IPU centralized online counselling 2026-27 opened on 8 June 2026 (Notification 26/2026), Round 1 choice filling began on 10 June 2026 (Notification 34/2026, later extended), and the Round 1 seat allotment result was declared on 25 June 2026. Round 2 dates are yet to be notified. Save 9899991342 on WhatsApp for real-time alerts.'],
   ['question' => 'How do I register for GGSIPU Counselling 2026?', 'answer' => 'Visit ipu.ac.in or ipu.admissions.nic.in, click "Admissions 2026-27", create a new account with your mobile/email, fill personal and academic details, upload documents, and pay the counselling fee online. The full step-by-step process is in our guide above. For free help, call 9899991342.'],
   ['question' => 'What is the IPU counselling fee 2026?', 'answer' => 'The IPU counselling registration fee for 2026 is Rs. 1,500 for General/OBC/EWS candidates and Rs. 750 for SC/ST/PwD candidates. NRI candidates pay USD 50. This fee is one-time and is adjusted against your first-year tuition on admission.'],
-  ['question' => 'What is the last date for IPU counselling 2026?', 'answer' => 'The tentative last date for IPU counselling 2026 registration is the 3rd week of June 2026. The exact date will be announced on ipu.ac.in. Late registration is usually not allowed, so register as early as possible.'],
+  ['question' => 'What is the last date for IPU counselling 2026?', 'answer' => 'Round 1 enrolment and choice filling closed in June 2026 (Round 1 result declared 25 June 2026). If you missed Round 1, the last dates for Round 2 and the Spot round are yet to be officially notified and will be announced on ipu.admissions.nic.in. Late registration is usually not allowed, so register as early as possible.'],
   ['question' => 'How many rounds are there in IPU counselling?', 'answer' => 'IPU conducts 3 main online counselling rounds (Round 1, Round 2, Round 3/Sliding Round) followed by a Spot/Physical round for unfilled seats. Sliding allows existing students to upgrade to a better branch or college.'],
   ['question' => 'What documents are required for IPU counselling?', 'answer' => 'You need: Class 10 & 12 marksheets, entrance exam scorecard (JEE Main/CUET/CLAT/IPU CET), photograph, signature, category certificate, region/domicile certificate, Aadhaar card, and EWS/income certificate if applicable. Keep all in PDF/JPEG under 200 KB each.'],
   ['question' => 'What is IPU choice filling and how does it work?', 'answer' => 'After registration, you log in to the portal and select your preferred colleges and courses in order of priority. You can add unlimited choices. The system allots seats based on your rank, category, region and choice priority. Always fill maximum choices to maximise admission chances.'],
@@ -203,9 +219,10 @@ $related_pages = [
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with eligibility, fees and JEE Main cutoffs'],
   ['title' => 'IPU Choice Filling Strategy', 'url' => '/ipu-choice-filling-strategy.php', 'desc' => 'Smart choice filling strategy to maximise your seat at the best IPU college'],
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'Round-wise JEE Main closing ranks for all IPU B.Tech colleges'],
-  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission-2026.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB admission via CLAT and IPU CET'],
+  ['title' => 'IPU Law Admission 2026', 'url' => '/IPU-Law-Admission.php', 'desc' => 'BA LLB, BBA LLB and 3-Year LLB admission via CLAT and IPU CET'],
   ['title' => 'IPU Helpline & Contact Number', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Official GGSIPU contact details and admission helpline'],
-  ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees and process for management quota seats at IPU colleges']
+  ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees and process for management quota seats at IPU colleges'],
+  ['title' => 'IPU Fee Structure 2026', 'url' => '/ipu-fees-structure.php', 'desc' => 'Course-wise annual fees for B.Tech, BBA, MBA, Law and BCA across IPU colleges']
 ];
 include 'include/components/related-pages.php';
 ?>

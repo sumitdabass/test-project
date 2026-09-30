@@ -36,7 +36,7 @@
  */
 
 // ── Bootstrap ────────────────────────────────────────────────────────────────
-session_start(); ob_start(); include_once("include/form-handler.php");
+session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php");
 
 // ── Convenience aliases ───────────────────────────────────────────────────────
 $cd          = $college_data;                           // short alias
@@ -292,6 +292,14 @@ unset($cta_heading, $cta_subtext);
 $faqs = $cd['faqs'] ?? [];
 include 'include/components/faq-section.php';
 unset($faqs);
+?>
+
+<!-- B.Tech Cutoff Rounds Table (renders only if cutoff_institute matches dataset) -->
+<?php
+if (!empty($cd['cutoff_institute'])) {
+  $cutoff_institute = $cd['cutoff_institute'];
+  include 'include/components/btech-cutoff-rounds-table.php';
+}
 ?>
 
 <!-- Related Pages -->

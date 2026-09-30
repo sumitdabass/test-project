@@ -934,4 +934,28 @@
     <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://ipu.co.in/mait-cutoff.php</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/msit-cutoff.php</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/mbs-college-admission.php</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ipu.co.in/ipu-colleges-in-dwarka.php</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

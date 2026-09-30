@@ -71,7 +71,7 @@ $college_data = [
     'related_pages' => [
         ['title' => 'BCIPS Dwarka Profile', 'url' => '/bcips-admission.php', 'desc' => 'BBA and BCA courses at BCIPS Dwarka'],
         ['title' => 'MERI College Profile', 'url' => '/meri-admission.php', 'desc' => 'BBA, BCA, B.Com & BJMC at MERI Janakpuri'],
-        ['title' => 'IPU Law Admission', 'url' => '/ipu-law-admission.php', 'desc' => 'Complete guide to law admission under IPU'],
+        ['title' => 'IPU Law Admission', 'url' => '/IPU-Law-Admission.php', 'desc' => 'Complete guide to law admission under IPU'],
         ['title' => 'NDIM College Profile', 'url' => '/ndim-admission.php', 'desc' => 'BBA with 300 seats at NDIM South Delhi'],
         ['title' => 'BBA Colleges in IPU', 'url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'desc' => 'Top 10 BBA colleges under IP University'],
     ],

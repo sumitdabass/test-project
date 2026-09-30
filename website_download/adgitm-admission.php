@@ -1,7 +1,7 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>ADGITM Admission 2026 | IPU B.Tech, MBA, MCA Courses</title>
-<meta name="description" content="ADGITM admission 2026 under IPU. B.Tech, MBA, MCA courses, placements & fees. Call 9899991342 for free admission guidance at ADGITM Delhi.">
+<title>ADGIPS Delhi (formerly ADGITM) Admission 2026 – Fees, Cutoff & Courses</title>
+<meta name="description" content="ADGIPS Delhi (formerly ADGITM) under IPU: B.Tech, BBA, MBA, BA LLB and BBA LLB courses, fees and cutoff. Free admission guidance at 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/adgitm-admission.php">
 <meta property="og:title" content="ADGITM Admission 2026 | IPU B.Tech, MBA, MCA Courses">
 <meta property="og:description" content="ADGITM admission 2026 under IPU. B.Tech, MBA, MCA courses, placements & fees. Call 9899991342 for free guidance.">
@@ -121,14 +121,14 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">240</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ME</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">30</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AIML (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">240</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech CSE (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ME</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">30</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech AIML (2nd Shift)</td><td style="padding:10px;text-align:center">Rs. 1,60,100 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
     </tbody>
   </table>
   <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at ADGITM: ~690.</p>
@@ -136,7 +136,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-<?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div></div>
 </section>
@@ -151,6 +151,7 @@ $faqs = [
   ['question' => 'What is the placement record at ADGITM?', 'answer' => 'ADGITM has a dedicated placement cell that invites companies from IT, consulting, and manufacturing sectors. CSE and IT students generally receive the best placement offers.'],
   ['question' => 'Where is ADGITM located?', 'answer' => 'ADGITM is located at FC-26, Shastri Park, New Delhi-110053, close to Shastri Park Metro Station on the Red Line.'],
 ];
+$facts_key = 'adgitm'; include 'include/components/college-facts-faq.php';
 include 'include/components/faq-section.php';
 ?>
 
@@ -160,6 +161,12 @@ $related_pages = [
   ['title' => 'Best B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top engineering colleges under GGSIPU'],
   ['title' => 'BPIT College Profile', 'url' => '/BPIT.php', 'desc' => 'Explore Bhagwan Parshuram Institute of Technology'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Dr. Akhilesh Das Gupta Institute of Professional Studies';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

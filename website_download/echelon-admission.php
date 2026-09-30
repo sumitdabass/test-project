@@ -1,6 +1,7 @@
 <?php
 $college_data = [
     'slug' => 'echelon-admission',
+    'cutoff_institute' => 'Echelon Institute of Technology',
     'name' => 'Echelon Institute of Technology',
     'short_name' => 'Echelon',
     'title' => 'Echelon Institute Faridabad Admission 2026 | B.Tech, BBA, BCA, MCA Courses & Cutoff – IPU',

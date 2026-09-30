@@ -1,0 +1,31 @@
+term,baseline_position,baseline_impr,smoke_status,smoke_position_us_locale,delta_flag,notes
+ip university,8.96,5696,not_in_top_10_us,>10,sc_required,US locale baseline-9 invisible by design; need IN SC to diff
+ipu university,9.70,1803,not_in_top_10_us,>10,sc_required,Same pattern as above
+ggsipu counselling date 2026,4.12,1572,not_checked,,sc_required,Not in smoke sample
+ipu counselling 2026,1.62,1384,not_checked,,sc_required,Not in smoke sample — baseline #1.62 should easily show in any locale; flag if SC reveals drop
+ggsipu counselling date,5.96,1217,not_checked,,sc_required,
+ggsipu counselling,3.74,1112,not_checked,,sc_required,
+ipu,11.28,1100,not_checked,,sc_required,Day-6 homepage change risk surface
+ggsipu counselling fees,7.35,658,not_checked,,sc_required,
+ipu counselling registration 2026,1.55,611,not_checked,,sc_required,
+ipu college,9.48,509,not_checked,,sc_required,
+ipu counselling date,6.20,477,not_checked,,sc_required,
+colleges under ipu,9.30,467,not_checked,,sc_required,
+ipu btech counselling 2026,4.86,443,not_checked,,sc_required,
+ipu counselling 2026 date,4.22,420,not_checked,,sc_required,
+guru gobind singh indraprastha university,3.42,418,not_in_top_10_us,>10,sc_required,Official .ac.in + Wikipedia + social dominate US locale
+ggsipu counselling registration 2026,1.72,388,not_checked,,sc_required,
+ipu counselling,9.27,388,not_checked,,sc_required,
+ggsipu counselling 2026,2.19,385,visible,3,intact,Day-2 page (counselling) ranks at #3 in US — cash cow safe
+btech counselling 2026 date,4.45,380,not_checked,,sc_required,
+when will ipu counselling start 2026,4.45,379,not_checked,,sc_required,
+ipu college list,8.88,370,not_checked,,sc_required,
+ggsipu counselling last date,6.56,361,not_checked,,sc_required,
+ggsipu counselling 2026 date,3.08,346,not_checked,,sc_required,
+ipu counselling registration 2026 last date,3.81,340,not_checked,,sc_required,
+ipu admission,12.80,317,visible,5,intact,admission-guide.php at #5 — better than baseline 12.8 (US locale favorable here)
+ipu helpline number,8.28,306,not_checked,,sc_required,
+ipu btech counselling 2026 date,1.93,282,not_checked,,sc_required,
+ipu colleges,9.84,278,visible,3,intact,ipu-colleges-list.php at #3 — cash cow safe
+ggsipu counselling registration date 2026,3.86,224,not_checked,,sc_required,
+ggsipu counselling registration,8.55,503,not_checked,,sc_required,

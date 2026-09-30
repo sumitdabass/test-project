@@ -4,10 +4,15 @@
  * Usage: <?php webp_img('assets/images/photo.jpg', 'Alt text', 'img-fluid', true); ?>
  */
 
-function webp_img($src, $alt = '', $class = '', $lazy = true) {
+function webp_img($src, $alt = '', $class = '', $lazy = true, $opts = []) {
     $webp = preg_replace('/\.(jpg|jpeg|png)$/i', '.webp', $src);
     $loading = $lazy ? 'loading="lazy"' : '';
     $classAttr = $class ? "class=\"$class\"" : '';
+
+    // Optional LCP/hero attributes
+    $extra = '';
+    if (!empty($opts['fetchpriority'])) $extra .= ' fetchpriority="' . htmlspecialchars($opts['fetchpriority'], ENT_QUOTES) . '"';
+    if (!empty($opts['decoding']))      $extra .= ' decoding="' . htmlspecialchars($opts['decoding'], ENT_QUOTES) . '"';
 
     // Try to get image dimensions for CLS prevention
     $width = '';
@@ -23,7 +28,7 @@ function webp_img($src, $alt = '', $class = '', $lazy = true) {
 
     echo "<picture>";
     echo "<source srcset=\"$webp\" type=\"image/webp\">";
-    echo "<img src=\"$src\" alt=\"" . htmlspecialchars($alt) . "\" $classAttr $loading $width $height>";
+    echo "<img src=\"$src\" alt=\"" . htmlspecialchars($alt) . "\" $classAttr $loading $width $height$extra>";
     echo "</picture>";
 }
 

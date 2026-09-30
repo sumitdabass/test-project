@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -33,7 +33,7 @@ include_once("include/form-handler.php");
       "name": "How many Management Quota seats are available for MBA at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 15% of the total seats in IPU affiliated MBA colleges are available under Management Quota. The exact number varies by college and depends on total intake."
+        "text": "10% of the total seats in IPU affiliated MBA colleges are reserved as Management Quota per Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools (including USMS), minority and government institutions are excluded."
       }
     },
     {
@@ -41,7 +41,7 @@ include_once("include/form-handler.php");
       "name": "Is CAT score required for MBA Management Quota at IPU?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CAT or CMAT score is not mandatory for Management Quota seats in MBA at IPU. These seats are filled by the college management directly. Contact the college or call 9899991342 for details."
+        "text": "A valid CAT, CMAT or GGSIPU CET score IS mandatory per Important Instruction #21 + Chapter 12 Note 2 of the GGSIPU Brochure 2026-27. The college runs the management-quota counselling but cannot waive the entrance qualifier. Tuition is regulated per the 6th SFRC Notification dated 14.07.2025; capitation fee is prohibited under the Delhi Professional Colleges Act 2007."
       }
     },
     {
@@ -64,13 +64,12 @@ include_once("include/form-handler.php");
 
 <!-- ===== BANNER ===== -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">MBA Management Quota Admission in IP University (GGSIPU)</h1>
-<p class="text-white">Top Colleges • Specialisations • CAT Admission • Counselling Strategy</p>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'MBA Management Quota Admission in IP University (GGSIPU)';
+$hero_intro = 'Top Colleges • Specialisations • CAT Admission • Counselling Strategy';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <!-- ===== CONTENT ===== -->
@@ -177,6 +176,30 @@ These institutes are among the most preferred MBA colleges under IP University d
 
 <hr>
 
+<h2>How Many MBA Management Quota Seats Are There at IPU?</h2>
+
+<p>
+10% of the total seats in IPU affiliated MBA colleges are reserved as management quota under Section 12(1)(a) of the Delhi Professional Colleges Act, 2007 (Chapter 12 of the GGSIPU Brochure 2026-27). University Schools, including USMS, minority institutions and government institutions are excluded from this quota.
+</p>
+
+<hr>
+
+<h2>Is an Entrance Score Mandatory for MBA Management Quota?</h2>
+
+<p>
+Yes. A valid CAT, CMAT or GGSIPU CET score is mandatory (Important Instruction #21 and Chapter 12 Note 2 of the GGSIPU Brochure 2026-27). The college runs the management-quota counselling but cannot waive the entrance qualifier. Capitation fee is prohibited under the Delhi Professional Colleges Act, 2007.
+</p>
+
+<hr>
+
+<h2>MBA Fees at IPU</h2>
+
+<p>
+Tuition at USMS (the university school, which is outside the management quota) is Rs. 1,30,000 per year, about Rs. 2.6 lakh for the two-year programme. Affiliated MBA colleges, where management-quota seats exist, charge fees regulated under the 6th SFRC Notification dated 14.07.2025; ask the college for its exact figure. University, exam and other charges are extra. See the <a href="/ipu-fees-structure.php#mba-fees">IPU fee structure</a> for the full table, and read the <a href="/mba-admission-ip-university.php">MBA admission guide</a> and the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> before you decide.
+</p>
+
+<hr>
+
 <h2>Need Help with MBA Admission?</h2>
 
 <ul>
@@ -188,7 +211,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 
 <p>
 <b>Call Now:
-<a href="tel:9899991342"><?php include("include/phone.php"); ?></a>
+<a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
 
@@ -197,7 +220,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php"); ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -210,7 +233,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
 <h3>MBA Admission Help:
-<a href="tel:9899991342">+91-9899991342</a>
+<a href="tel:+919899991342">+91-9899991342</a>
 </h3>
 </div>
 </section>
@@ -221,6 +244,9 @@ $related_pages = [
     ['title' => 'IPU MBA Admission 2026', 'url' => '/mba-admission-ip-university.php', 'desc' => 'CAT/CMAT requirements, top MBA colleges & placement details'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
     ['title' => 'IPU Cutoff Analysis 2025', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise GGSIPU cutoff data for B.Tech, BBA, Law, MBA & more'],
+    ['title' => 'IPU Management Quota Hub', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Eligibility, fees, college list & process for management quota seats'],
+    ['title' => 'B.Tech Management Quota in IPU', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct B.Tech admission via management seats — colleges & eligibility'],
+    ['title' => 'BBA Management Quota in IPU', 'url' => '/bba-management-quota-ipu.php', 'desc' => 'Direct BBA admission process & top BBA management colleges'],
 ];
 include 'include/components/related-pages.php';
 ?>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU Cutoff 2025 | Course-wise GGSIPU Cutoff Analysis & Predictor</title>
 <meta name="description" content="IPU cutoff 2025 – complete course-wise GGSIPU cutoff analysis for B.Tech, BBA, Law (BA LLB/BBA LLB). JEE Main rank, CUET score & CLAT cutoffs. Call 9899991342 for free rank analysis.">
@@ -69,7 +69,7 @@ include 'include/components/hero-banner.php';
       <p style="font-size:13px;color:#4a5568;margin-bottom:6px">JEE Main rank-based cutoff for CSE, IT, ECE</p>
       <p style="font-size:12px;color:#1a3a9c;font-weight:600;margin:0">USICT, MAIT, MSIT, BPIT, BVP, GTBIT</p>
     </a>
-    <a href="/ipu-bba-cutoff-2025.php" style="display:block;padding:24px;background:linear-gradient(135deg,#f0fff4 0%,#e6f7ed 100%);border:2px solid #b7e4c7;border-radius:12px;text-decoration:none;transition:all .2s" onmouseover="this.style.borderColor='#22c55e';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='#b7e4c7';this.style.transform='none'">
+    <a href="/ipu-bba-cutoff.php" style="display:block;padding:24px;background:linear-gradient(135deg,#f0fff4 0%,#e6f7ed 100%);border:2px solid #b7e4c7;border-radius:12px;text-decoration:none;transition:all .2s" onmouseover="this.style.borderColor='#22c55e';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='#b7e4c7';this.style.transform='none'">
       <h3 style="font-size:17px;color:#0d1b6e;margin-bottom:8px">BBA Cutoff 2025</h3>
       <p style="font-size:13px;color:#4a5568;margin-bottom:6px">CUET percentile-based cutoff for BBA colleges</p>
       <p style="font-size:12px;color:#1a3a9c;font-weight:600;margin:0">VIPS, MAIMS, MSI, DIAS, JIMS</p>
@@ -128,7 +128,7 @@ include 'include/components/hero-banner.php';
     </tbody>
   </table>
   </div>
-  <p style="font-size:14px;color:#4a5568">For complete round-wise data with 7 colleges: <a href="/ipu-bba-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View Full BBA Cutoff Analysis</a></p>
+  <p style="font-size:14px;color:#4a5568">For complete round-wise data with 7 colleges: <a href="/ipu-bba-cutoff.php" style="color:#1a3a9c;font-weight:600">View Full BBA Cutoff Analysis</a></p>
 
   <!-- ===== Law Quick Summary ===== -->
   <h2>Law Cutoff 2025 – Quick Summary</h2>
@@ -190,7 +190,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -215,11 +215,12 @@ include 'include/components/faq-section.php';
 <?php
 $related_pages = [
   ['title' => 'B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'JEE Main rank-based cutoff for CSE, IT, ECE at top IPU engineering colleges'],
-  ['title' => 'BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'CUET percentile-based cutoff for VIPS, MAIMS, MSI, DIAS, JIMS'],
+  ['title' => 'BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'CUET percentile-based cutoff for VIPS, MAIMS, MSI, DIAS, JIMS'],
   ['title' => 'Law Cutoff 2025', 'url' => '/ipu-law-cutoff-2025.php', 'desc' => 'CLAT score-based cutoff for USLS, VIPS Law, MAIMS Law, Trinity'],
   ['title' => 'IPU Admission Guide', 'url' => '/ipu-admission-guide.php', 'desc' => 'Master guide for all IPU courses, counselling and admission process'],
   ['title' => 'IPU Management Quota', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission without cutoff – process, fees & eligibility'],
-  ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU Delhi']
+  ['title' => 'IPU Colleges List', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of all 60+ colleges affiliated to GGSIPU Delhi'],
+  ['title' => 'IPU BA-LLB Cutoff', 'url' => '/ipu-ba-llb-cutoff.php', 'desc' => 'Round-wise CLAT rank cutoffs for 5-year BA-LLB and BBA-LLB under IPU']
 ];
 include 'include/components/related-pages.php';
 ?>

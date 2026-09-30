@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 include_once("include/form-handler.php");
 ?>
@@ -19,79 +19,10 @@ $breadcrumbs = [['Home', '/'], ['Law Admission 2026', '']];
 include 'include/components/breadcrumb-schema.php';
 ?>
 
-<!-- FAQPage Schema for AI Overviews & Featured Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is IPU Law admission 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU Law admission 2026 covers BA LLB (5-year integrated), BBA LLB (5-year integrated) and LLM (2-year postgraduate) programmes. Admission is through CLAT (Common Law Admission Test) followed by GGSIPU counselling. Top colleges include USLLS (Dwarka), VIPS (Pitampura), MAIMS (Rohini), Amity Law School. Call 9899991342 for free Law admission help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which colleges offer law courses under IP University?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Top IPU Law colleges include USLLS (University School of Law and Legal Studies, Dwarka), VIPS (Vivekananda Institute of Professional Studies, Pitampura), MAIMS (Rohini), Amity Law School (Saket), Fairfield Institute, Trinity Institute, IDEAL Institute, JIMS Sector-5 Rohini and CPJ College. Call 9899991342 to shortlist the best law college for you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are IPU BA LLB fees 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU BA LLB fees 2026-27 are approximately Rs. 1,40,000 to Rs. 2,10,000 per year depending on the college. USLLS (govt) charges around Rs. 1.4 lakh per year, while private colleges like VIPS, MAIMS, Amity charge Rs. 1.6-2.1 lakh per year. Total 5-year fee Rs. 7-10 lakh. Call 9899991342 for fee details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does IPU offer 3-year LLB?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GGSIPU primarily offers 5-year integrated BA LLB and BBA LLB programmes at its affiliated law colleges; the 3-year LLB course is offered at Campus Law Centre and other Delhi University colleges, not at IPU. However, IPU does offer LLM (2-year postgraduate) for law graduates. Call 9899991342 for course clarification."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is CLAT required for IPU Law admission?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, CLAT (Common Law Admission Test) is the mandatory entrance exam for BA LLB and BBA LLB admission at GGSIPU and its affiliated colleges from 2024-25 onwards. After scoring in CLAT, candidates must register for IPU counselling separately at ipu.admissions.nic.in to fill college choices. Call 9899991342 for CLAT cutoff guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the eligibility for IPU BA LLB 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Eligibility for IPU BA LLB 2026: Pass in 10+2 (any stream) with minimum 50 percent aggregate marks (45 percent for SC/ST/OBC/PwD) from a recognised board. There is no upper age limit. Candidates must qualify CLAT 2026 and apply through IPU counselling. Call 9899991342 for eligibility and admission support."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is IPU Law cutoff for top colleges?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IPU Law cutoff varies by college: USLLS (Dwarka) closes within top 3000-5000 CLAT rank, VIPS Pitampura within 8000-12000 rank, MAIMS Rohini within 12000-18000 rank, Amity Law School within 15000-22000 rank. Cutoffs change yearly based on seat matrix. Call 9899991342 for category-wise cutoff help."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Guru Gobind Singh Indraprastha Law college?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Guru Gobind Singh Indraprastha University (GGSIPU) law college usually refers to USLLS (University School of Law and Legal Studies), the flagship government law school within the GGSIPU campus at Sector-16C, Dwarka, Delhi. USLLS offers BA LLB (5-year), LLM (2-year) and PhD programmes. Call 9899991342 for USLLS admission guidance."
-      }
-    }
-  ]
-}
-</script>
+<!-- (Schema-only FAQPage removed Phase B Day 4 — had 8 Q/As but no
+     matching visible content (Google policy violation). The body FAQ
+     section at line 374+ uses faq-section.php component which emits a
+     compliant FAQPage with matching visible accordion.) -->
 </head>
 
 <body>
@@ -100,14 +31,11 @@ include 'include/components/breadcrumb-schema.php';
 
 <!--====== BANNER ======-->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-IPU Law Admission 2026 – Eligibility, CLAT, Colleges & Counselling Guide
-</h1>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'IPU Law Admission 2026 – Eligibility, CLAT, Colleges &amp; Counselling Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 <!--====== BLOG CONTENT ======-->
 
@@ -119,9 +47,14 @@ IPU Law Admission 2026 – Eligibility, CLAT, Colleges & Counselling Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/IPU-Law-Admission-2025.jpg" class="main-img" alt="IPU Law Admission Guide">
+<?php webp_img('assets/images/IPU-Law-Admission-2025.jpg', 'IPU Law Admission Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
-<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
+<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
+
+<!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<section id="ai-summary" style="display:none">
+<p>Integrated 5-year law (BA-LLB and BBA-LLB) admission at Guru Gobind Singh Indraprastha University (GGSIPU / IP University) is offered for 2026-27 at the on-campus University School of Law &amp; Legal Studies (USL&amp;LS — BA-LLB 120 + BBA-LLB 60) and across 12+ affiliated colleges in Delhi NCR with a combined intake of approximately 2,400+ seats (1,500+ BA-LLB and 900+ BBA-LLB). The largest single-college intake is at VIPS-TC Pitampura (540 seats — BA-LLB 300 + BBA-LLB 240), followed by Fairfield Bijwasan (320) and Delhi Metropolitan Education Noida (300). USL&amp;LS also offers 3-year LLB (60 seats) and four 1-year LLM specialisations. Admission priority per UG Brochure 2026-27 Table 1.1 (Code 121) is <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong>, followed by centralised online counselling at ipu.ac.in. USL&amp;LS tuition is Rs. 1,45,200/year (total Rs. 1,80,700/year); affiliated colleges charge Rs. 1,15,000-1,55,000/year tuition per the 6th SFRC Delhi Gazette Notification dated 14.07.2025. Eligibility: Class 12 with min 50% (45% reserved), max age 22 (24 reserved) per BCI rules. For free admission counselling call 9899991342.</p>
+</section>
 
 <h2>IPU Law Admission 2026 Overview</h2>
 
@@ -132,6 +65,10 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers integrated law program
 <p>
 👉 Read master guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
+</p>
+
+<p>
+If you have already completed your graduation, see the <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> for the Programme Code 238 path through GGSIPU CET. For postgraduate law specialisations, see the <a href="/llm-admission-ipu.php"><strong>LL.M. admission page</strong></a> (Programme Code 112, CLAT-PG entry).
 </p>
 
 <hr>
@@ -181,6 +118,11 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers integrated law program
 </table>
 </div>
 
+<p>
+👉 Don't have a CLAT score? See the dedicated guide on
+<a href="cuet-law-admission-ipu.php"><strong>IPU Law Admission Through CUET (UG)</strong></a> &mdash; Legal Studies paper, vacant-seat round, management quota and BCI eligibility bar explained.
+</p>
+
 <hr>
 
 <!-- ===== FEE STRUCTURE 2026-27 ===== -->
@@ -227,8 +169,8 @@ The following 14 colleges are affiliated to GGSIPU for law programmes:
 <li>CPJ College of Higher Studies &amp; School of Law</li>
 <li>ADGIPS &mdash; Amity Delhi</li>
 <li>DME &mdash; Delhi Metropolitan Education, Noida</li>
-<li>Fairfield Institute of Management &amp; Technology</li>
 <li>GIBS &mdash; Gitarattan International Business School</li>
+<li>Fairfield Institute of Management &amp; Technology</li>
 <li>Ideal Institute of Management &amp; Technology</li>
 <li>JEMTEC &mdash; Jagannath Education &amp; Management</li>
 <li>KCC Institute of Legal &amp; Higher Education</li>
@@ -237,7 +179,7 @@ The following 14 colleges are affiliated to GGSIPU for law programmes:
 <li>TIPS Dwarka</li>
 <li>TIIPS Greater Noida</li>
 <li>USLLS (University School of Law &amp; Legal Studies)</li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura</a></li>
 </ul>
 
 <hr>
@@ -262,7 +204,7 @@ The following 14 colleges are affiliated to GGSIPU for law programmes:
 GGSIPU follows the UGC refund policy. Refund of entire fees (after deduction of Rs. 1,000 processing charges) is permitted up to 15 days before commencement of classes. After classes start, refunds follow UGC slabs &mdash; 100% before classes start, 80% within 15 days of commencement, 50% within 30 days, and 0% after 30 days.
 </p>
 
-<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:9899991342"><strong>9899991342</strong></a> for free Law admission guidance.</em></p>
+<p style="font-size:13px;color:#666;margin-top:8px"><em>Source: Official GGSIPU PG Admission Brochure 2026-27. Call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free Law admission guidance.</em></p>
 
 <hr>
 
@@ -270,7 +212,7 @@ GGSIPU follows the UGC refund policy. Refund of entire fees (after deduction of 
 
 <ul>
 <li>USLLS – University School of Law & Legal Studies (Dwarka)</li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura (Law Faculty)</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura (Law Faculty)</a></li>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIMS Rohini</a></li>
 <li>JIMS Rohini (Law)</li>
 </ul>
@@ -343,7 +285,7 @@ plays a major role during seat allotment.
 </div>
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -354,20 +296,89 @@ plays a major role during seat allotment.
 
 <section class="counter-area pt-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">
 <div class="container text-center">
-<h3>Call Our Helpline <a href="tel:9899991342">+91-9899991342</a></h3>
+<h3>Call Our Helpline <a href="tel:+919899991342">+91-9899991342</a></h3>
 </div>
 </section>
+
+<!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
+<?php
+$faqs = [
+  ['question' => 'Which colleges offer BA-LLB and BBA-LLB under IPU 2026-27?', 'answer' => 'Per the GGSIPU UG Admission Brochure 2026-27 (Chapter 13), integrated 5-year law programmes are offered at the <strong>University School of Law & Legal Studies (USL&LS, on-campus)</strong> and across 12+ affiliated colleges including <a href="vips-admission.php">VIPS-TC Pitampura</a> (BA-LLB 300 + BBA-LLB 240), Fairfield Bijwasan (BA-LLB 200 + BBA-LLB 120), <a href="dme-admission.php">Delhi Metropolitan Education Noida</a> (BA-LLB 180 + BBA-LLB 120), <a href="maims-admission.php">MAIMS Rohini</a> (BA-LLB 180 + BBA-LLB 120), <a href="cpj-admission.php">Chanderprabhu Jain Narela</a> (BA-LLB 180 + BBA-LLB 90), KCC Greater Noida (BA-LLB 120 + BBA-LLB 60), Gitarattan IBS Rohini (120+120), <a href="adgitm-admission.php">ADGITM Shastri Park</a> (60+60), JEMTEC Greater Noida (60+60), <a href="msi-admission.php">Maharaja Surajmal Institute Janakpuri</a> (60+60), <a href="ideal-admission.php">Ideal Karkardooma</a> (BA-LLB 80), Trinity Greater Noida (BA-LLB 60), Trinity Dwarka (BA-LLB 60).'],
+  ['question' => 'How many integrated law (BA-LLB / BBA-LLB) seats does IPU offer 2026-27?', 'answer' => 'The 2026-27 brochure shows roughly <strong>2,400+ integrated law seats</strong> across IPU — about 1,500+ BA-LLB (Hons.) and 900+ BBA-LLB (Hons.). USL&LS on-campus offers 120 BA-LLB + 60 BBA-LLB. VIPS-TC Pitampura is the single largest with 540 seats (BA-LLB 300 + BBA-LLB 240). Final sanctioned intake is notified on ipu.ac.in before counselling.'],
+  ['question' => 'What is the law fee at the IPU campus (USL&LS) 2026-27?', 'answer' => 'Per Part E, Chapter 14 of the brochure, BA-LLB / BBA-LLB at USL&LS for 2026-27 is: tuition Rs. 1,45,200 + university charges Rs. 20,000 + alumni one-time Rs. 2,000 + exam Rs. 3,000 + innovation Rs. 500 + infrastructure Rs. 10,000 = <strong>Rs. 1,80,700 (Year 1 total)</strong>. Year 2: Rs. 1,93,220. Year 3: Rs. 2,09,192. Year 4: Rs. 2,26,761. Year 5: Rs. 2,46,087.'],
+  ['question' => 'What is the law fee at IPU affiliated colleges 2026-27?', 'answer' => 'Affiliated colleges charge per the 6th SFRC Delhi Gazette Notification dated 14.07.2025 — typically <strong>Rs. 1,15,000 to Rs. 1,55,000 per year tuition</strong> for BA-LLB / BBA-LLB. Add Rs. 25,000-30,000 in university charges, exam, innovation, alumni and welfare contributions. Total annual cost ~Rs. 1,40,000-1,80,000 at most affiliated colleges (VIPS, MAIMS, Fairfield, DME, Gitarattan).'],
+  ['question' => 'Does IPU also offer LLB (3-year) and LLM?', 'answer' => 'Yes. Per the 2026-27 brochure: <strong>3-year LLB</strong> is offered at USL&LS (60 seats), VIPS-TC Pitampura (30 seats) and Chanderprabhu Jain Narela (60 seats) — total fee at USS Rs. 1,80,700/year. <strong>1-year LLM</strong> is offered at USL&LS (4 specialisations × 30 seats: Corporate Law, Criminal Justice, IPR, ADR) and 12+ affiliated colleges including MAIMS, VIPS, DIST, Fairfield, Gitarattan, Ideal, KCC and JEMTEC. LLM admission is through IPU CET (LLM).'],
+  ['question' => 'What is the eligibility for BA-LLB and BBA-LLB at IPU 2026?', 'answer' => 'Class 12 (10+2) pass with minimum <strong>50% aggregate</strong> from a recognised board (45% for SC/ST/OBC/PwD), with English as a compulsory subject. Maximum age 22 years (24 for SC/ST/OBC) per BCI rules. Admission is through <strong>CUET (UG)</strong> or CLAT (where applicable) followed by centralised online counselling at ipu.ac.in. Marks are not rounded off (Important Instruction #28).'],
+  ['question' => 'What is the IPU law admission process for 2026?', 'answer' => '5-step process: (1) Appear for CLAT 2026 (for BA-LLB/BBA-LLB) or graduation completion (for 3-year LLB). (2) Get CLAT rank or apply directly via IPU CET-Law. (3) Register for GGSIPU online counselling once it opens at ipu.admissions.nic.in. (4) Pay counselling fee, fill college and branch choices, lock by deadline. (5) Accept Round 1 seat allotment and report to allotted college with documents and tuition fee within the reporting window. Round 2 and 3 follow for vacant seats. Call 9899991342 for the latest dates.'],
+  ['question' => 'Is there management quota for IPU law colleges?', 'answer' => 'Yes, select private affiliated law colleges under IPU offer 15-20% seats under the management quota for candidates with lower CLAT ranks. Fee for management quota is significantly higher than the regular seat (typically 1.5-2x). Seats are limited and fill quickly during counselling. Call 9899991342 for current management-quota seat availability.'],
+  ['question' => 'Which is the best law college under IPU?', 'answer' => 'USLLS (University School of Law and Legal Studies, the university\'s own on-campus school in Dwarka) is the most reputed law school under GGSIPU with the lowest fee. Among private affiliated colleges, <a href="vips-admission.php">VIPS-TC Pitampura</a> and <a href="maims-admission.php">MAIMS Rohini</a> are highly ranked for placements and intake. Fairfield Bijwasan and <a href="ideal-admission.php">Ideal Karkardooma</a> are strong alternatives for mid-rank CLAT scorers. Call 9899991342 for college-fit consultation.']
+];
+$faqs = array_merge($faqs ?? [], [
+  ['question' => 'What are IPU law college fees?', 'answer' => 'At USLLS (the university school), BA LLB / BBA LLB (5-year) tuition is Rs. 1,45,200 - 2,12,587 per year, about Rs. 8.9 lakh in total, and the 3-year LLB is Rs. 1,30,000 per year (GGSIPU Admission Brochure 2026-27 and 6th SFRC notification). Affiliated law colleges have their own SFRC-regulated fees. See the <a href="/ipu-fees-structure.php#ballb-fees">IPU fee structure</a>.']
+]);
+include 'include/components/faq-section.php';
+?>
 
 <?php
 $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
     ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],
+    ['title' => 'IPU BA-LLB Cutoff', 'url' => '/ipu-ba-llb-cutoff.php', 'desc' => 'Round-wise CLAT rank cutoffs for BA-LLB and BBA-LLB at IPU law schools'],
 ];
 include 'include/components/related-pages.php';
 ?>
 
+<!-- Course Schema (Integrated Law at GGSIPU) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Integrated 5-Year Law (BA-LLB / BBA-LLB Hons.) at Guru Gobind Singh Indraprastha University",
+  "description": "5-year integrated law programmes (Programme Code 121) offered at USL&LS (on-campus) and 12+ affiliated colleges with combined intake of 2,400+ seats per the 2026-27 brochure. USL&LS also offers 3-year LLB (Code 238) and four 1-year LLM specialisations (Code 112). Admission priority for Code 121: 1. CLAT UG 2026 / 2. CUET#.",
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+    "sameAs": "https://www.ipu.ac.in/"
+  },
+  "educationalCredentialAwarded": "BA-LLB (Hons.) / BBA-LLB (Hons.)",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "courseWorkload": "P5Y",
+    "location": {"@type": "Place", "name": "Delhi NCR"}
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition",
+    "priceCurrency": "INR",
+    "priceSpecification": {"@type": "PriceSpecification", "price": "145200", "priceCurrency": "INR", "description": "USL&LS tuition per annum 2026-27 (affiliated colleges Rs. 1,15,000-1,55,000)"}
+  }
+}
+</script>
+
 <?php include_once("include/base-footer.php") ?>
+
+<!-- ===== HowTo Schema — Phase B Day 4 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to apply for IPU law admission 2026",
+  "description": "Step-by-step process for IPU BA-LLB, BBA-LLB, LL.B. and LL.M. admission via GGSIPU counselling 2026.",
+  "totalTime": "P60D",
+  "estimatedCost": {"@type":"MonetaryAmount","currency":"INR","value":"1500"},
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Appear for CLAT 2026 or relevant entrance","text":"For BA-LLB/BBA-LLB (5-year integrated), appear for CLAT 2026. For 3-year LL.B., complete graduation. For LL.M., appear for CLAT PG."},
+    {"@type":"HowToStep","position":2,"name":"Get entrance result","text":"Wait for CLAT result or IPU CET-Law result. Your rank determines GGSIPU counselling allotment."},
+    {"@type":"HowToStep","position":3,"name":"Register for GGSIPU counselling","text":"Visit ipu.admissions.nic.in once counselling registration opens. Create candidate login with CLAT/graduation details."},
+    {"@type":"HowToStep","position":4,"name":"Pay counselling fee","text":"Pay GGSIPU counselling registration fee (Rs.1,500 general, Rs.750 reserved) online."},
+    {"@type":"HowToStep","position":5,"name":"Fill college and programme choices","text":"Add preferred law colleges and programmes in priority order. Lock choices before deadline."},
+    {"@type":"HowToStep","position":6,"name":"Accept Round 1 allotment","text":"Round 1 allotment published 5-7 days after registration closes. Accept the seat and report to the allotted college with documents and tuition fee within the reporting window."}
+  ]
+}
+</script>
+<!-- ===== /HowTo Schema ===== -->
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>Top 10 MCA Colleges in IPU 2026 | NIMCET, Fees, Placements Ranking</title>
 <meta name="description" content="Top 10 MCA colleges under IP University 2026 ranked: USICT, VIPS, JIMS, Tecnia, Bharati Vidyapeeth. NIMCET cutoff, fees Rs.1.3L, placements. Call 9899991342.">
@@ -88,6 +88,7 @@ include 'include/components/hero-banner.php';
   <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);color:#0d1b6e;margin-bottom:16px">Top 10 MCA Colleges in IPU 2026 – Fees, Placements & NIMCET Cutoff</h1>
 
   <p>MCA (Master of Computer Applications) is a highly sought-after postgraduate IT programme under <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>. With India's IT sector growing rapidly, an MCA degree from a top IPU college can open doors to software development, data science, cloud engineering and DevOps roles with packages of 6-12 LPA. This 2026 ranking compares the top 10 MCA colleges under IPU on the basis of NIMCET cutoffs, fees, seats and placement records. Call <a href="tel:+919899991342">9899991342</a> for free MCA counselling help.</p>
+  <p style="margin-top:12px">First-timer to GGSIPU admissions? Read the <a href="/GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Steps for MCA Aspirants</a> for the full round-wise walkthrough.</p>
 
   <h2 style="color:#0d1b6e;margin-top:30px">MCA IPU Ranking Comparison Table 2026</h2>
   <div style="overflow-x:auto">
@@ -103,7 +104,7 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">1</span></td><td style="padding:10px 14px"><strong>USICT</strong></td><td style="padding:10px 14px">Dwarka (Govt)</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">NIMCET Top</td><td style="padding:10px 14px">6-12 LPA</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">1</span></td><td style="padding:10px 14px"><strong>USICT</strong></td><td style="padding:10px 14px">Dwarka (Govt)</td><td style="padding:10px 14px">Rs. 1,45,200</td><td style="padding:10px 14px">NIMCET Top</td><td style="padding:10px 14px">6-12 LPA</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">2</span></td><td style="padding:10px 14px"><strong>VIPS</strong></td><td style="padding:10px 14px">Pitampura</td><td style="padding:10px 14px">Rs. 1,50,000</td><td style="padding:10px 14px">85-92%ile</td><td style="padding:10px 14px">5-10 LPA</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">3</span></td><td style="padding:10px 14px"><strong>BVICAM</strong></td><td style="padding:10px 14px">Paschim Vihar</td><td style="padding:10px 14px">Rs. 1,40,000</td><td style="padding:10px 14px">80-87%ile</td><td style="padding:10px 14px">5-8 LPA</td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:10px 14px"><span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:#f59e0b;color:#fff;text-align:center;font-weight:700;line-height:26px">4</span></td><td style="padding:10px 14px"><strong>C-DAC Noida</strong></td><td style="padding:10px 14px">Noida (Govt)</td><td style="padding:10px 14px">Rs. 1,30,000</td><td style="padding:10px 14px">NIMCET based</td><td style="padding:10px 14px">6-12 LPA</td></tr>
@@ -122,7 +123,7 @@ include 'include/components/hero-banner.php';
   <p>University School of Information, Communication &amp; Technology (USICT) is IPU's flagship government constituent school at the Dwarka campus. USICT offers MCA (Software Engineering) with 120 seats and is the top choice for MCA aspirants targeting government fees and top-tier placements.</p>
   <ul>
     <li><strong>Key features:</strong> Government constituent school, direct IPU faculty, modern labs, top recruiter pool</li>
-    <li><strong>Seats:</strong> 120 (MCA-SE) | <strong>Fees:</strong> Rs. 1,30,000/year | <strong>Entrance:</strong> NIMCET-based</li>
+    <li><strong>Seats:</strong> 120 (MCA-SE) | <strong>Fees:</strong> Rs. 1,45,200/year tuition (Total Y1 ~Rs. 1,80,700 per PG Brochure 2026-27 §14.1G) | <strong>Entrance:</strong> NIMCET-based</li>
     <li><strong>Placements:</strong> 6-12 LPA average; top recruiters include Microsoft, Adobe, TCS, Infosys, Accenture</li>
   </ul>
 
@@ -191,7 +192,7 @@ include 'include/components/hero-banner.php';
 
   <h2 style="color:#0d1b6e;margin-top:36px">Why Choose IPU for MCA in 2026?</h2>
   <ul>
-    <li><strong>USICT advantage:</strong> Direct access to IPU's flagship government MCA school at Rs. 1.30 lakh/year.</li>
+    <li><strong>USICT advantage:</strong> Direct access to IPU's flagship government MCA school at Rs. 1.45 lakh/year tuition (per PG Brochure 2026-27 §14.1G).</li>
     <li><strong>NIMCET-based admissions:</strong> A single national-level test opens multiple top colleges.</li>
     <li><strong>Low fees vs private universities:</strong> MCA at IPU costs 50-60% less than Amity, Manipal or Sharda.</li>
     <li><strong>Delhi-NCR IT hub:</strong> Highest density of IT companies, startups and MNCs outside Bangalore for internships and placements.</li>
@@ -213,7 +214,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -224,7 +225,7 @@ include 'include/components/hero-banner.php';
 $faqs = [
   ['question' => 'Which is the best MCA college in IPU?', 'answer' => 'USICT Dwarka is the best MCA college under IPU in 2026, followed by VIPS Pitampura and Bharati Vidyapeeth ICAM. USICT is IPU\'s own government school with the strongest placements (6-12 LPA). Call 9899991342 for personalised recommendations.'],
   ['question' => 'Is NIMCET mandatory for MCA in IPU?', 'answer' => 'NIMCET is the primary entrance exam for USICT and C-DAC Noida MCA admissions. Many other IPU affiliated MCA colleges also consider NIMCET scores or IPU CET MCA. Call 9899991342 to confirm which colleges accept which test.'],
-  ['question' => 'What is the MCA fee at USICT?', 'answer' => 'MCA (Software Engineering) at USICT Dwarka costs approximately Rs. 1,30,000 per year. USICT is a government constituent school of IPU, which keeps fees much lower than private affiliated colleges. Call 9899991342 for exact fee breakup.'],
+  ['question' => 'What is the MCA fee at USICT?', 'answer' => 'MCA (Software Engineering, Programme Code 105) at USICT Dwarka tuition is Rs. 1,45,200 per year per PG Brochure 2026-27 §14.1G (Total Y1 ~Rs. 1,80,700 incl. university charges). USICT is a government constituent school of IPU. Note: the Rs. 1,30,000 figure applies only to C-DAC Greater Noida MCA, not USICT. Call 9899991342 for exact fee breakup.'],
   ['question' => 'Which MCA college in IPU has best placements?', 'answer' => 'USICT and C-DAC Noida have the best MCA placements under IPU with 6-12 LPA averages. VIPS follows closely at 5-10 LPA. Top recruiters include Microsoft, Adobe, TCS, Infosys, Accenture and Wipro. Call 9899991342 for placement data.'],
   ['question' => 'What is the MCA admission process in IPU 2026?', 'answer' => 'Appear for NIMCET 2026, register on the GGSIPU counselling portal, fill MCA college preferences, accept seat allotment and pay fees to confirm admission. Call 9899991342 for step-by-step guidance.'],
   ['question' => 'Is C-DAC Noida good for MCA?', 'answer' => 'Yes. C-DAC Noida is a government autonomous institution offering MCA with 120 seats. It has placements of 6-12 LPA and NIMCET-based admission. Its reputation is on par with USICT. Call 9899991342 for admission help.'],
@@ -240,7 +241,7 @@ $related_pages = [
   ['title' => 'Top 10 BBA Colleges in IPU 2026', 'url' => '/top-bba-colleges-ipu.php', 'desc' => 'Ranked BBA colleges under IPU with fees and placements'],
   ['title' => 'Top 10 BCA Colleges in IPU 2026', 'url' => '/top-bca-colleges-ipu.php', 'desc' => 'Ranked BCA colleges under IPU with fees and placements'],
   ['title' => 'Top 10 B.Com Colleges in IPU 2026', 'url' => '/top-bcom-colleges-ipu.php', 'desc' => 'Ranked B.Com Hons colleges under IPU with fees and placements'],
-  ['title' => 'IPU MCA Admission 2026', 'url' => '/IPU-MCA-admission-2026.php', 'desc' => 'Complete MCA admission guide with NIMCET eligibility and dates'],
+  ['title' => 'IPU MCA Admission 2026', 'url' => '/mca-admission-ipu.php', 'desc' => 'Complete MCA admission guide with NIMCET eligibility and dates'],
   ['title' => 'USICT Admission Guide', 'url' => '/usict-admission.php', 'desc' => 'Complete admission guide for University School of ICT Dwarka'],
   ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi']
 ];

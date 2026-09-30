@@ -3,12 +3,47 @@
 // Replaces: header.php, header2.php, call-widgets.php
 ?>
 
+<style>
+  :root{ --action:#ff7a1a; --action-label:#0d1b6e; --ink:#0d1b6e; --border-strong:#d4d3df; }
+
+  /* Desktop header call button */
+  .nav-call-btn{display:none}
+  @media(min-width:992px){
+    .nav-call-btn{display:inline-flex;align-items:center;gap:7px;background:var(--action);color:var(--action-label);
+      font-weight:800;font-size:14px;line-height:1;text-decoration:none;padding:11px 18px;border-radius:999px;
+      white-space:nowrap;flex:0 0 auto;transition:filter .15s ease}
+    .nav-call-btn:hover{filter:brightness(.92);color:var(--action-label)}
+    .nav-call-btn svg{fill:var(--action-label)}
+    .header-area .navbar-nav.mx-auto{margin-right:12px !important}
+  }
+
+  /* Recolour ONLY call-type primary buttons (hero / cta-strip / hero-banner) — icon is currentColor */
+  .ipu-btn-primary[href^="tel:"]{background:var(--action) !important;color:var(--action-label) !important}
+  .ipu-btn-primary[href^="tel:"] svg{fill:var(--action-label)}
+
+  /* College-block call button (injected by JS on ranked pages) */
+  .cb-call-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:var(--action);
+    color:var(--action-label);font-weight:800;font-size:14px;text-decoration:none;padding:9px 16px;border-radius:999px}
+  .cb-call-btn svg{fill:var(--action-label)}
+
+  /* Mobile sticky bar — Call(7) + Enquire(3), mobile only */
+  @media(max-width:768px){
+    .mobile-call-cta{background:#fff !important;padding:10px 12px calc(10px + env(safe-area-inset-bottom)) !important;
+      border-top:1px solid var(--border-strong);box-shadow:0 -2px 10px rgba(5,0,56,.08) !important;
+      display:flex !important;gap:8px;align-items:stretch}
+    .mobile-call-btn{flex:7 1 0;width:auto !important;background:var(--action) !important;color:var(--action-label) !important;
+      border-radius:999px !important;min-height:50px;font-size:16px;font-weight:800;box-shadow:none !important;margin:0}
+    .mobile-call-btn svg{fill:var(--action-label)}
+    .mobile-enquire-btn{flex:3 1 0;display:flex;align-items:center;justify-content:center;min-height:50px;
+      background:#fff;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);font-weight:800;
+      font-size:15px;text-decoration:none;white-space:nowrap}
+    body{padding-bottom:74px}
+  }
+  @media(min-width:769px){ .mobile-call-cta{display:none !important} }
+</style>
+
 <!-- GTM noscript fallback -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXCN7Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-<!-- Preloader -->
-<div id="preloader"><div class="spinner"></div></div>
-
 
 <!-- Header -->
 <header class="header-area">
@@ -78,17 +113,24 @@
 
         </div>
 
+        <!-- Desktop header call button -->
+        <a class="nav-call-btn" href="tel:+919899991342" data-cta-src="header">
+          <svg width="17" height="17" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          Call now
+        </a>
+
       </nav>
     </div>
   </div>
 </header>
 
-<!-- Mobile Sticky Call CTA -->
+<!-- Mobile Sticky Call CTA — Call (7) + Enquire (3) -->
 <div class="mobile-call-cta" id="mobileCallCTA">
-  <a href="tel:+919899991342" class="mobile-call-btn">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="#0d1b6e"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-    CALL: 9899991342
+  <a href="tel:+919899991342" class="mobile-call-btn" data-cta-src="sticky">
+    <svg width="18" height="18" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+    Call a counsellor
   </a>
+  <a href="#enquiry-form" class="mobile-enquire-btn" data-cta-src="sticky-enquire">Enquire</a>
 </div>
 
 <!-- Mobile Menu Toggle Script -->
@@ -122,13 +164,36 @@
   }
 })();
 </script>
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var el = e.target.closest && e.target.closest('[data-cta-src]');
+    if(!el) return;
+    var src = el.getAttribute('data-cta-src') || 'unknown';
+    var evt = src.indexOf('enquire') > -1 ? 'cta_enquire' : 'cta_call';
+    if(typeof window.gtag === 'function'){
+      window.gtag('event', evt, { cta_src: src, page_path: location.pathname });
+    } else if(window.dataLayer){
+      window.dataLayer.push({ event: evt, cta_src: src, page_path: location.pathname });
+    }
+  }, true);
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var blocks = document.querySelectorAll('.college-block');
+  if(!blocks.length) return;
+  blocks.forEach(function(b){
+    if(b.querySelector('.cb-call-btn')) return;
+    var h = b.querySelector('h3');
+    var name = h ? h.textContent.replace(/^\s*\d+\s*/,'').split('–')[0].trim() : 'this college';
+    var a = document.createElement('a');
+    a.className = 'cb-call-btn';
+    a.href = 'tel:+919899991342';
+    a.setAttribute('data-cta-src', 'row');
+    a.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> Ask about ' + name;
+    b.appendChild(a);
+  });
+});
+</script>
 
-<!-- Desktop Call Widget -->
-<div class="desktop-call-widget" id="desktopCallWidget">
-  <p><strong>Need Admission Help?</strong></p>
-  <p>Expert guidance for B.Tech, BBA, Law &amp; MBA</p>
-  <a href="tel:+919899991342" class="widget-call-btn">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="#0d1b6e" style="vertical-align:middle;margin-right:4px"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-    Call Now
-  </a>
-</div>

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>IPU CET Cutoff 2025 | BBA, BCA, BJMC, B.Com Score Analysis</title>
 <meta name="description" content="IPU CET cutoff 2025 – course-wise score analysis for BBA, BCA, BJMC, B.Com. CET to CUET transition guide. Call 9899991342 for free admission guidance.">
@@ -40,21 +40,6 @@
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ipu.co.in/"},
     {"@type": "ListItem", "position": 2, "name": "Cutoff Analysis", "item": "https://ipu.co.in/ipu-cutoff-analysis.php"},
     {"@type": "ListItem", "position": 3, "name": "IPU CET Cutoff 2025"}
-  ]
-}
-</script>
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Is IPU CET still conducted in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "From 2026, most IPU undergraduate courses have shifted to CUET as the entrance exam. IPU CET is no longer conducted for BBA, BCA, BJMC, and B.Com. However, some specialised programmes may still use IPU CET. Check the official notification."}},
-    {"@type": "Question", "name": "What is the difference between IPU CET and CUET?", "acceptedAnswer": {"@type": "Answer", "text": "IPU CET was conducted exclusively by GGSIPU for admission to its affiliated colleges. CUET is a national-level exam conducted by NTA. CUET scores are accepted by multiple central and state universities. The syllabus and pattern differ significantly."}},
-    {"@type": "Question", "name": "Can I use old IPU CET cutoffs to predict CUET cutoffs?", "acceptedAnswer": {"@type": "Answer", "text": "IPU CET and CUET have different scoring patterns, so direct comparison is not accurate. However, the relative ranking of colleges remains similar. Top colleges like VIPS and MAIMS will still have the highest cutoffs under CUET."}},
-    {"@type": "Question", "name": "Which courses at IPU now use CUET instead of CET?", "acceptedAnswer": {"@type": "Answer", "text": "BBA, BCA, BJMC, B.Com, BA Economics, BA English, and most other undergraduate programmes now use CUET scores. B.Tech uses JEE Main. Law programmes use CLAT/AILET. MBA uses CAT/CMAT."}},
-    {"@type": "Question", "name": "How can I check my IPU admission chances for 2026?", "acceptedAnswer": {"@type": "Answer", "text": "For 2026 admission, use your CUET score to compare against 2025 cutoffs. Refer to course-specific cutoff pages on our website. For personalized prediction, call 9899991342 for free expert guidance."}}
   ]
 }
 </script>
@@ -154,7 +139,7 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BBA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~92 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~83 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bba-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View BBA Cutoff</a></td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BBA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~92 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~83 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bba-cutoff.php" style="color:#1a3a9c;font-weight:600">View BBA Cutoff</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><strong>BCA</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~70 (IITM)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/bca-admission-ipu.php" style="color:#1a3a9c;font-weight:600">View BCA Details</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:12px 14px;font-size:14px"><strong>BJMC</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~85 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~65 (JIMS)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bjmc-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View BJMC Cutoff</a></td></tr>
       <tr style="border-bottom:1px solid #e2e8f0;background:#f8faff"><td style="padding:12px 14px;font-size:14px"><strong>B.Com</strong></td><td style="padding:12px 14px;text-align:center;font-size:14px">~78 (VIPS)</td><td style="padding:12px 14px;text-align:center;font-size:14px">~60 (IITM)</td><td style="padding:12px 14px;text-align:center;font-size:14px"><a href="/ipu-bcom-cutoff-2025.php" style="color:#1a3a9c;font-weight:600">View B.Com Cutoff</a></td></tr>
@@ -190,7 +175,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-  <?php include 'include/sidebar-cta.php'; ?>
+  <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div>
 </div>
@@ -215,11 +200,11 @@ include 'include/components/faq-section.php';
 <?php
 $related_pages = [
   ['title' => 'IPU B.Tech Cutoff 2025', 'url' => '/ipu-btech-cutoff-2025.php', 'desc' => 'College-wise B.Tech cutoff for all branches at IPU based on JEE Main'],
-  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff-2025.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
+  ['title' => 'IPU BBA Cutoff 2025', 'url' => '/ipu-bba-cutoff.php', 'desc' => 'Round-wise BBA cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU BJMC Cutoff 2025', 'url' => '/ipu-bjmc-cutoff-2025.php', 'desc' => 'Round-wise BJMC cutoff for top IPU colleges with CUET percentile analysis'],
   ['title' => 'IPU Cutoff Analysis Hub', 'url' => '/ipu-cutoff-analysis.php', 'desc' => 'Course-wise cutoff analysis for B.Tech, BBA, Law and more at IPU'],
   ['title' => 'IPU Counselling Guide', 'url' => '/GGSIPU-counselling-for-B-Tech-admission.php', 'desc' => 'Step-by-step IPU counselling process – choice filling & seat allotment'],
-  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
+  ['title' => 'IPU Helpline', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Get expert guidance on IPU admission – call 9899991342']
 ];
 include 'include/components/related-pages.php';
 ?>

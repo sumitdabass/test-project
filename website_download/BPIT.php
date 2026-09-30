@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) { session_cache_limiter('public'); session_cache_expire(30); session_start(); }
 include_once("include/base-head.php");
 ?>
 
@@ -10,11 +10,34 @@ include_once("include/form-handler.php");
 
 <title>BPIT Rohini 2026 | B.Tech Admission, Courses & Placements – IPU</title>
 <meta name="description" content="BPIT (Bhagwan Parshuram Institute of Technology) Rohini – B.Tech CSE, IT, ECE, BBA, MBA. Cutoff, fees & placements. Call 9899991342 for free IPU admission help.">
+<link rel="canonical" href="https://ipu.co.in/BPIT.php">
 
 
 <?php
 $breadcrumbs = [['Home', '/'], ['Admissions', '/ipu-admission-guide.php'], ['BPIT Admission', '']];
 include 'include/components/breadcrumb-schema.php';
+?>
+
+<?php
+$college = [
+  'name'        => 'Bhagwan Parshuram Institute of Technology',
+  'short_name'  => 'BPIT',
+  'url'         => 'https://ipu.co.in/BPIT.php',
+  'address'     => 'Rohini, Delhi',
+  'courses'     => [
+    'B.Tech Computer Science Engineering',
+    'B.Tech Information Technology',
+    'B.Tech Electronics & Communication Engineering',
+    'B.Tech Computer Science – Data Science',
+    'B.Tech Electrical Engineering',
+    'BBA',
+    'MBA',
+  ],
+  'total_seats' => 780,
+  // 'founded'       => omitted – not stated on page
+  // 'accreditation' => omitted – not stated on page
+];
+include 'include/components/college-schema.php';
 ?>
 </head>
 
@@ -25,14 +48,11 @@ include 'include/components/breadcrumb-schema.php';
 
 <!-- ================= BANNER ================= -->
 
-<section class="banner-area banner-three mt-0 bg_cover d-flex align-items-end">
-<div class="container text-center">
-<h1 class="white ft-35">
-BPIT College (Bhagwan Parshuram Institute of Technology) – Complete Guide
-</h1>
-</div>
-<div class="banner-shape"></div>
-</section>
+<?php
+$hero_h1 = 'BPIT College (Bhagwan Parshuram Institute of Technology) – Complete Guide';
+$hero_show_form = false;
+include __DIR__ . '/include/components/page-hero.php';
+?>
 
 
 <section class="blog-wrapper pt-130 pb-130">
@@ -56,7 +76,7 @@ BPIT College (Bhagwan Parshuram Institute of Technology) – Complete Guide
 
 <div class="blog-details">
 
-<img loading="lazy" src="assets/images/bpit-college.jpg" class="main-img" alt="BPIT College IP University">
+<picture><source srcset="assets/images/IP-University-b-tech-admission.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="BPIT College IP University"></picture>
 
 
 <?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
@@ -175,7 +195,7 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
 <ul>
 <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS Guide</a></li>
 <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT College Review</a></li>
-<li><a href="vips-pitampura-courses.php">VIPS Pitampura Review</a></li>
+<li><a href="vips-admission.php">VIPS Pitampura Review</a></li>
 </ul>
 
 
@@ -194,14 +214,14 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech IT</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">180</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech EEE</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE (Data Science)</td><td style="padding:10px;text-align:center">Rs. 1,65,770 (year 1)</td><td style="padding:10px;text-align:center">60</td></tr>
     </tbody>
   </table>
-  <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at BPIT: ~420.</p>
+  <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: UG Brochure 2026-27 Ch 13 SN 10 (BPIT seat intake) + 6th SFRC Notification F.No. DHE.18(1)/6th SFRC/2023/3205-15 dated 14.07.2025 (Appendix 13(i)) for fees. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at BPIT: 600 (CSE 180 + IT 180 + ECE 120 + EEE 60 + CSE-DS 60). BPIT also offers BBA 60+60 (2 shifts) and MBA 60.</p>
 </div>
 
 <hr>
@@ -231,7 +251,7 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
 
 
 <div class="col-lg-4">
-<?php include_once("include/sidebar-cta.php") ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 
 </div>
@@ -245,6 +265,13 @@ $related_pages = [
     ['title' => 'IPU Management Quota Admission', 'url' => '/IP-University-management-quota-admission-eligibility-criteria.php', 'desc' => 'Direct admission to B.Tech, BBA, Law & MBA at IPU colleges'],
     ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
 ];
+$facts_key = 'bpit'; include 'include/components/college-facts-block.php';
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Bhagwan Parshuram Institute of Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

@@ -1,4 +1,4 @@
-<?php session_start(); ob_start(); include_once("include/form-handler.php"); ?>
+<?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
 <title>GTBIT Admission 2026 | IPU Govt-Aided B.Tech College</title>
 <meta name="description" content="GTBIT admission 2026 under IPU. Govt-aided B.Tech & MCA at low fees. Courses, placements & more. Call 9899991342 for free guidance.">
@@ -123,9 +123,9 @@ include 'include/components/hero-banner.php';
       </tr>
     </thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">45</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">120</td></tr>
-      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,55,700</td><td style="padding:10px;text-align:center">65</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech CSE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">45</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0;background:#f0f4ff"><td style="padding:10px">B.Tech ECE</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">120</td></tr>
+      <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">B.Tech AI & Machine Learning</td><td style="padding:10px;text-align:center">Rs. 1,60,100 - 1,65,770 (year 1; confirm with college)</td><td style="padding:10px;text-align:center">65</td></tr>
     </tbody>
   </table>
   <p style="font-size:12px;color:#94a3b8;margin:12px 0 0">Source: GGSIPU Official Notification. Additional charges: University fee Rs. 20,000/yr + Exam fee Rs. 3,000/yr + Innovation fee Rs. 500/yr. Alumni contribution Rs. 2,000 (one-time). Total B.Tech seats at GTBIT: ~230. Note: GTBIT is government-aided, so actual fees may be lower than private colleges.</p>
@@ -133,7 +133,7 @@ include 'include/components/hero-banner.php';
 
 </div>
 <div class="col-lg-4">
-<?php include 'include/sidebar-cta.php'; ?>
+<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
 </div>
 </div></div>
 </section>
@@ -157,6 +157,12 @@ $related_pages = [
   ['title' => 'Top B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare the best engineering colleges under GGSIPU'],
   ['title' => 'ADGITM College Profile', 'url' => '/adgitm-admission.php', 'desc' => 'Explore Dr. Akhilesh Das Gupta Institute of Technology'],
 ];
+// B.Tech round-wise cutoff table (2025-26 GGSIPU counselling)
+
+$cutoff_institute = 'Guru Teg Bahadur Institute of Technology';
+
+include 'include/components/btech-cutoff-rounds-table.php';
+
 include 'include/components/related-pages.php';
 ?>
 

@@ -1,0 +1,298 @@
+{
+  "mbs": {
+    "short": "MBS College",
+    "name": "MBS College, Dwarka",
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Arch",
+          "seats": "120"
+        },
+        {
+          "programme": "BBA",
+          "seats": "120"
+        },
+        {
+          "programme": "BCA",
+          "seats": "60"
+        }
+      ],
+      "source": "https://c9.shauryasoft.com/media/bny-wcp-2602222019-1815874162-1.pdf",
+      "as_of": "2026-09-30",
+      "note": "list of courses with approved intake published in the college's mandatory disclosure; B.Tech and B.Com (Hons) are not in that list"
+    }
+  },
+  "msit": {
+    "short": "MSIT",
+    "name": "Maharaja Surajmal Institute of Technology",
+    "campus_area_acres": {
+      "v": 8,
+      "source": "https://msit.in/about",
+      "as_of": "2026-09-30"
+    },
+    "avg_package_lpa": {
+      "v": 7.1,
+      "source": "https://msit.in/placements",
+      "as_of": "2026-09-30",
+      "note": "2025 placements as published by the college, all branches; 2024 was 7.5 LPA and 2023 was 8.5 LPA"
+    },
+    "highest_package_lpa": {
+      "v": 50,
+      "source": "https://msit.in/placements",
+      "as_of": "2026-09-30",
+      "note": "2025 placements as published by the college"
+    },
+    "accreditation": {
+      "v": "NAAC 'A' grade, NBA accreditation for CSE, IT, ECE and EEE, AICTE approved and affiliated to GGSIPU",
+      "source": "https://www.msit.in/",
+      "as_of": "2026-09-30"
+    },
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "300"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "240"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "60"
+        }
+      ],
+      "source": "https://msit.in/about",
+      "as_of": "2026-09-30"
+    }
+  },
+  "bpit": {
+    "short": "BPIT",
+    "name": "Bhagwan Parshuram Institute of Technology",
+    "campus_area_acres": {
+      "v": 6,
+      "source": "https://bpitindia.ac.in/about/",
+      "as_of": "2026-09-30"
+    },
+    "avg_package_cse_lpa": {
+      "v": 7.7,
+      "source": "https://bpitindia.ac.in/placement-record/",
+      "as_of": "2026-09-30",
+      "note": "2026 placements as published by the college; 2025 was 9.5 LPA"
+    },
+    "highest_package_lpa": {
+      "v": 53.35,
+      "source": "https://bpitindia.ac.in/placement-record/",
+      "as_of": "2026-09-30",
+      "note": "2022-26 batch, Adobe, as published by the college"
+    },
+    "accreditation": {
+      "v": "NBA-accredited B.Tech programmes (CSE, ECE and EEE), AICTE approved and affiliated to GGSIPU",
+      "source": "https://bpitindia.ac.in/about/",
+      "as_of": "2026-09-30"
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 202270,
+        "note": "total first-year fee for session 2026-27, including Rs. 1,65,770 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BBA",
+        "per_year_inr": 161020,
+        "note": "total first-year fee for session 2026-27, including Rs. 1,24,520 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "MBA",
+        "per_year_inr": 240220,
+        "note": "total first-year fee for session 2026-27, including Rs. 2,03,720 tuition plus university, alumni, security, examination and other charges",
+        "source": "https://bpitindia.ac.in/wp-content/uploads/2026/07/Annual-fee-for-first-year-2026-27_compressed.pdf",
+        "as_of": "2026-09-30"
+      }
+    ]
+  },
+  "maims": {
+    "short": "MAIMS",
+    "name": "Maharaja Agrasen Institute of Management Studies",
+    "accreditation": {
+      "v": "NAAC Grade 'A++' institution, affiliated to GGSIP University, recognised under section 2(f) of UGC, recognised by the Bar Council of India and ISO 9001:2015 certified",
+      "source": "https://maims.ac.in/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "bvp": {
+    "short": "BVP (BVCOE)",
+    "name": "Bharati Vidyapeeth's College of Engineering, New Delhi",
+    "accreditation": {
+      "v": "AICTE approved, affiliated to GGSIPU, ISO 9001:2015 certified, NBA-accredited B.Tech programmes (CSE, IT, ECE and EEE) from A.Y. 2025-26 to 2027-28 (valid up to 30.06.2028), and placed in the NIRF 2024 engineering rank band 201-300",
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
+      "as_of": "2026-09-30"
+    },
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "240"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "60"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "120"
+        },
+        {
+          "programme": "B.Tech Instrumentation & Control Engineering",
+          "seats": "30"
+        },
+        {
+          "programme": "B.Tech CSE (AI & ML)",
+          "seats": "120"
+        }
+      ],
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
+      "as_of": "2026-09-30",
+      "note": "AICTE-approved intake for A.Y. 2025-26, total 750"
+    },
+    "last_rank_cse": {
+      "v": "125,163 (2023-24), 143,048 (2024-25) and 159,959 (2025-26)",
+      "source": "https://bvcoend.ac.in/wp-content/uploads/2025/12/AICTE-Mandatory-Disclosure_2025-26.pdf",
+      "as_of": "2026-09-30"
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 212270,
+        "note": "total first-year payment for the 2026-27 batch, including Rs. 1,65,770 academic fee, university fee and other charges",
+        "source": "https://bvcoend.ac.in/wp-content/uploads/2026/07/Fee-Structure-1st-Year-LE-Batch-2026-2027.pdf",
+        "as_of": "2026-09-30"
+      }
+    ]
+  },
+  "msi": {
+    "short": "MSI",
+    "name": "Maharaja Surajmal Institute",
+    "accreditation": {
+      "v": "NAAC 'A' grade, Category 'A' by SFRC and 'A' by JAC (Delhi Government), AICTE and BCI approved",
+      "source": "https://www.msijanakpuri.com/",
+      "as_of": "2026-09-30"
+    }
+  },
+  "adgitm": {
+    "short": "ADGIPS (formerly ADGITM)",
+    "name": "Dr. Akhilesh Das Gupta Institute of Professional Studies (formerly ADGITM)",
+    "campus_area_acres": {
+      "v": 8.08,
+      "source": "https://adgips.ac.in/about-adgips/",
+      "as_of": "2026-09-30"
+    },
+    "accreditation": {
+      "v": "NBA-accredited programmes (CSE, ECE, ME and Civil), approved by AICTE and BCI, affiliated to GGSIPU",
+      "source": "https://adgips.ac.in/about-adgips/",
+      "as_of": "2026-09-30"
+    },
+    "fees": [
+      {
+        "course": "B.Tech",
+        "per_year_inr": 160100,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BBA",
+        "per_year_inr": 124900,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "BA LLB / BBA LLB",
+        "per_year_inr": 128500,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      },
+      {
+        "course": "MBA",
+        "per_year_inr": 174000,
+        "note": "first-year fee, 2026-27",
+        "source": "https://adgips.ac.in/",
+        "as_of": "2026-09-30"
+      }
+    ]
+  },
+  "mait": {
+    "short": "MAIT",
+    "name": "Maharaja Agrasen Institute of Technology",
+    "intake": {
+      "v": [
+        {
+          "programme": "B.Tech Computer Science & Engineering",
+          "seats": "360 + 60"
+        },
+        {
+          "programme": "B.Tech CSE (AI & ML)",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Computer Science & Technology",
+          "seats": "180"
+        },
+        {
+          "programme": "B.Tech Electronics & Communication Engineering",
+          "seats": "120"
+        },
+        {
+          "programme": "B.Tech Electronics Engineering (VLSI Design and Technology)",
+          "seats": "60"
+        },
+        {
+          "programme": "B.Tech Electrical & Electronics Engineering",
+          "seats": "90"
+        },
+        {
+          "programme": "B.Tech Information Technology",
+          "seats": "300"
+        },
+        {
+          "programme": "B.Tech Mechanical Engineering",
+          "seats": "90"
+        },
+        {
+          "programme": "BBA",
+          "seats": "120"
+        },
+        {
+          "programme": "BBA-MBA (5-year integrated)",
+          "seats": "60"
+        },
+        {
+          "programme": "MBA",
+          "seats": "180"
+        }
+      ],
+      "source": "https://mait.ac.in/index.php/abouts/about-us.html",
+      "as_of": "2026-09-30"
+    },
+    "highest_package_lpa": {
+      "v": 130,
+      "source": "https://mait.ac.in/images/placement/2021-25.pdf",
+      "as_of": "2026-09-30",
+      "note": "2025 B.Tech batch, Clay Construction Group (USA); the college lists 1,375 offers across 159 companies and drives"
+    }
+  }
+}
