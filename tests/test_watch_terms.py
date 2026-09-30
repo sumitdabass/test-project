@@ -29,3 +29,9 @@ def test_missing_term_is_reported_as_missing(tmp_path):
     wt.build_baseline(base_q, base)
     out = wt.compare(base, new_q)
     assert len(out) == 1 and out[0]["term"] == "usar" and out[0].get("missing") is True
+
+
+def test_watch_list_covers_adgips_test_terms():
+    import importlib; importlib.reload(wt)
+    for term in ("adgitm", "dr akhilesh das gupta institute of technology and management"):
+        assert term in wt.WATCH

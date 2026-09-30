@@ -1,7 +1,7 @@
 <?php session_cache_limiter('public'); session_cache_expire(30); session_start(); ob_start(); include_once("include/form-handler.php"); ?>
 <?php include_once("include/base-head.php"); ?>
-<title>ADGITM Admission 2026 | IPU B.Tech, MBA, MCA Courses</title>
-<meta name="description" content="ADGITM admission 2026 under IPU. B.Tech, MBA, MCA courses, placements & fees. Call 9899991342 for free admission guidance at ADGITM Delhi.">
+<title>ADGIPS Delhi (formerly ADGITM) Admission 2026 – Fees, Cutoff & Courses</title>
+<meta name="description" content="ADGIPS Delhi (formerly ADGITM) under IPU: B.Tech, BBA, MBA, BA LLB and BBA LLB courses, fees and cutoff. Free admission guidance at 9899991342.">
 <link rel="canonical" href="https://ipu.co.in/adgitm-admission.php">
 <meta property="og:title" content="ADGITM Admission 2026 | IPU B.Tech, MBA, MCA Courses">
 <meta property="og:description" content="ADGITM admission 2026 under IPU. B.Tech, MBA, MCA courses, placements & fees. Call 9899991342 for free guidance.">

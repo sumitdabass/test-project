@@ -14,7 +14,7 @@ WATCH = [
     "mait", "mait cutoff", "mait cutoff 2026", "mait fees", "msit", "msit cutoff",
     "msit cutoff 2026", "msit janakpuri", "usict", "usict cutoff", "usict placement 2026",
     "usict mca fees", "usar", "usar delhi", "usar cutoff 2025", "usms ipu", "usms mba fees",
-    "uslls ba llb fees", "adgitm", "bpit", "bpit fees", "bvp college", "vips", "vips college fees",
+    "uslls ba llb fees", "adgitm", "dr akhilesh das gupta institute of technology and management", "bpit", "bpit fees", "bvp college", "vips", "vips college fees",
     "vips bba fees", "ipu btech", "ipu btech fees", "ipu colleges for btech", "ipu bba fees",
     "ggsipu bba fees", "ipu bcom hons fees", "ipu mba", "ipu mba fees", "ipu ba llb fees",
     "ipu ba llb counselling 2026", "ggsipu bba llb fees", "vips 3 year llb fees",

@@ -98,3 +98,14 @@ def test_mbs_page_states_eligibility_from_college_admission_page():
     for phrase in ("NATA", "45% aggregate", "JEE / CUET", "GGSIPU CET / CUET", "50% aggregate"):
         assert phrase in t, phrase
     assert "mbscollege.org/web/mbsclg/admission-v8.html" in t
+
+
+def test_adgips_tier_c_title_test_applied_exactly_as_approved():
+    t = read("adgitm-admission.php")
+    assert "<title>ADGIPS Delhi (formerly ADGITM) Admission 2026 – Fees, Cutoff & Courses</title>" in t
+    meta = re.search(r'<meta name="description" content="([^"]*)"', t).group(1)
+    assert meta.startswith("ADGIPS Delhi (formerly ADGITM) under IPU:") and len(meta) <= 160
+    assert "MCA" not in meta                      # MCA is not offered per adgips.ac.in
+    # everything else in the head stays as it was: canonical, hero heading
+    assert 'rel="canonical" href="https://ipu.co.in/adgitm-admission.php"' in t
+    assert '$hero_title = "ADGITM Admission 2026 &ndash; Courses, Fees &amp; Placements";' in t
