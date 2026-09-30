@@ -1,0 +1,34 @@
+<?php
+/**
+ * Appends FAQ entries from college-facts-2026.json to $faqs. Only fields with BOTH source and as_of render.
+ * Usage: $facts_key = 'mait'; include 'include/components/college-facts-faq.php'; (before faq-section.php)
+ * No phone numbers in answers (CTA Wave 2a strips them from FAQ JSON-LD).
+ */
+$faqs = $faqs ?? [];
+$facts_key = $facts_key ?? null;
+$__file = $facts_file_override ?? (__DIR__ . '/../data/college-facts-2026.json');
+$__all = is_file($__file) ? json_decode(file_get_contents($__file), true) : [];
+$__c = ($facts_key && is_array($__all)) ? ($__all[$facts_key] ?? null) : null;
+if ($__c) {
+    $__ok = fn($f) => is_array($f) && !empty($f['source']) && !empty($f['as_of']);
+    $__short = $__c['short'] ?? strtoupper($facts_key);
+    $__cite = fn($f) => ' (Source: ' . $f['source'] . ', as of ' . $f['as_of'] . '.)';
+    if (isset($__c['campus_area_acres']) && $__ok($__c['campus_area_acres'])) {
+        $f = $__c['campus_area_acres'];
+        $faqs[] = ['question' => "What is the campus area of $__short?", 'answer' => "$__short's campus covers about {$f['v']} acres." . $__cite($f)];
+    }
+    if (isset($__c['avg_package_cse_lpa']) && $__ok($__c['avg_package_cse_lpa'])) {
+        $f = $__c['avg_package_cse_lpa'];
+        $faqs[] = ['question' => "What is the average CSE package at $__short?", 'answer' => "The average package reported for CSE at $__short is {$f['v']} LPA." . $__cite($f)];
+    }
+    if (isset($__c['highest_package_lpa']) && $__ok($__c['highest_package_lpa'])) {
+        $f = $__c['highest_package_lpa'];
+        $faqs[] = ['question' => "What is the highest package at $__short?", 'answer' => "The highest package reported at $__short is {$f['v']} LPA." . $__cite($f)];
+    }
+    foreach (($__c['fees'] ?? []) as $fee) {
+        if ($__ok($fee) && isset($fee['course'], $fee['per_year_inr'])) {
+            $faqs[] = ['question' => "What are the {$fee['course']} fees at $__short?",
+                       'answer' => "{$fee['course']} tuition at $__short is Rs. " . number_format((int) $fee['per_year_inr']) . " per year." . $__cite($fee) . " University, exam and other charges are extra."];
+        }
+    }
+}

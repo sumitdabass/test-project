@@ -1,0 +1,39 @@
+import json, subprocess, textwrap
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+FACTS = ROOT / "website_download" / "include" / "data" / "college-facts-2026.json"
+COMPONENT = ROOT / "website_download" / "include" / "components" / "college-facts-faq.php"
+
+
+def test_every_field_has_source_and_as_of():
+    data = json.loads(FACTS.read_text())
+    for key, college in data.items():
+        for field, val in college.items():
+            if field in ("short", "name"):
+                continue
+            items = val if isinstance(val, list) else [val]
+            for item in items:
+                assert item.get("source"), f"{key}.{field} missing source"
+                assert item.get("as_of"), f"{key}.{field} missing as_of"
+
+
+def _run(facts, key):
+    code = textwrap.dedent(f"""\
+      <?php $faqs = []; $facts_key = '{key}'; $facts_file_override = '{facts}';
+      include '{COMPONENT}'; echo json_encode($faqs);""")
+    return json.loads(subprocess.run(["php"], input=code, text=True, capture_output=True).stdout)
+
+
+def test_component_skips_unsourced_fields(tmp_path):
+    f = tmp_path / "f.json"
+    f.write_text(json.dumps({"x": {"short": "X", "name": "X College",
+        "campus_area_acres": {"v": 5},                      # no source -> must be skipped
+        "highest_package_lpa": {"v": 30, "source": "https://example.test", "as_of": "2026-09-01"}}}))
+    out = _run(f, "x")
+    assert len(out) == 1 and "30" in out[0]["answer"] and "9899991342" not in out[0]["answer"]
+
+
+def test_component_empty_when_key_missing(tmp_path):
+    f = tmp_path / "f.json"; f.write_text("{}")
+    assert _run(f, "nope") == []
