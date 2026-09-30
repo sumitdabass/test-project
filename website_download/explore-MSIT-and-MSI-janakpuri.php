@@ -360,6 +360,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
     <?php
     $related_pages = [
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MSIT'],
         ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'JEE Main eligibility, top colleges, cutoffs & counselling process'],
         ['title' => 'All IPU Colleges List 2026', 'url' => '/ipu-colleges-list.php', 'desc' => 'Complete list of 60+ IPU affiliated colleges in Delhi'],
         ['title' => 'IPU Helpline – Call 9899991342', 'url' => '/ipu-helpline-contact-number.php', 'desc' => 'Free admission guidance from our expert team. Mon-Sat 9AM-7PM'],

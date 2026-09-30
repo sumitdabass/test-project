@@ -146,6 +146,8 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MAIT'],
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MSIT'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete B.Tech admission guide with eligibility and counselling dates'],
   ['title' => 'MAIT Admission Guide', 'url' => '/mait-admission.php', 'desc' => 'Detailed admission guide for Maharaja Agrasen Institute of Technology'],
   ['title' => 'MSIT Admission Guide', 'url' => '/msit-admission.php', 'desc' => 'Complete admission guide for MSIT Janakpuri']

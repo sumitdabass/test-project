@@ -201,6 +201,7 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MAIT'],
   ['title' => 'MAIT Admission Guide 2026', 'url' => '/mait-admission.php', 'desc' => 'Detailed MAIT admission process, eligibility and counselling guide'],
   ['title' => 'MAIMS Rohini – BBA, BCA, MBA', 'url' => '/maims-delhi-fees-courses.php', 'desc' => 'Sister institute of MAIT — Maharaja Agrasen Institute of Management Studies'],
   ['title' => 'IPU Counselling 2026', 'url' => '/ipu-counselling.php', 'desc' => 'Complete GGSIPU counselling schedule, fees, registration & process'],

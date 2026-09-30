@@ -125,7 +125,7 @@ Summary: USICT Dwarka - IPU's flagship technology school. B.Tech, M.Tech in CSE,
 
 ### USAR (University School of Automation & Robotics)
 URL: https://ipu.co.in/usar-admission.php
-Location: Dwarka, New Delhi
+Location: East Campus, Surajmal Vihar, Delhi
 Courses: B.Tech | Seats: 300
 Summary: USAR - IPU's school for Automation, Robotics & Instrumentation. B.Tech programmes in cutting-edge engineering fields.
 
@@ -469,6 +469,24 @@ GGSIPU (Primary Entity)
     -> Management Quota
         -> Direct admission outside counselling
 
+### MAIT Cutoff
+URL: https://ipu.co.in/mait-cutoff.php
+Summary: MAIT cutoff - branch-wise JEE Main closing ranks for Delhi and outside-Delhi quota across GGSIPU counselling rounds 1 to 3.
+
+### MSIT Cutoff
+URL: https://ipu.co.in/msit-cutoff.php
+Summary: MSIT Janakpuri cutoff - branch-wise JEE Main closing ranks for Delhi and outside-Delhi quota across GGSIPU counselling rounds 1 to 3.
+
+### MBS College Dwarka
+URL: https://ipu.co.in/mbs-college-admission.php
+Location: Sector 9, Dwarka, New Delhi
+Courses: B.Arch, B.Tech (CSE, AI & ML, ECE, Civil), BBA, BCA, B.Com (Hons)
+Summary: MBS College Dwarka - GGSIPU-affiliated, approved by COA and AICTE; courses and admission process.
+
+### IPU Colleges in Dwarka
+URL: https://ipu.co.in/ipu-colleges-in-dwarka.php
+Summary: Colleges under IP University in Dwarka (USICT, USMS, USLLS and MBS College). USAR is on the East Campus at Surajmal Vihar.
+
 ----------------------------------------------------
 
 COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
@@ -476,7 +494,7 @@ COMPLETE COLLEGE DIRECTORY (46 colleges with dedicated pages):
 | # | Short Name | Full Name | Location | Page URL |
 |---|---|---|---|---|
 | 1 | USICT | University School of ICT | Dwarka, Delhi | /usict-admission.php |
-| 2 | USAR | University School of Automation & Robotics | Dwarka, Delhi | /usar-admission.php |
+| 2 | USAR | University School of Automation & Robotics | East Campus, Surajmal Vihar, Delhi | /usar-admission.php |
 | 3 | USLS | University School of Law & Legal Studies | Dwarka, Delhi | /usls-admission.php |
 | 4 | USMS | University School of Management Studies | Dwarka, Delhi | /usms-admission.php |
 | 5 | MAIT | Maharaja Agrasen Institute of Technology | Rohini, Delhi | /mait-admission.php |

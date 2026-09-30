@@ -220,6 +220,8 @@ include 'include/components/faq-section.php';
 <!-- Related Pages -->
 <?php
 $related_pages = [
+  ['title' => 'MAIT Cutoff – Branch-wise Closing Ranks', 'url' => '/mait-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MAIT'],
+  ['title' => 'MSIT Cutoff – Branch-wise Closing Ranks', 'url' => '/msit-cutoff.php', 'desc' => 'JEE Main closing ranks by branch and round at MSIT'],
   ['title' => 'IPU B.Tech Admission 2026', 'url' => '/IPU-B-Tech-admission-2026.php', 'desc' => 'Complete guide to B.Tech eligibility, JEE Main process & counselling at IPU'],
   ['title' => 'IPU Management Quota B.Tech', 'url' => '/btech-management-quota-ipu.php', 'desc' => 'Direct admission to B.Tech without JEE Main cutoff – process & fees'],
   ['title' => 'Best B.Tech Colleges in IPU', 'url' => '/best-btech-colleges-ipu.php', 'desc' => 'Compare top engineering colleges under GGSIPU – placements, fees & ranking'],
