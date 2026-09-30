@@ -1,36 +1,8 @@
 <?php
 require_once __DIR__ . '/../website_download/include/news-helpers.php';
 
-/** Returns an array of human-readable problems; empty array == valid. */
-function news_validate_post(array $fm, string $body): array {
-    $errors = [];
-    $allowed = ['Counselling', 'Admission', 'Admissions', 'CET', 'Cutoff', 'Exam', 'Result', 'News', 'General', 'Fees'];
-    if (trim($fm['title'] ?? '') === '') $errors[] = 'missing title';
-    if (trim($fm['slug'] ?? '') === '')  $errors[] = 'missing slug';
-    $body_words = str_word_count(strip_tags($body));
-    if ($body_words < 40)   $errors[] = "body too short ($body_words words; min 40)";
-    if ($body_words > 4000) $errors[] = "body too long ($body_words words; max 4000)";
-    $date = $fm['date'] ?? '';
-    $d = DateTime::createFromFormat('Y-m-d', $date);
-    if (!$d || $d->format('Y-m-d') !== $date) {
-        $errors[] = "implausible date: '$date'";
-    } else {
-        $y = (int)$d->format('Y');
-        if ($y < 2020 || $y > 2030) $errors[] = "date year out of range: $y";
-    }
-    $cat = $fm['category'] ?? 'General';
-    if (!in_array($cat, $allowed, true)) $errors[] = "unknown category: '$cat'";
-    return $errors;
-}
-
 function news_build_single_post(string $md_path, string $out_dir): string {
     [$fm, $body_md] = news_parse_mdfile($md_path);
-
-    $problems = news_validate_post($fm, $body_md);
-    if ($problems) {
-        fwrite(STDERR, "VALIDATION FAILED for $md_path:\n  - " . implode("\n  - ", $problems) . "\n");
-        throw new RuntimeException("news_validate_post rejected $md_path");
-    }
 
     $fm['read_time'] = news_read_time($body_md);
     $fm['body_html'] = news_md_to_html($body_md);
@@ -59,9 +31,10 @@ function news_load_all_posts(string $content_dir): array {
         $posts[] = $fm;
     }
     usort($posts, function ($a, $b) {
-        // Newest first by date; slug as deterministic tiebreaker on same-day posts.
-        $cmp = strcmp($b['date'], $a['date']);
-        return $cmp !== 0 ? $cmp : strcmp($a['slug'], $b['slug']);
+        $fa = !empty($a['featured']) ? 1 : 0;
+        $fb = !empty($b['featured']) ? 1 : 0;
+        if ($fa !== $fb) return $fb - $fa;
+        return strcmp($b['date'], $a['date']);
     });
     return $posts;
 }

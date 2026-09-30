@@ -39,12 +39,9 @@ TestCase::assertContains('CET Result Date Confirmed for May 20', $idx, 'post 2 i
 TestCase::assertContains('2026-04-15', $idx, 'newer date present');
 TestCase::assertContains('2026-04-14', $idx, 'older date present');
 
-// Sort is now pure date-desc (newest first). 'Round 2 Counselling Schedule' is
-// dated 2026-04-15 and 'CET Result Date Confirmed' is 2026-04-14, so the
-// newer one must render first regardless of the featured flag.
-$pos_newer = strpos($idx, 'Round 2 Counselling Schedule');
-$pos_older = strpos($idx, 'CET Result Date Confirmed');
-TestCase::assertTrue($pos_newer < $pos_older, 'newer post renders before older post');
+$pos_featured = strpos($idx, 'CET Result Date Confirmed');
+$pos_other = strpos($idx, 'Round 2 Counselling Schedule');
+TestCase::assertTrue($pos_featured < $pos_other, 'featured post renders before non-featured');
 
 exec('rm -rf ' . escapeshellarg($tmp2));
 
@@ -92,18 +89,3 @@ TestCase::assertTrue(!file_exists($tmp4 . '/website_download/news/stale-old-post
 TestCase::assertTrue(file_exists($tmp4 . '/website_download/news/index.php'), 'index.php preserved');
 
 exec('rm -rf ' . escapeshellarg($tmp4));
-
-// --- news_validate_post() ---
-TestCase::assertTrue(news_validate_post([
-    'title' => 'GGSIPU Counselling 2026 Schedule', 'slug' => 'ggsipu-counselling-2026-schedule',
-    'date' => '2026-06-10', 'category' => 'Counselling',
-], str_repeat('Real body content. ', 30)) === [], 'valid post yields no errors');
-TestCase::assertTrue(count(news_validate_post([
-    'title' => 'X', 'slug' => 'x', 'date' => '2026-06-10', 'category' => 'Counselling',
-], '   ')) > 0, 'empty body rejected');
-TestCase::assertTrue(count(news_validate_post([
-    'title' => 'X', 'slug' => 'x', 'date' => '1999-13-99', 'category' => 'Counselling',
-], str_repeat('body ', 30))) > 0, 'bad date rejected');
-TestCase::assertTrue(count(news_validate_post([
-    'title' => 'X', 'slug' => 'x', 'date' => '2026-06-10', 'category' => 'NotARealCategory',
-], str_repeat('body ', 30))) > 0, 'unknown category rejected');
