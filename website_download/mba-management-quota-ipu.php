@@ -179,7 +179,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 <h2>Which IPU Colleges Offer MBA Management Quota Seats?</h2>
 
 <p>
-Every unaided affiliated MBA college under IPU reserves 10 percent of its seats as management quota (PG Brochure 2026-27, Chapter 12). The MBA colleges listed on this site include MAIMS Rohini, RDIAS Pitampura, JIMS Rohini, JIMS Kalkaji, BVIMR Paschim Vihar, IINTM Janakpuri and Tecnia Institute; compare them in the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> guide. USMS is a university school, so it fills all its seats through GGSIPU centralised counselling and has no management quota. To see the college-wise fee and admission page, start with <a href="/usms-admission.php">USMS admission</a> for the university route.
+Every unaided affiliated MBA college under IPU reserves 10 percent of its seats as management quota (PG Brochure 2026-27, Chapter 12). The MBA colleges listed on this site include MAIMS Rohini, RDIAS Pitampura, JIMS Rohini, JIMS Kalkaji, BVIMR Paschim Vihar, IINTM Janakpuri and Tecnia Institute; compare them in the <a href="/top-mba-colleges-ipu.php">top MBA colleges under IPU</a> guide. USMS is a university school, so it fills all its seats through GGSIPU centralised counselling and has no management quota. For the university route, see <a href="/usms-admission.php">USMS admission</a>.
 </p>
 
 <hr>
