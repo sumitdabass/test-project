@@ -100,3 +100,13 @@ def test_mbbs_row_has_no_unsourced_lakh_range():
     t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
     assert "Rs. 15 - 30 L" not in t and "Rs. 15-30 lakh" not in t and "75 L - 1.5 Cr" not in t
     assert "Rs. 25,000 university charges per year" in t
+
+
+def test_affiliated_ug_ranges_and_mbbs_match_the_sfrc_gazette():
+    # Appendix 13(i), Delhi Gazette 14.07.2025 (2025-26 rates), read from UG brochure 2026-27 ch15
+    t = open("website_download/ipu-fees-structure.php", encoding="utf-8").read()
+    for rng in ("Rs. 69,400 - 1,15,300", "Rs. 56,700 - 1,13,200", "Rs. 60,600 - 1,09,800", "Rs. 82,900 - 1,15,300"):
+        assert rng in t, rng
+    assert "Rs. 1,20,000 - 1,50,000" not in t and "Rs. 40,000 - 1,50,000" not in t
+    assert "Army College of Medical Sciences: Rs. 5,55,700" in t
+    assert "service bond" in t
