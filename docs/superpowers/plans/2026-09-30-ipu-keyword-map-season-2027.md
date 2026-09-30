@@ -62,6 +62,13 @@ Baseline = `seo/baselines/2026-09-30-gsc-export/`. Position = GSC average. "Go-l
 
 LLM already has a page (`llm-admission-ipu.php`, live 200), so the spec's "LLM B candidate" is dropped; LLM only gets tier-A fee FAQs in Task 8.
 
+## Amendments (2026-09-30, after reviewing 10 official sites)
+
+1. **MAIMS added** to Task 7 (tier A): `maims` (19k impr, p7.9, CTR 0.15%), `maims college`, `maims rohini`, `maims bba fees`, `maims ipu`. Page: `maims-admission.php`. Facts: NAAC A++, BCI, ISO 9001:2015 (maims.ac.in).
+2. **Facts schema** gained `accreditation`, `avg_package_lpa`, and an optional `note` on any field. Sourced rows now in `college-facts-2026.json`: MSIT (8 acres, avg 7.1 LPA 2025, highest 50 LPA 2025, NAAC A and NBA), BPIT (about 6 acres, CSE avg 7.7 LPA 2026, highest 53.35 LPA 2022-26, NBA), MAIMS, MSI and BVP accreditation. MAIT, USICT, USAR, USMS, USLLS, ADGITM and VIPS still have no sourced numeric facts (their sites were PDF-based, homepage-only or unreachable); MBS has no numeric facts either.
+3. **Pages with hand-written FAQPage JSON-LD** (BPIT, BVP) get a visible facts block (`college-facts-block.php`), never a second FAQPage block. `seo_verify.py` now fails on more than one FAQPage.
+4. **Naming and location facts:** USAR is on the GGSIPU **East Campus (Surajmal Vihar)**, not Dwarka (ipu.ac.in schools page and `usar-admission.php` agree); the Dwarka hub was corrected. ipu.ac.in names it "University School of Automation & Robotics" while the UG Brochure 2026-27 (as cited on our USAR page) says "Automation & Design"; do not change the USAR title until Sumit confirms which name is current. vips.edu is VIPS *Technical Campus*, not main VIPS. JIMS Rohini (Jagan Institute of Management Studies) and JIMS Vasant Kunj (Jagannath International Management School) are different institutions (low volume, about 1.4k impr).
+
 ## Calendar
 
 | Window | What happens | Gate |
