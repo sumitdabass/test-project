@@ -29,6 +29,8 @@ def grab(html):
         "links": sorted(set(re.findall(r'href="([^"#][^"]*)"', body))),
         "faq": faq,
         "jsonld_types": sorted(str(b.get("@type")) for b in ld),
+        "college_ld": next(({k: b.get(k) for k in ("name", "alternateName", "url")} for b in ld
+                            if b.get("@type") == "CollegeOrUniversity"), None),
     }
 
 

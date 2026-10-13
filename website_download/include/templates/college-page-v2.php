@@ -2,11 +2,11 @@
 /**
  * College page: unified-shell (v2) body.
  * Included by college-page-template.php when $college_data['layout'] === 'v2'.
- * Uses the template's scope: $cd, $short_name, $name, $last_updated.
+ * Uses the template's scope: $cd, $short_name, $crumb_label, $last_updated.
  */
 $hero_h1 = htmlspecialchars($short_name . ' Admission 2026 – Courses, Cutoff & Placements');
 $hero_intro = htmlspecialchars($short_name) . ' IPU Admission 2026 – Complete Guide';
-$hero_breadcrumbs = [['Home', '/'], ['Colleges', '/ipu-colleges-list.php'], [$short_name . ' College', '']];
+$hero_breadcrumbs = [['Home', '/'], ['Colleges', '/ipu-colleges-list.php'], [$crumb_label, '']];
 $hero_show_form = false;
 $hero_show_enquire = true;
 include 'include/components/page-hero.php';

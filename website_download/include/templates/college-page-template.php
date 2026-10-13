@@ -46,6 +46,7 @@ $short_name  = $cd['short_name']  ?? $name;
 $page_url    = 'https://ipu.co.in/' . $slug . '.php';
 $last_updated = $cd['last_updated'] ?? date('Y-m-d');
 $layout       = $cd['layout']       ?? 'v1';                  // 'v1' (legacy) or 'v2' (unified shell)
+$crumb_label  = preg_match('/\bCollege$/i', $short_name) ? $short_name : $short_name . ' College';  // v2 breadcrumb leaf, used by schema AND hero
 
 // ── Head ─────────────────────────────────────────────────────────────────────
 include_once("include/base-head.php");
@@ -98,7 +99,7 @@ include_once("include/base-head.php");
 <?php
 // ── Breadcrumb Schema Component ───────────────────────────────────────────────
 $breadcrumbs = $layout === 'v2'
-    ? [['Home', '/'], ['Colleges', '/ipu-colleges-list.php'], [$short_name . ' College', '']]
+    ? [['Home', '/'], ['Colleges', '/ipu-colleges-list.php'], [$crumb_label, '']]
     : [
     ['Home',       '/'],
     ['Admissions', '/ipu-admission-guide.php'],
@@ -106,6 +107,10 @@ $breadcrumbs = $layout === 'v2'
 ];
 include 'include/components/breadcrumb-schema.php';
 unset($breadcrumbs);
+if ($layout === 'v2') {
+    // v1 leaves $name = '<short> Admission' here (breadcrumb-schema.php clobbers it); keep the schema value byte-identical.
+    $name = htmlspecialchars($short_name . ' Admission', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
 
 // ── College Schema Component ──────────────────────────────────────────────────
 $college = [
@@ -122,6 +127,8 @@ if (!empty($cd['courses'])) {
 }
 include 'include/components/college-schema.php';
 unset($college);
+$name       = $cd['name']       ?? '';
+$short_name = $cd['short_name'] ?? $name;
 ?>
 </head>
 <body>

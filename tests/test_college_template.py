@@ -69,7 +69,7 @@ def test_faq_details_schema_equals_old_component():
 def test_faq_details_markup_and_empty_input():
     html = render("faq-details", faqs=FAQS)
     assert html.count("<details") == 2 and html.count("<summary") == 2
-    assert "<h3>Is X good?</h3>" in html or "<h3>Fees &amp; seats?</h3>" in html
+    assert "<h3>Is X good?</h3>" in html and "<h3>Fees &amp; seats?</h3>" in html
     assert "Yes, <b>very</b> good." in html
     assert render("faq-details", faqs=[]).strip() == ""
 
@@ -184,11 +184,11 @@ def test_v2_page_invariants_against_live_baseline(server, page):
     assert check_html(html) == []
     body = html.split("</head>")[-1]
     got = [re.sub(r"<[^>]+>", "", m).strip() for m in re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)]
-    skip = ("Need Help with", "Get Free Admission Guidance")
+    skip = ("Get Free Admission Guidance",)
     drop = lambda hs: sorted(h for h in hs if not h.startswith(skip))
     assert drop(got) == drop(base["headings"])
     now = {_norm_link(u) for u in re.findall(r'href="([^"#][^"]*)"', body)}
-    lost = [l for l in base["links"] if _norm_link(l) not in now and "ipu-admission-guide.php" not in l]
+    lost = [l for l in base["links"] if _norm_link(l) not in now and l != "/ipu-admission-guide.php"]
     assert lost == []
     ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)]
     faq = [(q["name"], q["acceptedAnswer"]["text"]) for b in ld if b.get("@type") == "FAQPage" for q in b["mainEntity"]]
@@ -199,3 +199,42 @@ def test_v2_page_invariants_against_live_baseline(server, page):
 
 def test_every_college_template_page_is_on_v2():
     assert [p for p in sorted(BASE) if not _is_v2(p)] == []
+
+
+def _visible_crumb_label(html):
+    crumbs = re.search(r'<nav class="ipu-page-hero__crumbs".*?</nav>', html, re.S).group(0)
+    last = re.findall(r"<li>(.*?)</li>", crumbs, re.S)[-1]
+    import html as h
+    return h.unescape(re.sub(r"<[^>]+>", "", last)).strip()
+
+
+@pytest.mark.parametrize("page", V2_PAGES)
+def test_v2_college_schema_and_crumb_labels(server, page):
+    status, html = _get(f"{server}/{page}")
+    ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)]
+    # CollegeOrUniversity block must be exactly what the live (v1) page emits
+    college = next(({k: b.get(k) for k in ("name", "alternateName", "url")} for b in ld if b.get("@type") == "CollegeOrUniversity"), None)
+    assert college == BASE[page]["college_ld"]
+    # visible crumb text == BreadcrumbList last name, and never "X College College"
+    import html as h
+    bl = [b for b in ld if b.get("@type") == "BreadcrumbList"][0]
+    schema_last = h.unescape(bl["itemListElement"][-1]["name"])
+    assert _visible_crumb_label(html) == schema_last
+    assert not re.search(r"\bCollege College\b", schema_last, re.I)
+
+
+AMP = ("<?php $college_data=['layout'=>'v2','slug'=>'_college_amp','name'=>'F&C Institute','short_name'=>'F&C',"
+       "'title'=>'FC','meta_desc'=>'m','address'=>'Delhi','last_updated'=>'2026-04-06'];"
+       "include 'include/templates/college-page-template.php';")
+
+
+def test_v2_ampersand_short_name_is_escaped_once(server):
+    status, html = _serve_temp(server, "_college_amp.php", AMP)
+    assert status == 200
+    # visible body only: the CollegeOrUniversity schema name keeps v1's pre-existing double escape (see ledger ruling)
+    assert "&amp;amp;" not in html.split("</head>")[-1]
+    import html as h
+    ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)]
+    bl = [b for b in ld if b.get("@type") == "BreadcrumbList"][0]
+    assert h.unescape(bl["itemListElement"][-1]["name"]) == _visible_crumb_label(html) == "F&C College"
+    assert re.search(r"<h1[^>]*>F&amp;C Admission 2026", html)

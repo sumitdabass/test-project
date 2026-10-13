@@ -73,7 +73,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "BCIPS Admission",
+   "alternateName": "BCIPS",
+   "url": "https://ipu.co.in/bcips-admission.php"
+  }
  },
  "cpj-admission.php": {
   "title": "CPJ College Narela Admission 2026 | BBA, Law, BCA, LLB, LLM Courses &amp; Cutoff – IPU",
@@ -148,7 +153,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "CPJ Admission",
+   "alternateName": "CPJ",
+   "url": "https://ipu.co.in/cpj-admission.php"
+  }
  },
  "dias-admission.php": {
   "title": "DIAS Rohini Admission 2026 | BBA, B.Com, Cutoff, Fees &amp; Placements – IPU",
@@ -225,7 +235,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "DIAS Admission",
+   "alternateName": "DIAS",
+   "url": "https://ipu.co.in/dias-admission.php"
+  }
  },
  "dist-admission.php": {
   "title": "DIST Admission 2026 | B.Tech Courses, Cutoff &amp; IPU Counselling",
@@ -294,7 +309,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "DIST Admission",
+   "alternateName": "DIST",
+   "url": "https://ipu.co.in/dist-admission.php"
+  }
  },
  "dme-admission.php": {
   "title": "DME Noida Admission 2026 | BBA, Law, BJMC, LLM Courses &amp; Cutoff – IPU",
@@ -368,7 +388,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "DME Admission",
+   "alternateName": "DME",
+   "url": "https://ipu.co.in/dme-admission.php"
+  }
  },
  "don-bosco-admission.php": {
   "title": "Don Bosco Institute Admission 2026 | BBA, BCA, MCA, B.Com – IPU",
@@ -444,7 +469,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "DBIT Admission",
+   "alternateName": "DBIT",
+   "url": "https://ipu.co.in/don-bosco-admission.php"
+  }
  },
  "dtc-admission.php": {
   "title": "DTC Greater Noida Admission 2026 | B.Tech CSE, AIML Courses, Cutoff &amp; Placements – IPU",
@@ -520,7 +550,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "DTC Admission",
+   "alternateName": "DTC",
+   "url": "https://ipu.co.in/dtc-admission.php"
+  }
  },
  "echelon-admission.php": {
   "title": "Echelon Institute Faridabad Admission 2026 | B.Tech, BBA, BCA, MCA Courses &amp; Cutoff – IPU",
@@ -596,7 +631,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Echelon Admission",
+   "alternateName": "Echelon",
+   "url": "https://ipu.co.in/echelon-admission.php"
+  }
  },
  "fairfield-admission.php": {
   "title": "Fairfield Institute (FIMT) Kapashera Admission 2026 | B.Tech, BBA, Law, BCA, B.Ed – IPU",
@@ -671,7 +711,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "FIMT Admission",
+   "alternateName": "FIMT",
+   "url": "https://ipu.co.in/fairfield-admission.php"
+  }
  },
  "gibs-admission.php": {
   "title": "GIBS Rohini Admission 2026 | MBA, BBA, BCA, BBA-MBA Integrated, Law &amp; LLM Courses – IPU",
@@ -757,7 +802,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "GIBS Admission",
+   "alternateName": "GIBS",
+   "url": "https://ipu.co.in/gibs-admission.php"
+  }
  },
  "gnit-admission.php": {
   "title": "GNIT Greater Noida Admission 2026 | B.Tech CSE, AIML – IPU",
@@ -834,7 +884,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "GNIT Admission",
+   "alternateName": "GNIT",
+   "url": "https://ipu.co.in/gnit-admission.php"
+  }
  },
  "gtb4cec-admission.php": {
   "title": "GTB4CEC Admission 2026 | B.Tech CSE, AIML, DS, IT, ECE – IPU",
@@ -911,7 +966,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "GTB4CEC Admission",
+   "alternateName": "GTB4CEC",
+   "url": "https://ipu.co.in/gtb4cec-admission.php"
+  }
  },
  "ideal-admission.php": {
   "title": "Ideal Institute Vivek Vihar Admission 2026 | BBA, Law, BCA, LLM Courses &amp; Cutoff – IPU",
@@ -985,7 +1045,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Ideal Admission",
+   "alternateName": "Ideal",
+   "url": "https://ipu.co.in/ideal-admission.php"
+  }
  },
  "jemtec-admission.php": {
   "title": "JEMTEC Greater Noida Admission 2026 | B.Tech, BBA, BCA, Law Courses &amp; Cutoff – IPU",
@@ -1061,7 +1126,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "JEMTEC Admission",
+   "alternateName": "JEMTEC",
+   "url": "https://ipu.co.in/jemtec-admission.php"
+  }
  },
  "jims-kalkaji-admission.php": {
   "title": "JIMS Kalkaji Admission 2026 | BBA &amp; B.Com Courses, Cutoff, Fees &amp; Placements – IPU",
@@ -1136,7 +1206,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "JIMS Kalkaji Admission",
+   "alternateName": "JIMS Kalkaji",
+   "url": "https://ipu.co.in/jims-kalkaji-admission.php"
+  }
  },
  "jims-vasant-kunj-admission.php": {
   "title": "JIMS Vasant Kunj Admission 2026 | BBA, BCA, BJMC Courses, Cutoff &amp; Placements – IPU",
@@ -1211,7 +1286,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "JIMS Vasant Kunj Admission",
+   "alternateName": "JIMS Vasant Kunj",
+   "url": "https://ipu.co.in/jims-vasant-kunj-admission.php"
+  }
  },
  "kasturi-ram-admission.php": {
   "title": "Kasturi Ram College Admission 2026 | BBA, BCA, B.Com, B.Ed – IPU",
@@ -1287,7 +1367,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "KRCHE Admission",
+   "alternateName": "KRCHE",
+   "url": "https://ipu.co.in/kasturi-ram-admission.php"
+  }
  },
  "kcc-admission.php": {
   "title": "KCC Institute Greater Noida Admission 2026 | BBA, Law, BCA, BJMC Courses &amp; Cutoff – IPU",
@@ -1361,7 +1446,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "KCC Admission",
+   "alternateName": "KCC",
+   "url": "https://ipu.co.in/kcc-admission.php"
+  }
  },
  "lingayas-admission.php": {
   "title": "Lingayas Delhi Admission 2026 | BBA, BCA, B.Com, BJMC, B.Ed – IPU",
@@ -1437,7 +1527,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Lingayas Admission",
+   "alternateName": "Lingayas",
+   "url": "https://ipu.co.in/lingayas-admission.php"
+  }
  },
  "meri-admission.php": {
   "title": "MERI Janakpuri Admission 2026 | BBA, BCA, B.Com, BJMC – IPU",
@@ -1513,7 +1608,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "MERI Admission",
+   "alternateName": "MERI",
+   "url": "https://ipu.co.in/meri-admission.php"
+  }
  },
  "ndim-admission.php": {
   "title": "NDIM Admission 2026 | BBA, BCA Courses, Cutoff, Fees &amp; Placements – IPU",
@@ -1589,7 +1689,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "NDIM Admission",
+   "alternateName": "NDIM",
+   "url": "https://ipu.co.in/ndim-admission.php"
+  }
  },
  "rdias-admission.php": {
   "title": "RDIAS Rohini Admission 2026 | BBA &amp; B.Com Courses, Cutoff, Fees &amp; Placements – IPU",
@@ -1664,7 +1769,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "RDIAS Admission",
+   "alternateName": "RDIAS",
+   "url": "https://ipu.co.in/rdias-admission.php"
+  }
  },
  "sbit-admission.php": {
   "title": "SBIT Admission 2026 | B.Tech Courses, Cutoff &amp; IPU Counselling",
@@ -1733,7 +1843,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "SBIT Admission",
+   "alternateName": "SBIT",
+   "url": "https://ipu.co.in/sbit-admission.php"
+  }
  },
  "sgtbimit-admission.php": {
   "title": "SGTBIMIT Admission 2026 | BBA, BCA, B.Com Courses – IPU (Sikh Minority)",
@@ -1809,7 +1924,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "SGTBIMIT Admission",
+   "alternateName": "SGTBIMIT",
+   "url": "https://ipu.co.in/sgtbimit-admission.php"
+  }
  },
  "sirifort-admission.php": {
   "title": "Sirifort Institute Rohini Admission 2026 | BBA, BCA, B.Com – IPU",
@@ -1885,7 +2005,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Sirifort Admission",
+   "alternateName": "Sirifort",
+   "url": "https://ipu.co.in/sirifort-admission.php"
+  }
  },
  "tecnia-admission.php": {
   "title": "Tecnia Institute Rohini Admission 2026 | BBA, MCA, BCA, BJMC, B.Com Courses &amp; Cutoff – IPU",
@@ -1961,7 +2086,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Tecnia Admission",
+   "alternateName": "Tecnia",
+   "url": "https://ipu.co.in/tecnia-admission.php"
+  }
  },
  "tiips-admission.php": {
   "title": "TIIPS Admission 2026 | B.Tech Courses, Cutoff &amp; IPU Counselling",
@@ -2030,7 +2160,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "TIIPS Admission",
+   "alternateName": "TIIPS",
+   "url": "https://ipu.co.in/tiips-admission.php"
+  }
  },
  "tips-admission.php": {
   "title": "TIPS Dwarka Admission 2026 | BBA, Law, BCA, B.Com, BJMC – IPU",
@@ -2105,7 +2240,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "TIPS Admission",
+   "alternateName": "TIPS",
+   "url": "https://ipu.co.in/tips-admission.php"
+  }
  },
  "tribhuvan-admission.php": {
   "title": "Tribhuvan College Admission 2026 | B.Tech Courses, Cutoff &amp; IPU Counselling",
@@ -2174,7 +2314,12 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "Tribhuvan College Admission",
+   "alternateName": "Tribhuvan College",
+   "url": "https://ipu.co.in/tribhuvan-admission.php"
+  }
  },
  "usct-admission.php": {
   "title": "USCT Admission 2026 | B.Tech Courses, Cutoff &amp; IPU Counselling",
@@ -2243,6 +2388,11 @@
    "CollegeOrUniversity",
    "Course",
    "FAQPage"
-  ]
+  ],
+  "college_ld": {
+   "name": "USCT Admission",
+   "alternateName": "USCT",
+   "url": "https://ipu.co.in/usct-admission.php"
+  }
  }
 }
