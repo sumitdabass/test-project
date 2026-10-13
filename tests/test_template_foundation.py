@@ -68,3 +68,17 @@ def test_hero_breadcrumb_unchanged_markup():
     html = render("page-hero", **HERO)
     assert '<a href="/ipu-colleges-list.php">Colleges</a>' in html
     assert '<span aria-current="page">BPIT College</span>' in html
+
+
+def test_cta_strip_button_is_orange_pill_not_gold_gradient():
+    html = render("cta-strip")
+    assert "FFD700" not in html and "f59e0b,#FFD700" not in html
+    assert 'class="ipu-cta-call"' in html
+    assert 'href="tel:+919899991342"' in html and 'data-cta-src="hero"' in html
+    assert "Call: 9899991342" in html
+
+
+def test_cta_strip_card_variant():
+    html = render("cta-strip", cta_card=True, cta_heading="Need Admission Guidance?", cta_subtext="x")
+    assert 'class="ipu-cta-card"' in html and "Need Admission Guidance?" in html
+    assert "<section" not in html
