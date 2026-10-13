@@ -226,6 +226,7 @@ select.ipu-input{color:#64748b}
 .ipu-faq summary::after{content:"+";color:var(--ipu-orange);font-size:22px;font-weight:700}
 .ipu-faq details[open] summary::after{content:"\2212"}
 .ipu-faq details p{padding:0 16px 16px;margin:0}
+.ipu-faq__a{padding:0 16px 16px}.ipu-faq__a p{margin:0 0 10px}
 .ipu-cta-card{background:linear-gradient(135deg,var(--ipu-ink) 0%,var(--ipu-ink-2) 100%);border-radius:16px;padding:24px;color:#fff;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .ipu-cta-card h2,.ipu-cta-card h3,.ipu-cta-card p{color:#fff;margin:0}
 .ipu-cta-card p{color:rgba(255,255,255,.8);font-size:15px}

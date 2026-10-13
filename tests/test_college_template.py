@@ -52,8 +52,37 @@ def render(component: str, **local_vars) -> str:
     return subprocess.run(["php", "-r", code], capture_output=True, text=True, check=True, cwd=WEB).stdout
 
 
+def _template_output(html):
+    """Body after the last </head> plus every JSON-LD block (shared head CSS may change; the template must not)."""
+    return html.split("</head>")[-1] + "".join(re.findall(r'<script type="application/ld\+json">.*?</script>', html, re.S))
+
+
 @pytest.mark.parametrize("page", sorted(V1_SNAPSHOT))
 def test_v1_page_html_is_unchanged(server, page):
     status, html = _get(f"{server}/{page}")
     assert status == 200
-    assert html == V1_SNAPSHOT[page].read_text(encoding="utf-8")
+    assert _template_output(html) == _template_output(V1_SNAPSHOT[page].read_text(encoding="utf-8"))
+
+
+FAQS = [{"question": "Is X good?", "answer": "Yes, <b>very</b> good."},
+        {"question": "Fees & seats?", "answer": "Rs. 1,00,000 per year."}]
+
+
+def _faq_schema(html):
+    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
+    assert len(blocks) == 1
+    return json.loads(blocks[0])
+
+
+def test_faq_details_schema_equals_old_component():
+    new = render("faq-details", faqs=FAQS)
+    old = render("faq-section", faqs=FAQS)
+    assert _faq_schema(new) == _faq_schema(old)
+
+
+def test_faq_details_markup_and_empty_input():
+    html = render("faq-details", faqs=FAQS)
+    assert html.count("<details") == 2 and html.count("<summary") == 2
+    assert "<h3>Is X good?</h3>" in html or "<h3>Fees &amp; seats?</h3>" in html
+    assert "Yes, <b>very</b> good." in html
+    assert render("faq-details", faqs=[]).strip() == ""
