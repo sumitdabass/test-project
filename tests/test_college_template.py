@@ -86,3 +86,88 @@ def test_faq_details_markup_and_empty_input():
     assert "<h3>Is X good?</h3>" in html or "<h3>Fees &amp; seats?</h3>" in html
     assert "Yes, <b>very</b> good." in html
     assert render("faq-details", faqs=[]).strip() == ""
+
+
+FIXTURE = """<?php
+$college_data = [
+  'layout' => 'v2', 'slug' => '_college_v2_fixture', 'name' => 'Fixture Institute & Co', 'short_name' => 'FIX',
+  'title' => 'FIX Admission 2026 | Test', 'meta_desc' => 'Fixture meta.', 'address' => 'Delhi', 'total_seats' => 60,
+  'last_updated' => '2026-04-06', 'ai_summary' => 'Summary text.',
+  'about_text' => '<h2>About FIX</h2><p>About copy.</p>',
+  'courses' => [['name' => 'BBA', 'duration' => '3 Years', 'seats' => '60']],
+  'admission_text' => '<ol><li>Step one</li></ol>',
+  'placements' => [['label' => 'Average', 'value' => '5 LPA']],
+  'campus_life' => ['Labs'],
+  'cutoffs' => [['branch' => 'BBA', 'round1' => '80', 'last_round' => '70']],
+  'fees' => [['course' => 'BBA', 'fee' => 'Rs. 1', 'seats' => 60]],
+  'faqs' => [['question' => 'Q1?', 'answer' => 'A1'], ['question' => 'Q2?', 'answer' => 'A2'], ['question' => 'Q3?', 'answer' => 'A3']],
+  'related_pages' => [['title' => 'T', 'url' => '/x.php', 'desc' => 'D']],
+];
+include 'include/templates/college-page-template.php';
+"""
+
+
+def _serve_temp(server, name, php):
+    f = WEB / name
+    f.write_text(php, encoding="utf-8")
+    try:
+        return _get(f"{server}/{name}")
+    finally:
+        f.unlink()
+
+
+@pytest.fixture()
+def v2_page(server):
+    status, html = _serve_temp(server, "_college_v2_fixture.php", FIXTURE)
+    assert status == 200
+    return html
+
+
+def test_v2_single_h1_with_encoded_ampersand(v2_page):
+    assert len(re.findall(r"<h1[\s>]", v2_page)) == 1
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", v2_page, re.S).group(1)
+    assert "&amp;amp;" not in h1 and "Cutoff &amp; Placements" in h1
+
+
+def test_v2_demoted_title_line_keeps_text(v2_page):
+    after_h1 = v2_page.split("</h1>")[1].split("</section>")[0]
+    assert "FIX IPU Admission 2026 – Complete Guide" in after_h1
+
+
+def test_v2_breadcrumb_matches_schema(v2_page):
+    crumbs = re.search(r'<nav class="ipu-page-hero__crumbs".*?</nav>', v2_page, re.S).group(0)
+    assert all(x in crumbs for x in ("Home", "Colleges", "FIX College"))
+    ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', v2_page, re.S)]
+    bl = [b for b in ld if b.get("@type") == "BreadcrumbList"][0]
+    assert [i["name"] for i in bl["itemListElement"]] == ["Home", "Colleges", "FIX College"]
+
+
+def test_v2_structure(v2_page):
+    assert v2_page.count('id="enquiry-form"') == 1
+    assert "blog-details" not in v2_page and "sidebar-cta" not in v2_page
+    assert v2_page.count("<details") == 3
+    body = v2_page.split("</head>")[-1]
+    a, f = body.index("About FIX"), body.index('id="enquiry-form"')
+    assert a < f < body.index("Courses Offered at FIX")
+    assert 'href="tel:9899991342"' not in v2_page
+    assert len(re.findall(r'"@type":\s*"FAQPage"', v2_page)) == 1
+    assert len(re.findall(r'"@type":\s*"BreadcrumbList"', v2_page)) == 1
+
+
+MIN = ("<?php $college_data=['layout'=>'v2','slug'=>'_college_v2_min','name'=>'Min College','short_name'=>'MIN',"
+       "'title'=>'MIN','meta_desc'=>'m','address'=>'Delhi','last_updated'=>'2026-04-06'];"
+       "include 'include/templates/college-page-template.php';")
+
+
+def test_v2_minimal_data_renders_without_notices(server):
+    status, html = _serve_temp(server, "_college_v2_min.php", MIN)
+    assert status == 200
+    assert not re.search(r"(Warning|Notice|Deprecated|Fatal error)", html)
+    assert len(re.findall(r"<h1[\s>]", html)) == 1
+
+
+def test_v1_default_when_flag_absent(server):
+    status, html = _serve_temp(server, "_college_v1_min.php", MIN.replace("'layout'=>'v2',", "").replace("_college_v2_min", "_college_v1_min"))
+    assert status == 200
+    body = html.split("</head>")[-1]
+    assert "hero-section" in body and "ipu-body" not in body

@@ -45,6 +45,7 @@ $name        = $cd['name']        ?? '';
 $short_name  = $cd['short_name']  ?? $name;
 $page_url    = 'https://ipu.co.in/' . $slug . '.php';
 $last_updated = $cd['last_updated'] ?? date('Y-m-d');
+$layout       = $cd['layout']       ?? 'v1';                  // 'v1' (legacy) or 'v2' (unified shell)
 
 // ── Head ─────────────────────────────────────────────────────────────────────
 include_once("include/base-head.php");
@@ -96,7 +97,9 @@ include_once("include/base-head.php");
 
 <?php
 // ── Breadcrumb Schema Component ───────────────────────────────────────────────
-$breadcrumbs = [
+$breadcrumbs = $layout === 'v2'
+    ? [['Home', '/'], ['Colleges', '/ipu-colleges-list.php'], [$short_name . ' College', '']]
+    : [
     ['Home',       '/'],
     ['Admissions', '/ipu-admission-guide.php'],
     [$short_name . ' Admission', ''],
@@ -124,7 +127,7 @@ unset($college);
 <body>
 <?php include_once("include/base-nav.php"); ?>
 
-<!-- Hero -->
+<?php if ($layout !== 'v2'): ?><!-- Hero -->
 <?php
 $hero_title = htmlspecialchars($short_name . ' Admission 2026 – Courses, Cutoff &amp; Placements');
 $hero_breadcrumbs = [
@@ -294,7 +297,7 @@ include 'include/components/faq-section.php';
 unset($faqs);
 ?>
 
-<!-- B.Tech Cutoff Rounds Table (renders only if cutoff_institute matches dataset) -->
+<?php else: include 'include/templates/college-page-v2.php'; endif; ?><!-- B.Tech Cutoff Rounds Table (renders only if cutoff_institute matches dataset) -->
 <?php
 if (!empty($cd['cutoff_institute'])) {
   $cutoff_institute = $cd['cutoff_institute'];
