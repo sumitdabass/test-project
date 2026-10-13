@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'tecnia-admission',
     'name' => 'Tecnia Institute of Advanced Studies',
     'short_name' => 'Tecnia',

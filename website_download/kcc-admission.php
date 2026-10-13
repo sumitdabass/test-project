@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'kcc-admission',
     'name' => 'KCC Institute of Legal & Higher Education',
     'short_name' => 'KCC',

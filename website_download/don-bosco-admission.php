@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'don-bosco-admission',
     'name' => 'Don Bosco Institute of Technology',
     'short_name' => 'DBIT',

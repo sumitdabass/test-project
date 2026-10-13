@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'tips-admission',
     'name' => 'Trinity Institute of Professional Studies',
     'short_name' => 'TIPS',

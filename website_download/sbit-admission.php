@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'sbit-admission',
     'cutoff_institute' => 'Shri Balwant Institute of Technology',
     'name' => 'Shri Balwant Institute of Technology',

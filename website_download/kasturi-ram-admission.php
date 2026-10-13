@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'kasturi-ram-admission',
     'name' => 'Kasturi Ram College of Higher Education',
     'short_name' => 'KRCHE',

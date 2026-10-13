@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'dias-admission',
     'name' => 'Delhi Institute of Advanced Studies',
     'short_name' => 'DIAS',

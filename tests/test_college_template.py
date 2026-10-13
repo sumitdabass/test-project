@@ -41,7 +41,6 @@ def _get(url):
 from seo_verify import check_html
 
 BASE = json.load(open(ROOT / "tests" / "fixtures" / "college_baseline.json"))
-V1_SNAPSHOT = {"dias-admission.php": ROOT / "tests" / "fixtures" / "college_v1_dias.html"}
 
 
 def render(component: str, **local_vars) -> str:
@@ -49,18 +48,6 @@ def render(component: str, **local_vars) -> str:
     assigns = "".join(f"${k}=json_decode({json.dumps(json.dumps(v))},true);" for k, v in local_vars.items())
     code = f"{assigns} include {json.dumps(str(WEB / 'include' / 'components' / (component + '.php')))};"
     return subprocess.run(["php", "-r", code], capture_output=True, text=True, check=True, cwd=WEB).stdout
-
-
-def _template_output(html):
-    """Body after the last </head> plus every JSON-LD block (shared head CSS may change; the template must not)."""
-    return html.split("</head>")[-1] + "".join(re.findall(r'<script type="application/ld\+json">.*?</script>', html, re.S))
-
-
-@pytest.mark.parametrize("page", sorted(V1_SNAPSHOT))
-def test_v1_page_html_is_unchanged(server, page):
-    status, html = _get(f"{server}/{page}")
-    assert status == 200
-    assert _template_output(html) == _template_output(V1_SNAPSHOT[page].read_text(encoding="utf-8"))
 
 
 FAQS = [{"question": "Is X good?", "answer": "Yes, <b>very</b> good."},
@@ -208,3 +195,7 @@ def test_v2_page_invariants_against_live_baseline(server, page):
     assert faq == [tuple(x) for x in base["faq"]]
     crumbs = [b for b in ld if b.get("@type") == "BreadcrumbList"]
     assert len(crumbs) == 1 and [i["name"] for i in crumbs[0]["itemListElement"]][:2] == ["Home", "Colleges"]
+
+
+def test_every_college_template_page_is_on_v2():
+    assert [p for p in sorted(BASE) if not _is_v2(p)] == []

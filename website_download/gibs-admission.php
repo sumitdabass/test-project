@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'gibs-admission',
     'name' => 'Gitarattan International Business School',
     'short_name' => 'GIBS',

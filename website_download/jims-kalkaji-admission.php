@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'jims-kalkaji-admission',
     'name' => 'Jagannath International Management School (Kalkaji)',
     'short_name' => 'JIMS Kalkaji',

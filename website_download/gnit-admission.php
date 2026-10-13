@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'gnit-admission',
     'cutoff_institute' => 'Greater Noida Institute of Technology',
     'name' => 'Greater Noida Institute of Technology',

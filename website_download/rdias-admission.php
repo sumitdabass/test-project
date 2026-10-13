@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'rdias-admission',
     'name' => 'Rukmini Devi Institute of Advanced Studies',
     'short_name' => 'RDIAS',

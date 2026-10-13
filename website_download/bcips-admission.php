@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'bcips-admission',
     'name' => 'Banarsidas Chandiwala Institute of Professional Studies',
     'short_name' => 'BCIPS',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'ideal-admission',
     'name' => 'Ideal Institute of Management and Technology',
     'short_name' => 'Ideal',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'dist-admission',
     'cutoff_institute' => 'Delhi Institute of Sciences & Technology',
     'name' => 'Delhi Institute of Sciences & Technology',

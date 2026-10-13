@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'lingayas-admission',
     'name' => 'Lingayas Lalita Devi Institute of Management & Sciences',
     'short_name' => 'Lingayas',

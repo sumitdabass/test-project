@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'sirifort-admission',
     'name' => 'Sirifort Institute of Management Studies',
     'short_name' => 'Sirifort',

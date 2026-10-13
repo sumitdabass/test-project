@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'cpj-admission',
     'name' => 'Chandarprabhu Jain College of Higher Studies & School of Law',
     'short_name' => 'CPJ',

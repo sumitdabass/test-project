@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'tiips-admission',
     'cutoff_institute' => 'Trinity Institute of Innovations in Professional Studies',
     'name' => 'Trinity Institute of Innovations in Professional Studies',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'jemtec-admission',
     'cutoff_institute' => 'JIMS Engineering Management Technical Campus',
     'name' => 'JIMS Engineering Management Technical Campus',

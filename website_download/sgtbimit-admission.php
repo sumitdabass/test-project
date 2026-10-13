@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'sgtbimit-admission',
     'name' => 'Sri Guru Tegh Bahadur Institute of Management & IT',
     'short_name' => 'SGTBIMIT',

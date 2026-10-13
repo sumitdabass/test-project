@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'tribhuvan-admission',
     'cutoff_institute' => 'Tribhuvan College',
     'name' => 'Tribhuvan College',
