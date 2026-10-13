@@ -87,10 +87,10 @@ function news_build_index(string $content_dir, string $out_dir): string {
         <div class="col-12 mid-cta-strip-col">
           <div class="mid-cta-strip">
             <div class="cta-text">
-              <h3>&#128222; Confused About IPU Admission 2026?</h3>
+              <h3><?= $nl2 ? '' : '&#128222; ' ?>Confused About IPU Admission 2026?</h3>
               <p>Talk to our expert right now — Free guidance, no charges, instant answers.</p>
             </div>
-            <a href="tel:9899991342" class="cta-btn">📞 Call Free: 9899991342</a>
+            <a href="<?= $nl2 ? 'tel:+919899991342' : 'tel:9899991342' ?>" class="cta-btn"><?= $nl2 ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> ' : '📞 ' ?>Call Free: 9899991342</a>
           </div>
         </div>
 
@@ -112,6 +112,7 @@ ob_start();
 if (session_status() === PHP_SESSION_NONE) session_start();
 include_once __DIR__ . '/../include/base-head.php';
 include_once __DIR__ . '/../include/form-handler.php';
+$nl2 = getenv('NEWS_LAYOUT') === 'v2';   // unified-shell layout switch (see include/news-template.php)
 ?>
 <title>IPU News &amp; Announcements — Latest Updates for 2026-27</title>
 <meta name="description" content="Latest news and announcements from GGSIPU — counselling schedules, CET updates, admission notifications, results.">
@@ -166,7 +167,15 @@ include_once __DIR__ . '/../include/form-handler.php';
 
 <?php include_once __DIR__ . '/../include/base-nav.php'; ?>
 
-<section class="news-hero">
+<?php if ($nl2):
+$hero_h1 = 'IPU News &amp; Announcements';
+$hero_intro = 'Latest updates on GGSIPU admissions, counselling, CET &amp; results';
+$hero_breadcrumbs = [['Home', '/'], ['News', '']];
+$hero_show_form = false;
+$hero_show_enquire = true;
+$show_trust_bar = false;
+include __DIR__ . '/../include/components/page-hero.php';
+else: ?><section class="news-hero">
   <div class="container">
     <h1>IPU News &amp; Announcements</h1>
     <p>Latest updates on GGSIPU admissions, counselling, CET &amp; results</p>
@@ -178,6 +187,7 @@ include_once __DIR__ . '/../include/form-handler.php';
     <a href="/">Home</a> &rsaquo; <span>News</span>
   </div>
 </nav>
+<?php endif; ?>
 
 <section class="py-4">
 <div class="container">
@@ -186,7 +196,7 @@ include_once __DIR__ . '/../include/form-handler.php';
     <div class="col-lg-9 col-md-12">
       <div class="blog-search-wrap">
         <input type="text" id="newsSearch" placeholder="Search news… e.g. CET, counselling, results" autocomplete="off">
-        <span class="search-icon">&#128269;</span>
+        <span class="search-icon"><?php if ($nl2): ?><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><?php else: ?>&#128269;<?php endif; ?></span>
       </div>
     </div>
   </div>
@@ -199,7 +209,7 @@ TOP;
   </div>
 
   <div class="row">
-    <div class="col-lg-9 col-md-12 order-2 order-lg-1">
+    <div class="<?= $nl2 ? 'col-lg-8' : 'col-lg-9' ?> col-md-12<?= $nl2 ? '' : ' order-2 order-lg-1' ?>">
       <div class="row" id="newsGrid">
 
 MID;
@@ -209,9 +219,9 @@ MID;
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-12 order-1 order-lg-2 mb-4">
+    <div class="<?= $nl2 ? 'col-lg-4' : 'col-lg-3' ?> col-md-12<?= $nl2 ? '' : ' order-1 order-lg-2' ?> mb-4">
       <div style="position:sticky;top:80px">
-        <?php include_once __DIR__ . '/../include/sidebar-cta.php'; ?>
+        <?php if ($nl2) { include __DIR__ . '/../include/components/sidebar-enquiry.php'; } else { include_once __DIR__ . '/../include/sidebar-cta.php'; } ?>
         <?php include_once __DIR__ . '/../include/news-popular-blogs.php'; ?>
       </div>
     </div>

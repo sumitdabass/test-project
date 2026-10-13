@@ -174,3 +174,27 @@ def test_v2_article_popular_blogs_is_a_card_grid_and_index_widget_unchanged(v2_s
     assert "→ " not in body.split('class="news-popular"')[1].split("</div>")[0]   # arrow comes from CSS, not text
     _, idx = _get(f"{v2_site}/news/")
     assert 'class="news-popular"' not in idx and "Popular Blogs" in idx                 # index keeps the sidebar widget
+
+
+def test_v2_index_invariants(v2_site, v1_site):
+    status, html = _get(f"{v2_site}/news/")
+    assert status == 200
+    b = BASE["index"]
+    g = lambda pat: (re.search(pat, html, re.S) or [None, None])[1]
+    assert g(r"<title>(.*?)</title>") == b["title"]
+    assert g(r'<meta name="description" content="(.*?)"') == b["description"]
+    assert g(r'<link rel="canonical" href="(.*?)"') == b["canonical"]
+    body = html.split("</head>")[-1]
+    assert len(re.findall(r"<h1[\s>]", body)) == 1 and html.count('id="enquiry-form"') == 1
+    assert "sidebar-cta" not in html and 'class="news-hero"' not in body and "order-1 order-lg-2" not in body
+    for hook in ('id="newsGrid"', 'id="noResults"', 'id="newsSearch"', "mid-cta-strip-col"):
+        assert hook in html, hook
+    v1 = _get(f"{v1_site}/news/")[1]
+    count = lambda h: len(re.findall(r'class="[^"]*\bblog-item\b', h))
+    assert count(html) == count(v1) > 50
+    cats = lambda h: sorted(re.findall(r'class="btn-cat[^"]*" data-cat="([^"]+)"', h))
+    assert cats(html) == cats(v1) and len(cats(html)) >= 4
+    assert 'href="tel:9899991342"' not in html and 'href="tel:+919899991342"' in html
+    assert not re.search(r"\n(Warning|Notice|Deprecated|Fatal error): ", html)   # PHP's format; article titles can contain 'Notice'
+    for emoji in ("\U0001F4DE", "\U0001F50D", "&#128222;", "&#128269;"):
+        assert emoji not in body, emoji
