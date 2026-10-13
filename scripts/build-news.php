@@ -209,7 +209,7 @@ TOP;
   </div>
 
   <div class="row">
-    <div class="<?= $nl2 ? 'col-lg-8' : 'col-lg-9' ?> col-md-12<?= $nl2 ? '' : ' order-2 order-lg-1' ?>">
+    <div class="<?= $nl2 ? 'col-lg-8' : 'col-lg-9' ?> col-md-12 order-2 order-lg-1">
       <div class="row" id="newsGrid">
 
 MID;
@@ -219,7 +219,7 @@ MID;
       </div>
     </div>
 
-    <div class="<?= $nl2 ? 'col-lg-4' : 'col-lg-3' ?> col-md-12<?= $nl2 ? '' : ' order-1 order-lg-2' ?> mb-4">
+    <div class="<?= $nl2 ? 'col-lg-4' : 'col-lg-3' ?> col-md-12 order-1 order-lg-2 mb-4">
       <div style="position:sticky;top:80px">
         <?php if ($nl2) { include __DIR__ . '/../include/components/sidebar-enquiry.php'; } else { include_once __DIR__ . '/../include/sidebar-cta.php'; } ?>
         <?php include_once __DIR__ . '/../include/news-popular-blogs.php'; ?>

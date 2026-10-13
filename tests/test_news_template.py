@@ -122,23 +122,31 @@ def test_v2_article_invariants(v2_site, slug):
     assert [h.unescape(re.sub(r"<[^>]+>", "", li)).strip() for li in re.findall(r"<li>(.*?)</li>", crumbs, re.S)] == \
            [h.unescape(i["name"]) for i in bl["itemListElement"]]
     assert len(re.findall(r'"@type":\s*"FAQPage"', html)) == len([x for x in b["jsonld"] if x.get("@type") == "FAQPage"])
-    # headings: article body headings unchanged (FAQ H2 text is the same, questions become H3)
+    # headings: same text AND order as live once the known v2-only/sidebar headings are stripped
     got = [re.sub(r"<[^>]+>", "", m).strip() for m in re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)]
-    sidebar = ("Get Free Admission Guidance", "Popular Guides", "Popular Blogs", "Get Free Expert Guidance")
-    strip = lambda hs: sorted(x for x in hs if x not in sidebar)
-    base_h = [x for x in b["headings"]]
-    assert set(strip(base_h)) <= set(strip(got))
+    faq_questions = {q["name"] for blk in b["jsonld"] if blk.get("@type") == "FAQPage" for q in blk["mainEntity"]}
+    v2_only = {"Get Free Admission Guidance", "Popular Blogs", "Confused About IPU Admission 2026?"} | faq_questions
+    sidebar_v1 = {"Get Free Admission Guidance", "Popular Guides", "Popular Blogs", "Get Free Expert Guidance"}
+    import html as _h
+    clean = lambda hs, drop: [_h.unescape(x) for x in hs if _h.unescape(x) not in {_h.unescape(d) for d in drop}]
+    assert clean(got, v2_only) == clean(b["headings"], sidebar_v1)
+    # visible FAQ text equals the (unchanged) FAQPage JSON-LD text
+    visible = re.findall(r'<details>\s*<summary><h3>(.*?)</h3></summary>\s*<div class="ipu-faq__a">(.*?)</div>', html, re.S)
+    schema = [(q["name"], q["acceptedAnswer"]["text"]) for blk in _ld(html) if blk.get("@type") == "FAQPage" for q in blk["mainEntity"]]
+    assert [(_h.unescape(q), _h.unescape(a)) for q, a in visible] == [(_h.unescape(q), _h.unescape(a)) for q, a in schema]
     now = set(re.findall(r'href="([^"#][^"]*)"', body))
     assert [l for l in b["links"] if l not in now and l not in ("/", "https://ipu.co.in/")] == []
 
 
-def test_v2_article_mobile_order_and_dates(v2_site):
-    slug = SLUGS[0]
-    _, html = _get(f"{v2_site}/news/{slug}.php")
+@pytest.mark.parametrize("slug", SLUGS)
+def test_v2_article_mobile_order_and_dates(v2_site, slug):
+    status, html = _get(f"{v2_site}/news/{slug}.php")
+    if status == 404:
+        pytest.skip("post not in local content/news")
     body = html.split("</head>")[-1]
     assert body.index("news-tldr") < body.index('id="enquiry-form"')          # article before sidebar in DOM
     assert re.search(r'<time datetime="\d{4}-\d{2}-\d{2}">[^<]*\d{1,2} [A-Z][a-z]+ \d{4}', body)
-    assert "<summary><h3>" in html or "faq" not in html.lower()
+    assert body.count("<summary><h3>") == len([q for blk in BASE[slug]["jsonld"] if blk.get("@type") == "FAQPage" for q in blk["mainEntity"]])
 
 
 def render_post(post, layout="v2"):
@@ -186,7 +194,7 @@ def test_v2_index_invariants(v2_site, v1_site):
     assert g(r'<link rel="canonical" href="(.*?)"') == b["canonical"]
     body = html.split("</head>")[-1]
     assert len(re.findall(r"<h1[\s>]", body)) == 1 and html.count('id="enquiry-form"') == 1
-    assert "sidebar-cta" not in html and 'class="news-hero"' not in body and "order-1 order-lg-2" not in body
+    assert "sidebar-cta" not in html and 'class="news-hero"' not in body
     for hook in ('id="newsGrid"', 'id="noResults"', 'id="newsSearch"', "mid-cta-strip-col"):
         assert hook in html, hook
     v1 = _get(f"{v1_site}/news/")[1]
@@ -214,3 +222,10 @@ def test_default_layout_is_v2_without_env():
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     assert 'class="ipu-page-hero"' in idx and 'class="news-hero"' not in idx.split("</head>")[-1]
+
+
+def test_v2_index_keeps_sidebar_first_on_mobile(v2_site):
+    """v1 put the enquiry sidebar above the 95 cards on phones; v2 must not bury the form below them."""
+    html = _get(f"{v2_site}/news/")[1]
+    assert re.search(r'class="col-lg-4 col-md-12 order-1 order-lg-2 mb-4"', html)
+    assert re.search(r'class="col-lg-8 col-md-12 order-2 order-lg-1"', html)
