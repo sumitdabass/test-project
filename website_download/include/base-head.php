@@ -215,7 +215,10 @@ select.ipu-input{color:#64748b}
 .ipu-tint{background:var(--ipu-bg);border-radius:12px;padding:18px}
 .ipu-tint ul{padding-left:18px;margin:0}
 .ipu-tablewrap{overflow-x:auto;border:1px solid var(--ipu-rule);border-radius:12px;font-variant-numeric:tabular-nums}
-.ipu-tablewrap td:first-child,.ipu-tablewrap th:first-child{position:sticky;left:0;background:#fff}
+.ipu-tablewrap td:first-child,.ipu-tablewrap th:first-child{position:sticky;left:0}
+.ipu-tablewrap tbody tr{background:#fff}
+.ipu-tablewrap tbody td:first-child{background:inherit}
+.ipu-tablewrap thead th:first-child{background:#0d1b6e}
 .ipu-faq details{border:1px solid var(--ipu-rule);border-radius:12px;margin-bottom:10px;background:#fff}
 .ipu-faq summary{list-style:none;cursor:pointer;min-height:52px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .ipu-faq summary::-webkit-details-marker{display:none}

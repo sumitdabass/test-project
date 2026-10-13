@@ -66,7 +66,7 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <div class="ipu-body">
 
-  <div class="ipu-body__intro blog-details">
+  <div class="ipu-body__intro">
     <picture><source srcset="assets/images/IP-University-b-tech-admission.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="ipu-body__hero-img" alt="BPIT College IP University"></picture>
     <h2>About BPIT College (IP University)</h2>
     <p>
@@ -86,7 +86,7 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
     <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
   </div>
 
-  <div class="ipu-body__rest blog-details">
+  <div class="ipu-body__rest">
 
     <section>
       <h2>Courses Offered at BPIT</h2>
@@ -155,15 +155,6 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
       </section>
     </div>
 
-    <section>
-      <h2>Compare with Other Top IPU Colleges</h2>
-      <ul>
-        <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS Guide</a></li>
-        <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT College Review</a></li>
-        <li><a href="vips-admission.php">VIPS Pitampura Review</a></li>
-      </ul>
-    </section>
-
     <div style="margin:30px 0;padding:24px;background:#f8faff;border-radius:12px;border:1px solid #e2e8f0">
   <h3 style="color:#0d1b6e;margin-bottom:16px">Fee Structure & Seat Intake (2025-26)</h3>
   <p style="font-size:13px;color:#64748b;margin-bottom:12px">As per 6th SFRC, Delhi Gazette Notification dated 14.07.2025</p>
@@ -191,6 +182,15 @@ Bhagwan Parshuram Institute of Technology (BPIT), located in Rohini Delhi, is a 
       <details><summary><h3>Is BPIT good for B.Tech?</h3></summary><p>Yes, BPIT is known for strong technical programs, especially Computer Science and IT branches.</p></details>
       <details><summary><h3>Which entrance exam is required for BPIT admission?</h3></summary><p>B.Tech admission is primarily through JEE Main, while BBA uses CET/CUET and MBA uses CAT/CMAT/CET.</p></details>
       <details><summary><h3>Is BPIT better than other IPU colleges?</h3></summary><p>BPIT is a good option depending on branch preference, placements and location advantage.</p></details>
+    </section>
+
+    <section>
+      <h2>Compare with Other Top IPU Colleges</h2>
+      <ul>
+        <li><a href="exploring-MAIT-and-MAIMS.php">MAIT & MAIMS Guide</a></li>
+        <li><a href="explore-MSIT-and-MSI-janakpuri.php">MSIT College Review</a></li>
+        <li><a href="vips-admission.php">VIPS Pitampura Review</a></li>
+      </ul>
     </section>
 
     <?php $cta_card = true; $cta_heading = 'Need Admission Guidance?'; include __DIR__ . '/include/components/cta-strip.php'; ?>

@@ -82,3 +82,24 @@ def test_cta_strip_card_variant():
     html = render("cta-strip", cta_card=True, cta_heading="Need Admission Guidance?", cta_subtext="x")
     assert 'class="ipu-cta-card"' in html and "Need Admission Guidance?" in html
     assert "<section" not in html
+
+
+def test_table_wrapper_keeps_header_cell_visible_and_stripes():
+    css = HEAD.replace(" ", "")
+    for rule in (".ipu-tablewrap thead th:first-child{background:#0d1b6e}",
+                 ".ipu-tablewrap tbody td:first-child{background:inherit}"):
+        assert rule.replace(" ", "") in css, rule
+    # the old rule painted every first cell white, hiding the navy header
+    old = ".ipu-tablewrap td:first-child,.ipu-tablewrap th:first-child{position:sticky;left:0;background:#fff}"
+    assert old.replace(" ", "") not in css
+
+
+def test_cta_strip_card_flag_does_not_leak_into_next_include():
+    code = (
+        '$cta_card=true; include "include/components/cta-strip.php"; '
+        'echo "\\n@@SPLIT@@\\n"; include "include/components/cta-strip.php";'
+    )
+    out = subprocess.run(["php", "-r", code], capture_output=True, text=True, check=True, cwd=WEB).stdout
+    first, second = out.split("@@SPLIT@@")
+    assert "ipu-cta-card" in first
+    assert "ipu-cta-card" not in second and "<section" in second

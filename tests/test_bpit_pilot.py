@@ -82,9 +82,15 @@ def test_headings_same_text_apart_from_cta_and_order_of_core_sections(page):
     expected = [h for h in BASE["headings"] if h != skip]
     assert sorted(got) == sorted(expected)
     core = ["About BPIT College (IP University)", "Courses Offered at BPIT", "Admission Process (IP University)",
-            "Placement Overview", "Campus & Location Advantage"]
+            "Placement Overview", "Campus & Location Advantage", "Fee Structure & Seat Intake (2025-26)",
+            "Frequently Asked Questions (BPIT IP University)", "Compare with Other Top IPU Colleges"]
     idx = [got.index(h) for h in core]
     assert idx == sorted(idx)
+
+
+def test_grid_columns_do_not_inherit_legacy_blog_details_css(page):
+    # bundle.min.css .blog-details rules (h2/h3 sizes+colours, grey ul dots, 760px cap) beat the .ipu-* rules.
+    assert "blog-details" not in page
 
 
 def test_every_baseline_link_still_present(page):

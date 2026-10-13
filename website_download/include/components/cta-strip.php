@@ -37,3 +37,4 @@ if ($cta_card): ?>
   </div>
 </section>
 <?php endif; ?>
+<?php unset($cta_card, $cta_heading, $cta_subtext); ?>
