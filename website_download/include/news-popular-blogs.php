@@ -10,7 +10,17 @@ $popular_blogs = [
     ['url' => '/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php', 'title' => 'Top BBA Colleges under IP University'],
     ['url' => '/guide-to-bjmc-colleges-under-ip-university.php',         'title' => 'Guide to BJMC Colleges under IPU'],
 ];
-?>
+$popular_grid = $popular_grid ?? false;   // news-template v2 sets this for the in-article card grid
+if ($popular_grid): ?>
+<section class="news-popular-wrap">
+  <h2>Popular Blogs</h2>
+  <div class="news-popular">
+    <?php foreach ($popular_blogs as $b): ?>
+    <a href="<?= htmlspecialchars($b['url'], ENT_QUOTES) ?>"><?= htmlspecialchars($b['title'], ENT_QUOTES) ?></a>
+    <?php endforeach; ?>
+  </div>
+</section>
+<?php else: ?>
 <div style="margin-top:20px;background:#f8faff;border-radius:12px;padding:20px;border:1px solid #e2e8f0">
   <h4 style="font-size:15px;color:#0d1b6e;margin-bottom:12px;font-weight:700">Popular Blogs</h4>
   <ul style="list-style:none;padding:0;margin:0">
@@ -23,3 +33,4 @@ $popular_blogs = [
     <?php endforeach; ?>
   </ul>
 </div>
+<?php endif; ?>

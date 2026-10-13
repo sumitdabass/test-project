@@ -67,3 +67,6 @@ TestCase::assertTrue(news_is_fresh('2026-10-10', 7, '2026-10-13'), 'fresh within
 TestCase::assertTrue(!news_is_fresh('2026-10-01', 7, '2026-10-13'), 'stale after 7 days');
 TestCase::assertTrue(!news_is_fresh('garbage', 7, '2026-10-13'), 'bad date is not fresh');
 TestCase::assertTrue(!news_is_fresh('2026-10-20', 7, '2026-10-13'), 'future date is not fresh');
+TestCase::assertTrue(news_is_fresh('2026-10-13', 7, '2026-10-13'), 'a post dated today is fresh');
+TestCase::assertTrue(news_is_fresh('2026-10-06', 7, '2026-10-13'), 'exactly 7 days old is fresh');
+TestCase::assertTrue(!news_is_fresh('2026-10-05', 7, '2026-10-13'), '8 days old is stale');

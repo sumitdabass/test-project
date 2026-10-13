@@ -98,8 +98,8 @@ function news_split_body(string $html): array {
 }
 
 function news_is_fresh(string $iso_date, int $days = 7, ?string $today = null): bool {
-    $d = DateTime::createFromFormat('Y-m-d', $iso_date);
+    $d = DateTime::createFromFormat('!Y-m-d', $iso_date);   // '!' zeroes the time so a post dated today is not 'in the future'
     if (!$d || $d->format('Y-m-d') !== $iso_date) return false;
-    $t = new DateTime($today ?? 'today');
+    $t = new DateTime(($today ?? 'today') . ' 00:00:00');
     return $d <= $t && $d->diff($t)->days <= $days;
 }

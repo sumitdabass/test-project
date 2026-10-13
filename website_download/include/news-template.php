@@ -2,6 +2,7 @@
 /** @var array $post — must include body_html, title, slug, date, date_modified, category, tags, read_time, is_urgent, image, tldr, faq */
 require_once __DIR__ . '/news-helpers.php';
 require_once __DIR__ . '/news-jsonld.php';
+$news_layout = getenv('NEWS_LAYOUT') ?: 'v1';   // flipped to 'v2' in the final commit of the news plan
 
 $post_url = 'https://ipu.co.in/news/' . htmlspecialchars($post['slug'], ENT_QUOTES) . '.php';
 $img_abs  = 'https://ipu.co.in/' . ltrim($post['image'], '/');
@@ -23,7 +24,7 @@ include_once __DIR__ . '/base-head.php';
 <meta property="og:description" content="<?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?>">
 <meta property="og:url" content="<?= $post_url ?>">
 <meta property="og:image" content="<?= htmlspecialchars($img_abs, ENT_QUOTES) ?>">
-<meta property="og:site_name" content="IPU.co.in">
+<meta property="og:site_name" content="<?= $news_layout === 'v2' ? 'IPU Admission Guide' : 'IPU.co.in' ?>">
 <meta property="article:published_time" content="<?= htmlspecialchars($post['date'], ENT_QUOTES) ?>">
 <meta property="article:modified_time" content="<?= htmlspecialchars($post['date_modified'], ENT_QUOTES) ?>">
 <meta property="article:section" content="<?= htmlspecialchars($post['category'], ENT_QUOTES) ?>">
@@ -39,7 +40,7 @@ include_once __DIR__ . '/base-head.php';
 <?php endif; ?>
 <script type="application/ld+json"><?= $jsonld_bc ?></script>
 
-<style>
+<?php if ($news_layout !== 'v2'): ?><style>
 /* News post — blog-matching typography */
 .breadcrumb-wrap {
   background: #f0f4ff;
@@ -259,3 +260,72 @@ include_once __DIR__ . '/base-head.php';
 <?php include_once __DIR__ . '/base-footer.php'; ?>
 </body>
 </html>
+<?php else: ?><style>
+.news-post__body{font-size:1rem;line-height:1.7;color:var(--ipu-text,#1a1a2e)}
+.news-post__body h2{margin:24px 0 10px}.news-post__body h3{font-size:18px;font-weight:700;margin:20px 0 8px;color:var(--ipu-ink)}
+.news-post__body a{color:#1a3a9c;text-decoration:underline}.news-post__body p{margin:0 0 14px}
+.news-post__body ul,.news-post__body ol{margin:0 0 14px 20px}.news-post__body li{margin-bottom:6px}
+.news-post__image{margin:0 0 20px}.news-post__image img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover;border-radius:16px}
+.news-tldr{background:var(--ipu-bg);border:1px solid var(--ipu-rule-soft);border-radius:12px;padding:16px 18px;margin:0 0 22px}
+.news-tldr strong{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--ipu-ink-2);margin-bottom:6px}
+.news-tldr p{margin:0;font-size:16px}
+.news-urgent{display:flex;gap:10px;align-items:flex-start;background:#fef3c7;border:1px solid #fde68a;color:#92400e;padding:12px 14px;border-radius:12px;margin:0 0 16px;font-size:15px}
+.news-urgent svg{flex:0 0 18px;margin-top:2px}
+.news-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 24px}
+.news-tag{background:var(--ipu-bg);color:var(--ipu-ink-2);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.news-popular{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.news-popular a{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:12px 14px;border:1px solid var(--ipu-rule);border-radius:12px;background:#fff;color:var(--ipu-ink);font-weight:600;text-decoration:none}
+.news-popular a::after{content:"\2192";color:var(--ipu-orange)}
+</style>
+<body>
+<?php include_once __DIR__ . '/base-nav.php'; ?>
+<?php
+[$news_intro_html, $news_rest_html] = news_split_body($post['body_html']);
+$hero_pill = $post['category'];
+$hero_h1 = htmlspecialchars($post['title'], ENT_QUOTES);
+$hero_meta = '<time datetime="' . htmlspecialchars($post['date'], ENT_QUOTES) . '">Published ' . htmlspecialchars(news_human_date($post['date']), ENT_QUOTES) . '</time>'
+    . (!empty($post['date_modified']) && $post['date_modified'] !== $post['date'] ? ' · Updated ' . htmlspecialchars(news_human_date($post['date_modified']), ENT_QUOTES) : '')
+    . ' · By IPU Admission Team · ' . (int)$post['read_time'] . ' min read';
+$hero_breadcrumbs = [['Home', '/'], ['News', '/news/'], [$post['category'], '/news/?cat=' . strtolower($post['category'])], [$post['title'], '']];
+$hero_show_form = false;
+$hero_show_enquire = true;
+$show_trust_bar = false;
+include __DIR__ . '/components/page-hero.php';
+unset($hero_pill, $hero_h1, $hero_meta, $hero_breadcrumbs, $hero_show_enquire, $show_trust_bar);
+?>
+<div class="ipu-body">
+  <article class="ipu-body__intro">
+    <?php if (!empty($post['is_urgent']) && news_is_fresh($post['date_modified'] ?: $post['date'])): ?>
+    <div class="news-urgent" role="note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+      <span>Time-sensitive: please check dates directly with official sources.</span>
+    </div>
+    <?php endif; ?>
+    <figure class="news-post__image">
+      <img src="/<?= htmlspecialchars(ltrim($post['image'], '/'), ENT_QUOTES) ?>" alt="<?= htmlspecialchars($post['title'], ENT_QUOTES) ?>" width="1000" height="600" fetchpriority="high" decoding="async">
+    </figure>
+    <aside class="news-tldr"><strong>TL;DR</strong><p><?= htmlspecialchars($post['tldr'], ENT_QUOTES) ?></p></aside>
+    <div class="news-post__body"><?= $news_intro_html ?></div>
+  </article>
+
+  <div class="ipu-body__aside"><?php include __DIR__ . '/components/sidebar-enquiry.php'; ?></div>
+
+  <div class="ipu-body__rest">
+    <?php if ($news_rest_html !== ''): ?><div class="news-post__body"><?= $news_rest_html ?></div><?php endif; ?>
+    <?php $cta_card = true; $cta_heading = 'Confused About IPU Admission 2026?'; $cta_subtext = 'Talk to our expert right now — Free guidance, no charges, instant answers.'; include __DIR__ . '/components/cta-strip.php'; ?>
+    <?php
+    $faqs = array_map(fn($p) => ['question' => $p['q'], 'answer' => htmlspecialchars($p['a'], ENT_QUOTES)], $post['faq'] ?? []);
+    $faq_schema = false;   // the head already carries the FAQPage JSON-LD for this post
+    include __DIR__ . '/components/faq-details.php';
+    unset($faqs, $faq_schema);
+    ?>
+    <?php if (!empty($post['tags'])): ?>
+    <div class="news-tags"><?php foreach ($post['tags'] as $tag): ?><span class="news-tag"><?= htmlspecialchars($tag, ENT_QUOTES) ?></span><?php endforeach; ?></div>
+    <?php endif; ?>
+    <?php $popular_grid = true; include __DIR__ . '/news-popular-blogs.php'; $popular_grid = false; ?>
+  </div>
+</div>
+<?php include_once __DIR__ . '/base-footer.php'; ?>
+</body>
+</html>
+<?php endif; ?>
