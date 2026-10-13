@@ -37,7 +37,8 @@ TestCase::assertContains('"@type": "FAQPage"', $html, 'FAQPage JSON-LD');
 TestCase::assertContains('"@type": "BreadcrumbList"', $html, 'Breadcrumb JSON-LD');
 
 // body / structure
-TestCase::assertContains('<h1>Round 2 Counselling Schedule Announced</h1>', $html, 'h1 with title');
+TestCase::assertContains('>Round 2 Counselling Schedule Announced</h1>', $html, 'h1 with title');
+TestCase::assertEqual(1, preg_match_all('/<h1[\\s>]/', $html), 'exactly one h1');
 TestCase::assertContains('class="news-tldr"', $html, 'tldr box visible');
 TestCase::assertContains('IPU has announced Round 2', $html, 'tldr text shown');
 TestCase::assertContains('<h2>Schedule</h2>', $html, 'body HTML rendered');

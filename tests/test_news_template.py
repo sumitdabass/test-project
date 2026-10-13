@@ -198,3 +198,19 @@ def test_v2_index_invariants(v2_site, v1_site):
     assert not re.search(r"\n(Warning|Notice|Deprecated|Fatal error): ", html)   # PHP's format; article titles can contain 'Notice'
     for emoji in ("\U0001F4DE", "\U0001F50D", "&#128222;", "&#128269;"):
         assert emoji not in body, emoji
+
+
+def test_default_layout_is_v2_without_env():
+    env = {k: v for k, v in os.environ.items() if k != "NEWS_LAYOUT"}
+    code = ("$post=json_decode(" + json.dumps(json.dumps(_post())) + ",true); @session_start(); include "
+            + json.dumps(str(WEB / "include" / "news-template.php")) + ";")
+    out = subprocess.run(["php", "-r", code], capture_output=True, text=True, check=True, cwd=WEB / "news", env=env).stdout
+    assert "ipu-body" in out.split("</head>")[-1]
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        web = build_site(tmp)
+        idx = subprocess.run(["php", "-r", '$_SERVER["REQUEST_METHOD"]="GET"; $_SERVER["REQUEST_URI"]="/news/"; @session_start(); include "index.php";'],
+                             capture_output=True, text=True, cwd=web / "news", env=env).stdout
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    assert 'class="ipu-page-hero"' in idx and 'class="news-hero"' not in idx.split("</head>")[-1]

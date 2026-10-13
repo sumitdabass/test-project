@@ -2,7 +2,7 @@
 /** @var array $post — must include body_html, title, slug, date, date_modified, category, tags, read_time, is_urgent, image, tldr, faq */
 require_once __DIR__ . '/news-helpers.php';
 require_once __DIR__ . '/news-jsonld.php';
-$news_layout = getenv('NEWS_LAYOUT') ?: 'v1';   // flipped to 'v2' in the final commit of the news plan
+$news_layout = getenv('NEWS_LAYOUT') ?: 'v2';   // 'v1' (legacy) is kept as the rollback path / test baseline
 
 $post_url = 'https://ipu.co.in/news/' . htmlspecialchars($post['slug'], ENT_QUOTES) . '.php';
 $img_abs  = 'https://ipu.co.in/' . ltrim($post['image'], '/');

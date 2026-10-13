@@ -112,7 +112,7 @@ ob_start();
 if (session_status() === PHP_SESSION_NONE) session_start();
 include_once __DIR__ . '/../include/base-head.php';
 include_once __DIR__ . '/../include/form-handler.php';
-$nl2 = getenv('NEWS_LAYOUT') === 'v2';   // unified-shell layout switch (see include/news-template.php)
+$nl2 = (getenv('NEWS_LAYOUT') ?: 'v2') === 'v2';   // unified-shell layout switch (see include/news-template.php); 'v1' = rollback
 ?>
 <title>IPU News &amp; Announcements — Latest Updates for 2026-27</title>
 <meta name="description" content="Latest news and announcements from GGSIPU — counselling schedules, CET updates, admission notifications, results.">
