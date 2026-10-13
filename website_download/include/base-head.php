@@ -230,6 +230,7 @@ select.ipu-input{color:#64748b}
 .ipu-cta-card{background:linear-gradient(135deg,var(--ipu-ink) 0%,var(--ipu-ink-2) 100%);border-radius:16px;padding:24px;color:#fff;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .ipu-cta-card h2,.ipu-cta-card h3,.ipu-cta-card p{color:#fff;margin:0}
 .ipu-cta-card p{color:rgba(255,255,255,.8);font-size:15px}
+.ipu-body .ipu-cta-card{margin-bottom:28px}
 a.ipu-cta-call{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:14px 28px;border-radius:999px;background:#ff7a1a;color:#0d1b6e;font-weight:800;font-size:16px;text-decoration:none;box-shadow:var(--ipu-cta-shadow)}
 a.ipu-cta-call:hover{background:#ff8a35;color:#0d1b6e}
 

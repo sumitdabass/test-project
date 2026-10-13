@@ -103,3 +103,7 @@ def test_cta_strip_card_flag_does_not_leak_into_next_include():
     first, second = out.split("@@SPLIT@@")
     assert "ipu-cta-card" in first
     assert "ipu-cta-card" not in second and "<section" in second
+
+
+def test_cta_card_has_bottom_margin_inside_grid():
+    assert ".ipu-body .ipu-cta-card{margin-bottom:28px}" in HEAD.replace("\n", "")

@@ -41,8 +41,7 @@ def _get(url):
 from seo_verify import check_html
 
 BASE = json.load(open(ROOT / "tests" / "fixtures" / "college_baseline.json"))
-V1_SNAPSHOT = {"dme-admission.php": ROOT / "tests" / "fixtures" / "college_v1_dme.html",
-               "dias-admission.php": ROOT / "tests" / "fixtures" / "college_v1_dias.html"}
+V1_SNAPSHOT = {"dias-admission.php": ROOT / "tests" / "fixtures" / "college_v1_dias.html"}
 
 
 def render(component: str, **local_vars) -> str:
@@ -171,3 +170,37 @@ def test_v1_default_when_flag_absent(server):
     assert status == 200
     body = html.split("</head>")[-1]
     assert "hero-section" in body and "ipu-body" not in body
+
+
+V2_PAGES = ["dme-admission.php"]   # Task 5 widens this to every template page
+
+
+def _norm_link(u):
+    return "/" if u == "https://ipu.co.in/" else u
+
+
+@pytest.mark.parametrize("page", V2_PAGES)
+def test_v2_page_invariants_against_live_baseline(server, page):
+    status, html = _get(f"{server}/{page}")
+    assert status == 200
+    base = BASE[page]
+    g = lambda pat: (re.search(pat, html, re.S) or [None, None])[1]
+    assert g(r"<title>(.*?)</title>") == base["title"]
+    assert g(r'<meta name="description" content="(.*?)"') == base["description"]
+    assert g(r'<link rel="canonical" href="(.*?)"') == base["canonical"]
+    assert len(re.findall(r"<h1[\s>]", html)) == 1
+    assert html.count('id="enquiry-form"') == 1
+    assert check_html(html) == []
+    body = html.split("</head>")[-1]
+    got = [re.sub(r"<[^>]+>", "", m).strip() for m in re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)]
+    skip = ("Need Help with", "Get Free Admission Guidance")
+    drop = lambda hs: sorted(h for h in hs if not h.startswith(skip))
+    assert drop(got) == drop(base["headings"])
+    now = {_norm_link(u) for u in re.findall(r'href="([^"#][^"]*)"', body)}
+    lost = [l for l in base["links"] if _norm_link(l) not in now and "ipu-admission-guide.php" not in l]
+    assert lost == []
+    ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)]
+    faq = [(q["name"], q["acceptedAnswer"]["text"]) for b in ld if b.get("@type") == "FAQPage" for q in b["mainEntity"]]
+    assert faq == [tuple(x) for x in base["faq"]]
+    crumbs = [b for b in ld if b.get("@type") == "BreadcrumbList"]
+    assert len(crumbs) == 1 and [i["name"] for i in crumbs[0]["itemListElement"]][:2] == ["Home", "Colleges"]

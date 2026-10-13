@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'dme-admission',
     'name' => 'Delhi Metropolitan Education',
     'short_name' => 'DME',
