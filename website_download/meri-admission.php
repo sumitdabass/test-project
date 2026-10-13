@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'meri-admission',
     'name' => 'Management Education & Research Institute',
     'short_name' => 'MERI',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'echelon-admission',
     'cutoff_institute' => 'Echelon Institute of Technology',
     'name' => 'Echelon Institute of Technology',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'jims-vasant-kunj-admission',
     'name' => 'Jagannath International Management School (Vasant Kunj)',
     'short_name' => 'JIMS Vasant Kunj',

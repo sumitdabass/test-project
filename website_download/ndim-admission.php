@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'ndim-admission',
     'name' => 'New Delhi Institute of Management',
     'short_name' => 'NDIM',

@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'gtb4cec-admission',
     'cutoff_institute' => 'Guru Tegh Bahadur 4th Centenary Engineering College',
     'name' => 'Guru Tegh Bahadur 4th Centenary Engineering College',

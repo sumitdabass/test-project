@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'dtc-admission',
     'cutoff_institute' => 'Delhi Technical Campus',
     'name' => 'Delhi Technical Campus',

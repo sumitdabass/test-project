@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'usct-admission',
     'cutoff_institute' => 'University School of Chemical Technology',
     'name' => 'University School of Chemical Technology',

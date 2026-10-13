@@ -172,7 +172,11 @@ def test_v1_default_when_flag_absent(server):
     assert "hero-section" in body and "ipu-body" not in body
 
 
-V2_PAGES = ["dme-admission.php"]   # Task 5 widens this to every template page
+def _is_v2(page):
+    return "'layout' => 'v2'" in (WEB / page).read_text(encoding="utf-8")
+
+
+V2_PAGES = [p for p in sorted(BASE) if _is_v2(p)]   # pages already flipped to the unified shell
 
 
 def _norm_link(u):

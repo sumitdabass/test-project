@@ -1,5 +1,6 @@
 <?php
 $college_data = [
+    'layout' => 'v2',
     'slug' => 'fairfield-admission',
     'cutoff_institute' => 'Fairfield Institute of Management & Technology',
     'name' => 'Fairfield Institute of Management & Technology',
