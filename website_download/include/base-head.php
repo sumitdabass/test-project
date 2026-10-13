@@ -184,6 +184,7 @@ select.ipu-input{color:#64748b}
 .ipu-page-hero__actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .ipu-page-hero a.ipu-page-hero__enquire{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 24px;border:1.5px solid rgba(255,255,255,.5);border-radius:8px;background:transparent;color:#fff;font-weight:700;font-size:15px;text-decoration:none}
 .ipu-page-hero a.ipu-page-hero__enquire:hover{border-color:#fff}
+.ipu-page-hero__pill{display:inline-block;background:rgba(245,158,11,.18);color:#f59e0b;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:4px 12px;border-radius:999px;margin-bottom:12px}
 .ipu-page-hero__meta{font-size:14px;color:rgba(255,255,255,.75);margin:0 0 18px}
 
 /* ===== unified body grid (single DOM copy of the sidebar) ===== */

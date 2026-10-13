@@ -46,3 +46,24 @@ TestCase::assertTrue(!news_state_has_seen($tmp_state, 'https://example.com/b'), 
 news_state_mark_seen($tmp_state, 'https://example.com/b');
 TestCase::assertEqual(2, count(json_decode(file_get_contents($tmp_state), true)['seen']), 'two hashes stored');
 unlink($tmp_state);
+
+// ── news_human_date / news_split_body / news_is_fresh ──────────────────────────
+TestCase::assertEqual('28 September 2026', news_human_date('2026-09-28'), 'human date');
+TestCase::assertEqual('not-a-date', news_human_date('not-a-date'), 'unparsable date unchanged');
+
+$__h = '<p>lead</p><h2>One</h2><p>a</p><h2>Two</h2><p>b</p>';
+[$__i, $__r] = news_split_body($__h);
+TestCase::assertEqual('<p>lead</p><h2>One</h2><p>a</p>', $__i, 'intro stops before the second h2');
+TestCase::assertEqual('<h2>Two</h2><p>b</p>', $__r, 'rest starts at the second h2');
+TestCase::assertEqual($__h, $__i . $__r, 'split is lossless');
+[$__i2, $__r2] = news_split_body('<h2>Only</h2><p>x</p>');
+TestCase::assertEqual('', $__r2, 'one h2 keeps everything in intro');
+[$__i3, $__r3] = news_split_body('');
+TestCase::assertEqual('', $__i3 . $__r3, 'empty body');
+[$__i4, $__r4] = news_split_body('<p>See <code>&lt;h2&gt;</code> tag</p><h2>A</h2><h2>B</h2>');
+TestCase::assertEqual('<p>See <code>&lt;h2&gt;</code> tag</p><h2>A</h2>', $__i4, 'escaped h2 text is not a boundary');
+
+TestCase::assertTrue(news_is_fresh('2026-10-10', 7, '2026-10-13'), 'fresh within 7 days');
+TestCase::assertTrue(!news_is_fresh('2026-10-01', 7, '2026-10-13'), 'stale after 7 days');
+TestCase::assertTrue(!news_is_fresh('garbage', 7, '2026-10-13'), 'bad date is not fresh');
+TestCase::assertTrue(!news_is_fresh('2026-10-20', 7, '2026-10-13'), 'future date is not fresh');

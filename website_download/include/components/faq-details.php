@@ -6,6 +6,7 @@
  */
 $faqs = $faqs ?? [];
 $faq_heading = $faq_heading ?? 'Frequently Asked Questions';
+$faq_schema = $faq_schema ?? true;   // false when the page head already carries the FAQPage JSON-LD
 if (empty($faqs)) return;
 ?>
 <section class="ipu-faq">
@@ -18,6 +19,7 @@ if (empty($faqs)) return;
   <?php endforeach; ?>
 </section>
 
+<?php if ($faq_schema): ?>
 <!-- FAQPage Schema -->
 <script type="application/ld+json">
 {
@@ -37,3 +39,4 @@ if (empty($faqs)) return;
   ]
 }
 </script>
+<?php endif; ?>

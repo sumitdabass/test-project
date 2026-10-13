@@ -107,3 +107,16 @@ def test_cta_strip_card_flag_does_not_leak_into_next_include():
 
 def test_cta_card_has_bottom_margin_inside_grid():
     assert ".ipu-body .ipu-cta-card{margin-bottom:28px}" in HEAD.replace("\n", "")
+
+
+def test_hero_pill_slot():
+    html = render("page-hero", hero_pill="Counselling", **HERO)
+    assert '<span class="ipu-page-hero__pill">Counselling</span>' in html
+    assert "ipu-page-hero__pill" not in render("page-hero", **HERO)
+
+
+def test_faq_details_schema_can_be_suppressed():
+    faqs = [{"question": "Q?", "answer": "A"}]
+    assert "FAQPage" in render("faq-details", faqs=faqs)
+    html = render("faq-details", faqs=faqs, faq_schema=False)
+    assert "FAQPage" not in html and "<details" in html

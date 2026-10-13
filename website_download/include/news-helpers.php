@@ -82,3 +82,24 @@ function news_md_to_html(string $md): string {
     error_reporting($prev);
     return $html;
 }
+
+function news_human_date(string $iso): string {
+    $d = DateTime::createFromFormat('Y-m-d', $iso);
+    return ($d && $d->format('Y-m-d') === $iso) ? $d->format('j F Y') : $iso;
+}
+
+/** Split body_html before its second <h2 (real tags only). Lossless: $intro . $rest === $html. */
+function news_split_body(string $html): array {
+    if (preg_match_all('/<h2[\s>]/i', $html, $m, PREG_OFFSET_CAPTURE) && count($m[0]) >= 2) {
+        $cut = $m[0][1][1];
+        return [substr($html, 0, $cut), substr($html, $cut)];
+    }
+    return [$html, ''];
+}
+
+function news_is_fresh(string $iso_date, int $days = 7, ?string $today = null): bool {
+    $d = DateTime::createFromFormat('Y-m-d', $iso_date);
+    if (!$d || $d->format('Y-m-d') !== $iso_date) return false;
+    $t = new DateTime($today ?? 'today');
+    return $d <= $t && $d->diff($t)->days <= $days;
+}

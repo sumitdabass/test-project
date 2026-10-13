@@ -12,6 +12,7 @@
 //   $hero_slot_html   string   — raw HTML override for the left column (escapes nothing)
 //   $hero_show_enquire bool    — render the outlined Enquire button (#enquiry-form); default false, opt in only on pages whose body carries the form
 //   $hero_meta        string   — meta line under the H1 (HTML allowed)
+//   $hero_pill        string   — small category pill above the H1 (news)
 
 $hero_kicker      = $hero_kicker      ?? null;
 $hero_h1          = $hero_h1          ?? null;
@@ -23,6 +24,7 @@ $show_trust_bar   = $show_trust_bar   ?? true;
 $hero_slot_html   = $hero_slot_html   ?? null;
 $hero_show_enquire = $hero_show_enquire ?? false;
 $hero_meta         = $hero_meta         ?? null;
+$hero_pill         = $hero_pill         ?? null;
 ?>
 <section class="ipu-page-hero">
   <div class="container">
@@ -51,6 +53,10 @@ $hero_meta         = $hero_meta         ?? null;
 
           <?php if ($hero_kicker): ?>
             <p class="ipu-page-hero__kicker"><?= htmlspecialchars($hero_kicker) ?></p>
+          <?php endif; ?>
+
+          <?php if ($hero_pill): ?>
+            <span class="ipu-page-hero__pill"><?= htmlspecialchars($hero_pill) ?></span>
           <?php endif; ?>
 
           <?php if ($hero_h1): ?>
