@@ -38,3 +38,33 @@ def test_legacy_mobile_call_gradients_removed_but_layout_kept():
 
 def test_hero_call_button_is_action_orange():
     assert ".ipu-page-hero a.ipu-page-hero__call{background:#ff7a1a;color:#0d1b6e".replace(" ", "") in HEAD.replace(" ", "")
+
+
+HERO = dict(hero_h1="Test H1", hero_show_form=False, show_trust_bar=False,
+            hero_breadcrumbs=[["Home", "/"], ["Colleges", "/ipu-colleges-list.php"], ["BPIT College", ""]])
+
+
+def test_hero_default_has_no_enquire_button_and_one_h1():
+    html = render("page-hero", **HERO)
+    assert html.count("<h1") == 1
+    assert "#enquiry-form" not in html
+    assert 'href="tel:+919899991342"' in html
+    assert 'data-cta-src="hero"' in html
+
+
+def test_hero_enquire_button_opt_in():
+    html = render("page-hero", hero_show_enquire=True, **HERO)
+    assert 'href="#enquiry-form"' in html and "ipu-page-hero__enquire" in html
+    assert html.count('href="#enquiry-form"') == 1
+
+
+def test_hero_meta_slot_renders_when_set():
+    html = render("page-hero", hero_meta="Last Updated: 6 April 2026", **HERO)
+    assert '<p class="ipu-page-hero__meta">Last Updated: 6 April 2026</p>' in html
+    assert "ipu-page-hero__meta" not in render("page-hero", **HERO)
+
+
+def test_hero_breadcrumb_unchanged_markup():
+    html = render("page-hero", **HERO)
+    assert '<a href="/ipu-colleges-list.php">Colleges</a>' in html
+    assert '<span aria-current="page">BPIT College</span>' in html

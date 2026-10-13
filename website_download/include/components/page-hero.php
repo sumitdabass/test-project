@@ -10,6 +10,8 @@
 //   $hero_breadcrumbs array    — list of [label, url] tuples; tuple with empty url renders as current
 //   $hero_show_form   bool     — render the in-flow sidebar enquiry on desktop (default true)
 //   $hero_slot_html   string   — raw HTML override for the left column (escapes nothing)
+//   $hero_show_enquire bool    — render the outlined Enquire button (#enquiry-form); default false, opt in only on pages whose body carries the form
+//   $hero_meta        string   — meta line under the H1 (HTML allowed)
 
 $hero_kicker      = $hero_kicker      ?? null;
 $hero_h1          = $hero_h1          ?? null;
@@ -19,6 +21,8 @@ $hero_breadcrumbs = $hero_breadcrumbs ?? [];
 $hero_show_form   = $hero_show_form   ?? true;
 $show_trust_bar   = $show_trust_bar   ?? true;
 $hero_slot_html   = $hero_slot_html   ?? null;
+$hero_show_enquire = $hero_show_enquire ?? false;
+$hero_meta         = $hero_meta         ?? null;
 ?>
 <section class="ipu-page-hero">
   <div class="container">
@@ -69,10 +73,19 @@ $hero_slot_html   = $hero_slot_html   ?? null;
             <p class="ipu-page-hero__intro"><?= $hero_intro ?></p>
           <?php endif; ?>
 
-          <a href="tel:+919899991342" class="ipu-btn-primary ipu-page-hero__call" data-cta-src="hero">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-            Call: 9899991342
-          </a>
+          <?php if ($hero_meta): ?>
+            <p class="ipu-page-hero__meta"><?= $hero_meta ?></p>
+          <?php endif; ?>
+
+          <div class="ipu-page-hero__actions">
+            <a href="tel:+919899991342" class="ipu-btn-primary ipu-page-hero__call" data-cta-src="hero">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+              Call: 9899991342
+            </a>
+            <?php if ($hero_show_enquire): ?>
+              <a href="#enquiry-form" class="ipu-page-hero__enquire" data-cta-src="hero-enquire">Enquire</a>
+            <?php endif; ?>
+          </div>
 
         <?php endif; ?>
       </div>
