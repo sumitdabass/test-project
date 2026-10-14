@@ -48,35 +48,19 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'BBA Admission in IP University — Top Colleges, Eligibility &amp; Counselling Guide';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['BBA Admission', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-05-05';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ================= BLOG SECTION ================= -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<!-- ===== BREADCRUMBS ===== -->
-
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">BBA Admission</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.jpg', 'BBA IP University Admission Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -90,13 +74,20 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 </p>
 
 <p>
-👉 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
+ <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 </p>
 
 <hr>
 
 <!-- ===== ELIGIBILITY (NEW AUTHORITY SECTION) ===== -->
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>BBA Eligibility Criteria (IP University)</h2>
 
 <ul>
@@ -106,7 +97,7 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 <li>Final seat allotment based on rank, category and availability.</li>
 </ul>
 
-👉 Detailed counselling process:
+ Detailed counselling process:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Guide</strong></a>
 
 <hr>
@@ -164,10 +155,10 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 <h2>Related IP University Admission Guides</h2>
 
 <p>
-👉 <a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a><br>
-👉 <a href="mba-admission-ip-university.php">MBA Admission Guide</a><br>
-👉 <a href="IP-University-management-quota-admission-eligibility-criteria.php">Management Quota Admission Guide</a><br>
-👉 <a href="cuet-bba-admission-ipu.php">BBA Admission Through CUET (UG) &mdash; vacant seats &amp; management quota</a>
+ <a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a><br>
+ <a href="mba-admission-ip-university.php">MBA Admission Guide</a><br>
+ <a href="IP-University-management-quota-admission-eligibility-criteria.php">Management Quota Admission Guide</a><br>
+ <a href="cuet-bba-admission-ipu.php">BBA Admission Through CUET (UG) &mdash; vacant seats &amp; management quota</a>
 </p>
 
 <hr>
@@ -209,21 +200,9 @@ IP University (GGSIPU) offers one of the most popular BBA programs in Delhi NCR.
 <p>Get expert counselling and admission guidance.</p>
 <a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
+  </div>
 
 </div>
-
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- BBA Fees Section — additive 2026-05-28 targeting "ipu bba fees" query -->
 <section style="padding:50px 0;background:#f8faff">

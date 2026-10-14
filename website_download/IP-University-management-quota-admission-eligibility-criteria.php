@@ -166,7 +166,7 @@ include_once("include/form-handler.php");
   font-size: 14px;
 }
 
-.blog-details h2 {
+.ipu-body__intro h2, .ipu-body__rest h2 {
   border-left: 4px solid #3a5bd9;
   padding-left: 10px;
   margin-bottom: 16px;
@@ -192,25 +192,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'IPU Management Seat / Management Quota Admission 2026';
 $hero_intro = 'IP University (GGSIPU) &bull; Eligibility &bull; Direct Admission Process &bull; Top Colleges';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['Management Seat & Quota Admission', '']];
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- MAIN CONTENT -->
-<section class="blog-wrapper pt-130 pb-130">
-  <div class="container">
+<div class="ipu-body">
 
-    <!-- BREADCRUMB -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-        <li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Management Seat &amp; Quota Admission</li>
-      </ol>
-    </nav>
-
-    <div class="row">
-      <div class="col-lg-8">
-        <article class="blog-details">
+  <div class="ipu-body__intro">
+        
 
           <?php webp_img('assets/images/blog1.jpg', 'IPU Management Seat and Management Quota Admission 2026 Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
@@ -227,7 +218,16 @@ include __DIR__ . '/include/components/page-hero.php';
           <hr>
 
           <!-- Guidelines + Rules merged -->
-          <div class="section-block">
+          
+  </div>
+
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
+<div class="section-block">
             <h2>Key Rules &amp; Guidelines Students Must Know</h2>
             <ul>
               <li>Management quota is available <strong>only in private affiliated colleges</strong>. Government institutes like USICT do not offer management seats.</li>
@@ -452,16 +452,11 @@ include __DIR__ . '/include/components/page-hero.php';
             </a>
           </div>
 
-        </article>
-      </div>
-
-      <!-- SIDEBAR -->
-      <div class="col-lg-4">
-        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-      </div>
-    </div>
+        
+      
   </div>
-</section>
+
+</div>
 
 <!-- TRUST STRIP -->
 <section class="counter-area pt-60 pb-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">

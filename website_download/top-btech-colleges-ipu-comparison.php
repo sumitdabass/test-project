@@ -21,31 +21,16 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'Best B.Tech Colleges under IP University – Complete Comparison Guide';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU B.Tech Admission', 'IPU-B-Tech-admission-2026.php'], ['College Comparison', '']];
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- CONTENT -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<!-- BREADCRUMBS -->
-
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="IPU-B-Tech-admission-2026.php">IPU B.Tech Admission</a></li>
-<li class="breadcrumb-item active">College Comparison</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <h2>Top Engineering Colleges under IP University (GGSIPU)</h2>
 
 <p>
@@ -53,7 +38,14 @@ Choosing the right B.Tech college under IP University is one of the most importa
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Top IPU Engineering Colleges Comparison</h2>
 
 <div class="table-responsive">
@@ -147,7 +139,7 @@ Most private IPU colleges allow around <strong>10% seats under Management Quota<
 </ul>
 
 <p>
-👉 <a href="IP-University-management-quota-admission-eligibility-criteria.php">
+ <a href="IP-University-management-quota-admission-eligibility-criteria.php">
 Management Quota Complete Guide
 </a>
 </p>
@@ -164,7 +156,7 @@ Management Quota Complete Guide
 </ul>
 
 <p>
-👉 <a href="GGSIPU-counselling-for-B-Tech-admission.php">
+ <a href="GGSIPU-counselling-for-B-Tech-admission.php">
 IPU Counselling Strategy Guide
 </a>
 </p>
@@ -181,18 +173,9 @@ IPU Counselling Strategy Guide
 
 <h3>Which IPU college is best for CSE?</h3>
 <p>USICT is top among government institutes while MAIT leads among private colleges.</p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <?php include_once("include/base-footer.php") ?>
 

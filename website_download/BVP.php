@@ -89,35 +89,18 @@ include 'include/components/breadcrumb-schema.php';
 <?php
 $hero_h1 = 'Bharati Vidyapeeth\'s College of Engineering – Complete IPU Admission Guide';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['Bharati Vidyapeeth\'s College of Engineering', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-04-06';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<!-- ===== BREADCRUMBS ===== -->
-
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">Bharati Vidyapeeth's College of Engineering</li>
-</ol>
-</nav>
-
-
-<div class="row">
-
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <picture><source srcset="assets/images/IP-University-b-tech-admission.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/IP-University-b-tech-admission.jpg" class="main-img" alt="Bharati Vidyapeeth's College of Engineering IP University"></picture>
 
-
-<?php $last_updated = '2026-04-06'; include 'include/components/last-updated.php'; ?>
 
 <h2>About Bharati Vidyapeeth's College of Engineering (IP University)</h2>
 
@@ -134,13 +117,19 @@ Bharati Vidyapeeth's College of Engineering (BVP) is an unaided affiliated insti
 </ul>
 
 <p>
-👉 Read Master Admission Guide:
+ Read Master Admission Guide:
 <a href="ipu-admission-guide.php"><strong>IP University Admission Guide</strong></a>
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
 
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Courses Offered</h2>
 
 <h3>B.Tech Programs</h3>
@@ -153,7 +142,7 @@ Bharati Vidyapeeth's College of Engineering (BVP) is an unaided affiliated insti
 </ul>
 
 <p>
-👉 B.Tech Admission Guide:
+ B.Tech Admission Guide:
 <a href="IPU-B-Tech-admission-2026.php">IPU B.Tech Admission Complete Guide</a>
 </p>
 
@@ -165,7 +154,7 @@ Bachelor of Journalism and Mass Communication focuses on media, journalism, digi
 </p>
 
 <p>
-👉 BJMC Admission Guide:
+ BJMC Admission Guide:
 <a href="guide-to-bjmc-colleges-under-ip-university.php">BJMC Colleges under IP University</a>
 </p>
 
@@ -191,7 +180,7 @@ Master of Computer Applications program focuses on software development, program
 </ul>
 
 <p>
-👉 Counselling Process:
+ Counselling Process:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php">IPU Counselling Guide</a>
 </p>
 
@@ -295,7 +284,7 @@ Master of Computer Applications program focuses on software development, program
 <b><?php include("include/phone.php"); ?></b>
 </p>
 
-</div>
+
 
 <!-- Call-to-Action Section for Counselling -->
 <section class="cta-counselling-section" style="background: linear-gradient(135deg, #0b2c5d 0%, #1a4d8a 100%); color: white; padding: 40px 20px; margin: 40px 0; border-radius: 10px;">
@@ -366,17 +355,9 @@ Master of Computer Applications program focuses on software development, program
     </div>
   </div>
 </section>
+  </div>
 
 </div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <?php

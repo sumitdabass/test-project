@@ -131,17 +131,17 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'Explore MSIT &amp; MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
     <!--====== BANNER PART ENDS ======-->
 
 
     <!--====== Blog PART STARt ======-->
-    <section class="blog-wrapper pt-130 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="blog-details">
+    <div class="ipu-body">
+
+  <div class="ipu-body__intro">
+                    
                         <img fetchpriority="high" decoding="async" width="1000" height="600" src="assets/images/explore-MSIT-and-MSI-janakpuri.jpg" class="main-img" alt="Exploring MAIT & MAIMS Rohini">
 
                         <h2 class="title">Explore MSIT & MSI Janakpuri: Premier Institutions for Engineering, Management, Law, and More
@@ -325,17 +325,22 @@ include __DIR__ . '/include/components/page-hero.php';
                           </div>
                         </section>
 
-                    </div>
+                    </p>
 
 
 
-                </div>
-                <div class="col-lg-4">
-                    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-                </div>
-            </div>
-        </div>
-    </section>
+                
+  </div>
+
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+
+  </div>
+
+</div>
     <!--====== Blog PART END ======-->
 
 

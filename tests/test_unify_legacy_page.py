@@ -115,3 +115,55 @@ def test_article_blog_details_wrapper_is_unwrapped_and_inline_css_retargeted():
     assert ".ipu-body__intro h2, .ipu-body__rest h2 {" in out
     assert ".ipu-body__intro p, .ipu-body__rest p, .ipu-body__intro li, .ipu-body__rest li {" in out
     assert ".college-card { color: red; }" in out and ".section-block { margin-bottom: 2rem; }" in out   # unrelated rules untouched
+
+
+def test_html_comments_around_breadcrumb_and_row_are_tolerated():
+    page = PAGE.replace('<div class="container">\n<nav', '<div class="container">\n\n<!-- ===== BREADCRUMBS ===== -->\n\n<nav', 1).replace(
+        "</nav>\n<div class=\"row\">", "</nav>\n\n<!-- content -->\n<div class=\"row\">", 1)
+    out = convert(page)
+    assert "$hero_breadcrumbs = [['Home'" in out and "BREADCRUMBS" not in out and "breadcrumb-item" not in out
+
+
+def test_html_comment_before_sidebar_column_is_tolerated():
+    page = PAGE.replace('<div class="col-lg-4">', '<!-- Sidebar -->\n\n<div class="col-lg-4">', 1)
+    out = convert(page)
+    assert out.count("sidebar-enquiry.php") == 1 and "Sidebar -->" not in out
+
+
+def test_top_level_nodes_accepts_html_implied_end_tags():
+    # a forgotten </p> before </div> is valid-by-recovery HTML; the node text must stay byte-identical
+    nodes = top_level_nodes('<div class="x"><p>unclosed text</div><h2>Next</h2>')
+    assert [k for k, _ in nodes] == ["el", "el"]
+    assert nodes[0][1] == '<div class="x"><p>unclosed text</p></div>'
+    with pytest.raises(ConvertError):
+        top_level_nodes('<div class="x"><span>never closed</div>')   # non-optional end tags still fail loudly
+
+
+def test_top_level_nodes_accepts_optional_end_tag_open_at_end_of_content():
+    nodes = top_level_nodes('<h2>A</h2><p>last paragraph never closed')
+    assert [k for k, _ in nodes] == ["el", "el"] and nodes[1][1] == '<p>last paragraph never closed</p>'
+    with pytest.raises(ConvertError, match="unclosed <div>"):
+        top_level_nodes('<h2>A</h2><div>never closed')
+
+
+def test_blog_details_wrapper_that_does_not_span_all_content_is_unwrapped_in_place():
+    page = PAGE.replace("<h2>Third</h2>\n<p>third</p>\n</div>",
+                        "<h2>Third</h2>\n<p>third</p>\n</div>\n<!-- extra -->\n<section class=\"cta-x\"><h3>Extra</h3></section>", 1)
+    out = convert(page)
+    assert "blog-details" not in out
+    ib = out[out.index('<div class="ipu-body">'):]
+    assert '<section class="cta-x"><h3>Extra</h3></section>' in ib.split("ipu-body__rest")[1]
+    assert ib.count("<h2>") == 3
+
+
+def test_breadcrumb_labels_with_entities_are_unescaped_before_the_hero_escapes_them():
+    page = PAGE.replace('Course Guide</li>', 'Seat &amp; Quota &#8211; Guide</li>', 1)
+    out = convert(page)
+    assert "['Seat & Quota – Guide', '']" in out
+
+
+def test_implied_end_tags_are_normalised_with_explicit_closing_tags():
+    nodes = top_level_nodes('<div class="x"><p>unclosed text</div><h2>Next</h2>')
+    assert nodes[0][1] == '<div class="x"><p>unclosed text</p></div>'
+    nodes = top_level_nodes('<h2>A</h2><p>last paragraph never closed')
+    assert nodes[1][1] == '<p>last paragraph never closed</p>'

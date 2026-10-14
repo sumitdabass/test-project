@@ -4,6 +4,7 @@
 Usage: python3 scripts/unify_legacy_page.py [--apply] website_download/page.php ...
 Dry run by default: prints OK / SKIP per page.
 """
+import html as _html
 import re, sys
 from pathlib import Path
 
@@ -28,30 +29,42 @@ def _unmask(text, blocks):
     return re.sub(r"\x00(\d+)\x00", lambda m: blocks[int(m.group(1))], text)
 
 
+OPTIONAL_END = {"p", "li", "dd", "dt", "tr", "td", "th", "option", "thead", "tbody", "tfoot"}
+
+
 def top_level_nodes(html):
-    """[(kind, raw)] with kind in {'el','text','comment'}; elements balanced; PHP blocks stay inside their node."""
+    """[(kind, raw)] with kind in {'el','text','comment'}; elements balanced (HTML implied end tags for p/li/... tolerated)."""
     masked, blocks = _mask(html)
-    nodes, cur, depth = [], [], 0
+    nodes, cur, stack = [], [], []
     for m in TAG.finditer(masked):
         raw = m.group(0)
         if m.group(2) is None:                       # comment / script / style / text / stray '<'
             kind = "comment" if raw.startswith("<!--") else ("el" if raw.startswith(("<script", "<style")) else "text")
-            if depth == 0: nodes.append((kind, raw))
+            if not stack: nodes.append((kind, raw))
             else: cur.append(raw)
             continue
         closing, tag, selfc = m.group(1), m.group(2).lower(), m.group(3)
         if not closing:
             if tag in VOID or selfc:
-                if depth == 0: nodes.append(("el", raw))
+                if not stack: nodes.append(("el", raw))
                 else: cur.append(raw)
             else:
-                cur.append(raw); depth += 1
+                cur.append(raw); stack.append(tag)
         else:
-            cur.append(raw); depth -= 1
-            if depth < 0: raise ConvertError("unbalanced closing tag in content")
-            if depth == 0:
+            if tag not in stack:
+                raise ConvertError("unbalanced closing tag in content")
+            while stack[-1] != tag:                  # implied end tags only: write them out explicitly
+                if stack[-1] not in OPTIONAL_END:
+                    raise ConvertError("unbalanced content (unclosed element)")
+                cur.append(f"</{stack.pop()}>")
+            stack.pop(); cur.append(raw)
+            if not stack:
                 nodes.append(("el", "".join(cur))); cur = []
-    if depth != 0: raise ConvertError("unbalanced content (unclosed element)")
+    if stack:
+        if all(t in OPTIONAL_END for t in stack):       # implied end at end of content (the wrapper's </div> used to close it)
+            nodes.append(("el", "".join(cur) + "".join(f"</{t}>" for t in reversed(stack))))
+        else:
+            raise ConvertError(f"unbalanced content (unclosed <{[t for t in stack if t not in OPTIONAL_END][-1]}>)")
     return [(k, _unmask(r, blocks)) for k, r in nodes]
 
 
@@ -105,22 +118,24 @@ def convert(src):
 
     # optional visible breadcrumb
     crumbs = []
-    nm = re.match(r'\s*<nav aria-label="breadcrumb"[^>]*>.*?</nav>', container, re.S)
+    COMMENTS = r'(?:\s*<!--.*?-->)*'
+    nm = re.match(COMMENTS + r'\s*<nav aria-label="breadcrumb"[^>]*>.*?</nav>', container, re.S)
     if nm:
         for li in re.findall(r'<li class="breadcrumb-item[^"]*"[^>]*>(.*?)</li>', nm.group(0), re.S):
             a = re.match(r'\s*<a href="([^"]*)"[^>]*>(.*?)</a>\s*$', li, re.S)
-            if a: crumbs.append((re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", a.group(2))).strip(), a.group(1)))
-            else: crumbs.append((re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", li)).strip(), ""))
+            lab = lambda t: _html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t))).strip()
+            if a: crumbs.append((lab(a.group(2)), a.group(1)))
+            else: crumbs.append((lab(li), ""))
         container = container[nm.end():]
     if nm and (len(crumbs) < 2 or crumbs[-1][1] != ""):
         raise ConvertError("breadcrumb shape not understood")
 
     # row > col-lg-8 + col-lg-4
-    rm = re.match(r'\s*<div class="row[^"]*">', container)
+    rm = re.match(COMMENTS + r'\s*<div class="row[^"]*">', container, re.S)
     if not rm:
         raise ConvertError("no .row after breadcrumb")
-    row_start = rm.start()
-    row_end = _find_balanced(container, container.index("<div", row_start), "div")
+    row_start = rm.end() - len(re.search(r'<div class="row[^"]*">$', container[:rm.end()]).group(0))
+    row_end = _find_balanced(container, row_start, "div")
     row_inner = container[rm.end():row_end - len("</div>")]
     c8 = re.match(r'\s*<div class="col-lg-8">', row_inner)
     if not c8:
@@ -128,19 +143,14 @@ def convert(src):
     c8_end = _find_balanced(row_inner, row_inner.index("<div", c8.start()), "div")
     content = row_inner[c8.end():c8_end - len("</div>")]
     side = row_inner[c8_end:]
-    sm = re.fullmatch(r'\s*<div class="col-lg-4">\s*(<\?php include __DIR__ \. \'/include/components/sidebar-enquiry\.php\'; \?>)\s*</div>\s*', side)
+    sm = re.fullmatch(COMMENTS + r'\s*<div class="col-lg-4">\s*(<\?php include __DIR__ \. \'/include/components/sidebar-enquiry\.php\'; \?>)\s*</div>\s*', side, re.S)
     if not sm:
         raise ConvertError("sidebar column is not exactly the sidebar-enquiry include")
     sidebar_include = sm.group(1)
     if container[row_end:].strip():
         raise ConvertError("unexpected content after the row inside the container")
 
-    # unwrap a sole .blog-details wrapper
-    for wtag in ("div", "article"):
-        bd = re.fullmatch(rf'\s*<{wtag} class="blog-details">(.*)</{wtag}>\s*', content, re.S)
-        if bd and _find_balanced(content, content.index(f"<{wtag}"), wtag) >= len(content.rstrip()):
-            content = bd.group(1)
-            break
+    content = _unwrap_blog_details(content)
 
     # lift the Last Updated include into the hero
     lu = re.findall(r"<\?php\s*\$last_updated\s*=\s*'([0-9-]+)';\s*include\s*'include/components/last-updated\.php';\s*\?>", content)
@@ -196,6 +206,15 @@ def convert(src):
 </div>"""
     out = src[:hm.start()] + new_hero + src[hm.end():sec_start] + grid + src[sec_end:]
     return _retarget_blog_details_css(out)
+
+
+def _unwrap_blog_details(content):
+    """Replace every top-level <div|article class="blog-details"> node by its inner HTML (siblings stay in place)."""
+    out = []
+    for kind, raw in top_level_nodes(content):
+        m = re.match(r'<(div|article) class="blog-details">(.*)</\1>\s*$', raw, re.S)
+        out.append(m.group(2) if (kind == "el" and m) else raw)
+    return "".join(out)
 
 
 def _retarget_blog_details_css(html):

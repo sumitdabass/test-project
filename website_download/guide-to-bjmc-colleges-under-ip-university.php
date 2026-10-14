@@ -23,35 +23,19 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'BJMC Admission in IP University (GGSIPU) — Top Colleges, Counselling &amp; Career Guide';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['BJMC Admission', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-05-05';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ================= CONTENT ================= -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<!-- ===== BREADCRUMBS ===== -->
-
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">BJMC Admission</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IPU-BJMC-Admission.jpg', 'BJMC IP University Admission Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -65,13 +49,20 @@ Bachelor of Journalism and Mass Communication (BJMC) under <strong>Guru Gobind S
 </p>
 
 <p>
-👉 Read master guide:
+ Read master guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 </p>
 
 
 <!-- ===== COLLEGE LIST ===== -->
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>BJMC Colleges under IP University</h2>
 
 <ul>
@@ -113,7 +104,7 @@ Bachelor of Journalism and Mass Communication (BJMC) under <strong>Guru Gobind S
 <li>Choice filling and seat allotment</li>
 </ul>
 
-👉 Learn counselling steps:
+ Learn counselling steps:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Guide</strong></a>
 
 
@@ -220,21 +211,9 @@ BJMC admission at IPU is based on <strong>CUET (UG) 2026</strong> with relevant 
 <p>Get expert counselling and admission guidance.</p>
 <a href="tel:+919899991342" class="cta-btn">Call Now: +91 98999 91342</a>
 </div>
+  </div>
 
 </div>
-
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->

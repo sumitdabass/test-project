@@ -28,18 +28,15 @@ include_once("include/form-handler.php");
 $hero_h1 = 'BA Economics (Hons) Admission in IP University (GGSIPU)';
 $hero_intro = 'Eligibility • Colleges • Admission Process • Career Scope';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- ===== Content ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/economics-admission-2025.jpg', 'BA Economics IP University Admission', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <h2>BA Economics (Hons) Admission in IP University</h2>
@@ -49,12 +46,19 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers BA Economics (Hons) th
 </p>
 
 <p>
-👉 Read Master Guide:
+ Read Master Guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Colleges Offering BA Economics (Hons) under IP University</h2>
 
 <ul>
@@ -90,7 +94,7 @@ These colleges are among popular choices for Economics under IP University due t
 <li>Document verification</li>
 </ol>
 
-👉 Counselling guide:
+ Counselling guide:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Process Explained</strong></a>
 
 <hr>
@@ -139,19 +143,9 @@ Economics honours is ideal for students interested in analytics, finance and pol
 <strong>Need Admission Guidance?</strong><br>
 Call <a href="tel:+919899991342">9899991342</a>
 </p>
+  </div>
 
 </div>
-</div>
-
-<!-- Sidebar -->
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 <!-- CTA -->
 

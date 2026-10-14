@@ -25,33 +25,18 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'IPU B.Tech Admission 2026–27: Complete Guide (Eligibility, JEE Main, CUET &amp; Counselling)';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['B.Tech Admission', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-05-05';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- ================= CONTENT ================= -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<!-- ===== BREADCRUMB ===== -->
-
-<nav aria-label="breadcrumb" class="mb-4">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">B.Tech Admission</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Admission 2026 Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -69,12 +54,19 @@ IPU B.Tech admission is primarily conducted through JEE Main-based merit followe
 </p>
 
 <p>
-👉 Read master admission guide:
+ Read master admission guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>IPU B.Tech Eligibility Criteria (Latest)</h2>
 
 <ul>
@@ -221,11 +213,11 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 </ul>
 
 <p>
-👉 Don't have a JEE Main score? Read our dedicated guide on
+ Don't have a JEE Main score? Read our dedicated guide on
 <a href="cuet-btech-admission-ipu.php"><strong>IPU B.Tech Admission Through CUET (UG)</strong></a> &mdash; vacant-seat counselling and management quota route.
 </p>
 
-👉 Detailed counselling guide:
+ Detailed counselling guide:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php"><strong>IPU Counselling Process Explained</strong></a>
 
 <hr>
@@ -242,7 +234,7 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 <li>GTBIT</li>
 </ul>
 
-👉 Compare colleges and cutoffs:
+ Compare colleges and cutoffs:
 <a href="b-tech-colleges-under-IP-university.php"><strong>IPU B.Tech College Comparison & Cutoffs</strong></a>
 
 <hr>
@@ -250,11 +242,11 @@ GGSIPU follows the UGC refund policy. Withdrawal of admission with refund of the
 <h2>Important IPU B.Tech Resources</h2>
 
 <p>
-👉 <a href="ipu-b-tech-pillar.php"><strong>Complete B.Tech Admission Hub</strong></a>
+ <a href="ipu-b-tech-pillar.php"><strong>Complete B.Tech Admission Hub</strong></a>
 </p>
 
 <p>
-👉 <a href="IP-University-management-quota-admission-eligibility-criteria.php">
+ <a href="IP-University-management-quota-admission-eligibility-criteria.php">
 <strong>Management Quota Admission Guide</strong>
 </a>
 </p>
@@ -271,18 +263,9 @@ IPU B.Tech admission is competitive and structured. Since JEE Main receives firs
 <strong>Need Admission Guidance?</strong><br>
 <b><?php include("include/phone.php"); ?></b>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php

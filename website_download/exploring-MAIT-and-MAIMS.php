@@ -100,25 +100,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'MAIT &amp; MAIMS Rohini &ndash; Complete Admission Guide 2026';
 $hero_intro = 'Courses &bull; B.Tech Branches &bull; Management Quota &bull; Placement &bull; GGSIPU Affiliation';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['MAIT & MAIMS Rohini', '']];
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- CONTENT -->
-<section class="blog-wrapper pt-130 pb-130">
-  <div class="container">
+<div class="ipu-body">
 
-    <!-- BREADCRUMBS -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-        <li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-        <li class="breadcrumb-item active" aria-current="page">MAIT &amp; MAIMS Rohini</li>
-      </ol>
-    </nav>
-
-    <div class="row">
-      <div class="col-lg-8">
-        <article class="blog-details">
+  <div class="ipu-body__intro">
+        
 
           <?php webp_img('assets/images/exploring-MAIT-and-MAIMS.jpg', 'Campus of MAIT and MAIMS Rohini, affiliated with IP University Delhi', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
@@ -134,7 +125,16 @@ include __DIR__ . '/include/components/page-hero.php';
           <hr>
 
           <!-- SECTION 2: Courses at MAIT -->
-          <div class="section-block">
+          
+  </div>
+
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
+<div class="section-block">
             <h2>Courses Offered at MAIT</h2>
             <h3>B.Tech Branches</h3>
             <ul>
@@ -351,16 +351,11 @@ include __DIR__ . '/include/components/page-hero.php';
             <a href="tel:+919899991342" class="btn-cta">&#128222; Call Now</a>
           </div>
 
-        </article>
-      </div>
-
-      <div class="col-lg-4">
-        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-      </div>
-    </div>
-
+        
+      
   </div>
-</section>
+
+</div>
 
 <!-- TRUST STRIP / COUNTER -->
 <section class="counter-area pt-60 pb-60 bg_cover" style="background-image:url(assets/images/counter-bg-2.jpg);">

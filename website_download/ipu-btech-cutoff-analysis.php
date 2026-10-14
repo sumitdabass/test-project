@@ -27,19 +27,15 @@ include_once("include/form-handler.php");
 $hero_h1 = 'IPU B.Tech Cutoff Analysis (Delhi vs Outside Delhi)';
 $hero_intro = 'MAIT • MSIT • BPIT • BVP • USICT – Last 3 Year Trends';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Cutoff Analysis', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
@@ -50,18 +46,24 @@ Understanding cutoff trends is one of the most important parts of IP University 
 </p>
 
 <p>
-👉 Complete admission process:
+ Complete admission process:
 <a href="IPU-B-Tech-admission-2026.php">IPU B.Tech Admission Guide</a>
 </p>
 
 <p>
-👉 College comparison hub:
+ College comparison hub:
 <a href="best-btech-colleges-ipu.php">Best B.Tech Colleges in IP University</a>
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
 
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Top Colleges Included in Cutoff Analysis</h2>
 
 <ul>
@@ -183,21 +185,9 @@ For personalised counselling and college selection strategy:
 <li>Check branch popularity trends</li>
 <li>Use cutoff analysis before choice locking</li>
 </ul>
-
-
-</div>
-</div>
-
-
-<!-- SIDEBAR -->
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
+  </div>
 
 </div>
-</div>
-</section>
 
 
 <!-- CTA -->
