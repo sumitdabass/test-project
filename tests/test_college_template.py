@@ -214,7 +214,12 @@ def test_v2_college_schema_and_crumb_labels(server, page):
     ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)]
     # CollegeOrUniversity block must be exactly what the live (v1) page emits
     college = next(({k: b.get(k) for k in ("name", "alternateName", "url")} for b in ld if b.get("@type") == "CollegeOrUniversity"), None)
-    assert college == BASE[page]["college_ld"]
+    import html as _h
+    src = (WEB / page).read_text(encoding="utf-8")
+    real_name = re.search(r"'name'\s*=>\s*'((?:[^'\\]|\\.)*)'", src).group(1).replace("\\'", "'").replace("\\\\", "\\")
+    # owner-approved fix: the schema carries the college's real name (live emitted '<short> Admission' by accident)
+    assert _h.unescape(college["name"]) == real_name
+    assert {k: college[k] for k in ("alternateName", "url")} == {k: BASE[page]["college_ld"][k] for k in ("alternateName", "url")}
     # visible crumb text == BreadcrumbList last name, and never "X College College"
     import html as h
     bl = [b for b in ld if b.get("@type") == "BreadcrumbList"][0]

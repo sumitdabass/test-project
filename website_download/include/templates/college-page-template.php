@@ -107,15 +107,12 @@ $breadcrumbs = $layout === 'v2'
 ];
 include 'include/components/breadcrumb-schema.php';
 unset($breadcrumbs);
-if ($layout === 'v2') {
-    // v1 leaves $name = '<short> Admission' here (breadcrumb-schema.php clobbers it); keep the schema value byte-identical.
-    $name = htmlspecialchars($short_name . ' Admission', ENT_QUOTES | ENT_HTML5, 'UTF-8');
-}
 
 // ── College Schema Component ──────────────────────────────────────────────────
 $college = [
-    'name'        => $name,
-    'short_name'  => $short_name,
+    // from $cd, not the aliases: breadcrumb-schema.php overwrites $name with the last crumb label
+    'name'        => $cd['name'] ?? '',
+    'short_name'  => $cd['short_name'] ?? ($cd['name'] ?? ''),
     'url'         => $page_url,
     'address'     => $cd['address'] ?? '',
     'total_seats' => $cd['total_seats'] ?? null,
