@@ -28,19 +28,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'IPU CET 2026 – Exam Date, Admit Card &amp; CET-Based Courses';
 $hero_intro = 'BBA • BCA • B.Com • BJMC | Application • Result • Counselling';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ================= CONTENT ================= -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/ipu-cet-2025-exam-dates-and-admit-card.jpg', 'IPU CET Exam Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 <!-- ================= WHAT IS CET ================= -->
@@ -62,21 +59,28 @@ in the official admission brochure.
 <hr>
 
 <!-- ================= CET COURSES ================= -->
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>IPU CET Courses List (UG Programmes)</h2>
 
 <ul>
 
 <li>
 <strong>BBA (Bachelor of Business Administration)</strong><br>
-👉 <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">
+ <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">
 BBA Admission Guide
 </a>
 </li>
 
 <li>
 <strong>BJMC (Bachelor of Journalism & Mass Communication)</strong><br>
-👉 <a href="guide-to-bjmc-colleges-under-ip-university.php">
+ <a href="guide-to-bjmc-colleges-under-ip-university.php">
 BJMC Admission Guide
 </a>
 </li>
@@ -87,7 +91,7 @@ BJMC Admission Guide
 
 <li>
 <strong>BA Economics (Hons)</strong><br>
-👉 <a href="economics-admission-ip-university.php">
+ <a href="economics-admission-ip-university.php">
 Economics Admission Guide
 </a>
 </li>
@@ -95,7 +99,7 @@ Economics Admission Guide
 </ul>
 
 <p>
-👉 Read master admission hub:
+ Read master admission hub:
 <a href="ipu-admission-guide.php">
 Complete IP University Admission Guide
 </a>
@@ -199,7 +203,7 @@ The table below lists all UG and PG programmes at GGSIPU along with their offici
 </ol>
 
 <p>
-👉 Detailed counselling guide:
+ Detailed counselling guide:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php">
 IPU Counselling Process
 </a>
@@ -224,18 +228,9 @@ IPU Counselling Process
 <p>
 Call <a href="tel:+919899991342">9899991342</a> for admission guidance.
 </p>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 <?php
 $related_pages = [

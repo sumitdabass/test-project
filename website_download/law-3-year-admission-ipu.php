@@ -22,29 +22,16 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'IPU Law (3-Year) Admission 2026 — Programme Code 238 Guide';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['Admissions', 'ipu-admission-guide.php'], ['Law (3-Year) Admission', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-05-06';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<nav aria-label="breadcrumb" class="mb-4">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">Admissions</a></li>
-<li class="breadcrumb-item active">Law (3-Year) Admission</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IPU-Law-Admission-2025.jpg', 'IPU Law (3-Year) Admission - Programme Code 238 - graduate-entry LLB at GGSIPU', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
@@ -66,7 +53,14 @@ Per Section 1.1 ("At a Glance — Details of Graduation Programmes offered and a
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility for Law (3-Year) Admission at IPU (Programme Code 238)</h2>
 
 <p>Per Chapter 2 of the brochure (page 63):</p>
@@ -119,7 +113,7 @@ The Law &amp; Legal Reasoning section carries the highest weight. The paper is s
 <p style="font-size:13px;color:#666"><em>Final intake distribution per college appears in Chapter 13 (Programme-wise Seat Intake) of the brochure. Confirm 3-year LLB seat availability at the college of your choice before locking preferences in counselling.</em></p>
 
 <p>
-👉 Comparison of all law colleges: <a href="top-law-colleges-ipu.php"><strong>Top Law Colleges Under IP University</strong></a>
+ Comparison of all law colleges: <a href="top-law-colleges-ipu.php"><strong>Top Law Colleges Under IP University</strong></a>
 </p>
 
 <hr>
@@ -186,18 +180,9 @@ We have placed hundreds of graduates into IPU Law programmes (USLLS, VIPS-TC, MA
 <b><?php include("include/phone.php"); ?></b><br>
 <em>Mon&ndash;Sat, 9 AM &ndash; 7 PM</em>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27 + PG Brochure Ch 14) -->
 <?php

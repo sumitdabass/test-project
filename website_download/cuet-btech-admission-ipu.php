@@ -22,29 +22,16 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'IPU B.Tech Admission Through CUET (UG): Eligibility, Subjects &amp; College List';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['CUET Admission', 'cuet-admission-ipu.php'], ['B.Tech via CUET', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-06-24';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<nav aria-label="breadcrumb" class="mb-4">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="cuet-admission-ipu.php">CUET Admission</a></li>
-<li class="breadcrumb-item active">B.Tech via CUET</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU B.Tech Admission Through CUET (UG)', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
@@ -67,7 +54,14 @@ This means a B.Tech aspirant who only has a CUET score (and not JEE Main) is sti
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility for B.Tech via CUET (Programme Code 131)</h2>
 
 <p>Per Chapter 2 (Eligibility Criteria &amp; Admission Criteria) of the brochure:</p>
@@ -139,7 +133,7 @@ Per Chapter 13 (Programme-wise Seat Intake) of the brochure, IPU offers <strong>
 </ul>
 
 <p>
-👉 Compare colleges &amp; cutoffs: <a href="b-tech-colleges-under-IP-university.php"><strong>IPU B.Tech College Comparison &amp; Cutoffs</strong></a>
+ Compare colleges &amp; cutoffs: <a href="b-tech-colleges-under-IP-university.php"><strong>IPU B.Tech College Comparison &amp; Cutoffs</strong></a>
 </p>
 
 <p style="font-size:13px;color:#666"><em>Note: Vacant-seat availability via CUET varies by college and year. Most CUET seats appear at Tier-2 / Tier-3 colleges since top USS &amp; MAIT-tier seats fill in the JEE Main rounds.</em></p>
@@ -161,7 +155,7 @@ Per Chapter 12 (Management Quota Admissions) of the brochure, every unaided affi
 </ul>
 
 <p>
-👉 Detailed guide: <a href="btech-management-quota-ipu.php"><strong>B.Tech Management Quota Admission</strong></a>
+ Detailed guide: <a href="btech-management-quota-ipu.php"><strong>B.Tech Management Quota Admission</strong></a>
 </p>
 
 <hr>
@@ -202,18 +196,9 @@ We have placed hundreds of students into IPU B.Tech colleges since 2015 &mdash; 
 <b><?php include("include/phone.php"); ?></b><br>
 <em>Mon&ndash;Sat, 9 AM &ndash; 7 PM</em>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php

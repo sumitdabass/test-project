@@ -28,20 +28,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'IP University Choice Filling Strategy (All Courses)';
 $hero_intro = 'B.Tech • BBA • Law • B.Com • BA(Eco) • MBA • MCA Counselling Guide';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- CONTENT -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <div style="border-left:4px solid #0d1b6e;background:#f5f7ff;padding:14px 16px;border-radius:6px;margin:0 0 22px;">
 <p style="margin:0;line-height:1.7;font-size:0.96rem;"><strong>Round 1 update (25 June 2026):</strong> The GGSIPU Round 1 seat allotment result for 2026-27 has been declared on <a href="https://ipu.admissions.nic.in" target="_blank" rel="noopener">ipu.admissions.nic.in</a>. If you have a seat, this is the moment to decide <strong>Freeze vs Float</strong> (explained below) and pay the fee within the stipulated window; if you missed Round 1 or want an upgrade, plan your choices for Round 2. See the full <a href="/ipu-counselling.php">IPU Counselling 2026 schedule</a> or call <a href="tel:+919899991342"><strong>9899991342</strong></a> for free choice-filling help.</p>
 </div>
@@ -57,7 +53,14 @@ One wrong preference order can cause major admission loss. Therefore students mu
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Freeze vs Float — Understanding Counselling Options</h2>
 
 <h3>Freeze</h3>
@@ -88,7 +91,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Balance college vs branch decision.</li>
 </ul>
 
-👉 <a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a>
+ <a href="IPU-B-Tech-admission-2026.php">B.Tech Admission Guide</a>
 
 <hr>
 
@@ -100,7 +103,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Top institutes fill quickly — keep safe options.</li>
 </ul>
 
-👉 <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA College Guide</a>
+ <a href="comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php">BBA College Guide</a>
 
 <hr>
 
@@ -112,7 +115,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Choose backup law colleges strategically.</li>
 </ul>
 
-👉 <a href="IPU-Law-Admission.php">Law Admission Guide</a>
+ <a href="IPU-Law-Admission.php">Law Admission Guide</a>
 
 <hr>
 
@@ -123,7 +126,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li>Placement records should guide preference.</li>
 </ul>
 
-👉 <a href="mba-admission-ip-university.php">MBA Admission Guide</a>
+ <a href="mba-admission-ip-university.php">MBA Admission Guide</a>
 
 <hr>
 
@@ -144,7 +147,7 @@ One wrong preference order can cause major admission loss. Therefore students mu
 <li><strong>Safe Choices:</strong> Backup colleges.</li>
 </ul>
 
-👉 Use cutoff analysis:
+ Use cutoff analysis:
 <a href="ipu-btech-cutoff-analysis.php">IPU Cutoff Analysis</a>
 
 <hr>
@@ -175,18 +178,9 @@ If you are confused regarding choice filling strategy, branch selection or colle
 <li>Freezing too early.</li>
 <li>Not understanding upgrade logic.</li>
 </ul>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <!-- CTA -->

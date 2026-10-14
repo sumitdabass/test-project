@@ -68,20 +68,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'MBA Management Quota Admission in IP University (GGSIPU)';
 $hero_intro = 'Top Colleges • Specialisations • CAT Admission • Counselling Strategy';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <h2>MBA Admission in IP University (GGSIPU)</h2>
 
 <p>
@@ -93,7 +89,14 @@ Some private colleges may offer limited management quota seats (approx. 10%) sub
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Top MBA Colleges under IP University</h2>
 
 <ul>
@@ -148,7 +151,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 <li>Valid CAT score (primary criteria)</li>
 </ul>
 
-👉 Complete MBA admission guide:
+ Complete MBA admission guide:
 <a href="mba-admission-ip-university.php">MBA Admission in IP University</a>
 
 <hr>
@@ -161,7 +164,7 @@ These institutes are among the most preferred MBA colleges under IP University d
 <li>Wrong preference order may result in losing better options.</li>
 </ul>
 
-👉 Strategy explained here:
+ Strategy explained here:
 <a href="ipu-choice-filling-strategy.php">IPU Choice Filling Strategy</a>
 
 <hr>
@@ -242,18 +245,9 @@ Tuition at USMS (the university school, which is outside the management quota) i
 <a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <!-- ===== CTA ===== -->

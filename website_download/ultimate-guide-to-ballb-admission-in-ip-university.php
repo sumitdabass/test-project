@@ -28,6 +28,7 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'BA LL.B Admission in IP University (GGSIPU) 2026 – Complete Guide';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
@@ -35,15 +36,9 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <!-- ===== Blog Content ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-<div class="row">
-
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/ipu-bballb.jpg', 'BA LL.B Admission in IP University', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
 
@@ -54,15 +49,20 @@ The BA LL.B (Bachelor of Arts + Bachelor of Laws) is a five-year integrated law 
 Per UG Brochure 2026-27 Table 1.1 (Code 121), admission priority is <strong>1. CLAT UG 2026 (primary)</strong> / <strong>2. CUET# (vacant-seat fallback per Important Instruction #37)</strong> followed by centralised GGSIPU counselling. CLAT-qualified candidates fill seats first; any remaining vacant seats are then filled from the CUET (UG) merit list.
 </p>
 
-👉 Complete Law Admission Guide:
+ Complete Law Admission Guide:
 <a href="IPU-Law-Admission.php"><strong>IP University Law Admission Master Guide</strong></a>
 
 <p>Already a graduate? See the dedicated <a href="/law-3-year-admission-ipu.php"><strong>Law (3-Year) admission page</strong></a> (Programme Code 238) for the 3-year LLB path through GGSIPU CET.</p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
 
-
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility Criteria for BA LL.B (GGSIPU)</h2>
 
 <ul>
@@ -197,22 +197,9 @@ Call <strong><?php include("include/phone.php"); ?></strong> for:
 <li>Admission guidance</li>
 
 </ul>
+  </div>
 
 </div>
-
-</div>
-
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 

@@ -68,20 +68,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'BA LL.B Management Quota Admission in IP University (GGSIPU)';
 $hero_intro = 'Eligibility • CLAT • Law Colleges • Counselling Guidance';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <h2>What is Management Quota for Law Admission in IP University?</h2>
 
 <p>
@@ -97,7 +93,14 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility for BA LL.B Management Quota (Programme Code 121)</h2>
 
 <ul>
@@ -122,7 +125,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 <li>Delhi Metropolitan Education</li>
 </ul>
 
-👉 Explore law admission guide:
+ Explore law admission guide:
 <a href="IPU-Law-Admission.php">IP University Law Admission Guide</a>
 
 <hr>
@@ -135,7 +138,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 <li>Both are 5-year integrated law programs.</li>
 </ul>
 
-👉 Detailed program comparison:
+ Detailed program comparison:
 <a href="comprehensive-guide-to-bballb-admission-in-ip-university.php">BBA LL.B Admission Guide</a>
 
 <hr>
@@ -161,7 +164,7 @@ Tuition is regulated — the same as merit seats, per the <strong>6th SFRC Delhi
 <li>Seats limited and vary every year.</li>
 </ul>
 
-👉 Counselling strategy:
+ Counselling strategy:
 <a href="ipu-choice-filling-strategy.php">Choice Filling Strategy Guide</a>
 
 <hr>
@@ -198,18 +201,9 @@ Guidance available for:
 <a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <!-- ===== CTA ===== -->

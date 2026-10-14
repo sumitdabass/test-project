@@ -22,29 +22,16 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'IPU B.Com (Hons) Admission Through CUET (UG): Eligibility, Subjects &amp; College List';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['CUET Admission', 'cuet-admission-ipu.php'], ['B.Com via CUET', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-06-24';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<nav aria-label="breadcrumb" class="mb-4">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="cuet-admission-ipu.php">CUET Admission</a></li>
-<li class="breadcrumb-item active">B.Com via CUET</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/Bcom.jpg', 'IPU B.Com (Hons) Admission Through CUET (UG)', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary -->
 <section id="ai-summary" style="display:none">
@@ -67,7 +54,14 @@ A B.Com aspirant who only has a CUET score (and not IPU CET) is still admissible
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility for B.Com (Hons) via CUET (Programme Code 146)</h2>
 
 <p>Per Chapter 2 of the brochure:</p>
@@ -142,7 +136,7 @@ The CUET (UG) papers above (Accountancy, English, General Aptitude) cover overla
 </ul>
 
 <p>
-👉 Compare colleges &amp; placements: <a href="bcom-admission-ipu.php"><strong>IPU B.Com Admission Guide</strong></a>
+ Compare colleges &amp; placements: <a href="bcom-admission-ipu.php"><strong>IPU B.Com Admission Guide</strong></a>
 </p>
 
 <hr>
@@ -197,18 +191,9 @@ We have placed hundreds of students into IPU B.Com Hons colleges (VIPS-TC, BCIPS
 <b><?php include("include/phone.php"); ?></b><br>
 <em>Mon&ndash;Sat, 9 AM &ndash; 7 PM</em>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php

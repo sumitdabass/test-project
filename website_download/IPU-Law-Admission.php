@@ -34,22 +34,17 @@ include 'include/components/breadcrumb-schema.php';
 <?php
 $hero_h1 = 'IPU Law Admission 2026 – Eligibility, CLAT, Colleges &amp; Counselling Guide';
 $hero_show_form = false;
+$hero_show_enquire = true;
+$last_updated = '2026-05-05';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!--====== BLOG CONTENT ======-->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IPU-Law-Admission-2025.jpg', 'IPU Law Admission Guide', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-05-05'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -63,7 +58,7 @@ Guru Gobind Singh Indraprastha University (GGSIPU) offers integrated law program
 </p>
 
 <p>
-👉 Read master guide:
+ Read master guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 </p>
 
@@ -72,7 +67,14 @@ If you have already completed your graduation, see the <a href="/law-3-year-admi
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility Criteria for IPU Law Admission</h2>
 
 <ul>
@@ -119,7 +121,7 @@ If you have already completed your graduation, see the <a href="/law-3-year-admi
 </div>
 
 <p>
-👉 Don't have a CLAT score? See the dedicated guide on
+ Don't have a CLAT score? See the dedicated guide on
 <a href="cuet-law-admission-ipu.php"><strong>IPU Law Admission Through CUET (UG)</strong></a> &mdash; Legal Studies paper, vacant-seat round, management quota and BCI eligibility bar explained.
 </p>
 
@@ -242,7 +244,7 @@ IP University follows separate seat allocation for Delhi region and Outside Delh
 <li>Sports Quota</li>
 </ul>
 
-👉 Management quota guide:
+ Management quota guide:
 <a href="IP-University-management-quota-admission-eligibility-criteria.php">
 IPU Management Quota Admission
 </a>
@@ -260,7 +262,7 @@ IPU Management Quota Admission
 <li>Report to allotted college</li>
 </ol>
 
-👉 Counselling process explained:
+ Counselling process explained:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php">
 IPU Counselling Guide
 </a>
@@ -280,17 +282,9 @@ plays a major role during seat allotment.
 <strong>Need Admission Guidance?</strong><br>
 <b><?php include("include/phone.php"); ?></b>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 <!--====== CTA ======-->
 

@@ -94,20 +94,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'B.Tech Management Quota Admission in IP University (GGSIPU)';
 $hero_intro = 'Eligibility • Colleges • Counselling • Direct Admission Guidance';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <h2>What is Management Quota in IP University?</h2>
 
 <p>
@@ -119,7 +115,14 @@ Management quota provides an alternative pathway for students who may not secure
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>Eligibility for B.Tech Management Quota</h2>
 
 <ul>
@@ -143,7 +146,7 @@ Management quota provides an alternative pathway for students who may not secure
 <li>Northern India Engineering Institute</li>
 </ul>
 
-👉 College comparison:
+ College comparison:
 <a href="best-btech-colleges-ipu.php">Best B.Tech Colleges under IPU</a>
 
 <hr>
@@ -182,7 +185,7 @@ Management quota provides an alternative pathway for students who may not secure
 <li>Seat availability varies yearly.</li>
 </ul>
 
-👉 Counselling strategy:
+ Counselling strategy:
 <a href="ipu-choice-filling-strategy.php">Choice Filling Guide</a>
 
 <hr>
@@ -219,18 +222,9 @@ If you need assistance regarding:
 <a href="tel:+919899991342"><?php include("include/phone.php"); ?></a>
 </b>
 </p>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <!-- ===== CTA ===== -->

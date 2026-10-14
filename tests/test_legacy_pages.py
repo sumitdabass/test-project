@@ -84,8 +84,7 @@ def test_converted_page_invariants(server, page):
     assert g(r'<meta name="description" content="(.*?)"') == b["description"]
     assert g(r'<link rel="canonical" href="(.*?)"') == b["canonical"]
     assert g(r'<meta name="robots" content="(.*?)"') == b["robots"]
-    assert [x for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)] and \
-           [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)] == b["jsonld"]
+    assert [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)] == b["jsonld"]
     body = html.split("</head>")[-1]
     assert len(re.findall(r"<h1[\s>]", body)) == len(b["h1"]) == 1
     assert html.count('id="enquiry-form"') == 1

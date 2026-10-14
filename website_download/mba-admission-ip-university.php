@@ -89,6 +89,8 @@ include 'include/components/breadcrumb-schema.php';
 $hero_h1 = 'MBA Admission in IP University 2026 (Programme Code 101) — CAT/CMAT/CET Guide';
 $hero_intro = 'CAT • CMAT • Counselling • Fees • Placements • Top MBA Colleges';
 $hero_show_form = false;
+$hero_show_enquire = true;
+$last_updated = '2026-05-06';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
@@ -96,16 +98,9 @@ include __DIR__ . '/include/components/page-hero.php';
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
-<?php $last_updated = '2026-05-06'; include 'include/components/last-updated.php'; ?>
-
+  <div class="ipu-body__intro">
 <!-- AI Summary (brochure-cited) -->
 <section id="ai-summary" style="display:none">
 <p>MBA admission at GGSIPU (<strong>Programme Code 101</strong>, covering MBA / MBA International Business / MBA Financial Management / MBA Analytics) is a 2-year postgraduate programme offered at USMS (Dwarka) and 8+ affiliated colleges. Per <strong>Section 1.1 of the GGSIPU PG Admission Brochure 2026-27</strong>, admission follows a 4-tier merit list: priority 1 <strong>CAT 2025</strong> (IIM-conducted), priority 2 <strong>CMAT 2026</strong>, priority 3 <strong>GGSIPU CET 2026</strong>, priority 4 <strong>CUET PG</strong>. Eligibility (Chapter 2 page 31): any 3-year+ Bachelor's Degree with min 50% in aggregate, OR Engineering/Tech with 50%, OR ICAI/ICWAI/ICSI Final Examination. USMS USS tuition for A.Y. 2026-27 is <strong>Rs. 1,93,600 per annum</strong> (Total Year 1: Rs. 2,29,100 per Chapter 14 Section 14.1(H)). Affiliated colleges follow the 6th SFRC notification dated 14.07.2025. Management quota: 10% seats at every unaided affiliated MBA college (Instruction #21 + Chapter 12); USMS is excluded from MQ. The MBA (Financial Analysis) variant additionally requires a Math/Stat/Economics/OR course at graduation level. Note: MAT is NOT in the brochure's accept-list for Code 101. Helpline 9899991342.</p>
@@ -130,13 +125,18 @@ MBA admission at IP University is popular because of:
 <li>Good placement ecosystem across management domains</li>
 </ul>
 
-👉 Master Admission Guide:
+ Master Admission Guide:
 <a href="ipu-admission-guide.php"><strong>Complete IP University Admission Guide</strong></a>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
 
-
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>MBA Courses Offered under IP University</h2>
 
 <ul>
@@ -347,7 +347,7 @@ GGSIPU follows the standard UGC refund policy for fee withdrawal. Withdrawal of 
 <li>Reporting to allotted institute</li>
 </ol>
 
-👉 Detailed Counselling Process:
+ Detailed Counselling Process:
 <a href="GGSIPU-counselling-for-B-Tech-admission.php">
 <strong>IPU Counselling Guide</strong>
 </a>
@@ -440,19 +440,9 @@ Call <a href="tel:+919899991342">9899991342</a> for guidance on:
 <li>CAT-based admission strategy</li>
 <li>Counselling choice filling</li>
 </ul>
+  </div>
 
 </div>
-</div>
-
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 

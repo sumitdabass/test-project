@@ -33,17 +33,16 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
     <!--====== BANNER PART ENDS ======-->
 
 
     <!--====== Blog PART STARt ======-->
-    <section class="blog-wrapper pt-130 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="blog-details">
+    <div class="ipu-body">
+
+  <div class="ipu-body__intro">
                         <?php webp_img('assets/images/ipu-bballb.jpg', 'Images', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
@@ -143,17 +142,18 @@ include __DIR__ . '/include/components/page-hero.php';
                         <strong>For more information regarding Counselling , Admission process and Managment Quota Call: <b><?php include("include/phone.php"); ?> </b></strong> 
                         
                         </p>
-                    </div>
+                    
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
 
+  <div class="ipu-body__rest">
 
-                </div>
-                <div class="col-lg-4">
-                    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-                </div>
-            </div>
-        </div>
-    </section>
+  </div>
+
+</div>
     <!--====== Blog PART END ======-->
 
 
