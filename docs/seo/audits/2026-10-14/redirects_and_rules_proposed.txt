@@ -1,0 +1,68 @@
+# Proposed .htaccess additions (NOT applied; read-only audit, 2026-10-14)
+# IMPORTANT: the repo file website_download/.htaccess is STALE against live (12 news 301 rules vs 34 live;
+# website_download/htaccess holds the 34-rule version). Pull the live .htaccess first, then merge these.
+# None of these rules were executed anywhere (php -S ignores .htaccess). Test with `curl -sI` after deploy.
+
+# ---------------------------------------------------------------------------
+# 1. Legacy /blog-detail.php?url=... (currently 404). Query must be matched with RewriteCond; trailing "?" drops it.
+#    GSC evidence (16 months): 6 URLs, 202 clicks, 10,185 impressions. One URL = 198 clicks, pos 16.9.
+# ---------------------------------------------------------------------------
+RewriteCond %{QUERY_STRING} ^url=guide-to-bjmc-colleges-under-ip-university--top-10-institutions--admission-process--counselling-process-$
+RewriteRule ^blog-detail\.php$ /guide-to-bjmc-colleges-under-ip-university.php? [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^url=unveiling-the-best-b-tech-colleges-under-ip-university--your-complete-guide-to-admissions-and-top-institutions$
+RewriteRule ^blog-detail\.php$ /b-tech-colleges-under-IP-university.php? [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^url=ggsipu-counselling$
+RewriteRule ^blog-detail\.php$ /GGSIPU-counselling-for-B-Tech-admission.php? [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^url=a-comprehensive-guide-to-bba-colleges-under-ip-university--top-10-institutions--admission-process--counselling-process---management-quota-admission$
+RewriteRule ^blog-detail\.php$ /comprehensive-guide-to-bba-colleges-under-ip-university-top-10-institutions.php? [R=301,L]
+
+# No live page matches these two topics (B.Ed roadmap 2024; sports-quota notice 2024-25): answer 410 Gone, not a soft redirect.
+RewriteCond %{QUERY_STRING} ^url=(ipu--top-b-ed-colleges---roadmap-2024|guru-gobind-singh-indraprastha-university--ggsipu---inviting-applications-for-ipu-sports-quota-admissions--2024-25-)$
+RewriteRule ^blog-detail\.php$ - [G,L]
+# Anything else on blog-detail.php: 410 as well (no such script exists any more).
+RewriteRule ^blog-detail\.php$ - [G,L]
+
+# ---------------------------------------------------------------------------
+# 2. Junk parameter URLs on the homepage (?q=, ?u=, ?p=, ?search_mode=, index.php?products/..) currently return the full
+#    98 KB homepage with 200 (canonical -> /). 28 such URLs appear in GSC (574 impressions, 4 clicks). The site has no
+#    search feature and the homepage reads none of these parameters. Do NOT touch utm_*, gclid, fbclid.
+# ---------------------------------------------------------------------------
+RewriteCond %{QUERY_STRING} (^|&)(q|u|p|search_mode)= [NC,OR]
+RewriteCond %{QUERY_STRING} ^products/ [NC]
+RewriteRule ^(index\.php)?$ /? [R=301,L]
+
+# ---------------------------------------------------------------------------
+# 3. Trailing-slash duplicate: /ipu-counselling.php/ returns 200 (canonical self, but a second crawlable URL).
+# ---------------------------------------------------------------------------
+RewriteRule ^(.+\.php)/$ /$1 [R=301,L]
+
+# ---------------------------------------------------------------------------
+# 4. Case-variant typos of the mixed-case slugs return 404 (e.g. /ipu-b-tech-admission-2026.php, /IPU-COUNSELLING.PHP).
+#    The REQUEST_URI condition is case-sensitive and prevents a redirect loop on the real URL.
+#    Only the exact-case URL stays canonical; nothing that ranks changes.
+# ---------------------------------------------------------------------------
+RewriteCond %{REQUEST_URI} !^/IPU-B-Tech-admission-2026\.php$
+RewriteRule ^ipu-b-tech-admission-2026\.php$ /IPU-B-Tech-admission-2026.php [NC,R=301,L]
+RewriteCond %{REQUEST_URI} !^/GGSIPU-counselling-for-B-Tech-admission\.php$
+RewriteRule ^ggsipu-counselling-for-b-tech-admission\.php$ /GGSIPU-counselling-for-B-Tech-admission.php [NC,R=301,L]
+RewriteCond %{REQUEST_URI} !^/IPU-Law-Admission\.php$
+RewriteRule ^ipu-law-admission\.php$ /IPU-Law-Admission.php [NC,R=301,L]
+RewriteCond %{REQUEST_URI} !^/BPIT\.php$
+RewriteRule ^bpit\.php$ /BPIT.php [NC,R=301,L]
+RewriteCond %{REQUEST_URI} !^/BVP\.php$
+RewriteRule ^bvp\.php$ /BVP.php [NC,R=301,L]
+# (the existing rule ipu-law-admission.php -> /IPU-Law-Admission.php in the repo file already covers one of these; keep one.)
+
+# ---------------------------------------------------------------------------
+# 5. Redirect chain: /ipu-law-admission-2026.php -> /IPU-Law-Admission-2026.php (301) -> /IPU-Law-Admission.php (301)
+#    Collapse to one hop by editing the existing rule target:
+# ---------------------------------------------------------------------------
+# RewriteRule ^ipu-law-admission-2026\.php$ /IPU-Law-Admission.php [L,R=301]
+
+# ---------------------------------------------------------------------------
+# 6. Custom 404 (currently the 1,251-byte server default with no navigation). Keep the 404 STATUS.
+# ---------------------------------------------------------------------------
+# ErrorDocument 404 /404.php        # 404.php must send http_response_code(404) and <meta name="robots" content="noindex">
