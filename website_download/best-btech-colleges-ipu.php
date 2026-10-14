@@ -125,7 +125,7 @@ include_once("include/form-handler.php");
   text-decoration: none;
 }
 .btn-cta:hover { background: #f0f0f0; color: #2d4ecf; }
-.blog-details h2 {
+.ipu-body__intro h2, .ipu-body__rest h2 {
   border-left: 4px solid #3a5bd9;
   padding-left: 10px;
   margin-bottom: 16px;
@@ -146,25 +146,15 @@ include_once("include/form-handler.php");
 $hero_h1 = 'Best B.Tech Colleges under IP University (GGSIPU)';
 $hero_intro = 'MAIT &bull; MSIT &bull; BPIT &bull; BVP &bull; VIPS &bull; USICT &bull; USAR';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU B.Tech Admission', 'IPU-B-Tech-admission-2026.php'], ['Best B.Tech Colleges', '']];
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- MAIN CONTENT -->
-<section class="blog-wrapper pt-130 pb-130">
-  <div class="container">
+<div class="ipu-body">
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-        <li class="breadcrumb-item"><a href="IPU-B-Tech-admission-2026.php">IPU B.Tech Admission</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Best B.Tech Colleges</li>
-      </ol>
-    </nav>
-
-    <div class="row">
-      <div class="col-lg-8">
-        <article class="blog-details">
-
+  <div class="ipu-body__intro">
           <div class="section-block">
             <h2>Top Engineering Colleges under IP University</h2>
             <p>Guru Gobind Singh Indraprastha University (GGSIPU) affiliates several engineering colleges across Delhi NCR. Choosing the right college depends on your preferred branch, location, JEE Main cutoff rank and placement track record.</p>
@@ -173,7 +163,16 @@ include __DIR__ . '/include/components/page-hero.php';
 
           <hr>
 
-          <div class="section-block">
+          
+  </div>
+
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
+<div class="section-block">
             <h2>List of Best B.Tech Colleges under IPU</h2>
             <div class="row g-3 mt-2">
               <div class="col-md-6">
@@ -376,15 +375,10 @@ include __DIR__ . '/include/components/page-hero.php';
             </div>
           </div>
 
-        </article>
-      </div>
-
-      <div class="col-lg-4">
-        <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-      </div>
-    </div>
+        
   </div>
-</section>
+
+</div>
 
 <?php
 $related_pages = [

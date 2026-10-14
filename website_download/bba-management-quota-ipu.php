@@ -73,20 +73,16 @@ include_once("include/form-handler.php");
 $hero_h1 = 'BBA Management Quota Admission in IP University (GGSIPU)';
 $hero_intro = 'Top Colleges • Eligibility • CET / CUET • Counselling Strategy';
 $hero_show_form = false;
+$hero_show_enquire = true;
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 
 <!-- ===== CONTENT ===== -->
 
-<section class="blog-wrapper pt-130 pb-130">
-<div class="container">
-<div class="row">
+<div class="ipu-body">
 
-<div class="col-lg-8">
-
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <h2>What is Management Quota in IP University BBA Admission?</h2>
 
 <p>
@@ -98,7 +94,14 @@ Management quota does NOT bypass university eligibility rules. Students must sti
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>BBA Admission Criteria in IP University</h2>
 
 <ul>
@@ -178,18 +181,9 @@ Counselling strategy guide:
 <a href="tel:+919899991342">+91-9899991342</a>
 </b>
 </p>
+  </div>
 
 </div>
-</div>
-
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-</section>
 
 
 <!-- ===== CTA ===== -->

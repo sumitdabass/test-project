@@ -101,3 +101,17 @@ def test_convert_is_idempotent_and_refuses_unknown_shapes():
         convert(PAGE.replace("sidebar-enquiry.php", "sidebar-cta.php"))
     with pytest.raises(ConvertError, match="blog-wrapper"):
         convert("<html><body><p>no wrapper</p></body></html>")
+
+
+ARTICLE_PAGE = PAGE.replace('<div class="blog-details">', '<article class="blog-details">', 1).replace(
+    "<h2>Third</h2>\n<p>third</p>\n</div>", "<h2>Third</h2>\n<p>third</p>\n</article>", 1).replace(
+    "<title>T</title>", "<title>T</title>\n<style>\n.college-card { color: red; }\n.blog-details h2 {\n  border-left: 4px solid #3a5bd9;\n}\n.blog-details p, .blog-details li { margin: 0; }\n.section-block { margin-bottom: 2rem; }\n</style>")
+
+
+def test_article_blog_details_wrapper_is_unwrapped_and_inline_css_retargeted():
+    out = convert(ARTICLE_PAGE)
+    assert "blog-details" not in out
+    assert "<article" not in out
+    assert ".ipu-body__intro h2, .ipu-body__rest h2 {" in out
+    assert ".ipu-body__intro p, .ipu-body__rest p, .ipu-body__intro li, .ipu-body__rest li {" in out
+    assert ".college-card { color: red; }" in out and ".section-block { margin-bottom: 2rem; }" in out   # unrelated rules untouched

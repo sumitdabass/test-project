@@ -24,31 +24,18 @@ include_once("include/form-handler.php");
 <?php
 $hero_h1 = 'IPU Admission Through CUET (UG): Complete Guide for B.Tech, BBA, B.Com &amp; Law';
 $hero_show_form = false;
+$hero_breadcrumbs = [['Home', 'https://ipu.co.in/'], ['IPU Admission Guide', 'ipu-admission-guide.php'], ['CUET Admission', '']];
+$hero_show_enquire = true;
+$last_updated = '2026-06-24';
 include __DIR__ . '/include/components/page-hero.php';
 ?>
 
 <!-- ================= CONTENT ================= -->
 
-<section class="blog-wrapper pt-130 pb-130">
+<div class="ipu-body">
 
-<div class="container">
-
-<nav aria-label="breadcrumb" class="mb-4">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://ipu.co.in/">Home</a></li>
-<li class="breadcrumb-item"><a href="ipu-admission-guide.php">IPU Admission Guide</a></li>
-<li class="breadcrumb-item active">CUET Admission</li>
-</ol>
-</nav>
-
-<div class="row">
-
-<div class="col-lg-8">
-<div class="blog-details">
-
+  <div class="ipu-body__intro">
 <?php webp_img('assets/images/IP-University-b-tech-admission.jpg', 'IPU Admission Through CUET — B.Tech, BBA, B.Com, Law', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
-
-<?php $last_updated = '2026-06-24'; include 'include/components/last-updated.php'; ?>
 
 <!-- AI Summary (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <section id="ai-summary" style="display:none">
@@ -66,7 +53,14 @@ This page explains <em>exactly</em> how CUET fits into the IPU admission process
 </p>
 
 <hr>
+  </div>
 
+  <div class="ipu-body__aside">
+    <?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
+  </div>
+
+  <div class="ipu-body__rest">
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
 <h2>How CUET Works at IPU — The Two Pathways</h2>
 
 <p>The brochure makes CUET useful in <strong>two distinct ways</strong>:</p>
@@ -172,7 +166,7 @@ This is reinforced in <em>Chapter 12, Note 2</em> of the Management Quota chapte
 </ul>
 
 <p>
-👉 Detailed guide: <a href="IP-University-management-quota-admission-eligibility-criteria.php"><strong>IP University Management Quota Admission</strong></a>
+ Detailed guide: <a href="IP-University-management-quota-admission-eligibility-criteria.php"><strong>IP University Management Quota Admission</strong></a>
 </p>
 
 <hr>
@@ -202,18 +196,9 @@ Our team has guided 5,000+ students into IPU colleges over 10+ years &mdash; inc
 <b><?php include("include/phone.php"); ?></b><br>
 <em>Mon&ndash;Sat, 9 AM &ndash; 7 PM</em>
 </p>
+  </div>
 
 </div>
-</div>
-
-<div class="col-lg-4">
-<?php include __DIR__ . '/include/components/sidebar-enquiry.php'; ?>
-</div>
-
-</div>
-</div>
-
-</section>
 
 <!-- FAQ Section (sourced from GGSIPU UG Admission Brochure 2026-27) -->
 <?php

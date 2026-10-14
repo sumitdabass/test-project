@@ -136,9 +136,11 @@ def convert(src):
         raise ConvertError("unexpected content after the row inside the container")
 
     # unwrap a sole .blog-details wrapper
-    bd = re.fullmatch(r'\s*<div class="blog-details">(.*)</div>\s*', content, re.S)
-    if bd and _find_balanced(content, content.index("<div"), "div") >= len(content.rstrip()):
-        content = bd.group(1)
+    for wtag in ("div", "article"):
+        bd = re.fullmatch(rf'\s*<{wtag} class="blog-details">(.*)</{wtag}>\s*', content, re.S)
+        if bd and _find_balanced(content, content.index(f"<{wtag}"), wtag) >= len(content.rstrip()):
+            content = bd.group(1)
+            break
 
     # lift the Last Updated include into the hero
     lu = re.findall(r"<\?php\s*\$last_updated\s*=\s*'([0-9-]+)';\s*include\s*'include/components/last-updated\.php';\s*\?>", content)
@@ -193,7 +195,26 @@ def convert(src):
 
 </div>"""
     out = src[:hm.start()] + new_hero + src[hm.end():sec_start] + grid + src[sec_end:]
-    return out
+    return _retarget_blog_details_css(out)
+
+
+def _retarget_blog_details_css(html):
+    """Inline <style> rules keyed to .blog-details keep applying to the same content under the new containers."""
+    def fix_block(m):
+        css = m.group(2)
+        def fix_selector_list(sm):
+            sels = [x.strip() for x in sm.group(1).split(",")]
+            out = []
+            for sel in sels:
+                if sel.startswith(".blog-details"):
+                    rest = sel[len(".blog-details"):]
+                    out += [".ipu-body__intro" + rest, ".ipu-body__rest" + rest]
+                else:
+                    out.append(sel)
+            return ", ".join(out) + " {"
+        css2 = re.sub(r"(?m)^([^{}@/\n][^{}]*?)\s*\{", lambda sm: fix_selector_list(sm) if ".blog-details" in sm.group(1) else sm.group(0), css)
+        return m.group(1) + css2 + m.group(3)
+    return re.sub(r"(<style[^>]*>)(.*?)(</style>)", fix_block, html, flags=re.S)
 
 
 def main(argv):

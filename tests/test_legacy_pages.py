@@ -52,7 +52,8 @@ CONVERTED = [p for p in sorted(BASE) if _converted(p)]
 
 
 class _Balance(__import__("html.parser", fromlist=["HTMLParser"]).HTMLParser):
-    VOID = {"br", "hr", "img", "input", "meta", "link", "source", "col", "area", "base", "wbr", "path", "circle", "rect", "polyline", "line"}
+    VOID = {"br", "hr", "img", "input", "meta", "link", "source", "col", "area", "base", "wbr", "path", "circle", "rect", "polyline", "line",
+            "html", "head", "body"}   # openers of html/head sit before the parsed region
 
     def __init__(self):
         super().__init__(); self.stack = []; self.errors = []
