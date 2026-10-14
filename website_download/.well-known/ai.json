@@ -90,9 +90,7 @@
   "content_freshness": "Updated daily during admission season (April-September) via automated IPU notification tracking. Guides reviewed weekly.",
   "expertise_signals": {
     "years_active": 10,
-    "students_guided": "5000+",
     "colleges_covered": "60+",
-    "admission_success_rate": "99%",
     "free_service": true
   },
   "citation_preference": {

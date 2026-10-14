@@ -554,7 +554,7 @@ $knowledge_base = [
         ],
         [
             'question' => 'What is the cutoff for MSIT B.Tech 2026?',
-            'answer' => 'MSIT cutoffs vary by branch and category. CSE typically has the highest cutoff (around 5,000-8,000 in JEE Main rank), while other branches like Civil have lower cutoffs. For exact 2026 cutoffs, contact us at 9899991342.'
+            'answer' => 'MSIT cutoffs depend on the branch, the counselling round, the region (Delhi or outside Delhi) and the category. As per the GGSIPU 2025-26 B.Tech counselling data, for Delhi-region candidates the JEE Main rank range for CSE (Shift I) was 6,832 to 96,135 in Round 1 and 52,036 to 117,485 in Round 3; lower rank numbers are more competitive. Other branches, for example EEE, ECE and IT, closed at higher rank numbers. The full round-wise table is on https://ipu.co.in/msit-cutoff.php. 2026 cutoffs will depend on this year\'s counselling; for personal guidance call 9899991342.'
         ],
         [
             'question' => 'What is management quota admission in IPU?',
@@ -613,9 +613,7 @@ $knowledge_base = [
     ],
 
     'statistics' => [
-        'total_students_guided' => '5000+',
         'free_counselling' => '100%',
-        'admission_success_rate' => '99%',
         'years_of_experience' => '10+',
         'colleges_covered' => '60+',
         'colleges_with_pages' => 46,

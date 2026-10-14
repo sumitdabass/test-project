@@ -14,7 +14,6 @@ This website is fully optimized for AI agents, including ChatGPT, Claude, Gemini
 - **Email:** admission@ipu.co.in
 - **Website:** https://ipu.co.in
 - **Years in Service:** 10+
-- **Students Guided:** 500+
 
 ### Services Provided
 1. Free admission counselling (100% no charges)
@@ -91,8 +90,6 @@ Returns: Year-by-year admission events and deadlines
 GET https://ipu.co.in/api/agent-data.php?action=stats
 ```
 Returns: Key statistics
-- Total students guided
-- Success rates
 - Placement averages
 - Salary information
 - College coverage
@@ -184,10 +181,7 @@ All pages include:
 - BCA: ₹5-8 LPA
 
 ### Success Metrics
-- 95%+ admission success rate
-- 90%+ placement rate
 - 100% free counselling
-- 500+ students guided
 - 10+ years of experience
 
 ## How AI Agents Can Use This Data
