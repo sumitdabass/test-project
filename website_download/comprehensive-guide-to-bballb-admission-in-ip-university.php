@@ -43,6 +43,7 @@ include __DIR__ . '/include/components/page-hero.php';
     <div class="ipu-body">
 
   <div class="ipu-body__intro">
+                    
                         <?php webp_img('assets/images/ipu-bballb.jpg', 'Images', 'main-img', false, ['fetchpriority'=>'high','decoding'=>'async']); ?>
 
                         <h2 class="title">Comprehensive Guide to BBALLB Admission in IP University (IPU): Eligibility, Counselling, Top Colleges, and CLAT Process
@@ -143,6 +144,10 @@ include __DIR__ . '/include/components/page-hero.php';
                         
                         </p>
                     
+
+
+
+                
   </div>
 
   <div class="ipu-body__aside">
@@ -150,7 +155,7 @@ include __DIR__ . '/include/components/page-hero.php';
   </div>
 
   <div class="ipu-body__rest">
-
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
   </div>
 
 </div>

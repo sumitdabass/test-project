@@ -29,6 +29,8 @@ def _unmask(text, blocks):
     return re.sub(r"\x00(\d+)\x00", lambda m: blocks[int(m.group(1))], text)
 
 
+P_CLOSERS = {"address", "article", "aside", "blockquote", "div", "dl", "fieldset", "figure", "footer", "form", "h1", "h2", "h3",
+             "h4", "h5", "h6", "header", "hr", "main", "nav", "ol", "p", "pre", "section", "table", "ul"}
 OPTIONAL_END = {"p", "li", "dd", "dt", "tr", "td", "th", "option", "thead", "tbody", "tfoot"}
 
 
@@ -44,6 +46,11 @@ def top_level_nodes(html):
             else: cur.append(raw)
             continue
         closing, tag, selfc = m.group(1), m.group(2).lower(), m.group(3)
+        if not closing and tag in P_CLOSERS:
+            while stack and stack[-1] == "p":        # HTML: a block start tag closes an open <p> right here
+                cur.append("</p>"); stack.pop()
+                if not stack:
+                    nodes.append(("el", "".join(cur))); cur = []
         if not closing:
             if tag in VOID or selfc:
                 if not stack: nodes.append(("el", raw))
@@ -188,7 +195,7 @@ def convert(src):
         raise ConvertError("hero include statement not in the expected form")
 
     cta = "<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>"
-    rest_html = (cta + "\n" + join(rest)) if rest else ""
+    rest_html = (cta + "\n" + join(rest)) if rest else cta
     grid = f"""<div class="ipu-body">
 
   <div class="ipu-body__intro">

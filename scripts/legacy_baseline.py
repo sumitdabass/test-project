@@ -10,14 +10,19 @@ EXCLUDED = {"b-tech-colleges-under-IP-university.php", "ipu-admission-guide.php"
             "maharaja-agrasen-business-school-one-of-the-best-PGDM-colleges-in-delhi.php", "BPIT.php"}
 
 
+FIXTURE = ROOT / "tests" / "fixtures" / "legacy_baseline.json"
+
+
 def legacy_pages():
-    """Pages still carrying the old wrapper (or already converted: marker 'ipu-body' + was in baseline)."""
+    """In-scope page names. Once the baseline fixture exists it is the source of truth (converted pages no longer
+    contain 'blog-wrapper'); before that, pages still carrying the old wrapper."""
+    if FIXTURE.exists():
+        return sorted(json.loads(FIXTURE.read_text(encoding="utf-8")))
     names = []
     for f in sorted(WEB.glob("*.php")):
         if f.name in EXCLUDED:
             continue
-        s = f.read_text(encoding="utf-8", errors="replace")
-        if "blog-wrapper" in s:
+        if "blog-wrapper" in f.read_text(encoding="utf-8", errors="replace"):
             names.append(f.name)
     return names
 
@@ -44,6 +49,27 @@ def visible_texts(html):
     p = _Texts(); p.feed(html); return p.out
 
 
+_MOVED = [
+    r'<aside class="ipu-enquiry">.*?</aside>',                          # sidebar form (moves)
+    r'<nav aria-label="breadcrumb"[^>]*>.*?</nav>',                     # old body breadcrumb (moves to hero)
+    r'<nav class="ipu-page-hero__crumbs".*?</nav>',                     # hero breadcrumb
+    r'<p(?:\s[^>]*)?>(?:(?!</p>).)*?Last Updated:(?:(?!</p>).)*?</p>',        # '<p' exactly (not <path>/<picture>)        # Last Updated line (moves to hero)
+    r'<div class="ipu-cta-card">.*?</a>\s*</div>',                     # CTA card (new)
+    r'<a href="#enquiry-form" class="ipu-page-hero__enquire"[^>]*>.*?</a>',   # hero Enquire (new)
+]
+_UI = {"Enquire", "Need Admission Guidance?", "Talk to our expert counsellors for free guidance on IPU admissions", "Call: 9899991342"}
+
+
+def core_view(html):
+    """(ordered visible texts, ordered hrefs/srcs) of the page body with moved/added blocks removed."""
+    body = html.split("</head>")[-1]
+    for pat in _MOVED:
+        body = re.sub(pat, "", body, flags=re.S)
+    texts = [t for t in visible_texts("<body>" + body) if t not in _UI]
+    links = re.findall(r'(?:href|src)="([^"#][^"]*)"', body)
+    return texts, links
+
+
 def grab(html):
     body = html.split("</head>")[-1]
     g = lambda pat: (re.search(pat, html, re.S) or [None, None])[1]
@@ -57,6 +83,7 @@ def grab(html):
         "links": sorted(set(re.findall(r'href="([^"#][^"]*)"', body))),
         "jsonld": [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)],
         "texts": visible_texts(html),
+        "core": dict(zip(("texts", "links"), core_view(html))),
     }
 
 

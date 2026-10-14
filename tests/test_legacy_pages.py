@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "website_download"
 sys.path.insert(0, str(ROOT / "scripts"))
 from seo_verify import check_html
-from legacy_baseline import legacy_pages, visible_texts
+from legacy_baseline import core_view, legacy_pages, visible_texts
 
 
 def _free_port():
@@ -74,6 +74,13 @@ class _Balance(__import__("html.parser", fromlist=["HTMLParser"]).HTMLParser):
             self.stack.pop()
 
 
+def _first_diff(a, b):
+    for k, (x, y) in enumerate(zip(a, b)):
+        if x != y:
+            return f"first difference at index {k}: baseline={x!r} new={y!r}"
+    return f"length differs: baseline={len(a)} new={len(b)}"
+
+
 @pytest.mark.parametrize("page", CONVERTED)
 def test_converted_page_invariants(server, page):
     status, html = _get(f"{server}/{page}")
@@ -88,25 +95,21 @@ def test_converted_page_invariants(server, page):
     body = html.split("</head>")[-1]
     assert len(re.findall(r"<h1[\s>]", body)) == len(b["h1"]) == 1
     assert html.count('id="enquiry-form"') == 1
-    for legacy in ("blog-wrapper", "pt-130", "breadcrumb-item", "blog-details", "\U0001F449"):
-        assert legacy not in body, legacy
+    for legacy in ("blog-wrapper", "pt-130", "breadcrumb-item", "blog-details"):
+        assert legacy not in html, legacy                       # head <style> blocks included
+    assert "\U0001F449" not in body
     assert not re.search(r"\n(Warning|Notice|Deprecated|Fatal error): ", html)
     # DOM balanced
     bal = _Balance(); bal.feed(body); assert bal.errors == [] and bal.stack == []
-    # visible text: nothing lost, nothing new except the allowed UI strings
-    old, new = Counter(b["texts"]), Counter(visible_texts(html))
-    lost = old - new
-    added = new - old
-    assert dict(lost) == {}, f"text lost: {list(lost)[:5]}"
-    unexpected = {k: v for k, v in added.items() if k not in ALLOWED_NEW}
-    # the hero breadcrumb repeats labels that were in the body breadcrumb; allow exactly those repeats
-    nav = re.search(r'<nav class="ipu-page-hero__crumbs".*?</nav>', html, re.S)
-    crumb_labels = {x for pair in re.findall(r'<li><a href="[^"]*">([^<]+)</a></li>|<span aria-current="page">([^<]+)</span>', nav.group(0))
-                    for x in pair if x} if nav else set()
-    assert {k: v for k, v in unexpected.items() if k not in crumb_labels} == {}, f"unexpected new text: {unexpected}"
-    # links: every baseline href still present
-    now = set(re.findall(r'href="([^"#][^"]*)"', body))
-    assert [l for l in b["links"] if l not in now] == []
+    # ordered comparison of everything except the blocks the conversion may move or add
+    texts, links = core_view(html)
+    assert texts == b["core"]["texts"], _first_diff(b["core"]["texts"], texts)
+    assert links == b["core"]["links"], _first_diff(b["core"]["links"], links)
+    # structure the design promises: CTA card present once; the form comes after the first section's heading
+    assert html.count('class="ipu-cta-card"') == 1 and html.count("cta-strip") == 0 or html.count('class="ipu-cta-card"') == 1
+    intro = body[body.index('<div class="ipu-body__intro">'):body.index('<div class="ipu-body__aside">')]
+    assert "<h2" in intro, "no section heading before the form"
+    assert body.index('<div class="ipu-body__aside">') < body.index('<div class="ipu-body__rest">')
     # headings: same ordered list apart from the CTA card heading and the sidebar form heading
     drop = {"Need Admission Guidance?", "Get Free Admission Guidance"}
     got = [re.sub(r"<[^>]+>", "", m).strip() for m in re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)]
@@ -115,5 +118,6 @@ def test_converted_page_invariants(server, page):
     assert [p for p in check_html(html) if not p.startswith("FAQPage has") and p not in known.get(page, set())] == []
 
 
-def test_baseline_covers_in_scope_pages():
+def test_baseline_covers_in_scope_pages_and_all_are_converted():
     assert len(BASE) == 31
+    assert CONVERTED == sorted(BASE), [p for p in sorted(BASE) if p not in CONVERTED]

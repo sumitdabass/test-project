@@ -155,6 +155,8 @@ include __DIR__ . '/include/components/page-hero.php';
 <div class="ipu-body">
 
   <div class="ipu-body__intro">
+        
+
           <div class="section-block">
             <h2>Top Engineering Colleges under IP University</h2>
             <p>Guru Gobind Singh Indraprastha University (GGSIPU) affiliates several engineering colleges across Delhi NCR. Choosing the right college depends on your preferred branch, location, JEE Main cutoff rank and placement track record.</p>
@@ -376,6 +378,7 @@ include __DIR__ . '/include/components/page-hero.php';
           </div>
 
         
+      
   </div>
 
 </div>

@@ -167,3 +167,25 @@ def test_implied_end_tags_are_normalised_with_explicit_closing_tags():
     assert nodes[0][1] == '<div class="x"><p>unclosed text</p></div>'
     nodes = top_level_nodes('<h2>A</h2><p>last paragraph never closed')
     assert nodes[1][1] == '<p>last paragraph never closed</p>'
+
+
+def test_block_start_tag_closes_an_open_paragraph_at_the_right_place():
+    nodes = top_level_nodes("<p>a<p>b")
+    assert [r for _, r in nodes] == ["<p>a</p>", "<p>b</p>"]
+    assert [r for _, r in top_level_nodes('<div><p>a<p>b</div>')] == ['<div><p>a</p><p>b</p></div>']
+    nodes = top_level_nodes("<p>a<h2>b</h2><p>c")
+    assert [r for _, r in nodes] == ["<p>a</p>", "<h2>b</h2>", "<p>c</p>"]
+
+
+def test_forgotten_close_paragraph_does_not_hide_later_sections_from_the_splitter():
+    nodes = top_level_nodes("<h2>One</h2><p>text without close<h2>Two</h2><p>two</p><h2>Three</h2>")
+    intro, rest = split_sections(nodes)
+    assert "".join(r for _, r in intro) == "<h2>One</h2><p>text without close</p>"
+    assert "".join(r for _, r in rest).startswith("<h2>Two</h2>")
+
+
+def test_cta_card_is_emitted_even_when_there_is_only_one_section():
+    page = PAGE.replace("<h2>Second</h2>\n<p>second para</p>\n<h2>Third</h2>\n<p>third</p>\n", "")
+    out = convert(page)
+    ib = out[out.index('<div class="ipu-body">'):]
+    assert ib.count("cta-strip.php") == 1 and ib.index("sidebar-enquiry.php") < ib.index("cta-strip.php")

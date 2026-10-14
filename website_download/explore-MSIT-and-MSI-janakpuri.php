@@ -148,7 +148,7 @@ include __DIR__ . '/include/components/page-hero.php';
                         </h2>
                         <p>Located in Janakpuri, New Delhi, *Maharaja Surajmal Institute of Technology (MSIT)* and *Maharaja Surajmal Institute (MSI)* are two of the most reputed colleges affiliated with *Guru Gobind Singh Indraprastha University (GGSIPU)*. These institutes are known for their academic excellence, accredited programs, strong industry linkages, and impressive placement records. Whether you aspire to be an engineer, business leader, lawyer, or media professional, MSIT and MSI offer a comprehensive educational foundation./p>
 
-                        <p><strong>About MSIT – Maharaja Surajmal Institute of Technology </strong></p>
+                        </p><p><strong>About MSIT – Maharaja Surajmal Institute of Technology </strong></p>
 
                         <p>MSIT* is one of Delhi's top engineering institutions, approved by *AICTE, accredited by **NAAC (Grade A), and certified by **ISO 9001:2015. Several of its engineering programs are **NBA-accredited*, further establishing the quality of education. </p>
                         
@@ -325,7 +325,7 @@ include __DIR__ . '/include/components/page-hero.php';
                           </div>
                         </section>
 
-                    </p>
+                    
 
 
 
@@ -337,7 +337,7 @@ include __DIR__ . '/include/components/page-hero.php';
   </div>
 
   <div class="ipu-body__rest">
-
+<?php $cta_card = true; include 'include/components/cta-strip.php'; ?>
   </div>
 
 </div>
