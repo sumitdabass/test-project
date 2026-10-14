@@ -194,6 +194,14 @@ select.ipu-input{color:#64748b}
 .ipu-body__aside{position:sticky;top:84px}}
 .ipu-body h2{font-size:22px;line-height:1.25;font-weight:800;color:var(--ipu-ink);margin:0 0 12px}
 @media(min-width:992px){.ipu-body h2{font-size:26px}}
+.ipu-body__intro p,.ipu-body__rest p{margin:0 0 14px;line-height:1.7}
+.ipu-body__intro ul,.ipu-body__intro ol,.ipu-body__rest ul,.ipu-body__rest ol{padding-left:22px;margin:0 0 14px}
+.ipu-body__rest h3,.ipu-body__intro h3{font-size:18px;font-weight:700;margin:20px 0 8px;color:var(--ipu-ink)}
+.ipu-body__intro img,.ipu-body__rest img{max-width:100%;height:auto}
+.ipu-body__intro hr,.ipu-body__rest hr{border:0;border-top:1px solid var(--ipu-rule);margin:24px 0}
+.ipu-body__rest .ipu-card h3,.ipu-body__rest .ipu-tint h3{margin-top:0}
+.ipu-body__rest .ipu-card__foot{margin:0}
+.ipu-body__rest .ipu-tint p:last-child{margin-bottom:0}
 .ipu-body__hero-img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover;border-radius:16px;margin-bottom:20px}
 .ipu-body section{margin-bottom:28px}
 

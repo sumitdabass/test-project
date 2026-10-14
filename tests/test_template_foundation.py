@@ -120,3 +120,19 @@ def test_faq_details_schema_can_be_suppressed():
     assert "FAQPage" in render("faq-details", faqs=faqs)
     html = render("faq-details", faqs=faqs, faq_schema=False)
     assert "FAQPage" not in html and "<details" in html
+
+
+def test_ipu_body_raw_content_typography_is_scoped():
+    css = HEAD.replace(" ", "").replace("\n", "")
+    for rule in (".ipu-body__intro p,.ipu-body__rest p{margin:0 0 14px;line-height:1.7}",
+                 ".ipu-body__intro ul,.ipu-body__intro ol,.ipu-body__rest ul,.ipu-body__rest ol{padding-left:22px;margin:0 0 14px}",
+                 ".ipu-body__rest h3,.ipu-body__intro h3{font-size:18px;font-weight:700;margin:20px 0 8px;color:var(--ipu-ink)}",
+                 ".ipu-body__intro img,.ipu-body__rest img{max-width:100%;height:auto}",
+                 ".ipu-body__intro hr,.ipu-body__rest hr{border:0;border-top:1px solid var(--ipu-rule);margin:24px 0}"):
+        assert rule.replace(" ", "") in css, rule
+
+
+def test_raw_content_rules_do_not_override_component_margins():
+    css = HEAD.replace(" ", "").replace("\n", "")
+    assert ".ipu-body__rest .ipu-card__foot{margin:0}".replace(" ", "") in css
+    assert ".ipu-body__rest .ipu-tint p:last-child{margin-bottom:0}".replace(" ", "") in css
